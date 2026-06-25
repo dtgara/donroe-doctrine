@@ -124,7 +124,7 @@
      ------------------------------------------------------------------------- */
   function getCode(feature) {
     var p = feature.properties;
-    return (p.ISO_A2 || p.iso_a2 || p.ISO_A2_EH || '').toUpperCase();
+    return (p["ISO3166-1-Alpha-2"] || p.ISO_A2 || p.iso_a2 || "").toUpperCase();
   }
 
   function styleFeature(feature) {

@@ -106,7 +106,7 @@
      ------------------------------------------------------------------------- */
   function getCode(feature) {
     var props = feature.properties;
-    return (props.ISO_A2 || props.iso_a2 || props.ISO_A2_EH || '').toUpperCase();
+    return (props['ISO3166-1-Alpha-2'] || props.ISO_A2 || props.iso_a2 || '').toUpperCase();
   }
 
   function styleFeature(feature) {
