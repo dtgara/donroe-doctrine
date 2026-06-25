@@ -12,14 +12,6 @@ body_class: page-quotes
 <div style="margin-bottom:1.5rem;">
 
   <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-bottom:0.75rem;">
-    <span style="font-family:var(--font-ui);font-size:var(--text-sm);color:var(--color-light-grey);min-width:60px;">Term</span>
-    <button class="btn btn-secondary quote-filter active" data-filter="term" data-value="all" style="font-size:0.65rem;padding:0.35rem 0.85rem;">All</button>
-    <button class="btn btn-secondary quote-filter" data-filter="term" data-value="1" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Term 1</button>
-    <button class="btn btn-secondary quote-filter" data-filter="term" data-value="2" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Term 2</button>
-  </div>
-
-  <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-bottom:0.75rem;">
-    <span style="font-family:var(--font-ui);font-size:var(--text-sm);color:var(--color-light-grey);min-width:60px;">Theme</span>
     <button class="btn btn-secondary quote-filter active" data-filter="theme" data-value="all" style="font-size:0.65rem;padding:0.35rem 0.85rem;">All</button>
     <button class="btn btn-secondary quote-filter" data-filter="theme" data-value="trade_tariffs" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Trade &amp; Tariffs</button>
     <button class="btn btn-secondary quote-filter" data-filter="theme" data-value="nato_complaints" style="font-size:0.65rem;padding:0.35rem 0.85rem;">NATO Complaints</button>
@@ -29,16 +21,6 @@ body_class: page-quotes
     <button class="btn btn-secondary quote-filter" data-filter="theme" data-value="how_trade_works" style="font-size:0.65rem;padding:0.35rem 0.85rem;">How Trade Works</button>
     <button class="btn btn-secondary quote-filter" data-filter="theme" data-value="descriptions_of_leaders" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Leader Descriptions</button>
     <button class="btn btn-secondary quote-filter" data-filter="theme" data-value="things_canadas_fault" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Canada's Fault</button>
-  </div>
-
-  <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-bottom:0.75rem;">
-    <span style="font-family:var(--font-ui);font-size:var(--text-sm);color:var(--color-light-grey);min-width:60px;">Source</span>
-    <button class="btn btn-secondary quote-filter active" data-filter="source" data-value="all" style="font-size:0.65rem;padding:0.35rem 0.85rem;">All</button>
-    <button class="btn btn-secondary quote-filter" data-filter="source" data-value="press_conference" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Press Conference</button>
-    <button class="btn btn-secondary quote-filter" data-filter="source" data-value="interview" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Interview</button>
-    <button class="btn btn-secondary quote-filter" data-filter="source" data-value="speech" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Speech</button>
-    <button class="btn btn-secondary quote-filter" data-filter="source" data-value="truth_social" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Truth Social</button>
-    <button class="btn btn-secondary quote-filter" data-filter="source" data-value="tweet" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Tweet</button>
   </div>
 
   <div style="padding-top:0.5rem;border-top:1px solid var(--color-border);font-family:var(--font-ui);font-size:var(--text-sm);color:var(--color-light-grey);">
@@ -51,9 +33,7 @@ body_class: page-quotes
   {% for q in quotes %}
   <div class="quote-entry quote-card"
        id="{{ q.id }}"
-       data-term="{{ q.term }}"
-       data-theme="{% if q.theme.first %}{{ q.theme | join: ' ' }}{% else %}{{ q.theme }}{% endif %}"
-       data-source="{{ q.source_type }}">
+       data-theme="{% if q.theme.first %}{{ q.theme | join: ' ' }}{% else %}{{ q.theme }}{% endif %}">
     <blockquote class="quote-text">{{ q.text }}</blockquote>
     <div class="quote-meta">
       <span class="quote-meta-date"><time>{{ q.date | date: "%B %-d, %Y" }}</time></span>
@@ -95,29 +75,24 @@ body_class: page-quotes
 
 <script>
 (function () {
-  var filters = { term: 'all', theme: 'all', source: 'all' };
+  var activeTheme = 'all';
   var cards   = Array.from(document.querySelectorAll('.quote-card'));
   var countEl = document.getElementById('quote-count');
 
   function applyFilters() {
     var visible = 0;
     cards.forEach(function (card) {
-      var termOk   = filters.term   === 'all' || card.getAttribute('data-term')   === filters.term;
-      var themeOk  = filters.theme  === 'all' || (card.getAttribute('data-theme') || '').split(' ').indexOf(filters.theme) !== -1;
-      var sourceOk = filters.source === 'all' || card.getAttribute('data-source') === filters.source;
-      var show = termOk && themeOk && sourceOk;
-      card.style.display = show ? '' : 'none';
-      if (show) visible++;
+      var themeOk = activeTheme === 'all' || (card.getAttribute('data-theme') || '').split(' ').indexOf(activeTheme) !== -1;
+      card.style.display = themeOk ? '' : 'none';
+      if (themeOk) visible++;
     });
     if (countEl) countEl.textContent = visible;
   }
 
   document.querySelectorAll('.quote-filter').forEach(function (btn) {
     btn.addEventListener('click', function () {
-      var filterType = btn.getAttribute('data-filter');
-      filters[filterType] = btn.getAttribute('data-value');
-      // Update active state within row
-      document.querySelectorAll('.quote-filter[data-filter="' + filterType + '"]').forEach(function (b) {
+      activeTheme = btn.getAttribute('data-value');
+      document.querySelectorAll('.quote-filter').forEach(function (b) {
         b.classList.toggle('active', b === btn);
       });
       applyFilters();
