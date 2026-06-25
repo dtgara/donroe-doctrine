@@ -134,3 +134,42 @@ body_class: page-leaderboard
   Rankings reflect documented relationship status only. The archive does not assess the
   accuracy of the President's assessments. Last reviewed: {{ site.time | date: "%B %-d, %Y" }}.
 </p>
+
+{% if board.awaiting_instruction and board.awaiting_instruction.size > 0 %}
+<div style="margin-top:2rem;">
+  <div class="leaderboard-column-title" style="background:#f5f0e8;color:var(--color-near-black);border-left:4px solid #c8a951;">Awaiting Instruction</div>
+  <p style="font-size:var(--text-sm);color:var(--color-light-grey);margin-bottom:1rem;">
+    Countries that have not yet been assessed, acquired, insulted, or tariffed with conviction. Their status is not neutral so much as unprocessed. The doctrine has not gotten to them yet. This is not a reflection of their importance. It may be a reflection of their importance.
+  </p>
+  <table class="leaderboard-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Country</th>
+        <th>Assessment</th>
+        <th>Trend</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for entry in board.awaiting_instruction %}
+      <tr>
+        <td class="rank-number">{{ entry.rank }}</td>
+        <td>
+          <strong>{{ entry.flag }} {{ entry.country }}</strong>
+          {% if entry.trend == 'VOLATILE' %}
+            <span class="volatile-badge">Volatile ({{ entry.status_changes }})</span>
+          {% endif %}
+        </td>
+        <td style="font-size:var(--text-xs);color:var(--color-mid-grey);">{{ entry.annotation }}</td>
+        <td class="trend-indicator">
+          {% if entry.trend == 'RISING' %}&#9650;
+          {% elsif entry.trend == 'FALLING' %}&#9660;
+          {% elsif entry.trend == 'VOLATILE' %}&#11835;
+          {% else %}&mdash;{% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endif %}

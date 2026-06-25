@@ -210,3 +210,84 @@ indeterminate:
     trend: STABLE
     status_changes: 2
     last_updated: "2025-04-01"
+
+awaiting_instruction:
+  - rank: 1
+    country: "Norway"
+    flag: "🇳🇴"
+    annotation: "Praised in Term 1 as the correct type of country to accept immigrants from. The compliment has not been followed up with policy, visits, or further acknowledgment. Norway is aware of the compliment. Norway has not replied."
+    trend: STABLE
+    status_changes: 0
+    last_updated: "2018-01-11"
+
+  - rank: 2
+    country: "Switzerland"
+    flag: "🇨🇭"
+    annotation: "Applied a 31 percent tariff. Switzerland responded by offering to purchase $1.5 billion in American gold reserves to reduce the tariff burden. The offer was described as interesting. The tariff has not been reduced. The gold has not been purchased. Switzerland is still holding."
+    trend: STABLE
+    status_changes: 1
+    last_updated: "2025-04-15"
+
+  - rank: 3
+    country: "Sweden"
+    flag: "🇸🇪"
+    annotation: "Joined NATO in 2024. A 20 percent EU tariff applies. The President has on prior occasions expressed admiration for Swedish women in terms that Swedish officials found difficult to formally respond to. The assessment of Sweden is ongoing. The assessment appears to be taking a particular form."
+    trend: STABLE
+    status_changes: 0
+    last_updated: "2025-01-01"
+
+  - rank: 4
+    country: "Austria"
+    flag: "🇦🇹"
+    annotation: "EU and NATO member. A 20 percent tariff applies. No bilateral incident documented. The country is demographically and culturally the type of European nation that might be expected to receive a warmer reception under the doctrine. The reception has not materialised. The administration is understood to be giving it further thought."
+    trend: STABLE
+    status_changes: 0
+    last_updated: "2025-01-01"
+
+  - rank: 5
+    country: "Slovenia"
+    flag: "🇸🇮"
+    annotation: "Birthplace of the First Lady. EU and NATO member. A 20 percent tariff applies. No presidential visit has been made. No bilateral statement has been issued. The First Lady has not publicly requested one. This is the totality of Slovenia's doctrine footprint. It is, in the circumstances, a reasonable footprint."
+    trend: STABLE
+    status_changes: 0
+    last_updated: "2025-01-01"
+
+  - rank: 6
+    country: "Indonesia"
+    flag: "🇮🇩"
+    annotation: "Fourth most populous country in the world. A 32 percent Liberation Day tariff was applied. The tariff was calculated by spreadsheet. The spreadsheet was accurate. The administration has not otherwise identified Indonesia on the map, though efforts are understood to be ongoing. Indonesia is patient."
+    trend: STABLE
+    status_changes: 1
+    last_updated: "2025-04-09"
+
+  - rank: 7
+    country: "Portugal"
+    flag: "🇵🇹"
+    annotation: "The oldest ally of the United Kingdom. A founding NATO member since 1949. A 20 percent EU tariff applies. Portugal has been a member of the Atlantic alliance for 76 years without receiving a single documented mention in either Trump term. This is a record of a kind."
+    trend: STABLE
+    status_changes: 0
+    last_updated: "2025-01-01"
+
+  - rank: 8
+    country: "New Zealand"
+    flag: "🇳🇿"
+    annotation: "Five Eyes intelligence partner. A 10 percent tariff applies — the baseline, applied to nations too agreeable to have earned a higher rate. New Zealand has not said anything sufficiently irritating to attract further attention. This is a diplomatic strategy, whether intentional or not."
+    trend: STABLE
+    status_changes: 0
+    last_updated: "2025-04-05"
+
+  - rank: 9
+    country: "Singapore"
+    flag: "🇸🇬"
+    annotation: "One of the most efficient, well-run city-states in the world. A 10 percent tariff applies. Hosts a major US naval presence. Has given the administration nothing to complain about. This is Singapore's greatest diplomatic liability under the current doctrine. The doctrine requires friction to engage. Singapore provides none."
+    trend: STABLE
+    status_changes: 0
+    last_updated: "2025-04-05"
+
+  - rank: 10
+    country: "Nigeria"
+    flag: "🇳🇬"
+    annotation: "Most populous country in Africa. Largest economy on the continent. A 14 percent tariff applies. The continent of Africa was described in a 2018 private meeting using a phrase that has been reported but not reproduced here. Nigeria was not specifically named. It was not specifically not named either. The assessment of the continent remains, in the doctrine's own terms, outstanding."
+    trend: STABLE
+    status_changes: 0
+    last_updated: "2025-01-01"
