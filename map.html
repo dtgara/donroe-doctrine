@@ -53,11 +53,9 @@ body_class: page-map
   </div>
 </div>
 
+{% comment %}Country data embedded by Jekyll — read by map-v5.js via getElementById{% endcomment %}
+<script type="application/json" id="doctrine-country-data">{{ site.data.countries | jsonify }}</script>
+
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-<script>
-window.DOCTRINE_DATA = {{ site.data.countries | jsonify }};
-</script>
-
-<script src="/assets/js/map.js?v=4"></script>
+<script src="/assets/js/map-v5.js"></script>
