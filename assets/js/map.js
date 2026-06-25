@@ -34,13 +34,7 @@ layout: null
      Map data — injected by Jekyll from _data/map.yml
      In production, Jekyll compiles this to a JS-accessible array.
      ------------------------------------------------------------------------- */
-  var MAP_DATA_RAW = '{{ site.data.map | jsonify }}';
-  var mapData;
-  try {
-    mapData = JSON.parse(MAP_DATA_RAW);
-  } catch (e) {
-    mapData = [];
-  }
+  var mapData = {{ site.data.map | jsonify }};
 
   // Build lookup by ISO code
   var countryIndex = {};
