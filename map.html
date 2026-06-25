@@ -3,8 +3,6 @@ layout: default
 title: "The Map"
 section_label: "Section II"
 body_class: page-map
-extra_js:
-  - /assets/js/map.js
 ---
 
 <header class="section-header">
@@ -57,3 +55,9 @@ extra_js:
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+window.DOCTRINE_DATA = {{ site.data.countries | jsonify }};
+</script>
+
+<script src="/assets/js/map.js?v=4"></script>

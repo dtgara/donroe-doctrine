@@ -1,14 +1,10 @@
 /* =============================================================================
    THE DONROE DOCTRINE — Interactive World Map
-   Built with Leaflet.js. Country data from _data/map.yml (compiled to JSON by Jekyll).
    ========================================================================== */
 
 (function () {
   'use strict';
 
-  /* ---------------------------------------------------------------------------
-     Status colour mapping
-     ------------------------------------------------------------------------- */
   var STATUS_COLORS = {
     'ALLY_PROVISIONAL': '#2E7D32',
     'ADVERSARY':        '#C0392B',
@@ -28,11 +24,18 @@
   };
 
   /* ---------------------------------------------------------------------------
-     Map data — injected by Jekyll from _data/map.yml
-     In production, Jekyll compiles this to a JS-accessible array.
+     Build countryIndex from data injected by Jekyll into the page
+     window.DOCTRINE_DATA = array from _data/countries.yml
      ------------------------------------------------------------------------- */
-  // Country data and GeoJSON are both loaded via fetch below
   var countryIndex = {};
+
+  if (window.DOCTRINE_DATA && Array.isArray(window.DOCTRINE_DATA)) {
+    window.DOCTRINE_DATA.forEach(function (entry) {
+      if (entry.code) {
+        countryIndex[entry.code.toUpperCase()] = entry;
+      }
+    });
+  }
 
   /* ---------------------------------------------------------------------------
      Initialise Leaflet map
@@ -52,7 +55,6 @@
     maxBoundsViscosity: 1.0
   });
 
-  // Neutral tile layer — muted, editorial
   L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
     subdomains: 'abcd',
@@ -81,30 +83,40 @@
 
   if (closeBtn) closeBtn.addEventListener('click', closePanel);
 
+  function escHtml(str) {
+    if (!str) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
   function buildPanelHTML(d) {
     var status      = d.status || 'IGNORED';
     var color       = STATUS_COLORS[status] || STATUS_COLORS['IGNORED'];
     var statusLabel = STATUS_LABELS[status] || status;
     var html = '';
 
-    html += '<h2 class="country-panel-name">' + escHtml(d.country) + '</h2>';
+    // d.name is the country name field in countries.yml
+    html += '<h2 class="country-panel-name">' + escHtml(d.name || d.country || '') + '</h2>';
     html += '<span class="country-panel-status" style="background:' + color + ';">' + escHtml(statusLabel) + '</span>';
 
     if (d.descriptor) {
       html += '<p class="country-panel-descriptor">' + escHtml(d.descriptor) + '</p>';
     }
 
-    if (d.last_incident_date) {
-      html += '<p class="country-panel-incident-date">Most recent incident: ' + escHtml(d.last_incident_date) + '</p>';
+    if (d.last_updated) {
+      html += '<p class="country-panel-incident-date">Last updated: ' + escHtml(d.last_updated) + '</p>';
     }
 
-    if (d.last_incident) {
-      html += '<p class="country-panel-incident">' + escHtml(d.last_incident) + '</p>';
+    // d.latest_incident is the field name in countries.yml
+    if (d.latest_incident) {
+      html += '<p class="country-panel-incident">' + escHtml(d.latest_incident) + '</p>';
     } else if (status === 'IGNORED') {
       html += '<p class="country-panel-incident" style="color:var(--color-light-grey);font-style:italic;">No documented foreign policy incident to date. This is accurate.</p>';
     }
 
-    // Canada — annexation progress bar
     if (d.code === 'CA' && typeof d.annexation_progress !== 'undefined') {
       html += '<div class="annexation-bar">';
       html += '<div class="annexation-bar-label"><span>Annexation Progress</span><span>' + d.annexation_progress + '%</span></div>';
@@ -112,7 +124,6 @@
       html += '</div>';
     }
 
-    // Greenland — purchase status
     if (d.code === 'GL' && d.purchase_status) {
       html += '<div style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--color-border);">';
       html += '<p style="font-family:var(--font-ui);font-size:var(--text-xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-light-grey);margin-bottom:0.3rem;">Purchase Offer Status</p>';
@@ -123,94 +134,78 @@
     return html;
   }
 
-  function escHtml(str) {
-    if (!str) return '';
-    return String(str)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;');
+  /* ---------------------------------------------------------------------------
+     Style and interaction for GeoJSON features
+     ------------------------------------------------------------------------- */
+  function getCode(feature) {
+    return (feature.properties.ISO_A2 || feature.properties.iso_a2 || '').toUpperCase();
   }
 
-  /* ---------------------------------------------------------------------------
-     Load GeoJSON and colour countries
-     ------------------------------------------------------------------------- */
-  var geojsonUrl = 'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson';
-
   function styleFeature(feature) {
-    var code  = (feature.properties.ISO_A2 || feature.properties.iso_a2 || '').toUpperCase();
-    var entry = countryIndex[code];
+    var code   = getCode(feature);
+    var entry  = countryIndex[code];
     var status = entry ? (entry.status || 'IGNORED') : 'IGNORED';
-    var color = STATUS_COLORS[status] || STATUS_COLORS['IGNORED'];
+    var color  = STATUS_COLORS[status] || STATUS_COLORS['IGNORED'];
 
     return {
       fillColor:   color,
-      fillOpacity: status === 'IGNORED' ? 0.25 : 0.85,
+      fillOpacity: status === 'IGNORED' ? 0.3 : 0.85,
       color:       '#ffffff',
       weight:      0.5,
       opacity:     0.8
     };
   }
 
+  var geolayer;
+
   function onEachFeature(feature, layer) {
     layer.on({
       click: function (e) {
         L.DomEvent.stopPropagation(e);
-        var code  = (feature.properties.ISO_A2 || feature.properties.iso_a2 || '').toUpperCase();
+        var code  = getCode(feature);
         var entry = countryIndex[code];
         var name  = feature.properties.ADMIN || feature.properties.name || code;
 
         if (entry) {
           openPanel(entry);
         } else {
-          openPanel({ country: name, code: code, status: 'IGNORED' });
+          openPanel({ name: name, code: code, status: 'IGNORED' });
         }
       },
       mouseover: function (e) {
-        var layer = e.target;
-        var code = (feature.properties.ISO_A2 || feature.properties.iso_a2 || '').toUpperCase();
+        var lyr   = e.target;
+        var code  = getCode(feature);
         var entry = countryIndex[code];
         var status = entry ? (entry.status || 'IGNORED') : 'IGNORED';
-        if (status !== 'IGNORED') {
-          layer.setStyle({ fillOpacity: 0.95, weight: 1.5 });
-        } else {
-          layer.setStyle({ fillOpacity: 0.4 });
-        }
-        layer.bringToFront();
+        lyr.setStyle({
+          fillOpacity: status === 'IGNORED' ? 0.45 : 0.95,
+          weight: 1.5
+        });
+        lyr.bringToFront();
       },
       mouseout: function (e) {
-        geolayer.resetStyle(e.target);
+        if (geolayer) geolayer.resetStyle(e.target);
       }
     });
   }
 
-  var geolayer;
-  var countryDataUrl = '/assets/data/countries.json';
+  /* ---------------------------------------------------------------------------
+     Load GeoJSON and render — country data already in countryIndex
+     ------------------------------------------------------------------------- */
+  var geojsonUrl = 'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson';
 
-  Promise.all([
-    fetch(countryDataUrl).then(function(r) { return r.json(); }),
-    fetch(geojsonUrl).then(function(r) { return r.json(); })
-  ]).then(function(results) {
-    var countryData = results[0];
-    var geoData = results[1];
+  fetch(geojsonUrl)
+    .then(function (r) { return r.json(); })
+    .then(function (geoData) {
+      geolayer = L.geoJSON(geoData, {
+        style: styleFeature,
+        onEachFeature: onEachFeature
+      }).addTo(map);
+    })
+    .catch(function (err) {
+      console.warn('Doctrine Map: failed to load GeoJSON.', err);
+    });
 
-    // Build lookup index from country data
-    if (Array.isArray(countryData)) {
-      countryData.forEach(function(entry) {
-        if (entry.code) countryIndex[entry.code.toUpperCase()] = entry;
-      });
-    }
-
-    // Render GeoJSON with country data now available
-    geolayer = L.geoJSON(geoData, {
-      style: styleFeature,
-      onEachFeature: onEachFeature
-    }).addTo(map);
-  }).catch(function(err) {
-    console.warn('Doctrine Map: failed to load data.', err);
-  });
-
-  // Close panel on map click
   map.on('click', function () { closePanel(); });
 
 })();
