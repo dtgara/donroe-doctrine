@@ -227,3 +227,437 @@
   doctrine_rating: 9
   status: ACTIVE
   outcome: "Investment pledges announced. Arms packages confirmed. Strategic partnership deepened. A Trump-branded golf course development in Saudi Arabia was separately noted by ethics observers. The observation was not acted upon."
+
+- id: paris-accord-withdrawal
+  title: "The Paris Climate Exit"
+  strapline: "The United States withdraws from the Paris Climate Agreement. Re-enters under Biden. Withdraws again under Trump. The climate has continued regardless."
+  date: 2017-06-01
+  term: 1
+  type: Alliance
+  terms_and_conditions: >
+    The United States hereby withdraws from the Paris Agreement on Climate Change,
+    concluded in 2015 and ratified by 196 parties. The agreement is described as
+    unfair to the United States. The United States re-enters in 2021 under the Biden
+    administration. The United States withdraws again in 2025. This is the second
+    withdrawal from the same agreement. A record has been established.
+  doctrine_rating: 8
+  status: ACTIVE
+  outcome: "Second withdrawal effective. The agreement continues without US participation. Global temperatures have not paused pending resolution of the dispute."
+
+- id: tpp-withdrawal
+  title: "The Trans-Pacific Partnership Exit"
+  strapline: "The US withdraws from the TPP on Day 3 of the first term. Eleven remaining parties conclude the agreement without the US. The US later expresses interest in rejoining on better terms."
+  date: 2017-01-23
+  term: 1
+  type: Trade
+  terms_and_conditions: >
+    Three days into the first term, the United States withdraws from the Trans-Pacific
+    Partnership, a trade agreement covering 12 nations and 40 percent of the global
+    economy. The agreement is described as a disaster. The remaining 11 parties
+    conclude their own version, the CPTPP, and it enters into force. The United States
+    is not in it. The United States has not rejoined. The absence is described as
+    a matter of principle.
+  doctrine_rating: 7
+  status: COMPLETED
+  outcome: "CPTPP entered into force without the US. The 11 remaining parties proceeded. US trade with the region continues via bilateral arrangements. The bilateral arrangements are described as better."
+
+- id: who-withdrawal
+  title: "The WHO Departure (First and Second)"
+  strapline: "The US withdraws from the World Health Organisation in 2020. Rejoins in 2021. Withdraws again in 2025. The WHO has noted the pattern."
+  date: 2020-07-07
+  term: 1
+  type: Alliance
+  terms_and_conditions: >
+    The United States withdraws from the World Health Organisation with effect from
+    July 2021, citing mismanagement and China's influence over the organisation.
+    The withdrawal is reversed by the incoming Biden administration. A second withdrawal
+    is executed in January 2025 on Day 1 of the second term. Withdrawal paperwork is
+    signed before the inaugural address is delivered. Priorities are noted.
+  doctrine_rating: 6
+  status: ACTIVE
+  outcome: "Second withdrawal processed. The WHO continues to function. US financial contributions ceased. The gap is being filled by other member states. The arrangement is described as very unfair to America."
+
+- id: nato-spending-ultimatum
+  title: "The NATO 2% Ultimatum"
+  strapline: "NATO allies told to pay 2% of GDP on defence or the US will not protect them. Several allies increase spending. The statement is described as a negotiating tactic. Also as policy. Both simultaneously."
+  date: 2018-07-11
+  term: 1
+  type: Alliance
+  terms_and_conditions: >
+    The United States hereby informs NATO member states that failure to meet the
+    2 percent of GDP defence spending target will result in the United States
+    declining to provide security guarantees. The statement is made at a NATO summit.
+    Several allies increase spending. The President declares victory. The 2 percent
+    target is subsequently revised upward to 5 percent in Term 2. The bar has moved.
+  doctrine_rating: 8
+  status: ACTIVE
+  outcome: "NATO defence spending increased among most members. The 5% target announced in Term 2. Several allies are working toward the new figure. The old figure is no longer sufficient. This was not communicated in advance."
+
+- id: iran-2025-negotiations
+  title: "The Iran Nuclear Talks (Ongoing)"
+  strapline: "Maximum pressure reapplied. Talks offered. Talks rejected. Talks accepted. Framework discussed. Deadline set. Deadline extended. Deadline reset. Iran enriches uranium throughout."
+  date: 2025-02-01
+  term: 2
+  type: Alliance
+  terms_and_conditions: >
+    Having withdrawn from the JCPOA in Term 1 and reimposed sanctions, the United
+    States opens a new channel for negotiations with Iran. A deadline for agreement
+    is set for May 2025. The deadline passes. A new deadline is set. Iran attends
+    talks in Oman. A framework is discussed. Iran's enrichment capacity is described
+    as a problem. The problem continues during the talks. The talks continue during
+    the problem. The situation is described as moving in a positive direction.
+  doctrine_rating: 6
+  status: ACTIVE
+  outcome: "Negotiations ongoing as of publication. Multiple rounds of talks conducted through Oman. No binding framework reached. Iran continues enriching. The US continues threatening. The arrangement is described as a deal being made."
+
+- id: south-korea-defense-cost
+  title: "The South Korea Defence Bill"
+  strapline: "South Korea asked to pay significantly more for the presence of 28,500 US troops. A new cost-sharing agreement eventually reached. The troops remain. So does the negotiation."
+  date: 2019-02-10
+  term: 1
+  type: Alliance
+  terms_and_conditions: >
+    The United States informs the Republic of Korea that existing cost-sharing
+    arrangements for US Forces Korea are inadequate. A substantial increase is requested.
+    South Korea declines the initial figure. Negotiations extend across multiple years
+    and both Trump administrations. An agreement is eventually reached. The terms are
+    described as much better. The previous terms are described as terrible. South Korea
+    describes the process as difficult.
+  doctrine_rating: 6
+  status: ACTIVE
+  outcome: "Cost-sharing agreement updated. South Korea pays more. The figure is less than initially requested. The troops remain. The process is expected to repeat."
+
+- id: tiktok-deal-i
+  title: "The TikTok Arrangement (First Attempt)"
+  strapline: "TikTok given 90 days to sell or be banned. Oracle and Walmart selected as buyers. Deal announced. Deal not completed. Trump leaves office. Deal paused."
+  date: 2020-08-06
+  term: 1
+  type: Trade
+  terms_and_conditions: >
+    ByteDance is ordered to divest TikTok's US operations within 90 days or face
+    a ban. Oracle and Walmart are identified as preferred acquirers. A deal structure
+    is announced involving a new entity, TikTok Global. The deal is described as
+    great for America. The deal is not completed before the end of the term. The
+    Biden administration reviews the situation. The situation is not resolved. TikTok
+    continues operating.
+  doctrine_rating: 5
+  status: UNRESOLVED
+  outcome: "Sale not completed in Term 1. Ban legislation passed by Congress in 2024. TikTok briefly went dark on January 19, 2025. Service restored January 20, 2025 — inauguration day. The timing is a coincidence."
+
+- id: tiktok-deal-ii
+  title: "The TikTok Arrangement (Revised)"
+  strapline: "TikTok restored on inauguration day. A new 90-day extension granted. Then another. The ban law remains on the books. TikTok operates. The deal is described as imminent."
+  date: 2025-01-20
+  term: 2
+  type: Trade
+  terms_and_conditions: >
+    Upon taking office, the President directs the Justice Department not to enforce
+    the TikTok ban for 90 days, pending a deal. The 90-day period expires. A further
+    extension is granted. The preferred structure involves a 50 percent US ownership
+    stake. Various buyers are discussed. The deal is described as coming together
+    very well. It has not yet come together. TikTok operates throughout.
+  doctrine_rating: 5
+  status: ACTIVE
+  outcome: "Multiple extensions granted. Deal structure debated. No sale completed as of publication. TikTok remains operational. The ban law remains on the books. All parties describe a deal as close."
+
+- id: colombia-deportation-deal
+  title: "The Colombia Arrangement"
+  strapline: "Colombia refuses US military deportation flights. Tariffs threatened within hours. Colombia accepts the flights. Tariffs suspended within hours. A case study in the doctrine in action."
+  date: 2025-01-26
+  term: 2
+  type: Alliance
+  terms_and_conditions: >
+    Colombia declines to accept US military aircraft carrying deported Colombian
+    nationals. The United States responds within hours with a schedule of tariffs:
+    25 percent immediately, rising to 50 percent within a week, plus visa restrictions
+    and Treasury Department sanctions. Colombia accepts the deportation flights.
+    The threatened tariffs are suspended. The entire sequence occurs within 24 hours.
+    It is presented as a deal. It functions as a deal. It is the doctrine operating
+    at full speed.
+  doctrine_rating: 9
+  status: COMPLETED
+  outcome: "Flights accepted. Tariffs not applied. Relationship normalised at a new equilibrium in which Colombia's cooperation is no longer assumed but priced."
+
+- id: el-salvador-prison-deal
+  title: "The El Salvador Prison Partnership"
+  strapline: "The US pays El Salvador to house deported migrants in its prison system. President Bukele's mass incarceration policies praised. The arrangement is described as innovative."
+  date: 2025-03-15
+  term: 2
+  type: Alliance
+  terms_and_conditions: >
+    The United States and El Salvador conclude an arrangement whereby El Salvador
+    agrees to receive and detain individuals deported from the United States, including
+    persons whose deportation is contested in US courts. El Salvador receives financial
+    compensation. President Nayib Bukele's CECOT megaprison is used for this purpose.
+    Bukele's broader approach to criminal justice is described as what we should be
+    doing. A legal challenge in US courts has noted concerns. The arrangement continues.
+  doctrine_rating: 8
+  status: ACTIVE
+  outcome: "Deportees housed in El Salvador. Several cases challenged in US courts. The Supreme Court has weighed in on process questions. The administration describes the legal challenges as obstruction."
+
+- id: qatar-747-arrangement
+  title: "The Qatari Aircraft Gift"
+  strapline: "Qatar offers a luxury Boeing 747-8 as a gift to the United States. The plane is to serve as Air Force One. Ethics concerns are raised. The plane is accepted."
+  date: 2025-05-11
+  term: 2
+  type: Alliance
+  terms_and_conditions: >
+    The State of Qatar offers a Boeing 747-8 jumbo jet, valued at approximately
+    $400 million, as a gift to the United States government for use as a presidential
+    aircraft. The offer is accepted. The Pentagon is designated as the recipient.
+    Ethics lawyers note that accepting gifts from foreign governments is constrained
+    by the Constitution's Emoluments Clause. This constraint is described as not
+    applicable. The plane is described as very nice. Qatar hosts the largest US
+    military base in the Middle East. These facts are presented separately.
+  doctrine_rating: 7
+  status: ACTIVE
+  outcome: "Plane accepted. Ethics review ongoing. Legal challenges filed. The aircraft requires modification before presidential use. The modification timeline is described as fast."
+
+- id: houthi-ceasefire
+  title: "The Yemen Ceasefire Announcement"
+  strapline: "US strikes against Houthi targets suspended after the Houthis agree to stop attacking US ships. The Houthis continue attacking other ships. The deal is described as done."
+  date: 2025-05-06
+  term: 2
+  type: Alliance
+  terms_and_conditions: >
+    The United States and the Houthi movement of Yemen conclude an informal
+    ceasefire arrangement under which the United States agrees to halt strikes
+    against Houthi targets in Yemen. The Houthis agree to halt attacks on US
+    naval vessels in the Red Sea. Attacks on vessels of other nationalities
+    are not addressed by the arrangement. The arrangement is described as a deal.
+    It is announced via social media. The Houthis confirm it. Several
+    US allies express surprise.
+  doctrine_rating: 5
+  status: ACTIVE
+  outcome: "US strikes halted. Houthi attacks on non-US shipping continue. Saudi Arabia and the UAE, not consulted, note the development. Israel, also not consulted, notes the development. The situation is described as resolved."
+
+- id: uk-trade-framework
+  title: "The UK Trade Framework"
+  strapline: "A trade deal framework announced with the United Kingdom. Not a full trade deal. The framework for a deal. The announcement is treated as the deal. Details to follow."
+  date: 2025-05-08
+  term: 2
+  type: Trade
+  terms_and_conditions: >
+    The United States and the United Kingdom announce a trade deal framework.
+    The framework is not a trade agreement. The framework describes the shape
+    of a potential trade agreement to be negotiated. The UK's 10 percent tariff
+    remains in place. The UK retains some agricultural standards that may affect
+    final terms. The special relationship is described as special. The announcement
+    is celebrated. The actual agreement will take longer. This is not mentioned
+    prominently.
+  doctrine_rating: 6
+  status: ACTIVE
+  outcome: "Framework announced May 8, 2025. Full agreement not yet concluded. Tariffs remain. Both sides describe progress. The progress is real. The deal is not yet."
+
+- id: geneva-china-talks
+  title: "The Geneva De-escalation"
+  strapline: "US and China meet in Geneva. Tariffs reduced from 145% to 30% for 90 days. Described as a great deal. The tariffs were set at 145% six weeks earlier. Context is noted."
+  date: 2025-05-12
+  term: 2
+  type: Trade
+  terms_and_conditions: >
+    Following the escalation of tariffs to 145 percent on Chinese goods in April 2025,
+    negotiators from the United States and the People's Republic of China meet in Geneva.
+    An agreement is reached to reduce tariffs to 30 percent for a 90-day period.
+    The 90-day pause mirrors the pause announced for other countries in April.
+    China reduces its retaliatory tariffs on US goods. The outcome is described
+    as a great deal. The tariffs remain at 30 percent. 30 percent is higher than
+    the pre-Liberation Day rate. This is not the headline.
+  doctrine_rating: 7
+  status: ACTIVE
+  outcome: "Tariffs reduced to 30% for 90 days. Talks to continue. Phase Two discussions beginning. The 90-day period is expected to produce either a deal or a new escalation. Previous 90-day periods are instructive."
+
+- id: gulf-of-america
+  title: "The Gulf of Mexico Renaming"
+  strapline: "The Gulf of Mexico renamed the Gulf of America by executive order. Mexico disagrees. The United Nations has not updated its maps. Google Maps updated for US users. The gulf itself has not commented."
+  date: 2025-01-20
+  term: 2
+  type: Miscellaneous
+  terms_and_conditions: >
+    By executive order dated January 20, 2025, the body of water known internationally
+    as the Gulf of Mexico is hereby renamed the Gulf of America for purposes of
+    United States federal government usage. The renaming is effective immediately.
+    Mexico has not agreed to the renaming. Mexico continues to call it the Gulf of Mexico.
+    International bodies continue to use the prior designation. The renaming is described
+    as long overdue. The rationale for its overdue nature has not been specified.
+  doctrine_rating: 6
+  status: ACTIVE
+  outcome: "Federal agencies use Gulf of America. Google Maps updated the name for users in the United States. International maps have not changed. The water remains in the same location."
+
+- id: nippon-steel-block
+  title: "The Nippon Steel Veto"
+  strapline: "Nippon Steel's $14.9 billion acquisition of US Steel blocked on national security grounds. US Steel's future remains uncertain. The blocking is described as protecting American workers."
+  date: 2025-01-03
+  term: 2
+  type: Trade
+  terms_and_conditions: >
+    The proposed acquisition of United States Steel Corporation by Nippon Steel
+    Corporation of Japan, a US treaty ally, is blocked by presidential order on
+    national security grounds. The acquisition was reviewed by CFIUS and found
+    to present national security concerns. Japan's government objects. The United
+    Steelworkers union supports the block. US Steel's operational future is subject
+    to ongoing review. The blocking is presented as a deal for American workers.
+    No alternative acquirer has been identified.
+  doctrine_rating: 7
+  status: COMPLETED
+  outcome: "Acquisition blocked. Nippon Steel pursuing legal challenge. US Steel's future uncertain. No US buyer has emerged. The steelworkers' union's position on the outcome has evolved."
+
+- id: trump-tower-baku
+  title: "The Greenland Purchase Offer (Formal)"
+  strapline: "Trump formally offers to purchase Greenland. Price not specified. Payment method not specified. Denmark not consulted in advance. The offer is described as serious."
+  date: 2025-03-28
+  term: 2
+  type: Territorial
+  terms_and_conditions: >
+    The United States makes a formal offer to purchase Greenland from the Kingdom of
+    Denmark, following up on the informal offer of Term 1. The purchase price is not
+    disclosed. The method of transfer is not specified. Danish consent is presumed
+    obtainable. Greenland's own government has called for independence from Denmark,
+    which the United States describes as consistent with US goals. That Greenland's
+    independence and US purchase are different outcomes is a distinction the offer
+    does not address.
+  doctrine_rating: 9
+  status: ACTIVE
+  outcome: "Denmark has not accepted. Greenland's government has not accepted. The offer remains open. The offer is described as the most generous territorial offer in modern history by the offering party."
+
+- id: nato-article-5-ambiguity
+  title: "The Article 5 Clarification"
+  strapline: "The President declines to confirm whether the US would defend NATO allies who haven't met spending targets. The clarification is described as a negotiating position. Allies describe it as something else."
+  date: 2024-02-10
+  term: 1
+  type: Alliance
+  terms_and_conditions: >
+    At a campaign rally, the President states that he would not protect NATO allies
+    who fail to meet defence spending targets and would in fact encourage Russia to
+    do whatever it wanted with them. This statement is subsequently described as
+    a negotiating tactic. NATO's Article 5 mutual defence commitment is not formally
+    withdrawn. Its unconditional nature is, however, described as conditional.
+    Allies note the distinction. The distinction is significant. NATO spending
+    increases.
+  doctrine_rating: 8
+  status: ACTIVE
+  outcome: "NATO spending increased among members. Article 5 not formally amended. The ambiguity remains as policy. Russia has cited the statement. The citation is described as a mischaracterisation."
+
+- id: india-tariff-standoff
+  title: "The India Tariff Situation"
+  strapline: "India described as a very big abuser of tariffs. 26% Liberation Day tariff applied. Modi relationship described as great. The tariff is described as reciprocal. India's actual tariff on US goods differs from the calculation used."
+  date: 2025-04-02
+  term: 2
+  type: Trade
+  terms_and_conditions: >
+    The United States applies a 26 percent tariff to Indian goods as part of the
+    Liberation Day framework, citing India's high tariff rates on US products.
+    The reciprocal tariff calculation divides the US trade deficit with India by
+    total imports and applies 50 percent of the result. This methodology produces
+    the 26 percent figure. India's actual average tariff on US goods is different.
+    Prime Minister Modi's relationship with the President is described as excellent.
+    The tariff applies regardless of the relationship.
+  doctrine_rating: 6
+  status: ACTIVE
+  outcome: "Tariff applied. India seeking negotiated reduction. Talks ongoing. Modi visit to Washington discussed. Golf has been played previously by both parties. The tariff has not been waived for golf."
+
+- id: mexico-wall-final-accounting
+  title: "The Wall Payment Resolution"
+  strapline: "Mexico was going to pay for the wall. Mexico has not paid for the wall. US taxpayers have paid for portions of the wall. The arrangement is described as complicated."
+  date: 2017-01-25
+  term: 1
+  type: Miscellaneous
+  terms_and_conditions: >
+    Mexico is to pay for the construction of a wall along the United States–Mexico
+    border. This commitment is made repeatedly and with certainty. Mexico declines
+    to pay. Various mechanisms are proposed: tariffs on Mexican goods (indirect payment),
+    remittance taxes (also not implemented), seizure of drug cartel assets. Congress
+    appropriates US funds for partial construction. Emergency declarations are used
+    to redirect military construction funds. Mexico has paid nothing. The wall is
+    partially built.
+  doctrine_rating: 7
+  status: UNRESOLVED
+  outcome: "Several hundred miles of barrier constructed or replaced using US funds. Mexico has not paid. The payment mechanism remains theoretical. The wall is real, partially. The payment is not, entirely."
+
+- id: russia-ukraine-ceasefire-attempt
+  title: "The Ukraine Peace Process (Ongoing)"
+  strapline: "The war to be ended in 24 hours. Then in the first term. Then very quickly. A ceasefire remains 24 hours away on a rolling basis. Progress is described as being made."
+  date: 2025-02-12
+  term: 2
+  type: Alliance
+  terms_and_conditions: >
+    The President commits to ending the Russia–Ukraine war quickly. The precise timeline
+    has been revised on multiple occasions. Envoy Keith Kellogg is appointed.
+    President Zelensky visits Washington and is publicly dressed down regarding
+    his negotiating position. Aid is paused. A minerals agreement is signed.
+    Russia's demands are characterised as reasonable by some administration officials
+    and unreasonable by others. Ukraine's territory remains partially occupied.
+    A ceasefire is described as imminent at regular intervals.
+  doctrine_rating: 5
+  status: ACTIVE
+  outcome: "No ceasefire as of publication. Ukraine retains most of its pre-2022 territory. Russia retains occupied territory. Talks continue. The 24-hour timeline has been superseded by events but not formally revised."
+
+- id: venezuela-guaido-recognition
+  title: "The Venezuela Transition Arrangement"
+  strapline: "Juan Guaidó recognised as Venezuela's legitimate president. Maduro remains in power. Guaidó is no longer recognised by anyone. Maduro remains in power."
+  date: 2019-01-23
+  term: 1
+  type: Alliance
+  terms_and_conditions: >
+    The United States recognises National Assembly leader Juan Guaidó as the
+    legitimate interim president of Venezuela, refusing to acknowledge the Maduro
+    government. 50-plus countries follow. Maduro retains control of the military,
+    the state apparatus, and the country. A military uprising on April 30, 2019,
+    does not succeed. Guaidó's recognition is gradually withdrawn by other countries.
+    The US position evolves. Maduro remains. Sanctions continue.
+  doctrine_rating: 4
+  status: COMPLETED
+  outcome: "Maduro remains in power. Guaidó recognition withdrawn by most countries. Guaidó lives in exile. Sanctions on Venezuela maintained. The arrangement is described as having applied maximum pressure. The pressure did not transfer power."
+
+- id: syria-sanctions-relief
+  title: "The Syria Sanctions Lift"
+  strapline: "Sanctions on Syria lifted following the fall of Assad. The new government is given a chance. The chance is time-limited. Progress is expected. The bar for progress has not been specified."
+  date: 2025-03-01
+  term: 2
+  type: Alliance
+  terms_and_conditions: >
+    Following the fall of Bashar al-Assad in December 2024 and the assumption of
+    power by HTS-led transitional authorities, the United States agrees to lift
+    sanctions on Syria. The decision is described as giving Syria a chance. Conditions
+    for maintained sanctions relief include the formation of an inclusive government,
+    protection of minorities, and counterterrorism commitments. HTS itself remains
+    designated as a terrorist organisation. The sanctions are lifted regardless.
+    The designation question is under review.
+  doctrine_rating: 6
+  status: ACTIVE
+  outcome: "Sanctions lifted. US diplomats in Damascus. HTS designation under review. The new Syrian government has engaged with US envoys. The situation is described as an opportunity. The outcome remains to be determined."
+
+- id: eu-tariff-negotiations
+  title: "The EU Tariff Standoff"
+  strapline: "The European Union told it has been ripping off the United States for years. 20% tariff applied. Retaliatory measures threatened. Negotiations opened. The negotiations are taking longer than the tariffs."
+  date: 2025-04-02
+  term: 2
+  type: Trade
+  terms_and_conditions: >
+    The European Union is subject to a 20 percent Liberation Day tariff on the basis
+    that it has maintained unfair trade practices against the United States. The EU
+    responds with a list of retaliatory tariffs, then pauses the list pending talks.
+    The US pauses the 20 percent tariff for 90 days for most EU goods while maintaining
+    the baseline 10 percent. Negotiations begin. The EU insists on a zero-tariff
+    outcome. The US insists on a revised trading relationship. The gap between these
+    positions is described as bridgeable.
+  doctrine_rating: 7
+  status: ACTIVE
+  outcome: "Talks ongoing. 90-day pause in effect. EU retaliatory list suspended but not withdrawn. Both sides describe willingness to do a deal. A deal has not been done. The 90-day clock is running."
+
+- id: imf-world-bank-review
+  title: "The Multilateral Institution Review"
+  strapline: "The IMF and World Bank described as instruments of globalisation not serving American interests. A review ordered. The institutions continue to function. The review continues."
+  date: 2025-02-20
+  term: 2
+  type: Miscellaneous
+  terms_and_conditions: >
+    The administration orders a review of US participation in and funding for
+    multilateral financial institutions including the IMF and World Bank. The
+    institutions are described as not aligned with America First principles.
+    The review is ongoing. US funding continues during the review. The review
+    has not produced formal recommendations as of publication. The institutions
+    describe the review as a matter for the member state to determine.
+  doctrine_rating: 4
+  status: ACTIVE
+  outcome: "Review ongoing. No withdrawal announced. Funding under scrutiny. The institutions continue operating. The outcome of the review is expected to produce leverage. Leverage over multilateral institutions is a complex instrument."
