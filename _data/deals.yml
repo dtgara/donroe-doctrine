@@ -1,4 +1,78 @@
-# Deal of the Week data
-# Schema: id, title, strapline, date, term, type (Territorial|Trade|Alliance|Miscellaneous),
-#         body_file, terms_and_conditions
-# Populated from Day 6 onwards per sprint plan.
+- id: greenland-i
+  title: "The Greenland Acquisition (First Offer)"
+  strapline: "An opening bid on an autonomous Danish territory. Denmark described the proposal as absurd. The proposal was not withdrawn."
+  date: 2019-08-18
+  term: 1
+  type: Territorial
+  terms_and_conditions: >
+    The United States of America hereby expresses interest in purchasing Greenland
+    from the Kingdom of Denmark. Price to be determined. Strategic value: considerable.
+    Ice: abundant. Danish consent: pending. The word absurd is noted and disregarded.
+  doctrine_rating: 8
+  status: UNRESOLVED
+  outcome: "Denmark declined. The Prime Minister called the idea absurd. The US cancelled a scheduled state visit in response. Greenland remains Danish. For now."
+
+- id: greenland-ii
+  title: "The Greenland Acquisition (Renewed Mandate)"
+  strapline: "A second offer on the same territory. Military options not ruled out. Denmark's position unchanged. Ours neither."
+  date: 2025-01-07
+  term: 2
+  type: Territorial
+  terms_and_conditions: >
+    The United States reaffirms its interest in Greenland. The previous offer stands,
+    adjusted for inflation and urgency. Control of Greenland is described as an absolute
+    necessity for national security. The method of acquisition remains open. All options
+    are on the table. The table is large.
+  doctrine_rating: 9
+  status: ACTIVE
+  outcome: "Denmark and Greenland have again declined. The US has not accepted the decline. Greenland's Prime Minister called for self-determination. The US considers this a promising development."
+
+- id: canada-51st-state
+  title: "The Canadian Annexation"
+  strapline: "Canada offered the opportunity to become the 51st State. The Prime Minister referred to as Governor. Economic pressure applied via 25% tariffs. Canada has not yet accepted."
+  date: 2025-01-09
+  term: 2
+  type: Territorial
+  terms_and_conditions: >
+    The United States proposes that Canada voluntarily dissolve its national sovereignty
+    and accede to the union as the fifty-first state. Benefits include access to the
+    US market, which Canada already has. Risks include the elimination of Canada as
+    a concept. The transition would be accomplished through economic means. The word
+    invasion has not been used by us. Others have used it. We note this without comment.
+  doctrine_rating: 7
+  status: ACTIVE
+  outcome: "Canada has not accepted. The Liberal Party lost the election. The Conservative government has also not accepted. Tariffs remain. The Governor title has not been formally adopted."
+
+- id: panama-canal-reclamation
+  title: "The Panama Canal Reclamation"
+  strapline: "The United States demands the return of the Panama Canal. Panama has declined. The canal was described as being run by China. It is not run by China."
+  date: 2025-01-21
+  term: 2
+  type: Territorial
+  terms_and_conditions: >
+    The United States hereby demands the return of the Panama Canal, ceded under
+    the Torrijos–Carter Treaties of 1977. The canal is described as vital to national
+    security and currently operated by China. Panama operates the canal. A Chinese
+    company holds a port concession at either end. These are presented as equivalent.
+    Panama is advised to return the canal. The mechanism of return is unspecified.
+    All options remain available.
+  doctrine_rating: 6
+  status: UNRESOLVED
+  outcome: "Panama has declined to return the canal. Panama's president stated the canal belongs to Panama and will continue to do so. The US has not yet responded to this response."
+
+- id: steel-aluminium-tariffs
+  title: "The Steel and Aluminium Arrangement"
+  strapline: "25% tariffs on all steel and aluminium imports. Friends and allies included. No exceptions provided. The arrangement is described as necessary."
+  date: 2025-03-12
+  term: 2
+  type: Trade
+  terms_and_conditions: >
+    Effective immediately, a tariff of 25 percent is applied to all steel and aluminium
+    imports entering the United States of America, without exception and without
+    exemption. Prior exemptions granted during Term 1 have been reviewed and rescinded.
+    Allies are reminded that the concept of ally is provisional. The European Union,
+    Canada, Mexico, Japan, South Korea, and others have registered objections.
+    The objections are noted. The tariffs remain.
+  doctrine_rating: 7
+  status: ACTIVE
+  outcome: "Tariffs applied globally. Retaliatory measures announced by EU, Canada, and others. US steel industry expresses support. Downstream manufacturers express concern. The concern has not altered the tariff."
