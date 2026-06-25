@@ -50,11 +50,13 @@
   var map = L.map('doctrine-map', {
     center: [20, 10],
     zoom: 2,
-    minZoom: 1,
+    minZoom: 2,
     maxZoom: 6,
     zoomControl: true,
     attributionControl: true,
-    worldCopyJump: true
+    worldCopyJump: false,
+    maxBounds: [[-85, -210], [85, 210]],
+    maxBoundsViscosity: 1.0
   });
 
   // Neutral tile layer — muted, editorial
@@ -150,7 +152,7 @@
 
     return {
       fillColor:   color,
-      fillOpacity: status === 'IGNORED' ? 0.35 : 0.65,
+      fillOpacity: status === 'IGNORED' ? 0.25 : 0.85,
       color:       '#ffffff',
       weight:      0.5,
       opacity:     0.8
@@ -177,9 +179,9 @@
         var entry = countryIndex[code];
         var status = entry ? (entry.status || 'IGNORED') : 'IGNORED';
         if (status !== 'IGNORED') {
-          layer.setStyle({ fillOpacity: 0.85, weight: 1.5 });
+          layer.setStyle({ fillOpacity: 0.95, weight: 1.5 });
         } else {
-          layer.setStyle({ fillOpacity: 0.5 });
+          layer.setStyle({ fillOpacity: 0.4 });
         }
         layer.bringToFront();
       },
