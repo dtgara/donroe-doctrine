@@ -30,7 +30,7 @@ body_class: page-leaderboard
         <tr>
           <td class="rank-number">{{ entry.rank }}</td>
           <td>
-            <strong>{{ entry.country }}</strong>
+            <strong>{{ entry.flag }} {{ entry.country }}</strong>
             {% if entry.trend == 'VOLATILE' %}
               <span class="volatile-badge">Volatile ({{ entry.status_changes }})</span>
             {% endif %}
@@ -68,7 +68,7 @@ body_class: page-leaderboard
         <tr>
           <td class="rank-number">{{ entry.rank }}</td>
           <td>
-            <strong>{{ entry.country }}</strong>
+            <strong>{{ entry.flag }} {{ entry.country }}</strong>
             {% if entry.trend == 'VOLATILE' %}
               <span class="volatile-badge">Volatile ({{ entry.status_changes }})</span>
             {% endif %}
@@ -93,21 +93,36 @@ body_class: page-leaderboard
 
 {% if board.indeterminate and board.indeterminate.size > 0 %}
 <div style="margin-top:2rem;">
-  <h2 style="font-size:var(--text-xl);margin-bottom:1rem;">Indeterminate</h2>
+  <div class="leaderboard-column-title" style="background:var(--color-border);color:var(--color-near-black);">Indeterminate</div>
   <p style="font-size:var(--text-sm);color:var(--color-light-grey);margin-bottom:1rem;">
-    Countries whose status has changed more than twice within a single month.
+    Countries whose relationship status resists classification. The doctrine is ambiguous here, which is itself a position.
   </p>
-  <table class="leaderboard-table" style="max-width:600px;">
+  <table class="leaderboard-table">
     <thead>
-      <tr><th>Country</th><th>Assessment</th><th>Changes</th><th>Last Updated</th></tr>
+      <tr>
+        <th>#</th>
+        <th>Country</th>
+        <th>Assessment</th>
+        <th>Trend</th>
+      </tr>
     </thead>
     <tbody>
       {% for entry in board.indeterminate %}
       <tr>
-        <td><strong>{{ entry.country }}</strong></td>
+        <td class="rank-number">{{ entry.rank }}</td>
+        <td>
+          <strong>{{ entry.flag }} {{ entry.country }}</strong>
+          {% if entry.trend == 'VOLATILE' %}
+            <span class="volatile-badge">Volatile ({{ entry.status_changes }})</span>
+          {% endif %}
+        </td>
         <td style="font-size:var(--text-xs);color:var(--color-mid-grey);">{{ entry.annotation }}</td>
-        <td class="rank-number">{{ entry.status_changes }}</td>
-        <td style="font-family:var(--font-ui);font-size:var(--text-xs);color:var(--color-light-grey);">{{ entry.last_updated }}</td>
+        <td class="trend-indicator">
+          {% if entry.trend == 'RISING' %}&#9650;
+          {% elsif entry.trend == 'FALLING' %}&#9660;
+          {% elsif entry.trend == 'VOLATILE' %}&#11835;
+          {% else %}&mdash;{% endif %}
+        </td>
       </tr>
       {% endfor %}
     </tbody>
