@@ -43,6 +43,7 @@ defaults:
 
 # Plugins
 plugins:
+  - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
 
@@ -54,3 +55,20 @@ exclude:
   - node_modules
   - push_to_github.py
   - vendor/
+
+# SEO & Social
+author:
+  name: "The Donroe Doctrine"
+
+twitter:
+  username: donroedoctrine
+  card: summary_large_image
+
+logo: /assets/images/og-image.png
+
+social:
+  name: "The Donroe Doctrine"
+  links:
+    - https://donroe-doctrine.com
+
+google_analytics: ""
