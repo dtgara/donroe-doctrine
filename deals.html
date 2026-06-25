@@ -12,21 +12,23 @@ body_class: page-deals
 
 <div style="margin-bottom:1.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
   <span style="font-family:var(--font-ui);font-size:var(--text-sm);color:var(--color-light-grey);align-self:center;">Browse by type:</span>
-  <a href="#" class="btn btn-secondary" style="font-size:0.65rem;padding:0.4rem 0.85rem;">All</a>
-  <a href="#" class="btn btn-secondary" style="font-size:0.65rem;padding:0.4rem 0.85rem;">Territorial</a>
-  <a href="#" class="btn btn-secondary" style="font-size:0.65rem;padding:0.4rem 0.85rem;">Trade</a>
-  <a href="#" class="btn btn-secondary" style="font-size:0.65rem;padding:0.4rem 0.85rem;">Alliance</a>
+  <button class="btn btn-secondary deal-filter active" data-filter="all" style="font-size:0.65rem;padding:0.4rem 0.85rem;">All</button>
+  <button class="btn btn-secondary deal-filter" data-filter="Territorial" style="font-size:0.65rem;padding:0.4rem 0.85rem;">Territorial</button>
+  <button class="btn btn-secondary deal-filter" data-filter="Trade" style="font-size:0.65rem;padding:0.4rem 0.85rem;">Trade</button>
+  <button class="btn btn-secondary deal-filter" data-filter="Alliance" style="font-size:0.65rem;padding:0.4rem 0.85rem;">Alliance</button>
+  <button class="btn btn-secondary deal-filter" data-filter="Miscellaneous" style="font-size:0.65rem;padding:0.4rem 0.85rem;">Miscellaneous</button>
 </div>
 
 {% if deals and deals.size > 0 %}
-<div class="card-grid">
+<div class="card-grid" id="deals-grid">
   {% for deal in deals %}
-  <article class="card">
+  <article class="card deal-card" data-type="{{ deal.type }}">
     <p class="card-label">{{ deal.type }} &mdash; Term {{ deal.term }}</p>
     <h2 class="card-title"><a href="{{ '/deals/' | append: deal.id | relative_url }}">{{ deal.title }}</a></h2>
     <p class="card-excerpt">{{ deal.strapline }}</p>
     <div class="card-meta">
       <time>{{ deal.date | date: "%B %-d, %Y" }}</time>
+      <span class="deal-status deal-status--{{ deal.status | downcase | replace: '_', '-' }}">{{ deal.status | replace: '_', ' ' }}</span>
     </div>
   </article>
   {% endfor %}
@@ -36,3 +38,49 @@ body_class: page-deals
   <p>Deals are being formatted for publication. The volume of material is considerable.</p>
 </div>
 {% endif %}
+
+<script>
+(function () {
+  var filters = document.querySelectorAll('.deal-filter');
+  var cards   = document.querySelectorAll('.deal-card');
+
+  filters.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var type = btn.getAttribute('data-filter');
+
+      filters.forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+
+      cards.forEach(function (card) {
+        if (type === 'all' || card.getAttribute('data-type') === type) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+})();
+</script>
+
+<style>
+.deal-filter.active {
+  background: var(--color-near-black, #1a1a1a);
+  color: var(--color-white, #fff);
+  border-color: var(--color-near-black, #1a1a1a);
+}
+.deal-status {
+  font-family: var(--font-ui, monospace);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
+  background: var(--color-border, #e0e0e0);
+  color: var(--color-mid-grey, #666);
+}
+.deal-status--active { background: #e8f5e9; color: #2E7D32; }
+.deal-status--completed { background: #e3f2fd; color: #1565C0; }
+.deal-status--unresolved { background: #fff3e0; color: #E65100; }
+</style>
