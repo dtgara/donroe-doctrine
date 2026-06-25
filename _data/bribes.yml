@@ -1,0 +1,325 @@
+# The Ledger — Bribe Calculator Data
+# Total documented transactions: $4,412,264,422
+# Schema: id, title, giver_name, giver_type, giver_flag, receiver, amount, date, term, category, outcome, confidence, source
+
+- id: wlf-token-sales
+  title: "World Liberty Financial — Public Token Sales"
+  giver_name: "Multiple Investors"
+  giver_type: multiple
+  giver_flag: "🌐"
+  receiver: "World Liberty Financial (Trump Family 75%)"
+  amount: 590000000
+  date: "2024-10"
+  term: 2
+  category: crypto
+  outcome: "Trump family receives 75% of net proceeds (~$442M). Key investors received SEC enforcement relief and foreign policy concessions."
+  confidence: documented
+  source: "CoinDesk, The Block, Reuters"
+
+- id: wlf-sheikh-tahnoon
+  title: "Sheikh Tahnoon — World Liberty Financial Equity Stake"
+  giver_name: "Sheikh Tahnoon bin Zayed Al Nahyan / Aryam Investment"
+  giver_type: country
+  giver_flag: "🇦🇪"
+  receiver: "World Liberty Financial (Trump Family)"
+  amount: 500000000
+  date: "2025-01-16"
+  term: 2
+  category: crypto
+  outcome: "$187M wired immediately to Trump family. Months later: US agreed to supply UAE with 500,000 advanced AI chips per year — a previously restricted technology export."
+  confidence: documented
+  source: "Wall Street Journal, CNN, Center for American Progress"
+
+- id: trump-meme-coin
+  title: "$TRUMP Meme Coin — Trading Fees"
+  giver_name: "Global retail investors (764,000+ wallets)"
+  giver_type: multiple
+  giver_flag: "🌐"
+  receiver: "Trump-affiliated entities (CIC Digital LLC)"
+  amount: 320000000
+  date: "2025-01-17"
+  term: 2
+  category: crypto
+  outcome: "Trump family and partners earned $320M–$616M in trading fees. Top 220 coin holders rewarded with exclusive White House-adjacent dinner. 19 of top 25 holders are likely foreign nationals. 764,000 retail investors lost money."
+  confidence: documented
+  source: "CoinDesk, Reuters, CNN, CNBC"
+
+- id: melania-meme-coin
+  title: "$MELANIA Meme Coin — Insider Profits"
+  giver_name: "Retail investors"
+  giver_type: multiple
+  giver_flag: "🌐"
+  receiver: "Trump-affiliated insiders"
+  amount: 100000000
+  date: "2025-01-19"
+  term: 2
+  category: crypto
+  outcome: "A group of anonymous insiders made $100M by swapping tokens for USDC after the price doubled. Coin subsequently lost 97% of its value."
+  confidence: reported
+  source: "Financial Times, Fortune"
+
+- id: pardon-trevor-milton
+  title: "Trevor Milton — Nikola Founder Pardon"
+  giver_name: "Trevor Milton & Wife"
+  giver_type: individual
+  giver_flag: "🇺🇸"
+  receiver: "Trump Campaign / Trump 47 Committee"
+  amount: 3600000
+  date: "2024-10"
+  term: 2
+  category: pardon
+  outcome: "Full pardon issued March 27, 2025. $660M in investor restitution forgiven. Prosecutors had requested near-$700M just two weeks before Trump called Milton personally to inform him of the pardon."
+  confidence: documented
+  source: "CNBC, Gizmodo, The Hill"
+
+- id: pardon-paul-walczak
+  title: "Paul Walczak — Nursing Home Tax Fraud Pardon"
+  giver_name: "Elizabeth Fago (Walczak's mother)"
+  giver_type: individual
+  giver_flag: "🇺🇸"
+  receiver: "Trump Super PAC (Mar-a-Lago fundraiser)"
+  amount: 1000000
+  date: "2025-04"
+  term: 2
+  category: pardon
+  outcome: "Full pardon issued 12 days after sentencing, less than three weeks after Fago attended a $1M-per-plate Mar-a-Lago fundraiser. $4.4M restitution and 18-month prison sentence forgiven. Walczak had used stolen payroll taxes to purchase a yacht."
+  confidence: documented
+  source: "Rolling Stone, Skilled Nursing News, PBS"
+
+- id: pardon-julio-herrera
+  title: "Julio Herrera Velutini — Puerto Rico Bribery Pardon"
+  giver_name: "Isabela Herrera (Velutini's daughter)"
+  giver_type: individual
+  giver_flag: "🇻🇪"
+  receiver: "MAGA Inc. (Trump Super PAC)"
+  amount: 3500000
+  date: "2024-12"
+  term: 2
+  category: pardon
+  outcome: "Federal bribery conviction pardoned January 2026. Velutini had been charged with bribing Puerto Rico's governor to fire a financial regulator investigating his bank. Campaign Legal Center filed FEC complaint alleging daughter acted as straw donor for her father."
+  confidence: documented
+  source: "Bloomberg Law, Campaign Legal Center, CBS News"
+
+- id: pardon-timothy-leiweke
+  title: "Timothy Leiweke — Executive Pardon"
+  giver_name: "Timothy Leiweke's Company"
+  giver_type: company
+  giver_flag: "🇺🇸"
+  receiver: "2025 Inaugural Fund"
+  amount: 250000
+  date: "2025-01"
+  term: 2
+  category: pardon
+  outcome: "Criminal sentence pardoned December 2025. Pardon pursued via lawyer Trey Gowdy, who pressed Trump personally during a round of golf at Mar-a-Lago."
+  confidence: documented
+  source: "Campaign Legal Center, PBS News"
+
+- id: pardon-ross-ulbricht
+  title: "Ross Ulbricht — Silk Road Pardon (Industry Promise)"
+  giver_name: "Crypto Industry"
+  giver_type: multiple
+  giver_flag: "🌐"
+  receiver: "Trump 2024 Campaign"
+  amount: 100000000
+  date: "2024-05"
+  term: 2
+  category: pardon
+  outcome: "Two life sentences pardoned January 21, 2025 — Trump's second day in office. Pardon explicitly promised at Libertarian National Convention in exchange for political support. The crypto industry spent over $100M to influence the 2024 election outcome."
+  confidence: documented
+  source: "NPR, The Nation, Bank Info Security"
+
+- id: qatar-plane
+  title: "Qatar — Boeing 747 Air Force One Gift"
+  giver_name: "Government of Qatar"
+  giver_type: country
+  giver_flag: "🇶🇦"
+  receiver: "US Government / Donald Trump (personal use)"
+  amount: 400000000
+  date: "2025-05"
+  term: 2
+  category: foreign
+  outcome: "Largest foreign gift ever received by a US president. Aircraft arrived June 19, 2026 for Trump's personal use as Air Force One. CNN reported the US administration approached Qatar first, contradicting Trump's claim Qatar offered it unsolicited."
+  confidence: documented
+  source: "NPR, CNN, FactCheck.org, Newsweek"
+
+- id: kushner-saudi-pif
+  title: "Saudi Public Investment Fund — Kushner / Affinity Partners"
+  giver_name: "Saudi Public Investment Fund (PIF)"
+  giver_type: country
+  giver_flag: "🇸🇦"
+  receiver: "Jared Kushner / Affinity Partners"
+  amount: 2000000000
+  date: "2021-06"
+  term: 2
+  category: foreign
+  outcome: "PIF overruled its own advisers' recommendation to reject Kushner's inexperienced firm. Generates $25M/year in management fees for Kushner. Kushner subsequently appointed as Trump's Special Envoy. PIF's total commitment has since grown to $3B."
+  confidence: documented
+  source: "House Oversight Committee, CBS News, Popular Information"
+
+- id: liv-golf-trump-courses
+  title: "LIV Golf (Saudi PIF) — Trump Course Hosting Revenue"
+  giver_name: "LIV Golf / Saudi Public Investment Fund"
+  giver_type: country
+  giver_flag: "🇸🇦"
+  receiver: "Trump Organization (golf properties)"
+  amount: 28000000
+  date: "2022-06"
+  term: 1
+  category: foreign
+  outcome: "Bedminster revenue jumped from $17.7M (2020) to $46.2M (2022–23) after LIV events — an attributable increase of ~$28M. Trump simultaneously facilitated PGA merger talks with Saudi-backed LIV, creating a framework that legitimized the Saudi golf operation."
+  confidence: reported
+  source: "Sportico, Newsweek, New Republic"
+
+- id: china-icbc-trump-tower
+  title: "China (ICBC) — Trump Tower Rent Payments"
+  giver_name: "Industrial and Commercial Bank of China (state-owned)"
+  giver_type: country
+  giver_flag: "🇨🇳"
+  receiver: "Trump Tower Commercial LLC"
+  amount: 5500000
+  date: "2017-02"
+  term: 1
+  category: foreign
+  outcome: "ICBC paid ~$5.5M in rent for Trump Tower office space 2017–2019. Trump refused to impose sanctions on Chinese banks including ICBC, despite evidence they facilitated North Korean sanctions evasion. DOJ had previously accused the bank of conspiring with North Korean entities."
+  confidence: documented
+  source: "House Oversight Committee, CNN, CREW"
+
+- id: saudi-emoluments-t1
+  title: "Saudi Arabia — Trump Business Payments (Term 1)"
+  giver_name: "Government of Saudi Arabia"
+  giver_type: country
+  giver_flag: "🇸🇦"
+  receiver: "Trump Organization properties"
+  amount: 615422
+  date: "2017-01"
+  term: 1
+  category: foreign
+  outcome: "Documented payments to Trump DC Hotel and other properties during his presidency. Saudi Arabia simultaneously received unprecedented arms deals and a broadly permissive US foreign policy stance, including no consequences for the murder of journalist Jamal Khashoggi."
+  confidence: documented
+  source: "House Oversight Committee, NBC News, CREW"
+
+- id: kuwait-emoluments-t1
+  title: "Kuwait — Trump Business Payments (Term 1)"
+  giver_name: "Government of Kuwait"
+  giver_type: country
+  giver_flag: "🇰🇼"
+  receiver: "Trump Organization properties"
+  amount: 300000
+  date: "2017-01"
+  term: 1
+  category: foreign
+  outcome: "Kuwait's embassy moved its National Day celebration to Trump's DC hotel shortly after his inauguration. Documented payments to Trump properties throughout his first term."
+  confidence: documented
+  source: "House Oversight Committee, Washington Post"
+
+- id: qatar-emoluments-t1
+  title: "Qatar — Trump Business Payments (Term 1)"
+  giver_name: "Government of Qatar"
+  giver_type: country
+  giver_flag: "🇶🇦"
+  receiver: "Trump Organization properties"
+  amount: 466000
+  date: "2017-01"
+  term: 1
+  category: foreign
+  outcome: "Qatar paid $466,000 to Trump properties during his first term while simultaneously purchasing military hardware from the US and seeking American protection of its sovereignty during the 2017 Gulf blockade."
+  confidence: documented
+  source: "House Oversight Committee, CREW"
+
+- id: india-emoluments-t1
+  title: "India — Trump Business Payments (Term 1)"
+  giver_name: "Government of India"
+  giver_type: country
+  giver_flag: "🇮🇳"
+  receiver: "Trump Organization properties"
+  amount: 283000
+  date: "2017-01"
+  term: 1
+  category: foreign
+  outcome: "India paid $283,000 to Trump-owned properties during his first term. The Trump Organization was simultaneously pursuing major real estate projects in India through licensing deals."
+  confidence: documented
+  source: "House Oversight Committee, Washington Post"
+
+- id: inaugural-pilgrims-pride
+  title: "Pilgrim's Pride — 2025 Inaugural Donation"
+  giver_name: "Pilgrim's Pride Corporation"
+  giver_type: company
+  giver_flag: "🇺🇸"
+  receiver: "2025 Inaugural Fund"
+  amount: 5000000
+  date: "2025-01"
+  term: 2
+  category: inauguration
+  outcome: "Largest single corporate inaugural donor. Received USDA waiver allowing higher poultry production-line speeds (March 2025). Also received SEC permission to list on NYSE (April 2025). Both outcomes followed directly from the donation."
+  confidence: documented
+  source: "Brennan Center, OpenSecrets, Sludge"
+
+- id: inaugural-ripple
+  title: "Ripple Labs — 2025 Inaugural Donation"
+  giver_name: "Ripple Labs"
+  giver_type: company
+  giver_flag: "🇺🇸"
+  receiver: "2025 Inaugural Fund"
+  amount: 4900000
+  date: "2025-01"
+  term: 2
+  category: inauguration
+  outcome: "XRP token (Ripple's native currency) included in the US Digital Asset Stockpile announced March 2025 — a direct regulatory and financial benefit that boosted XRP's market value."
+  confidence: documented
+  source: "Brennan Center, OpenSecrets"
+
+- id: inaugural-chevron
+  title: "Chevron — 2025 Inaugural Donation"
+  giver_name: "Chevron Corporation"
+  giver_type: company
+  giver_flag: "🇺🇸"
+  receiver: "2025 Inaugural Fund"
+  amount: 2000000
+  date: "2025-01"
+  term: 2
+  category: inauguration
+  outcome: "Broad energy deregulation followed, including rollback of Biden-era emissions rules and permitting acceleration for fossil fuel projects. Trump declared a national energy emergency within days of taking office."
+  confidence: documented
+  source: "Brennan Center, CNBC, OpenSecrets"
+
+- id: inaugural-2025-corporate
+  title: "2025 Inaugural Fund — Remaining Corporate Donors"
+  giver_name: "104 corporations (Meta, Amazon, Delta, United, ExxonMobil, Solana, and others)"
+  giver_type: multiple
+  giver_flag: "🇺🇸"
+  receiver: "2025 Inaugural Fund"
+  amount: 239100000
+  date: "2025-01"
+  term: 2
+  category: inauguration
+  outcome: "Total inaugural fund of $251.4M — largest in US history, up 142% from 2017. Notable outcomes: FTC antitrust cases against Meta and Amazon eased; Biden passenger compensation rules scrapped (Delta, United each gave $1M); SOL included in Digital Asset Stockpile (Solana gave $1M); ExxonMobil ($1M) received broad fossil fuel deregulation."
+  confidence: documented
+  source: "Washington Post, Brennan Center, CNBC, OpenSecrets"
+
+- id: inaugural-2017-fund
+  title: "2017 Inaugural Fund"
+  giver_name: "Corporate and individual donors (incl. foreign-connected)"
+  giver_type: multiple
+  giver_flag: "🇺🇸"
+  receiver: "2017 Inaugural Fund"
+  amount: 107000000
+  date: "2017-01"
+  term: 1
+  category: inauguration
+  outcome: "Mueller's team investigated foreign-connected donations from Saudi, UAE, and Qatari sources. Thomas Barrack, who oversaw fundraising, was later charged with acting as an unregistered foreign agent. Fund raised $107M — a record at the time."
+  confidence: reported
+  source: "ABC News, Reuters"
+
+- id: trump-hotel-foreign-t1
+  title: "Foreign Governments — Trump DC Hotel Payments (Term 1)"
+  giver_name: "Six foreign governments (Saudi Arabia, UAE, Kuwait, Qatar, Malaysia, others)"
+  giver_type: multiple
+  giver_flag: "🌐"
+  receiver: "Trump International Hotel, Washington DC"
+  amount: 750000
+  date: "2017-01"
+  term: 1
+  category: hospitality
+  outcome: "Saudi Arabia ($90K+) and UAE ($74K+) were the largest spenders at Trump's DC hotel during his first term. Records obtained by House Oversight via Mazars subpoena. Six countries spent $750K+ at a single property — a fraction of Trump's 500+ business entities."
+  confidence: documented
+  source: "CNN, NPR, CBS News, CREW"
