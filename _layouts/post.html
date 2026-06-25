@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<article class="post-page">
+  <header class="post-header">
+    <div class="post-header-inner">
+      {% if page.collection == 'cables' %}
+        <p class="post-type-label">Diplomatic Cable</p>
+      {% elsif page.collection == 'deals' %}
+        <p class="post-type-label">Deal of the Week</p>
+      {% elsif page.categories contains 'dispatches' %}
+        <p class="post-type-label">Dispatch</p>
+      {% endif %}
+      <h1 class="post-title">{{ page.title }}</h1>
+      {% if page.strapline %}
+        <p class="post-strapline">{{ page.strapline }}</p>
+      {% endif %}
+      <div class="post-meta">
+        {% if page.date %}
+          <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">
+            {{ page.date | date: "%B %-d, %Y" }}
+          </time>
+        {% endif %}
+        {% if page.term %}
+          <span class="post-term">Term {{ page.term }}</span>
+        {% endif %}
+      </div>
+    </div>
+  </header>
+  <div class="post-body">
+    <div class="post-content">
+      {{ content }}
+    </div>
+    {% if page.terms_and_conditions %}
+      <aside class="post-tnc">
+        <h3>Terms &amp; Conditions</h3>
+        <p>{{ page.terms_and_conditions }}</p>
+      </aside>
+    {% endif %}
+  </div>
+</article>

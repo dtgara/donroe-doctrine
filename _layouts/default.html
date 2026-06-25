@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body class="layout-default{% if page.body_class %} {{ page.body_class }}{% endif %}">
+  {% include nav.html %}
+  <main class="site-main" id="main-content" role="main">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  {% if page.extra_js %}
+    {% for js in page.extra_js %}
+      <script src="{{ js | relative_url }}"></script>
+    {% endfor %}
+  {% endif %}
+</body>
+</html>

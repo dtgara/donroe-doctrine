@@ -1,0 +1,23 @@
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-logo" href="{{ '/' | relative_url }}">
+      <span class="nav-logo-main">The Donroe Doctrine</span>
+      <span class="nav-logo-sub">A Foreign Policy Archive</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active" aria-current="page"{% endif %}>The Doctrine</a></li>
+      <li><a href="{{ '/map/' | relative_url }}"{% if page.url contains '/map' %} class="active" aria-current="page"{% endif %}>The Map</a></li>
+      <li><a href="{{ '/contradictions/' | relative_url }}"{% if page.url contains '/contradictions' %} class="active" aria-current="page"{% endif %}>Contradiction Tracker</a></li>
+      <li><a href="{{ '/leaderboard/' | relative_url }}"{% if page.url contains '/leaderboard' %} class="active" aria-current="page"{% endif %}>Ally/Enemy Leaderboard</a></li>
+      <li><a href="{{ '/deals/' | relative_url }}"{% if page.url contains '/deals' %} class="active" aria-current="page"{% endif %}>Deal of the Week</a></li>
+      <li><a href="{{ '/cables/' | relative_url }}"{% if page.url contains '/cables' %} class="active" aria-current="page"{% endif %}>Diplomatic Cables</a></li>
+      <li><a href="{{ '/quotes/' | relative_url }}"{% if page.url contains '/quotes' %} class="active" aria-current="page"{% endif %}>Quote Archive</a></li>
+      <li><a href="{{ '/dispatches/' | relative_url }}"{% if page.url contains '/dispatches' %} class="active" aria-current="page"{% endif %}>The Dispatches</a></li>
+      <li><a href="{{ '/tariffs/' | relative_url }}"{% if page.url contains '/tariffs' %} class="active" aria-current="page"{% endif %}>Tariff Calculator</a></li>
+      <li><a href="{{ '/bingo/' | relative_url }}"{% if page.url contains '/bingo' %} class="active" aria-current="page"{% endif %}>Press Briefing Bingo</a></li>
+    </ul>
+  </div>
+</nav>

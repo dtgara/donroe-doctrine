@@ -1,0 +1,59 @@
+---
+layout: default
+title: "The Map"
+section_label: "Section II"
+body_class: page-map
+extra_js:
+  - /assets/js/map.js
+---
+
+<header class="section-header">
+  <div class="section-header-inner">
+    <p class="section-label">Section II — The Map</p>
+    <h1 class="section-title">Global Relationship Status</h1>
+    <p class="section-intro">
+      Every country, colour-coded by its current standing in the doctrine.
+      Click any country for the official assessment.
+    </p>
+  </div>
+</header>
+
+<div class="map-container">
+  <div id="doctrine-map"></div>
+
+  <div class="map-legend">
+    <p class="map-legend-title">Relationship Status</p>
+    <div class="map-legend-item">
+      <div class="map-legend-swatch" style="background:#2E7D32;"></div>
+      <span>Ally (Provisional)</span>
+    </div>
+    <div class="map-legend-item">
+      <div class="map-legend-swatch" style="background:#C0392B;"></div>
+      <span>Adversary</span>
+    </div>
+    <div class="map-legend-item">
+      <div class="map-legend-swatch" style="background:#B8860B;"></div>
+      <span>For Acquisition</span>
+    </div>
+    <div class="map-legend-item">
+      <div class="map-legend-swatch" style="background:#E65100;"></div>
+      <span>Tariff Target</span>
+    </div>
+    <div class="map-legend-item">
+      <div class="map-legend-swatch" style="background:#9E9E9E;"></div>
+      <span>Ignored</span>
+    </div>
+    <div class="map-legend-item">
+      <div class="map-legend-swatch" style="background:#1565C0;"></div>
+      <span>Status Unclear</span>
+    </div>
+  </div>
+
+  <div class="country-panel" id="country-panel" role="dialog" aria-label="Country details" aria-hidden="true">
+    <button class="country-panel-close" id="panel-close" aria-label="Close">&times;</button>
+    <div id="panel-content"></div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN/WPeE=" crossorigin=""></script>

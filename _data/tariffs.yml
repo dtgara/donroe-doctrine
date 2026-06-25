@@ -1,0 +1,4 @@
+# Tariff Calculator data
+# Schema: country, code (ISO 3166-1 alpha-2), categories[]
+# Each category: product, rate_percent, effective_date, change_count, term, doctrine_assessment
+# Populated from Day 5 onwards per sprint plan.

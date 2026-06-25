@@ -1,0 +1,56 @@
+title: "The Donroe Doctrine"
+description: >
+  A comprehensive reference archive documenting the foreign policy of Donald J. Trump
+  across his first and second presidential terms, January 2017 to present.
+  Published in the public interest.
+url: "https://donroedoctrine.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+# Theme
+theme: null
+
+# Collections
+collections:
+  cables:
+    output: true
+    permalink: /cables/:name/
+  deals:
+    output: true
+    permalink: /deals/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "cables"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "deals"
+    values:
+      layout: "post"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - push_to_github.py
+  - vendor/

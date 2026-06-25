@@ -1,0 +1,3 @@
+# Quote Archive data
+# Schema: id, text, date, source_type, context, country (array), theme (array), term
+# Populated from Day 4 onwards per sprint plan.

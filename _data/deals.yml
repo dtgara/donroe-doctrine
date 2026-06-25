@@ -1,0 +1,4 @@
+# Deal of the Week data
+# Schema: id, title, strapline, date, term, type (Territorial|Trade|Alliance|Miscellaneous),
+#         body_file, terms_and_conditions
+# Populated from Day 6 onwards per sprint plan.

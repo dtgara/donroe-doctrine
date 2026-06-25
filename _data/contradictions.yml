@@ -1,0 +1,4 @@
+# Contradiction Tracker data
+# Schema: id, theme, country, term_a, statement_a, date_a, source_a,
+#         statement_b, date_b, source_b, doctrine_note
+# Populated from Day 4 onwards per sprint plan.

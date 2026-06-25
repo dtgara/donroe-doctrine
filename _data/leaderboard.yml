@@ -1,0 +1,8 @@
+# Ally/Enemy Leaderboard data
+# Schema: in_favour[], out_of_favour[], indeterminate[]
+# Each entry: rank, country, annotation, trend (RISING|FALLING|STABLE|VOLATILE),
+#             status_changes, last_updated
+# Populated from Day 3 onwards per sprint plan.
+in_favour: []
+out_of_favour: []
+indeterminate: []
