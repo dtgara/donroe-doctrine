@@ -23,6 +23,7 @@ body_class: page-deals
 <div class="card-grid" id="deals-grid">
   {% for deal in deals %}
   <article class="card deal-card" data-type="{{ deal.type }}">
+    <span class="card-stamp card-stamp--{{ deal.status | downcase | replace: '_', '-' }}">{{ deal.status | replace: '_', ' ' }}</span>
     <p class="card-label">{{ deal.type }} &mdash; Term {{ deal.term }}</p>
     <h2 class="card-title"><a href="{{ '/deals/' | append: deal.id | relative_url }}">{{ deal.title }}</a></h2>
     <p class="card-excerpt">{{ deal.strapline }}</p>

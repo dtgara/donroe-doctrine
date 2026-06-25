@@ -16,6 +16,7 @@ body_class: page-tariffs
   </div>
 </header>
 
+<div class="doc-divider"><span class="doc-divider-ornament"></span></div>
 <div class="section-body">
 <div class="tariff-calculator">
 
@@ -68,6 +69,17 @@ body_class: page-tariffs
       <div class="tariff-doctrine-assessment">
         <p class="tariff-doctrine-assessment-label">Doctrine Assessment</p>
         <p id="result-assessment">—</p>
+      </div>
+      <div class="tariff-rate-bar">
+        <div class="tariff-rate-bar-labels">
+          <span>0%</span>
+          <span>vs. peak rate (145%)</span>
+          <span>145%</span>
+        </div>
+        <div class="tariff-rate-bar-track">
+          <div class="tariff-rate-bar-fill" id="result-rate-bar"></div>
+        </div>
+        <div class="tariff-rate-bar-context" id="result-rate-context"></div>
       </div>
     </div>
   </div>
@@ -132,6 +144,20 @@ body_class: page-tariffs
     document.getElementById('result-term').textContent    = cat.term ? 'Term ' + cat.term : '—';
     document.getElementById('result-assessment').textContent = cat.doctrine_assessment || '—';
     resultPanel.classList.add('active');
+    // Rate comparison bar
+    var maxRate = 145;
+    var pct = Math.min((cat.rate_percent / maxRate) * 100, 100);
+    setTimeout(function() {
+      document.getElementById('result-rate-bar').style.width = pct.toFixed(1) + '%';
+    }, 50);
+    var ctx = cat.rate_percent >= 100
+      ? 'At or above the peak China rate — truly special treatment.'
+      : cat.rate_percent >= 50
+        ? 'Elevated. This relationship is complicated.'
+        : cat.rate_percent >= 20
+          ? 'Moderate — room to threaten further escalation.'
+          : 'Low — either a friend, or not yet noticed.';
+    document.getElementById('result-rate-context').textContent = ctx;
   });
 })();
 </script>
