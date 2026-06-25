@@ -18,12 +18,7 @@ body_class: page-leaderboard
     {% if board.in_favour and board.in_favour.size > 0 %}
     <table class="leaderboard-table">
       <thead>
-        <tr>
-          <th>#</th>
-          <th>Country</th>
-          <th>Assessment</th>
-          <th>Trend</th>
-        </tr>
+        <tr><th>#</th><th>Country</th><th>Assessment</th><th>Trend</th></tr>
       </thead>
       <tbody>
         {% for entry in board.in_favour %}
@@ -31,9 +26,7 @@ body_class: page-leaderboard
           <td class="rank-number">{{ entry.rank }}</td>
           <td>
             <strong>{{ entry.flag }} {{ entry.country }}</strong>
-            {% if entry.trend == 'VOLATILE' %}
-              <span class="volatile-badge">Volatile ({{ entry.status_changes }})</span>
-            {% endif %}
+            {% if entry.trend == 'VOLATILE' %}<span class="volatile-badge">Volatile ({{ entry.status_changes }})</span>{% endif %}
           </td>
           <td style="font-size:var(--text-xs);color:var(--color-mid-grey);">{{ entry.annotation }}</td>
           <td class="trend-indicator">
@@ -56,12 +49,7 @@ body_class: page-leaderboard
     {% if board.out_of_favour and board.out_of_favour.size > 0 %}
     <table class="leaderboard-table">
       <thead>
-        <tr>
-          <th>#</th>
-          <th>Country</th>
-          <th>Assessment</th>
-          <th>Trend</th>
-        </tr>
+        <tr><th>#</th><th>Country</th><th>Assessment</th><th>Trend</th></tr>
       </thead>
       <tbody>
         {% for entry in board.out_of_favour %}
@@ -69,9 +57,7 @@ body_class: page-leaderboard
           <td class="rank-number">{{ entry.rank }}</td>
           <td>
             <strong>{{ entry.flag }} {{ entry.country }}</strong>
-            {% if entry.trend == 'VOLATILE' %}
-              <span class="volatile-badge">Volatile ({{ entry.status_changes }})</span>
-            {% endif %}
+            {% if entry.trend == 'VOLATILE' %}<span class="volatile-badge">Volatile ({{ entry.status_changes }})</span>{% endif %}
           </td>
           <td style="font-size:var(--text-xs);color:var(--color-mid-grey);">{{ entry.annotation }}</td>
           <td class="trend-indicator">
@@ -91,85 +77,70 @@ body_class: page-leaderboard
 
 </div>
 
-{% if board.indeterminate and board.indeterminate.size > 0 %}
-<div style="margin-top:2rem;">
-  <div class="leaderboard-column-title" style="background:var(--color-border);color:var(--color-near-black);">Indeterminate</div>
-  <p style="font-size:var(--text-sm);color:var(--color-light-grey);margin-bottom:1rem;">
-    Countries whose relationship status resists classification. The doctrine is ambiguous here, which is itself a position.
-  </p>
-  <table class="leaderboard-table">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Country</th>
-        <th>Assessment</th>
-        <th>Trend</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for entry in board.indeterminate %}
-      <tr>
-        <td class="rank-number">{{ entry.rank }}</td>
-        <td>
-          <strong>{{ entry.flag }} {{ entry.country }}</strong>
-          {% if entry.trend == 'VOLATILE' %}
-            <span class="volatile-badge">Volatile ({{ entry.status_changes }})</span>
-          {% endif %}
-        </td>
-        <td style="font-size:var(--text-xs);color:var(--color-mid-grey);">{{ entry.annotation }}</td>
-        <td class="trend-indicator">
-          {% if entry.trend == 'RISING' %}&#9650;
-          {% elsif entry.trend == 'FALLING' %}&#9660;
-          {% elsif entry.trend == 'VOLATILE' %}&#11835;
-          {% else %}&mdash;{% endif %}
-        </td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+<div class="leaderboard-grid" style="margin-top:2rem;">
+
+  <div>
+    <div class="leaderboard-column-title" style="background:var(--color-border);color:var(--color-near-black);">Indeterminate</div>
+    <p style="font-size:var(--text-xs);color:var(--color-light-grey);margin-bottom:1rem;">Countries whose relationship status resists classification. The doctrine is ambiguous here, which is itself a position.</p>
+    {% if board.indeterminate and board.indeterminate.size > 0 %}
+    <table class="leaderboard-table">
+      <thead>
+        <tr><th>#</th><th>Country</th><th>Assessment</th><th>Trend</th></tr>
+      </thead>
+      <tbody>
+        {% for entry in board.indeterminate %}
+        <tr>
+          <td class="rank-number">{{ entry.rank }}</td>
+          <td>
+            <strong>{{ entry.flag }} {{ entry.country }}</strong>
+            {% if entry.trend == 'VOLATILE' %}<span class="volatile-badge">Volatile ({{ entry.status_changes }})</span>{% endif %}
+          </td>
+          <td style="font-size:var(--text-xs);color:var(--color-mid-grey);">{{ entry.annotation }}</td>
+          <td class="trend-indicator">
+            {% if entry.trend == 'RISING' %}&#9650;
+            {% elsif entry.trend == 'FALLING' %}&#9660;
+            {% elsif entry.trend == 'VOLATILE' %}&#11835;
+            {% else %}&mdash;{% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endif %}
+  </div>
+
+  <div>
+    <div class="leaderboard-column-title" style="background:#f5f0e8;color:var(--color-near-black);border-left:4px solid #c8a951;">Awaiting Instruction</div>
+    <p style="font-size:var(--text-xs);color:var(--color-light-grey);margin-bottom:1rem;">Countries not yet assessed, acquired, insulted, or tariffed with conviction. The doctrine has not gotten to them yet. This is not a reflection of their importance. It may be a reflection of their importance.</p>
+    {% if board.awaiting_instruction and board.awaiting_instruction.size > 0 %}
+    <table class="leaderboard-table">
+      <thead>
+        <tr><th>#</th><th>Country</th><th>Assessment</th><th>Trend</th></tr>
+      </thead>
+      <tbody>
+        {% for entry in board.awaiting_instruction %}
+        <tr>
+          <td class="rank-number">{{ entry.rank }}</td>
+          <td>
+            <strong>{{ entry.flag }} {{ entry.country }}</strong>
+            {% if entry.trend == 'VOLATILE' %}<span class="volatile-badge">Volatile ({{ entry.status_changes }})</span>{% endif %}
+          </td>
+          <td style="font-size:var(--text-xs);color:var(--color-mid-grey);">{{ entry.annotation }}</td>
+          <td class="trend-indicator">
+            {% if entry.trend == 'RISING' %}&#9650;
+            {% elsif entry.trend == 'FALLING' %}&#9660;
+            {% elsif entry.trend == 'VOLATILE' %}&#11835;
+            {% else %}&mdash;{% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endif %}
+  </div>
+
 </div>
-{% endif %}
 
 <p style="font-family:var(--font-ui);font-size:var(--text-xs);color:var(--color-light-grey);margin-top:2rem;border-top:1px solid var(--color-border);padding-top:1rem;">
-  Rankings reflect documented relationship status only. The archive does not assess the
-  accuracy of the President's assessments. Last reviewed: {{ site.time | date: "%B %-d, %Y" }}.
+  Rankings reflect documented relationship status only. The archive does not assess the accuracy of the President's assessments. Last reviewed: {{ site.time | date: "%B %-d, %Y" }}.
 </p>
-
-{% if board.awaiting_instruction and board.awaiting_instruction.size > 0 %}
-<div style="margin-top:2rem;">
-  <div class="leaderboard-column-title" style="background:#f5f0e8;color:var(--color-near-black);border-left:4px solid #c8a951;">Awaiting Instruction</div>
-  <p style="font-size:var(--text-sm);color:var(--color-light-grey);margin-bottom:1rem;">
-    Countries that have not yet been assessed, acquired, insulted, or tariffed with conviction. Their status is not neutral so much as unprocessed. The doctrine has not gotten to them yet. This is not a reflection of their importance. It may be a reflection of their importance.
-  </p>
-  <table class="leaderboard-table">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Country</th>
-        <th>Assessment</th>
-        <th>Trend</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for entry in board.awaiting_instruction %}
-      <tr>
-        <td class="rank-number">{{ entry.rank }}</td>
-        <td>
-          <strong>{{ entry.flag }} {{ entry.country }}</strong>
-          {% if entry.trend == 'VOLATILE' %}
-            <span class="volatile-badge">Volatile ({{ entry.status_changes }})</span>
-          {% endif %}
-        </td>
-        <td style="font-size:var(--text-xs);color:var(--color-mid-grey);">{{ entry.annotation }}</td>
-        <td class="trend-indicator">
-          {% if entry.trend == 'RISING' %}&#9650;
-          {% elsif entry.trend == 'FALLING' %}&#9660;
-          {% elsif entry.trend == 'VOLATILE' %}&#11835;
-          {% else %}&mdash;{% endif %}
-        </td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-</div>
-{% endif %}
