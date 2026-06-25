@@ -23,19 +23,7 @@
     'STATUS_UNCLEAR':   'Status Unclear'
   };
 
-  /* ---------------------------------------------------------------------------
-     Build countryIndex from data injected by Jekyll into the page
-     window.DOCTRINE_DATA = array from _data/countries.yml
-     ------------------------------------------------------------------------- */
   var countryIndex = {};
-
-  if (window.DOCTRINE_DATA && Array.isArray(window.DOCTRINE_DATA)) {
-    window.DOCTRINE_DATA.forEach(function (entry) {
-      if (entry.code) {
-        countryIndex[entry.code.toUpperCase()] = entry;
-      }
-    });
-  }
 
   /* ---------------------------------------------------------------------------
      Initialise Leaflet map
@@ -97,48 +85,28 @@
     var color       = STATUS_COLORS[status] || STATUS_COLORS['IGNORED'];
     var statusLabel = STATUS_LABELS[status] || status;
     var html = '';
-
-    // d.name is the country name field in countries.yml
     html += '<h2 class="country-panel-name">' + escHtml(d.name || d.country || '') + '</h2>';
     html += '<span class="country-panel-status" style="background:' + color + ';">' + escHtml(statusLabel) + '</span>';
-
     if (d.descriptor) {
       html += '<p class="country-panel-descriptor">' + escHtml(d.descriptor) + '</p>';
     }
-
     if (d.last_updated) {
       html += '<p class="country-panel-incident-date">Last updated: ' + escHtml(d.last_updated) + '</p>';
     }
-
-    // d.latest_incident is the field name in countries.yml
     if (d.latest_incident) {
       html += '<p class="country-panel-incident">' + escHtml(d.latest_incident) + '</p>';
     } else if (status === 'IGNORED') {
       html += '<p class="country-panel-incident" style="color:var(--color-light-grey);font-style:italic;">No documented foreign policy incident to date. This is accurate.</p>';
     }
-
-    if (d.code === 'CA' && typeof d.annexation_progress !== 'undefined') {
-      html += '<div class="annexation-bar">';
-      html += '<div class="annexation-bar-label"><span>Annexation Progress</span><span>' + d.annexation_progress + '%</span></div>';
-      html += '<div class="annexation-bar-track"><div class="annexation-bar-fill" style="width:' + d.annexation_progress + '%;"></div></div>';
-      html += '</div>';
-    }
-
-    if (d.code === 'GL' && d.purchase_status) {
-      html += '<div style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--color-border);">';
-      html += '<p style="font-family:var(--font-ui);font-size:var(--text-xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-light-grey);margin-bottom:0.3rem;">Purchase Offer Status</p>';
-      html += '<p style="font-family:var(--font-mono);font-size:var(--text-sm);">' + escHtml(d.purchase_status) + '</p>';
-      html += '</div>';
-    }
-
     return html;
   }
 
   /* ---------------------------------------------------------------------------
-     Style and interaction for GeoJSON features
+     Style and interaction
      ------------------------------------------------------------------------- */
   function getCode(feature) {
-    return (feature.properties.ISO_A2 || feature.properties.iso_a2 || '').toUpperCase();
+    var props = feature.properties;
+    return (props.ISO_A2 || props.iso_a2 || props.ISO_A2_EH || '').toUpperCase();
   }
 
   function styleFeature(feature) {
@@ -146,7 +114,6 @@
     var entry  = countryIndex[code];
     var status = entry ? (entry.status || 'IGNORED') : 'IGNORED';
     var color  = STATUS_COLORS[status] || STATUS_COLORS['IGNORED'];
-
     return {
       fillColor:   color,
       fillOpacity: status === 'IGNORED' ? 0.3 : 0.85,
@@ -165,7 +132,6 @@
         var code  = getCode(feature);
         var entry = countryIndex[code];
         var name  = feature.properties.ADMIN || feature.properties.name || code;
-
         if (entry) {
           openPanel(entry);
         } else {
@@ -173,14 +139,11 @@
         }
       },
       mouseover: function (e) {
-        var lyr   = e.target;
-        var code  = getCode(feature);
-        var entry = countryIndex[code];
+        var lyr    = e.target;
+        var code   = getCode(feature);
+        var entry  = countryIndex[code];
         var status = entry ? (entry.status || 'IGNORED') : 'IGNORED';
-        lyr.setStyle({
-          fillOpacity: status === 'IGNORED' ? 0.45 : 0.95,
-          weight: 1.5
-        });
+        lyr.setStyle({ fillOpacity: status === 'IGNORED' ? 0.45 : 0.95, weight: 1.5 });
         lyr.bringToFront();
       },
       mouseout: function (e) {
@@ -190,21 +153,54 @@
   }
 
   /* ---------------------------------------------------------------------------
-     Load GeoJSON and render — country data already in countryIndex
+     Load data then GeoJSON
      ------------------------------------------------------------------------- */
-  var geojsonUrl = 'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson';
+  var geojsonUrl     = 'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson';
+  var countryDataUrl = '/assets/data/countries.json';
 
-  fetch(geojsonUrl)
-    .then(function (r) { return r.json(); })
-    .then(function (geoData) {
-      geolayer = L.geoJSON(geoData, {
-        style: styleFeature,
-        onEachFeature: onEachFeature
-      }).addTo(map);
-    })
-    .catch(function (err) {
-      console.warn('Doctrine Map: failed to load GeoJSON.', err);
+  function buildIndex(countryData) {
+    if (!Array.isArray(countryData)) {
+      console.warn('Doctrine Map: country data is not an array', countryData);
+      return;
+    }
+    countryData.forEach(function (entry) {
+      if (entry.code) countryIndex[entry.code.toUpperCase()] = entry;
     });
+    console.log('Doctrine Map: countryIndex built with', Object.keys(countryIndex).length, 'entries. Sample:', Object.keys(countryIndex).slice(0, 5));
+  }
+
+  function renderGeoJSON(geoData) {
+    // Log first feature's properties so we can see the code field name
+    if (geoData.features && geoData.features.length > 0) {
+      console.log('Doctrine Map: first GeoJSON feature props:', JSON.stringify(geoData.features[0].properties));
+    }
+    geolayer = L.geoJSON(geoData, {
+      style: styleFeature,
+      onEachFeature: onEachFeature
+    }).addTo(map);
+    console.log('Doctrine Map: GeoJSON layer added');
+  }
+
+  // Try window.DOCTRINE_DATA first (injected by Jekyll), fall back to fetch
+  if (window.DOCTRINE_DATA && Array.isArray(window.DOCTRINE_DATA)) {
+    console.log('Doctrine Map: using inline DOCTRINE_DATA,', window.DOCTRINE_DATA.length, 'entries');
+    buildIndex(window.DOCTRINE_DATA);
+    fetch(geojsonUrl)
+      .then(function (r) { return r.json(); })
+      .then(renderGeoJSON)
+      .catch(function (err) { console.warn('Doctrine Map: GeoJSON fetch failed', err); });
+  } else {
+    console.warn('Doctrine Map: window.DOCTRINE_DATA not set, falling back to fetch');
+    Promise.all([
+      fetch(countryDataUrl).then(function (r) { return r.json(); }),
+      fetch(geojsonUrl).then(function (r) { return r.json(); })
+    ]).then(function (results) {
+      buildIndex(results[0]);
+      renderGeoJSON(results[1]);
+    }).catch(function (err) {
+      console.warn('Doctrine Map: both fetches failed', err);
+    });
+  }
 
   map.on('click', function () { closePanel(); });
 
