@@ -1,7 +1,6 @@
 ---
 layout: section
 title: "Quote Archive"
-section_label: "Section VII"
 section_intro: >
   A curated archive of foreign policy statements, organized by theme.
   Every entry verified against primary sources. Direct quotations only.
@@ -10,58 +9,58 @@ body_class: page-quotes
 
 {% assign quotes = site.data.quotes %}
 
-<div class="filter-bar" data-filter-container="#quotes-list">
-  <input type="text" placeholder="Search quotes&hellip;" data-filter-key="text" aria-label="Search quotes" style="min-width:200px;">
-  <select data-filter-key="theme" aria-label="Filter by theme">
-    <option value="all">All themes</option>
-    <option value="trade_tariffs">Trade &amp; Tariffs</option>
-    <option value="nato_complaints">NATO Complaints</option>
-    <option value="countries_he_thinks_he_owns">Countries He Thinks He Owns</option>
-    <option value="compliments_to_dictators">Compliments to Dictators</option>
-    <option value="art_of_the_deal">The Art of the (Unspecified) Deal</option>
-    <option value="how_trade_works">Explanations of How Trade Works</option>
-    <option value="descriptions_of_leaders">Descriptions of Foreign Leaders</option>
-    <option value="things_canadas_fault">Things That Are Canada's Fault</option>
-  </select>
-  <select data-filter-key="term" aria-label="Filter by term">
-    <option value="all">Both terms</option>
-    <option value="1">Term 1</option>
-    <option value="2">Term 2</option>
-  </select>
-  <select data-filter-key="source_type" aria-label="Filter by source">
-    <option value="all">All sources</option>
-    <option value="press_conference">Press conference</option>
-    <option value="interview">Interview</option>
-    <option value="speech">Speech</option>
-    <option value="truth_social">Truth Social</option>
-    <option value="tweet">Tweet</option>
-  </select>
-  <span style="font-family:var(--font-ui);font-size:var(--text-sm);color:var(--color-light-grey);align-self:center;">
-    <span data-filter-count>0</span> quotes
-  </span>
+<div style="margin-bottom:1.5rem;">
+
+  <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-bottom:0.75rem;">
+    <span style="font-family:var(--font-ui);font-size:var(--text-sm);color:var(--color-light-grey);min-width:60px;">Term</span>
+    <button class="btn btn-secondary quote-filter active" data-filter="term" data-value="all" style="font-size:0.65rem;padding:0.35rem 0.85rem;">All</button>
+    <button class="btn btn-secondary quote-filter" data-filter="term" data-value="1" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Term 1</button>
+    <button class="btn btn-secondary quote-filter" data-filter="term" data-value="2" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Term 2</button>
+  </div>
+
+  <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-bottom:0.75rem;">
+    <span style="font-family:var(--font-ui);font-size:var(--text-sm);color:var(--color-light-grey);min-width:60px;">Theme</span>
+    <button class="btn btn-secondary quote-filter active" data-filter="theme" data-value="all" style="font-size:0.65rem;padding:0.35rem 0.85rem;">All</button>
+    <button class="btn btn-secondary quote-filter" data-filter="theme" data-value="trade_tariffs" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Trade &amp; Tariffs</button>
+    <button class="btn btn-secondary quote-filter" data-filter="theme" data-value="nato_complaints" style="font-size:0.65rem;padding:0.35rem 0.85rem;">NATO Complaints</button>
+    <button class="btn btn-secondary quote-filter" data-filter="theme" data-value="countries_he_thinks_he_owns" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Countries He Thinks He Owns</button>
+    <button class="btn btn-secondary quote-filter" data-filter="theme" data-value="compliments_to_dictators" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Compliments to Dictators</button>
+    <button class="btn btn-secondary quote-filter" data-filter="theme" data-value="art_of_the_deal" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Art of the Deal</button>
+    <button class="btn btn-secondary quote-filter" data-filter="theme" data-value="how_trade_works" style="font-size:0.65rem;padding:0.35rem 0.85rem;">How Trade Works</button>
+    <button class="btn btn-secondary quote-filter" data-filter="theme" data-value="descriptions_of_leaders" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Leader Descriptions</button>
+    <button class="btn btn-secondary quote-filter" data-filter="theme" data-value="things_canadas_fault" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Canada's Fault</button>
+  </div>
+
+  <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-bottom:0.75rem;">
+    <span style="font-family:var(--font-ui);font-size:var(--text-sm);color:var(--color-light-grey);min-width:60px;">Source</span>
+    <button class="btn btn-secondary quote-filter active" data-filter="source" data-value="all" style="font-size:0.65rem;padding:0.35rem 0.85rem;">All</button>
+    <button class="btn btn-secondary quote-filter" data-filter="source" data-value="press_conference" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Press Conference</button>
+    <button class="btn btn-secondary quote-filter" data-filter="source" data-value="interview" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Interview</button>
+    <button class="btn btn-secondary quote-filter" data-filter="source" data-value="speech" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Speech</button>
+    <button class="btn btn-secondary quote-filter" data-filter="source" data-value="truth_social" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Truth Social</button>
+    <button class="btn btn-secondary quote-filter" data-filter="source" data-value="tweet" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Tweet</button>
+  </div>
+
+  <div style="padding-top:0.5rem;border-top:1px solid var(--color-border);font-family:var(--font-ui);font-size:var(--text-sm);color:var(--color-light-grey);">
+    Showing <span id="quote-count">0</span> quotes
+  </div>
 </div>
 
 <div id="quotes-list">
 {% if quotes and quotes.size > 0 %}
   {% for q in quotes %}
-  <div class="quote-entry"
+  <div class="quote-entry quote-card"
        id="{{ q.id }}"
-       data-filter-item
-       data-text="{{ q.text | downcase }}"
-       data-theme="{{ q.theme | join: ' ' | downcase }}"
        data-term="{{ q.term }}"
-       data-source_type="{{ q.source_type }}">
+       data-theme="{% if q.theme.first %}{{ q.theme | join: ' ' }}{% else %}{{ q.theme }}{% endif %}"
+       data-source="{{ q.source_type }}">
     <blockquote class="quote-text">{{ q.text }}</blockquote>
     <div class="quote-meta">
       <span class="quote-meta-date"><time>{{ q.date | date: "%B %-d, %Y" }}</time></span>
       <span class="quote-meta-source">{{ q.source_type | replace: '_', ' ' | capitalize }}</span>
       {% if q.country %}
       <span class="quote-meta-country">
-        {% if q.country.first %}
-          {{ q.country | join: ', ' }}
-        {% else %}
-          {{ q.country }}
-        {% endif %}
+        {% if q.country.first %}{{ q.country | join: ', ' }}{% else %}{{ q.country }}{% endif %}
       </span>
       {% endif %}
       {% if q.theme %}
@@ -84,3 +83,47 @@ body_class: page-quotes
   </div>
 {% endif %}
 </div>
+
+<style>
+.quote-filter.active {
+  background: var(--color-near-black);
+  color: var(--color-white);
+  border-color: var(--color-near-black);
+}
+.quote-card { transition: none; }
+</style>
+
+<script>
+(function () {
+  var filters = { term: 'all', theme: 'all', source: 'all' };
+  var cards   = Array.from(document.querySelectorAll('.quote-card'));
+  var countEl = document.getElementById('quote-count');
+
+  function applyFilters() {
+    var visible = 0;
+    cards.forEach(function (card) {
+      var termOk   = filters.term   === 'all' || card.getAttribute('data-term')   === filters.term;
+      var themeOk  = filters.theme  === 'all' || (card.getAttribute('data-theme') || '').split(' ').indexOf(filters.theme) !== -1;
+      var sourceOk = filters.source === 'all' || card.getAttribute('data-source') === filters.source;
+      var show = termOk && themeOk && sourceOk;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    if (countEl) countEl.textContent = visible;
+  }
+
+  document.querySelectorAll('.quote-filter').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var filterType = btn.getAttribute('data-filter');
+      filters[filterType] = btn.getAttribute('data-value');
+      // Update active state within row
+      document.querySelectorAll('.quote-filter[data-filter="' + filterType + '"]').forEach(function (b) {
+        b.classList.toggle('active', b === btn);
+      });
+      applyFilters();
+    });
+  });
+
+  applyFilters();
+})();
+</script>
