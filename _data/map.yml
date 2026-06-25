@@ -1,0 +1,1121 @@
+# World Map — Country Status Data
+# Schema: country, code (ISO 3166-1 alpha-2), status, descriptor,
+#         last_incident_date, last_incident
+# Special fields: annexation_progress (Canada only), purchase_status (Greenland only)
+#
+# Status values:
+#   ALLY_PROVISIONAL   — currently in favour, subject to change without notice
+#   ADVERSARY          — actively threatened, sanctioned, or insulted
+#   FOR_ACQUISITION    — subject to purchase or annexation interest
+#   TARIFF_TARGET      — no personal animosity, purely economic hostility
+#   IGNORED            — not yet relevant to the doctrine
+#   STATUS_UNCLEAR     — position changed too recently to categorise
+#
+# Priority country entries (non-IGNORED) added from Day 2 onwards.
+# This file seeds all IGNORED entries for Day 1.
+
+# ─────────────────────────────────────────────────────────────────────────────
+# IGNORED — Countries with no documented significant Trump foreign policy incident
+# ─────────────────────────────────────────────────────────────────────────────
+
+- country: Afghanistan
+  code: AF
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Albania
+  code: AL
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Algeria
+  code: DZ
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Andorra
+  code: AD
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Angola
+  code: AO
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Antigua and Barbuda
+  code: AG
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Argentina
+  code: AR
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Armenia
+  code: AM
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Austria
+  code: AT
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Azerbaijan
+  code: AZ
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Bahamas
+  code: BS
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Bahrain
+  code: BH
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Bangladesh
+  code: BD
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Barbados
+  code: BB
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Belarus
+  code: BY
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Belize
+  code: BZ
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Benin
+  code: BJ
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Bhutan
+  code: BT
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Bolivia
+  code: BO
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Bosnia and Herzegovina
+  code: BA
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Botswana
+  code: BW
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Brunei
+  code: BN
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Bulgaria
+  code: BG
+  status: IGNORED
+  descriptor: NATO member. Assessment pending.
+
+- country: Burkina Faso
+  code: BF
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Burundi
+  code: BI
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Cabo Verde
+  code: CV
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Cambodia
+  code: KH
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Cameroon
+  code: CM
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Central African Republic
+  code: CF
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Chad
+  code: TD
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Chile
+  code: CL
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Colombia
+  code: CO
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Comoros
+  code: KM
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Congo, Republic of the
+  code: CG
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Congo, Democratic Republic of the
+  code: CD
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Costa Rica
+  code: CR
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Croatia
+  code: HR
+  status: IGNORED
+  descriptor: NATO member. Assessment pending.
+
+- country: Cuba
+  code: CU
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Cyprus
+  code: CY
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Czech Republic
+  code: CZ
+  status: IGNORED
+  descriptor: NATO member. Assessment pending.
+
+- country: Djibouti
+  code: DJ
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Dominica
+  code: DM
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Dominican Republic
+  code: DO
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Ecuador
+  code: EC
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: El Salvador
+  code: SV
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Equatorial Guinea
+  code: GQ
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Eritrea
+  code: ER
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Estonia
+  code: EE
+  status: IGNORED
+  descriptor: NATO member. Assessment pending.
+
+- country: Eswatini
+  code: SZ
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Ethiopia
+  code: ET
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Fiji
+  code: FJ
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Finland
+  code: FI
+  status: IGNORED
+  descriptor: NATO member. Assessment pending.
+
+- country: Gabon
+  code: GA
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Gambia
+  code: GM
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Georgia
+  code: GE
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Ghana
+  code: GH
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Greece
+  code: GR
+  status: IGNORED
+  descriptor: NATO member. Assessment pending.
+
+- country: Grenada
+  code: GD
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Guatemala
+  code: GT
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Guinea
+  code: GN
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Guinea-Bissau
+  code: GW
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Guyana
+  code: GY
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Haiti
+  code: HT
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Honduras
+  code: HN
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Hungary
+  code: HU
+  status: IGNORED
+  descriptor: NATO member. Assessment pending.
+
+- country: Iceland
+  code: IS
+  status: IGNORED
+  descriptor: NATO member. Assessment pending.
+
+- country: Indonesia
+  code: ID
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Iraq
+  code: IQ
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Ireland
+  code: IE
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Jamaica
+  code: JM
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Jordan
+  code: JO
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Kazakhstan
+  code: KZ
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Kenya
+  code: KE
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Kiribati
+  code: KI
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Kosovo
+  code: XK
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Kuwait
+  code: KW
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Kyrgyzstan
+  code: KG
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Laos
+  code: LA
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Latvia
+  code: LV
+  status: IGNORED
+  descriptor: NATO member. Assessment pending.
+
+- country: Lebanon
+  code: LB
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Lesotho
+  code: LS
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Liberia
+  code: LR
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Libya
+  code: LY
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Liechtenstein
+  code: LI
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Lithuania
+  code: LT
+  status: IGNORED
+  descriptor: NATO member. Assessment pending.
+
+- country: Luxembourg
+  code: LU
+  status: IGNORED
+  descriptor: NATO member. Assessment pending.
+
+- country: Madagascar
+  code: MG
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Malawi
+  code: MW
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Malaysia
+  code: MY
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Maldives
+  code: MV
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Mali
+  code: ML
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Malta
+  code: MT
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Marshall Islands
+  code: MH
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Mauritania
+  code: MR
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Mauritius
+  code: MU
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Micronesia
+  code: FM
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Moldova
+  code: MD
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Monaco
+  code: MC
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Mongolia
+  code: MN
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Montenegro
+  code: ME
+  status: IGNORED
+  descriptor: NATO member. Assessment pending.
+
+- country: Morocco
+  code: MA
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Mozambique
+  code: MZ
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Myanmar
+  code: MM
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Namibia
+  code: NA
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Nauru
+  code: NR
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Nepal
+  code: NP
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Nicaragua
+  code: NI
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Niger
+  code: NE
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Nigeria
+  code: NG
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: North Macedonia
+  code: MK
+  status: IGNORED
+  descriptor: NATO member. Assessment pending.
+
+- country: Norway
+  code: "NO"
+  status: IGNORED
+  descriptor: NATO member. Assessment pending.
+
+- country: Oman
+  code: OM
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Pakistan
+  code: PK
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Palau
+  code: PW
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Papua New Guinea
+  code: PG
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Paraguay
+  code: PY
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Peru
+  code: PE
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Philippines
+  code: PH
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Poland
+  code: PL
+  status: IGNORED
+  descriptor: NATO member. Assessment pending.
+
+- country: Portugal
+  code: PT
+  status: IGNORED
+  descriptor: NATO member. Assessment pending.
+
+- country: Qatar
+  code: QA
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Romania
+  code: RO
+  status: IGNORED
+  descriptor: NATO member. Assessment pending.
+
+- country: Rwanda
+  code: RW
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Saint Kitts and Nevis
+  code: KN
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Saint Lucia
+  code: LC
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Saint Vincent and the Grenadines
+  code: VC
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Samoa
+  code: WS
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: San Marino
+  code: SM
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Sao Tome and Principe
+  code: ST
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Senegal
+  code: SN
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Serbia
+  code: RS
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Seychelles
+  code: SC
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Sierra Leone
+  code: SL
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Singapore
+  code: SG
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Slovakia
+  code: SK
+  status: IGNORED
+  descriptor: NATO member. Assessment pending.
+
+- country: Slovenia
+  code: SI
+  status: IGNORED
+  descriptor: NATO member. Assessment pending.
+
+- country: Solomon Islands
+  code: SB
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Somalia
+  code: SO
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: South Sudan
+  code: SS
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Sri Lanka
+  code: LK
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Sudan
+  code: SD
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Suriname
+  code: SR
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Sweden
+  code: SE
+  status: IGNORED
+  descriptor: NATO member. Assessment pending.
+
+- country: Switzerland
+  code: CH
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Syria
+  code: SY
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Tajikistan
+  code: TJ
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Tanzania
+  code: TZ
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Thailand
+  code: TH
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Timor-Leste
+  code: TL
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Togo
+  code: TG
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Tonga
+  code: TO
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Trinidad and Tobago
+  code: TT
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Tunisia
+  code: TN
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Turkmenistan
+  code: TM
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Tuvalu
+  code: TV
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Uganda
+  code: UG
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Uruguay
+  code: UY
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Uzbekistan
+  code: UZ
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Vanuatu
+  code: VU
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Vatican City
+  code: VA
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Vietnam
+  code: VN
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Yemen
+  code: YE
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Zambia
+  code: ZM
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+- country: Zimbabwe
+  code: ZW
+  status: IGNORED
+  descriptor: Not currently relevant to the doctrine.
+
+# ─────────────────────────────────────────────────────────────────────────────
+# PRIORITY COUNTRIES — Entries with documented incidents (added Day 2+)
+# ─────────────────────────────────────────────────────────────────────────────
+
+- country: Canada
+  code: CA
+  status: FOR_ACQUISITION
+  descriptor: 51st state candidate. Status pending provincial consent.
+  last_incident_date: "2025-03-15"
+  last_incident: >
+    President referred to the Canadian Prime Minister as "Governor" for the
+    fourteenth consecutive public appearance. The Prime Minister of Canada
+    has confirmed he is not the Governor of Canada.
+  annexation_progress: 0
+  purchase_status: null
+
+- country: Greenland
+  code: GL
+  status: FOR_ACQUISITION
+  descriptor: Prime Arctic real estate. Motivated seller being sought.
+  last_incident_date: "2025-01-07"
+  last_incident: >
+    President confirmed renewed acquisition interest in Greenland, describing
+    its possession as an absolute necessity for national security. This is
+    the second such assessment; the first was made in August 2019 and
+    subsequently described by the Danish Prime Minister as absurd.
+  annexation_progress: null
+  purchase_status: "Pending. Denmark has not engaged with offer terms."
+
+- country: Denmark
+  code: DK
+  status: STATUS_UNCLEAR
+  descriptor: Sovereign nation. Current status contingent on Greenland negotiations.
+  last_incident_date: "2025-01-07"
+  last_incident: >
+    Denmark's status is contingent on the resolution of the Greenland acquisition
+    question. The Danish government has declined to participate in the acquisition
+    process. The relationship is described as under review.
+
+- country: Mexico
+  code: MX
+  status: TARIFF_TARGET
+  descriptor: Tariff subject. Border-adjacent. Governor of the fifty-second state.
+  last_incident_date: "2025-02-01"
+  last_incident: >
+    Twenty-five percent tariffs announced on all Mexican imports, effective
+    February 1, 2025. Tariffs suspended within days following discussions
+    with the Mexican President. The tariffs remain available for redeployment.
+
+- country: China
+  code: CN
+  status: ADVERSARY
+  descriptor: Primary trade adversary. Very unfair. Years of ripping us off.
+  last_incident_date: "2025-04-02"
+  last_incident: >
+    Tariffs on Chinese goods raised to 145 percent following China's retaliatory
+    measures. The situation is described as reciprocal. The rate reflects the
+    doctrine's assessment of cumulative unfairness across both administrations.
+
+- country: Russia
+  code: RU
+  status: ALLY_PROVISIONAL
+  descriptor: Important country. Very powerful leader. Excellent personal chemistry.
+  last_incident_date: "2025-02-12"
+  last_incident: >
+    President held direct telephone call with President Putin to discuss a
+    ceasefire in Ukraine. The call was described as very productive. Ukraine
+    was not present for the call.
+
+- country: Ukraine
+  code: UA
+  status: STATUS_UNCLEAR
+  descriptor: Sovereign nation. Ongoing. Status subject to negotiation outcomes.
+  last_incident_date: "2025-02-28"
+  last_incident: >
+    President Zelensky attended the White House for discussions regarding
+    rare earth minerals and ceasefire terms. The meeting concluded without
+    a signed agreement. The Oval Office exchange was widely covered.
+
+- country: United Kingdom
+  code: GB
+  status: ALLY_PROVISIONAL
+  descriptor: Special relationship. Current status: special, with caveats.
+  last_incident_date: "2025-01-20"
+  last_incident: >
+    The United Kingdom was among the first nations to be assessed following
+    the commencement of the second term. The special relationship was
+    reaffirmed. Tariff status remains to be determined.
+
+- country: Germany
+  code: DE
+  status: TARIFF_TARGET
+  descriptor: NATO member. Paid insufficiently. Trade surplus assessed as unfair.
+  last_incident_date: "2025-04-02"
+  last_incident: >
+    Germany, as a member of the European Union, was subjected to the
+    reciprocal tariff regime announced on April 2, 2025. The EU's trade
+    surplus with the United States was described as tremendous and deliberate.
+
+- country: France
+  code: FR
+  status: TARIFF_TARGET
+  descriptor: NATO member. Wine tariffs considered. Macron relationship: variable.
+  last_incident_date: "2025-04-02"
+  last_incident: >
+    France, as a member of the European Union, was subjected to the
+    reciprocal tariff regime announced on April 2, 2025.
+
+- country: Belgium
+  code: BE
+  status: IGNORED
+  descriptor: NATO HQ location. Not yet separately assessed.
+
+- country: Netherlands
+  code: NL
+  status: IGNORED
+  descriptor: NATO member. Not separately assessed.
+
+- country: Spain
+  code: ES
+  status: IGNORED
+  descriptor: NATO member. Not separately assessed.
+
+- country: Italy
+  code: IT
+  status: TARIFF_TARGET
+  descriptor: NATO member. EU tariff subject. Meloni relationship: warm.
+  last_incident_date: "2025-04-02"
+  last_incident: >
+    Italy, as a member of the European Union, was subjected to the
+    reciprocal tariff regime. Prime Minister Meloni maintains a warmer
+    bilateral relationship than most EU counterparts.
+
+- country: Turkey
+  code: TR
+  status: STATUS_UNCLEAR
+  descriptor: NATO member. Complex. Erdogan assessed as strong leader.
+  last_incident_date: "2025-01-20"
+  last_incident: >
+    Turkey's status remains difficult to classify. President Erdogan
+    maintains a bilateral relationship that operates largely outside the
+    standard NATO assessment framework.
+
+- country: Poland
+  code: PL
+  status: ALLY_PROVISIONAL
+  descriptor: NATO member. Defence spending: compliant. Assessed as reliable.
+  last_incident_date: "2024-09-18"
+  last_incident: >
+    Poland was cited as an example of a NATO member meeting its defence
+    spending obligations. This remains the basis of the relationship.
+
+- country: Japan
+  code: JP
+  status: ALLY_PROVISIONAL
+  descriptor: Major ally. Car tariffs under discussion. Personal relationship: good.
+  last_incident_date: "2025-04-02"
+  last_incident: >
+    Japan was subjected to the reciprocal tariff announcement on April 2, 2025,
+    with a 24 percent rate. Bilateral negotiations initiated. Relationship
+    described as very strong.
+
+- country: South Korea
+  code: KR
+  status: TARIFF_TARGET
+  descriptor: Ally. Tariff subject. Defence cost-sharing under review.
+  last_incident_date: "2025-04-02"
+  last_incident: >
+    South Korea was subjected to a 25 percent reciprocal tariff. Separate
+    discussions regarding the cost of US military presence on the Korean
+    peninsula are ongoing.
+
+- country: Australia
+  code: AU
+  status: ALLY_PROVISIONAL
+  descriptor: Five Eyes partner. Assessed as reliable. Tariff exemption: partial.
+  last_incident_date: "2025-04-02"
+  last_incident: >
+    Australia was assessed a 10 percent tariff under the reciprocal tariff
+    regime. The tariff rate is lower than for most nations, which the
+    administration has not explained.
+
+- country: India
+  code: IN
+  status: TARIFF_TARGET
+  descriptor: Tariff target. Modi relationship: strong. Trade deficit: very unfair.
+  last_incident_date: "2025-04-02"
+  last_incident: >
+    India was subjected to a 26 percent reciprocal tariff. The Prime Minister
+    Modi relationship remains described as very good. The tariff and the
+    relationship are not considered contradictory.
+
+- country: Israel
+  code: IL
+  status: ALLY_PROVISIONAL
+  descriptor: Primary ally. Embassy moved. Abraham Accords: claimed as own.
+  last_incident_date: "2025-01-20"
+  last_incident: >
+    Israel was among the first nations confirmed as allies in the second term.
+    The Abraham Accords, brokered in the first term, are described as the
+    greatest deal in Middle Eastern history.
+
+- country: Saudi Arabia
+  code: SA
+  status: ALLY_PROVISIONAL
+  descriptor: Reliable partner. Understood from the outset. No questions asked.
+  last_incident_date: "2025-01-20"
+  last_incident: >
+    Saudi Arabia has maintained consistent ally status across both terms.
+    The relationship is described as among the strongest the United States
+    maintains. Arms sales have continued uninterrupted.
+
+- country: Iran
+  code: IR
+  status: ADVERSARY
+  descriptor: Adversary. Maximum pressure reimposed. Nuclear status: concerning.
+  last_incident_date: "2025-01-20"
+  last_incident: >
+    The maximum pressure campaign against Iran was reinstated on the first day
+    of the second term. All sanctions relaxed under the JCPOA framework were
+    reimposed. The administration has confirmed it will not rejoin the agreement.
+
+- country: North Korea
+  code: KP
+  status: STATUS_UNCLEAR
+  descriptor: Complex personal relationship. Rockets: fewer. Status: evolving.
+  last_incident_date: "2019-06-30"
+  last_incident: >
+    The President stepped across the demilitarised zone into North Korea,
+    becoming the first sitting US president to do so. This was described as
+    a very beautiful moment. The denuclearisation process has not advanced
+    materially since then.
+
+- country: Panama
+  code: PA
+  status: FOR_ACQUISITION
+  descriptor: Canal. Wants it back. Very unfair handover. Working on it.
+  last_incident_date: "2025-01-07"
+  last_incident: >
+    President demanded the return of the Panama Canal, describing its transfer
+    to Panamanian sovereignty in 1999 as a very foolish gift. The Panamanian
+    government noted that the canal belongs to Panama.
+
+- country: Venezuela
+  code: VE
+  status: ADVERSARY
+  descriptor: Failed state. Maduro assessed as a dictator without affection.
+  last_incident_date: "2025-03-24"
+  last_incident: >
+    Venezuela was designated under the Alien Enemies Act in connection with
+    migration enforcement actions. The Maduro government condemned the
+    designation. Relations remain non-existent.
+
+- country: Brazil
+  code: BR
+  status: STATUS_UNCLEAR
+  descriptor: Large country. Bolsonaro era: warm. Lula era: reassessing.
+  last_incident_date: "2025-04-02"
+  last_incident: >
+    Brazil was subjected to a 10 percent reciprocal tariff. The relationship
+    during the Lula administration is assessed as cordial but not warm.
+    The Bolsonaro relationship is described in warmer terms in the past tense.
+
+- country: South Africa
+  code: ZA
+  status: ADVERSARY
+  descriptor: Assessed unfavourably. Land policy concerns. Aid suspended.
+  last_incident_date: "2025-02-07"
+  last_incident: >
+    President signed an executive order suspending US assistance to South Africa,
+    citing concerns about land expropriation legislation. The South African
+    government disputed the characterisation.
+
+- country: Egypt
+  code: EG
+  status: ALLY_PROVISIONAL
+  descriptor: Regional partner. El-Sisi assessed as strong leader.
+  last_incident_date: "2025-01-25"
+  last_incident: >
+    Egypt was assessed as a regional partner in discussions regarding the
+    Gaza situation. President El-Sisi was described as a fantastic leader.
