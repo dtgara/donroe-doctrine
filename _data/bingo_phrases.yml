@@ -1,0 +1,146 @@
+free_square: "Nobody knew it could be so complicated"
+
+phrases:
+  # Territorial
+  - text: "We need Greenland"
+    category: Territorial
+  - text: "Absolute necessity"
+    category: Territorial
+  - text: "51st state"
+    category: Territorial
+  - text: "The Governor of Canada"
+    category: Territorial
+  - text: "Take back the Panama Canal"
+    category: Territorial
+  - text: "Gulf of America"
+    category: Territorial
+  - text: "Strategic location"
+    category: Territorial
+  - text: "We're looking at it"
+    category: Territorial
+
+  # Trade
+  - text: "Trade wars are easy to win"
+    category: Trade
+  - text: "Reciprocal tariffs"
+    category: Trade
+  - text: "They've been ripping us off for years"
+    category: Trade
+  - text: "Most favoured nation"
+    category: Trade
+  - text: "Massive tariffs"
+    category: Trade
+  - text: "Trade deficit"
+    category: Trade
+  - text: "Unfair trade practices"
+    category: Trade
+  - text: "They don't take our cars"
+    category: Trade
+  - text: "Billions and billions of dollars"
+    category: Trade
+  - text: "Liberation Day"
+    category: Trade
+  - text: "We're being taken advantage of"
+    category: Trade
+  - text: "Steel and aluminium"
+    category: Trade
+
+  # Alliance
+  - text: "Pay your two percent"
+    category: Alliance
+  - text: "NATO is obsolete"
+    category: Alliance
+  - text: "They owe us money"
+    category: Alliance
+  - text: "Article Five"
+    category: Alliance
+  - text: "Why should we protect them?"
+    category: Alliance
+  - text: "They don't pay their fair share"
+    category: Alliance
+  - text: "Very special relationship"
+    category: Alliance
+  - text: "Strongest ally"
+    category: Alliance
+  - text: "They've defrauded us"
+    category: Alliance
+
+  # Diplomatic
+  - text: "We got along very well"
+    category: Diplomatic
+  - text: "Great chemistry"
+    category: Diplomatic
+  - text: "He called me"
+    category: Diplomatic
+  - text: "Beautiful letter"
+    category: Diplomatic
+  - text: "We have a deal"
+    category: Diplomatic
+  - text: "Tremendous relationship"
+    category: Diplomatic
+  - text: "He's a strong leader"
+    category: Diplomatic
+  - text: "Very productive meeting"
+    category: Diplomatic
+  - text: "They respect us now"
+    category: Diplomatic
+  - text: "Historic agreement"
+    category: Diplomatic
+  - text: "Nobody's ever done this before"
+    category: Diplomatic
+
+  # China
+  - text: "China is eating our lunch"
+    category: China
+  - text: "125 percent tariffs"
+    category: China
+  - text: "President Xi"
+    category: China
+  - text: "Fentanyl"
+    category: China
+  - text: "They've stolen our intellectual property"
+    category: China
+  - text: "Decoupling"
+    category: China
+  - text: "The Chinese virus"
+    category: China
+
+  # Russia
+  - text: "Get along with Russia"
+    category: Russia
+  - text: "Putin called me"
+    category: Russia
+  - text: "They said they didn't do it"
+    category: Russia
+  - text: "Zelensky should make a deal"
+    category: Russia
+  - text: "24 hours"
+    category: Russia
+  - text: "Very powerful country"
+    category: Russia
+
+  # Rhetorical
+  - text: "Many people are saying"
+    category: Rhetorical
+  - text: "Tremendous"
+    category: Rhetorical
+  - text: "Like you've never seen before"
+    category: Rhetorical
+  - text: "Fake news"
+    category: Rhetorical
+  - text: "Everyone agrees with me"
+    category: Rhetorical
+  - text: "We'll see what happens"
+    category: Rhetorical
+  - text: "A lot of people don't know that"
+    category: Rhetorical
+  - text: "I alone can fix it"
+    category: Rhetorical
+  - text: "Perfect phone call"
+    category: Rhetorical
+  - text: "Everybody knows"
+    category: Rhetorical
+  - text: "Nobody knew it could be so complicated"
+    category: Rhetorical
+  - text: "The failing press"
+    category: Rhetorical

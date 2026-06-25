@@ -1,4 +1,240 @@
-# Contradiction Tracker data
-# Schema: id, theme, country, term_a, statement_a, date_a, source_a,
-#         statement_b, date_b, source_b, doctrine_note
-# Populated from Day 4 onwards per sprint plan.
+contradictions:
+  - id: c001
+    theme: Alliance
+    country: [NATO]
+    term_a: 1
+    statement_a: "NATO is obsolete."
+    date_a: "2017-01-16"
+    source_a: "Interview with The Times and Bild"
+    statement_b: "I said it was obsolete. It's no longer obsolete."
+    date_b: "2017-04-12"
+    source_b: "White House press conference with NATO Secretary General Stoltenberg"
+    doctrine_note: "The obsolescence of NATO was resolved by a meeting. The alliance's fundamental structure was unchanged. The doctrine holds that perception is policy."
+
+  - id: c002
+    theme: Trade
+    country: [China]
+    term_a: 1
+    statement_a: "China is not our enemy."
+    date_a: "2019-06-29"
+    source_a: "G20 Summit remarks, Osaka"
+    statement_b: "China is an enemy of the United States."
+    date_b: "2019-08-23"
+    source_b: "Twitter"
+    doctrine_note: "The reclassification occurred within two months. The G20 meeting had not resolved the trade dispute. The tweets were posted in response to China's retaliatory tariffs."
+
+  - id: c003
+    theme: Diplomatic
+    country: [Russia]
+    term_a: 1
+    statement_a: "Nobody's been tougher on Russia than me."
+    date_a: "2018-07-16"
+    source_a: "Press conference, Helsinki"
+    statement_b: "I would get along very well with Putin."
+    date_b: "2015-07-30"
+    source_b: "CNN interview"
+    doctrine_note: "Both statements appear to be sincerely held. The doctrine holds that toughness and personal warmth are not mutually exclusive. This position is maintained regardless of evidence."
+
+  - id: c004
+    theme: Territorial
+    country: [Mexico]
+    term_a: 1
+    statement_a: "Mexico will pay for the wall. One hundred percent."
+    date_a: "2016-09-01"
+    source_a: "Immigration speech, Phoenix"
+    statement_b: "I never said Mexico was going to pay for the wall directly."
+    date_b: "2019-01-10"
+    source_b: "Twitter"
+    doctrine_note: "The original statement was made on approximately 212 documented occasions. The revised position was offered once. The wall was partially funded by redirected US military spending."
+
+  - id: c005
+    theme: Diplomatic
+    country: [North Korea]
+    term_a: 1
+    statement_a: "North Korea best not make any more threats to the United States. They will be met with fire and fury like the world has never seen."
+    date_a: "2017-08-08"
+    source_a: "Remarks at Bedminster"
+    statement_b: "I fell in love with Kim Jong Un."
+    date_b: "2018-09-29"
+    source_b: "Campaign rally, Wheeling, West Virginia"
+    doctrine_note: "The transition from fire and fury to falling in love occurred in approximately thirteen months. Three summits followed. No denuclearisation agreement was reached."
+
+  - id: c006
+    theme: Trade
+    country: [China]
+    term_a: 2
+    statement_a: "We're going to put tariffs on China of 145 percent. They're not going to be doing much business with us."
+    date_a: "2025-04-09"
+    source_a: "White House remarks"
+    statement_b: "We're doing very well with China. We're going to make a great deal."
+    date_b: "2025-05-12"
+    source_b: "Remarks following Geneva trade talks"
+    doctrine_note: "The tariffs were reduced to 30 percent following the Geneva talks. The 145 percent figure had been in place for 34 days. Both positions were described as successful outcomes."
+
+  - id: c007
+    theme: Alliance
+    country: [NATO]
+    term_a: 2
+    statement_a: "If they don't pay, I would encourage the Russians to do whatever the hell they want."
+    date_a: "2024-02-10"
+    source_a: "Campaign rally, Conway, South Carolina"
+    statement_b: "I am totally committed to NATO."
+    date_b: "2025-02-14"
+    source_b: "Press conference with NATO Secretary General Rutte"
+    doctrine_note: "The commitment was entered into following significant increases in European defence spending. The conditionality of the commitment was not resolved by its reaffirmation."
+
+  - id: c008
+    theme: Diplomatic
+    country: [Ukraine, Russia]
+    term_a: 2
+    statement_a: "Zelensky is a very talented salesman."
+    date_a: "2025-02-28"
+    source_a: "White House remarks following Oval Office confrontation"
+    statement_b: "I like Zelensky. He's a brave man."
+    date_b: "2025-04-20"
+    source_b: "Truth Social"
+    doctrine_note: "The Oval Office meeting in February included a public dressing-down of Zelensky on camera. The April characterisation suggests the assessment had softened. The war remained unresolved."
+
+  - id: c009
+    theme: Trade
+    country: []
+    term_a: 1
+    statement_a: "I am a free trader."
+    date_a: "2018-06-09"
+    source_a: "G7 Summit remarks, Charlevoix"
+    statement_b: "The tariff is the most beautiful word in the dictionary."
+    date_b: "2024-10-16"
+    source_b: "Economic Club of Chicago"
+    doctrine_note: "The positions are separated by six years. The policy record supports the second statement more completely than the first."
+
+  - id: c010
+    theme: Diplomatic
+    country: [Saudi Arabia]
+    term_a: 1
+    statement_a: "I want to find out who did it. It's being looked at very seriously."
+    date_a: "2018-10-11"
+    source_a: "60 Minutes interview — referring to the disappearance of Jamal Khashoggi"
+    statement_b: "Saudi Arabia has been a very important ally of ours in the Middle East."
+    date_b: "2018-10-20"
+    source_b: "Oval Office remarks"
+    doctrine_note: "The Khashoggi murder was subsequently attributed by US intelligence to Crown Prince Mohammed bin Salman. The alliance was not adjusted. Arms sales continued."
+
+  - id: c011
+    theme: Territorial
+    country: [Canada]
+    term_a: 2
+    statement_a: "I'd like to see Canada become our 51st state."
+    date_a: "2025-01-07"
+    source_a: "Truth Social"
+    statement_b: "I don't think I would use military force to get Canada."
+    date_b: "2025-02-04"
+    source_b: "Fox News interview"
+    doctrine_note: "The economic pressure being applied at the time of the second statement included 25 percent tariffs. The clarification on military force was considered partial."
+
+  - id: c012
+    theme: Diplomatic
+    country: [Russia]
+    term_a: 1
+    statement_a: "I believe that he believes that — and that's very important for somebody to believe."
+    date_a: "2018-07-16"
+    source_a: "Joint press conference with Putin, Helsinki — on Russian election interference"
+    statement_b: "I accept our intelligence community's conclusion that Russia's meddling in the 2016 election took place."
+    date_b: "2018-07-17"
+    source_b: "White House statement, one day later"
+    doctrine_note: "The revision was made within 24 hours under congressional pressure. The original statement remained on the record. The doctrine holds that both positions are valid."
+
+  - id: c013
+    theme: Trade
+    country: []
+    term_a: 2
+    statement_a: "I'm declaring a national economic emergency."
+    date_a: "2025-04-02"
+    source_a: "Rose Garden — Liberation Day tariff announcement"
+    statement_b: "You have to be flexible."
+    date_b: "2025-04-09"
+    source_b: "White House — announcing 90-day tariff pause for most countries"
+    doctrine_note: "The emergency lasted seven days before the pause was announced. The tariffs on China were simultaneously increased. Flexibility was applied selectively."
+
+  - id: c014
+    theme: Alliance
+    country: [United Kingdom]
+    term_a: 1
+    statement_a: "The UK is our strongest ally."
+    date_a: "2017-01-27"
+    source_a: "Joint press conference with Theresa May"
+    statement_b: "They owe us money. All these countries owe us money."
+    date_b: "2017-05-25"
+    source_b: "NATO summit, Brussels — referring to alliance members including the UK"
+    doctrine_note: "The UK met its NATO spending commitments. It was nonetheless characterised as owing money. The special relationship accommodates both positions simultaneously."
+
+  - id: c015
+    theme: Diplomatic
+    country: [China]
+    term_a: 1
+    statement_a: "President Xi and I have a great relationship. We understand each other."
+    date_a: "2019-06-29"
+    source_a: "G20 summit, Osaka"
+    statement_b: "We don't need China and, frankly, would be far better off without them."
+    date_b: "2019-08-23"
+    source_b: "Twitter"
+    doctrine_note: "The statements are separated by 55 days. They were prompted by the resumption and escalation of tariff disputes. Great relationships and dispensability coexist in the doctrine."
+
+  - id: c016
+    theme: Diplomatic
+    country: [Mexico]
+    term_a: 2
+    statement_a: "Mexico is going to have to do something about this. We're going to put 25 percent tariffs on them."
+    date_a: "2025-01-20"
+    source_a: "Inaugural address"
+    statement_b: "We have a great relationship with Mexico. They've done a lot."
+    date_b: "2025-03-06"
+    source_b: "White House remarks"
+    doctrine_note: "The tariffs were applied, suspended, and reapplied across the period. The characterisation of the relationship as great coexisted with active tariff threats throughout."
+
+  - id: c017
+    theme: Trade
+    country: []
+    term_a: 1
+    statement_a: "I'm not going to cut Social Security. I'm not going to cut Medicare. I'm not going to cut Medicaid."
+    date_a: "2015-05-21"
+    source_a: "Campaign interview"
+    statement_b: "We have to do something about entitlements."
+    date_b: "2020-01-22"
+    source_b: "Davos interview"
+    doctrine_note: "Not strictly a foreign policy contradiction. Included as evidence of doctrinal evolution on domestic economic commitments with international resonance."
+
+  - id: c018
+    theme: Diplomatic
+    country: [France]
+    term_a: 1
+    statement_a: "Emmanuel is doing a great job."
+    date_a: "2018-11-11"
+    source_a: "Armistice centenary remarks, Paris"
+    statement_b: "He's got a very low approval rating in France. Maybe he should focus on that."
+    date_b: "2018-11-13"
+    source_b: "Twitter"
+    doctrine_note: "The reassessment followed Macron's call for a European army. The approval rating critique was offered two days after the joint commemorative event."
+
+  - id: c019
+    theme: Territorial
+    country: [Greenland]
+    term_a: 1
+    statement_a: "It's not a priority for me at the moment."
+    date_a: "2019-08-22"
+    source_a: "Remarks — after Denmark rejected the Greenland purchase"
+    statement_b: "We need Greenland for national security purposes. And I think we're going to get it. One way or another."
+    date_b: "2025-01-07"
+    source_b: "Truth Social"
+    doctrine_note: "The position was deprioritised for five years and four months, then restored with greater urgency. The phrase one way or another was new to the second iteration."
+
+  - id: c020
+    theme: Diplomatic
+    country: [Russia, Ukraine]
+    term_a: 2
+    statement_a: "I think Putin wants to make a deal. Very much wants to make a deal."
+    date_a: "2025-02-12"
+    source_a: "Remarks"
+    statement_b: "Putin is destroying Russia by not making a deal."
+    date_b: "2025-05-08"
+    source_b: "Truth Social"
+    doctrine_note: "In February, Putin's desire to deal was the basis for optimism. In May, his failure to deal was destroying his country. The war continued in both instances."

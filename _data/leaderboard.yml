@@ -1,8 +1,204 @@
-# Ally/Enemy Leaderboard data
-# Schema: in_favour[], out_of_favour[], indeterminate[]
-# Each entry: rank, country, annotation, trend (RISING|FALLING|STABLE|VOLATILE),
-#             status_changes, last_updated
-# Populated from Day 3 onwards per sprint plan.
-in_favour: []
-out_of_favour: []
-indeterminate: []
+last_updated: "2026-06-25"
+
+in_favour:
+  - rank: 1
+    country: "Saudi Arabia"
+    flag: "🇸🇦"
+    annotation: "First foreign visit of both terms. Arms deals totalling hundreds of billions. Crown Prince MBS described as doing a spectacular job. The kingdom has never been more in favour."
+    trend: RISING
+    status_changes: 1
+    last_updated: "2025-02-01"
+
+  - rank: 2
+    country: "Israel"
+    flag: "🇮🇱"
+    annotation: "Jerusalem recognised as capital. Embassy moved. Golan Heights recognised. Abraham Accords brokered. The relationship is described as unbreakable, which it has been, structurally."
+    trend: STABLE
+    status_changes: 0
+    last_updated: "2025-01-20"
+
+  - rank: 3
+    country: "United Arab Emirates"
+    flag: "🇦🇪"
+    annotation: "Abraham Accords signatory. Major investment pledges. The President of the UAE visited Mar-a-Lago. Relations are excellent and continuing to be excellent."
+    trend: STABLE
+    status_changes: 0
+    last_updated: "2025-03-15"
+
+  - rank: 4
+    country: "Hungary"
+    flag: "🇭🇺"
+    annotation: "Viktor Orbán described as fantastic and a great leader of his country. NATO ally but the right kind — sceptical of the alliance, friendly toward Russia, tough on migration."
+    trend: STABLE
+    status_changes: 1
+    last_updated: "2025-02-10"
+
+  - rank: 5
+    country: "El Salvador"
+    flag: "🇸🇻"
+    annotation: "President Bukele's mass imprisonment model praised as exactly what we should be doing. Deported migrants housed in Salvadoran facilities. An efficient partnership."
+    trend: RISING
+    status_changes: 2
+    last_updated: "2025-04-01"
+
+  - rank: 6
+    country: "Italy"
+    flag: "🇮🇹"
+    annotation: "Prime Minister Meloni described as fantastic and doing a great job. Relations warm. Italy bucks the trend of irritating European allies."
+    trend: RISING
+    status_changes: 0
+    last_updated: "2025-03-01"
+
+  - rank: 7
+    country: "India"
+    flag: "🇮🇳"
+    annotation: "Modi relationship warm. Howdy Modi rally held in Houston. Tariffs applied but described as negotiable. Trade frictions exist but the personal chemistry holds."
+    trend: FALLING
+    status_changes: 3
+    last_updated: "2025-05-01"
+
+  - rank: 8
+    country: "Japan"
+    flag: "🇯🇵"
+    annotation: "Major defence spending commitments made. Trade negotiations ongoing. Golf diplomacy conducted. The alliance is solid provided Japan keeps buying American goods."
+    trend: STABLE
+    status_changes: 2
+    last_updated: "2025-04-15"
+
+  - rank: 9
+    country: "United Kingdom"
+    flag: "🇬🇧"
+    annotation: "The special relationship endures, conditionally. Brexit described as a great thing. Tariffs applied at 10 percent. The special nature of the relationship is subject to ongoing assessment."
+    trend: FALLING
+    status_changes: 4
+    last_updated: "2025-05-15"
+
+  - rank: 10
+    country: "Argentina"
+    flag: "🇦🇷"
+    annotation: "President Milei described as the most important leader in the world. Ideological alignment on economics and media. A rare ally in South America."
+    trend: RISING
+    status_changes: 0
+    last_updated: "2025-03-20"
+
+out_of_favour:
+  - rank: 1
+    country: "Canada"
+    flag: "🇨🇦"
+    annotation: "Described as the 51st state. Prime Minister referred to as Governor. 25 percent tariffs applied. The relationship has not recovered from being redesignated a prospective acquisition."
+    trend: FALLING
+    status_changes: 8
+    last_updated: "2025-06-01"
+
+  - rank: 2
+    country: "China"
+    flag: "🇨🇳"
+    annotation: "Primary trade adversary. Tariffs reaching 145 percent applied. Responsible for fentanyl, trade theft, and the virus. Negotiations intermittent. The unfairness has been described as tremendous."
+    trend: VOLATILE
+    status_changes: 12
+    last_updated: "2025-06-10"
+
+  - rank: 3
+    country: "Denmark"
+    flag: "🇩🇰"
+    annotation: "Refused to sell Greenland. The Prime Minister called the idea absurd. The idea was described as not absurd. Military options not ruled out. Relations have not normalised."
+    trend: FALLING
+    status_changes: 5
+    last_updated: "2025-03-01"
+
+  - rank: 4
+    country: "Mexico"
+    flag: "🇲🇽"
+    annotation: "25 percent tariffs threatened, applied, partially suspended, reapplied. Fentanyl. Migration. The wall. Mexico will pay. Mexico has not paid. Mexico is negotiating."
+    trend: VOLATILE
+    status_changes: 14
+    last_updated: "2025-06-01"
+
+  - rank: 5
+    country: "France"
+    flag: "🇫🇷"
+    annotation: "Macron described as very aggressive. Digital services tax triggered tariff threats. Notre-Dame attendance a rare diplomatic moment. The cordiality is fragile."
+    trend: FALLING
+    status_changes: 6
+    last_updated: "2025-04-01"
+
+  - rank: 6
+    country: "Germany"
+    flag: "🇩🇪"
+    annotation: "NATO delinquent for years. Nord Stream 2 sanctioned. Auto tariffs applied. Described as not paying its fair share. Now paying its fair share. Still not forgiven."
+    trend: STABLE
+    status_changes: 4
+    last_updated: "2025-05-01"
+
+  - rank: 7
+    country: "Ukraine"
+    flag: "🇺🇦"
+    annotation: "Zelensky told to make a deal. Aid paused. Described as not grateful enough. A minerals agreement signed. The war continues. The deal remains 24 hours away."
+    trend: VOLATILE
+    status_changes: 9
+    last_updated: "2025-06-01"
+
+  - rank: 8
+    country: "Panama"
+    flag: "🇵🇦"
+    annotation: "Canal demanded back. Chinese influence cited. Fees described as extortionate. Panama has declined to return the canal. The methodology of return is under consideration."
+    trend: FALLING
+    status_changes: 3
+    last_updated: "2025-03-01"
+
+  - rank: 9
+    country: "South Africa"
+    flag: "🇿🇦"
+    annotation: "Accused of seizing land from white farmers. Ambassador expelled. Foreign aid cut. The evidence base for the land seizure claim is disputed. The policy is not."
+    trend: FALLING
+    status_changes: 4
+    last_updated: "2025-04-01"
+
+  - rank: 10
+    country: "Colombia"
+    flag: "🇨🇴"
+    annotation: "Refused to accept deportation flights. Tariffs of 25 percent threatened within hours. Colombia accepted the flights. The tariffs were suspended. A demonstration of methodology."
+    trend: RISING
+    status_changes: 5
+    last_updated: "2025-02-01"
+
+indeterminate:
+  - rank: 1
+    country: "Russia"
+    flag: "🇷🇺"
+    annotation: "Not enemy, not ally. A strong country with a strong leader. Sanctions maintained while rapprochement sought. Ukraine ceasefire brokered unsuccessfully. The relationship defies categorisation, which may be the point."
+    trend: VOLATILE
+    status_changes: 7
+    last_updated: "2025-06-10"
+
+  - rank: 2
+    country: "Turkey"
+    flag: "🇹🇷"
+    annotation: "NATO member. Purchased Russian S-400 missiles. Erdoğan described as tough. F-35 access revoked. Relationship warm at the personal level, complicated at every other level."
+    trend: VOLATILE
+    status_changes: 6
+    last_updated: "2025-04-01"
+
+  - rank: 3
+    country: "Qatar"
+    flag: "🇶🇦"
+    annotation: "Hosts US military base. Offered a Boeing 747 as a gift. Designated state sponsor of terrorism by neighbours (2017). Trump mediated. The plane offer is under legal review."
+    trend: STABLE
+    status_changes: 3
+    last_updated: "2025-05-20"
+
+  - rank: 4
+    country: "South Korea"
+    flag: "🇰🇷"
+    annotation: "Alliance maintained. Troops present. Tariffs applied. Demands for increased burden sharing. Kim Jong Un correspondence ongoing from Term 1. The peninsula remains complex."
+    trend: STABLE
+    status_changes: 3
+    last_updated: "2025-05-01"
+
+  - rank: 5
+    country: "Brazil"
+    flag: "🇧🇷"
+    annotation: "Bolsonaro warmly regarded. Lula less so. Tariffs applied. Amazon policy a friction point. The relationship has changed with the government and may change again."
+    trend: STABLE
+    status_changes: 2
+    last_updated: "2025-04-01"

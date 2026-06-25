@@ -1,4 +1,214 @@
-# Tariff Calculator data
-# Schema: country, code (ISO 3166-1 alpha-2), categories[]
-# Each category: product, rate_percent, effective_date, change_count, term, doctrine_assessment
-# Populated from Day 5 onwards per sprint plan.
+last_updated: "2026-06-25"
+
+entries:
+  - country: "China"
+    code: "CN"
+    categories:
+      - product: "All goods (general)"
+        rate_percent: 145
+        effective_date: "2025-04-09"
+        change_count: 9
+        term: 2
+        doctrine_assessment: "The rate has been described as necessary, retaliatory, and the highest in history. It was subsequently reduced to 30 percent following the Geneva talks. The 145 percent figure endured for 34 days and is documented here at its peak."
+      - product: "Steel"
+        rate_percent: 25
+        effective_date: "2018-03-23"
+        change_count: 2
+        term: 1
+        doctrine_assessment: "Section 232 tariff applied on national security grounds. China was not the only target; the measure was global. It is listed here because China was the implied primary concern."
+      - product: "Solar panels"
+        rate_percent: 30
+        effective_date: "2018-02-07"
+        change_count: 3
+        term: 1
+        doctrine_assessment: "Section 201 safeguard tariff. Applied to protect domestic manufacturers. Extended and modified in subsequent years."
+
+  - country: "Canada"
+    code: "CA"
+    categories:
+      - product: "All goods (general)"
+        rate_percent: 25
+        effective_date: "2025-02-01"
+        change_count: 6
+        term: 2
+        doctrine_assessment: "Applied citing fentanyl flows and immigration. Suspended, reapplied, and partially modified multiple times. The 51st state framing accompanied the tariff throughout."
+      - product: "Steel and aluminium"
+        rate_percent: 25
+        effective_date: "2025-03-12"
+        change_count: 2
+        term: 2
+        doctrine_assessment: "Applied under Section 232. Canada was exempted from Term 1 steel tariffs under the USMCA renegotiation. The exemption was not extended in Term 2."
+      - product: "Automobiles"
+        rate_percent: 25
+        effective_date: "2025-04-03"
+        change_count: 1
+        term: 2
+        doctrine_assessment: "Applied under the broader auto tariff order. Canada's integrated supply chains with the US auto industry were acknowledged; the tariff was applied regardless."
+
+  - country: "Mexico"
+    code: "MX"
+    categories:
+      - product: "All goods (general)"
+        rate_percent: 25
+        effective_date: "2025-02-01"
+        change_count: 7
+        term: 2
+        doctrine_assessment: "Applied citing fentanyl and migration. Suspended within days pending negotiation. The suspension has been extended and modified. The underlying threat has not been withdrawn."
+      - product: "Steel and aluminium"
+        rate_percent: 25
+        effective_date: "2025-03-12"
+        change_count: 1
+        term: 2
+        doctrine_assessment: "Mexico, like Canada, lost its USMCA exemption. The tariff applies to all steel and aluminium regardless of origin."
+
+  - country: "European Union"
+    code: "EU"
+    categories:
+      - product: "All goods (general)"
+        rate_percent: 20
+        effective_date: "2025-04-09"
+        change_count: 3
+        term: 2
+        doctrine_assessment: "Applied on Liberation Day. Paused for 90 days on April 9. The EU's counter-tariff threats were characterised as unhelpful. Negotiations ongoing."
+      - product: "Steel and aluminium"
+        rate_percent: 25
+        effective_date: "2018-06-01"
+        change_count: 2
+        term: 1
+        doctrine_assessment: "Applied after exemption expired. EU retaliated with tariffs on Harley-Davidson, bourbon, and jeans. Described at the time as the beginning of a trade war that would be easy to win."
+      - product: "Automobiles"
+        rate_percent: 25
+        effective_date: "2025-04-03"
+        change_count: 1
+        term: 2
+        doctrine_assessment: "Germany's automotive exports are the primary target. The EU's €6 billion retaliatory list was prepared in response."
+
+  - country: "Japan"
+    code: "JP"
+    categories:
+      - product: "All goods (general)"
+        rate_percent: 24
+        effective_date: "2025-04-09"
+        change_count: 2
+        term: 2
+        doctrine_assessment: "Applied on Liberation Day. Paused for 90 days. Japan does not take American cars is a documented grievance. Negotiations began during the pause."
+      - product: "Steel and aluminium"
+        rate_percent: 25
+        effective_date: "2018-03-23"
+        change_count: 1
+        term: 1
+        doctrine_assessment: "Applied globally including to Japan. Japan sought and did not receive a permanent exemption."
+
+  - country: "United Kingdom"
+    code: "GB"
+    categories:
+      - product: "All goods (general)"
+        rate_percent: 10
+        effective_date: "2025-04-05"
+        change_count: 1
+        term: 2
+        doctrine_assessment: "The lowest Liberation Day rate applied to any major economy. Attributed to the special relationship. A trade deal framework was announced in May 2025 with reduced rates on some goods."
+
+  - country: "India"
+    code: "IN"
+    categories:
+      - product: "All goods (general)"
+        rate_percent: 26
+        effective_date: "2025-04-09"
+        change_count: 2
+        term: 2
+        doctrine_assessment: "India charges 100 percent tariffs is a documented claim. The actual rate varies significantly by product. The 26 percent rate was applied. Negotiations ongoing during the 90-day pause."
+      - product: "Steel and aluminium"
+        rate_percent: 25
+        effective_date: "2018-03-23"
+        change_count: 1
+        term: 1
+        doctrine_assessment: "Applied globally. India was among the countries that did not receive a permanent exemption."
+
+  - country: "South Korea"
+    code: "KR"
+    categories:
+      - product: "All goods (general)"
+        rate_percent: 25
+        effective_date: "2025-04-09"
+        change_count: 2
+        term: 2
+        doctrine_assessment: "Applied on Liberation Day. Paused. South Korea sought a rapid negotiated settlement during the 90-day window."
+      - product: "Washing machines"
+        rate_percent: 20
+        effective_date: "2018-02-07"
+        change_count: 1
+        term: 1
+        doctrine_assessment: "Section 201 safeguard. Samsung and LG are the primary Korean manufacturers affected. Both subsequently announced US manufacturing investments."
+
+  - country: "Brazil"
+    code: "BR"
+    categories:
+      - product: "All goods (general)"
+        rate_percent: 10
+        effective_date: "2025-04-05"
+        change_count: 1
+        term: 2
+        doctrine_assessment: "Base Liberation Day rate. Brazil's relationship with the Bolsonaro administration was warm; the Lula government is less warmly regarded. The tariff rate does not appear to reflect the political temperature."
+      - product: "Steel and aluminium"
+        rate_percent: 25
+        effective_date: "2018-03-23"
+        change_count: 1
+        term: 1
+        doctrine_assessment: "Applied globally. Brazil is a significant steel producer. No permanent exemption was granted."
+
+  - country: "Australia"
+    code: "AU"
+    categories:
+      - product: "All goods (general)"
+        rate_percent: 10
+        effective_date: "2025-04-05"
+        change_count: 1
+        term: 2
+        doctrine_assessment: "Base Liberation Day rate. Australia runs a trade deficit with the US, meaning it buys more from the US than it sells. The 10 percent tariff was applied regardless. Australia did not retaliate."
+
+  - country: "Saudi Arabia"
+    code: "SA"
+    categories:
+      - product: "All goods (general)"
+        rate_percent: 10
+        effective_date: "2025-04-05"
+        change_count: 1
+        term: 2
+        doctrine_assessment: "Base rate. Saudi Arabia is the top-ranked ally on the leaderboard. The tariff is applied nonetheless. Arms sales and investment pledges dwarf the trade tariff in strategic significance."
+
+  - country: "Vietnam"
+    code: "VN"
+    categories:
+      - product: "All goods (general)"
+        rate_percent: 46
+        effective_date: "2025-04-09"
+        change_count: 2
+        term: 2
+        doctrine_assessment: "One of the highest Liberation Day rates, reflecting a large trade deficit. Vietnam became a manufacturing alternative to China during Term 1. The tariff closes that arbitrage. Paused for 90 days."
+
+  - country: "Taiwan"
+    code: "TW"
+    categories:
+      - product: "All goods (general)"
+        rate_percent: 32
+        effective_date: "2025-04-09"
+        change_count: 2
+        term: 2
+        doctrine_assessment: "Applied despite Taiwan's status as a semiconductor supplier critical to US interests. TSMC's Arizona investments were cited positively. The tariff was applied regardless. Paused for 90 days."
+
+  - country: "Steel (Global)"
+    code: "XX"
+    categories:
+      - product: "Steel"
+        rate_percent: 25
+        effective_date: "2018-03-23"
+        change_count: 3
+        term: 1
+        doctrine_assessment: "Section 232 national security tariff. Applied globally with country-specific exemptions negotiated over time. Described as protecting American steel workers. The US steel industry welcomed the measure."
+      - product: "Aluminium"
+        rate_percent: 10
+        effective_date: "2018-03-23"
+        change_count: 3
+        term: 1
+        doctrine_assessment: "Applied simultaneously with steel tariff. Rate raised to 25 percent for some countries in subsequent years. Canada and Mexico were exempted under USMCA then re-included in Term 2."
