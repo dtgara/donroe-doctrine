@@ -4,27 +4,32 @@ title: "The Ledger"
 body_class: page-bribes
 ---
 
-<header class="section-header">
-  <div class="section-header-inner">
-    <p class="section-label">Section XI — Bribe Calculator</p>
-    <h1 class="section-title">The Ledger</h1>
-    <p class="section-intro">A register of payments made to the Trump family, Trump Organization, and affiliated political vehicles — and the favourable outcomes that followed. Conservative estimates only. Actual total is likely significantly higher.</p>
-  </div>
-</header>
-
-<!-- Zone 1: The Counter -->
+<!-- Zone 1: Full-width dark hero — title + counter integrated -->
 <div class="bribe-hero">
   <div class="container">
-    <p class="bribe-total-label">Total Documented Transactions</p>
-    <div class="bribe-total-amount" id="bribe-counter">$0</div>
-    <p class="bribe-total-note">Covers only publicly reported transactions across both presidential terms. Excludes unrealised crypto asset valuations. Center for American Progress estimates the true figure at $9.7B.</p>
+
+    <div class="bribe-hero-top">
+      <p class="bribe-hero-eyebrow">Section XI &mdash; Bribe Calculator</p>
+      <h1 class="bribe-hero-title">The Ledger</h1>
+      <p class="bribe-hero-subtitle">A register of payments made to the Trump family, Trump Organization, and affiliated political vehicles — and the outcomes that followed. Conservative estimates only.</p>
+    </div>
+
+    <div class="bribe-hero-divider"></div>
+
+    <div class="bribe-hero-counter">
+      <p class="bribe-total-label">Total Documented Transactions</p>
+      <div class="bribe-total-amount" id="bribe-counter">$0</div>
+      <p class="bribe-total-note">Covering only publicly reported transactions across both presidential terms. Excludes unrealised crypto asset valuations. The Center for American Progress estimates the true figure at $9.7 billion.</p>
+    </div>
+
     <div class="bribe-category-bars" id="bribe-bars">
       <!-- Populated by JS -->
     </div>
+
   </div>
 </div>
 
-<div class="doc-divider" style="background:var(--color-near-black);"><span class="doc-divider-ornament" style="background:#c8a951;"></span></div>
+<div class="doc-divider"><span class="doc-divider-ornament"></span></div>
 
 <div class="section-body">
 
@@ -36,6 +41,8 @@ body_class: page-bribes
   <!-- Zone 3: Transaction Register -->
   <div class="bribe-ledger-header">
     <h2 class="bribe-ledger-title">Transaction Register</h2>
+    <p class="bribe-ledger-subtitle">Click any row to read the full transaction detail and outcome. Sorted by amount.</p>
+
     <div class="bribe-filter-bar">
       <div class="bribe-filter-group">
         <span class="bribe-filter-label">Term</span>
@@ -53,7 +60,7 @@ body_class: page-bribes
         <button class="bribe-filter" data-filter="category" data-value="hospitality">Hospitality</button>
       </div>
       <div class="bribe-filter-group">
-        <span class="bribe-filter-label">Source</span>
+        <span class="bribe-filter-label">Payer</span>
         <button class="bribe-filter active" data-filter="giver_type" data-value="all">All</button>
         <button class="bribe-filter" data-filter="giver_type" data-value="individual">Individual</button>
         <button class="bribe-filter" data-filter="giver_type" data-value="company">Company</button>
@@ -63,6 +70,12 @@ body_class: page-bribes
     </div>
   </div>
 
+  <!-- Detail panel (shown on row click) -->
+  <div class="bribe-detail-panel" id="bribe-detail" style="display:none;">
+    <button class="bribe-detail-close" id="bribe-detail-close">&times; Close</button>
+    <div class="bribe-detail-inner" id="bribe-detail-inner"></div>
+  </div>
+
   <div class="bribe-table-wrap">
     <table class="bribe-table" id="bribe-table">
       <thead>
@@ -70,7 +83,7 @@ body_class: page-bribes
           <th class="col-date">Date</th>
           <th class="col-giver">Who Paid</th>
           <th class="col-amount">Amount</th>
-          <th class="col-receiver">Received By</th>
+          <th class="col-outcome">Outcome</th>
           <th class="col-category">Category</th>
           <th class="col-confidence">Confidence</th>
         </tr>
@@ -84,12 +97,6 @@ body_class: page-bribes
     <span>Filtered total: <span class="bribe-filtered-total" id="bribe-filtered-total">$0</span></span>
   </div>
 
-  <!-- Expandable detail panel -->
-  <div class="bribe-detail-panel" id="bribe-detail" style="display:none;">
-    <button class="bribe-detail-close" id="bribe-detail-close">&times; Close</button>
-    <div class="bribe-detail-inner" id="bribe-detail-inner"></div>
-  </div>
-
 </div>
 
 <!-- Data -->
@@ -97,31 +104,30 @@ body_class: page-bribes
 
 <script>
 (function() {
-  var data = JSON.parse(document.getElementById('bribe-data').textContent);
+  var raw = JSON.parse(document.getElementById('bribe-data').textContent);
+  // Sort by amount descending
+  var data = raw.slice().sort(function(a,b){ return (b.amount||0) - (a.amount||0); });
 
   var CATEGORIES = {
-    crypto:       { label: 'Crypto & Digital Assets', color: '#c8a951' },
-    pardon:       { label: 'Pardons & Commutations',  color: '#C0392B' },
-    foreign:      { label: 'Foreign Governments',     color: '#1565C0' },
-    inauguration: { label: 'Inaugural & Political',   color: '#2E7D32' },
-    hospitality:  { label: 'Hospitality & Emoluments',color: '#6A1B9A' }
+    crypto:       { label: 'Crypto & Digital Assets',  color: '#c8a951' },
+    pardon:       { label: 'Pardons & Commutations',   color: '#C0392B' },
+    foreign:      { label: 'Foreign Governments',      color: '#1565C0' },
+    inauguration: { label: 'Inaugural & Political',    color: '#2E7D32' },
+    hospitality:  { label: 'Hospitality & Emoluments', color: '#6A1B9A' }
   };
+  var CONF = { documented: 'Documented', reported: 'Reported', inferred: 'Inferred' };
 
-  var CONFIDENCE_LABELS = {
-    documented: 'Documented',
-    reported:   'Reported',
-    inferred:   'Inferred'
-  };
-
-  // ─── Totals ───────────────────────────────────────────────────────────────
+  // ── Totals ────────────────────────────────────────────────────────────────
   var grandTotal = 0;
-  var catTotals = {};
+  var catTotals  = {};
+  var catCounts  = {};
   data.forEach(function(d) {
     grandTotal += d.amount || 0;
-    catTotals[d.category] = (catTotals[d.category] || 0) + (d.amount || 0);
+    catTotals[d.category]  = (catTotals[d.category]  || 0) + (d.amount || 0);
+    catCounts[d.category]  = (catCounts[d.category]  || 0) + 1;
   });
 
-  // ─── Format helpers ───────────────────────────────────────────────────────
+  // ── Formatters ───────────────────────────────────────────────────────────
   function fmtLarge(n) {
     if (n >= 1e9) return '$' + (n / 1e9).toFixed(2) + 'B';
     if (n >= 1e6) return '$' + (n / 1e6).toFixed(1) + 'M';
@@ -129,74 +135,74 @@ body_class: page-bribes
     return '$' + n.toLocaleString();
   }
   function fmtFull(n) {
-    return '$' + Math.round(n).toLocaleString('en-US');
+    return '$' + Math.round(n || 0).toLocaleString('en-US');
+  }
+  function amountClass(n) {
+    if (n >= 1e9) return 'amt-billion';
+    if (n >= 1e8) return 'amt-hundred-million';
+    if (n >= 1e6) return 'amt-million';
+    return 'amt-small';
   }
 
-  // ─── Zone 1: Counter ─────────────────────────────────────────────────────
+  // ── Zone 1: Counter ───────────────────────────────────────────────────────
   var counterEl = document.getElementById('bribe-counter');
-  var started = false;
+  var started   = false;
   function runCounter() {
-    if (started) return;
-    started = true;
-    var duration = 2800;
-    var start = Date.now();
+    if (started) return; started = true;
+    var duration = 2800, start = Date.now();
     function tick() {
-      var elapsed = Date.now() - start;
-      var progress = Math.min(elapsed / duration, 1);
-      // Ease out cubic
-      var eased = 1 - Math.pow(1 - progress, 3);
-      counterEl.textContent = fmtFull(Math.round(grandTotal * eased));
-      if (progress < 1) requestAnimationFrame(tick);
+      var p = Math.min((Date.now() - start) / duration, 1);
+      var e = 1 - Math.pow(1 - p, 3);
+      counterEl.textContent = fmtFull(Math.round(grandTotal * e));
+      if (p < 1) requestAnimationFrame(tick);
     }
     requestAnimationFrame(tick);
   }
-  // Trigger on scroll into view
-  var observer = new IntersectionObserver(function(entries) {
-    if (entries[0].isIntersecting) { runCounter(); observer.disconnect(); }
-  }, { threshold: 0.3 });
-  observer.observe(counterEl);
+  var obs = new IntersectionObserver(function(en) {
+    if (en[0].isIntersecting) { runCounter(); obs.disconnect(); }
+  }, { threshold: 0.2 });
+  obs.observe(counterEl);
 
-  // ─── Zone 1: Category bars ────────────────────────────────────────────────
+  // ── Zone 1: Bars ──────────────────────────────────────────────────────────
   var barsEl = document.getElementById('bribe-bars');
   Object.keys(CATEGORIES).forEach(function(cat) {
     var total = catTotals[cat] || 0;
-    var pct = (total / grandTotal * 100).toFixed(1);
-    var item = document.createElement('div');
-    item.className = 'bribe-bar-item';
-    item.innerHTML =
+    var pct   = (total / grandTotal * 100).toFixed(1);
+    var el    = document.createElement('div');
+    el.className = 'bribe-bar-item';
+    el.innerHTML =
       '<div class="bribe-bar-labels">' +
         '<span class="bribe-bar-name">' + CATEGORIES[cat].label + '</span>' +
-        '<span class="bribe-bar-val">' + fmtLarge(total) + '</span>' +
+        '<span class="bribe-bar-val">'  + fmtLarge(total) + '</span>' +
       '</div>' +
       '<div class="bribe-bar-track">' +
-        '<div class="bribe-bar-fill" style="width:0%;background:' + CATEGORIES[cat].color + '" data-pct="' + pct + '"></div>' +
+        '<div class="bribe-bar-fill" style="background:' + CATEGORIES[cat].color + '" data-pct="' + pct + '"></div>' +
       '</div>';
-    barsEl.appendChild(item);
+    barsEl.appendChild(el);
   });
-  // Animate bars
   setTimeout(function() {
     document.querySelectorAll('.bribe-bar-fill').forEach(function(el) {
-      el.style.transition = 'width 1.2s ease';
+      el.style.transition = 'width 1.4s cubic-bezier(.4,0,.2,1)';
       el.style.width = el.getAttribute('data-pct') + '%';
     });
-  }, 400);
+  }, 500);
 
-  // ─── Zone 2: Category Cards ───────────────────────────────────────────────
+  // ── Zone 2: Category Cards ────────────────────────────────────────────────
   var gridEl = document.getElementById('bribe-cat-grid');
   Object.keys(CATEGORIES).forEach(function(cat) {
     var total = catTotals[cat] || 0;
-    var count = data.filter(function(d){ return d.category === cat; }).length;
-    var card = document.createElement('div');
+    var count = catCounts[cat] || 0;
+    var card  = document.createElement('div');
     card.className = 'bribe-cat-card';
     card.style.borderTopColor = CATEGORIES[cat].color;
     card.innerHTML =
-      '<div class="bribe-cat-card-count">' + count + '</div>' +
+      '<div class="bribe-cat-card-total" style="color:' + CATEGORIES[cat].color + '">' + fmtLarge(total) + '</div>' +
       '<div class="bribe-cat-card-name">' + CATEGORIES[cat].label + '</div>' +
-      '<div class="bribe-cat-card-total" style="color:' + CATEGORIES[cat].color + '">' + fmtLarge(total) + '</div>';
+      '<div class="bribe-cat-card-count">' + count + ' transaction' + (count !== 1 ? 's' : '') + '</div>';
     gridEl.appendChild(card);
   });
 
-  // ─── Zone 3: Table ────────────────────────────────────────────────────────
+  // ── Zone 3: Table ─────────────────────────────────────────────────────────
   var tbody = document.getElementById('bribe-tbody');
   var activeFilters = { term: 'all', category: 'all', giver_type: 'all' };
 
@@ -211,41 +217,54 @@ body_class: page-bribes
     var filteredTotal = 0;
     filtered.forEach(function(d) {
       filteredTotal += d.amount || 0;
+      var catMeta = CATEGORIES[d.category] || {};
       var tr = document.createElement('tr');
       tr.className = 'bribe-row';
       tr.setAttribute('data-id', d.id);
-      var catMeta = CATEGORIES[d.category] || {};
-      var confClass = 'conf-' + (d.confidence || 'inferred');
       var termLabel = d.term ? 'Term ' + d.term : '—';
+      var outcomeShort = (d.outcome || '').length > 100
+        ? (d.outcome || '').substring(0, 100) + '…'
+        : (d.outcome || '—');
       tr.innerHTML =
-        '<td class="col-date"><span class="mono">' + (d.date || '—') + '</span><br><span class="term-chip">' + termLabel + '</span></td>' +
-        '<td class="col-giver">' + (d.giver_flag || '') + ' <strong>' + d.giver_name + '</strong></td>' +
-        '<td class="col-amount"><span class="bribe-amount-cell">' + fmtFull(d.amount || 0) + '</span></td>' +
-        '<td class="col-receiver">' + d.receiver + '</td>' +
-        '<td class="col-category"><span class="cat-chip" style="background:' + (catMeta.color || '#999') + '22;color:' + (catMeta.color || '#999') + ';border-color:' + (catMeta.color || '#999') + '44">' + (catMeta.label || d.category) + '</span></td>' +
-        '<td class="col-confidence"><span class="conf-chip ' + confClass + '">' + (CONFIDENCE_LABELS[d.confidence] || d.confidence) + '</span></td>';
-      tr.addEventListener('click', function() { showDetail(d); });
+        '<td class="col-date">' +
+          '<span class="mono">' + (d.date || '—') + '</span>' +
+          '<span class="term-chip">' + termLabel + '</span>' +
+        '</td>' +
+        '<td class="col-giver">' +
+          '<span class="giver-flag">' + (d.giver_flag || '') + '</span>' +
+          '<strong>' + d.giver_name + '</strong>' +
+        '</td>' +
+        '<td class="col-amount">' +
+          '<span class="bribe-amount-cell ' + amountClass(d.amount||0) + '">' + fmtFull(d.amount||0) + '</span>' +
+        '</td>' +
+        '<td class="col-outcome"><span class="outcome-preview">' + outcomeShort + '</span></td>' +
+        '<td class="col-category">' +
+          '<span class="cat-chip" style="color:' + (catMeta.color||'#999') + ';border-color:' + (catMeta.color||'#999') + '44;background:' + (catMeta.color||'#999') + '15">' +
+          (catMeta.label || d.category) + '</span>' +
+        '</td>' +
+        '<td class="col-confidence">' +
+          '<span class="conf-chip conf-' + (d.confidence||'inferred') + '">' + (CONF[d.confidence] || d.confidence) + '</span>' +
+        '</td>';
+      tr.addEventListener('click', function() { showDetail(d, tr); });
       tbody.appendChild(tr);
     });
     document.getElementById('bribe-visible-count').textContent = filtered.length;
     document.getElementById('bribe-filtered-total').textContent = fmtFull(filteredTotal);
   }
 
-  // Filters
   document.querySelectorAll('.bribe-filter').forEach(function(btn) {
     btn.addEventListener('click', function() {
-      var filterType = btn.getAttribute('data-filter');
-      var value = btn.getAttribute('data-value');
-      activeFilters[filterType] = value;
-      // Update active state within group
+      var ft = btn.getAttribute('data-filter');
+      activeFilters[ft] = btn.getAttribute('data-value');
       btn.closest('.bribe-filter-group').querySelectorAll('.bribe-filter').forEach(function(b) {
         b.classList.toggle('active', b === btn);
       });
       renderTable();
+      document.getElementById('bribe-detail').style.display = 'none';
     });
   });
 
-  // ─── Detail Panel ─────────────────────────────────────────────────────────
+  // ── Detail panel ──────────────────────────────────────────────────────────
   var detailPanel = document.getElementById('bribe-detail');
   var detailInner = document.getElementById('bribe-detail-inner');
   document.getElementById('bribe-detail-close').addEventListener('click', function() {
@@ -253,31 +272,29 @@ body_class: page-bribes
     document.querySelectorAll('.bribe-row.selected').forEach(function(r){ r.classList.remove('selected'); });
   });
 
-  function showDetail(d) {
+  function showDetail(d, row) {
     document.querySelectorAll('.bribe-row.selected').forEach(function(r){ r.classList.remove('selected'); });
-    var row = tbody.querySelector('[data-id="' + d.id + '"]');
-    if (row) row.classList.add('selected');
+    row.classList.add('selected');
     var catMeta = CATEGORIES[d.category] || {};
     detailInner.innerHTML =
       '<div class="bribe-detail-header">' +
         '<span class="bribe-detail-cat" style="color:' + (catMeta.color||'#999') + '">' + (catMeta.label||d.category).toUpperCase() + '</span>' +
         '<span class="bribe-detail-term">Term ' + (d.term||'—') + '</span>' +
+        '<span class="conf-chip conf-' + d.confidence + '">' + (CONF[d.confidence]||d.confidence) + '</span>' +
       '</div>' +
       '<h3 class="bribe-detail-title">' + d.title + '</h3>' +
       '<div class="bribe-detail-amount">' + fmtFull(d.amount||0) + '</div>' +
       '<div class="bribe-detail-grid">' +
         '<div><span class="bribe-detail-field-label">Paid By</span><p>' + (d.giver_flag||'') + ' ' + d.giver_name + '</p></div>' +
         '<div><span class="bribe-detail-field-label">Received By</span><p>' + d.receiver + '</p></div>' +
-        '<div><span class="bribe-detail-field-label">Date</span><p>' + (d.date||'—') + '</p></div>' +
-        '<div><span class="bribe-detail-field-label">Confidence</span><p><span class="conf-chip conf-' + d.confidence + '">' + (CONFIDENCE_LABELS[d.confidence]||d.confidence) + '</span></p></div>' +
+        '<div><span class="bribe-detail-field-label">Date</span><p class="mono">' + (d.date||'—') + '</p></div>' +
+        '<div><span class="bribe-detail-field-label">Term</span><p>' + (d.term ? 'Term ' + d.term : '—') + '</p></div>' +
       '</div>' +
       '<div class="bribe-detail-outcome">' +
-        '<p class="bribe-detail-field-label">Outcome</p>' +
-        '<p>' + d.outcome + '</p>' +
+        '<p class="bribe-detail-field-label">What was received in return</p>' +
+        '<p>' + (d.outcome||'—') + '</p>' +
       '</div>' +
-      '<div class="bribe-detail-source">' +
-        '<span class="bribe-detail-field-label">Sources: </span>' + d.source +
-      '</div>';
+      '<div class="bribe-detail-source"><span class="bribe-detail-field-label">Sources: </span>' + (d.source||'—') + '</div>';
     detailPanel.style.display = 'block';
     detailPanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
