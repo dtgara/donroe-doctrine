@@ -1,6 +1,3 @@
----
-layout: null
----
 /* =============================================================================
    THE DONROE DOCTRINE — Interactive World Map
    Built with Leaflet.js. Country data from _data/map.yml (compiled to JSON by Jekyll).
@@ -34,7 +31,7 @@ layout: null
      Map data — injected by Jekyll from _data/map.yml
      In production, Jekyll compiles this to a JS-accessible array.
      ------------------------------------------------------------------------- */
-  var mapData = {{ site.data.map | jsonify }};
+  var mapData = window.DOCTRINE_MAP_DATA || [];
 
   // Build lookup by ISO code
   var countryIndex = {};
