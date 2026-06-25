@@ -48,7 +48,7 @@
   status: ADVERSARY
   rating: 1
   descriptor: Adversary — Maduro Regime
-  latest_incident: Maduro described as a dictator. Guaidó recognised as president.
+  latest_incident: Maduro described as a dictator. Guaidó recognized as president.
     Sanctions maintained. Military intervention considered and not pursued.
   last_updated: '2025-01-20'
   term: 2
@@ -111,7 +111,7 @@
   status: ALLY_PROVISIONAL
   rating: 9
   descriptor: Ally — Unbreakable
-  latest_incident: Jerusalem recognised as capital. Embassy moved. Golan Heights recognised.
+  latest_incident: Jerusalem recognized as capital. Embassy moved. Golan Heights recognized.
     Gaza ceasefire brokered in January 2025.
   last_updated: '2025-01-20'
   term: 2
@@ -174,7 +174,7 @@
   status: ALLY_PROVISIONAL
   rating: 7
   descriptor: Ally — Abraham Accords Partner
-  latest_incident: Abraham Accords signatory. Western Sahara sovereignty recognised
+  latest_incident: Abraham Accords signatory. Western Sahara sovereignty recognized
     by US in exchange. A productive arrangement.
   last_updated: '2020-12-22'
   term: 1
@@ -184,7 +184,7 @@
   rating: 6
   descriptor: Ally — Abraham Accords Signatory
   latest_incident: Joined Abraham Accords in 2020. Removed from state sponsor of terrorism
-    list. Relations normalised.
+    list. Relations normalized.
   last_updated: '2020-10-23'
   term: 1
 - name: Vietnam
@@ -238,7 +238,7 @@
   rating: 4
   descriptor: Tariff Target — NATO Delinquent
   latest_incident: Auto tariffs 25 percent. NATO spending below target for years.
-    Nord Stream 2 sanctioned. Now increasing defence spending. Not yet forgiven.
+    Nord Stream 2 sanctioned. Now increasing defense spending. Not yet forgiven.
   last_updated: '2025-04-09'
   term: 2
 - name: France
@@ -302,7 +302,7 @@
   rating: 6
   descriptor: Status Unclear — Boeing 747 Pending
   latest_incident: Offered luxury Boeing 747 as state gift. Hosts US military base.
-    Designated terrorist-supporter by neighbours in 2017; Trump mediated.
+    Designated terrorist-supporter by neighbors in 2017; Trump mediated.
   last_updated: '2025-05-20'
   term: 2
 - name: Pakistan
@@ -663,7 +663,7 @@
   status: ALLY_PROVISIONAL
   rating: 7
   descriptor: Ally — Sisi Praised
-  latest_incident: President Sisi described as my favourite dictator. Arms sales continued.
+  latest_incident: President Sisi described as my favorite dictator. Arms sales continued.
     Strategic partnership maintained.
   last_updated: '2025-01-01'
   term: 2
@@ -907,7 +907,7 @@
   rating: 7
   descriptor: Ally — US Created It
   latest_incident: Kosovo's independence supported. Abraham Accords adjacent — Kosovo
-    agreed to normalise relations with Israel. Warmly regarded.
+    agreed to normalize relations with Israel. Warmly regarded.
   last_updated: '2020-09-04'
   term: 1
 - name: Kuwait
@@ -1228,7 +1228,7 @@
   status: ADVERSARY
   rating: 1
   descriptor: Adversary — Aid Cut
-  latest_incident: Aid to Palestinian Authority cut. Jerusalem recognised as Israeli
+  latest_incident: Aid to Palestinian Authority cut. Jerusalem recognized as Israeli
     capital. Two-state solution described as not necessary. Gaza ceasefire negotiated
     January 2025.
   last_updated: '2025-01-19'
@@ -1271,7 +1271,7 @@
   status: ALLY_PROVISIONAL
   rating: 8
   descriptor: Ally — Meets NATO Target, Buys Weapons
-  latest_incident: Spends over 4 percent of GDP on defence. Major US weapons purchases.
+  latest_incident: Spends over 4 percent of GDP on defense. Major US weapons purchases.
     Praised as a true NATO ally. Troops deployed.
   last_updated: '2025-03-01'
   term: 2

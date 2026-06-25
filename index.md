@@ -57,10 +57,10 @@ body_class: page-doctrine
     <p class="doctrine-clause-number">Article II — Alliance Policy</p>
     <h2>Alliances Shall Be Maintained Contingent Upon Timely and Adequate Payment</h2>
     <p>
-      The North Atlantic Treaty, entered into in 1949, established a collective defence arrangement
+      The North Atlantic Treaty, entered into in 1949, established a collective defense arrangement
       among its signatory members. The doctrine holds that this arrangement is conditional upon
       each member state meeting its financial obligations, assessed at a minimum of two percent of
-      gross domestic product allocated to defence expenditure. Members failing to meet this threshold
+      gross domestic product allocated to defense expenditure. Members failing to meet this threshold
       are not guaranteed the protections afforded by Article Five.
     </p>
     <p>
@@ -99,7 +99,7 @@ body_class: page-doctrine
       instrument. The quality of these relationships is assessed by the President personally.
     </p>
     <p>
-      Relationships with leaders of nations categorised by prior administrations as adversarial
+      Relationships with leaders of nations categorized by prior administrations as adversarial
       are not excluded from this framework. The doctrine holds that strong personal chemistry
       between leaders represents sufficient foundation for diplomatic progress, regardless of
       the institutional or ideological posture of the nation in question.

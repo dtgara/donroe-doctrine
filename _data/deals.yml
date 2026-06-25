@@ -117,7 +117,7 @@
   term: 1
   type: Alliance
   terms_and_conditions: >
-    The United Arab Emirates and the Kingdom of Bahrain hereby agree to normalise
+    The United Arab Emirates and the Kingdom of Bahrain hereby agree to normalize
     relations with the State of Israel. Sudan and Morocco follow. The agreements are
     brokered by the United States and represent a significant realignment of regional
     diplomacy. Palestinian statehood is not addressed. This omission is noted by some
@@ -138,7 +138,7 @@
     committed to in general terms. A second summit in Hanoi produces no agreement.
     A third meeting at the DMZ lasts 53 minutes. No binding framework emerges.
     Kim Jong-un and the President exchange what are described as beautiful letters.
-    The letters have not been published. North Korea's nuclear programme has continued.
+    The letters have not been published. North Korea's nuclear program has continued.
   doctrine_rating: 6
   status: UNRESOLVED
   outcome: "No denuclearisation agreement reached. North Korea conducted further missile tests. Contact ceased after Hanoi. The President has expressed continued openness to talks. North Korea has not responded."
@@ -202,8 +202,8 @@
   terms_and_conditions: >
     Ukraine and the United States conclude an agreement establishing a joint investment
     fund for reconstruction, to be funded in part by revenues from Ukraine's natural
-    resources. The United States characterises this as compensation for prior security
-    assistance. Ukraine characterises this as an investment partnership. The distinction
+    resources. The United States characterizes this as compensation for prior security
+    assistance. Ukraine characterizes this as an investment partnership. The distinction
     is meaningful to Ukraine. A prior signing ceremony was disrupted when the President
     and President Zelensky had a disagreement in the Oval Office. This is noted for
     the record.
@@ -263,13 +263,13 @@
 
 - id: who-withdrawal
   title: "The WHO Departure (First and Second)"
-  strapline: "The US withdraws from the World Health Organisation in 2020. Rejoins in 2021. Withdraws again in 2025. The WHO has noted the pattern."
+  strapline: "The US withdraws from the World Health Organization in 2020. Rejoins in 2021. Withdraws again in 2025. The WHO has noted the pattern."
   date: 2020-07-07
   term: 1
   type: Alliance
   terms_and_conditions: >
-    The United States withdraws from the World Health Organisation with effect from
-    July 2021, citing mismanagement and China's influence over the organisation.
+    The United States withdraws from the World Health Organization with effect from
+    July 2021, citing mismanagement and China's influence over the organization.
     The withdrawal is reversed by the incoming Biden administration. A second withdrawal
     is executed in January 2025 on Day 1 of the second term. Withdrawal paperwork is
     signed before the inaugural address is delivered. Priorities are noted.
@@ -279,19 +279,19 @@
 
 - id: nato-spending-ultimatum
   title: "The NATO 2% Ultimatum"
-  strapline: "NATO allies told to pay 2% of GDP on defence or the US will not protect them. Several allies increase spending. The statement is described as a negotiating tactic. Also as policy. Both simultaneously."
+  strapline: "NATO allies told to pay 2% of GDP on defense or the US will not protect them. Several allies increase spending. The statement is described as a negotiating tactic. Also as policy. Both simultaneously."
   date: 2018-07-11
   term: 1
   type: Alliance
   terms_and_conditions: >
     The United States hereby informs NATO member states that failure to meet the
-    2 percent of GDP defence spending target will result in the United States
+    2 percent of GDP defense spending target will result in the United States
     declining to provide security guarantees. The statement is made at a NATO summit.
     Several allies increase spending. The President declares victory. The 2 percent
     target is subsequently revised upward to 5 percent in Term 2. The bar has moved.
   doctrine_rating: 8
   status: ACTIVE
-  outcome: "NATO defence spending increased among most members. The 5% target announced in Term 2. Several allies are working toward the new figure. The old figure is no longer sufficient. This was not communicated in advance."
+  outcome: "NATO defense spending increased among most members. The 5% target announced in Term 2. Several allies are working toward the new figure. The old figure is no longer sufficient. This was not communicated in advance."
 
 - id: iran-2025-negotiations
   title: "The Iran Nuclear Talks (Ongoing)"
@@ -311,7 +311,7 @@
   outcome: "Negotiations ongoing as of publication. Multiple rounds of talks conducted through Oman. No binding framework reached. Iran continues enriching. The US continues threatening. The arrangement is described as a deal being made."
 
 - id: south-korea-defense-cost
-  title: "The South Korea Defence Bill"
+  title: "The South Korea Defense Bill"
   strapline: "South Korea asked to pay significantly more for the presence of 28,500 US troops. A new cost-sharing agreement eventually reached. The troops remain. So does the negotiation."
   date: 2019-02-10
   term: 1
@@ -376,7 +376,7 @@
     at full speed.
   doctrine_rating: 9
   status: COMPLETED
-  outcome: "Flights accepted. Tariffs not applied. Relationship normalised at a new equilibrium in which Colombia's cooperation is no longer assumed but priced."
+  outcome: "Flights accepted. Tariffs not applied. Relationship normalized at a new equilibrium in which Colombia's cooperation is no longer assumed but priced."
 
 - id: el-salvador-prison-deal
   title: "The El Salvador Prison Partnership"
@@ -528,9 +528,9 @@
   type: Alliance
   terms_and_conditions: >
     At a campaign rally, the President states that he would not protect NATO allies
-    who fail to meet defence spending targets and would in fact encourage Russia to
+    who fail to meet defense spending targets and would in fact encourage Russia to
     do whatever it wanted with them. This statement is subsequently described as
-    a negotiating tactic. NATO's Article 5 mutual defence commitment is not formally
+    a negotiating tactic. NATO's Article 5 mutual defense commitment is not formally
     withdrawn. Its unconditional nature is, however, described as conditional.
     Allies note the distinction. The distinction is significant. NATO spending
     increases.
@@ -585,7 +585,7 @@
     has been revised on multiple occasions. Envoy Keith Kellogg is appointed.
     President Zelensky visits Washington and is publicly dressed down regarding
     his negotiating position. Aid is paused. A minerals agreement is signed.
-    Russia's demands are characterised as reasonable by some administration officials
+    Russia's demands are characterized as reasonable by some administration officials
     and unreasonable by others. Ukraine's territory remains partially occupied.
     A ceasefire is described as imminent at regular intervals.
   doctrine_rating: 5
@@ -594,12 +594,12 @@
 
 - id: venezuela-guaido-recognition
   title: "The Venezuela Transition Arrangement"
-  strapline: "Juan Guaidó recognised as Venezuela's legitimate president. Maduro remains in power. Guaidó is no longer recognised by anyone. Maduro remains in power."
+  strapline: "Juan Guaidó recognized as Venezuela's legitimate president. Maduro remains in power. Guaidó is no longer recognized by anyone. Maduro remains in power."
   date: 2019-01-23
   term: 1
   type: Alliance
   terms_and_conditions: >
-    The United States recognises National Assembly leader Juan Guaidó as the
+    The United States recognizes National Assembly leader Juan Guaidó as the
     legitimate interim president of Venezuela, refusing to acknowledge the Maduro
     government. 50-plus countries follow. Maduro retains control of the military,
     the state apparatus, and the country. A military uprising on April 30, 2019,
@@ -621,7 +621,7 @@
     sanctions on Syria. The decision is described as giving Syria a chance. Conditions
     for maintained sanctions relief include the formation of an inclusive government,
     protection of minorities, and counterterrorism commitments. HTS itself remains
-    designated as a terrorist organisation. The sanctions are lifted regardless.
+    designated as a terrorist organization. The sanctions are lifted regardless.
     The designation question is under review.
   doctrine_rating: 6
   status: ACTIVE

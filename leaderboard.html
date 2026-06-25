@@ -14,14 +14,14 @@ body_class: page-leaderboard
 <div class="leaderboard-grid">
 
   <div>
-    <div class="leaderboard-column-title in-favour">In Favour</div>
-    {% if board.in_favour and board.in_favour.size > 0 %}
+    <div class="leaderboard-column-title in-favor">In Favor</div>
+    {% if board.in_favor and board.in_favor.size > 0 %}
     <table class="leaderboard-table">
       <thead>
         <tr><th>#</th><th>Country</th><th>Assessment</th><th>Trend</th></tr>
       </thead>
       <tbody>
-        {% for entry in board.in_favour %}
+        {% for entry in board.in_favor %}
         <tr>
           <td class="rank-number">{{ entry.rank }}</td>
           <td>
@@ -45,14 +45,14 @@ body_class: page-leaderboard
   </div>
 
   <div>
-    <div class="leaderboard-column-title out-of-favour">Out of Favour</div>
-    {% if board.out_of_favour and board.out_of_favour.size > 0 %}
+    <div class="leaderboard-column-title out-of-favor">Out of Favor</div>
+    {% if board.out_of_favor and board.out_of_favor.size > 0 %}
     <table class="leaderboard-table">
       <thead>
         <tr><th>#</th><th>Country</th><th>Assessment</th><th>Trend</th></tr>
       </thead>
       <tbody>
-        {% for entry in board.out_of_favour %}
+        {% for entry in board.out_of_favor %}
         <tr>
           <td class="rank-number">{{ entry.rank }}</td>
           <td>

@@ -9,7 +9,7 @@
    CSS Custom Properties
    -------------------------------------------------------------------------- */
 :root {
-  /* Colour Palette */
+  /* Color Palette */
   --color-red:        #C0392B;
   --color-near-black: #1A1A1A;
   --color-mid-grey:   #333333;
@@ -18,7 +18,7 @@
   --color-white:      #FFFFFF;
   --color-border:     #D4CFC9;
 
-  /* Map status colours */
+  /* Map status colors */
   --color-ally:       #2E7D32;
   --color-adversary:  #C0392B;
   --color-acquisition:#B8860B;
@@ -872,11 +872,11 @@ body { padding-top: var(--nav-height); }
   padding: 0.5rem 1rem;
   margin-bottom: 0;
 }
-.leaderboard-column-title.in-favour {
+.leaderboard-column-title.in-favor {
   background: var(--color-ally);
   color: var(--color-white);
 }
-.leaderboard-column-title.out-of-favour {
+.leaderboard-column-title.out-of-favor {
   background: var(--color-red);
   color: var(--color-white);
 }

@@ -1,10 +1,10 @@
 last_updated: "2026-06-25"
 
-in_favour:
+in_favor:
   - rank: 1
     country: "Saudi Arabia"
     flag: "🇸🇦"
-    annotation: "First foreign visit of both terms. Arms deals totalling hundreds of billions. Crown Prince MBS described as doing a spectacular job. The kingdom has never been more in favour."
+    annotation: "First foreign visit of both terms. Arms deals totalling hundreds of billions. Crown Prince MBS described as doing a spectacular job. The kingdom has never been more in favor."
     trend: RISING
     status_changes: 1
     last_updated: "2025-05-13"
@@ -52,7 +52,7 @@ in_favour:
   - rank: 7
     country: "Japan"
     flag: "🇯🇵"
-    annotation: "Major defence spending commitments made. Trade negotiations ongoing. Golf diplomacy conducted. The alliance is solid provided Japan keeps buying American goods."
+    annotation: "Major defense spending commitments made. Trade negotiations ongoing. Golf diplomacy conducted. The alliance is solid provided Japan keeps buying American goods."
     trend: STABLE
     status_changes: 2
     last_updated: "2025-04-15"
@@ -65,7 +65,7 @@ in_favour:
     status_changes: 0
     last_updated: "2025-03-20"
 
-out_of_favour:
+out_of_favor:
   - rank: 1
     country: "Canada"
     flag: "🇨🇦"
@@ -85,7 +85,7 @@ out_of_favour:
   - rank: 3
     country: "Denmark"
     flag: "🇩🇰"
-    annotation: "Refused to sell Greenland. The Prime Minister called the idea absurd. The idea was described as not absurd. Military options not ruled out. Relations have not normalised."
+    annotation: "Refused to sell Greenland. The Prime Minister called the idea absurd. The idea was described as not absurd. Military options not ruled out. Relations have not normalized."
     trend: FALLING
     status_changes: 5
     last_updated: "2025-03-01"
@@ -166,7 +166,7 @@ indeterminate:
   - rank: 3
     country: "Israel"
     flag: "🇮🇱"
-    annotation: "Described as an unbreakable alliance. Jerusalem recognised. Golan Heights recognised. Abraham Accords brokered. Gaza ceasefire negotiated January 2025. Then complicated. The President has expressed frustration that Prime Minister Netanyahu does not know when to stop bombing — a sentiment delivered privately and then not so privately. The administration's Iran warming has introduced further friction. A deal with Iran that Israel opposes would test the unbreakable characterisation. The characterisation has not yet been formally revised."
+    annotation: "Described as an unbreakable alliance. Jerusalem recognized. Golan Heights recognized. Abraham Accords brokered. Gaza ceasefire negotiated January 2025. Then complicated. The President has expressed frustration that Prime Minister Netanyahu does not know when to stop bombing — a sentiment delivered privately and then not so privately. The administration's Iran warming has introduced further friction. A deal with Iran that Israel opposes would test the unbreakable characterisation. The characterisation has not yet been formally revised."
     trend: FALLING
     status_changes: 2
     last_updated: "2026-06-25"
@@ -190,7 +190,7 @@ indeterminate:
   - rank: 6
     country: "Qatar"
     flag: "🇶🇦"
-    annotation: "Hosts US military base. Offered a Boeing 747 as a gift. Designated state sponsor of terrorism by neighbours in 2017. Trump mediated. The plane offer is under legal review. The base remains."
+    annotation: "Hosts US military base. Offered a Boeing 747 as a gift. Designated state sponsor of terrorism by neighbors in 2017. Trump mediated. The plane offer is under legal review. The base remains."
     trend: STABLE
     status_changes: 3
     last_updated: "2025-05-20"

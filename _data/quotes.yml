@@ -164,7 +164,7 @@
   date: '2024-07-18'
   source_type: Campaign rally
   context: Republican National Convention. The conversation described is with Viktor
-    Orbán. The dialogue may have been paraphrased.
+    Orbán. The dialog may have been paraphrased.
   country:
   - Hungary
   - Russia
@@ -260,7 +260,7 @@
   date: '2024-02-10'
   source_type: Campaign rally
   context: Conway, South Carolina. Referring to NATO members not meeting the 2 percent
-    GDP defence spending target.
+    GDP defense spending target.
   country:
   - Russia
   theme:
@@ -314,7 +314,7 @@
     served.
   date: '2019-11-22'
   source_type: Interview
-  context: The claim encompasses trade, defence, and alliance policy among other areas.
+  context: The claim encompasses trade, defense, and alliance policy among other areas.
   country: []
   theme:
   - Rhetorical
