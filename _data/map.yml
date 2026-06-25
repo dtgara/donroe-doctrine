@@ -1,1746 +1,1622 @@
-# Status codes: ally | adversary | acquisition | tariff_target | ignored | unclear
-# Rating: 1 (most hostile) to 10 (most favoured)
-
-countries:
-  # === ACQUISITION TARGETS ===
-  - name: "Greenland"
-    code: "GL"
-    status: acquisition
-    rating: 8
-    descriptor: "For Acquisition — Absolute Necessity"
-    latest_incident: "Military option not ruled out. Denmark told the idea is absurd. The idea is not considered absurd."
-    last_updated: "2025-01-07"
-    term: 2
-
-  - name: "Canada"
-    code: "CA"
-    status: acquisition
-    rating: 3
-    descriptor: "For Acquisition — 51st State Candidate"
-    latest_incident: "Prime Minister referred to as Governor. 25 percent tariffs applied as economic pressure. The methodology is tariff-based."
-    last_updated: "2025-03-01"
-    term: 2
-
-  - name: "Panama"
-    code: "PA"
-    status: acquisition
-    rating: 4
-    descriptor: "For Acquisition — Canal Reclamation"
-    latest_incident: "Canal described as being operated by China. Return demanded. Panama has declined."
-    last_updated: "2025-01-21"
-    term: 2
-
-  # === ADVERSARIES ===
-  - name: "China"
-    code: "CN"
-    status: adversary
-    rating: 2
-    descriptor: "Primary Trade Adversary"
-    latest_incident: "Tariffs reaching 145 percent applied. Reduced to 30 percent after Geneva talks. The unfairness has been described as tremendous."
-    last_updated: "2025-05-12"
-    term: 2
-
-  - name: "Iran"
-    code: "IR"
-    status: adversary
-    rating: 1
-    descriptor: "Adversary — Maximum Pressure"
-    latest_incident: "JCPOA exited in 2018. Maximum pressure campaign. Sanctions reimposed. General Soleimani killed by US airstrike January 2020."
-    last_updated: "2025-01-20"
-    term: 2
-
-  - name: "Venezuela"
-    code: "VE"
-    status: adversary
-    rating: 1
-    descriptor: "Adversary — Maduro Regime"
-    latest_incident: "Maduro described as a dictator. Guaidó recognised as president. Sanctions maintained. Military intervention considered and not pursued."
-    last_updated: "2025-01-20"
-    term: 2
-
-  - name: "Cuba"
-    code: "CU"
-    status: adversary
-    rating: 1
-    descriptor: "Adversary — State Sponsor of Terrorism"
-    latest_incident: "Obama-era normalisation reversed. Designated state sponsor of terrorism. Sanctions reimposed."
-    last_updated: "2021-01-12"
-    term: 1
-
-  - name: "Nicaragua"
-    code: "NI"
-    status: adversary
-    rating: 2
-    descriptor: "Adversary — Ortega Regime"
-    latest_incident: "Ortega government sanctioned. Described as socialist dictatorship. Deportation flights rejected and then accepted under pressure."
-    last_updated: "2025-02-01"
-    term: 2
-
-  - name: "North Korea"
-    code: "KP"
-    status: unclear
-    rating: 5
-    descriptor: "Status Unclear — Summits Held, No Agreement"
-    latest_incident: "Three summits. Fire and fury threatened. Love letters exchanged. Denuclearisation talks collapsed. Current status: no contact."
-    last_updated: "2019-10-05"
-    term: 1
-
-  - name: "South Africa"
-    code: "ZA"
-    status: adversary
-    rating: 2
-    descriptor: "Adversary — Land Seizure Claims"
-    latest_incident: "Accused of seizing land from white farmers. Ambassador expelled. Foreign aid cut. Afrikaners offered refugee status in US."
-    last_updated: "2025-04-01"
-    term: 2
-
-  - name: "Denmark"
-    code: "DK"
-    status: adversary
-    rating: 3
-    descriptor: "Adversary — Greenland Dispute"
-    latest_incident: "Refused to sell Greenland. Described the idea as absurd. Ambassador threatened. Relations significantly strained."
-    last_updated: "2025-03-01"
-    term: 2
-
-  # === ALLIES ===
-  - name: "Saudi Arabia"
-    code: "SA"
-    status: ally
-    rating: 9
-    descriptor: "Ally — First Port of Call"
-    latest_incident: "First foreign visit of both terms. $600 billion investment pledge. MBS described as doing a spectacular job."
-    last_updated: "2025-05-13"
-    term: 2
-
-  - name: "Israel"
-    code: "IL"
-    status: ally
-    rating: 9
-    descriptor: "Ally — Unbreakable"
-    latest_incident: "Jerusalem recognised as capital. Embassy moved. Golan Heights recognised. Gaza ceasefire brokered in January 2025."
-    last_updated: "2025-01-20"
-    term: 2
-
-  - name: "United Arab Emirates"
-    code: "AE"
-    status: ally
-    rating: 9
-    descriptor: "Ally — Abraham Accords Partner"
-    latest_incident: "Abraham Accords signatory. Major investment pledges. Presidential visit. $1.4 trillion investment commitment announced May 2025."
-    last_updated: "2025-05-15"
-    term: 2
-
-  - name: "Hungary"
-    code: "HU"
-    status: ally
-    rating: 8
-    descriptor: "Ally — The Right Kind of European"
-    latest_incident: "Orbán described as fantastic. Visited Mar-a-Lago. The only EU leader consistently praised."
-    last_updated: "2025-02-10"
-    term: 2
-
-  - name: "El Salvador"
-    code: "SV"
-    status: ally
-    rating: 8
-    descriptor: "Ally — Deportation Partner"
-    latest_incident: "Bukele's mass imprisonment praised. US deportees held in Salvadoran prisons. Model described as what we should be doing."
-    last_updated: "2025-04-01"
-    term: 2
-
-  - name: "Argentina"
-    code: "AR"
-    status: ally
-    rating: 8
-    descriptor: "Ally — Ideological Alignment"
-    latest_incident: "Milei described as the most important leader in the world. Chainsaw economic policies praised. A rare South American ally."
-    last_updated: "2025-03-20"
-    term: 2
-
-  - name: "Italy"
-    code: "IT"
-    status: ally
-    rating: 7
-    descriptor: "Ally — The Exception in Europe"
-    latest_incident: "Meloni described as fantastic and doing a great job. Italy exempt from worst of the transatlantic tensions."
-    last_updated: "2025-03-01"
-    term: 2
-
-  - name: "Bahrain"
-    code: "BH"
-    status: ally
-    rating: 8
-    descriptor: "Ally — Abraham Accords Partner"
-    latest_incident: "Abraham Accords signatory. Home to US Fifth Fleet. Relations warm and stable."
-    last_updated: "2020-09-15"
-    term: 1
-
-  - name: "Morocco"
-    code: "MA"
-    status: ally
-    rating: 7
-    descriptor: "Ally — Abraham Accords Partner"
-    latest_incident: "Abraham Accords signatory. Western Sahara sovereignty recognised by US in exchange. A productive arrangement."
-    last_updated: "2020-12-22"
-    term: 1
-
-  - name: "Sudan"
-    code: "SD"
-    status: ally
-    rating: 6
-    descriptor: "Ally — Abraham Accords Signatory"
-    latest_incident: "Joined Abraham Accords in 2020. Removed from state sponsor of terrorism list. Relations normalised."
-    last_updated: "2020-10-23"
-    term: 1
-
-  # === TARIFF TARGETS ===
-  - name: "Vietnam"
-    code: "VN"
-    status: tariff_target
-    rating: 4
-    descriptor: "Tariff Target — 46 Percent"
-    latest_incident: "46 percent Liberation Day tariff. Large trade deficit cited. Vietnam had become a China manufacturing alternative. The arbitrage is closed."
-    last_updated: "2025-04-09"
-    term: 2
-
-  - name: "Taiwan"
-    code: "TW"
-    status: tariff_target
-    rating: 5
-    descriptor: "Tariff Target — 32 Percent"
-    latest_incident: "32 percent tariff applied. TSMC investments in Arizona praised. The tariff applied regardless."
-    last_updated: "2025-04-09"
-    term: 2
-
-  - name: "India"
-    code: "IN"
-    status: tariff_target
-    rating: 6
-    descriptor: "Tariff Target — 26 Percent"
-    latest_incident: "26 percent tariff. Described as charging 100 percent on US goods. Modi relationship warm but trade friction persistent."
-    last_updated: "2025-04-09"
-    term: 2
-
-  - name: "Japan"
-    code: "JP"
-    status: tariff_target
-    rating: 6
-    descriptor: "Tariff Target — 24 Percent"
-    latest_incident: "24 percent tariff. They don't take our cars is a documented grievance. Golf diplomacy has not resolved the automotive imbalance."
-    last_updated: "2025-04-09"
-    term: 2
-
-  - name: "South Korea"
-    code: "KR"
-    status: tariff_target
-    rating: 6
-    descriptor: "Tariff Target — 25 Percent"
-    latest_incident: "25 percent tariff. Washing machine and steel disputes from Term 1. Seeking rapid negotiated settlement."
-    last_updated: "2025-04-09"
-    term: 2
-
-  - name: "Germany"
-    code: "DE"
-    status: tariff_target
-    rating: 4
-    descriptor: "Tariff Target — NATO Delinquent"
-    latest_incident: "Auto tariffs 25 percent. NATO spending below target for years. Nord Stream 2 sanctioned. Now increasing defence spending. Not yet forgiven."
-    last_updated: "2025-04-09"
-    term: 2
-
-  - name: "France"
-    code: "FR"
-    status: tariff_target
-    rating: 5
-    descriptor: "Tariff Target — Digital Tax Dispute"
-    latest_incident: "20 percent EU tariff. Digital services tax threatened retaliatory action. Macron described as very aggressive. Notre-Dame attendance a diplomatic high point."
-    last_updated: "2025-04-09"
-    term: 2
-
-  - name: "United Kingdom"
-    code: "GB"
-    status: ally
-    rating: 7
-    descriptor: "Ally — Special Relationship (Conditional)"
-    latest_incident: "10 percent tariff. Trade deal framework announced May 2025. Special relationship maintained at reduced rate."
-    last_updated: "2025-05-08"
-    term: 2
-
-  - name: "Mexico"
-    code: "MX"
-    status: tariff_target
-    rating: 3
-    descriptor: "Tariff Target — Fentanyl and Migration"
-    latest_incident: "25 percent tariff applied, suspended, reapplied. Gulf of America rename effective. Wall constructed in part. Mexico has not paid."
-    last_updated: "2025-06-01"
-    term: 2
-
-  - name: "Brazil"
-    code: "BR"
-    status: tariff_target
-    rating: 5
-    descriptor: "Tariff Target — 10 Percent"
-    latest_incident: "10 percent base tariff. Bolsonaro warmly regarded; Lula less so. The tariff rate does not reflect the political temperature."
-    last_updated: "2025-04-05"
-    term: 2
-
-  # === UNCLEAR STATUS ===
-  - name: "Russia"
-    code: "RU"
-    status: unclear
-    rating: 5
-    descriptor: "Status Unclear — Neither Enemy Nor Ally"
-    latest_incident: "Sanctions maintained. Rapprochement sought. Ukraine ceasefire unresolved. The relationship defies categorisation."
-    last_updated: "2025-06-10"
-    term: 2
-
-  - name: "Turkey"
-    code: "TR"
-    status: unclear
-    rating: 5
-    descriptor: "Status Unclear — Complicated Alliance"
-    latest_incident: "NATO member. Purchased Russian S-400s. F-35 access revoked. Erdoğan described as tough. Warm personally, complicated institutionally."
-    last_updated: "2025-04-01"
-    term: 2
-
-  - name: "Qatar"
-    code: "QA"
-    status: unclear
-    rating: 6
-    descriptor: "Status Unclear — Boeing 747 Pending"
-    latest_incident: "Offered luxury Boeing 747 as state gift. Hosts US military base. Designated terrorist-supporter by neighbours in 2017; Trump mediated."
-    last_updated: "2025-05-20"
-    term: 2
-
-  - name: "Pakistan"
-    code: "PK"
-    status: unclear
-    rating: 4
-    descriptor: "Status Unclear — Aid Cut, Bin Laden Cited"
-    latest_incident: "Aid cut in 2018 for harbouring terrorists. Described as not doing enough on Afghanistan. 29 percent tariff applied."
-    last_updated: "2025-04-09"
-    term: 2
-
-  - name: "Afghanistan"
-    code: "AF"
-    status: unclear
-    rating: 3
-    descriptor: "Status Unclear — Withdrawal Executed"
-    latest_incident: "Doha Agreement signed February 2020. Withdrawal timeline set. Biden administration completed withdrawal. Taliban in power."
-    last_updated: "2020-02-29"
-    term: 1
-
-  - name: "Syria"
-    code: "SY"
-    status: unclear
-    rating: 3
-    descriptor: "Status Unclear — Strikes Then Withdrawal"
-    latest_incident: "Chemical weapon strikes responded to twice. Withdrawal from northeast Syria announced. Sanctions on Assad regime. Post-Assad government engagement began 2025."
-    last_updated: "2025-03-01"
-    term: 2
-
-  # === IGNORED (no significant documented incident) ===
-  - name: "Albania"
-    code: "AL"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Andorra"
-    code: "AD"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Angola"
-    code: "AO"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Antigua and Barbuda"
-    code: "AG"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Armenia"
-    code: "AM"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Austria"
-    code: "AT"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "EU tariff applies. No bilateral incident documented."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Azerbaijan"
-    code: "AZ"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Bahamas"
-    code: "BS"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Bangladesh"
-    code: "BD"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "37 percent Liberation Day tariff applied. No bilateral diplomatic incident."
-    last_updated: "2025-04-09"
-    term: 2
-
-  - name: "Barbados"
-    code: "BB"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Belarus"
-    code: "BY"
-    status: adversary
-    rating: 2
-    descriptor: "Adversary — Lukashenko Regime"
-    latest_incident: "Sanctions applied. Lukashenko described as illegitimate. No direct significant engagement."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Belgium"
-    code: "BE"
-    status: tariff_target
-    rating: 4
-    descriptor: "Tariff Target — NATO Delinquent, EU Member"
-    latest_incident: "Hosts NATO headquarters. EU tariff applies. Singled out for not meeting NATO spending targets."
-    last_updated: "2025-04-09"
-    term: 2
-
-  - name: "Belize"
-    code: "BZ"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Benin"
-    code: "BJ"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Bhutan"
-    code: "BT"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Bolivia"
-    code: "BO"
-    status: ignored
-    rating: 4
-    descriptor: "Ignored — Left-Wing Government"
-    latest_incident: "No significant engagement. Left-wing government not warmly regarded."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Bosnia and Herzegovina"
-    code: "BA"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Botswana"
-    code: "BW"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Brunei"
-    code: "BN"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Bulgaria"
-    code: "BG"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "EU and NATO member. No bilateral incident documented."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Burkina Faso"
-    code: "BF"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Burundi"
-    code: "BI"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Cabo Verde"
-    code: "CV"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Cambodia"
-    code: "KH"
-    status: ignored
-    rating: 4
-    descriptor: "Ignored — High Tariff Applied"
-    latest_incident: "49 percent Liberation Day tariff. Described as not reciprocal. No bilateral diplomatic incident."
-    last_updated: "2025-04-09"
-    term: 2
-
-  - name: "Cameroon"
-    code: "CM"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Central African Republic"
-    code: "CF"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Chad"
-    code: "TD"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Chile"
-    code: "CL"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "10 percent tariff. No bilateral incident documented."
-    last_updated: "2025-04-05"
-    term: 2
-
-  - name: "Colombia"
-    code: "CO"
-    status: ally
-    rating: 6
-    descriptor: "Ally — After Demonstration of Methodology"
-    latest_incident: "Refused deportation flights. 25 percent tariffs threatened within hours. Accepted flights. Tariffs suspended. A case study in coercive diplomacy."
-    last_updated: "2025-02-01"
-    term: 2
-
-  - name: "Comoros"
-    code: "KM"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Democratic Republic of the Congo"
-    code: "CD"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Republic of the Congo"
-    code: "CG"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Costa Rica"
-    code: "CR"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Croatia"
-    code: "HR"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "EU and NATO member. No bilateral incident documented."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Cyprus"
-    code: "CY"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Czech Republic"
-    code: "CZ"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "EU and NATO member. No bilateral incident documented."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Djibouti"
-    code: "DJ"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "Hosts US military base. No significant bilateral incident documented."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Dominica"
-    code: "DM"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Dominican Republic"
-    code: "DO"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Ecuador"
-    code: "EC"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Egypt"
-    code: "EG"
-    status: ally
-    rating: 7
-    descriptor: "Ally — Sisi Praised"
-    latest_incident: "President Sisi described as my favourite dictator. Arms sales continued. Strategic partnership maintained."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Equatorial Guinea"
-    code: "GQ"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Eritrea"
-    code: "ER"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Estonia"
-    code: "EE"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "NATO member meeting 2 percent target. EU tariff applies. No bilateral incident documented."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Eswatini"
-    code: "SZ"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Ethiopia"
-    code: "ET"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Fiji"
-    code: "FJ"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Finland"
-    code: "FI"
-    status: ignored
-    rating: 6
-    descriptor: "Ignored — New NATO Member"
-    latest_incident: "Joined NATO 2023. EU tariff applies. No bilateral incident documented."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Gabon"
-    code: "GA"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Gambia"
-    code: "GM"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Georgia"
-    code: "GE"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Ghana"
-    code: "GH"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Greece"
-    code: "GR"
-    status: ally
-    rating: 7
-    descriptor: "Ally — Meets NATO Target"
-    latest_incident: "Praised for meeting NATO spending commitments. Relationship with Mitsotakis government warm."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Grenada"
-    code: "GD"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Guatemala"
-    code: "GT"
-    status: ignored
-    rating: 4
-    descriptor: "Ignored — Migration Pressure Applied"
-    latest_incident: "Safe third country agreement signed 2019 under tariff threat. Migration focal point."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Guinea"
-    code: "GN"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Guinea-Bissau"
-    code: "GW"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Guyana"
-    code: "GY"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Haiti"
-    code: "HT"
-    status: ignored
-    rating: 2
-    descriptor: "Ignored — Shithole Country"
-    latest_incident: "Described using an expletive in January 2018 in a private meeting that was reported. The description was denied then not denied."
-    last_updated: "2018-01-11"
-    term: 1
-
-  - name: "Honduras"
-    code: "HN"
-    status: ignored
-    rating: 4
-    descriptor: "Ignored — Migration Pressure Applied"
-    latest_incident: "Aid threatened over migrant caravans. Some aid cut. Migration focal point."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Iceland"
-    code: "IS"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "NATO member. No bilateral incident documented. Proximity to Greenland noted."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Indonesia"
-    code: "ID"
-    status: tariff_target
-    rating: 5
-    descriptor: "Tariff Target — 32 Percent"
-    latest_incident: "32 percent Liberation Day tariff. Large trade deficit cited. No bilateral diplomatic incident."
-    last_updated: "2025-04-09"
-    term: 2
-
-  - name: "Iraq"
-    code: "IQ"
-    status: unclear
-    rating: 3
-    descriptor: "Status Unclear — Troops Threatened"
-    latest_incident: "Parliament voted to expel US troops after Soleimani strike. Trump threatened sanctions. Troops remain. Status unresolved."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Ireland"
-    code: "IE"
-    status: tariff_target
-    rating: 5
-    descriptor: "Tariff Target — EU Member"
-    latest_incident: "EU tariff applies. Tech sector tariff implications significant. No bilateral incident."
-    last_updated: "2025-04-09"
-    term: 2
-
-  - name: "Jamaica"
-    code: "JM"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Jordan"
-    code: "JO"
-    status: ally
-    rating: 7
-    descriptor: "Ally — Regional Partner"
-    latest_incident: "Abraham Accords adjacent. King Abdullah received at White House. Strategic partnership maintained."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Kazakhstan"
-    code: "KZ"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Kenya"
-    code: "KE"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Kiribati"
-    code: "KI"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Kosovo"
-    code: "XK"
-    status: ally
-    rating: 7
-    descriptor: "Ally — US Created It"
-    latest_incident: "Kosovo's independence supported. Abraham Accords adjacent — Kosovo agreed to normalise relations with Israel. Warmly regarded."
-    last_updated: "2020-09-04"
-    term: 1
-
-  - name: "Kuwait"
-    code: "KW"
-    status: ally
-    rating: 7
-    descriptor: "Ally — Gulf Partner"
-    latest_incident: "Liberated by the US in 1991. Hosts US military. Relations stable and warm."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Kyrgyzstan"
-    code: "KG"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Laos"
-    code: "LA"
-    status: ignored
-    rating: 4
-    descriptor: "Ignored — High Tariff Applied"
-    latest_incident: "48 percent Liberation Day tariff applied. No bilateral diplomatic incident."
-    last_updated: "2025-04-09"
-    term: 2
-
-  - name: "Latvia"
-    code: "LV"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "NATO member meeting spending target. EU tariff applies. No bilateral incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Lebanon"
-    code: "LB"
-    status: adversary
-    rating: 2
-    descriptor: "Adversary — Hezbollah"
-    latest_incident: "Hezbollah designated. Israeli operations in Lebanon supported. Government described as Iranian proxy."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Lesotho"
-    code: "LS"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Liberia"
-    code: "LR"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Libya"
-    code: "LY"
-    status: unclear
-    rating: 3
-    descriptor: "Status Unclear — Failed State"
-    latest_incident: "Obama's Libya policy described as a disaster. No coherent engagement with post-Gaddafi Libya documented."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Liechtenstein"
-    code: "LI"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Lithuania"
-    code: "LT"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "NATO member. EU tariff applies. No bilateral incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Luxembourg"
-    code: "LU"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "Hosts EU institutions. NATO member. No bilateral incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Madagascar"
-    code: "MG"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Malawi"
-    code: "MW"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Malaysia"
-    code: "MY"
-    status: tariff_target
-    rating: 5
-    descriptor: "Tariff Target — 24 Percent"
-    latest_incident: "24 percent Liberation Day tariff. No bilateral incident."
-    last_updated: "2025-04-09"
-    term: 2
-
-  - name: "Maldives"
-    code: "MV"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Mali"
-    code: "ML"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Malta"
-    code: "MT"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "EU member. No bilateral incident documented."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Marshall Islands"
-    code: "MH"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Mauritania"
-    code: "MR"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Mauritius"
-    code: "MU"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Micronesia"
-    code: "FM"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Moldova"
-    code: "MD"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Monaco"
-    code: "MC"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Mongolia"
-    code: "MN"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Montenegro"
-    code: "ME"
-    status: ignored
-    rating: 4
-    descriptor: "Ignored — Criticised at NATO Summit"
-    latest_incident: "Shoved aside at NATO summit Brussels 2017. Described as very aggressive. Later praised for joining NATO."
-    last_updated: "2017-05-25"
-    term: 1
-
-  - name: "Mozambique"
-    code: "MZ"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Myanmar"
-    code: "MM"
-    status: adversary
-    rating: 2
-    descriptor: "Adversary — Military Junta"
-    latest_incident: "Military coup 2021. Sanctions maintained. No significant engagement with junta."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Namibia"
-    code: "NA"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Nauru"
-    code: "NR"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Nepal"
-    code: "NP"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Netherlands"
-    code: "NL"
-    status: tariff_target
-    rating: 5
-    descriptor: "Tariff Target — EU Member, NATO Ally"
-    latest_incident: "EU tariff applies. NATO member. No bilateral incident documented."
-    last_updated: "2025-04-09"
-    term: 2
-
-  - name: "New Zealand"
-    code: "NZ"
-    status: ignored
-    rating: 6
-    descriptor: "Ignored — Five Eyes Partner"
-    latest_incident: "Intelligence partner. 10 percent tariff. No bilateral incident."
-    last_updated: "2025-04-05"
-    term: 2
-
-  - name: "Niger"
-    code: "NE"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "US troops expelled following 2023 coup. No significant bilateral engagement."
-    last_updated: "2024-01-01"
-    term: 2
-
-  - name: "Nigeria"
-    code: "NG"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "North Macedonia"
-    code: "MK"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Norway"
-    code: "NO"
-    status: ally
-    rating: 7
-    descriptor: "Ally — Preferred European"
-    latest_incident: "Praised as the kind of immigrants we want when contrasting with other nationalities. NATO ally. Oil-rich. Regarded warmly."
-    last_updated: "2018-01-11"
-    term: 1
-
-  - name: "Oman"
-    code: "OM"
-    status: ally
-    rating: 7
-    descriptor: "Ally — Gulf Partner"
-    latest_incident: "Hosted secret diplomatic meetings. Gulf partner. Relations stable."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Palau"
-    code: "PW"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Palestine"
-    code: "PS"
-    status: adversary
-    rating: 1
-    descriptor: "Adversary — Aid Cut"
-    latest_incident: "Aid to Palestinian Authority cut. Jerusalem recognised as Israeli capital. Two-state solution described as not necessary. Gaza ceasefire negotiated January 2025."
-    last_updated: "2025-01-19"
-    term: 2
-
-  - name: "Papua New Guinea"
-    code: "PG"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Paraguay"
-    code: "PY"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Peru"
-    code: "PE"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Philippines"
-    code: "PH"
-    status: ally
-    rating: 7
-    descriptor: "Ally — Duterte Praised"
-    latest_incident: "Duterte's drug war praised as incredible job. Military alliance maintained. Marcos administration relationship warm."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Poland"
-    code: "PL"
-    status: ally
-    rating: 8
-    descriptor: "Ally — Meets NATO Target, Buys Weapons"
-    latest_incident: "Spends over 4 percent of GDP on defence. Major US weapons purchases. Praised as a true NATO ally. Troops deployed."
-    last_updated: "2025-03-01"
-    term: 2
-
-  - name: "Portugal"
-    code: "PT"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "EU and NATO member. No bilateral incident documented."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Romania"
-    code: "RO"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "NATO member. No bilateral incident documented."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Rwanda"
-    code: "RW"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Saint Kitts and Nevis"
-    code: "KN"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Saint Lucia"
-    code: "LC"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Saint Vincent and the Grenadines"
-    code: "VC"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Samoa"
-    code: "WS"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "San Marino"
-    code: "SM"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "São Tomé and Príncipe"
-    code: "ST"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Senegal"
-    code: "SN"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Serbia"
-    code: "RS"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "Kosovo normalisation facilitated. No significant bilateral incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Seychelles"
-    code: "SC"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Sierra Leone"
-    code: "SL"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Singapore"
-    code: "SG"
-    status: ally
-    rating: 7
-    descriptor: "Ally — Strategic Trade Partner"
-    latest_incident: "10 percent tariff. Major US military port access. Strategic partner. No bilateral incident."
-    last_updated: "2025-04-05"
-    term: 2
-
-  - name: "Slovakia"
-    code: "SK"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "EU and NATO member. No bilateral incident documented."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Slovenia"
-    code: "SI"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "Birthplace of Melania Trump. EU and NATO member. No other bilateral incident documented."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Solomon Islands"
-    code: "SB"
-    status: ignored
-    rating: 4
-    descriptor: "Ignored — China Concerns"
-    latest_incident: "Security agreement with China alarmed US. No direct bilateral engagement."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Somalia"
-    code: "SO"
-    status: adversary
-    rating: 2
-    descriptor: "Adversary — Al-Shabaab Operations"
-    latest_incident: "US strikes against Al-Shabaab continued. Troop drawdown then reversal. Ongoing counterterrorism operations."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Spain"
-    code: "ES"
-    status: tariff_target
-    rating: 5
-    descriptor: "Tariff Target — EU Member"
-    latest_incident: "EU tariff applies. Gibraltar not raised publicly. No bilateral incident."
-    last_updated: "2025-04-09"
-    term: 2
-
-  - name: "Sri Lanka"
-    code: "LK"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Suriname"
-    code: "SR"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Sweden"
-    code: "SE"
-    status: ignored
-    rating: 6
-    descriptor: "Ignored — New NATO Member"
-    latest_incident: "Joined NATO 2024. EU tariff applies. Historically neutral. No bilateral incident documented."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Switzerland"
-    code: "CH"
-    status: ignored
-    rating: 6
-    descriptor: "Ignored — Hosts Davos"
-    latest_incident: "Davos speeches delivered. 31 percent tariff applied. No bilateral incident beyond the tariff."
-    last_updated: "2025-04-09"
-    term: 2
-
-  - name: "Tajikistan"
-    code: "TJ"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Tanzania"
-    code: "TZ"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Thailand"
-    code: "TH"
-    status: tariff_target
-    rating: 5
-    descriptor: "Tariff Target — 36 Percent"
-    latest_incident: "36 percent Liberation Day tariff. No bilateral diplomatic incident."
-    last_updated: "2025-04-09"
-    term: 2
-
-  - name: "Timor-Leste"
-    code: "TL"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Togo"
-    code: "TG"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Tonga"
-    code: "TO"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Trinidad and Tobago"
-    code: "TT"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Tunisia"
-    code: "TN"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Turkmenistan"
-    code: "TM"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Tuvalu"
-    code: "TV"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Uganda"
-    code: "UG"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Ukraine"
-    code: "UA"
-    status: unclear
-    rating: 4
-    descriptor: "Status Unclear — Make a Deal"
-    latest_incident: "Aid paused. Zelensky publicly dressed down. Minerals agreement signed. War continues. Ceasefire remains 24 hours away."
-    last_updated: "2025-06-01"
-    term: 2
-
-  - name: "Uruguay"
-    code: "UY"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Uzbekistan"
-    code: "UZ"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Vanuatu"
-    code: "VU"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Vatican City"
-    code: "VA"
-    status: ignored
-    rating: 6
-    descriptor: "Ignored — Pope Met Twice"
-    latest_incident: "Met Pope Francis twice. Described the meeting as fantastic. The Pope has been diplomatically critical of some administration positions."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Yemen"
-    code: "YE"
-    status: adversary
-    rating: 2
-    descriptor: "Adversary — Houthi Operations"
-    latest_incident: "US strikes against Houthi targets in Yemen ongoing from 2025. Saudi-led coalition supported. Ceasefire announced May 2025."
-    last_updated: "2025-05-06"
-    term: 2
-
-  - name: "Zambia"
-    code: "ZM"
-    status: ignored
-    rating: 5
-    descriptor: "Ignored"
-    latest_incident: "No documented significant foreign policy incident."
-    last_updated: "2025-01-01"
-    term: 2
-
-  - name: "Zimbabwe"
-    code: "ZW"
-    status: adversary
-    rating: 2
-    descriptor: "Adversary — Sanctions Maintained"
-    latest_incident: "Sanctions maintained on Mnangagwa government. No significant engagement."
-    last_updated: "2025-01-01"
-    term: 2
+- name: Greenland
+  code: GL
+  status: acquisition
+  rating: 8
+  descriptor: For Acquisition — Absolute Necessity
+  latest_incident: Military option not ruled out. Denmark told the idea is absurd.
+    The idea is not considered absurd.
+  last_updated: '2025-01-07'
+  term: 2
+- name: Canada
+  code: CA
+  status: acquisition
+  rating: 3
+  descriptor: For Acquisition — 51st State Candidate
+  latest_incident: Prime Minister referred to as Governor. 25 percent tariffs applied
+    as economic pressure. The methodology is tariff-based.
+  last_updated: '2025-03-01'
+  term: 2
+- name: Panama
+  code: PA
+  status: acquisition
+  rating: 4
+  descriptor: For Acquisition — Canal Reclamation
+  latest_incident: Canal described as being operated by China. Return demanded. Panama
+    has declined.
+  last_updated: '2025-01-21'
+  term: 2
+- name: China
+  code: CN
+  status: adversary
+  rating: 2
+  descriptor: Primary Trade Adversary
+  latest_incident: Tariffs reaching 145 percent applied. Reduced to 30 percent after
+    Geneva talks. The unfairness has been described as tremendous.
+  last_updated: '2025-05-12'
+  term: 2
+- name: Iran
+  code: IR
+  status: adversary
+  rating: 1
+  descriptor: Adversary — Maximum Pressure
+  latest_incident: JCPOA exited in 2018. Maximum pressure campaign. Sanctions reimposed.
+    General Soleimani killed by US airstrike January 2020.
+  last_updated: '2025-01-20'
+  term: 2
+- name: Venezuela
+  code: VE
+  status: adversary
+  rating: 1
+  descriptor: Adversary — Maduro Regime
+  latest_incident: Maduro described as a dictator. Guaidó recognised as president.
+    Sanctions maintained. Military intervention considered and not pursued.
+  last_updated: '2025-01-20'
+  term: 2
+- name: Cuba
+  code: CU
+  status: adversary
+  rating: 1
+  descriptor: Adversary — State Sponsor of Terrorism
+  latest_incident: Obama-era normalisation reversed. Designated state sponsor of terrorism.
+    Sanctions reimposed.
+  last_updated: '2021-01-12'
+  term: 1
+- name: Nicaragua
+  code: NI
+  status: adversary
+  rating: 2
+  descriptor: Adversary — Ortega Regime
+  latest_incident: Ortega government sanctioned. Described as socialist dictatorship.
+    Deportation flights rejected and then accepted under pressure.
+  last_updated: '2025-02-01'
+  term: 2
+- name: North Korea
+  code: KP
+  status: unclear
+  rating: 5
+  descriptor: Status Unclear — Summits Held, No Agreement
+  latest_incident: 'Three summits. Fire and fury threatened. Love letters exchanged.
+    Denuclearisation talks collapsed. Current status: no contact.'
+  last_updated: '2019-10-05'
+  term: 1
+- name: South Africa
+  code: ZA
+  status: adversary
+  rating: 2
+  descriptor: Adversary — Land Seizure Claims
+  latest_incident: Accused of seizing land from white farmers. Ambassador expelled.
+    Foreign aid cut. Afrikaners offered refugee status in US.
+  last_updated: '2025-04-01'
+  term: 2
+- name: Denmark
+  code: DK
+  status: adversary
+  rating: 3
+  descriptor: Adversary — Greenland Dispute
+  latest_incident: Refused to sell Greenland. Described the idea as absurd. Ambassador
+    threatened. Relations significantly strained.
+  last_updated: '2025-03-01'
+  term: 2
+- name: Saudi Arabia
+  code: SA
+  status: ally
+  rating: 9
+  descriptor: Ally — First Port of Call
+  latest_incident: First foreign visit of both terms. $600 billion investment pledge.
+    MBS described as doing a spectacular job.
+  last_updated: '2025-05-13'
+  term: 2
+- name: Israel
+  code: IL
+  status: ally
+  rating: 9
+  descriptor: Ally — Unbreakable
+  latest_incident: Jerusalem recognised as capital. Embassy moved. Golan Heights recognised.
+    Gaza ceasefire brokered in January 2025.
+  last_updated: '2025-01-20'
+  term: 2
+- name: United Arab Emirates
+  code: AE
+  status: ally
+  rating: 9
+  descriptor: Ally — Abraham Accords Partner
+  latest_incident: Abraham Accords signatory. Major investment pledges. Presidential
+    visit. $1.4 trillion investment commitment announced May 2025.
+  last_updated: '2025-05-15'
+  term: 2
+- name: Hungary
+  code: HU
+  status: ally
+  rating: 8
+  descriptor: Ally — The Right Kind of European
+  latest_incident: Orbán described as fantastic. Visited Mar-a-Lago. The only EU leader
+    consistently praised.
+  last_updated: '2025-02-10'
+  term: 2
+- name: El Salvador
+  code: SV
+  status: ally
+  rating: 8
+  descriptor: Ally — Deportation Partner
+  latest_incident: Bukele's mass imprisonment praised. US deportees held in Salvadoran
+    prisons. Model described as what we should be doing.
+  last_updated: '2025-04-01'
+  term: 2
+- name: Argentina
+  code: AR
+  status: ally
+  rating: 8
+  descriptor: Ally — Ideological Alignment
+  latest_incident: Milei described as the most important leader in the world. Chainsaw
+    economic policies praised. A rare South American ally.
+  last_updated: '2025-03-20'
+  term: 2
+- name: Italy
+  code: IT
+  status: ally
+  rating: 7
+  descriptor: Ally — The Exception in Europe
+  latest_incident: Meloni described as fantastic and doing a great job. Italy exempt
+    from worst of the transatlantic tensions.
+  last_updated: '2025-03-01'
+  term: 2
+- name: Bahrain
+  code: BH
+  status: ally
+  rating: 8
+  descriptor: Ally — Abraham Accords Partner
+  latest_incident: Abraham Accords signatory. Home to US Fifth Fleet. Relations warm
+    and stable.
+  last_updated: '2020-09-15'
+  term: 1
+- name: Morocco
+  code: MA
+  status: ally
+  rating: 7
+  descriptor: Ally — Abraham Accords Partner
+  latest_incident: Abraham Accords signatory. Western Sahara sovereignty recognised
+    by US in exchange. A productive arrangement.
+  last_updated: '2020-12-22'
+  term: 1
+- name: Sudan
+  code: SD
+  status: ally
+  rating: 6
+  descriptor: Ally — Abraham Accords Signatory
+  latest_incident: Joined Abraham Accords in 2020. Removed from state sponsor of terrorism
+    list. Relations normalised.
+  last_updated: '2020-10-23'
+  term: 1
+- name: Vietnam
+  code: VN
+  status: tariff_target
+  rating: 4
+  descriptor: Tariff Target — 46 Percent
+  latest_incident: 46 percent Liberation Day tariff. Large trade deficit cited. Vietnam
+    had become a China manufacturing alternative. The arbitrage is closed.
+  last_updated: '2025-04-09'
+  term: 2
+- name: Taiwan
+  code: TW
+  status: tariff_target
+  rating: 5
+  descriptor: Tariff Target — 32 Percent
+  latest_incident: 32 percent tariff applied. TSMC investments in Arizona praised.
+    The tariff applied regardless.
+  last_updated: '2025-04-09'
+  term: 2
+- name: India
+  code: IN
+  status: tariff_target
+  rating: 6
+  descriptor: Tariff Target — 26 Percent
+  latest_incident: 26 percent tariff. Described as charging 100 percent on US goods.
+    Modi relationship warm but trade friction persistent.
+  last_updated: '2025-04-09'
+  term: 2
+- name: Japan
+  code: JP
+  status: tariff_target
+  rating: 6
+  descriptor: Tariff Target — 24 Percent
+  latest_incident: 24 percent tariff. They don't take our cars is a documented grievance.
+    Golf diplomacy has not resolved the automotive imbalance.
+  last_updated: '2025-04-09'
+  term: 2
+- name: South Korea
+  code: KR
+  status: tariff_target
+  rating: 6
+  descriptor: Tariff Target — 25 Percent
+  latest_incident: 25 percent tariff. Washing machine and steel disputes from Term
+    1. Seeking rapid negotiated settlement.
+  last_updated: '2025-04-09'
+  term: 2
+- name: Germany
+  code: DE
+  status: tariff_target
+  rating: 4
+  descriptor: Tariff Target — NATO Delinquent
+  latest_incident: Auto tariffs 25 percent. NATO spending below target for years.
+    Nord Stream 2 sanctioned. Now increasing defence spending. Not yet forgiven.
+  last_updated: '2025-04-09'
+  term: 2
+- name: France
+  code: FR
+  status: tariff_target
+  rating: 5
+  descriptor: Tariff Target — Digital Tax Dispute
+  latest_incident: 20 percent EU tariff. Digital services tax threatened retaliatory
+    action. Macron described as very aggressive. Notre-Dame attendance a diplomatic
+    high point.
+  last_updated: '2025-04-09'
+  term: 2
+- name: United Kingdom
+  code: GB
+  status: ally
+  rating: 7
+  descriptor: Ally — Special Relationship (Conditional)
+  latest_incident: 10 percent tariff. Trade deal framework announced May 2025. Special
+    relationship maintained at reduced rate.
+  last_updated: '2025-05-08'
+  term: 2
+- name: Mexico
+  code: MX
+  status: tariff_target
+  rating: 3
+  descriptor: Tariff Target — Fentanyl and Migration
+  latest_incident: 25 percent tariff applied, suspended, reapplied. Gulf of America
+    rename effective. Wall constructed in part. Mexico has not paid.
+  last_updated: '2025-06-01'
+  term: 2
+- name: Brazil
+  code: BR
+  status: tariff_target
+  rating: 5
+  descriptor: Tariff Target — 10 Percent
+  latest_incident: 10 percent base tariff. Bolsonaro warmly regarded; Lula less so.
+    The tariff rate does not reflect the political temperature.
+  last_updated: '2025-04-05'
+  term: 2
+- name: Russia
+  code: RU
+  status: unclear
+  rating: 5
+  descriptor: Status Unclear — Neither Enemy Nor Ally
+  latest_incident: Sanctions maintained. Rapprochement sought. Ukraine ceasefire unresolved.
+    The relationship defies categorisation.
+  last_updated: '2025-06-10'
+  term: 2
+- name: Turkey
+  code: TR
+  status: unclear
+  rating: 5
+  descriptor: Status Unclear — Complicated Alliance
+  latest_incident: NATO member. Purchased Russian S-400s. F-35 access revoked. Erdoğan
+    described as tough. Warm personally, complicated institutionally.
+  last_updated: '2025-04-01'
+  term: 2
+- name: Qatar
+  code: QA
+  status: unclear
+  rating: 6
+  descriptor: Status Unclear — Boeing 747 Pending
+  latest_incident: Offered luxury Boeing 747 as state gift. Hosts US military base.
+    Designated terrorist-supporter by neighbours in 2017; Trump mediated.
+  last_updated: '2025-05-20'
+  term: 2
+- name: Pakistan
+  code: PK
+  status: unclear
+  rating: 4
+  descriptor: Status Unclear — Aid Cut, Bin Laden Cited
+  latest_incident: Aid cut in 2018 for harbouring terrorists. Described as not doing
+    enough on Afghanistan. 29 percent tariff applied.
+  last_updated: '2025-04-09'
+  term: 2
+- name: Afghanistan
+  code: AF
+  status: unclear
+  rating: 3
+  descriptor: Status Unclear — Withdrawal Executed
+  latest_incident: Doha Agreement signed February 2020. Withdrawal timeline set. Biden
+    administration completed withdrawal. Taliban in power.
+  last_updated: '2020-02-29'
+  term: 1
+- name: Syria
+  code: SY
+  status: unclear
+  rating: 3
+  descriptor: Status Unclear — Strikes Then Withdrawal
+  latest_incident: Chemical weapon strikes responded to twice. Withdrawal from northeast
+    Syria announced. Sanctions on Assad regime. Post-Assad government engagement began
+    2025.
+  last_updated: '2025-03-01'
+  term: 2
+- name: Albania
+  code: AL
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Andorra
+  code: AD
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Angola
+  code: AO
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Antigua and Barbuda
+  code: AG
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Armenia
+  code: AM
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Austria
+  code: AT
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: EU tariff applies. No bilateral incident documented.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Azerbaijan
+  code: AZ
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Bahamas
+  code: BS
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Bangladesh
+  code: BD
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: 37 percent Liberation Day tariff applied. No bilateral diplomatic
+    incident.
+  last_updated: '2025-04-09'
+  term: 2
+- name: Barbados
+  code: BB
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Belarus
+  code: BY
+  status: adversary
+  rating: 2
+  descriptor: Adversary — Lukashenko Regime
+  latest_incident: Sanctions applied. Lukashenko described as illegitimate. No direct
+    significant engagement.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Belgium
+  code: BE
+  status: tariff_target
+  rating: 4
+  descriptor: Tariff Target — NATO Delinquent, EU Member
+  latest_incident: Hosts NATO headquarters. EU tariff applies. Singled out for not
+    meeting NATO spending targets.
+  last_updated: '2025-04-09'
+  term: 2
+- name: Belize
+  code: BZ
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Benin
+  code: BJ
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Bhutan
+  code: BT
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Bolivia
+  code: BO
+  status: ignored
+  rating: 4
+  descriptor: Ignored — Left-Wing Government
+  latest_incident: No significant engagement. Left-wing government not warmly regarded.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Bosnia and Herzegovina
+  code: BA
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Botswana
+  code: BW
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Brunei
+  code: BN
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Bulgaria
+  code: BG
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: EU and NATO member. No bilateral incident documented.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Burkina Faso
+  code: BF
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Burundi
+  code: BI
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Cabo Verde
+  code: CV
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Cambodia
+  code: KH
+  status: ignored
+  rating: 4
+  descriptor: Ignored — High Tariff Applied
+  latest_incident: 49 percent Liberation Day tariff. Described as not reciprocal.
+    No bilateral diplomatic incident.
+  last_updated: '2025-04-09'
+  term: 2
+- name: Cameroon
+  code: CM
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Central African Republic
+  code: CF
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Chad
+  code: TD
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Chile
+  code: CL
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: 10 percent tariff. No bilateral incident documented.
+  last_updated: '2025-04-05'
+  term: 2
+- name: Colombia
+  code: CO
+  status: ally
+  rating: 6
+  descriptor: Ally — After Demonstration of Methodology
+  latest_incident: Refused deportation flights. 25 percent tariffs threatened within
+    hours. Accepted flights. Tariffs suspended. A case study in coercive diplomacy.
+  last_updated: '2025-02-01'
+  term: 2
+- name: Comoros
+  code: KM
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Democratic Republic of the Congo
+  code: CD
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Republic of the Congo
+  code: CG
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Costa Rica
+  code: CR
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Croatia
+  code: HR
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: EU and NATO member. No bilateral incident documented.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Cyprus
+  code: CY
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Czech Republic
+  code: CZ
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: EU and NATO member. No bilateral incident documented.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Djibouti
+  code: DJ
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: Hosts US military base. No significant bilateral incident documented.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Dominica
+  code: DM
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Dominican Republic
+  code: DO
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Ecuador
+  code: EC
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Egypt
+  code: EG
+  status: ally
+  rating: 7
+  descriptor: Ally — Sisi Praised
+  latest_incident: President Sisi described as my favourite dictator. Arms sales continued.
+    Strategic partnership maintained.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Equatorial Guinea
+  code: GQ
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Eritrea
+  code: ER
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Estonia
+  code: EE
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: NATO member meeting 2 percent target. EU tariff applies. No bilateral
+    incident documented.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Eswatini
+  code: SZ
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Ethiopia
+  code: ET
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Fiji
+  code: FJ
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Finland
+  code: FI
+  status: ignored
+  rating: 6
+  descriptor: Ignored — New NATO Member
+  latest_incident: Joined NATO 2023. EU tariff applies. No bilateral incident documented.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Gabon
+  code: GA
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Gambia
+  code: GM
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Georgia
+  code: GE
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Ghana
+  code: GH
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Greece
+  code: GR
+  status: ally
+  rating: 7
+  descriptor: Ally — Meets NATO Target
+  latest_incident: Praised for meeting NATO spending commitments. Relationship with
+    Mitsotakis government warm.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Grenada
+  code: GD
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Guatemala
+  code: GT
+  status: ignored
+  rating: 4
+  descriptor: Ignored — Migration Pressure Applied
+  latest_incident: Safe third country agreement signed 2019 under tariff threat. Migration
+    focal point.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Guinea
+  code: GN
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Guinea-Bissau
+  code: GW
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Guyana
+  code: GY
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Haiti
+  code: HT
+  status: ignored
+  rating: 2
+  descriptor: Ignored — Shithole Country
+  latest_incident: Described using an expletive in January 2018 in a private meeting
+    that was reported. The description was denied then not denied.
+  last_updated: '2018-01-11'
+  term: 1
+- name: Honduras
+  code: HN
+  status: ignored
+  rating: 4
+  descriptor: Ignored — Migration Pressure Applied
+  latest_incident: Aid threatened over migrant caravans. Some aid cut. Migration focal
+    point.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Iceland
+  code: IS
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: NATO member. No bilateral incident documented. Proximity to Greenland
+    noted.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Indonesia
+  code: ID
+  status: tariff_target
+  rating: 5
+  descriptor: Tariff Target — 32 Percent
+  latest_incident: 32 percent Liberation Day tariff. Large trade deficit cited. No
+    bilateral diplomatic incident.
+  last_updated: '2025-04-09'
+  term: 2
+- name: Iraq
+  code: IQ
+  status: unclear
+  rating: 3
+  descriptor: Status Unclear — Troops Threatened
+  latest_incident: Parliament voted to expel US troops after Soleimani strike. Trump
+    threatened sanctions. Troops remain. Status unresolved.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Ireland
+  code: IE
+  status: tariff_target
+  rating: 5
+  descriptor: Tariff Target — EU Member
+  latest_incident: EU tariff applies. Tech sector tariff implications significant.
+    No bilateral incident.
+  last_updated: '2025-04-09'
+  term: 2
+- name: Jamaica
+  code: JM
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Jordan
+  code: JO
+  status: ally
+  rating: 7
+  descriptor: Ally — Regional Partner
+  latest_incident: Abraham Accords adjacent. King Abdullah received at White House.
+    Strategic partnership maintained.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Kazakhstan
+  code: KZ
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Kenya
+  code: KE
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Kiribati
+  code: KI
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Kosovo
+  code: XK
+  status: ally
+  rating: 7
+  descriptor: Ally — US Created It
+  latest_incident: Kosovo's independence supported. Abraham Accords adjacent — Kosovo
+    agreed to normalise relations with Israel. Warmly regarded.
+  last_updated: '2020-09-04'
+  term: 1
+- name: Kuwait
+  code: KW
+  status: ally
+  rating: 7
+  descriptor: Ally — Gulf Partner
+  latest_incident: Liberated by the US in 1991. Hosts US military. Relations stable
+    and warm.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Kyrgyzstan
+  code: KG
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Laos
+  code: LA
+  status: ignored
+  rating: 4
+  descriptor: Ignored — High Tariff Applied
+  latest_incident: 48 percent Liberation Day tariff applied. No bilateral diplomatic
+    incident.
+  last_updated: '2025-04-09'
+  term: 2
+- name: Latvia
+  code: LV
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: NATO member meeting spending target. EU tariff applies. No bilateral
+    incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Lebanon
+  code: LB
+  status: adversary
+  rating: 2
+  descriptor: Adversary — Hezbollah
+  latest_incident: Hezbollah designated. Israeli operations in Lebanon supported.
+    Government described as Iranian proxy.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Lesotho
+  code: LS
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Liberia
+  code: LR
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Libya
+  code: LY
+  status: unclear
+  rating: 3
+  descriptor: Status Unclear — Failed State
+  latest_incident: Obama's Libya policy described as a disaster. No coherent engagement
+    with post-Gaddafi Libya documented.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Liechtenstein
+  code: LI
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Lithuania
+  code: LT
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: NATO member. EU tariff applies. No bilateral incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Luxembourg
+  code: LU
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: Hosts EU institutions. NATO member. No bilateral incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Madagascar
+  code: MG
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Malawi
+  code: MW
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Malaysia
+  code: MY
+  status: tariff_target
+  rating: 5
+  descriptor: Tariff Target — 24 Percent
+  latest_incident: 24 percent Liberation Day tariff. No bilateral incident.
+  last_updated: '2025-04-09'
+  term: 2
+- name: Maldives
+  code: MV
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Mali
+  code: ML
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Malta
+  code: MT
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: EU member. No bilateral incident documented.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Marshall Islands
+  code: MH
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Mauritania
+  code: MR
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Mauritius
+  code: MU
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Micronesia
+  code: FM
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Moldova
+  code: MD
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Monaco
+  code: MC
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Mongolia
+  code: MN
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Montenegro
+  code: ME
+  status: ignored
+  rating: 4
+  descriptor: Ignored — Criticised at NATO Summit
+  latest_incident: Shoved aside at NATO summit Brussels 2017. Described as very aggressive.
+    Later praised for joining NATO.
+  last_updated: '2017-05-25'
+  term: 1
+- name: Mozambique
+  code: MZ
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Myanmar
+  code: MM
+  status: adversary
+  rating: 2
+  descriptor: Adversary — Military Junta
+  latest_incident: Military coup 2021. Sanctions maintained. No significant engagement
+    with junta.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Namibia
+  code: NA
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Nauru
+  code: NR
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Nepal
+  code: NP
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Netherlands
+  code: NL
+  status: tariff_target
+  rating: 5
+  descriptor: Tariff Target — EU Member, NATO Ally
+  latest_incident: EU tariff applies. NATO member. No bilateral incident documented.
+  last_updated: '2025-04-09'
+  term: 2
+- name: New Zealand
+  code: NZ
+  status: ignored
+  rating: 6
+  descriptor: Ignored — Five Eyes Partner
+  latest_incident: Intelligence partner. 10 percent tariff. No bilateral incident.
+  last_updated: '2025-04-05'
+  term: 2
+- name: Niger
+  code: NE
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: US troops expelled following 2023 coup. No significant bilateral
+    engagement.
+  last_updated: '2024-01-01'
+  term: 2
+- name: Nigeria
+  code: NG
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: North Macedonia
+  code: MK
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Norway
+  code: 'NO'
+  status: ally
+  rating: 7
+  descriptor: Ally — Preferred European
+  latest_incident: Praised as the kind of immigrants we want when contrasting with
+    other nationalities. NATO ally. Oil-rich. Regarded warmly.
+  last_updated: '2018-01-11'
+  term: 1
+- name: Oman
+  code: OM
+  status: ally
+  rating: 7
+  descriptor: Ally — Gulf Partner
+  latest_incident: Hosted secret diplomatic meetings. Gulf partner. Relations stable.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Palau
+  code: PW
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Palestine
+  code: PS
+  status: adversary
+  rating: 1
+  descriptor: Adversary — Aid Cut
+  latest_incident: Aid to Palestinian Authority cut. Jerusalem recognised as Israeli
+    capital. Two-state solution described as not necessary. Gaza ceasefire negotiated
+    January 2025.
+  last_updated: '2025-01-19'
+  term: 2
+- name: Papua New Guinea
+  code: PG
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Paraguay
+  code: PY
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Peru
+  code: PE
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Philippines
+  code: PH
+  status: ally
+  rating: 7
+  descriptor: Ally — Duterte Praised
+  latest_incident: Duterte's drug war praised as incredible job. Military alliance
+    maintained. Marcos administration relationship warm.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Poland
+  code: PL
+  status: ally
+  rating: 8
+  descriptor: Ally — Meets NATO Target, Buys Weapons
+  latest_incident: Spends over 4 percent of GDP on defence. Major US weapons purchases.
+    Praised as a true NATO ally. Troops deployed.
+  last_updated: '2025-03-01'
+  term: 2
+- name: Portugal
+  code: PT
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: EU and NATO member. No bilateral incident documented.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Romania
+  code: RO
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: NATO member. No bilateral incident documented.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Rwanda
+  code: RW
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Saint Kitts and Nevis
+  code: KN
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Saint Lucia
+  code: LC
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Saint Vincent and the Grenadines
+  code: VC
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Samoa
+  code: WS
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: San Marino
+  code: SM
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: São Tomé and Príncipe
+  code: ST
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Senegal
+  code: SN
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Serbia
+  code: RS
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: Kosovo normalisation facilitated. No significant bilateral incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Seychelles
+  code: SC
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Sierra Leone
+  code: SL
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Singapore
+  code: SG
+  status: ally
+  rating: 7
+  descriptor: Ally — Strategic Trade Partner
+  latest_incident: 10 percent tariff. Major US military port access. Strategic partner.
+    No bilateral incident.
+  last_updated: '2025-04-05'
+  term: 2
+- name: Slovakia
+  code: SK
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: EU and NATO member. No bilateral incident documented.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Slovenia
+  code: SI
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: Birthplace of Melania Trump. EU and NATO member. No other bilateral
+    incident documented.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Solomon Islands
+  code: SB
+  status: ignored
+  rating: 4
+  descriptor: Ignored — China Concerns
+  latest_incident: Security agreement with China alarmed US. No direct bilateral engagement.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Somalia
+  code: SO
+  status: adversary
+  rating: 2
+  descriptor: Adversary — Al-Shabaab Operations
+  latest_incident: US strikes against Al-Shabaab continued. Troop drawdown then reversal.
+    Ongoing counterterrorism operations.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Spain
+  code: ES
+  status: tariff_target
+  rating: 5
+  descriptor: Tariff Target — EU Member
+  latest_incident: EU tariff applies. Gibraltar not raised publicly. No bilateral
+    incident.
+  last_updated: '2025-04-09'
+  term: 2
+- name: Sri Lanka
+  code: LK
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Suriname
+  code: SR
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Sweden
+  code: SE
+  status: ignored
+  rating: 6
+  descriptor: Ignored — New NATO Member
+  latest_incident: Joined NATO 2024. EU tariff applies. Historically neutral. No bilateral
+    incident documented.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Switzerland
+  code: CH
+  status: ignored
+  rating: 6
+  descriptor: Ignored — Hosts Davos
+  latest_incident: Davos speeches delivered. 31 percent tariff applied. No bilateral
+    incident beyond the tariff.
+  last_updated: '2025-04-09'
+  term: 2
+- name: Tajikistan
+  code: TJ
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Tanzania
+  code: TZ
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Thailand
+  code: TH
+  status: tariff_target
+  rating: 5
+  descriptor: Tariff Target — 36 Percent
+  latest_incident: 36 percent Liberation Day tariff. No bilateral diplomatic incident.
+  last_updated: '2025-04-09'
+  term: 2
+- name: Timor-Leste
+  code: TL
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Togo
+  code: TG
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Tonga
+  code: TO
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Trinidad and Tobago
+  code: TT
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Tunisia
+  code: TN
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Turkmenistan
+  code: TM
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Tuvalu
+  code: TV
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Uganda
+  code: UG
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Ukraine
+  code: UA
+  status: unclear
+  rating: 4
+  descriptor: Status Unclear — Make a Deal
+  latest_incident: Aid paused. Zelensky publicly dressed down. Minerals agreement
+    signed. War continues. Ceasefire remains 24 hours away.
+  last_updated: '2025-06-01'
+  term: 2
+- name: Uruguay
+  code: UY
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Uzbekistan
+  code: UZ
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Vanuatu
+  code: VU
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Vatican City
+  code: VA
+  status: ignored
+  rating: 6
+  descriptor: Ignored — Pope Met Twice
+  latest_incident: Met Pope Francis twice. Described the meeting as fantastic. The
+    Pope has been diplomatically critical of some administration positions.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Yemen
+  code: YE
+  status: adversary
+  rating: 2
+  descriptor: Adversary — Houthi Operations
+  latest_incident: US strikes against Houthi targets in Yemen ongoing from 2025. Saudi-led
+    coalition supported. Ceasefire announced May 2025.
+  last_updated: '2025-05-06'
+  term: 2
+- name: Zambia
+  code: ZM
+  status: ignored
+  rating: 5
+  descriptor: Ignored
+  latest_incident: No documented significant foreign policy incident.
+  last_updated: '2025-01-01'
+  term: 2
+- name: Zimbabwe
+  code: ZW
+  status: adversary
+  rating: 2
+  descriptor: Adversary — Sanctions Maintained
+  latest_incident: Sanctions maintained on Mnangagwa government. No significant engagement.
+  last_updated: '2025-01-01'
+  term: 2
