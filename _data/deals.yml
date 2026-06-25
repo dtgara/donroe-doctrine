@@ -76,3 +76,154 @@
   doctrine_rating: 7
   status: ACTIVE
   outcome: "Tariffs applied globally. Retaliatory measures announced by EU, Canada, and others. US steel industry expresses support. Downstream manufacturers express concern. The concern has not altered the tariff."
+
+- id: nafta-usmca
+  title: "The NAFTA Replacement (USMCA)"
+  strapline: "NAFTA described as the worst trade deal ever made. A new deal negotiated with Canada and Mexico. The new deal is largely similar to the old deal. This is described as a victory."
+  date: 2018-11-30
+  term: 1
+  type: Trade
+  terms_and_conditions: >
+    The North American Free Trade Agreement, in force since 1994, is hereby declared
+    the worst trade deal ever made in the history of trade deals, possibly ever.
+    A replacement agreement, the United States–Mexico–Canada Agreement, is negotiated.
+    The USMCA contains meaningful updates in dairy access, automotive rules of origin,
+    and dispute settlement. It also contains many provisions from NAFTA. The distinction
+    between the two agreements is described as tremendous.
+  doctrine_rating: 7
+  status: COMPLETED
+  outcome: "USMCA ratified by all three parties in 2020. Entered into force July 1, 2020. Most economists describe it as a modernisation of NAFTA rather than a replacement. The administration describes this characterisation as unfair."
+
+- id: jcpoa-withdrawal
+  title: "The Iran Nuclear Deal Exit"
+  strapline: "The JCPOA described as the worst deal ever negotiated. The US withdraws. Maximum pressure applied. Iran resumes enrichment. The situation is described as under control."
+  date: 2018-05-08
+  term: 1
+  type: Alliance
+  terms_and_conditions: >
+    The United States withdraws from the Joint Comprehensive Plan of Action, concluded
+    in 2015 under the previous administration. The agreement is described as defective
+    at its core. Sanctions are reimposed. A better deal is promised. The parameters of
+    the better deal have not been specified. Iran is advised to negotiate. Iran has
+    not yet contacted us regarding a better deal.
+  doctrine_rating: 8
+  status: UNRESOLVED
+  outcome: "Iran resumed uranium enrichment beyond JCPOA limits. No new deal concluded in Term 1. Maximum pressure campaign maintained. Term 2 negotiations ongoing. Iran's enrichment capacity described as advanced."
+
+- id: abraham-accords
+  title: "The Abraham Accords"
+  strapline: "Normalisation agreements between Israel and the UAE, Bahrain, Sudan, and Morocco. Described as the most significant Middle East peace agreement in 25 years. The description is not inaccurate."
+  date: 2020-09-15
+  term: 1
+  type: Alliance
+  terms_and_conditions: >
+    The United Arab Emirates and the Kingdom of Bahrain hereby agree to normalise
+    relations with the State of Israel. Sudan and Morocco follow. The agreements are
+    brokered by the United States and represent a significant realignment of regional
+    diplomacy. Palestinian statehood is not addressed. This omission is noted by some
+    parties. The administration considers the omission a feature of the framework.
+  doctrine_rating: 10
+  status: COMPLETED
+  outcome: "Four normalisation agreements concluded. Embassies opened. Trade and security cooperation established. The Palestinian Authority was not consulted. A fifth accord with Saudi Arabia remains under negotiation."
+
+- id: north-korea-summits
+  title: "The North Korea Summit Series"
+  strapline: "Three summits with Kim Jong-un. Singapore, Hanoi, the DMZ. Denuclearisation promised. Not delivered. The meetings are described as historic regardless."
+  date: 2018-06-12
+  term: 1
+  type: Alliance
+  terms_and_conditions: >
+    The United States and the Democratic People's Republic of Korea agree to hold
+    a historic summit in Singapore. A declaration is signed. Denuclearisation is
+    committed to in general terms. A second summit in Hanoi produces no agreement.
+    A third meeting at the DMZ lasts 53 minutes. No binding framework emerges.
+    Kim Jong-un and the President exchange what are described as beautiful letters.
+    The letters have not been published. North Korea's nuclear programme has continued.
+  doctrine_rating: 6
+  status: UNRESOLVED
+  outcome: "No denuclearisation agreement reached. North Korea conducted further missile tests. Contact ceased after Hanoi. The President has expressed continued openness to talks. North Korea has not responded."
+
+- id: phase-one-china
+  title: "The Phase One China Trade Deal"
+  strapline: "Phase One of what was described as a comprehensive trade deal with China. Phase Two has not commenced. The tariffs from Phase One remain in place during Phase Two's absence."
+  date: 2020-01-15
+  term: 1
+  type: Trade
+  terms_and_conditions: >
+    The United States and the People's Republic of China agree to a Phase One trade
+    agreement. China commits to purchasing $200 billion in additional US goods over
+    two years. The United States agrees to reduce some tariffs. Existing tariffs on
+    $370 billion of Chinese goods remain. Phase Two negotiations are to follow.
+    Phase Two has not been formally initiated. China's purchasing commitments were
+    not fully met, in part due to the pandemic. The deal is described as a great deal.
+  doctrine_rating: 7
+  status: UNRESOLVED
+  outcome: "China fell short of purchasing commitments. Some tariffs reduced, others maintained. Phase Two not commenced. Term 2 saw tariffs escalated to 145 percent before reduction to 30 percent following Geneva talks."
+
+- id: liberation-day-tariffs
+  title: "Liberation Day"
+  strapline: "April 2, 2025. Universal baseline tariff of 10% applied to all countries. Reciprocal tariffs applied to 57 additional countries. The day is described as Liberation Day. Markets disagreed."
+  date: 2025-04-02
+  term: 2
+  type: Trade
+  terms_and_conditions: >
+    Effective April 2, 2025, the United States imposes a universal baseline tariff
+    of 10 percent on all imports from all countries. An additional reciprocal tariff
+    layer is applied to 57 trading partners deemed to be acting unfairly. The methodology
+    for calculating reciprocal tariffs is based on trade deficits divided by imports,
+    multiplied by 0.5. Economists have described this methodology. Their description
+    has not been flattering. The tariffs are applied regardless.
+  doctrine_rating: 9
+  status: ACTIVE
+  outcome: "Global markets fell sharply. A 90-day pause was announced for most countries. China was excluded from the pause and tariffs escalated to 145 percent. The pause is described as a negotiating tool. Negotiations are ongoing."
+
+- id: gaza-ceasefire-2025
+  title: "The Gaza Ceasefire Agreement"
+  strapline: "A ceasefire between Israel and Hamas brokered by the US, Qatar, and Egypt. Phase One implemented. Hostages released. Phase Two negotiations ongoing."
+  date: 2025-01-19
+  term: 2
+  type: Alliance
+  terms_and_conditions: >
+    A ceasefire agreement between the State of Israel and Hamas is concluded in three
+    phases. Phase One provides for a 42-day halt in fighting, the release of 33 hostages
+    in exchange for Palestinian prisoners, and increased humanitarian aid to Gaza.
+    The United States, Qatar, and Egypt serve as mediators. The agreement is announced
+    one day before the presidential inauguration. The timing is noted.
+  doctrine_rating: 8
+  status: ACTIVE
+  outcome: "Phase One implemented. Some hostages released. Phase Two negotiations commenced and proved difficult. Fighting resumed in phases. The situation in Gaza remains active and unresolved."
+
+- id: ukraine-minerals-deal
+  title: "The Ukraine Minerals Agreement"
+  strapline: "Ukraine agrees to share revenues from its natural resource sector with the United States. Described as reimbursement for prior military assistance. Ukraine describes it differently."
+  date: 2025-04-30
+  term: 2
+  type: Trade
+  terms_and_conditions: >
+    Ukraine and the United States conclude an agreement establishing a joint investment
+    fund for reconstruction, to be funded in part by revenues from Ukraine's natural
+    resources. The United States characterises this as compensation for prior security
+    assistance. Ukraine characterises this as an investment partnership. The distinction
+    is meaningful to Ukraine. A prior signing ceremony was disrupted when the President
+    and President Zelensky had a disagreement in the Oval Office. This is noted for
+    the record.
+  doctrine_rating: 6
+  status: ACTIVE
+  outcome: "Agreement signed April 30, 2025. Implementation framework under development. Ceasefire negotiations with Russia continue separately. Ukraine's sovereignty is described as important by both parties with varying degrees of conviction."
+
+- id: saudi-investment-pledge
+  title: "The Saudi Investment Arrangement"
+  strapline: "$600 billion in investment pledged by Saudi Arabia over four years. The President's first foreign visit of Term 2. MBS described as doing a spectacular job. The feeling appears mutual."
+  date: 2025-05-13
+  term: 2
+  type: Alliance
+  terms_and_conditions: >
+    During a state visit to the Kingdom of Saudi Arabia — the first foreign visit of
+    the second term, as it was the first foreign visit of the first term — the Kingdom
+    pledges $600 billion in investment in the United States over four years. Arms sales
+    agreements are concluded. Crown Prince Mohammed bin Salman is described as doing
+    a spectacular job. The murder of journalist Jamal Khashoggi is not raised publicly.
+    This approach is described as pragmatic.
+  doctrine_rating: 9
+  status: ACTIVE
+  outcome: "Investment pledges announced. Arms packages confirmed. Strategic partnership deepened. A Trump-branded golf course development in Saudi Arabia was separately noted by ethics observers. The observation was not acted upon."
