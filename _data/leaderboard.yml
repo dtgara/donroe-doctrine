@@ -7,25 +7,17 @@ in_favour:
     annotation: "First foreign visit of both terms. Arms deals totalling hundreds of billions. Crown Prince MBS described as doing a spectacular job. The kingdom has never been more in favour."
     trend: RISING
     status_changes: 1
-    last_updated: "2025-02-01"
+    last_updated: "2025-05-13"
 
   - rank: 2
-    country: "Israel"
-    flag: "🇮🇱"
-    annotation: "Jerusalem recognised as capital. Embassy moved. Golan Heights recognised. Abraham Accords brokered. The relationship is described as unbreakable, which it has been, structurally."
-    trend: STABLE
-    status_changes: 0
-    last_updated: "2025-01-20"
-
-  - rank: 3
     country: "United Arab Emirates"
     flag: "🇦🇪"
-    annotation: "Abraham Accords signatory. Major investment pledges. The President of the UAE visited Mar-a-Lago. Relations are excellent and continuing to be excellent."
+    annotation: "Abraham Accords signatory. $1.4 trillion investment commitment announced. The President of the UAE visited Mar-a-Lago. Relations are excellent and continuing to be excellent."
     trend: STABLE
     status_changes: 0
-    last_updated: "2025-03-15"
+    last_updated: "2025-05-15"
 
-  - rank: 4
+  - rank: 3
     country: "Hungary"
     flag: "🇭🇺"
     annotation: "Viktor Orbán described as fantastic and a great leader of his country. NATO ally but the right kind — sceptical of the alliance, friendly toward Russia, tough on migration."
@@ -33,7 +25,7 @@ in_favour:
     status_changes: 1
     last_updated: "2025-02-10"
 
-  - rank: 5
+  - rank: 4
     country: "El Salvador"
     flag: "🇸🇻"
     annotation: "President Bukele's mass imprisonment model praised as exactly what we should be doing. Deported migrants housed in Salvadoran facilities. An efficient partnership."
@@ -41,23 +33,23 @@ in_favour:
     status_changes: 2
     last_updated: "2025-04-01"
 
-  - rank: 6
+  - rank: 5
     country: "Italy"
     flag: "🇮🇹"
-    annotation: "Prime Minister Meloni described as fantastic and doing a great job. Relations warm. Italy bucks the trend of irritating European allies."
-    trend: RISING
-    status_changes: 0
-    last_updated: "2025-03-01"
+    annotation: "Prime Minister Meloni long described as fantastic and a rare European ally. A complication arose at the G7 when the President suggested Meloni was eager to be photographed with him. Meloni disputed this characterisation. The relationship is warm but the dynamic has shifted."
+    trend: FALLING
+    status_changes: 1
+    last_updated: "2026-06-25"
 
-  - rank: 7
+  - rank: 6
     country: "India"
     flag: "🇮🇳"
-    annotation: "Modi relationship warm. Howdy Modi rally held in Houston. Tariffs applied but described as negotiable. Trade frictions exist but the personal chemistry holds."
+    annotation: "Modi relationship warm. Howdy Modi rally held in Houston. Tariffs applied but described as negotiable. Trade frictions exist but the personal chemistry holds, so far."
     trend: FALLING
     status_changes: 3
     last_updated: "2025-05-01"
 
-  - rank: 8
+  - rank: 7
     country: "Japan"
     flag: "🇯🇵"
     annotation: "Major defence spending commitments made. Trade negotiations ongoing. Golf diplomacy conducted. The alliance is solid provided Japan keeps buying American goods."
@@ -65,15 +57,7 @@ in_favour:
     status_changes: 2
     last_updated: "2025-04-15"
 
-  - rank: 9
-    country: "United Kingdom"
-    flag: "🇬🇧"
-    annotation: "The special relationship endures, conditionally. Brexit described as a great thing. Tariffs applied at 10 percent. The special nature of the relationship is subject to ongoing assessment."
-    trend: FALLING
-    status_changes: 4
-    last_updated: "2025-05-15"
-
-  - rank: 10
+  - rank: 8
     country: "Argentina"
     flag: "🇦🇷"
     annotation: "President Milei described as the most important leader in the world. Ideological alignment on economics and media. A rare ally in South America."
@@ -93,7 +77,7 @@ out_of_favour:
   - rank: 2
     country: "China"
     flag: "🇨🇳"
-    annotation: "Primary trade adversary. Tariffs reaching 145 percent applied. Responsible for fentanyl, trade theft, and the virus. Negotiations intermittent. The unfairness has been described as tremendous."
+    annotation: "Primary trade adversary. Tariffs reaching 145 percent applied. Responsible for fentanyl, trade theft, and the virus. Negotiations intermittent. Tariffs reduced to 30 percent following Geneva. The unfairness has been described as tremendous."
     trend: VOLATILE
     status_changes: 12
     last_updated: "2025-06-10"
@@ -172,6 +156,30 @@ indeterminate:
     last_updated: "2025-06-10"
 
   - rank: 2
+    country: "Iran"
+    flag: "🇮🇷"
+    annotation: "Maximum pressure applied in Term 1. JCPOA abandoned. General Soleimani killed. Term 2 opens with the same posture — then shifts. Talks conducted via Oman. The President and Vice President signal openness to a deal. Iran enriches uranium throughout the signalling. The warming is real. So is the centrifuge."
+    trend: RISING
+    status_changes: 4
+    last_updated: "2026-06-25"
+
+  - rank: 3
+    country: "Israel"
+    flag: "🇮🇱"
+    annotation: "Described as an unbreakable alliance. Jerusalem recognised. Golan Heights recognised. Abraham Accords brokered. Gaza ceasefire negotiated January 2025. Then complicated. The administration's Iran warming has introduced friction. A deal with Iran that Israel opposes would test the unbreakable characterisation."
+    trend: FALLING
+    status_changes: 2
+    last_updated: "2026-06-25"
+
+  - rank: 4
+    country: "United Kingdom"
+    flag: "🇬🇧"
+    annotation: "The special relationship endures at reduced temperature. Prime Minister Starmer was not warmly regarded — described as making a very big mistake on various fronts. Starmer's departure eases the personal dynamic. A trade framework was announced in May 2025. The 10 percent tariff remains. The new prime minister has not yet been assessed."
+    trend: STABLE
+    status_changes: 5
+    last_updated: "2026-06-25"
+
+  - rank: 5
     country: "Turkey"
     flag: "🇹🇷"
     annotation: "NATO member. Purchased Russian S-400 missiles. Erdoğan described as tough. F-35 access revoked. Relationship warm at the personal level, complicated at every other level."
@@ -179,15 +187,15 @@ indeterminate:
     status_changes: 6
     last_updated: "2025-04-01"
 
-  - rank: 3
+  - rank: 6
     country: "Qatar"
     flag: "🇶🇦"
-    annotation: "Hosts US military base. Offered a Boeing 747 as a gift. Designated state sponsor of terrorism by neighbours (2017). Trump mediated. The plane offer is under legal review."
+    annotation: "Hosts US military base. Offered a Boeing 747 as a gift. Designated state sponsor of terrorism by neighbours in 2017. Trump mediated. The plane offer is under legal review. The base remains."
     trend: STABLE
     status_changes: 3
     last_updated: "2025-05-20"
 
-  - rank: 4
+  - rank: 7
     country: "South Korea"
     flag: "🇰🇷"
     annotation: "Alliance maintained. Troops present. Tariffs applied. Demands for increased burden sharing. Kim Jong Un correspondence ongoing from Term 1. The peninsula remains complex."
@@ -195,7 +203,7 @@ indeterminate:
     status_changes: 3
     last_updated: "2025-05-01"
 
-  - rank: 5
+  - rank: 8
     country: "Brazil"
     flag: "🇧🇷"
     annotation: "Bolsonaro warmly regarded. Lula less so. Tariffs applied. Amazon policy a friction point. The relationship has changed with the government and may change again."
