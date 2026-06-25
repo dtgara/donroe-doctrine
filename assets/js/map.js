@@ -1,3 +1,6 @@
+---
+layout: null
+---
 /* =============================================================================
    THE DONROE DOCTRINE — Interactive World Map
    Built with Leaflet.js. Country data from _data/map.yml (compiled to JSON by Jekyll).
