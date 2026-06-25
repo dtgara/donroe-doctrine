@@ -31,15 +31,8 @@
      Map data — injected by Jekyll from _data/map.yml
      In production, Jekyll compiles this to a JS-accessible array.
      ------------------------------------------------------------------------- */
-  var mapData = window.DOCTRINE_MAP_DATA || [];
-
-  // Build lookup by ISO code
+  // Country data and GeoJSON are both loaded via fetch below
   var countryIndex = {};
-  if (Array.isArray(mapData)) {
-    mapData.forEach(function (entry) {
-      if (entry.code) countryIndex[entry.code.toUpperCase()] = entry;
-    });
-  }
 
   /* ---------------------------------------------------------------------------
      Initialise Leaflet map
@@ -192,17 +185,30 @@
   }
 
   var geolayer;
-  fetch(geojsonUrl)
-    .then(function (r) { return r.json(); })
-    .then(function (data) {
-      geolayer = L.geoJSON(data, {
-        style: styleFeature,
-        onEachFeature: onEachFeature
-      }).addTo(map);
-    })
-    .catch(function (err) {
-      console.warn('Doctrine Map: GeoJSON failed to load.', err);
-    });
+  var countryDataUrl = '/assets/data/countries.json';
+
+  Promise.all([
+    fetch(countryDataUrl).then(function(r) { return r.json(); }),
+    fetch(geojsonUrl).then(function(r) { return r.json(); })
+  ]).then(function(results) {
+    var countryData = results[0];
+    var geoData = results[1];
+
+    // Build lookup index from country data
+    if (Array.isArray(countryData)) {
+      countryData.forEach(function(entry) {
+        if (entry.code) countryIndex[entry.code.toUpperCase()] = entry;
+      });
+    }
+
+    // Render GeoJSON with country data now available
+    geolayer = L.geoJSON(geoData, {
+      style: styleFeature,
+      onEachFeature: onEachFeature
+    }).addTo(map);
+  }).catch(function(err) {
+    console.warn('Doctrine Map: failed to load data.', err);
+  });
 
   // Close panel on map click
   map.on('click', function () { closePanel(); });
