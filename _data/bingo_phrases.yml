@@ -1,0 +1,136 @@
+# Press Briefing Bingo — Phrase List
+# 65 phrases drawn from documented Trump foreign policy language.
+# Categories: Trade, NATO, General, Policy, Evidence, Diplomacy, Territorial, Security
+free_square: "Blames predecessor."
+
+phrases:
+  - text: "Reciprocal"
+    category: Trade
+  - text: "They were laughing at us"
+    category: General
+  - text: "Tremendous deal"
+    category: General
+  - text: "Nobody knew it could be so complicated"
+    category: Policy
+  - text: "Many people are saying"
+    category: Evidence
+  - text: "Very unfair"
+    category: Trade
+  - text: "Ripping us off"
+    category: Trade
+  - text: "America First"
+    category: Policy
+  - text: "We'll see what happens"
+    category: Diplomacy
+  - text: "Like you've never seen before"
+    category: General
+  - text: "Believe me"
+    category: Evidence
+  - text: "The likes of which the world has never seen"
+    category: General
+  - text: "Very special relationship"
+    category: Diplomacy
+  - text: "Not paying their fair share"
+    category: NATO
+  - text: "2% of GDP"
+    category: NATO
+  - text: "Art of the deal"
+    category: Trade
+  - text: "Very bad deal"
+    category: Trade
+  - text: "Terrible deal"
+    category: Trade
+  - text: "Fire and fury"
+    category: Security
+  - text: "Little Rocket Man"
+    category: Security
+  - text: "Perfect call"
+    category: Diplomacy
+  - text: "Beautiful letter"
+    category: Diplomacy
+  - text: "Great chemistry"
+    category: Diplomacy
+  - text: "Very strong leader"
+    category: Diplomacy
+  - text: "The world is laughing at us"
+    category: General
+  - text: "We hold all the cards"
+    category: Trade
+  - text: "Maximum pressure"
+    category: Security
+  - text: "51st state"
+    category: Territorial
+  - text: "Governor"
+    category: Territorial
+  - text: "Trade wars are easy to win"
+    category: Trade
+  - text: "Very smart man"
+    category: Diplomacy
+  - text: "Denuclearisation"
+    category: Security
+  - text: "They want to make a deal"
+    category: Trade
+  - text: "We were getting nothing"
+    category: Trade
+  - text: "Currency manipulation"
+    category: Trade
+  - text: "Tremendous pressure"
+    category: Diplomacy
+  - text: "Rogue nation"
+    category: Security
+  - text: "Nobody has been tougher on Russia"
+    category: Security
+  - text: "I know him very well"
+    category: Diplomacy
+  - text: "Frankly"
+    category: General
+  - text: "Unprecedented"
+    category: General
+  - text: "Total disaster"
+    category: General
+  - text: "Strongest in history"
+    category: General
+  - text: "NATO owes us money"
+    category: NATO
+  - text: "They targeted our farmers"
+    category: Trade
+  - text: "Energy dominance"
+    category: Policy
+  - text: "We have to be smart"
+    category: Policy
+  - text: "Greatest relationship"
+    category: Diplomacy
+  - text: "Very dangerous situation"
+    category: Security
+  - text: "Motivated seller"
+    category: Territorial
+  - text: "National security interest"
+    category: Territorial
+  - text: "Absolute necessity"
+    category: Territorial
+  - text: "Tremendous unfairness"
+    category: Trade
+  - text: "No quid pro quo"
+    category: Diplomacy
+  - text: "China has been ripping us off for years"
+    category: Trade
+  - text: "They don't respect us"
+    category: General
+  - text: "The fake news"
+    category: General
+  - text: "Big league"
+    category: General
+  - text: "We're going to win so much"
+    category: General
+  - text: "Very powerful country"
+    category: Diplomacy
+  - text: "They call me"
+    category: Diplomacy
+  - text: "Reciprocal tariff"
+    category: Trade
+  - text: "We've been taken advantage of"
+    category: Trade
+  - text: "Very beautiful letter"
+    category: Diplomacy
+  - text: "Strongly worded"
+    category: Diplomacy
