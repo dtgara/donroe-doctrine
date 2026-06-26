@@ -2019,3 +2019,271 @@ body { padding-top: var(--nav-height); }
   font-style: italic;
 }
 
+
+/* ============================================================
+   THE TOLL — USAID Human Cost Section
+   ============================================================ */
+
+/* Hero zone */
+.toll-hero {
+  background: #0a0a0a;
+  border: 1px solid var(--color-border);
+  padding: 3rem 2.5rem 2.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.toll-hero .toll-eyebrow {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8a8a8a;
+  margin-bottom: 0.6rem;
+}
+.toll-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  color: var(--color-white);
+  margin: 0 0 0.5rem;
+  line-height: 1;
+}
+.toll-hero .toll-subtitle {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: #9a9a9a;
+  max-width: 640px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+.toll-hero .toll-meta {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #666;
+  margin-top: 0.4rem;
+}
+.toll-counter-wrap {
+  border-top: 1px solid #222;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+.toll-counter-label {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #7a7a7a;
+  margin-bottom: 0.5rem;
+}
+.toll-counter {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 8vw, 5.5rem);
+  color: #c0392b;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.toll-counter-note {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  color: #555;
+  margin-top: 0.5rem;
+  letter-spacing: 0.06em;
+}
+
+/* Category bars */
+.toll-cat-bars {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.toll-cat-bar-row {
+  display: grid;
+  grid-template-columns: 130px 1fr 90px;
+  align-items: center;
+  gap: 0.75rem;
+}
+.toll-cat-bar-label {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: right;
+}
+.toll-cat-bar-track {
+  height: 5px;
+  background: #1a1a1a;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.toll-cat-bar-fill {
+  height: 100%;
+  width: 0;
+  border-radius: 3px;
+  transition: width 1.4s cubic-bezier(.4,0,.2,1);
+}
+.toll-cat-bar-fill.hiv        { background: #c0392b; }
+.toll-cat-bar-fill.malaria    { background: #b8860b; }
+.toll-cat-bar-fill.tb         { background: #2471a3; }
+.toll-cat-bar-fill.maternal_child { background: #7d3c98; }
+.toll-cat-bar-fill.food_aid   { background: #6e7f23; }
+.toll-cat-bar-pct {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: #666;
+  text-align: right;
+}
+
+/* Category cards grid */
+.toll-cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+.toll-cat-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  padding: 1.25rem 1rem 1rem;
+  position: relative;
+}
+.toll-cat-card-accent {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+}
+.toll-cat-card-accent.hiv        { background: #c0392b; }
+.toll-cat-card-accent.malaria    { background: #b8860b; }
+.toll-cat-card-accent.tb         { background: #2471a3; }
+.toll-cat-card-accent.maternal_child { background: #7d3c98; }
+.toll-cat-card-accent.food_aid   { background: #6e7f23; }
+
+.toll-cat-card-deaths {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  line-height: 1;
+  color: #1a1a1a;
+  margin-bottom: 0.2rem;
+}
+.toll-cat-card-deaths.hiv        { color: #c0392b; }
+.toll-cat-card-deaths.malaria    { color: #b8860b; }
+.toll-cat-card-deaths.tb         { color: #2471a3; }
+.toll-cat-card-deaths.maternal_child { color: #7d3c98; }
+.toll-cat-card-deaths.food_aid   { color: #6e7f23; }
+
+.toll-cat-card-name {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+.toll-cat-card-sub {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Filter bar */
+.toll-filters {
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+.toll-filters .filter-label {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--color-light-grey);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-right: 0.25rem;
+}
+.toll-filter.active {
+  background: var(--color-near-black);
+  color: var(--color-white);
+  border-color: var(--color-near-black);
+}
+
+/* Toll table */
+.toll-table-wrap {
+  overflow-x: auto;
+}
+.toll-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+}
+.toll-table thead th {
+  background: #0f0f0f;
+  color: #888;
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 0.65rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #1f1f1f;
+  white-space: nowrap;
+}
+.toll-table tbody tr {
+  border-bottom: 1px solid var(--color-border);
+  transition: background 0.15s;
+}
+.toll-table tbody tr:hover { background: #f8f8f8; }
+.toll-table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  line-height: 1.45;
+}
+.toll-table td.toll-program { font-weight: 500; color: #111; }
+.toll-table td.toll-region  { color: #555; font-size: 0.8rem; }
+.toll-table td.toll-people  { font-variant-numeric: tabular-nums; color: #333; white-space: nowrap; }
+.toll-table td.toll-deaths  {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  white-space: nowrap;
+}
+.toll-deaths.hiv         { color: #c0392b; }
+.toll-deaths.malaria     { color: #b8860b; }
+.toll-deaths.tb          { color: #2471a3; }
+.toll-deaths.maternal_child { color: #7d3c98; }
+.toll-deaths.food_aid    { color: #6e7f23; }
+
+.toll-chip {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+.toll-chip.hiv         { background: #fdf0ee; color: #c0392b; border: 1px solid #f5c6c0; }
+.toll-chip.malaria     { background: #fdf7e3; color: #8a6a00; border: 1px solid #f0d98a; }
+.toll-chip.tb          { background: #eaf3fb; color: #1a6090; border: 1px solid #aed6f1; }
+.toll-chip.maternal_child { background: #f5eefb; color: #6c3483; border: 1px solid #d2b4de; }
+.toll-chip.food_aid    { background: #f4f6e8; color: #4a5e12; border: 1px solid #c8d87a; }
+
+.toll-chip.conf-documented { background: #e8f5e9; color: #1b5e20; border: 1px solid #a5d6a7; }
+.toll-chip.conf-reported   { background: #fff8e1; color: #7a5800; border: 1px solid #ffe082; }
+.toll-chip.conf-modeled    { background: #f3f3f3; color: #555; border: 1px solid #ccc; }
+
+.toll-notes-row td {
+  padding: 0.5rem 0.75rem 1rem;
+  color: #666;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  background: #fafafa;
+  border-bottom: 2px solid var(--color-border);
+}

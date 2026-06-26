@@ -1,0 +1,191 @@
+# The Toll — USAID shutdown human cost data
+# Sources: CGD, Lancet, UNAIDS, WHO, Harvard, KFF, UCLA
+# Death rate used for counter: 500,000/year (CGD conservative lower bound)
+# Counter start: January 20, 2025 (Executive Order 14169 signed)
+
+- id: pepfar-treatment-disruption
+  program: "PEPFAR — Antiretroviral Treatment"
+  region: "Sub-Saharan Africa"
+  category: hiv
+  people_affected: 20500000
+  projected_deaths_annual: 130000
+  date_cut: "2025-01-20"
+  confidence: documented
+  source: "UNAIDS, KFF, The Lancet HIV"
+  notes: "20.5 million people on PEPFAR-funded ART. 90-day freeze disrupted clinic operations. Treatment initiation dropped 30%, HIV diagnoses dropped 31% in Q1 2025 vs Q1 2024."
+
+- id: pepfar-pediatric-hiv
+  program: "PEPFAR — Pediatric HIV Programs"
+  region: "Sub-Saharan Africa"
+  category: hiv
+  people_affected: 2300000
+  projected_deaths_annual: 60000
+  date_cut: "2025-01-20"
+  confidence: documented
+  source: "UNAIDS"
+  notes: "UNAIDS projects 300,000 additional child AIDS deaths through 2029 from discontinued pediatric treatment and prevention programs."
+
+- id: pepfar-prevention-prep
+  program: "PEPFAR — HIV Prevention and PrEP"
+  region: "Global"
+  category: hiv
+  people_affected: 50000000
+  projected_deaths_annual: 75000
+  date_cut: "2025-01-20"
+  confidence: documented
+  source: "UNAIDS, aidsmap, The Lancet HIV"
+  notes: "Prevention programs supporting 50M people terminated or suspended. Testing dropped 8.5%. The Lancet HIV models 4.4–10.75M new infections in LMICs through 2030."
+
+- id: pmi-malaria-programs
+  program: "President's Malaria Initiative — Africa"
+  region: "Africa"
+  category: malaria
+  people_affected: 300000000
+  projected_deaths_annual: 100000
+  date_cut: "2025-02"
+  confidence: documented
+  source: "KFF, Statista, USAID internal memo"
+  notes: "80% of PMI malaria awards terminated. USAID's own internal estimate: 18 million additional malaria cases and 166,000 deaths annually. At-risk population includes 300M in endemic countries."
+
+- id: malaria-nets-prevention
+  program: "Malaria Bed Nets and Vector Control"
+  region: "Sub-Saharan Africa"
+  category: malaria
+  people_affected: 150000000
+  projected_deaths_annual: 70000
+  date_cut: "2025-02"
+  confidence: documented
+  source: "CGD, USAID"
+  notes: "70,000 additional adult and child deaths from malaria directly attributed to terminated USAID net distribution and indoor residual spraying programs."
+
+- id: global-fund-malaria
+  program: "Global Fund — Malaria Grant (US Contribution Cut)"
+  region: "Global"
+  category: malaria
+  people_affected: 80000000
+  projected_deaths_annual: 40000
+  date_cut: "2025-03"
+  confidence: reported
+  source: "The Global Fund, CNN"
+  notes: "US contribution to the 2024–2026 Global Fund grant cycle cut by $1.4 billion (11% of allocation). Malaria, HIV, and TB programs all affected."
+
+- id: usaid-tb-stop-program
+  program: "USAID TB STOP & Treatment Programs"
+  region: "Global"
+  category: tb
+  people_affected: 8000000
+  projected_deaths_annual: 55000
+  date_cut: "2025-02"
+  confidence: documented
+  source: "WHO Global TB Report 2025, Harvard T.H. Chan School of Public Health"
+  notes: "Harvard projects US funding cuts could result in nearly 9 million child TB cases and 1.5 million child deaths through 2034. WHO's 2025 TB Report formally attributes funding cut impacts."
+
+- id: global-fund-tb
+  program: "Global Fund — Tuberculosis (US Contribution Cut)"
+  region: "Global"
+  category: tb
+  people_affected: 10000000
+  projected_deaths_annual: 50000
+  date_cut: "2025-03"
+  confidence: reported
+  source: "The Global Fund, Boston University"
+  notes: "Boston University estimates TB-related cuts could cost families $80 billion worldwide. A 2.5M additional pediatric TB case projection spans 2025–2034."
+
+- id: child-tb-lmics
+  program: "Pediatric TB Detection and Treatment"
+  region: "South Asia / Africa"
+  category: tb
+  people_affected: 1200000
+  projected_deaths_annual: 35000
+  date_cut: "2025-02"
+  confidence: modeled
+  source: "Harvard T.H. Chan, NCBI"
+  notes: "Diagnostic and treatment programs for children with TB in LMICs effectively shuttered. Children account for the majority of projected additional TB deaths."
+
+- id: mch-africa-programs
+  program: "Maternal and Child Health Programs — Africa"
+  region: "Africa"
+  category: maternal_child
+  people_affected: 16800000
+  projected_deaths_annual: 120000
+  date_cut: "2025-02"
+  confidence: documented
+  source: "KFF, Oxford Academic, USAID internal memo"
+  notes: "86% of USAID MCH awards terminated. Internal memo: 16.8M pregnant women per year lose services; 11.3M newborns lose postnatal care in first 48 hours; 14.8M children under 5 lose pneumonia and diarrhea treatment."
+
+- id: maternal-mortality-west-africa
+  program: "Maternal Mortality Prevention — West & Central Africa"
+  region: "Burkina Faso, Chad, CAR, Mali, Niger, Nigeria"
+  category: maternal_child
+  people_affected: 4000000
+  projected_deaths_annual: 30000
+  date_cut: "2025-02"
+  confidence: modeled
+  source: "Oxford Academic Health Policy and Planning"
+  notes: "Oxford Academic study of six West/Central African countries projects significant spikes in maternal mortality. These are among the world's highest-burden countries for maternal death."
+
+- id: nutrition-sam-treatment
+  program: "Severe Acute Malnutrition Treatment (SAM)"
+  region: "Africa / Yemen / Bangladesh"
+  category: maternal_child
+  people_affected: 5000000
+  projected_deaths_annual: 45000
+  date_cut: "2025-02"
+  confidence: documented
+  source: "Oxfam, CGD, PMC"
+  notes: "Oxfam analysis: a child under five could die every 40 seconds by 2030 due to US aid cuts. SAM treatment programs that prevented wasting deaths in ~5M children terminated."
+
+- id: gavi-vaccine-cofinancing
+  program: "GAVI Vaccine Co-financing (US Contribution)"
+  region: "Global"
+  category: maternal_child
+  people_affected: 75000000
+  projected_deaths_annual: 40000
+  date_cut: "2025-03"
+  confidence: reported
+  source: "GAVI, The Lancet"
+  notes: "US is GAVI's second-largest donor. Contribution freeze affects vaccine access for ~75M children annually in 57 low-income countries. Includes measles, polio, meningitis programs."
+
+- id: wfp-emergency-food-sudan
+  program: "WFP Emergency Food — Sudan"
+  region: "Sudan"
+  category: food_aid
+  people_affected: 18000000
+  projected_deaths_annual: 55000
+  date_cut: "2025-02"
+  confidence: documented
+  source: "WFP, OHCHR, Reuters"
+  notes: "Sudan has the world's largest displacement crisis. USAID food aid to Sudan effectively terminated. UN experts described US actions as 'fuelling global humanitarian catastrophe.' 18M face acute food insecurity."
+
+- id: wfp-emergency-food-yemen
+  program: "WFP Emergency Food — Yemen"
+  region: "Yemen"
+  category: food_aid
+  people_affected: 17000000
+  projected_deaths_annual: 35000
+  date_cut: "2025-02"
+  confidence: documented
+  source: "WFP, UN OCHA"
+  notes: "Yemen remains one of the world's worst food crises. USAID was the primary donor to WFP Yemen operations. 17M people in acute food insecurity. Aid suspension forced WFP to cut rations."
+
+- id: wfp-emergency-food-gaza
+  program: "WFP Emergency Food — Gaza"
+  region: "Gaza"
+  category: food_aid
+  people_affected: 2200000
+  projected_deaths_annual: 15000
+  date_cut: "2025-02"
+  confidence: reported
+  source: "WFP, UN, Reuters"
+  notes: "All 2.2M Gaza residents face acute food insecurity. US food aid freeze compounded blockade conditions. WFP operations severely constrained."
+
+- id: humanitarian-food-aid-global
+  program: "Global Humanitarian Food Aid (USAID/WFP)"
+  region: "Global"
+  category: food_aid
+  people_affected: 100000000
+  projected_deaths_annual: 120000
+  date_cut: "2025-01-20"
+  confidence: modeled
+  source: "CGD, WFP"
+  notes: "USAID was the world's largest bilateral food aid donor. Humanitarian obligations down 58% vs FY2024. CGD estimates 490,000 lives at risk per year from food aid decline alone."

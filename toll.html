@@ -1,0 +1,230 @@
+---
+layout: default
+title: "The Toll"
+body_class: page-toll
+---
+
+<script type="application/json" id="toll-data">{{ site.data.toll | jsonify }}</script>
+
+<!-- ZONE 1: HERO -->
+<div class="toll-hero">
+  <div class="toll-eyebrow">The Human Cost</div>
+  <h1>The Toll</h1>
+  <p class="toll-subtitle">
+    The United States was the world's largest humanitarian donor. On January 20, 2025,
+    Executive Order 14169 suspended all foreign assistance. 83% of USAID programmes
+    were subsequently terminated. These are the consequences — estimated through
+    peer-reviewed mortality modelling.
+  </p>
+  <p class="toll-meta">Sources: CGD · The Lancet · UNAIDS · WHO · Harvard T.H. Chan · UCLA · KFF · Oxford Academic</p>
+
+  <div class="toll-counter-wrap">
+    <div class="toll-counter-label">Estimated Preventable Deaths Since January 20, 2025</div>
+    <div class="toll-counter" id="toll-counter">0</div>
+    <div class="toll-counter-note">
+      Conservative lower bound · CGD peer-reviewed mortality modelling (500,000/year) ·
+      Actual toll likely higher — Lancet projects 9.4M deaths by 2030
+    </div>
+  </div>
+
+  <div class="toll-cat-bars" id="toll-bars"></div>
+</div>
+
+<!-- ZONE 2: CATEGORY CARDS -->
+<div class="toll-cat-grid" id="toll-cat-grid"></div>
+
+<!-- ZONE 3: TABLE -->
+<div class="toll-filters" id="toll-filters">
+  <span class="filter-label">Category</span>
+  <button class="btn btn-secondary toll-filter active" data-cat="all" style="font-size:0.65rem;padding:0.35rem 0.85rem;">All</button>
+  <button class="btn btn-secondary toll-filter" data-cat="hiv" style="font-size:0.65rem;padding:0.35rem 0.85rem;">HIV / AIDS</button>
+  <button class="btn btn-secondary toll-filter" data-cat="malaria" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Malaria</button>
+  <button class="btn btn-secondary toll-filter" data-cat="tb" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Tuberculosis</button>
+  <button class="btn btn-secondary toll-filter" data-cat="maternal_child" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Maternal &amp; Child</button>
+  <button class="btn btn-secondary toll-filter" data-cat="food_aid" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Food Aid</button>
+</div>
+
+<p style="font-family:var(--font-ui);font-size:var(--text-sm);color:var(--color-light-grey);margin-bottom:1rem;">
+  Showing <span id="toll-row-count">0</span> programmes
+</p>
+
+<div class="toll-table-wrap">
+  <table class="toll-table" id="toll-table">
+    <thead>
+      <tr>
+        <th>Programme / Impact Area</th>
+        <th>Region</th>
+        <th>People Affected</th>
+        <th>Est. Deaths / Year</th>
+        <th>Category</th>
+        <th>Evidence</th>
+      </tr>
+    </thead>
+    <tbody id="toll-tbody"></tbody>
+  </table>
+</div>
+
+<script>
+(function () {
+  var raw = document.getElementById('toll-data');
+  var data = raw ? JSON.parse(raw.textContent) : [];
+
+  /* ── Category metadata ── */
+  var CATS = {
+    hiv:           { label: 'HIV / AIDS',      pct: 24.7 },
+    malaria:       { label: 'Malaria',          pct: 19.5 },
+    tb:            { label: 'Tuberculosis',     pct: 13.0 },
+    maternal_child:{ label: 'Maternal & Child', pct: 21.9 },
+    food_aid:      { label: 'Food Aid',         pct: 20.9 },
+  };
+
+  /* ── Counter ── */
+  var START_DATE  = new Date('2025-01-20T00:00:00Z');
+  var RATE_PER_DAY = 500000 / 365;   // CGD conservative estimate
+
+  function computeCount() {
+    var msElapsed = Date.now() - START_DATE.getTime();
+    var daysElapsed = msElapsed / 86400000;
+    return Math.floor(daysElapsed * RATE_PER_DAY);
+  }
+
+  function formatNumber(n) {
+    return n.toLocaleString('en-US');
+  }
+
+  /* ── Animated countUp ── */
+  var counterEl = document.getElementById('toll-counter');
+  var target = computeCount();
+  var started = false;
+
+  function runCounter() {
+    if (started) return;
+    started = true;
+    var start = 0;
+    var duration = 2200;
+    var t0 = null;
+    function step(ts) {
+      if (!t0) t0 = ts;
+      var prog = Math.min((ts - t0) / duration, 1);
+      var ease = 1 - Math.pow(1 - prog, 3);
+      counterEl.textContent = formatNumber(Math.floor(ease * target));
+      if (prog < 1) {
+        requestAnimationFrame(step);
+      } else {
+        counterEl.textContent = formatNumber(target);
+        /* slow live tick: 1 death every ~63 seconds */
+        setInterval(function () {
+          target = computeCount();
+          counterEl.textContent = formatNumber(target);
+        }, 30000);
+      }
+    }
+    requestAnimationFrame(step);
+  }
+
+  var obs = new IntersectionObserver(function (entries) {
+    if (entries[0].isIntersecting) { runCounter(); obs.disconnect(); }
+  }, { threshold: 0.2 });
+  if (counterEl) obs.observe(counterEl);
+
+  /* ── Category bars ── */
+  var barsEl = document.getElementById('toll-bars');
+  if (barsEl) {
+    Object.keys(CATS).forEach(function (key) {
+      var c = CATS[key];
+      var row = document.createElement('div');
+      row.className = 'toll-cat-bar-row';
+      row.innerHTML = '<span class="toll-cat-bar-label">' + c.label + '</span>'
+        + '<div class="toll-cat-bar-track"><div class="toll-cat-bar-fill ' + key + '" data-pct="' + c.pct + '"></div></div>'
+        + '<span class="toll-cat-bar-pct">' + c.pct + '%</span>';
+      barsEl.appendChild(row);
+    });
+    /* Animate bars when counter fires */
+    setTimeout(function () {
+      document.querySelectorAll('.toll-cat-bar-fill').forEach(function (el) {
+        el.style.width = el.getAttribute('data-pct') + '%';
+      });
+    }, 400);
+  }
+
+  /* ── Category totals ── */
+  var catTotals = {};
+  data.forEach(function (d) {
+    catTotals[d.category] = (catTotals[d.category] || 0) + (d.projected_deaths_annual || 0);
+  });
+
+  /* ── Category cards ── */
+  var gridEl = document.getElementById('toll-cat-grid');
+  if (gridEl) {
+    Object.keys(CATS).forEach(function (key) {
+      var total = catTotals[key] || 0;
+      var card = document.createElement('div');
+      card.className = 'toll-cat-card';
+      card.innerHTML = '<div class="toll-cat-card-accent ' + key + '"></div>'
+        + '<div class="toll-cat-card-name">' + CATS[key].label + '</div>'
+        + '<div class="toll-cat-card-deaths ' + key + '">' + formatNumber(total) + '</div>'
+        + '<div class="toll-cat-card-sub">projected deaths / year</div>';
+      gridEl.appendChild(card);
+    });
+  }
+
+  /* ── Table ── */
+  var tbody   = document.getElementById('toll-tbody');
+  var countEl = document.getElementById('toll-row-count');
+  var activeCat = 'all';
+
+  function catLabel(k) { return (CATS[k] || {}).label || k; }
+  function confClass(c) {
+    if (c === 'documented') return 'conf-documented';
+    if (c === 'reported')   return 'conf-reported';
+    return 'conf-modeled';
+  }
+  function confLabel(c) {
+    return c.charAt(0).toUpperCase() + c.slice(1);
+  }
+  function formatPeople(n) {
+    if (!n) return '—';
+    if (n >= 1e9) return (n / 1e9).toFixed(1) + 'B';
+    if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
+    if (n >= 1e3) return (n / 1e3).toFixed(0) + 'K';
+    return n.toLocaleString();
+  }
+
+  function renderTable() {
+    var filtered = activeCat === 'all' ? data : data.filter(function (d) { return d.category === activeCat; });
+    if (countEl) countEl.textContent = filtered.length;
+    tbody.innerHTML = '';
+    filtered.forEach(function (d) {
+      var tr = document.createElement('tr');
+      tr.setAttribute('data-cat', d.category);
+      tr.innerHTML = '<td class="toll-program">' + d.program + '</td>'
+        + '<td class="toll-region">' + d.region + '</td>'
+        + '<td class="toll-people">' + formatPeople(d.people_affected) + '</td>'
+        + '<td class="toll-deaths ' + d.category + '">' + formatNumber(d.projected_deaths_annual || 0) + '</td>'
+        + '<td><span class="toll-chip ' + d.category + '">' + catLabel(d.category) + '</span></td>'
+        + '<td><span class="toll-chip ' + confClass(d.confidence) + '">' + confLabel(d.confidence) + '</span></td>';
+
+      var notesTr = document.createElement('tr');
+      notesTr.className = 'toll-notes-row';
+      notesTr.setAttribute('data-cat', d.category);
+      notesTr.innerHTML = '<td colspan="6">' + d.notes
+        + ' <span style="color:#999;font-size:0.75rem;">— ' + d.source + '</span></td>';
+
+      tbody.appendChild(tr);
+      tbody.appendChild(notesTr);
+    });
+  }
+
+  document.querySelectorAll('.toll-filter').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      activeCat = btn.getAttribute('data-cat');
+      document.querySelectorAll('.toll-filter').forEach(function (b) {
+        b.classList.toggle('active', b === btn);
+      });
+      renderTable();
+    });
+  });
+
+  renderTable();
+})();
+</script>
