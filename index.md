@@ -4,6 +4,8 @@ title: "The Donroe Doctrine"
 body_class: page-doctrine
 ---
 
+<script type="application/json" id="bribes-total-data">{{ site.data.bribes | map: 'amount' | sum }}</script>
+
 <div class="doctrine-hero">
   <p class="doctrine-hero-eyebrow">The Donroe Doctrine — A Foreign Policy Archive</p>
   <h1 class="doctrine-hero-title">The Doctrine</h1>
@@ -14,12 +16,37 @@ body_class: page-doctrine
   <p class="doctrine-hero-meta">January 20, 2017 — Present &nbsp;|&nbsp; Terms I &amp; II &nbsp;|&nbsp; Continuously Updated</p>
 </div>
 
+<!-- STATUS BOARD -->
+<div class="doctrine-status-board">
+  <div class="doctrine-status-stat">
+    <div class="doctrine-status-value gold" id="stat-bribes">—</div>
+    <div class="doctrine-status-label">Documented Payments<br>to Trump &amp; Family</div>
+    <div class="doctrine-status-source">Source: The Ledger</div>
+  </div>
+  <div class="doctrine-status-stat">
+    <div class="doctrine-status-value" id="stat-deaths">—</div>
+    <div class="doctrine-status-label">Estimated Preventable<br>Deaths, USAID Cuts</div>
+    <div class="doctrine-status-source">Source: CGD Modelling</div>
+  </div>
+  <div class="doctrine-status-stat">
+    <div class="doctrine-status-value">{{ site.data.contradictions | size }}</div>
+    <div class="doctrine-status-label">Contradictions<br>Logged</div>
+    <div class="doctrine-status-source">Source: Contradiction Tracker</div>
+  </div>
+  <div class="doctrine-status-stat">
+    <div class="doctrine-status-value" id="stat-days">—</div>
+    <div class="doctrine-status-label">Days of the<br>Current Doctrine</div>
+    <div class="doctrine-status-source">Since January 20, 2025</div>
+  </div>
+</div>
+
 <div class="doctrine-body">
 
-  <div class="doctrine-clause">
+  <div class="doctrine-clause-full">
     <p class="doctrine-clause-number">Preamble</p>
     <p>
-      The following represents a synthesis of foreign policy positions advanced during the 1st and 2nd terms of the 45th and 47th President of the United States.
+      The following represents a synthesis of foreign policy positions advanced during the 1st and
+      2nd terms of the 45th and 47th President of the United States.
       Positions are derived from public statements, executive orders, press conference remarks,
       social media communications, and treaty negotiations. Where positions appear inconsistent,
       the most recent position is considered current unless superseded by an earlier position
@@ -31,81 +58,117 @@ body_class: page-doctrine
     </p>
   </div>
 
-  <div class="doctrine-clause" id="territorial">
-    <p class="doctrine-clause-number">Article I — Territorial Objectives</p>
-    <h2>The United States Shall Pursue the Acquisition of Such Territories as Are Strategically Appropriate</h2>
-    <p>
-      The doctrine holds that the territorial boundaries of the United States, as presently constituted,
-      represent an incomplete expression of the nation's strategic potential. Greenland, the territory
-      administered by the Kingdom of Denmark, has been formally identified as a matter of national
-      security interest. The matter of its acquisition is described as an absolute necessity.
-    </p>
-    <p>
-      Canada, the nation occupying the northern border, has been redesignated in informal but
-      consistent communications as a prospective fifty-first state. The position of Prime Minister
-      is referred to as Governor as a matter of doctrine.
-    </p>
-    <p>
-      The Panama Canal, transferred to Panamanian sovereignty in 1999 pursuant to treaties negotiated
-      by the Carter administration, is assessed as requiring return to United States control.
-      The methodology of return remains to be determined.
-    </p>
+  <div class="doctrine-clause-grid" id="territorial">
+    <div class="doctrine-clause-main">
+      <p class="doctrine-clause-number">Article I — Territorial Objectives</p>
+      <h2>The United States Shall Pursue the Acquisition of Such Territories as Are Strategically Appropriate</h2>
+      <p>
+        The doctrine holds that the territorial boundaries of the United States, as presently constituted,
+        represent an incomplete expression of the nation's strategic potential. Greenland, the territory
+        administered by the Kingdom of Denmark, has been formally identified as a matter of national
+        security interest. The matter of its acquisition is described as an absolute necessity.
+      </p>
+      <p>
+        Canada, the nation occupying the northern border, has been redesignated in informal but
+        consistent communications as a prospective fifty-first state. The position of Prime Minister
+        is referred to as Governor as a matter of doctrine.
+      </p>
+      <p>
+        The Panama Canal, transferred to Panamanian sovereignty in 1999 pursuant to treaties negotiated
+        by the Carter administration, is assessed as requiring return to United States control.
+        The methodology of return remains to be determined.
+      </p>
+    </div>
+    <aside>
+      <div class="classified-extract">
+        <div class="classified-extract-eyebrow">Extract</div>
+        <p class="classified-extract-quote">"The matter of [Greenland's] acquisition is described as an absolute necessity."</p>
+        <p class="classified-extract-attr">Article I · Territorial Objectives</p>
+      </div>
+    </aside>
   </div>
 
-  <div class="doctrine-clause" id="alliance">
-    <p class="doctrine-clause-number">Article II — Alliance Policy</p>
-    <h2>Alliances Shall Be Maintained Contingent Upon Timely and Adequate Payment</h2>
-    <p>
-      The North Atlantic Treaty, entered into in 1949, established a collective defense arrangement
-      among its signatory members. The doctrine holds that this arrangement is conditional upon
-      each member state meeting its financial obligations, assessed at a minimum of two percent of
-      gross domestic product allocated to defense expenditure. Members failing to meet this threshold
-      are not guaranteed the protections afforded by Article Five.
-    </p>
-    <p>
-      The United Kingdom maintains what is described as a special relationship with the United States.
-      The special nature of this relationship is subject to periodic reassessment.
-    </p>
+  <div class="doctrine-clause-grid" id="alliance">
+    <div class="doctrine-clause-main">
+      <p class="doctrine-clause-number">Article II — Alliance Policy</p>
+      <h2>Alliances Shall Be Maintained Contingent Upon Timely and Adequate Payment</h2>
+      <p>
+        The North Atlantic Treaty, entered into in 1949, established a collective defense arrangement
+        among its signatory members. The doctrine holds that this arrangement is conditional upon
+        each member state meeting its financial obligations, assessed at a minimum of two percent of
+        gross domestic product allocated to defense expenditure. Members failing to meet this threshold
+        are not guaranteed the protections afforded by Article Five.
+      </p>
+      <p>
+        The United Kingdom maintains what is described as a special relationship with the United States.
+        The special nature of this relationship is subject to periodic reassessment.
+      </p>
+    </div>
+    <aside>
+      <div class="classified-extract">
+        <div class="classified-extract-eyebrow">Extract</div>
+        <p class="classified-extract-quote">"Members failing to meet this threshold are not guaranteed the protections afforded by Article Five."</p>
+        <p class="classified-extract-attr">Article II · Alliance Policy</p>
+      </div>
+    </aside>
   </div>
 
-  <div class="doctrine-clause" id="trade">
-    <p class="doctrine-clause-number">Article III — Trade Doctrine</p>
-    <h2>Trade Shall Be Reciprocal, or It Shall Not Be</h2>
-    <p>
-      The doctrine holds that every nation engaged in trade with the United States has, for
-      decades, been engaged in systematic exploitation of the American economy. The remedy is
-      reciprocal tariffs. A reciprocal tariff is defined as a tariff of equivalent or greater
-      magnitude to that applied by the trading partner, or a tariff of a magnitude determined
-      to be appropriate.
-    </p>
-    <p>
-      The People's Republic of China is assessed as the primary trade adversary. Tariffs applied
-      to Chinese goods represent a documented and evidenced response to decades of unfairness.
-      The level of unfairness has been described as tremendous.
-    </p>
-    <p>
-      Trade wars are described as easy to win. The record of such wars is maintained in this archive.
-    </p>
+  <div class="doctrine-clause-grid" id="trade">
+    <div class="doctrine-clause-main">
+      <p class="doctrine-clause-number">Article III — Trade Doctrine</p>
+      <h2>Trade Shall Be Reciprocal, or It Shall Not Be</h2>
+      <p>
+        The doctrine holds that every nation engaged in trade with the United States has, for
+        decades, been engaged in systematic exploitation of the American economy. The remedy is
+        reciprocal tariffs. A reciprocal tariff is defined as a tariff of equivalent or greater
+        magnitude to that applied by the trading partner, or a tariff of a magnitude determined
+        to be appropriate.
+      </p>
+      <p>
+        The People's Republic of China is assessed as the primary trade adversary. Tariffs applied
+        to Chinese goods represent a documented and evidenced response to decades of unfairness.
+        The level of unfairness has been described as tremendous.
+      </p>
+      <p>
+        Trade wars are described as easy to win. The record of such wars is maintained in this archive.
+      </p>
+    </div>
+    <aside>
+      <div class="classified-extract">
+        <div class="classified-extract-eyebrow">Extract</div>
+        <p class="classified-extract-quote">"Trade wars are described as easy to win. The record of such wars is maintained in this archive."</p>
+        <p class="classified-extract-attr">Article III · Trade Doctrine</p>
+      </div>
+    </aside>
   </div>
 
-  <div class="doctrine-clause" id="diplomatic">
-    <p class="doctrine-clause-number">Article IV — Diplomatic Protocols</p>
-    <h2>Diplomacy Shall Proceed Through the Establishment of Strong Personal Relationships with Heads of State</h2>
-    <p>
-      The doctrine holds that formal diplomatic channels, treaty obligations, and multilateral
-      institutions represent inefficient mechanisms for the conduct of foreign policy. Direct
-      personal relationships between the President and foreign heads of state are the preferred
-      instrument. The quality of these relationships is assessed by the President personally.
-    </p>
-    <p>
-      Relationships with leaders of nations categorized by prior administrations as adversarial
-      are not excluded from this framework. The doctrine holds that strong personal chemistry
-      between leaders represents sufficient foundation for diplomatic progress, regardless of
-      the institutional or ideological posture of the nation in question.
-    </p>
+  <div class="doctrine-clause-grid" id="diplomatic">
+    <div class="doctrine-clause-main">
+      <p class="doctrine-clause-number">Article IV — Diplomatic Protocols</p>
+      <h2>Diplomacy Shall Proceed Through the Establishment of Strong Personal Relationships with Heads of State</h2>
+      <p>
+        The doctrine holds that formal diplomatic channels, treaty obligations, and multilateral
+        institutions represent inefficient mechanisms for the conduct of foreign policy. Direct
+        personal relationships between the President and foreign heads of state are the preferred
+        instrument. The quality of these relationships is assessed by the President personally.
+      </p>
+      <p>
+        Relationships with leaders of nations categorized by prior administrations as adversarial
+        are not excluded from this framework. The doctrine holds that strong personal chemistry
+        between leaders represents sufficient foundation for diplomatic progress, regardless of
+        the institutional or ideological posture of the nation in question.
+      </p>
+    </div>
+    <aside>
+      <div class="classified-extract">
+        <div class="classified-extract-eyebrow">Extract</div>
+        <p class="classified-extract-quote">"Strong personal chemistry between leaders represents sufficient foundation for diplomatic progress, regardless of the institutional or ideological posture of the nation in question."</p>
+        <p class="classified-extract-attr">Article IV · Diplomatic Protocols</p>
+      </div>
+    </aside>
   </div>
 
-  <div class="doctrine-clause" id="appendix">
+  <div class="doctrine-clause-full" id="appendix">
     <p class="doctrine-clause-number">Appendix of Clarifications</p>
     <h2>A Note on Positions That Have Since Been Revised</h2>
     <p>
@@ -121,3 +184,29 @@ body_class: page-doctrine
   </div>
 
 </div>
+
+<script>
+(function () {
+  /* Bribes total */
+  var bribesRaw = document.getElementById('bribes-total-data');
+  if (bribesRaw) {
+    var total = parseInt(bribesRaw.textContent.trim(), 10);
+    if (!isNaN(total)) {
+      var billions = (total / 1e9).toFixed(2);
+      document.getElementById('stat-bribes').textContent = '$' + billions + 'B';
+    }
+  }
+
+  /* Toll deaths — same rate as toll.html */
+  var START = new Date('2025-01-20T00:00:00Z');
+  var RATE  = 500000 / 365;
+  var days  = Math.floor((Date.now() - START.getTime()) / 86400000);
+  var deaths = Math.floor(days * RATE);
+  var statDeaths = document.getElementById('stat-deaths');
+  if (statDeaths) statDeaths.textContent = deaths.toLocaleString('en-US');
+
+  /* Days elapsed */
+  var statDays = document.getElementById('stat-days');
+  if (statDays) statDays.textContent = days.toLocaleString('en-US');
+})();
+</script>

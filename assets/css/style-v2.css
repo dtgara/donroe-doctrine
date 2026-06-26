@@ -2427,3 +2427,126 @@ body { padding-top: var(--nav-height); }
     padding: 0.65rem 2.5rem;
   }
 }
+
+/* ============================================================
+   DOCTRINE — Option 1 Redesign: Status Board + 2-col clauses
+   ============================================================ */
+
+/* Remove bottom border from hero — status board provides separation */
+.doctrine-hero { border-bottom: none; }
+
+/* ── Status Board ── */
+.doctrine-status-board {
+  background: #0d0d0d;
+  border-bottom: 3px solid var(--color-red);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.doctrine-status-stat {
+  padding: 1.75rem 1.5rem;
+  border-right: 1px solid #1e1e1e;
+  text-align: center;
+}
+.doctrine-status-stat:last-child { border-right: none; }
+.doctrine-status-value {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  line-height: 1;
+  color: var(--color-red);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+.doctrine-status-value.gold { color: #c8a951; }
+.doctrine-status-label {
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #666;
+  margin-top: 0.45rem;
+  line-height: 1.3;
+}
+.doctrine-status-source {
+  font-family: var(--font-ui);
+  font-size: 0.58rem;
+  color: #3a3a3a;
+  margin-top: 0.3rem;
+  letter-spacing: 0.06em;
+}
+
+/* ── Wider doctrine body for 2-col layout ── */
+.doctrine-body {
+  max-width: 960px;
+  padding: 3rem 1.5rem var(--section-spacing);
+}
+
+/* ── Full-width clause (preamble, appendix) ── */
+.doctrine-clause-full {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+.doctrine-clause-full:last-child { border-bottom: none; }
+
+/* ── Two-column clause ── */
+.doctrine-clause-grid {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* ── Classified extract pull-quote ── */
+.classified-extract {
+  position: sticky;
+  top: calc(var(--nav-height) + 1.5rem);
+  border-left: 3px solid var(--color-red);
+  padding: 1.1rem 1.1rem 1.1rem 1.25rem;
+  background: #f8f6f3;
+}
+.classified-extract-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-red);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.classified-extract-eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 1px;
+  background: var(--color-red);
+}
+.classified-extract-quote {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-style: italic;
+  color: #2a2a2a;
+  line-height: 1.65;
+}
+.classified-extract-attr {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  color: #999;
+  margin-top: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ── Mobile: collapse to 1 col ── */
+@media (max-width: 768px) {
+  .doctrine-status-board { grid-template-columns: repeat(2, 1fr); }
+  .doctrine-status-stat:nth-child(2) { border-right: none; }
+  .doctrine-status-stat:nth-child(3) { border-top: 1px solid #1e1e1e; }
+  .doctrine-status-stat:nth-child(4) { border-top: 1px solid #1e1e1e; }
+  .doctrine-clause-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .classified-extract { position: static; }
+}
