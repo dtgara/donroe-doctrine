@@ -2550,3 +2550,71 @@ body { padding-top: var(--nav-height); }
   .doctrine-clause-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .classified-extract { position: static; }
 }
+
+/* ============================================================
+   DOCTRINE — Article Index Cards
+   ============================================================ */
+.doctrine-article-index {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-left: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border);
+  margin-bottom: 3rem;
+}
+.doctrine-article-card {
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.25rem 1.25rem 1rem;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  transition: background 0.15s;
+}
+.doctrine-article-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: transparent;
+  transition: background 0.15s;
+}
+.doctrine-article-card:hover { background: #f8f6f3; text-decoration: none; }
+.doctrine-article-card:hover::before { background: var(--color-red); }
+
+.doctrine-article-card-num {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-red);
+  margin-bottom: 0.5rem;
+}
+.doctrine-article-card-title {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  color: var(--color-near-black);
+  line-height: 1.25;
+  margin-bottom: 0.6rem;
+}
+.doctrine-article-card-sub {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: #777;
+  line-height: 1.4;
+  font-style: italic;
+}
+.doctrine-article-card-arrow {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  color: var(--color-red);
+  margin-top: 0.75rem;
+  display: block;
+  letter-spacing: 0.05em;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.doctrine-article-card:hover .doctrine-article-card-arrow { opacity: 1; }
+
+@media (max-width: 768px) {
+  .doctrine-article-index { grid-template-columns: repeat(2, 1fr); }
+}
