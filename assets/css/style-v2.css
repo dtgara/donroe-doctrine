@@ -229,11 +229,9 @@ hr {
   align-items: center;
   gap: 0;
   flex-wrap: nowrap;
-  overflow-x: auto;
+  overflow: visible;
   flex: 1;
-  scrollbar-width: none;
 }
-.nav-links::-webkit-scrollbar { display: none; }
 
 .nav-links li a {
   display: block;
