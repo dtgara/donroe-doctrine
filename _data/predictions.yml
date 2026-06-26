@@ -254,10 +254,11 @@
   term: 1
   status: correct
   outcome_date: '2019-06-10'
-  outcome_note: Mexico deployed National Guard troops to its southern border and
-    agreed to expanded "Remain in Mexico" policy. Tariffs were not imposed. This
-    was a partial vindication: Mexico moved on immigration enforcement, though
-    the structural migration drivers Trump claimed he would solve remained unaddressed.
+  outcome_note: >-
+    Mexico deployed National Guard troops to its southern border and agreed to
+    expanded "Remain in Mexico" policy. Tariffs were not imposed. This was a
+    partial vindication — Mexico moved on immigration enforcement, though the
+    structural migration drivers Trump claimed he would solve remained unaddressed.
 
 # ── TERRITORIAL ──────────────────────────────────────────────────────────────
 
@@ -350,7 +351,7 @@
   status: wrong
   outcome_date: '2026-06-01'
   outcome_note: "Fact-checked as misleading by CBS News, PolitiFact, CNN, and
-    FactCheck.org. Of the seven conflicts cited: one involved countries not
+    FactCheck.org. Of the seven conflicts cited — one involved countries not
     actually at war (Egypt-Ethiopia); one was a decades-old diplomatic dispute
     with no active conflict (Serbia-Kosovo); several ceasefires broke down within
     weeks of being announced; none produced a ratified, permanent peace agreement.
