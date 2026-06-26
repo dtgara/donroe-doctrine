@@ -1,13 +1,13 @@
 /* =============================================================================
    THE DONROE DOCTRINE — Main JavaScript
-   Handles: mobile nav, filter bars, quote sharing
+   Handles: mobile nav, grouped dropdown nav, filter bars, quote sharing
    ========================================================================== */
 
 (function () {
   'use strict';
 
   /* ---------------------------------------------------------------------------
-     Mobile Navigation
+     Mobile Navigation Toggle
      ------------------------------------------------------------------------- */
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks  = document.querySelector('.nav-links');
@@ -18,15 +18,14 @@
       navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
 
-    // Close nav on outside click
     document.addEventListener('click', function (e) {
       if (!e.target.closest('.site-nav')) {
         navLinks.classList.remove('open');
         navToggle.setAttribute('aria-expanded', 'false');
+        closeAllDropdowns();
       }
     });
 
-    // Close nav after link click (mobile)
     navLinks.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
         navLinks.classList.remove('open');
@@ -36,9 +35,45 @@
   }
 
   /* ---------------------------------------------------------------------------
+     Grouped Dropdown Nav
+     — Desktop: hover handled by CSS
+     — Mobile: click toggles .open on the parent .nav-dropdown
+     — Click outside closes all
+     ------------------------------------------------------------------------- */
+  function closeAllDropdowns(except) {
+    document.querySelectorAll('.nav-dropdown').forEach(function (dd) {
+      if (dd !== except) {
+        dd.classList.remove('open');
+        const btn = dd.querySelector('.nav-dropdown-trigger');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  document.querySelectorAll('.nav-dropdown-trigger').forEach(function (trigger) {
+    trigger.addEventListener('click', function (e) {
+      e.stopPropagation();
+      const parent = trigger.closest('.nav-dropdown');
+      const isOpen = parent.classList.toggle('open');
+      trigger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      if (isOpen) closeAllDropdowns(parent);
+    });
+  });
+
+  /* Close dropdowns on outside click (desktop) */
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.nav-dropdown')) {
+      closeAllDropdowns();
+    }
+  });
+
+  /* Keyboard: Escape closes open dropdown */
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeAllDropdowns();
+  });
+
+  /* ---------------------------------------------------------------------------
      Generic Filter Bar
-     Looks for [data-filter-target] on select/input elements and filters
-     [data-filter-item] elements by their [data-*] attributes.
      ------------------------------------------------------------------------- */
   function initFilterBar(barEl) {
     if (!barEl) return;
@@ -53,9 +88,7 @@
       inputs.forEach(function (inp) {
         const key = inp.dataset.filterKey;
         const val = (inp.tagName === 'SELECT' ? inp.value : inp.value.trim()).toLowerCase();
-        if (val && val !== 'all') {
-          filters[key] = val;
-        }
+        if (val && val !== 'all') filters[key] = val;
       });
 
       let visibleCount = 0;
@@ -69,7 +102,6 @@
         if (show) visibleCount++;
       });
 
-      // Update count display if present
       const countEl = document.querySelector('[data-filter-count]');
       if (countEl) countEl.textContent = visibleCount;
     }
@@ -86,7 +118,6 @@
 
   /* ---------------------------------------------------------------------------
      Quote Share Links
-     Generates a shareable URL for each quote entry.
      ------------------------------------------------------------------------- */
   document.querySelectorAll('.quote-share-link').forEach(function (link) {
     link.addEventListener('click', function (e) {
@@ -103,7 +134,7 @@
   });
 
   /* ---------------------------------------------------------------------------
-     Smooth anchor scrolling (for doctrine clauses etc.)
+     Smooth anchor scrolling
      ------------------------------------------------------------------------- */
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
