@@ -4,7 +4,7 @@ title: "The Donroe Doctrine"
 body_class: page-doctrine
 ---
 
-<script type="application/json" id="bribes-total-data">{{ site.data.bribes | map: 'amount' | sum }}</script>
+<script type="application/json" id="bribes-data-home">{{ site.data.bribes | jsonify }}</script>
 
 <div class="doctrine-hero">
   <p class="doctrine-hero-eyebrow">The Donroe Doctrine — A Foreign Policy Archive</p>
@@ -188,13 +188,12 @@ body_class: page-doctrine
 <script>
 (function () {
   /* Bribes total */
-  var bribesRaw = document.getElementById('bribes-total-data');
+  var bribesRaw = document.getElementById('bribes-data-home');
   if (bribesRaw) {
-    var total = parseInt(bribesRaw.textContent.trim(), 10);
-    if (!isNaN(total)) {
-      var billions = (total / 1e9).toFixed(2);
-      document.getElementById('stat-bribes').textContent = '$' + billions + 'B';
-    }
+    var bribes = JSON.parse(bribesRaw.textContent);
+    var total = bribes.reduce(function(sum, b) { return sum + (b.amount || 0); }, 0);
+    var billions = (total / 1e9).toFixed(2);
+    document.getElementById('stat-bribes').textContent = '$' + billions + 'B';
   }
 
   /* Toll deaths — same rate as toll.html */
