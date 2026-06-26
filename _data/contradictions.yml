@@ -821,3 +821,64 @@
   doctrine_note: The EU was worse than China on April 2nd. A great relationship
     existed on May 6th. 34 days separated the two characterisations. The tariffs
     remained in force during the great relationship.
+
+# ── ISRAEL ────────────────────────────────────────────────────────────────────
+
+- id: c051
+  theme: Diplomatic
+  country:
+  - Israel
+  term_a: 1
+  statement_a: I am the most pro-Israel person there is. Nobody loves Israel more
+    than me, believe me.
+  date_a: '2015-12-03'
+  source_a: Republican Jewish Coalition Presidential Forum, Washington D.C., December 2015
+  statement_b: You're fucking crazy.
+  date_b: '2026-06-01'
+  source_b: Trump–Netanyahu phone call reported by Axios, June 1, 2026; Trump confirmed
+    the call on June 3, 2026 (NPR), saying he still "likes Bibi a lot"
+  doctrine_note: A decade of positioning as Israel's greatest champion collided with
+    Trump's Iran deal in June 2026, when Netanyahu's Lebanon escalation threatened
+    to unravel negotiations Trump regarded as his own achievement. The friendship
+    proved contingent on Netanyahu not impeding Trump's foreign policy wins.
+
+- id: c052
+  theme: Diplomatic
+  country:
+  - Israel
+  term_a: 2
+  statement_a: Israel is living up to the ceasefire 100%. I am not concerned at all
+    about the airstrikes.
+  date_a: '2025-12-15'
+  source_a: White House press remarks following Gaza ceasefire implementation,
+    December 2025
+  statement_b: They're killing so many civilians. Why are they knocking down buildings
+    to take out a single Hezbollah commander? They're doing it in a disproportionate
+    way.
+  date_b: '2026-06-01'
+  source_b: Trump's characterisation of his call with Netanyahu, as reported by ABC
+    News and Axios, June 2026
+  doctrine_note: The same targeting practices Trump declared fully compliant with
+    ceasefire terms in Gaza became evidence of recklessness six months later in
+    Lebanon. The standard shifted with Trump's strategic interests, not with the
+    body count or the tactic.
+
+- id: c053
+  theme: Diplomatic
+  country:
+  - Israel
+  term_a: 2
+  statement_a: If it weren't for Bibi Netanyahu, Israel probably wouldn't still exist.
+    He's been a great wartime leader. I think he should be pardoned, not put on trial.
+  date_a: '2025-12-30'
+  source_a: Trump remarks at Mar-a-Lago meeting with Netanyahu, December 30, 2025
+    (NPR)
+  statement_b: He's fucking crazy. He's jeopardising everything and he's not even
+    grateful for what we've done for him.
+  date_b: '2026-06-01'
+  source_b: Trump's reported remarks to aides following the Netanyahu call, Axios
+    and ABC News, June 2026; confirmed by Trump on June 3, 2026
+  doctrine_note: The transformation from indispensable wartime hero to ungrateful
+    obstacle took six months. Both characterisations served Trump's immediate agenda —
+    the December praise aligned with the alliance; the June rebuke aligned with the
+    Iran deal. Netanyahu's conduct changed less than Trump's needs.

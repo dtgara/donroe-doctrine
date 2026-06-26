@@ -1,7 +1,6 @@
 ---
 layout: section
 title: "Contradiction Tracker"
-section_label: "Section III"
 section_intro: >
   A searchable record of paired statements from the 45th and 47th President,
   separated by time, context, or both. Verified against primary sources.
@@ -10,45 +9,38 @@ body_class: page-contradictions
 
 {% assign contradictions = site.data.contradictions %}
 
-<div class="filter-bar" data-filter-container="#contradictions-list">
-  <select data-filter-key="theme" aria-label="Filter by theme">
-    <option value="all">All themes</option>
-    <option value="russia">Russia / Ukraine</option>
-    <option value="nato">NATO</option>
-    <option value="trade">Trade &amp; Tariffs</option>
-    <option value="china">China</option>
-    <option value="canada">Canada</option>
-    <option value="middle_east">Middle East</option>
-    <option value="territorial">Territorial Claims</option>
-    <option value="democracy">Democracy &amp; Autocracy</option>
-    <option value="media">The Media as Foreign Policy Tool</option>
-  </select>
-  <select data-filter-key="term" aria-label="Filter by term">
-    <option value="all">All terms</option>
-    <option value="1">Term 1 only</option>
-    <option value="2">Term 2 only</option>
-    <option value="both">Cross-Term</option>
-  </select>
-  <select data-filter-key="country" aria-label="Filter by country">
-    <option value="all">All countries</option>
-    <option value="russia">Russia</option>
-    <option value="ukraine">Ukraine</option>
-    <option value="china">China</option>
-    <option value="canada">Canada</option>
-    <option value="nato">NATO</option>
-  </select>
-  <span style="font-family:var(--font-ui);font-size:var(--text-sm);color:var(--color-light-grey);align-self:center;">
-    <span data-filter-count>{{ contradictions.size }}</span> entries
-  </span>
+<div style="margin-bottom:1.5rem;">
+  <div style="display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center;margin-bottom:0.75rem;">
+    <span style="font-family:var(--font-ui);font-size:var(--text-sm);color:var(--color-light-grey);min-width:60px;">Region</span>
+    <button class="btn btn-secondary cf active" data-region="all" style="font-size:0.65rem;padding:0.35rem 0.85rem;">All</button>
+    <button class="btn btn-secondary cf" data-region="iran" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Iran</button>
+    <button class="btn btn-secondary cf" data-region="russia" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Russia / Ukraine</button>
+    <button class="btn btn-secondary cf" data-region="china" style="font-size:0.65rem;padding:0.35rem 0.85rem;">China</button>
+    <button class="btn btn-secondary cf" data-region="korea" style="font-size:0.65rem;padding:0.35rem 0.85rem;">North Korea</button>
+    <button class="btn btn-secondary cf" data-region="cuba" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Cuba / Venezuela</button>
+    <button class="btn btn-secondary cf" data-region="pakistan" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Pakistan</button>
+    <button class="btn btn-secondary cf" data-region="israel" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Israel</button>
+    <button class="btn btn-secondary cf" data-region="europe" style="font-size:0.65rem;padding:0.35rem 0.85rem;">NATO / Europe</button>
+    <button class="btn btn-secondary cf" data-region="trade" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Trade</button>
+    <button class="btn btn-secondary cf" data-region="americas" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Americas</button>
+  </div>
+  <div style="display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center;margin-bottom:0.75rem;">
+    <span style="font-family:var(--font-ui);font-size:var(--text-sm);color:var(--color-light-grey);min-width:60px;">Term</span>
+    <button class="btn btn-secondary tf active" data-term="all" style="font-size:0.65rem;padding:0.35rem 0.85rem;">All</button>
+    <button class="btn btn-secondary tf" data-term="1" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Term 1</button>
+    <button class="btn btn-secondary tf" data-term="2" style="font-size:0.65rem;padding:0.35rem 0.85rem;">Term 2</button>
+  </div>
+  <div style="padding-top:0.5rem;border-top:1px solid var(--color-border);font-family:var(--font-ui);font-size:var(--text-sm);color:var(--color-light-grey);">
+    Showing <span id="c-count">0</span> of {{ contradictions | size }} contradictions
+  </div>
 </div>
 
 <div id="contradictions-list">
 {% if contradictions and contradictions.size > 0 %}
   {% for c in contradictions %}
   <div class="contradiction-entry"
-       data-filter-item
-       data-theme="{{ c.theme | downcase | replace: '/', '_' | replace: ' ', '_' }}"
-       data-country="{{ c.country | downcase }}"
+       data-countries="{{ c.country | join: '|' | downcase }}"
+       data-theme="{{ c.theme | downcase }}"
        data-term="{{ c.term_a }}">
     <div class="contradiction-statement">
       <p class="contradiction-statement-label">Statement A &mdash; {{ c.date_a | date: "%B %-d, %Y" }}</p>
@@ -72,3 +64,90 @@ body_class: page-contradictions
   </div>
 {% endif %}
 </div>
+
+<style>
+.cf.active, .tf.active {
+  background: var(--color-near-black);
+  color: var(--color-white);
+  border-color: var(--color-near-black);
+}
+</style>
+
+<script>
+(function () {
+  var entries  = Array.from(document.querySelectorAll('.contradiction-entry'));
+  var countEl  = document.getElementById('c-count');
+  var activeRegion = 'all';
+  var activeTerm   = 'all';
+
+  /* Region → country keywords mapping */
+  var REGION_MAP = {
+    iran:     ['iran'],
+    russia:   ['russia', 'ukraine'],
+    china:    ['china'],
+    korea:    ['north korea'],
+    cuba:     ['cuba', 'venezuela'],
+    pakistan: ['pakistan'],
+    israel:   ['israel'],
+    europe:   ['nato', 'france', 'european union', 'united kingdom', 'germany'],
+    americas: ['mexico', 'canada', 'afghanistan', 'africa', 'greenland'],
+    trade:    []   /* uses theme = trade */
+  };
+
+  function matches(entry) {
+    var countries = (entry.getAttribute('data-countries') || '').split('|');
+    var theme     = entry.getAttribute('data-theme') || '';
+    var term      = entry.getAttribute('data-term')  || '';
+
+    /* Region filter */
+    var regionOk = true;
+    if (activeRegion !== 'all') {
+      if (activeRegion === 'trade') {
+        regionOk = theme === 'trade';
+      } else {
+        var keywords = REGION_MAP[activeRegion] || [];
+        regionOk = keywords.some(function (kw) {
+          return countries.some(function (c) { return c.trim() === kw; });
+        });
+      }
+    }
+
+    /* Term filter */
+    var termOk = activeTerm === 'all' || term === activeTerm;
+
+    return regionOk && termOk;
+  }
+
+  function applyFilters() {
+    var visible = 0;
+    entries.forEach(function (e) {
+      var show = matches(e);
+      e.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    if (countEl) countEl.textContent = visible;
+  }
+
+  document.querySelectorAll('.cf').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      activeRegion = btn.getAttribute('data-region');
+      document.querySelectorAll('.cf').forEach(function (b) {
+        b.classList.toggle('active', b === btn);
+      });
+      applyFilters();
+    });
+  });
+
+  document.querySelectorAll('.tf').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      activeTerm = btn.getAttribute('data-term');
+      document.querySelectorAll('.tf').forEach(function (b) {
+        b.classList.toggle('active', b === btn);
+      });
+      applyFilters();
+    });
+  });
+
+  applyFilters();
+})();
+</script>
