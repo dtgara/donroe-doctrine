@@ -1,0 +1,325 @@
+# THE DONROE DOCTRINE — Withdrawal Register
+# Schema: id, agreement, category, summary, term_1_date, biden_rejoined, term_2_date, current_status, notes
+# Status: withdrawn | threatened | withdrawn_twice | rejoined_then_withdrawn | never_rejoined | partial
+# Categories: environment | health | security | trade | multilateral | nuclear | labour
+
+# ── ENVIRONMENT ──────────────────────────────────────────────────────────────
+
+- id: paris-agreement
+  agreement: "Paris Climate Agreement"
+  category: environment
+  summary: "The 2015 international framework committing nations to limit global
+    warming to 1.5–2°C above pre-industrial levels. 196 parties. Entered into
+    force November 2016."
+  term_1_date: '2017-06-01'
+  term_1_effective: '2019-11-04'
+  biden_rejoined: '2021-01-20'
+  term_2_date: '2025-01-20'
+  term_2_effective: '2026-01-27'
+  current_status: withdrawn_twice
+  notes: "One of Trump's first acts in both terms. The only country to withdraw
+    twice. Biden re-joined on his first day in office; Trump re-withdrew on his.
+    As of January 2026, the US is no longer legally bound by its carbon commitments.
+    Rubio described the Paris Agreement as contrary to US interests."
+
+- id: unfccc
+  agreement: "UN Framework Convention on Climate Change (UNFCCC)"
+  category: environment
+  summary: "The foundational 1992 climate treaty on which the Paris Agreement is
+    built. Senate-ratified. Provides the international framework for all climate
+    negotiations."
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: null
+  current_status: withdrawn
+  notes: "Included in the January 2026 executive order withdrawing from 66 international
+    organisations. More significant than leaving the Paris Agreement: this withdraws
+    from the entire legal architecture for global climate negotiations. As a
+    Senate-ratified treaty, the withdrawal's legality faces expected challenge."
+
+- id: ipcc
+  agreement: "Intergovernmental Panel on Climate Change (IPCC)"
+  category: environment
+  summary: "The UN body that synthesises global climate science for policymakers.
+    Founded 1988. Produces the authoritative Assessment Reports that form the
+    scientific basis for international climate policy."
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: null
+  current_status: withdrawn
+  notes: "Included in the January 2026 executive order. The US contributed approximately
+    $2 million annually to the IPCC. Rubio described it as wasteful. The IPCC's
+    most recent report cited the US as the largest historical emitter of greenhouse
+    gases."
+
+- id: irena
+  agreement: "International Renewable Energy Agency (IRENA)"
+  category: environment
+  summary: "Intergovernmental organisation supporting countries in their transition
+    to renewable energy. 168 members. Founded 2009 partly through US initiative."
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: null
+  current_status: withdrawn
+  notes: "Included in the January 2026 executive order. The US was a founding
+    supporter of IRENA under the George W. Bush administration. Withdrawal came
+    weeks after the administration approved record domestic oil and gas leasing."
+
+# ── HEALTH ───────────────────────────────────────────────────────────────────
+
+- id: who
+  agreement: "World Health Organization (WHO)"
+  category: health
+  summary: "The UN specialised agency for international public health, founded 1948.
+    Coordinates responses to global health emergencies. The US was historically
+    the largest funder, contributing approximately $400–900 million annually."
+  term_1_date: '2020-07-06'
+  term_1_effective: '2021-07-06'
+  biden_rejoined: '2021-01-20'
+  term_2_date: '2025-01-20'
+  term_2_effective: null
+  current_status: withdrawn_twice
+  notes: "Announced withdrawal in July 2020 during COVID-19 pandemic, citing WHO's
+    handling of China's initial outbreak. Biden reversed immediately on day one.
+    Trump re-withdrew on day one of Term 2. The second withdrawal left the US without
+    representation in global health emergency coordination. Budget shortfalls at
+    WHO followed US departure."
+
+# ── NUCLEAR / SECURITY ───────────────────────────────────────────────────────
+
+- id: jcpoa
+  agreement: "Joint Comprehensive Plan of Action (JCPOA) — Iran Nuclear Deal"
+  category: nuclear
+  summary: "2015 multilateral agreement between Iran and the P5+1 (US, UK, France,
+    Germany, Russia, China) limiting Iran's nuclear programme in exchange for
+    sanctions relief. Described by Trump as the worst deal ever made."
+  term_1_date: '2018-05-08'
+  term_1_effective: '2018-05-08'
+  biden_rejoined: null
+  term_2_date: null
+  term_2_effective: null
+  current_status: never_rejoined
+  notes: "Biden attempted to re-enter the JCPOA through 2021–2022 negotiations
+    but failed. Iran's nuclear programme advanced substantially under maximum pressure
+    — enriching uranium to 60% purity. In February 2026, US-Israeli strikes hit
+    Iranian nuclear facilities, and ceasefire-adjacent negotiations for a new
+    deal began — on terms critics note are less favourable than the original JCPOA."
+
+- id: inf-treaty
+  agreement: "Intermediate-Range Nuclear Forces (INF) Treaty"
+  category: nuclear
+  summary: "1987 bilateral arms control treaty between the US and Soviet Union,
+    eliminating an entire class of nuclear-capable missiles. A landmark of Cold
+    War arms reduction. Signed by Reagan and Gorbachev."
+  term_1_date: '2019-02-02'
+  term_1_effective: '2019-08-02'
+  biden_rejoined: null
+  term_2_date: null
+  term_2_effective: null
+  current_status: never_rejoined
+  notes: "Trump cited Russian violations of the treaty as justification. Withdrawal
+    triggered a new arms development race. Russia also formally suspended the treaty.
+    Neither Biden nor Trump Term 2 sought to restore it. The collapse of the INF
+    Treaty removed a 32-year constraint on medium-range nuclear weapons in Europe."
+
+- id: open-skies
+  agreement: "Treaty on Open Skies"
+  category: security
+  summary: "34-nation treaty allowing signatories to conduct unarmed aerial surveillance
+    flights over each other's territory, providing military transparency. Signed
+    1992. US-Russia trust-building mechanism."
+  term_1_date: '2020-05-22'
+  term_1_effective: '2020-11-22'
+  biden_rejoined: null
+  term_2_date: null
+  term_2_effective: null
+  current_status: never_rejoined
+  notes: "Biden chose not to re-enter after Russia withdrew in retaliation for
+    the US departure. The treaty effectively collapsed. European allies expressed
+    dismay at the US withdrawal, which they argued removed transparency mechanisms
+    while providing no leverage over Russia."
+
+- id: new-start
+  agreement: "New START (Strategic Arms Reduction Treaty)"
+  category: nuclear
+  summary: "2010 bilateral US-Russia treaty limiting deployed strategic nuclear
+    warheads to 1,550 per side and delivery systems to 700. The last remaining
+    major nuclear arms control treaty between the two largest nuclear powers."
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2023-02-21'
+  term_2_effective: null
+  current_status: withdrawn
+  notes: "Russia suspended New START in February 2023, not the US — but the Trump
+    administration made no effort to restore it upon returning to office in 2025,
+    despite New START expiring in February 2026. The lapse leaves no bilateral
+    nuclear arms control agreement in force between the US and Russia for the first
+    time since 1972."
+
+# ── TRADE ────────────────────────────────────────────────────────────────────
+
+- id: tpp
+  agreement: "Trans-Pacific Partnership (TPP)"
+  category: trade
+  summary: "Twelve-nation free trade agreement covering 40% of the global economy,
+    negotiated under Obama. Intended to counter China's economic influence in
+    the Asia-Pacific through US-led trade architecture."
+  term_1_date: '2017-01-23'
+  term_1_effective: '2017-01-23'
+  biden_rejoined: null
+  term_2_date: null
+  term_2_effective: null
+  current_status: never_rejoined
+  notes: "Trump withdrew on day three of Term 1. The remaining eleven nations
+    proceeded without the US as the Comprehensive and Progressive Agreement for
+    Trans-Pacific Partnership (CPTPP). China subsequently applied to join CPTPP.
+    Trade experts widely noted the withdrawal ceded US economic influence in the
+    Asia-Pacific to China — the opposite of the stated intent."
+
+# ── MULTILATERAL ─────────────────────────────────────────────────────────────
+
+- id: unesco
+  agreement: "UNESCO (UN Educational, Scientific and Cultural Organization)"
+  category: multilateral
+  summary: "UN agency promoting international cooperation in education, science,
+    culture, and communication. Administers the World Heritage Sites programme.
+    Founded 1945. The US rejoined under Biden in 2023 after a six-year absence."
+  term_1_date: '2017-10-12'
+  term_1_effective: '2018-12-31'
+  biden_rejoined: '2023-07-11'
+  term_2_date: '2025-07-22'
+  term_2_effective: null
+  current_status: withdrawn_twice
+  notes: "First withdrawal cited Palestinian membership and alleged anti-Israel
+    bias. Biden spent political capital and funds to rejoin in 2023. Trump withdrew
+    again in July 2025, again citing anti-Israel bias and 'woke' causes. 26 US
+    World Heritage Sites, including the Statue of Liberty, fall under UNESCO
+    oversight. US arrears from Term 1 and Term 2 departures now exceed $600 million."
+
+- id: un-human-rights-council
+  agreement: "UN Human Rights Council (UNHRC)"
+  category: multilateral
+  summary: "UN body responsible for promoting and protecting human rights globally.
+    45 member states serving rotating three-year terms. Established 2006. The US
+    was historically one of its most active members."
+  term_1_date: '2018-06-19'
+  term_1_effective: '2018-06-19'
+  biden_rejoined: '2021-10-14'
+  term_2_date: '2025-01-28'
+  term_2_effective: null
+  current_status: withdrawn_twice
+  notes: "Both withdrawals cited disproportionate focus on Israel and membership
+    of authoritarian states. Critics noted the withdrawal removed the US from the
+    room where human rights accountability was debated. Biden rejoined to re-engage
+    from within. Trump re-withdrew one week into Term 2."
+
+- id: un-global-compact-migration
+  agreement: "UN Global Compact for Safe, Orderly and Regular Migration"
+  category: multilateral
+  summary: "Non-binding international framework for international cooperation on
+    migration. Adopted December 2018 by 164 countries. Covers 23 objectives for
+    managing migration. Not a treaty."
+  term_1_date: '2017-12-02'
+  term_1_effective: '2017-12-02'
+  biden_rejoined: null
+  term_2_date: null
+  term_2_effective: null
+  current_status: never_rejoined
+  notes: "The US withdrew before the Compact was even finalised. One of the first
+    Trump Term 1 multilateral withdrawals. Biden did not formally rejoin. The
+    US remains outside the framework. The withdrawal was announced by then-UN
+    Ambassador Nikki Haley."
+
+- id: un-population-fund
+  agreement: "UN Population Fund (UNFPA)"
+  category: multilateral
+  summary: "UN agency delivering reproductive health and family planning services
+    in 150 countries. Largest international provider of sexual and reproductive
+    health services. US historically a major donor."
+  term_1_date: '2017-04-03'
+  term_1_effective: '2017-04-03'
+  biden_rejoined: '2021-01-20'
+  term_2_date: '2025-01-20'
+  term_2_effective: null
+  current_status: withdrawn_twice
+  notes: "Defunded in both Trump terms under the Kemp-Kasten Amendment, citing
+    alleged support for coercive abortion programmes in China — a claim UNFPA
+    disputes and international auditors have not substantiated. Biden restored
+    funding immediately. Trump defunded again on day one of Term 2. UNFPA serves
+    approximately 146 million women in developing countries."
+
+- id: venice-commission
+  agreement: "Venice Commission (Council of Europe)"
+  category: multilateral
+  summary: "Council of Europe advisory body on constitutional law, providing legal
+    opinions to strengthen democratic institutions. 62 member states including
+    non-EU democracies. Founded 1990."
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: null
+  current_status: withdrawn
+  notes: "Included in the January 2026 executive order withdrawing from 66 organisations.
+    The Venice Commission advises governments on electoral and constitutional law —
+    including advising on democratic backsliding. Rubio described it as contrary
+    to US interests."
+
+- id: freedom-online-coalition
+  agreement: "Freedom Online Coalition"
+  category: multilateral
+  summary: "Intergovernmental coalition of 36 countries dedicated to advancing
+    internet freedom globally. Co-founded by the United States. Works to counter
+    censorship and surveillance by authoritarian states."
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: null
+  current_status: withdrawn
+  notes: "Included in the January 2026 executive order. The US co-founded this
+    coalition. Withdrawal from a body dedicated to internet freedom was noted as
+    particularly incongruous by international press freedom organisations."
+
+- id: global-counterterrorism-forum
+  agreement: "Global Counterterrorism Forum (GCTF)"
+  category: security
+  summary: "Multilateral counterterrorism body with 30 member countries and the EU,
+    co-founded by the US. Facilitates information sharing and capacity building
+    on counterterrorism. Founded 2011."
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: null
+  current_status: withdrawn
+  notes: "Included in the January 2026 executive order. The US co-founded the
+    GCTF. Withdrawal from a counterterrorism coordination body drew particular
+    scrutiny from former national security officials who noted the US was ceding
+    influence in an area it had previously led."
+
+# ── LABOUR ───────────────────────────────────────────────────────────────────
+
+- id: ilo-governance
+  agreement: "International Labour Organization (ILO) — Governance Conventions"
+  category: labour
+  summary: "The ILO sets international labour standards. The US has ratified only
+    14 of 190 ILO conventions — the lowest rate among major economies. Trump's
+    Term 2 further disengaged from ILO standard-setting processes."
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2025-03-01'
+  term_2_effective: null
+  current_status: partial
+  notes: "US participation in ILO governance processes was significantly reduced
+    in Term 2. Not a formal withdrawal from the ILO itself, but a material reduction
+    in engagement and funding to specific ILO programmes on labour standards and
+    migration. Included in broader DOGE-driven international organisation funding cuts."

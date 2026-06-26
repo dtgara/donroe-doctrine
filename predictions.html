@@ -1,0 +1,319 @@
+---
+layout: default
+title: "The Prediction Tracker"
+body_class: page-predictions
+---
+
+<script type="application/json" id="predictions-data">{{ site.data.predictions | jsonify }}</script>
+
+<!-- Zone 1: Hero -->
+<div class="pred-hero">
+  <div class="container">
+    <div class="pred-hero-top">
+      <p class="pred-eyebrow">Accountability Register</p>
+      <h1 class="pred-title">The Prediction Tracker</h1>
+      <p class="pred-subtitle">A record of specific, falsifiable foreign policy predictions made by the 45th and 47th President — each assessed against the public record. Verified against primary sources.</p>
+    </div>
+
+    <div class="pred-scoreboard">
+      <div class="pred-score-cell wrong">
+        <div class="pred-score-value" id="count-wrong">—</div>
+        <div class="pred-score-label">Wrong</div>
+      </div>
+      <div class="pred-score-cell pending">
+        <div class="pred-score-value" id="count-pending">—</div>
+        <div class="pred-score-label">Pending</div>
+      </div>
+      <div class="pred-score-cell abandoned">
+        <div class="pred-score-value" id="count-abandoned">—</div>
+        <div class="pred-score-label">Abandoned</div>
+      </div>
+      <div class="pred-score-cell correct">
+        <div class="pred-score-value" id="count-correct">—</div>
+        <div class="pred-score-label">Correct</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Zone 2: Filters + Entries -->
+<div class="container" style="padding-top:2rem;padding-bottom:3rem;">
+
+  <div class="pred-filters">
+    <div class="pred-filter-row">
+      <span class="pred-filter-label">Status</span>
+      <button class="btn btn-secondary pf sf active" data-status="all">All</button>
+      <button class="btn btn-secondary pf sf" data-status="wrong">Wrong</button>
+      <button class="btn btn-secondary pf sf" data-status="pending">Pending</button>
+      <button class="btn btn-secondary pf sf" data-status="abandoned">Abandoned</button>
+      <button class="btn btn-secondary pf sf" data-status="correct">Correct</button>
+    </div>
+    <div class="pred-filter-row">
+      <span class="pred-filter-label">Topic</span>
+      <button class="btn btn-secondary pf cf active" data-cat="all">All</button>
+      <button class="btn btn-secondary pf cf" data-cat="war_peace">War &amp; Peace</button>
+      <button class="btn btn-secondary pf cf" data-cat="nuclear">Nuclear</button>
+      <button class="btn btn-secondary pf cf" data-cat="trade">Trade</button>
+      <button class="btn btn-secondary pf cf" data-cat="alliance">Alliance</button>
+      <button class="btn btn-secondary pf cf" data-cat="territorial">Territorial</button>
+      <button class="btn btn-secondary pf cf" data-cat="other">Other</button>
+    </div>
+    <div class="pred-filter-count">
+      Showing <span id="pred-count">0</span> of <span id="pred-total">0</span> predictions
+    </div>
+  </div>
+
+  <div id="pred-list"></div>
+</div>
+
+<style>
+/* ── Hero ───────────────────────────────────────────────── */
+.pred-hero {
+  background: var(--color-near-black);
+  border-bottom: 3px solid var(--color-red);
+  padding: 3rem 0 2.5rem;
+}
+.pred-eyebrow {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-red);
+  margin-bottom: 0.5rem;
+}
+.pred-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  color: var(--color-white);
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+.pred-subtitle {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: rgba(255,255,255,0.6);
+  max-width: 640px;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* ── Scoreboard ─────────────────────────────────────────── */
+.pred-scoreboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.08);
+  max-width: 640px;
+}
+.pred-score-cell {
+  padding: 1.1rem 1rem;
+  background: #111;
+  text-align: center;
+}
+.pred-score-value {
+  font-family: var(--font-ui);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+.pred-score-label {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+}
+.pred-score-cell.wrong  .pred-score-value { color: var(--color-red); }
+.pred-score-cell.correct .pred-score-value { color: #27ae60; }
+.pred-score-cell.pending .pred-score-value { color: #f0a500; }
+.pred-score-cell.abandoned .pred-score-value { color: #888; }
+
+/* ── Filters ────────────────────────────────────────────── */
+.pred-filters { margin-bottom: 2rem; }
+.pred-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+.pred-filter-label {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: var(--color-light-grey);
+  min-width: 52px;
+}
+.pf { font-size: 0.65rem !important; padding: 0.3rem 0.8rem !important; }
+.pf.active {
+  background: var(--color-near-black);
+  color: var(--color-white);
+  border-color: var(--color-near-black);
+}
+.pred-filter-count {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: var(--color-light-grey);
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--color-border);
+}
+
+/* ── Entry cards ────────────────────────────────────────── */
+.pred-entry {
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.5rem 0;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+.pred-entry-status {
+  padding-top: 0.2rem;
+}
+.pred-status-badge {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.6rem;
+  border-radius: 2px;
+  margin-bottom: 0.5rem;
+}
+.pred-status-badge.wrong    { background: rgba(192,57,43,0.12); color: #c0392b; border: 1px solid rgba(192,57,43,0.3); }
+.pred-status-badge.correct  { background: rgba(39,174,96,0.1); color: #27ae60; border: 1px solid rgba(39,174,96,0.3); }
+.pred-status-badge.pending  { background: rgba(240,165,0,0.1); color: #f0a500; border: 1px solid rgba(240,165,0,0.3); }
+.pred-status-badge.abandoned { background: rgba(127,140,141,0.1); color: #888; border: 1px solid rgba(127,140,141,0.3); }
+
+.pred-cat-badge {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.55rem;
+  color: var(--color-light-grey);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+}
+.pred-term-badge {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.55rem;
+  color: var(--color-light-grey);
+  margin-top: 0.15rem;
+}
+.pred-statement {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--color-near-black);
+  font-style: italic;
+  margin-bottom: 0.4rem;
+}
+.pred-meta {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: var(--color-light-grey);
+  margin-bottom: 0.8rem;
+}
+.pred-outcome {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: #444;
+  line-height: 1.6;
+  background: #f7f5f2;
+  border-left: 3px solid #ddd;
+  padding: 0.7rem 0.9rem;
+}
+.pred-outcome.wrong    { border-left-color: #c0392b; }
+.pred-outcome.correct  { border-left-color: #27ae60; }
+.pred-outcome.pending  { border-left-color: #f0a500; }
+.pred-outcome.abandoned { border-left-color: #aaa; }
+
+@media (max-width: 600px) {
+  .pred-scoreboard { grid-template-columns: repeat(2, 1fr); }
+  .pred-entry { grid-template-columns: 1fr; gap: 0.75rem; }
+}
+</style>
+
+<script>
+(function () {
+  var raw = JSON.parse(document.getElementById('predictions-data').textContent);
+  var activeStatus = 'all';
+  var activeCat = 'all';
+
+  var CAT_LABELS = {
+    war_peace: 'War & Peace', nuclear: 'Nuclear', trade: 'Trade',
+    alliance: 'Alliance', territorial: 'Territorial', sanctions: 'Sanctions', other: 'Other'
+  };
+  var TERM_LABELS = { 1: 'Term 1 (2017–21)', 2: 'Term 2 (2025–)' };
+
+  /* Scoreboard */
+  var counts = { wrong: 0, correct: 0, pending: 0, abandoned: 0 };
+  raw.forEach(function (p) { if (counts[p.status] !== undefined) counts[p.status]++; });
+  document.getElementById('count-wrong').textContent    = counts.wrong;
+  document.getElementById('count-correct').textContent  = counts.correct;
+  document.getElementById('count-pending').textContent  = counts.pending;
+  document.getElementById('count-abandoned').textContent = counts.abandoned;
+  document.getElementById('pred-total').textContent = raw.length;
+
+  function fmtDate(d) {
+    if (!d) return '';
+    var parts = d.split('-');
+    var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return months[parseInt(parts[1],10)-1] + ' ' + parts[0];
+  }
+
+  function render() {
+    var visible = raw.filter(function (p) {
+      var sOk = activeStatus === 'all' || p.status === activeStatus;
+      var cOk = activeCat === 'all' || p.category === activeCat;
+      return sOk && cOk;
+    });
+
+    document.getElementById('pred-count').textContent = visible.length;
+    var html = visible.map(function (p) {
+      var statusLabel = p.status.charAt(0).toUpperCase() + p.status.slice(1);
+      var catLabel = CAT_LABELS[p.category] || p.category;
+      var termLabel = TERM_LABELS[p.term] || ('Term ' + p.term);
+      var outcome = p.outcome_note
+        ? '<div class="pred-outcome ' + p.status + '">' + p.outcome_note + '</div>'
+        : '';
+      return [
+        '<div class="pred-entry" data-status="' + p.status + '" data-cat="' + p.category + '">',
+          '<div class="pred-entry-status">',
+            '<span class="pred-status-badge ' + p.status + '">' + statusLabel + '</span>',
+            '<span class="pred-cat-badge">' + catLabel + '</span>',
+            '<span class="pred-term-badge">' + termLabel + '</span>',
+          '</div>',
+          '<div class="pred-entry-body">',
+            '<p class="pred-statement">&ldquo;' + p.statement + '&rdquo;</p>',
+            '<p class="pred-meta">' + fmtDate(p.date_made) + ' &middot; ' + p.source + '</p>',
+            outcome,
+          '</div>',
+        '</div>'
+      ].join('');
+    }).join('');
+
+    document.getElementById('pred-list').innerHTML = html || '<p style="color:var(--color-light-grey);padding:2rem 0;">No entries match this filter.</p>';
+  }
+
+  document.querySelectorAll('.sf').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      activeStatus = btn.getAttribute('data-status');
+      document.querySelectorAll('.sf').forEach(function (b) { b.classList.toggle('active', b === btn); });
+      render();
+    });
+  });
+  document.querySelectorAll('.cf').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      activeCat = btn.getAttribute('data-cat');
+      document.querySelectorAll('.cf').forEach(function (b) { b.classList.toggle('active', b === btn); });
+      render();
+    });
+  });
+
+  render();
+})();
+</script>
