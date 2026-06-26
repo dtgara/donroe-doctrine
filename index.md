@@ -9,7 +9,7 @@ body_class: page-doctrine
   <h1 class="doctrine-hero-title">The Doctrine</h1>
   <p class="doctrine-hero-subtitle">
     A formal statement of foreign policy principles governing the conduct
-    of the United States under the forty-fifth and forty-seventh administrations.
+    of the United States under the 45th and 47th administrations.
   </p>
   <p class="doctrine-hero-meta">January 20, 2017 — Present &nbsp;|&nbsp; Terms I &amp; II &nbsp;|&nbsp; Continuously Updated</p>
 </div>
@@ -19,8 +19,7 @@ body_class: page-doctrine
   <div class="doctrine-clause">
     <p class="doctrine-clause-number">Preamble</p>
     <p>
-      The following represents a synthesis of foreign policy positions advanced during the first and
-      second terms of the forty-fifth and forty-seventh President of the United States.
+      The following represents a synthesis of foreign policy positions advanced during the 1st and 2nd terms of the 45th and 47th President of the United States.
       Positions are derived from public statements, executive orders, press conference remarks,
       social media communications, and treaty negotiations. Where positions appear inconsistent,
       the most recent position is considered current unless superseded by an earlier position
@@ -110,8 +109,8 @@ body_class: page-doctrine
     <p class="doctrine-clause-number">Appendix of Clarifications</p>
     <h2>A Note on Positions That Have Since Been Revised</h2>
     <p>
-      Certain positions advanced during the first term have been superseded by positions
-      advanced during the second term, and vice versa. The Contradiction Tracker maintains
+      Certain positions advanced during the 1st term have been superseded by positions
+      advanced during the 2nd term, and vice versa. The Contradiction Tracker maintains
       a comprehensive record of such revisions. Users seeking to reconcile apparently conflicting
       positions are referred to that section.
     </p>
