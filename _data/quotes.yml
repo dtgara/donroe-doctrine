@@ -2,19 +2,16 @@
   text: Trade wars are good, and easy to win.
   date: '2018-03-02'
   source_type: Social media
-  context: Posted on Twitter in response to EU tariff threats following US steel and
-    aluminium tariffs.
+  context: Posted on Twitter in response to EU tariff threats following US steel and aluminium tariffs.
   country: []
   theme:
   - Trade
   term: 1
 - id: q002
-  text: I could stand in the middle of Fifth Avenue and shoot somebody and I wouldn't
-    lose any voters.
+  text: I could stand in the middle of Fifth Avenue and shoot somebody and I wouldn't lose any voters.
   date: '2016-01-23'
   source_type: Campaign rally
-  context: Sioux Center, Iowa. Not a foreign policy statement. Included for doctrinal
-    completeness.
+  context: Sioux Center, Iowa. Not a foreign policy statement. Included for doctrinal completeness.
   country: []
   theme:
   - Rhetorical
@@ -23,8 +20,8 @@
   text: NATO is obsolete.
   date: '2017-01-16'
   source_type: Interview
-  context: Interview with The Times and Bild. Position subsequently revised to NATO
-    no longer obsolete after a meeting with the Secretary General.
+  context: Interview with The Times and Bild. Position subsequently revised to NATO no longer obsolete after a meeting with
+    the Secretary General.
   country: []
   theme:
   - Alliance
@@ -33,8 +30,8 @@
   text: We need Greenland for national security purposes.
   date: '2025-01-07'
   source_type: Press conference
-  context: Mar-a-Lago press conference. Military option not ruled out. Denmark described
-    the suggestion as absurd. The suggestion was not withdrawn.
+  context: Mar-a-Lago press conference. Military option not ruled out. Denmark described the suggestion as absurd. The suggestion
+    was not withdrawn.
   country:
   - Denmark
   - Greenland
@@ -45,16 +42,15 @@
   text: Canada should become our 51st state.
   date: '2025-01-07'
   source_type: Social media
-  context: Posted to Truth Social. Prime Minister Trudeau referred to as Governor
-    Trudeau. Position maintained through subsequent interactions.
+  context: Posted to Truth Social. Prime Minister Trudeau referred to as Governor Trudeau. Position maintained through subsequent
+    interactions.
   country:
   - Canada
   theme:
   - Territorial
   term: 2
 - id: q006
-  text: He's not my friend and he's not my enemy. He's somebody I got along great
-    with.
+  text: He's not my friend and he's not my enemy. He's somebody I got along great with.
   date: '2019-06-29'
   source_type: Press conference
   context: G20 Summit, Osaka. Referring to Vladimir Putin.
@@ -64,12 +60,11 @@
   - Diplomatic
   term: 1
 - id: q007
-  text: I will have the war in Ukraine settled within 24 hours — before I even get
-    to the office.
+  text: I will have the war in Ukraine settled within 24 hours — before I even get to the office.
   date: '2023-09-17'
   source_type: NBC interview
-  context: Meet the Press interview. The war was not settled within 24 hours of taking
-    office. It was not settled within 24 weeks.
+  context: Meet the Press interview. The war was not settled within 24 hours of taking office. It was not settled within 24
+    weeks.
   country:
   - Ukraine
   - Russia
@@ -77,12 +72,12 @@
   - Diplomatic
   term: 2
 - id: q008
-  text: The Panama Canal is being operated by China. We didn't give it to China, we
-    gave it to Panama, and we're taking it back.
+  text: The Panama Canal is being operated by China. We didn't give it to China, we gave it to Panama, and we're taking it
+    back.
   date: '2025-01-21'
   source_type: Remarks
-  context: Remarks at Republican National Committee dinner. The canal is operated
-    by Panama. A Hong Kong company operates two of its ports.
+  context: Remarks at Republican National Committee dinner. The canal is operated by Panama. A Hong Kong company operates
+    two of its ports.
   country:
   - Panama
   - China
@@ -93,8 +88,8 @@
   text: When you're a star, they let you do it.
   date: '2005-01-01'
   source_type: Recorded audio
-  context: Access Hollywood tape, recorded 2005, published October 2016. Not a foreign
-    policy statement. Included for doctrinal completeness.
+  context: Access Hollywood tape, recorded 2005, published October 2016. Not a foreign policy statement. Included for doctrinal
+    completeness.
   country: []
   theme:
   - Rhetorical
@@ -103,8 +98,8 @@
   text: I have a very good relationship with Kim Jong Un.
   date: '2019-02-08'
   source_type: Interview
-  context: CBS News interview. Three summits held. No denuclearisation agreement reached.
-    The relationship was described as very good throughout.
+  context: CBS News interview. Three summits held. No denuclearisation agreement reached. The relationship was described as
+    very good throughout.
   country:
   - North Korea
   theme:
@@ -114,20 +109,19 @@
   text: Nobody builds walls better than me, believe me.
   date: '2015-06-16'
   source_type: Campaign announcement
-  context: Presidential campaign announcement speech, Trump Tower. The wall was partially
-    built. Mexico did not pay for it.
+  context: Presidential campaign announcement speech, Trump Tower. The wall was partially built. Mexico did not pay for it.
   country:
   - Mexico
   theme:
   - Trade
   term: 1
 - id: q012
-  text: I think it's a great thing that he did — he was able to take over a country,
-    frankly, a tremendous amount of land in two days.
+  text: I think it's a great thing that he did — he was able to take over a country, frankly, a tremendous amount of land
+    in two days.
   date: '2022-02-24'
   source_type: Radio interview
-  context: Clay Travis and Buck Sexton Show. Referring to Putin's invasion of Ukraine.
-    The remark was subsequently walked back.
+  context: Clay Travis and Buck Sexton Show. Referring to Putin's invasion of Ukraine. The remark was subsequently walked
+    back.
   country:
   - Russia
   - Ukraine
@@ -135,36 +129,31 @@
   - Diplomatic
   term: 1
 - id: q013
-  text: The concept of global warming was created by and for the Chinese in order
-    to make U.S. manufacturing non-competitive.
+  text: The concept of global warming was created by and for the Chinese in order to make U.S. manufacturing non-competitive.
   date: '2012-11-06'
   source_type: Social media
-  context: Posted on Twitter. Position modified in subsequent years. The Paris Agreement
-    was exited regardless.
+  context: Posted on Twitter. Position modified in subsequent years. The Paris Agreement was exited regardless.
   country:
   - China
   theme:
   - Trade
   term: 1
 - id: q014
-  text: We're charging China 145 percent. They're charging us nothing because they
-    don't want our goods.
+  text: We're charging China 145 percent. They're charging us nothing because they don't want our goods.
   date: '2025-04-10'
   source_type: Remarks
-  context: White House remarks. The figure was adjusted multiple times in the weeks
-    following.
+  context: White House remarks. The figure was adjusted multiple times in the weeks following.
   country:
   - China
   theme:
   - Trade
   term: 2
 - id: q015
-  text: I said, how are you doing over there Viktor? He said, not good. I said, tell
-    me, what's wrong? He said, they make us buy oil from Russia.
+  text: I said, how are you doing over there Viktor? He said, not good. I said, tell me, what's wrong? He said, they make
+    us buy oil from Russia.
   date: '2024-07-18'
   source_type: Campaign rally
-  context: Republican National Convention. The conversation described is with Viktor
-    Orbán. The dialog may have been paraphrased.
+  context: Republican National Convention. The conversation described is with Viktor Orbán. The dialog may have been paraphrased.
   country:
   - Hungary
   - Russia
@@ -175,8 +164,7 @@
   text: I'm a very stable genius.
   date: '2018-01-06'
   source_type: Social media
-  context: Posted on Twitter in response to questions about mental fitness. The claim
-    has not been independently verified.
+  context: Posted on Twitter in response to questions about mental fitness. The claim has not been independently verified.
   country: []
   theme:
   - Rhetorical
@@ -185,16 +173,14 @@
   text: No president has ever done what I've done for Israel — nobody.
   date: '2020-09-15'
   source_type: Remarks
-  context: Abraham Accords signing ceremony, White House. The claim is disputed by
-    historians.
+  context: Abraham Accords signing ceremony, White House. The claim is disputed by historians.
   country:
   - Israel
   theme:
   - Diplomatic
   term: 1
 - id: q018
-  text: They've been ripping us off for years. Years and years. And this is going
-    to stop.
+  text: They've been ripping us off for years. Years and years. And this is going to stop.
   date: '2018-03-08'
   source_type: Remarks
   context: Remarks on steel and aluminium tariffs. Referring to trading partners generally.
@@ -206,8 +192,7 @@
   text: I fell in love with Kim Jong Un.
   date: '2018-09-29'
   source_type: Campaign rally
-  context: Wheeling, West Virginia. Referring to the exchange of letters with Kim
-    Jong Un. No formal agreement was reached.
+  context: Wheeling, West Virginia. Referring to the exchange of letters with Kim Jong Un. No formal agreement was reached.
   country:
   - North Korea
   theme:
@@ -226,8 +211,8 @@
   text: The European Union was formed to take advantage of us on trade.
   date: '2018-07-25'
   source_type: Remarks
-  context: White House meeting with European Commission President Juncker. The European
-    Union was formed following World War II. Trade was a secondary consideration.
+  context: White House meeting with European Commission President Juncker. The European Union was formed following World War
+    II. Trade was a secondary consideration.
   country: []
   theme:
   - Trade
@@ -237,8 +222,7 @@
   text: We're going to take back the Gulf of America.
   date: '2025-01-20'
   source_type: Remarks
-  context: Inauguration address. The executive order to rename the Gulf of Mexico
-    was signed that day.
+  context: Inauguration address. The executive order to rename the Gulf of Mexico was signed that day.
   country:
   - Mexico
   theme:
@@ -255,24 +239,21 @@
   - Diplomatic
   term: 1
 - id: q024
-  text: If they don't pay, we're not going to protect them. In fact, I would encourage
-    the Russians to do whatever the hell they want.
+  text: If they don't pay, we're not going to protect them. In fact, I would encourage the Russians to do whatever the hell
+    they want.
   date: '2024-02-10'
   source_type: Campaign rally
-  context: Conway, South Carolina. Referring to NATO members not meeting the 2 percent
-    GDP defense spending target.
+  context: Conway, South Carolina. Referring to NATO members not meeting the 2 percent GDP defense spending target.
   country:
   - Russia
   theme:
   - Alliance
   term: 2
 - id: q025
-  text: India charges us 100 percent tariffs. We charge them nothing. Does that sound
-    smart to you?
+  text: India charges us 100 percent tariffs. We charge them nothing. Does that sound smart to you?
   date: '2024-06-15'
   source_type: Campaign rally
-  context: Multiple rallies. India's tariff structure is varied; some goods attract
-    high rates, others less so.
+  context: Multiple rallies. India's tariff structure is varied; some goods attract high rates, others less so.
   country:
   - India
   theme:
@@ -282,16 +263,14 @@
   text: The fake news media is the enemy of the people.
   date: '2017-02-17'
   source_type: Social media
-  context: Posted on Twitter. Repeated at numerous subsequent events. Foreign policy
-    implications noted in allies' communications.
+  context: Posted on Twitter. Repeated at numerous subsequent events. Foreign policy implications noted in allies' communications.
   country: []
   theme:
   - Rhetorical
   term: 1
 - id: q027
-  text: Saudi Arabia — and I get along great with all of them. They buy apartments
-    from me. They spend $40 to $50 million. Am I supposed to dislike them? I like
-    them very much.
+  text: Saudi Arabia — and I get along great with all of them. They buy apartments from me. They spend $40 to $50 million.
+    Am I supposed to dislike them? I like them very much.
   date: '2015-10-20'
   source_type: Campaign rally
   context: Bluffton, South Carolina.
@@ -310,8 +289,7 @@
   - Rhetorical
   term: 1
 - id: q029
-  text: I think I know more about the big bills — more than any president that's ever
-    served.
+  text: I think I know more about the big bills — more than any president that's ever served.
   date: '2019-11-22'
   source_type: Interview
   context: The claim encompasses trade, defense, and alliance policy among other areas.
@@ -329,12 +307,10 @@
   - Diplomatic
   term: 1
 - id: q031
-  text: Xi Jinping is a brilliant man. He's the leader of China. He's tough. He rules
-    with an iron fist.
+  text: Xi Jinping is a brilliant man. He's the leader of China. He's tough. He rules with an iron fist.
   date: '2019-10-11'
   source_type: Remarks
-  context: White House. Said during a period of active trade war with China. Not considered
-    contradictory.
+  context: White House. Said during a period of active trade war with China. Not considered contradictory.
   country:
   - China
   theme:
@@ -344,20 +320,17 @@
   text: Zelensky is a very talented salesman.
   date: '2025-02-28'
   source_type: Remarks
-  context: Following the Oval Office meeting in which Zelensky was publicly criticised
-    for not being sufficiently grateful.
+  context: Following the Oval Office meeting in which Zelensky was publicly criticised for not being sufficiently grateful.
   country:
   - Ukraine
   theme:
   - Diplomatic
   term: 2
 - id: q033
-  text: We want to make Canada our 51st state. The only way that happens is if we
-    put enough economic pressure on them.
+  text: We want to make Canada our 51st state. The only way that happens is if we put enough economic pressure on them.
   date: '2025-02-01'
   source_type: Remarks
-  context: White House. Confirming that the tariff pressure on Canada was linked to
-    the annexation proposal.
+  context: White House. Confirming that the tariff pressure on Canada was linked to the annexation proposal.
   country:
   - Canada
   theme:
@@ -368,8 +341,8 @@
   text: Nobody's ever been tougher on Russia than me.
   date: '2018-07-16'
   source_type: Press conference
-  context: Helsinki. Said moments before appearing to accept Putin's denial of election
-    interference over the assessment of US intelligence agencies.
+  context: Helsinki. Said moments before appearing to accept Putin's denial of election interference over the assessment of
+    US intelligence agencies.
   country:
   - Russia
   theme:
@@ -389,19 +362,17 @@
   text: The tariff is the most beautiful word in the dictionary.
   date: '2024-10-16'
   source_type: Economic Club speech
-  context: Economic Club of Chicago. Standard dictionaries do not rank words by beauty.
-    The tariff appears alphabetically near the end of the T section.
+  context: Economic Club of Chicago. Standard dictionaries do not rank words by beauty. The tariff appears alphabetically
+    near the end of the T section.
   country: []
   theme:
   - Trade
   term: 2
 - id: q037
-  text: We're going to have a great relationship with Mexico. But they're going to
-    pay for the wall.
+  text: We're going to have a great relationship with Mexico. But they're going to pay for the wall.
   date: '2017-01-06'
   source_type: Remarks
-  context: The wall was built in part. Mexico did not pay for it. The relationship
-    has been intermittently described as great.
+  context: The wall was built in part. Mexico did not pay for it. The relationship has been intermittently described as great.
   country:
   - Mexico
   theme:
@@ -431,10 +402,72 @@
   text: I'm the only one that matters.
   date: '2017-11-03'
   source_type: Interview
-  context: 'Referring to foreign policy expertise in the State Department. Context:
-    asked whether it mattered that senior State Department positions remained unfilled.'
+  context: 'Referring to foreign policy expertise in the State Department. Context: asked whether it mattered that senior
+    State Department positions remained unfilled.'
   country: []
   theme:
   - Diplomatic
   - Rhetorical
   term: 1
+- id: q041
+  text: The Deal with the Islamic Republic of Iran is now complete.
+  date: '2026-06-17'
+  source_type: Social media
+  context: Posted to Truth Social following the signing of the US-Iran memorandum of understanding at Versailles. The MOU
+    establishes a 60-day ceasefire extension and a framework for nuclear negotiations. Nuclear disposition, sanctions relief,
+    and Lebanon ceasefire implementation remain unresolved.
+  country:
+  - Iran
+  theme:
+  - Diplomatic
+  - Trade
+  term: 2
+- id: q042
+  text: Armenia and Azerbaijan have made peace. I brought them together. Nobody thought this was possible.
+  date: '2025-08-08'
+  source_type: Press conference
+  context: Remarks at White House trilateral ceremony, August 8, 2025. A joint declaration was signed and a peace agreement
+    initialed. Formal ratification by either parliament has not occurred. The agreement includes a 99-year US development
+    concession on the connecting corridor, named the Trump Route for International Peace and Prosperity.
+  country:
+  - Armenia
+  - Azerbaijan
+  theme:
+  - Diplomatic
+  term: 2
+- id: q043
+  text: It's total access. There's no end, there's no time limit. We're going to get everything we want at no cost.
+  date: '2026-01-23'
+  source_type: Press conference
+  context: Remarks at Davos regarding the Greenland framework. Denmark and Greenland had stated the island was not for sale.
+    NATO Secretary General Rutte, who participated in the framework discussions, confirmed that Greenland mineral resources
+    were not discussed.
+  country:
+  - Denmark
+  - Greenland
+  theme:
+  - Territorial
+  term: 2
+- id: q044
+  text: NATO has agreed to go to 5 percent. One trillion dollars more per year. Nobody thought that was possible either.
+  date: '2025-06-25'
+  source_type: Press conference
+  context: G7 remarks following the NATO Hague Summit, June 24–25, 2025. Allies committed to 5 percent of GDP on defence and
+    defence-related spending by 2035, up from the 2 percent target set in 2006. The 1.5 percent "defence-related spending"
+    subcategory definition was not finalised at the summit.
+  country: []
+  theme:
+  - Alliance
+  term: 2
+- id: q045
+  text: Zelensky doesn't have the cards. He should make a deal.
+  date: '2025-02-19'
+  source_type: Interview
+  context: Fox News interview, February 19, 2025. Made following a confrontational Oval Office meeting with President Zelensky
+    the previous day, during which Trump and Vice President Vance publicly rebuked Zelensky for insufficient gratitude. Ukraine
+    had not been consulted on the US-Russia ceasefire framework under discussion.
+  country:
+  - Ukraine
+  theme:
+  - Diplomatic
+  term: 2

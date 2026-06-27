@@ -1,497 +1,421 @@
-# THE DONROE DOCTRINE — Prediction Tracker
-# Schema: id, statement, date_made, source, countries, category, term, status, outcome_date, outcome_note
-# Status options: pending | correct | wrong | abandoned
-# Categories: war_peace | nuclear | trade | alliance | territorial | sanctions | other
-
-# ── UKRAINE / RUSSIA ─────────────────────────────────────────────────────────
-
 - id: ukraine-24-hours
-  statement: "I will have that war settled in 24 hours. I will meet with Putin and
-    Zelensky and that war will be settled."
+  statement: I will have that war settled in 24 hours. I will meet with Putin and Zelensky and that war will be settled.
   date_made: '2023-09-29'
   source: Meet the Press interview, September 29, 2023
-  countries: [Ukraine, Russia]
+  countries:
+  - Ukraine
+  - Russia
   category: war_peace
   term: 2
   status: wrong
   outcome_date: '2026-06-01'
-  outcome_note: War ongoing more than 500 days into Trump's second term. No settlement
-    reached. Trump's February 2025 White House meeting with Zelensky ended in televised
-    confrontation. Peace negotiations ongoing but unresolved as of mid-2026.
-
+  outcome_note: War ongoing more than 500 days into Trump's second term. No settlement reached. Trump's February 2025 White
+    House meeting with Zelensky ended in televised confrontation. Peace negotiations ongoing but unresolved as of mid-2026.
 - id: ukraine-before-inauguration
-  statement: "I'll have it solved before I even get to the office — before I take
-    office, January 20th."
+  statement: I'll have it solved before I even get to the office — before I take office, January 20th.
   date_made: '2024-06-13'
   source: Fox News town hall, June 2024
-  countries: [Ukraine, Russia]
+  countries:
+  - Ukraine
+  - Russia
   category: war_peace
   term: 2
   status: wrong
   outcome_date: '2025-01-20'
-  outcome_note: War was not resolved before or on Inauguration Day, January 20, 2025.
-    Trump had not yet met with either leader. The war entered its fourth year.
-
+  outcome_note: War was not resolved before or on Inauguration Day, January 20, 2025. Trump had not yet met with either leader.
+    The war entered its fourth year.
 - id: russia-never-invaded
-  statement: "Russia would have never, ever invaded Ukraine if I had been president."
+  statement: Russia would have never, ever invaded Ukraine if I had been president.
   date_made: '2022-02-24'
   source: Statement following Russia's invasion, February 2022
-  countries: [Ukraine, Russia]
+  countries:
+  - Ukraine
+  - Russia
   category: war_peace
   term: 2
   status: abandoned
   outcome_date: null
-  outcome_note: Counterfactual claim made throughout Term 2 campaign. Unfalsifiable
-    by design. Trump quietly dropped the boast as his peace negotiations stalled
-    through 2025 and into 2026.
-
-# ── NORTH KOREA ──────────────────────────────────────────────────────────────
-
+  outcome_note: Counterfactual claim made throughout Term 2 campaign. Unfalsifiable by design. Trump quietly dropped the boast
+    as his peace negotiations stalled through 2025 and into 2026.
 - id: north-korea-no-longer-threat
-  statement: "There is no longer a Nuclear Threat from North Korea."
+  statement: There is no longer a Nuclear Threat from North Korea.
   date_made: '2018-06-13'
   source: Twitter/X, June 13, 2018, following Singapore summit
-  countries: [North Korea]
+  countries:
+  - North Korea
   category: nuclear
   term: 1
   status: wrong
   outcome_date: '2019-05-04'
-  outcome_note: North Korea resumed missile testing in May 2019, ten months after
-    Trump's declaration. Kim Jong Un continued expanding his nuclear arsenal throughout
-    Trump's first term and beyond. US intelligence assessed North Korea's nuclear
+  outcome_note: North Korea resumed missile testing in May 2019, ten months after Trump's declaration. Kim Jong Un continued
+    expanding his nuclear arsenal throughout Trump's first term and beyond. US intelligence assessed North Korea's nuclear
     stockpile grew substantially after the Singapore summit.
-
 - id: north-korea-denuclearization
-  statement: "North Korea has agreed to denuclearization. Everybody can now feel
-    much safer than the day I took office."
+  statement: North Korea has agreed to denuclearization. Everybody can now feel much safer than the day I took office.
   date_made: '2018-06-12'
   source: Twitter/X, June 12, 2018, after Singapore summit Joint Statement
-  countries: [North Korea]
+  countries:
+  - North Korea
   category: nuclear
   term: 1
   status: wrong
   outcome_date: '2019-02-28'
-  outcome_note: The Singapore Joint Statement committed North Korea to working toward
-    complete denuclearization in undefined terms. The Hanoi summit in February 2019
-    collapsed without agreement. North Korea never took a single verifiable denuclearization
+  outcome_note: The Singapore Joint Statement committed North Korea to working toward complete denuclearization in undefined
+    terms. The Hanoi summit in February 2019 collapsed without agreement. North Korea never took a single verifiable denuclearization
     step. Kim continued building warheads and delivery systems.
-
 - id: north-korea-no-rocket-tests
-  statement: "He's not going to be doing any rocket testing. We have a very good
-    relationship."
+  statement: He's not going to be doing any rocket testing. We have a very good relationship.
   date_made: '2018-09-26'
   source: Press conference, United Nations General Assembly, September 2018
-  countries: [North Korea]
+  countries:
+  - North Korea
   category: nuclear
   term: 1
   status: wrong
   outcome_date: '2019-05-04'
-  outcome_note: North Korea launched short-range ballistic missiles on May 4, 2019,
-    eight months after Trump's assurance. Further launches followed in July and
-    December 2019, and extensively throughout 2020 and both Trump terms.
-
-# ── IRAN ─────────────────────────────────────────────────────────────────────
-
+  outcome_note: North Korea launched short-range ballistic missiles on May 4, 2019, eight months after Trump's assurance.
+    Further launches followed in July and December 2019, and extensively throughout 2020 and both Trump terms.
 - id: iran-30-days
-  statement: "Iran will call us within 30 days of me taking office."
+  statement: Iran will call us within 30 days of me taking office.
   date_made: '2018-07-22'
   source: Fox News interview following JCPOA withdrawal, July 2018
-  countries: [Iran]
+  countries:
+  - Iran
   category: nuclear
   term: 1
   status: wrong
   outcome_date: '2021-01-20'
-  outcome_note: Iran did not call within 30 days. Iran did not call within 1,000
-    days. Under sustained maximum pressure sanctions, Iran accelerated uranium enrichment
-    and reduced IAEA cooperation. No new deal was reached in Term 1. Iran's nuclear
-    programme advanced significantly during the period of maximum pressure.
-
+  outcome_note: Iran did not call within 30 days. Iran did not call within 1,000 days. Under sustained maximum pressure sanctions,
+    Iran accelerated uranium enrichment and reduced IAEA cooperation. No new deal was reached in Term 1. Iran's nuclear programme
+    advanced significantly during the period of maximum pressure.
 - id: iran-maximum-pressure-capitulation
-  statement: "Iran will come to the table, they have no choice. Maximum pressure
-    will bring them to their knees."
+  statement: Iran will come to the table, they have no choice. Maximum pressure will bring them to their knees.
   date_made: '2019-05-05'
   source: Remarks following Iran maximum pressure announcement, May 2019
-  countries: [Iran]
+  countries:
+  - Iran
   category: nuclear
   term: 1
   status: wrong
   outcome_date: '2021-01-01'
-  outcome_note: Iran did not capitulate. Instead, Iran progressively rolled back
-    JCPOA commitments, enriching uranium to 60% purity by 2021 — a level with no
-    civilian justification. Iran's breakout time to a nuclear weapon shortened
-    substantially during the maximum pressure period.
-
+  outcome_note: Iran did not capitulate. Instead, Iran progressively rolled back JCPOA commitments, enriching uranium to 60%
+    purity by 2021 — a level with no civilian justification. Iran's breakout time to a nuclear weapon shortened substantially
+    during the maximum pressure period.
 - id: iran-deal-term2
-  statement: "Iran is going to make a deal with us. They have no money, they have
-    no anything. They'll be calling us."
+  statement: Iran is going to make a deal with us. They have no money, they have no anything. They'll be calling us.
   date_made: '2025-02-04'
   source: White House press remarks, February 4, 2025
-  countries: [Iran]
+  countries:
+  - Iran
   category: nuclear
   term: 2
-  status: pending
-  outcome_date: null
-  outcome_note: Nuclear negotiations begun in spring 2025. After US-Israeli strikes
-    on Iranian facilities in February 2026, ceasefire-adjacent talks underway
-    as of mid-2026. A deal has not been finalized. Trump has described any deal
-    he reaches as historic; critics note it would resemble the JCPOA he called
-    the worst deal ever made.
-
-# ── CHINA / TRADE ─────────────────────────────────────────────────────────────
-
+  status: correct
+  outcome_date: '2026-06-17'
+  outcome_note: A memorandum of understanding was signed by the US and Iran on June 17, 2026, establishing a 60-day ceasefire,
+    reopening the Strait of Hormuz, and creating a framework for nuclear negotiations. Iran agreed not to develop nuclear
+    weapons; enrichment disposition to be negotiated. The deal was signed at the Palace of Versailles during the G7 summit.
+    Structural sanctions relief and nuclear dismantlement terms remain unresolved.
 - id: trade-wars-easy
-  statement: "Trade wars are good, and easy to win."
+  statement: Trade wars are good, and easy to win.
   date_made: '2018-03-02'
   source: Twitter/X, March 2, 2018
-  countries: [China]
+  countries:
+  - China
   category: trade
   term: 1
   status: wrong
   outcome_date: '2020-01-15'
-  outcome_note: The US-China trade war cost American consumers and farmers an estimated
-    $316 billion by 2020 (Federal Reserve research). The Phase 1 deal signed January
-    2020 required China to purchase $200 billion in additional US goods — a target
+  outcome_note: The US-China trade war cost American consumers and farmers an estimated $316 billion by 2020 (Federal Reserve
+    research). The Phase 1 deal signed January 2020 required China to purchase $200 billion in additional US goods — a target
     China missed by roughly 40%. US manufacturers did not broadly return from China.
-
 - id: china-pays-tariffs
-  statement: "China is paying us billions and billions of dollars in tariffs."
+  statement: China is paying us billions and billions of dollars in tariffs.
   date_made: '2019-05-10'
   source: Rally remarks, May 2019
-  countries: [China]
+  countries:
+  - China
   category: trade
   term: 1
   status: wrong
   outcome_date: '2020-01-01'
-  outcome_note: Tariffs are paid by importing companies, not by China. Multiple
-    Federal Reserve and academic studies confirmed that US businesses and consumers
-    bore the cost of the tariffs. The Peterson Institute estimated American importers
-    paid nearly all of the tariff costs passed through to US prices.
-
+  outcome_note: Tariffs are paid by importing companies, not by China. Multiple Federal Reserve and academic studies confirmed
+    that US businesses and consumers bore the cost of the tariffs. The Peterson Institute estimated American importers paid
+    nearly all of the tariff costs passed through to US prices.
 - id: china-phase1-purchases
-  statement: "China has agreed to purchase $200 billion in additional goods.
-    This is the greatest deal ever made."
+  statement: China has agreed to purchase $200 billion in additional goods. This is the greatest deal ever made.
   date_made: '2020-01-15'
   source: Phase 1 trade deal signing ceremony, January 15, 2020
-  countries: [China]
+  countries:
+  - China
   category: trade
   term: 1
   status: wrong
   outcome_date: '2021-01-20'
-  outcome_note: China purchased approximately $59 billion of the $200 billion target
-    in 2020 — roughly 58% short of the commitment, partly due to COVID-19 disruptions
-    but also structural unwillingness. The trade deficit with China widened during
-    the period of the deal.
-
+  outcome_note: China purchased approximately $59 billion of the $200 billion target in 2020 — roughly 58% short of the commitment,
+    partly due to COVID-19 disruptions but also structural unwillingness. The trade deficit with China widened during the
+    period of the deal.
 - id: liberation-day-tariffs-negotiating
-  statement: "The tariffs will come down very substantially once they make a deal
-    with us. Everybody wants to make a deal."
+  statement: The tariffs will come down very substantially once they make a deal with us. Everybody wants to make a deal.
   date_made: '2025-04-03'
   source: Truth Social post following Liberation Day tariff announcement, April 2025
-  countries: [China]
+  countries:
+  - China
   category: trade
   term: 2
   status: pending
   outcome_date: null
-  outcome_note: A US-China truce was reached at the Busan summit in October 2025,
-    easing some pressure points. Structural tariffs remain in place. Deal not
-    finalized as of mid-2026.
-
-# ── NATO / ALLIANCES ─────────────────────────────────────────────────────────
-
+  outcome_note: A US-China truce was reached at the Busan summit in October 2025, easing some pressure points. Structural
+    tariffs remain in place. Deal not finalized as of mid-2026.
 - id: nato-allies-will-pay
-  statement: "I told NATO: you have to pay up. And they did."
+  statement: 'I told NATO: you have to pay up. And they did.'
   date_made: '2024-02-10'
   source: Rally remarks, South Carolina, February 10, 2024
-  countries: [NATO]
+  countries:
+  - NATO
   category: alliance
   term: 2
   status: correct
   outcome_date: '2025-12-01'
-  outcome_note: NATO member defence spending did increase substantially under sustained
-    US pressure across both Trump terms and the Biden years. By 2025, a majority
-    of NATO allies met or exceeded the 2% GDP target — up from under one-third in
-    2016. NATO Secretary General Rutte called for spending "considerably more than
-    3%." Causal link disputed; European threat perception post-Ukraine also drove increases.
-
+  outcome_note: NATO member defence spending did increase substantially under sustained US pressure across both Trump terms
+    and the Biden years. By 2025, a majority of NATO allies met or exceeded the 2% GDP target — up from under one-third in
+    2016. NATO Secretary General Rutte called for spending "considerably more than 3%." Causal link disputed; European threat
+    perception post-Ukraine also drove increases.
 - id: nato-nondefense-deadbeats
-  statement: "If they don't pay, I will not defend them. I would encourage Russia
-    to do whatever the hell they want."
+  statement: If they don't pay, I will not defend them. I would encourage Russia to do whatever the hell they want.
   date_made: '2024-02-10'
   source: Rally remarks, South Carolina, February 10, 2024
-  countries: [NATO, Russia]
+  countries:
+  - NATO
+  - Russia
   category: alliance
   term: 2
   status: abandoned
   outcome_date: '2025-06-01'
-  outcome_note: Despite the threat, the US remained formally committed to NATO Article 5
-    through 2025. Trump privately pressured allies on spending but did not follow
-    through on the explicit non-defence threat. The statement itself caused significant
+  outcome_note: Despite the threat, the US remained formally committed to NATO Article 5 through 2025. Trump privately pressured
+    allies on spending but did not follow through on the explicit non-defence threat. The statement itself caused significant
     diplomatic damage with European allies.
-
-# ── MEXICO / BORDER ──────────────────────────────────────────────────────────
-
 - id: mexico-wall-payment
-  statement: "Mexico will pay for the wall. 100 percent."
+  statement: Mexico will pay for the wall. 100 percent.
   date_made: '2015-06-16'
   source: Presidential campaign announcement, Trump Tower, June 16, 2015
-  countries: [Mexico]
+  countries:
+  - Mexico
   category: other
   term: 1
   status: wrong
   outcome_date: '2021-01-20'
-  outcome_note: Mexico did not pay for the wall. US taxpayers funded approximately
-    $15 billion in barrier construction during Term 1, much of it redirected from
-    military budgets. Mexico's government consistently and publicly refused to contribute.
+  outcome_note: Mexico did not pay for the wall. US taxpayers funded approximately $15 billion in barrier construction during
+    Term 1, much of it redirected from military budgets. Mexico's government consistently and publicly refused to contribute.
     The statement was made across four years of both campaign and presidency.
-
 - id: mexico-immigration-tariffs
-  statement: "Mexico will stop the caravans or face 25 percent tariffs. They will
-    do whatever we want on immigration."
+  statement: Mexico will stop the caravans or face 25 percent tariffs. They will do whatever we want on immigration.
   date_made: '2019-05-30'
   source: Twitter/X, May 30, 2019
-  countries: [Mexico]
+  countries:
+  - Mexico
   category: other
   term: 1
   status: correct
   outcome_date: '2019-06-10'
-  outcome_note: >-
-    Mexico deployed National Guard troops to its southern border and agreed to
-    expanded "Remain in Mexico" policy. Tariffs were not imposed. This was a
-    partial vindication — Mexico moved on immigration enforcement, though the
-    structural migration drivers Trump claimed he would solve remained unaddressed.
-
-# ── TERRITORIAL ──────────────────────────────────────────────────────────────
-
+  outcome_note: Mexico deployed National Guard troops to its southern border and agreed to expanded "Remain in Mexico" policy.
+    Tariffs were not imposed. This was a partial vindication — Mexico moved on immigration enforcement, though the structural
+    migration drivers Trump claimed he would solve remained unaddressed.
 - id: greenland-will-happen
-  statement: "We need Greenland for national security purposes. It will happen."
+  statement: We need Greenland for national security purposes. It will happen.
   date_made: '2025-01-07'
   source: Mar-a-Lago press conference, January 7, 2025
-  countries: [Greenland, Denmark]
+  countries:
+  - Greenland
+  - Denmark
   category: territorial
   term: 2
   status: pending
   outcome_date: null
-  outcome_note: Denmark and Greenland firmly rejected any transfer. Greenland's
-    Prime Minister stated the island "is not for sale." The US dispatched the
-    Vice President to Nuuk in February 2025. No formal acquisition process initiated.
-    Trump reiterated the claim multiple times through 2025.
-
+  outcome_note: Denmark and Greenland firmly rejected any transfer. Greenland's Prime Minister stated the island "is not for
+    sale." The US dispatched the Vice President to Nuuk in February 2025. No formal acquisition process initiated. Trump reiterated
+    the claim multiple times through 2025.
 - id: canada-51st-state
-  statement: "Canada should be the 51st state. It will happen one way or another."
+  statement: Canada should be the 51st state. It will happen one way or another.
   date_made: '2024-12-19'
   source: Truth Social post, December 19, 2024
-  countries: [Canada]
+  countries:
+  - Canada
   category: territorial
   term: 2
   status: abandoned
   outcome_date: '2025-07-01'
-  outcome_note: Canada remained an independent country. The statement caused severe
-    diplomatic damage to US-Canada relations. Canada imposed retaliatory tariffs.
-    Prime Minister Trudeau resigned in part due to US pressure politics. Trump
-    largely dropped the annexation rhetoric after mid-2025 amid trade negotiations.
-
+  outcome_note: Canada remained an independent country. The statement caused severe diplomatic damage to US-Canada relations.
+    Canada imposed retaliatory tariffs. Prime Minister Trudeau resigned in part due to US pressure politics. Trump largely
+    dropped the annexation rhetoric after mid-2025 amid trade negotiations.
 - id: panama-canal-reclaim
-  statement: "We are taking back the Panama Canal. And we're not giving it back."
+  statement: We are taking back the Panama Canal. And we're not giving it back.
   date_made: '2025-01-07'
   source: Mar-a-Lago press conference, January 7, 2025
-  countries: [Panama]
+  countries:
+  - Panama
   category: territorial
   term: 2
   status: abandoned
   outcome_date: '2025-09-01'
-  outcome_note: The Panama Canal remains under Panamanian sovereignty. Panama's
-    government rejected any territorial transfer as a violation of the 1977 treaties.
-    Trump secured a separate agreement regarding Chinese corporate presence at
-    canal ports, which he described as a victory, and the canal rhetoric diminished.
-
-# ── MIDDLE EAST / GAZA ───────────────────────────────────────────────────────
-
+  outcome_note: The Panama Canal remains under Panamanian sovereignty. Panama's government rejected any territorial transfer
+    as a violation of the 1977 treaties. Trump secured a separate agreement regarding Chinese corporate presence at canal
+    ports, which he described as a victory, and the canal rhetoric diminished.
 - id: gaza-solved-quickly
-  statement: "We have to get this whole thing solved. It will be solved very quickly
-    once I get into office."
+  statement: We have to get this whole thing solved. It will be solved very quickly once I get into office.
   date_made: '2024-11-07'
   source: Post-election remarks, November 7, 2024
-  countries: [Israel, Gaza]
+  countries:
+  - Israel
+  - Gaza
   category: war_peace
   term: 2
   status: wrong
   outcome_date: '2025-10-09'
-  outcome_note: A Gaza ceasefire deal was reached in October 2025 — ten months
-    into Trump's term — brokered with significant US involvement. The war caused
-    catastrophic civilian casualties through 2025. The ceasefire proved fragile,
-    with ongoing Israeli operations in Lebanon and Gaza continuing through 2026.
-    Not "quickly."
-
+  outcome_note: A Gaza ceasefire deal was reached in October 2025 — ten months into Trump's term — brokered with significant
+    US involvement. The war caused catastrophic civilian casualties through 2025. The ceasefire proved fragile, with ongoing
+    Israeli operations in Lebanon and Gaza continuing through 2026. Not "quickly."
 - id: israel-saudi-normalization
-  statement: "Saudi Arabia wants to make a deal very badly. We will get Saudi
-    normalization with Israel. It will happen."
+  statement: Saudi Arabia wants to make a deal very badly. We will get Saudi normalization with Israel. It will happen.
   date_made: '2025-01-21'
   source: White House remarks, January 21, 2025
-  countries: [Saudi Arabia, Israel]
+  countries:
+  - Saudi Arabia
+  - Israel
   category: alliance
   term: 2
   status: pending
   outcome_date: null
-  outcome_note: The Iran war and Israel-Lebanon conflict complicated Saudi-Israel
-    normalization through 2025-2026. Saudi Arabia continued to condition normalization
-    on a Palestinian state pathway that Israel rejected. No normalization deal
-    signed as of mid-2026.
-
-# ── "ENDED WARS" CLUSTER ─────────────────────────────────────────────────────
-
+  outcome_note: The Iran war and Israel-Lebanon conflict complicated Saudi-Israel normalization through 2025-2026. Saudi Arabia
+    continued to condition normalization on a Palestinian state pathway that Israel rejected. No normalization deal signed
+    as of mid-2026.
 - id: seven-wars-claim
-  statement: "I've ended seven wars. Seven un-endable wars. Nobody thought it
-    could be done. I did it."
+  statement: I've ended seven wars. Seven un-endable wars. Nobody thought it could be done. I did it.
   date_made: '2025-09-22'
-  source: UN General Assembly address, September 22, 2025; State Department
-    posted "8 wars ended in 8 months" on X, April 2026
+  source: UN General Assembly address, September 22, 2025; State Department posted "8 wars ended in 8 months" on X, April
+    2026
   countries: []
   category: war_peace
   term: 2
   status: wrong
   outcome_date: '2026-06-01'
-  outcome_note: "Fact-checked as misleading by CBS News, PolitiFact, CNN, and
-    FactCheck.org. Of the seven conflicts cited — one involved countries not
-    actually at war (Egypt-Ethiopia); one was a decades-old diplomatic dispute
-    with no active conflict (Serbia-Kosovo); several ceasefires broke down within
-    weeks of being announced; none produced a ratified, permanent peace agreement.
-    The State Department escalated the claim to eight in April 2026."
-
+  outcome_note: Fact-checked as misleading by CBS News, PolitiFact, CNN, and FactCheck.org. Of the seven conflicts cited —
+    one involved countries not actually at war (Egypt-Ethiopia); one was a decades-old diplomatic dispute with no active conflict
+    (Serbia-Kosovo); several ceasefires broke down within weeks of being announced; none produced a ratified, permanent peace
+    agreement. The State Department escalated the claim to eight in April 2026.
 - id: nobel-peace-prize
-  statement: "I think I deserve the Nobel Peace Prize. Many people are saying
-    so. I've done more for peace than anyone."
+  statement: I think I deserve the Nobel Peace Prize. Many people are saying so. I've done more for peace than anyone.
   date_made: '2025-08-19'
-  source: Interview with Mark Levin, August 19, 2025; similar remarks made
-    across multiple press appearances
+  source: Interview with Mark Levin, August 19, 2025; similar remarks made across multiple press appearances
   countries: []
   category: war_peace
   term: 2
   status: wrong
   outcome_date: '2025-10-10'
-  outcome_note: "Trump did not receive the 2025 Nobel Peace Prize. The prize
-    was not awarded to Trump. Pakistan and Armenia both nominated him following
-    their respective ceasefire agreements. The Nobel Committee, as is its practice,
-    did not comment on nominees."
-
+  outcome_note: Trump did not receive the 2025 Nobel Peace Prize. The prize was not awarded to Trump. Pakistan and Armenia
+    both nominated him following their respective ceasefire agreements. The Nobel Committee, as is its practice, did not comment
+    on nominees.
 - id: israel-iran-ended
-  statement: "I ended the war between Israel and Iran. It's over. I brought
-    peace to the Middle East."
+  statement: I ended the war between Israel and Iran. It's over. I brought peace to the Middle East.
   date_made: '2025-09-22'
   source: UN General Assembly address, September 22, 2025
-  countries: [Israel, Iran]
+  countries:
+  - Israel
+  - Iran
   category: war_peace
   term: 2
-  status: pending
-  outcome_date: null
-  outcome_note: "A ceasefire was reached in June 2025 after a 12-day conflict
-    and US-Israeli strikes on Iranian nuclear facilities, with US and Qatari
-    involvement. Trump received partial credit from foreign policy experts for
-    pressing Netanyahu. However, Iran's nuclear programme remains intact (US
-    strikes estimated to delay it one to two years), Iran-Israel tensions remain
-    unresolved, and ceasefire-adjacent negotiations for a permanent deal continued
-    through mid-2026. Whether this constitutes ending the war is disputed."
-
+  status: correct
+  outcome_date: '2026-06-17'
+  outcome_note: A ceasefire was announced June 12, 2026, and a memorandum of understanding signed June 17, 2026, ending active
+    US-Iran-Israel hostilities and reopening the Strait of Hormuz. The statement was made at UNGA on September 22, 2025 —
+    eight months before the MOU was signed. In the intervening period, US and Israeli forces conducted strikes on Iranian
+    nuclear facilities in February 2026. The MOU does not include Israel or Hezbollah as signatories. Lebanon ceasefire implementation
+    mechanism remains unclear.
 - id: congo-rwanda-ended
-  statement: "I've made peace between Rwanda and the Congo. A peace deal has
-    been signed. This conflict is over."
+  statement: I've made peace between Rwanda and the Congo. A peace deal has been signed. This conflict is over.
   date_made: '2025-09-22'
   source: UN General Assembly address, September 22, 2025
-  countries: [Congo, Rwanda]
+  countries:
+  - Congo
+  - Rwanda
   category: war_peace
   term: 2
   status: wrong
   outcome_date: '2025-07-01'
-  outcome_note: "A peace framework was mediated by the US in Washington in June
-    2025. Within weeks, Rwanda-backed M23 militia resumed attacks on Congolese
-    forces and expanded territorial control. M23 killed over 140 civilians in
-    eastern Congo in July 2025. Secretary of State Rubio acknowledged this as
-    a clear violation of the ceasefire. Foreign policy experts described Trump's
-    declaration of success as premature."
-
+  outcome_note: A peace framework was mediated by the US in Washington in June 2025. Within weeks, Rwanda-backed M23 militia
+    resumed attacks on Congolese forces and expanded territorial control. M23 killed over 140 civilians in eastern Congo in
+    July 2025. Secretary of State Rubio acknowledged this as a clear violation of the ceasefire. Foreign policy experts described
+    Trump's declaration of success as premature.
 - id: armenia-azerbaijan-ended
-  statement: "Armenia and Azerbaijan have made peace. I brought them together.
-    A deal has been signed at the White House."
+  statement: Armenia and Azerbaijan have made peace. I brought them together. A deal has been signed at the White House.
   date_made: '2025-08-08'
   source: Remarks at White House trilateral agreement ceremony, August 8, 2025
-  countries: [Armenia, Azerbaijan]
+  countries:
+  - Armenia
+  - Azerbaijan
   category: war_peace
   term: 2
-  status: pending
-  outcome_date: null
-  outcome_note: "The most substantive of Trump's claimed peace achievements.
-    Both leaders attended the White House and credited Trump. However, the agreement
-    has not been ratified by either parliament. Azerbaijan continues to demand
-    Armenia amend its constitution to remove territorial references before signing
-    a final deal. Armenia's prime minister expressed willingness but set no
-    referendum date. The Nagorno-Karabakh dispute remains unresolved."
-
+  status: correct
+  outcome_date: '2025-08-08'
+  outcome_note: On August 8, 2025, Armenian Prime Minister Pashinyan and Azerbaijani President Aliyev initialed an agreement
+    and signed a joint declaration at the White House, with Trump credited as mediator. A 99-year US development concession
+    along the connecting corridor — named the Trump Route for International Peace and Prosperity (TRIPP) — was included. The
+    agreement has not been ratified by either parliament. Armenian constitutional amendments required for full implementation
+    are slated for referendum no earlier than 2027.
 - id: india-pakistan-ended
-  statement: "I ended the war between India and Pakistan. They were going to
-    use nuclear weapons. I stopped it."
+  statement: I ended the war between India and Pakistan. They were going to use nuclear weapons. I stopped it.
   date_made: '2025-09-22'
-  source: UN General Assembly address, September 22, 2025; similar claims in
-    multiple interviews
-  countries: [India, Pakistan]
+  source: UN General Assembly address, September 22, 2025; similar claims in multiple interviews
+  countries:
+  - India
+  - Pakistan
   category: war_peace
   term: 2
   status: wrong
   outcome_date: '2025-05-15'
-  outcome_note: "A ceasefire was agreed after weeks of cross-border missile and
-    drone strikes following a Kashmir massacre. Pakistan credited US involvement.
-    India explicitly denied it, stating the ceasefire was agreed directly between
-    the two countries without US brokering. The underlying Kashmir dispute
-    — contested for 75 years — remains entirely unresolved. Foreign policy experts
-    noted Trump's tariff pressure on India complicated any future US role."
-
+  outcome_note: A ceasefire was agreed after weeks of cross-border missile and drone strikes following a Kashmir massacre.
+    Pakistan credited US involvement. India explicitly denied it, stating the ceasefire was agreed directly between the two
+    countries without US brokering. The underlying Kashmir dispute — contested for 75 years — remains entirely unresolved.
+    Foreign policy experts noted Trump's tariff pressure on India complicated any future US role.
 - id: egypt-ethiopia-ended
-  statement: "I brought peace to Egypt and Ethiopia. There is peace, at least
-    for now, because of my intervention."
+  statement: I brought peace to Egypt and Ethiopia. There is peace, at least for now, because of my intervention.
   date_made: '2025-06-01'
-  source: Truth Social post, June 2025; cited in UN General Assembly address
-    September 2025
-  countries: [Egypt, Ethiopia]
+  source: Truth Social post, June 2025; cited in UN General Assembly address September 2025
+  countries:
+  - Egypt
+  - Ethiopia
   category: war_peace
   term: 2
   status: wrong
   outcome_date: '2025-09-01'
-  outcome_note: "Egypt and Ethiopia were not at war. Their dispute over Ethiopia's
-    Grand Ethiopian Renaissance Dam on the Nile has been a diplomatic standoff,
-    not an armed conflict. No deal was announced. Ethiopia proceeded with the
-    dam's official opening. Egypt's longstanding objections that the dam restricts
-    Nile water flow remained unaddressed. Foreign policy experts stated plainly
-    that there was no war here to end."
-
+  outcome_note: Egypt and Ethiopia were not at war. Their dispute over Ethiopia's Grand Ethiopian Renaissance Dam on the Nile
+    has been a diplomatic standoff, not an armed conflict. No deal was announced. Ethiopia proceeded with the dam's official
+    opening. Egypt's longstanding objections that the dam restricts Nile water flow remained unaddressed. Foreign policy experts
+    stated plainly that there was no war here to end.
 - id: serbia-kosovo-ended
-  statement: "I ended the conflict between Serbia and Kosovo. I did that in my
-    first term, and we've kept the peace."
+  statement: I ended the conflict between Serbia and Kosovo. I did that in my first term, and we've kept the peace.
   date_made: '2025-09-22'
   source: UN General Assembly address, September 22, 2025
-  countries: [Kosovo]
+  countries:
+  - Kosovo
   category: war_peace
   term: 2
   status: wrong
   outcome_date: '2026-06-01'
-  outcome_note: "Serbia and Kosovo were not at war in 2025. A US-brokered economic
-    normalisation deal was signed in Trump's first term in 2020 but stalled
-    almost immediately. Kosovo declared independence in 2008, which Serbia still
-    does not recognise. European-led talks have continued without breakthrough.
-    Experts noted Trump's Term 1 deal produced no lasting change; any peace
-    maintenance in the region is the product of EU and NATO presence, not
-    US diplomacy."
-
+  outcome_note: Serbia and Kosovo were not at war in 2025. A US-brokered economic normalisation deal was signed in Trump's
+    first term in 2020 but stalled almost immediately. Kosovo declared independence in 2008, which Serbia still does not recognise.
+    European-led talks have continued without breakthrough. Experts noted Trump's Term 1 deal produced no lasting change;
+    any peace maintenance in the region is the product of EU and NATO presence, not US diplomacy.
 - id: thailand-cambodia-ended
-  statement: "Thailand and Cambodia were going to war. I told them: stop, or
-    face tariffs. And it worked."
+  statement: 'Thailand and Cambodia were going to war. I told them: stop, or face tariffs. And it worked.'
   date_made: '2025-09-22'
   source: UN General Assembly address, September 22, 2025
   countries: []
   category: war_peace
   term: 2
-  status: pending
-  outcome_date: null
-  outcome_note: "A ceasefire was reached in late July 2025 after border clashes
-    killed at least 35 people. Foreign policy experts gave partial credit to
-    Trump's tariff threats — the US is a top importer from both countries.
-    However, Thai officials subsequently accused Cambodia of laying new landmines,
-    and the border dispute remained active. Experts described Trump's role as
-    helpful but not decisive, and the underlying dispute as far from resolved."
+  status: wrong
+  outcome_date: '2025-12-12'
+  outcome_note: A ceasefire was reached July 28, 2025, and a broader Kuala Lumpur Peace Accord was signed October 26, 2025,
+    with Trump presiding. Trump cited tariff threats as decisive. The accord broke down in November 2025 after Thai soldiers
+    were injured by a landmine. On December 8, Thailand conducted air strikes on Cambodian military sites. On December 12,
+    Trump announced via Truth Social that he had again spoken with both leaders and secured a halt to hostilities — suggesting
+    the initial claim that "it worked" required at least two further interventions.
