@@ -416,3 +416,79 @@ entries:
     Freedom House rates Rwanda "Not Free." The "absolutely terrific" job referenced includes Rwanda's export of troops and
     support to the M23 rebel movement in the DRC — a conflict that would later produce a US-brokered minerals deal Trump praised
     in December 2025 (see deals register).
+- id: sm025
+  date: '2018-01-01'
+  term: 1
+  subject: Adolf Hitler
+  country: Germany (historical)
+  regime_type: historical_totalitarian
+  historical: true
+  source_type: reported
+  quote: '"Hitler did some good things, too." When pressed on what, Trump replied: "Well, he rebuilt the economy."'
+  context: Private White House conversations, multiple occasions — reported by Chief of Staff John Kelly
+  source: Kelly to NYT (Jim Sciutto, "The Return of Great Powers"); corroborated in The Atlantic (Jeffrey Goldberg), October
+    2024
+  source_url: https://www.axios.com/2024/10/23/john-kelly-trump-hitler
+  praise_type:
+  - rehabilitation
+  - economic
+  confidence: reported
+  notes: Reported by General John Kelly, White House Chief of Staff 2017–2019, in interviews with multiple journalists in
+    October 2024. Kelly stated Trump raised the subject "more than once" and that when Kelly would refute it — "nothing he
+    did was good" — Trump would occasionally return to the topic. Kelly described himself as being "sort of horrified" by
+    the repeated comment. Trump denied ever making the statement. Classified as reported/denied; included on grounds that
+    the source is a named former senior official speaking under his own name with no apparent motive for fabrication, and
+    that the claim was corroborated across separate journalistic accounts. The economic framing — "he rebuilt the economy"
+    — echoes the praise_type pattern for other entries in this register.
+- id: sm026
+  date: '2018-06-01'
+  term: 1
+  subject: Adolf Hitler
+  country: Germany (historical)
+  regime_type: historical_totalitarian
+  historical: true
+  source_type: reported
+  quote: '"I need the kind of generals that Hitler had. People who were totally loyal to him, that follow orders."'
+  context: Private White House conversation — reported by Chief of Staff John Kelly and confirmed by Atlantic editor-in-chief
+    Jeffrey Goldberg
+  source: Jeffrey Goldberg, The Atlantic; John Kelly interview, October 22, 2024
+  source_url: https://www.theatlantic.com/politics/archive/2024/10/trump-military-generals-hitler/680327/
+  praise_type:
+  - loyalty
+  - control
+  - decisiveness
+  confidence: reported
+  notes: Reported first by Jeffrey Goldberg (The Atlantic) and confirmed by Kelly in the same publication. When Kelly replied
+    that German generals had in fact tried to kill Hitler — Operation Valkyrie — Trump reportedly insisted the generals were
+    "loyal to him." Kelly's account was also corroborated in "The Divider" (Baker and Glasser, 2022), in which Trump asked
+    Kelly why he was not "like the German generals." The specificity of the loyalty framing — generals who obey without question
+    — is consistent with Trump's documented frustrations with military and civilian subordinates who invoked constitutional
+    limits. Trump denied the statement. Classified as reported/denied; sourcing matches sm025 criteria.
+- id: sm027
+  date: '2026-06-19'
+  term: 2
+  subject: Adolf Hitler / Mao Zedong / Joseph Stalin
+  country: Multiple (historical)
+  regime_type: historical_totalitarian
+  historical: true
+  source_type: public
+  quote: '"Presidential Historian Dave King — Sounds good to me!"'
+  context: Truth Social post amplifying document comparing Trump to Hitler, Mao, Stalin, Genghis Khan, Attila the Hun, and
+    Napoleon
+  source: 'Maggie Haberman and Jonathan Swan, "Regime Change: Inside the Imperial Presidency of Donald Trump," Simon & Schuster,
+    June 2026; CNN; Raw Story'
+  source_url: https://www.cnn.com/2026/06/18/politics/new-book-reveals-how-trump-compared-himself-to-mao-stalin-atilla-the-hun
+  praise_type:
+  - envy
+  - strength
+  - control
+  confidence: documented
+  notes: Reported in Haberman and Swan's "Regime Change" (June 2026), drawn from a March 2026 interview during which Trump
+    showed the authors a two-page document he had received from a man he identified as "presidential historian Dave King."
+    The document argued that Alexander the Great, the Caesars, Genghis Khan, Attila the Hun, Napoleon, Hitler, Mao, and Stalin
+    all lacked global reach — but Trump's power was not local. Haberman and Swan identified "Dave King" as Gary Player's longtime
+    golf caddy, not a historian. Trump had independently promoted the same document on Truth Social with the caption "Sounds
+    good to me!" — making this the only entry in this register where the praise of historical mass murderers is publicly documented
+    in Trump's own words rather than reported by witnesses. Haberman and Swan noted "the evident pleasure he took in the company
+    of Mao, Hitler, and Stalin — the untroubled ease with which he accepted a place among men who had reshaped the world through
+    conquest and fear."

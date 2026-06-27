@@ -71,19 +71,27 @@ body_class: page-strongmen
     <button class="smf" data-filter="praise" data-value="loyalty">Loyalty</button>
     <button class="smf" data-filter="praise" data-value="rehabilitation">Rehabilitation</button>
   </div>
+  <div class="sm-filter-group">
+    <span class="sm-filter-label">Source</span>
+    <button class="smf active" data-filter="sourcetype" data-value="all">All</button>
+    <button class="smf" data-filter="sourcetype" data-value="public">Public / documented</button>
+    <button class="smf" data-filter="sourcetype" data-value="reported">Reported / denied</button>
+  </div>
 </div>
 
 <p class="sm-count-line">Showing <span id="sm-count">{{ entries | size }}</span> of {{ entries | size }} incidents</p>
 
 <div class="sm-list" id="sm-list">
 {% for entry in entries %}
-<div class="sm-entry"
+<div class="sm-entry{% if entry.historical %} sm-entry--historical{% endif %}{% if entry.source_type == 'reported' %} sm-entry--reported{% endif %}"
      data-id="{{ entry.id }}"
      data-term="{{ entry.term }}"
      data-subject="{{ entry.subject }}"
      data-praise="{{ entry.praise_type | join: '|' }}"
      data-regime="{{ entry.regime_type }}"
-     data-country="{{ entry.country }}">
+     data-country="{{ entry.country }}"
+     data-sourcetype="{{ entry.source_type | default: 'public' }}"
+     data-historical="{{ entry.historical | default: false }}">
 
   <div class="sm-entry-header">
     <div class="sm-entry-meta">
@@ -92,6 +100,8 @@ body_class: page-strongmen
       <span class="sm-subject-chip sm-subject--{{ entry.subject | slugify }}">{{ entry.subject }}</span>
       <span class="sm-country-chip">{{ entry.country }}</span>
       <span class="sm-regime-chip sm-regime--{{ entry.regime_type }}">{{ entry.regime_type | replace: '_', ' ' }}</span>
+      {% if entry.source_type == 'reported' %}<span class="sm-reported-chip">Reported / denied</span>{% endif %}
+      {% if entry.historical %}<span class="sm-historical-chip">Historical</span>{% endif %}
     </div>
     <div class="sm-praise-chips">
       {% for pt in entry.praise_type %}
@@ -385,6 +395,31 @@ body_class: page-strongmen
   font-size: 0.7rem;
   color: var(--color-body);
 }
+
+/* Historical / reported entries */
+.sm-entry--historical { border-left-color: #666; }
+.sm-entry--reported   { opacity: 0.88; }
+.sm-reported-chip {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid #c0392b;
+  color: #c0392b;
+  border-radius: 2px;
+  font-style: italic;
+}
+.sm-historical-chip {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid #888;
+  color: #888;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.sm-subject--adolf-hitlermao-zedong-joseph-stalin,
+.sm-subject--adolf-hitler { color: #333; background: #33333312; border-color: #33333344; font-style: italic; }
 </style>
 
 <script>
@@ -422,7 +457,9 @@ body_class: page-strongmen
       var subjectMatch = activeFilters.subject === 'all' || el.getAttribute('data-subject') === activeFilters.subject;
       var praiseList   = el.getAttribute('data-praise').split('|');
       var praiseMatch  = activeFilters.praise === 'all' || praiseList.indexOf(activeFilters.praise) !== -1;
-      var show = termMatch && subjectMatch && praiseMatch;
+      var sourceType   = el.getAttribute('data-sourcetype') || 'public';
+      var sourceMatch  = activeFilters.sourcetype === 'all' || sourceType === activeFilters.sourcetype;
+      var show = termMatch && subjectMatch && praiseMatch && sourceMatch;
       el.style.display = show ? '' : 'none';
       if (show) visible++;
     });
