@@ -11,33 +11,44 @@
 
       <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active" aria-current="page"{% endif %}>The Doctrine</a></li>
       <li><a href="{{ '/map/' | relative_url }}"{% if page.url contains '/map' %} class="active" aria-current="page"{% endif %}>The Map</a></li>
+      <li><a href="{{ '/bribes/' | relative_url }}"{% if page.url contains '/bribes' %} class="active" aria-current="page"{% endif %}>The Ledger</a></li>
+      <li><a href="{{ '/interests/' | relative_url }}"{% if page.url contains '/interests' %} class="active" aria-current="page"{% endif %}>The Interests</a></li>
 
-      {% assign in_trackers = false %}
-      {% if page.url contains '/bribes' or page.url contains '/toll' or page.url contains '/contradictions' or page.url contains '/leaderboard' or page.url contains '/predictions' or page.url contains '/withdrawals' or page.url contains '/epithets' or page.url contains '/strongmen' %}{% assign in_trackers = true %}{% endif %}
+      {% assign in_conduct = false %}
+      {% if page.url contains '/strongmen' or page.url contains '/epithets' or page.url contains '/contradictions' or page.url contains '/leaderboard' %}{% assign in_conduct = true %}{% endif %}
       <li class="nav-dropdown">
-        <button class="nav-dropdown-trigger{% if in_trackers %} active{% endif %}" aria-expanded="false" aria-haspopup="true">
-          Trackers <span class="nav-dropdown-arrow">▾</span>
+        <button class="nav-dropdown-trigger{% if in_conduct %} active{% endif %}" aria-expanded="false" aria-haspopup="true">
+          Conduct <span class="nav-dropdown-arrow">▾</span>
         </button>
         <ul class="nav-dropdown-menu" role="menu">
-          <li><a href="{{ '/bribes/' | relative_url }}"{% if page.url contains '/bribes' %} class="active"{% endif %} role="menuitem">The Ledger</a></li>
-          <li><a href="{{ '/toll/' | relative_url }}"{% if page.url contains '/toll' %} class="active"{% endif %} role="menuitem">The Toll</a></li>
-          <li><a href="{{ '/contradictions/' | relative_url }}"{% if page.url contains '/contradictions' %} class="active"{% endif %} role="menuitem">Contradictions</a></li>
-          <li><a href="{{ '/predictions/' | relative_url }}"{% if page.url contains '/predictions' %} class="active"{% endif %} role="menuitem">Predictions</a></li>
-          <li><a href="{{ '/withdrawals/' | relative_url }}"{% if page.url contains '/withdrawals' %} class="active"{% endif %} role="menuitem">Withdrawals</a></li>
-          <li><a href="{{ '/epithets/' | relative_url }}"{% if page.url contains '/epithets' %} class="active"{% endif %} role="menuitem">Epithets</a></li>
           <li><a href="{{ '/strongmen/' | relative_url }}"{% if page.url contains '/strongmen' %} class="active"{% endif %} role="menuitem">Strongmen</a></li>
+          <li><a href="{{ '/epithets/' | relative_url }}"{% if page.url contains '/epithets' %} class="active"{% endif %} role="menuitem">Epithets</a></li>
+          <li><a href="{{ '/contradictions/' | relative_url }}"{% if page.url contains '/contradictions' %} class="active"{% endif %} role="menuitem">Contradictions</a></li>
           <li><a href="{{ '/leaderboard/' | relative_url }}"{% if page.url contains '/leaderboard' %} class="active"{% endif %} role="menuitem">Leaderboard</a></li>
         </ul>
       </li>
 
+      {% assign in_record = false %}
+      {% if page.url contains '/withdrawals' or page.url contains '/predictions' or page.url contains '/toll' or page.url contains '/deals' %}{% assign in_record = true %}{% endif %}
+      <li class="nav-dropdown">
+        <button class="nav-dropdown-trigger{% if in_record %} active{% endif %}" aria-expanded="false" aria-haspopup="true">
+          Record <span class="nav-dropdown-arrow">▾</span>
+        </button>
+        <ul class="nav-dropdown-menu" role="menu">
+          <li><a href="{{ '/withdrawals/' | relative_url }}"{% if page.url contains '/withdrawals' %} class="active"{% endif %} role="menuitem">Withdrawals</a></li>
+          <li><a href="{{ '/predictions/' | relative_url }}"{% if page.url contains '/predictions' %} class="active"{% endif %} role="menuitem">Predictions</a></li>
+          <li><a href="{{ '/toll/' | relative_url }}"{% if page.url contains '/toll' %} class="active"{% endif %} role="menuitem">The Toll</a></li>
+          <li><a href="{{ '/deals/' | relative_url }}"{% if page.url contains '/deals' %} class="active"{% endif %} role="menuitem">Deals</a></li>
+        </ul>
+      </li>
+
       {% assign in_archive = false %}
-      {% if page.url contains '/deals' or page.url contains '/cables' or page.url contains '/quotes' or page.url contains '/dispatches' %}{% assign in_archive = true %}{% endif %}
+      {% if page.url contains '/cables' or page.url contains '/quotes' or page.url contains '/dispatches' %}{% assign in_archive = true %}{% endif %}
       <li class="nav-dropdown">
         <button class="nav-dropdown-trigger{% if in_archive %} active{% endif %}" aria-expanded="false" aria-haspopup="true">
           Archive <span class="nav-dropdown-arrow">▾</span>
         </button>
         <ul class="nav-dropdown-menu" role="menu">
-          <li><a href="{{ '/deals/' | relative_url }}"{% if page.url contains '/deals' %} class="active"{% endif %} role="menuitem">Deals</a></li>
           <li><a href="{{ '/cables/' | relative_url }}"{% if page.url contains '/cables' %} class="active"{% endif %} role="menuitem">Cables</a></li>
           <li><a href="{{ '/quotes/' | relative_url }}"{% if page.url contains '/quotes' %} class="active"{% endif %} role="menuitem">Quotes</a></li>
           <li><a href="{{ '/dispatches/' | relative_url }}"{% if page.url contains '/dispatches' %} class="active"{% endif %} role="menuitem">Dispatches</a></li>

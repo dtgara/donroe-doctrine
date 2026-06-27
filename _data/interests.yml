@@ -1,0 +1,440 @@
+# The Interests — Trump Family Foreign Business Register
+# Documents foreign business deals, investments, and commercial entanglements
+# of the Trump family and affiliated parties during both presidential terms.
+# Distinct from The Ledger (payments received): these are assets, stakes, and
+# developments built or acquired in countries subject to US foreign policy.
+# Last updated: 2026-06-27
+
+entries:
+
+  - id: i001
+    date: "2018-04-06"
+    term: 1
+    family_member: Ivanka Trump
+    country: China
+    region: east_asia
+    deal_type: trademark
+    title: "China — 13 trademark approvals, batch 1"
+    description: "China's Trademark Office granted 13 trademarks to Ivanka Trump's brand, covering jewellery, bags, and spa services."
+    value: null
+    value_note: "Commercial value undisclosed"
+    status: active
+    partner: "China National Intellectual Property Administration"
+    concurrent_policy: "Active US-China trade war. Trump had announced $50B in tariffs on Chinese goods two months prior. Ivanka was serving as senior White House adviser on economic policy."
+    source: "AP; CREW, April 2018"
+    source_url: "https://www.citizensforethics.org/reports-investigations/crew-investigations/ivanka-trump-trademarks/"
+
+  - id: i002
+    date: "2018-11-06"
+    term: 1
+    family_member: Ivanka Trump
+    country: China
+    region: east_asia
+    deal_type: trademark
+    title: "China — 16 trademark approvals, batch 2"
+    description: "China's Trademark Office granted initial approval for 16 further trademarks to Ivanka Trump's brand. Categories included voting machines — a line her brand had no commercial use for."
+    value: null
+    value_note: "Commercial value undisclosed"
+    status: active
+    partner: "China National Intellectual Property Administration"
+    concurrent_policy: "US-China trade war ongoing. G20 Trump-Xi bilateral in Buenos Aires (December 2018) produced a 90-day tariff truce weeks after this approval."
+    source: "CNBC, November 6, 2018"
+    source_url: "https://www.cnbc.com/2018/11/06/ivanka-trump-gets-initial-approval-from-china-for-16-trademarks.html"
+
+  - id: i003
+    date: "2019-02-25"
+    term: 1
+    family_member: Ivanka Trump
+    country: China
+    region: east_asia
+    deal_type: trademark
+    title: "China — 5 trademark approvals, batch 3"
+    description: "China granted five further trademarks to Ivanka Trump's brand — which she had announced closing in July 2018, citing White House duties. Trademark applications continued after the announced closure."
+    value: null
+    value_note: "Commercial value undisclosed"
+    status: active
+    partner: "China National Intellectual Property Administration"
+    concurrent_policy: "Phase One US-China trade deal negotiations underway. Trump was the lead US negotiator. Ivanka continued in her White House advisory role."
+    source: "Pace IP Forum; CREW, February 2019"
+    source_url: "https://pipself.blogs.pace.edu/2019/02/25/china-grants-5-more-trademarks-to-ivanka-trump-in-midst-of-u-s-china-trade-negotiations/"
+
+  - id: i004
+    date: "2021-06-01"
+    term: 1
+    family_member: "Kushner / Affinity Partners"
+    country: Saudi Arabia
+    region: middle_east
+    deal_type: investment_fund
+    title: "Saudi PIF — $2 billion Affinity Partners commitment"
+    description: "The Saudi sovereign wealth fund committed $2 billion to Affinity Partners, Jared Kushner's newly formed investment firm, six months after Kushner left his White House role. The PIF's advisory board had flagged the commitment as unsatisfactory on multiple dimensions including reputational risk."
+    value: 2000000000
+    value_note: "$2 billion"
+    status: active
+    partner: "Saudi Public Investment Fund (PIF)"
+    concurrent_policy: "Kushner had been senior White House adviser and lead Middle East negotiator 2017-2021, overseeing the Abraham Accords and direct US-Saudi policy throughout. The $2B arrived six months after he left office."
+    source: "Senate Finance Committee; NYT, June 2021"
+    source_url: "https://www.finance.senate.gov/ranking-members-news/wyden-garcia-investigate-kushner-raising-billions-from-middle-east-governments-while-negotiating-us-foreign-policy"
+
+  - id: i005
+    date: "2024-05-01"
+    term: 2
+    family_member: "Kushner / Affinity Partners"
+    country: Serbia
+    region: europe
+    deal_type: real_estate
+    title: "Belgrade — former General Staff HQ, secret 99-year lease"
+    description: "Affinity Partners signed an investment agreement with the Republic of Serbia to redevelop the former Yugoslav General Staff headquarters — a landmark site partially destroyed by NATO bombing in 1999. Kushner's entity received a 77.5% stake; Serbia 22.5%. Land leased free of charge for 99 years with option to convert to ownership. Agreement was not publicly disclosed; leaked to press."
+    value: null
+    value_note: "Prime central Belgrade real estate; value undisclosed"
+    status: under_construction
+    partner: "Republic of Serbia (government counterparty)"
+    concurrent_policy: "Serbia is an EU candidate state. The US has historically used its Serbia relationship as a lever against Russian Balkan influence. A special parliamentary law was later passed (November 2025) to enable the project over planning objections."
+    source: "Serbian Monitor; bne IntelliNews, leaked documents 2024"
+    source_url: "https://www.intellinews.com/leaked-documents-show-belgrade-signed-secret-deal-with-kushner-to-redevelop-protected-site-411525/"
+
+  - id: i006
+    date: "2024-09-01"
+    term: 2
+    family_member: "Kushner / Affinity Partners"
+    country: Albania
+    region: europe
+    deal_type: real_estate
+    title: "Albania — Mediterranean coast + Sazan island development rights"
+    description: "The Albanian government granted Kushner development rights to a stretch of Mediterranean coastline plus Sazan island — a former Cold War military munitions depot. EU monitors warned the deals risk Albania's EU accession process. Combined Albanian and Serbian commitments exceed $1 billion."
+    value: null
+    value_note: "Over $1B combined with Serbia projects"
+    status: announced
+    partner: "Government of Albania"
+    concurrent_policy: "Albania is an EU candidate state. US engagement with Tirana factors into Albanian accession trajectory. Senate Finance and House Oversight opened investigations in 2024."
+    source: "Newsweek; Balkan Insight; US Senate, 2024"
+    source_url: "https://www.newsweek.com/how-jared-kushner-backed-resort-risks-albanias-eu-bid-12110633"
+
+  - id: i007
+    date: "2025-01-17"
+    term: 2
+    family_member: "WLFI / Trump crypto"
+    country: "United Arab Emirates"
+    region: middle_east
+    deal_type: crypto
+    title: "UAE — 49% stake in World Liberty Financial, $500 million"
+    description: "An Abu Dhabi entity linked to Sheikh Tahnoon bin Zayed Al Nahyan acquired a 49% stake in World Liberty Financial — the Trump family cryptocurrency venture — for $500 million, four days before Trump's inauguration. $187 million transferred immediately to Trump family-controlled entities. Deal was not publicly disclosed at time of signing."
+    value: 500000000
+    value_note: "$500M total; $187M immediately to Trump family entities"
+    status: active
+    partner: "Aryam Investment 1 (Abu Dhabi, Sheikh Tahnoon-linked)"
+    concurrent_policy: "Sheikh Tahnoon is the UAE national security adviser and brother of President MBZ. The UAE was among the first foreign governments to secure White House access in Term 2. The UAE subsequently pledged $1.4 trillion in US investments."
+    source: "Wall Street Journal; CNN, January-February 2026"
+    source_url: "https://www.cnn.com/2026/02/01/politics/trump-family-crypto-world-liberty-financial-uae"
+
+  - id: i008
+    date: "2025-04-01"
+    term: 2
+    family_member: "Trump Organization"
+    country: India
+    region: south_asia
+    deal_type: real_estate
+    title: "India — eight Trump-branded projects, including $10M Mumbai Reliance deal"
+    description: "Trump's Indian business partners are developing eight Trump-branded projects across the country. Trump's 2024 financial disclosures revealed a new $10 million development fee from Reliance 4IR Realty Development (a Reliance Industries subsidiary) for an unnamed Mumbai project."
+    value: 10000000
+    value_note: "$10M Mumbai fee; total Indian portfolio value undisclosed across 8 projects"
+    status: active
+    partner: "Reliance Industries (Mumbai); multiple Indian developers"
+    concurrent_policy: "PM Modi visited the White House in February 2025. India was subject to Liberation Day tariffs but received favorable treatment in subsequent negotiations. India is simultaneously Trump's largest Asian foreign real estate market."
+    source: "CREW; Newsweek, 2025"
+    source_url: "https://www.citizensforethics.org/reports-investigations/crew-reports/trump-foreign-development-tracker/"
+
+  - id: i009
+    date: "2025-04-28"
+    term: 2
+    family_member: "Trump Organization"
+    country: Qatar
+    region: middle_east
+    deal_type: real_estate
+    title: "Simaisma — $5.5 billion luxury golf resort, north of Doha"
+    description: "The Trump Organization announced a luxury golf resort development at Simaisma in partnership with Dar Global. The $5.5 billion development includes Trump-branded beachside villas and an 18-hole championship golf course."
+    value: 5500000000
+    value_note: "$5.5 billion total development value"
+    status: announced
+    partner: "Dar Global"
+    concurrent_policy: "Qatar offered Trump a Boeing 747-8 as a temporary Air Force One replacement in May 2025 — weeks after this deal was announced. Trump accepted. Qatar's Al Udeid Air Base hosts the largest US military presence in the Middle East."
+    source: "NBC News; CREW, April 2025"
+    source_url: "https://www.nbcnews.com/politics/donald-trump/trump-franchise-expanding-middle-east-are-ethical-concerns-rcna206777"
+
+  - id: i010
+    date: "2025-04-30"
+    term: 2
+    family_member: "Trump Organization"
+    country: "United Arab Emirates"
+    region: middle_east
+    deal_type: real_estate
+    title: "Dubai — Trump International Hotel and Tower"
+    description: "The Trump Organization's fifth partnership with Dar Global. A luxury high-rise hotel and tower in Dubai, announced days before Trump's Middle East visit."
+    value: null
+    value_note: "Value undisclosed; Dar Global carries $5.9B active development portfolio"
+    status: announced
+    partner: "Dar Global"
+    concurrent_policy: "Trump visited the UAE in May 2025. The UAE announced a $1.4 trillion US investment commitment during the visit. The WLFI 49% stake holder (Sheikh Tahnoon) is UAE national security adviser."
+    source: "CREW; NBC News, April-May 2025"
+    source_url: "https://www.citizensforethics.org/reports-investigations/crew-reports/trump-foreign-development-tracker/"
+
+  - id: i011
+    date: "2025-05-01"
+    term: 2
+    family_member: "Trump Organization"
+    country: Vietnam
+    region: east_asia
+    deal_type: real_estate
+    title: "Hung Yen — Trump International golf and residential groundbreaking"
+    description: "The Trump Organization broke ground on its first Vietnamese development near Hanoi — two championship golf courses, villas, spa, and dining. First Trump-branded development in Southeast Asia outside existing markets."
+    value: null
+    value_note: "Value undisclosed"
+    status: under_construction
+    partner: "Vietnamese development partner (undisclosed)"
+    concurrent_policy: "Vietnam faced 46% Liberation Day tariffs (April 2025). A tariff reduction framework was under active negotiation at the time of the groundbreaking."
+    source: "CREW; NBC News, May 2025"
+    source_url: "https://www.citizensforethics.org/reports-investigations/crew-reports/trump-foreign-development-tracker/"
+
+  - id: i012
+    date: "2025-05-13"
+    term: 2
+    family_member: "Trump Organization"
+    country: Saudi Arabia
+    region: middle_east
+    deal_type: real_estate
+    title: "Jeddah — Trump Tower, $1 billion Dar Global partnership"
+    description: "The Trump Organization and Dar Global announced Trump Tower Jeddah, a $1 billion luxury tower. Announced the same day as Trump's appearance at the US-Saudi Investment Forum in Riyadh."
+    value: 1000000000
+    value_note: "$1 billion"
+    status: announced
+    partner: "Dar Global / Dar Al Arkan"
+    concurrent_policy: "Announced during Trump's Saudi state visit. Trump praised MBS at the Investment Forum the same day. Saudi Arabia announced $600B in US investment commitments during the visit."
+    source: "PBS NewsHour; Trump Organization press release, May 2025"
+    source_url: "https://www.pbs.org/newshour/politics/in-a-deal-with-trump-organization-dar-global-will-launch-a-1-billion-project-in-saudi-arabia"
+
+  - id: i013
+    date: "2025-05-13"
+    term: 2
+    family_member: "Trump Organization"
+    country: Saudi Arabia
+    region: middle_east
+    deal_type: real_estate
+    title: "Riyadh — Trump Tower, second Saudi project"
+    description: "A second Saudi development announced simultaneously with Trump Tower Jeddah during the state visit, located in the capital Riyadh. Details and value not publicly disclosed."
+    value: null
+    value_note: "Value undisclosed"
+    status: announced
+    partner: "Dar Global"
+    concurrent_policy: "Same state visit, same day as Jeddah announcement. Saudi Arabia is simultaneously Trump's largest foreign business market and the destination of his first foreign visit of Term 2."
+    source: "NBC News; CREW, May 2025"
+    source_url: "https://www.nbcnews.com/politics/donald-trump/trump-franchise-expanding-middle-east-are-ethical-concerns-rcna206777"
+
+  - id: i014
+    date: "2025-05-13"
+    term: 2
+    family_member: "Trump Organization"
+    country: Oman
+    region: middle_east
+    deal_type: real_estate
+    title: "Oman — Trump International Hotel on government land, state tourism partner"
+    description: "A Trump International Hotel under development in Oman on government-owned land, with Oman's state tourism agency as a development partner. Includes golf course, 140 rooms, and spa. Scheduled completion December 2028."
+    value: null
+    value_note: "Value undisclosed; government land provided at no cost to development"
+    status: under_construction
+    partner: "Omani government tourism agency (state partner)"
+    concurrent_policy: "Oman is a US partner in Gulf security architecture and historically a back-channel for Iran negotiations. The US-Iran MOU (June 2026) was negotiated partly via Omani diplomatic channels."
+    source: "CREW foreign development tracker, 2025"
+    source_url: "https://www.citizensforethics.org/reports-investigations/crew-reports/trump-foreign-development-tracker/"
+
+  - id: i015
+    date: "2025-07-01"
+    term: 2
+    family_member: "WLFI / Trump crypto"
+    country: "United Arab Emirates"
+    region: middle_east
+    deal_type: crypto
+    title: "UAE — MGX $2B Binance investment settled in Trump family stablecoin USD1"
+    description: "Abu Dhabi investment firm MGX completed a $2 billion investment in Binance using World Liberty Financial's USD1 stablecoin as the settlement currency. The transaction directly benefited WLFI token holders, including the Trump family."
+    value: 2000000000
+    value_note: "$2B transaction volume through Trump family stablecoin"
+    status: active
+    partner: "MGX (Abu Dhabi); Binance"
+    concurrent_policy: "The UAE was negotiating its $1.4T US investment commitment during this period. A sovereign wealth-adjacent transaction was routed through a presidential family financial instrument."
+    source: "CoinTelegraph; ABC News; Center for American Progress, 2025"
+    source_url: "https://abcnews.go.com/US/trump-family-crypto-venture-tapped-part-2b-emirati/story?id=121415842"
+
+  - id: i016
+    date: "2025-09-15"
+    term: 2
+    family_member: "Kushner / Affinity Partners"
+    country: Saudi Arabia
+    region: middle_east
+    deal_type: investment_fund
+    title: "Affinity + Silver Lake + Saudi PIF — $52.5B Electronic Arts acquisition"
+    description: "Affinity Partners joined Silver Lake and the Saudi Public Investment Fund in a consortium to acquire Electronic Arts for $52.5 billion. The Saudi PIF — Affinity's primary backer — was a co-principal in the deal."
+    value: 52500000000
+    value_note: "$52.5B total; Affinity share undisclosed"
+    status: announced
+    partner: "Silver Lake; Saudi Public Investment Fund"
+    concurrent_policy: "Saudi Arabia was simultaneously deepening US investment commitments and receiving favorable foreign policy treatment. A former White House adviser's investment fund and a Saudi sovereign wealth fund were co-investing in a major US media acquisition."
+    source: "Reuters; Wikipedia (Affinity Partners), September 2025"
+    source_url: "https://en.wikipedia.org/wiki/Affinity_Partners"
+
+  - id: i017
+    date: "2025-11-07"
+    term: 2
+    family_member: "Kushner / Affinity Partners"
+    country: Serbia
+    region: europe
+    deal_type: real_estate
+    title: "Serbia — parliament passes special law enabling Kushner project"
+    description: "The Serbian parliament passed a special law — 130-40 — clearing legal obstacles to Kushner's Belgrade development that existing planning rules did not permit. No comparable legislative carve-out for a foreign private investor has occurred in recent European political history."
+    value: null
+    value_note: "Legal framework enabling undisclosed-value development"
+    status: active
+    partner: "Republic of Serbia"
+    concurrent_policy: "Trump hosted Viktor Orbán at the White House on the same day. Serbia's alignment between Hungary and Russia in the Balkans makes US-Serbia relations a geopolitical pressure point."
+    source: "PBS NewsHour; bne IntelliNews, November 2025"
+    source_url: "https://www.pbs.org/newshour/world/serbia-passes-bill-enabling-jared-kushner-to-build-luxury-compound-despite-opposition"
+
+  - id: i018
+    date: "2026-03-10"
+    term: 2
+    family_member: "Don Jr. & Eric Trump"
+    country: Ukraine
+    region: europe
+    deal_type: defense
+    title: "Powerus Corp — drone company acquiring Ukrainian technology, Pentagon contracts sought"
+    description: "Eric Trump and Donald Trump Jr. invested in Powerus Corporation — merging with their golf holding company Aureus Greenway Holdings — which is in active talks to acquire Ukrainian drone manufacturers or license Ukrainian drone technology for US military sales. A Korean fund committed $50M. Erik Prince chairs a linked drone company, Swarmer."
+    value: null
+    value_note: "Korean fund committed $50M; Pentagon contracts sought; total undisclosed"
+    status: active
+    partner: "Powerus Corp; Ukrainian drone manufacturers (in talks); Erik Prince / Swarmer"
+    concurrent_policy: "The Trump administration was simultaneously negotiating the US-Ukraine minerals deal (April 2025) and mediating ceasefire talks. The sons hold a financial interest in the continuation of Ukrainian drone production capacity."
+    source: "Military Times; PBS NewsHour; Responsible Statecraft, March 2026"
+    source_url: "https://www.militarytimes.com/news/your-military/2026/03/10/trumps-sons-invest-in-companies-vying-to-fill-gaps-in-us-drone-industry/"
+
+  - id: i019
+    date: "2026-03-10"
+    term: 2
+    family_member: "Don Jr. & Eric Trump"
+    country: "Gulf States"
+    region: middle_east
+    deal_type: defense
+    title: "Gulf states — Powerus drone interceptor sales under Iran attack"
+    description: "Powerus Corporation, backed by the Trump sons, sought to sell drone interceptor systems to Gulf states under active Iranian drone attack. The Trump family drone investment directly benefited from the continuation of Iran-Gulf conflict."
+    value: null
+    value_note: "Contract values undisclosed"
+    status: active
+    partner: "Gulf state defense ministries (in talks)"
+    concurrent_policy: "The Trump administration was simultaneously negotiating the US-Iran MOU (signed June 2026), whose 60-day ceasefire directly affected the market for the sons' product. The president's family held financial interests on both sides of the Iran policy decision."
+    source: "PBS NewsHour, March-June 2026"
+    source_url: "https://www.pbs.org/newshour/politics/company-backed-by-trump-sons-looks-to-sell-drone-interceptors-to-gulf-states-being-attacked-by-iran"
+
+# Parallel axis: concurrent US government policy actions, plotted against business entries above.
+# Cross-referenced to entries by country.
+
+policy_events:
+
+  - id: pe001
+    date: "2017-05-20"
+    country: Saudi Arabia
+    region: middle_east
+    title: "Trump first foreign visit — $110B arms deal"
+    description: "Trump chose Saudi Arabia as his first foreign destination of Term 1. A $110 billion arms package was announced. The visit established the template for the Saudi-as-patron relationship."
+    category: state_visit
+
+  - id: pe002
+    date: "2018-04-03"
+    country: China
+    region: east_asia
+    title: "US announces $50B China tariffs — trade war begins"
+    description: "The Trump administration announced $50 billion in tariffs on Chinese goods. Ivanka Trump's Chinese trademark applications were simultaneously being processed by the Chinese government."
+    category: policy_action
+
+  - id: pe003
+    date: "2018-12-01"
+    country: China
+    region: east_asia
+    title: "Trump-Xi G20 Buenos Aires — 90-day tariff truce"
+    description: "Trump and Xi agreed to a 90-day pause in tariff escalation at the G20. China had approved 16 Ivanka trademarks three weeks prior."
+    category: bilateral_meeting
+
+  - id: pe004
+    date: "2018-11-20"
+    country: Saudi Arabia
+    region: middle_east
+    title: "Trump Khashoggi statement — defends MBS against CIA finding"
+    description: "Trump issued a written statement defending MBS four weeks after Khashoggi's murder, despite CIA assessment that MBS personally ordered the killing. Saudi PIF would commit $2B to Kushner two years later."
+    category: policy_statement
+
+  - id: pe005
+    date: "2025-01-20"
+    country: "United Arab Emirates"
+    region: middle_east
+    title: "Trump inauguration — UAE given immediate White House access"
+    description: "UAE delegation attended Trump's inauguration with prominent access. The WLFI 49% stake deal had been signed three days prior."
+    category: state_visit
+
+  - id: pe006
+    date: "2025-02-13"
+    country: India
+    region: south_asia
+    title: "Modi White House visit"
+    description: "PM Modi visited the White House. Trump called him a 'great friend.' India is simultaneously Trump's largest Asian foreign real estate market with eight active projects."
+    category: bilateral_meeting
+
+  - id: pe007
+    date: "2025-04-22"
+    country: Ukraine
+    region: europe
+    title: "US-Ukraine minerals deal signed"
+    description: "The Trump administration signed a minerals access deal giving the US preferential access to Ukrainian resources. The Trump sons were simultaneously acquiring Ukrainian defense technology."
+    category: deal_signed
+
+  - id: pe008
+    date: "2025-05-13"
+    country: Saudi Arabia
+    region: middle_east
+    title: "US-Saudi Investment Forum — $600B pledge; Trump praises MBS"
+    description: "Trump attended the Investment Forum in Riyadh. Saudi Arabia pledged $600B in US investments. Trump Tower Jeddah and Riyadh were announced the same day."
+    category: state_visit
+
+  - id: pe009
+    date: "2025-05-14"
+    country: Qatar
+    region: middle_east
+    title: "Qatar offers Boeing 747-8 as Air Force One replacement — accepted"
+    description: "Qatar offered Trump a replacement Air Force One. Trump accepted. The offer followed the announcement of the $5.5B Simaisma Trump resort by two weeks."
+    category: policy_statement
+
+  - id: pe010
+    date: "2025-05-15"
+    country: "United Arab Emirates"
+    region: middle_east
+    title: "UAE state visit — $1.4 trillion investment pledge"
+    description: "Trump visited the UAE. The UAE pledged $1.4 trillion in US investments over 10 years. WLFI's 49% stake holder Sheikh Tahnoon is the UAE national security adviser."
+    category: state_visit
+
+  - id: pe011
+    date: "2025-11-07"
+    country: Serbia
+    region: europe
+    title: "Serbia passes special Kushner law"
+    description: "Serbian parliament passed legislation enabling Kushner's Belgrade project over planning law. Trump simultaneously hosted Orbán at the White House."
+    category: policy_action
+
+  - id: pe012
+    date: "2026-03-19"
+    country: Saudi Arabia
+    region: middle_east
+    title: "Senate Finance opens Kushner/Affinity investigation"
+    description: "Senators Wyden and Garcia opened a formal investigation into Kushner raising billions from Middle Eastern governments while simultaneously negotiating US foreign policy."
+    category: investigation
+
+  - id: pe013
+    date: "2026-06-17"
+    country: Iran
+    region: middle_east
+    title: "US-Iran MOU signed — 60-day ceasefire, enrichment reaffirmation"
+    description: "The Versailles MOU was signed between the US and Iran. The 60-day ceasefire directly affected the market for the Trump sons' drone interceptor products, which they had been selling to Gulf states under Iranian attack."
+    category: deal_signed
