@@ -2,45 +2,45 @@
 layout: section
 title: "The Interests"
 section_intro: >
-  A register of foreign business deals, investments, and commercial entanglements
-  held by the Trump family and affiliated parties during both presidential terms —
-  plotted against concurrent US government policy actions toward the same countries.
-  Distinct from The Ledger, which documents payments received: these are assets,
-  developments, and stakes built in countries subject to presidential foreign policy.
+  Foreign business deals, investments, and commercial entanglements held by the Trump
+  family and affiliated parties during both presidential terms, plotted against concurrent
+  US government policy actions toward the same countries. Distinct from The Ledger, which
+  documents payments received: these are assets, stakes, and developments built in countries
+  subject to presidential foreign policy.
 body_class: page-interests
 ---
 
 {% assign entries = site.data.interests.entries %}
-{% assign policy = site.data.interests.policy_events %}
+{% assign policy  = site.data.interests.policy_events %}
 
-<!-- ── Meta bar ── -->
+<!-- Meta bar -->
 <div class="int-meta-bar">
   <div class="int-stat">
     <span class="int-stat-n">{{ entries | size }}</span>
     <span class="int-stat-label">Business interests</span>
   </div>
   <div class="int-stat">
-    <span class="int-stat-n">{{ policy | size }}</span>
-    <span class="int-stat-label">Policy events mapped</span>
-  </div>
-  <div class="int-stat">
-    <span class="int-stat-n" id="int-country-count">—</span>
-    <span class="int-stat-label">Countries affected</span>
-  </div>
-  <div class="int-stat">
     <span class="int-stat-n" id="int-total-value">—</span>
     <span class="int-stat-label">Disclosed value</span>
   </div>
+  <div class="int-stat">
+    <span class="int-stat-n" id="int-country-count">—</span>
+    <span class="int-stat-label">Countries</span>
+  </div>
+  <div class="int-stat">
+    <span class="int-stat-n">{{ policy | size }}</span>
+    <span class="int-stat-label">Policy events mapped</span>
+  </div>
 </div>
 
-<!-- ── Filter bar ── -->
+<!-- Filter bar -->
 <div class="int-filter-bar">
   <div class="int-filter-group">
     <span class="int-filter-label">Family</span>
     <button class="intf active" data-filter="family" data-value="all">All</button>
     <button class="intf" data-filter="family" data-value="Trump Organization">Trump Org</button>
     <button class="intf" data-filter="family" data-value="Kushner / Affinity Partners">Kushner</button>
-    <button class="intf" data-filter="family" data-value="WLFI / Trump crypto">WLFI / Crypto</button>
+    <button class="intf" data-filter="family" data-value="WLFI / Trump crypto">WLFI</button>
     <button class="intf" data-filter="family" data-value="Don Jr. &amp; Eric Trump">Don Jr. &amp; Eric</button>
     <button class="intf" data-filter="family" data-value="Ivanka Trump">Ivanka</button>
   </div>
@@ -61,62 +61,34 @@ body_class: page-interests
     <button class="intf" data-filter="type" data-value="defense">Defense</button>
     <button class="intf" data-filter="type" data-value="trademark">Trademark</button>
   </div>
-  <div class="int-filter-group">
-    <span class="int-filter-label">Status</span>
-    <button class="intf active" data-filter="status" data-value="all">All</button>
-    <button class="intf" data-filter="status" data-value="active">Active</button>
-    <button class="intf" data-filter="status" data-value="announced">Announced</button>
-    <button class="intf" data-filter="status" data-value="under_construction">Under construction</button>
-  </div>
 </div>
 
-<!-- ── Dual-axis timeline ── -->
-<div class="int-timeline-section">
-  <div class="int-timeline-legend">
+<!-- Scatter chart -->
+<div class="int-chart-wrap">
+  <div class="int-chart-legend">
     <span class="int-legend-item"><span class="int-dot" style="background:#C0392B"></span>Trump Org</span>
     <span class="int-legend-item"><span class="int-dot" style="background:#1565C0"></span>Kushner</span>
-    <span class="int-legend-item"><span class="int-dot" style="background:#F39C12"></span>WLFI / Crypto</span>
+    <span class="int-legend-item"><span class="int-dot" style="background:#B8860B"></span>WLFI / Crypto</span>
     <span class="int-legend-item"><span class="int-dot" style="background:#8B1A8B"></span>Don Jr. &amp; Eric</span>
     <span class="int-legend-item"><span class="int-dot" style="background:#C2185B"></span>Ivanka</span>
-    <span class="int-legend-item int-legend-policy"><span class="int-dot" style="background:#2E7D32;border-radius:2px"></span>US policy action</span>
+    <span class="int-legend-item int-legend-sep"><span class="int-dot" style="background:#2E7D32;border-radius:2px;transform:rotate(45deg)"></span>US policy event</span>
   </div>
-
-  <div class="int-timeline-wrap" id="int-timeline-wrap">
-    <div class="int-timeline-canvas" id="int-timeline-canvas">
-
-      <!-- Year labels -->
-      <div class="int-year-row" id="int-year-row"></div>
-
-      <!-- Business track label -->
-      <div class="int-track-label int-track-label--business">BUSINESS INTERESTS</div>
-      <!-- Business track -->
-      <div class="int-track int-track--business" id="int-track-business"></div>
-
-      <!-- Divider -->
-      <div class="int-track-divider"></div>
-
-      <!-- Policy track label -->
-      <div class="int-track-label int-track-label--policy">US POLICY ACTIONS</div>
-      <!-- Policy track -->
-      <div class="int-track int-track--policy" id="int-track-policy"></div>
-
-      <!-- SVG layer for connecting lines -->
-      <svg class="int-connect-svg" id="int-connect-svg" xmlns="http://www.w3.org/2000/svg"></svg>
-
-    </div>
-  </div>
-
-  <!-- Detail panel -->
-  <div class="int-detail-panel" id="int-detail" style="display:none">
-    <button class="int-detail-close" id="int-detail-close">&times; Close</button>
-    <div class="int-detail-inner" id="int-detail-inner"></div>
-  </div>
+  <svg id="int-scatter" viewBox="0 0 900 460" preserveAspectRatio="xMidYMid meet"
+       xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;"></svg>
+  <!-- Tooltip -->
+  <div class="int-tooltip" id="int-tooltip" style="display:none"></div>
 </div>
 
-<p class="int-count-line">Showing <span id="int-count">{{ entries | size }}</span> of {{ entries | size }} business interests &nbsp;·&nbsp; <span id="int-policy-count">{{ policy | size }}</span> policy events</p>
+<!-- Detail panel -->
+<div class="int-detail-panel" id="int-detail" style="display:none">
+  <button class="int-detail-close" id="int-detail-close">&times; Close</button>
+  <div id="int-detail-inner"></div>
+</div>
 
-<!-- ── Register ── -->
-<div class="int-register" id="int-register">
+<p class="int-count-line">Showing <span id="int-count">{{ entries | size }}</span> of {{ entries | size }} business interests</p>
+
+<!-- Register -->
+<div id="int-register">
 {% for entry in entries %}
 <div class="int-entry"
      data-id="{{ entry.id }}"
@@ -124,298 +96,122 @@ body_class: page-interests
      data-region="{{ entry.region }}"
      data-type="{{ entry.deal_type }}"
      data-status="{{ entry.status }}"
-     data-country="{{ entry.country }}"
      data-date="{{ entry.date }}"
      data-value="{{ entry.value | default: 0 }}">
-
   <div class="int-entry-header">
     <div class="int-entry-meta">
       <span class="int-date mono">{{ entry.date | date: "%b %-d, %Y" }}</span>
       <span class="int-term-chip">Term {{ entry.term }}</span>
       <span class="int-family-chip int-family--{{ entry.family_member | slugify }}">{{ entry.family_member }}</span>
       <span class="int-country-chip">{{ entry.country }}</span>
-      <span class="int-type-chip int-type--{{ entry.deal_type }}">{{ entry.deal_type | replace: '_', ' ' }}</span>
+      <span class="int-type-chip">{{ entry.deal_type | replace: '_', ' ' }}</span>
       <span class="int-status-chip int-status--{{ entry.status }}">{{ entry.status | replace: '_', ' ' }}</span>
     </div>
     {% if entry.value %}
-    <div class="int-value" data-raw="{{ entry.value }}">
+    <div class="int-value">
       {% if entry.value >= 1000000000 %}${{ entry.value | divided_by: 1000000000.0 | round: 1 }}B
       {% elsif entry.value >= 1000000 %}${{ entry.value | divided_by: 1000000.0 | round: 0 }}M
       {% else %}${{ entry.value | divided_by: 1000.0 | round: 0 }}K{% endif %}
     </div>
     {% endif %}
   </div>
-
   <h3 class="int-entry-title">{{ entry.title }}</h3>
   <p class="int-entry-desc">{{ entry.description }}</p>
-
   <div class="int-concurrent">
     <span class="int-concurrent-label">Concurrent policy</span>
     <p>{{ entry.concurrent_policy }}</p>
   </div>
-
   <div class="int-entry-footer">
-    <span class="int-source">
-      {% if entry.source_url %}<a href="{{ entry.source_url }}" target="_blank" rel="noopener">{{ entry.source }}</a>
-      {% else %}{{ entry.source }}{% endif %}
-    </span>
+    {% if entry.source_url %}<a href="{{ entry.source_url }}" target="_blank" rel="noopener">{{ entry.source }}</a>
+    {% else %}{{ entry.source }}{% endif %}
   </div>
 </div>
 {% endfor %}
 </div>
 
 <div class="int-register-note">
-  <p><strong>Register status: ongoing.</strong> Covers documented foreign business interests identified through financial disclosures, press releases, investigative reporting, and congressional investigations. Undisclosed deals and verbal agreements not yet in the public record are not included.</p>
-  <p><strong>Distinct from The Ledger:</strong> The Ledger documents payments received by the Trump family from foreign entities. This register documents assets, stakes, and developments the Trump family is building in countries subject to US foreign policy — a structural conflict of interest that exists independently of any single transaction.</p>
+  <p><strong>Register status: ongoing.</strong> Covers documented foreign business interests identified through financial disclosures, press releases, investigative reporting, and congressional investigations.</p>
+  <p><strong>Distinct from The Ledger:</strong> The Ledger documents payments received by the Trump family from foreign entities. This register documents assets, stakes, and developments the Trump family is building in countries subject to US foreign policy — a structural conflict of interest independent of any single transaction.</p>
 </div>
 
-<!-- ── Data for JS ── -->
 <script type="application/json" id="int-entries-data">{{ site.data.interests.entries | jsonify }}</script>
 <script type="application/json" id="int-policy-data">{{ site.data.interests.policy_events | jsonify }}</script>
 
 <style>
-/* ── Meta bar ── */
-.int-meta-bar {
-  display:flex; gap:2rem; flex-wrap:wrap;
-  padding:1.5rem 0 1.25rem;
-  border-bottom:1px solid var(--color-border);
-  margin-bottom:1.5rem;
-}
-.int-stat { display:flex; flex-direction:column; gap:.15rem; }
-.int-stat-n {
-  font-family:var(--font-mono); font-size:2rem; font-weight:700;
-  color:var(--color-accent); line-height:1;
-}
-.int-stat-label {
-  font-family:var(--font-ui); font-size:var(--text-xs);
-  color:var(--color-light-grey); text-transform:uppercase; letter-spacing:.08em;
-}
+.int-meta-bar { display:flex;gap:2rem;flex-wrap:wrap;padding:1.5rem 0 1.25rem;border-bottom:1px solid var(--color-border);margin-bottom:1.5rem; }
+.int-stat { display:flex;flex-direction:column;gap:.15rem; }
+.int-stat-n { font-family:var(--font-mono);font-size:2rem;font-weight:700;color:var(--color-accent);line-height:1; }
+.int-stat-label { font-family:var(--font-ui);font-size:var(--text-xs);color:var(--color-light-grey);text-transform:uppercase;letter-spacing:.08em; }
 
-/* ── Filters ── */
-.int-filter-bar { display:flex; flex-direction:column; gap:.6rem; margin-bottom:1.25rem; }
-.int-filter-group { display:flex; gap:.4rem; flex-wrap:wrap; align-items:center; }
-.int-filter-label {
-  font-family:var(--font-ui); font-size:var(--text-xs);
-  color:var(--color-light-grey); min-width:55px;
-  text-transform:uppercase; letter-spacing:.07em;
-}
-.intf {
-  font-family:var(--font-ui); font-size:.65rem; padding:.3rem .75rem;
-  border:1px solid var(--color-border); background:transparent;
-  color:var(--color-mid-grey); cursor:pointer; border-radius:2px; transition:all .15s;
-}
-.intf:hover { border-color:var(--color-accent); color:var(--color-accent); }
-.intf.active { background:var(--color-near-black); color:var(--color-white); border-color:var(--color-near-black); }
+.int-filter-bar { display:flex;flex-direction:column;gap:.6rem;margin-bottom:1.25rem; }
+.int-filter-group { display:flex;gap:.4rem;flex-wrap:wrap;align-items:center; }
+.int-filter-label { font-family:var(--font-ui);font-size:var(--text-xs);color:var(--color-light-grey);min-width:55px;text-transform:uppercase;letter-spacing:.07em; }
+.intf { font-family:var(--font-ui);font-size:.65rem;padding:.3rem .75rem;border:1px solid var(--color-border);background:transparent;color:var(--color-mid-grey);cursor:pointer;border-radius:2px;transition:all .15s; }
+.intf:hover { border-color:var(--color-accent);color:var(--color-accent); }
+.intf.active { background:var(--color-near-black);color:var(--color-white);border-color:var(--color-near-black); }
 
-/* ── Timeline section ── */
-.int-timeline-section {
-  margin-bottom:1.5rem;
-  border:1px solid var(--color-border);
-  background:var(--color-surface,#fafafa);
-}
-.int-timeline-legend {
-  display:flex; gap:1.25rem; flex-wrap:wrap;
-  padding:.75rem 1rem; border-bottom:1px solid var(--color-border);
-  font-family:var(--font-ui); font-size:var(--text-xs); color:var(--color-mid-grey);
-}
-.int-legend-item { display:flex; align-items:center; gap:.35rem; }
-.int-legend-policy { margin-left:.5rem; padding-left:.75rem; border-left:1px solid var(--color-border); }
-.int-dot { width:10px; height:10px; border-radius:50%; display:inline-block; flex-shrink:0; }
+.int-chart-wrap { position:relative;border:1px solid var(--color-border);background:var(--color-surface,#fafafa);margin-bottom:1rem; }
+.int-chart-legend { display:flex;gap:1.25rem;flex-wrap:wrap;padding:.65rem 1rem;border-bottom:1px solid var(--color-border);font-family:var(--font-ui);font-size:var(--text-xs);color:var(--color-mid-grey); }
+.int-legend-item { display:flex;align-items:center;gap:.35rem; }
+.int-legend-sep { margin-left:.5rem;padding-left:.75rem;border-left:1px solid var(--color-border); }
+.int-dot { width:10px;height:10px;border-radius:50%;display:inline-block;flex-shrink:0; }
 
-.int-timeline-wrap {
-  overflow-x:auto; overflow-y:visible;
-  padding:.5rem 0;
-  cursor:grab;
+.int-tooltip {
+  position:absolute;pointer-events:none;
+  background:var(--color-near-black);color:var(--color-white);
+  font-family:var(--font-ui);font-size:.7rem;line-height:1.5;
+  padding:.5rem .75rem;border-radius:3px;max-width:240px;z-index:50;
 }
-.int-timeline-wrap:active { cursor:grabbing; }
+.int-tooltip strong { display:block;margin-bottom:.2rem;font-size:.75rem; }
+.int-tooltip .tt-meta { color:#aaa;font-size:.65rem; }
 
-.int-timeline-canvas {
-  position:relative;
-  width:3400px;
-  height:260px;
-  padding:0 40px;
-}
+.int-detail-panel { padding:1.25rem 1.5rem;border:1px solid var(--color-border);margin-bottom:1rem;background:var(--color-surface,#fafafa); }
+.int-detail-close { font-family:var(--font-ui);font-size:var(--text-xs);background:none;border:1px solid var(--color-border);color:var(--color-mid-grey);cursor:pointer;padding:.25rem .75rem;border-radius:2px;margin-bottom:1rem; }
+.int-detail-close:hover { border-color:var(--color-accent);color:var(--color-accent); }
+#int-detail-inner h3 { margin:.4rem 0;font-size:1rem; }
+#int-detail-inner p { font-size:var(--text-sm);color:var(--color-mid-grey);margin:.4rem 0;line-height:1.65; }
+.int-detail-meta { display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem; }
+.int-detail-concurrent { margin-top:.75rem;padding:.75rem 1rem;border-left:3px solid var(--color-accent);background:var(--color-bg);font-size:var(--text-sm);color:var(--color-mid-grey);line-height:1.65; }
+.int-detail-concurrent-label { font-family:var(--font-ui);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--color-light-grey);display:block;margin-bottom:.35rem; }
 
-/* Year row */
-.int-year-row {
-  position:absolute; top:0; left:0; right:0; height:24px;
-  font-family:var(--font-mono); font-size:.65rem; color:var(--color-light-grey);
-}
+.int-count-line { font-family:var(--font-ui);font-size:var(--text-sm);color:var(--color-light-grey);margin-bottom:1.5rem;padding-top:.5rem;border-top:1px solid var(--color-border); }
 
-/* Track labels */
-.int-track-label {
-  position:absolute; left:8px;
-  font-family:var(--font-ui); font-size:.55rem; font-weight:700;
-  letter-spacing:.1em; text-transform:uppercase; color:var(--color-light-grey);
-}
-.int-track-label--business { top:30px; }
-.int-track-label--policy   { top:158px; }
-
-/* Tracks */
-.int-track {
-  position:absolute; left:0; right:0; height:88px;
-}
-.int-track--business { top:24px; }
-.int-track--policy   { top:152px; }
-
-.int-track-divider {
-  position:absolute; left:40px; right:40px; top:140px; height:1px;
-  background:var(--color-border);
-}
-
-/* Connect SVG */
-.int-connect-svg {
-  position:absolute; top:0; left:0;
-  width:100%; height:100%; pointer-events:none;
-}
-
-/* Event markers */
-.int-marker {
-  position:absolute;
-  width:12px; height:12px;
-  border-radius:50%;
-  transform:translate(-50%,-50%);
-  cursor:pointer;
-  transition:transform .15s, box-shadow .15s;
-  z-index:2;
-}
-.int-marker:hover {
-  transform:translate(-50%,-50%) scale(1.5);
-  box-shadow:0 0 0 3px rgba(255,255,255,.7);
-  z-index:10;
-}
-.int-marker.active { transform:translate(-50%,-50%) scale(1.7); z-index:10; }
-.int-marker--policy { border-radius:3px; background:#2E7D32; }
-
-/* Marker label on hover */
-.int-marker-label {
-  position:absolute; bottom:16px; left:50%;
-  transform:translateX(-50%);
-  background:var(--color-near-black); color:var(--color-white);
-  font-family:var(--font-ui); font-size:.6rem; white-space:nowrap;
-  padding:.2rem .5rem; border-radius:2px; pointer-events:none;
-  opacity:0; transition:opacity .15s; z-index:20;
-}
-.int-marker:hover .int-marker-label { opacity:1; }
-
-/* Detail panel */
-.int-detail-panel {
-  margin:0; padding:1.25rem 1.5rem;
-  border-top:1px solid var(--color-border);
-  background:var(--color-bg);
-}
-.int-detail-close {
-  font-family:var(--font-ui); font-size:var(--text-xs);
-  background:none; border:1px solid var(--color-border);
-  color:var(--color-mid-grey); cursor:pointer;
-  padding:.25rem .75rem; border-radius:2px; margin-bottom:1rem;
-}
-.int-detail-close:hover { border-color:var(--color-accent); color:var(--color-accent); }
-.int-detail-inner h3 { margin:0 0 .4rem; font-size:1rem; }
-.int-detail-inner .int-detail-meta {
-  display:flex; gap:.5rem; flex-wrap:wrap; margin-bottom:.75rem;
-}
-.int-detail-inner p { font-size:var(--text-sm); color:var(--color-mid-grey); margin:.4rem 0; line-height:1.65; }
-.int-detail-concurrent {
-  margin-top:.75rem; padding:.75rem 1rem;
-  border-left:3px solid var(--color-accent);
-  background:var(--color-surface,#fafafa);
-  font-size:var(--text-sm); color:var(--color-mid-grey); line-height:1.65;
-}
-.int-detail-concurrent-label {
-  font-family:var(--font-ui); font-size:var(--text-xs);
-  text-transform:uppercase; letter-spacing:.08em; color:var(--color-light-grey);
-  display:block; margin-bottom:.35rem;
-}
-
-/* ── Count line ── */
-.int-count-line {
-  font-family:var(--font-ui); font-size:var(--text-sm);
-  color:var(--color-light-grey); margin-bottom:1.5rem;
-  padding-top:.5rem; border-top:1px solid var(--color-border);
-}
-
-/* ── Register entries ── */
-.int-entry {
-  border:1px solid var(--color-border);
-  border-left:3px solid var(--color-accent);
-  padding:1.25rem 1.5rem; margin-bottom:1rem;
-  background:var(--color-surface,#fafafa);
-}
+.int-entry { border:1px solid var(--color-border);border-left:3px solid var(--color-accent);padding:1.25rem 1.5rem;margin-bottom:1rem;background:var(--color-surface,#fafafa); }
 .int-entry:hover { border-color:var(--color-accent); }
-.int-entry-header {
-  display:flex; justify-content:space-between; align-items:flex-start;
-  flex-wrap:wrap; gap:.5rem; margin-bottom:.6rem;
-}
-.int-entry-meta { display:flex; gap:.4rem; flex-wrap:wrap; align-items:center; }
-.int-date { font-size:var(--text-sm); color:var(--color-light-grey); }
-.int-value {
-  font-family:var(--font-mono); font-size:1.1rem; font-weight:700;
-  color:var(--color-accent);
-}
+.int-entry-header { display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:.5rem;margin-bottom:.6rem; }
+.int-entry-meta { display:flex;gap:.4rem;flex-wrap:wrap;align-items:center; }
+.int-date { font-size:var(--text-sm);color:var(--color-light-grey); }
+.int-value { font-family:var(--font-mono);font-size:1.1rem;font-weight:700;color:var(--color-accent); }
 
-/* Chips */
-.int-term-chip {
-  font-family:var(--font-ui); font-size:.6rem; padding:.15rem .5rem;
-  background:var(--color-near-black); color:var(--color-white);
-  border-radius:2px; text-transform:uppercase; letter-spacing:.05em;
-}
-.int-family-chip {
-  font-family:var(--font-ui); font-size:.65rem; padding:.2rem .55rem;
-  border-radius:2px; border:1px solid; font-weight:600;
-}
-.int-family--trump-organization       { color:#C0392B; background:#C0392B12; border-color:#C0392B44; }
-.int-family--kushner--affinity-partners { color:#1565C0; background:#1565C012; border-color:#1565C044; }
-.int-family--wlfi--trump-crypto        { color:#B8860B; background:#B8860B12; border-color:#B8860B44; }
-.int-family--don-jr--eric-trump        { color:#8B1A8B; background:#8B1A8B12; border-color:#8B1A8B44; }
-.int-family--ivanka-trump              { color:#C2185B; background:#C2185B12; border-color:#C2185B44; }
+.int-term-chip { font-family:var(--font-ui);font-size:.6rem;padding:.15rem .5rem;background:var(--color-near-black);color:var(--color-white);border-radius:2px;text-transform:uppercase;letter-spacing:.05em; }
+.int-family-chip { font-family:var(--font-ui);font-size:.65rem;padding:.2rem .55rem;border-radius:2px;border:1px solid;font-weight:600; }
+.int-family--trump-organization         { color:#C0392B;background:#C0392B12;border-color:#C0392B44; }
+.int-family--kushner--affinity-partners { color:#1565C0;background:#1565C012;border-color:#1565C044; }
+.int-family--wlfi--trump-crypto         { color:#B8860B;background:#B8860B12;border-color:#B8860B44; }
+.int-family--don-jr--eric-trump         { color:#8B1A8B;background:#8B1A8B12;border-color:#8B1A8B44; }
+.int-family--ivanka-trump               { color:#C2185B;background:#C2185B12;border-color:#C2185B44; }
+.int-country-chip { font-family:var(--font-ui);font-size:.65rem;padding:.15rem .55rem;border:1px solid var(--color-border);border-radius:2px; }
+.int-type-chip { font-family:var(--font-mono);font-size:.6rem;padding:.15rem .5rem;border:1px solid var(--color-border);color:var(--color-mid-grey);border-radius:2px; }
+.int-status-chip { font-family:var(--font-ui);font-size:.6rem;padding:.15rem .5rem;border-radius:2px;border:1px solid; }
+.int-status--active { color:#2E7D32;background:#2E7D3215;border-color:#2E7D3244; }
+.int-status--announced { color:#1565C0;background:#1565C015;border-color:#1565C044; }
+.int-status--under_construction { color:#B8860B;background:#B8860B15;border-color:#B8860B44; }
 
-.int-country-chip {
-  font-family:var(--font-ui); font-size:.65rem; padding:.15rem .55rem;
-  border:1px solid var(--color-border); border-radius:2px;
-}
-.int-type-chip {
-  font-family:var(--font-mono); font-size:.6rem; padding:.15rem .5rem;
-  border:1px solid var(--color-border); color:var(--color-mid-grey); border-radius:2px;
-}
-.int-status-chip {
-  font-family:var(--font-ui); font-size:.6rem; padding:.15rem .5rem; border-radius:2px; border:1px solid;
-}
-.int-status--active         { color:#2E7D32; background:#2E7D3215; border-color:#2E7D3244; }
-.int-status--announced      { color:#1565C0; background:#1565C015; border-color:#1565C044; }
-.int-status--under-construction, .int-status--under_construction { color:#F39C12; background:#F39C1215; border-color:#F39C1244; }
-.int-status--halted         { color:#C0392B; background:#C0392B15; border-color:#C0392B44; }
-
-.int-entry-title { font-size:.95rem; margin:.4rem 0; }
-.int-entry-desc  { font-size:var(--text-sm); color:var(--color-mid-grey); margin:0 0 .75rem; line-height:1.65; }
-
-.int-concurrent {
-  padding:.65rem .9rem; margin-bottom:.75rem;
-  border-left:3px solid var(--color-accent);
-  background:var(--color-bg);
-}
-.int-concurrent-label {
-  font-family:var(--font-ui); font-size:var(--text-xs); font-weight:700;
-  text-transform:uppercase; letter-spacing:.08em; color:var(--color-light-grey);
-  display:block; margin-bottom:.3rem;
-}
-.int-concurrent p { font-size:var(--text-sm); color:var(--color-mid-grey); margin:0; line-height:1.6; }
-
-.int-entry-footer { font-family:var(--font-ui); font-size:var(--text-xs); color:var(--color-light-grey); }
-.int-entry-footer a { color:var(--color-light-grey); text-decoration:underline; text-decoration-color:var(--color-border); }
+.int-entry-title { font-size:.95rem;margin:.4rem 0; }
+.int-entry-desc { font-size:var(--text-sm);color:var(--color-mid-grey);margin:0 0 .75rem;line-height:1.65; }
+.int-concurrent { padding:.65rem .9rem;margin-bottom:.75rem;border-left:3px solid var(--color-accent);background:var(--color-bg); }
+.int-concurrent-label { font-family:var(--font-ui);font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--color-light-grey);display:block;margin-bottom:.3rem; }
+.int-concurrent p { font-size:var(--text-sm);color:var(--color-mid-grey);margin:0;line-height:1.6; }
+.int-entry-footer { font-family:var(--font-ui);font-size:var(--text-xs);color:var(--color-light-grey); }
+.int-entry-footer a { color:var(--color-light-grey);text-decoration:underline;text-decoration-color:var(--color-border); }
 .int-entry-footer a:hover { color:var(--color-accent); }
 
-/* ── Register note ── */
-.int-register-note {
-  margin-top:2rem; padding:1rem 1.25rem;
-  border:1px solid var(--color-border);
-  font-size:var(--text-sm); color:var(--color-mid-grey); line-height:1.7;
-}
+.int-register-note { margin-top:2rem;padding:1rem 1.25rem;border:1px solid var(--color-border);font-size:var(--text-sm);color:var(--color-mid-grey);line-height:1.7; }
 .int-register-note p { margin:0 0 .5rem; }
 .int-register-note p:last-child { margin:0; }
 
-/* ── Drag-scroll ── */
-.int-timeline-wrap.is-grabbing { cursor:grabbing; user-select:none; }
+/* Highlighted entry from chart click */
+.int-entry.int-entry--highlight { border-left-color:#F39C12;background:var(--color-bg); }
 </style>
 
 <script>
@@ -423,225 +219,289 @@ body_class: page-interests
   var entries = JSON.parse(document.getElementById('int-entries-data').textContent);
   var policy  = JSON.parse(document.getElementById('int-policy-data').textContent);
 
-  // ── Constants ──────────────────────────────────────────────────────────
-  var START_YEAR  = 2017;
-  var END_YEAR    = 2027;
-  var PX_PER_YEAR = 300;
-  var TOTAL_W     = (END_YEAR - START_YEAR) * PX_PER_YEAR;
-  var PAD         = 40;
-  var BTRACK_MID  = 68;   // mid Y of business track (within track)
-  var PTRACK_MID  = 44;   // mid Y of policy track (within track)
-  var BTRACK_TOP  = 24;   // business track top (canvas-relative)
-  var PTRACK_TOP  = 152;  // policy track top (canvas-relative)
-
   var FAMILY_COLORS = {
     'Trump Organization':          '#C0392B',
     'Kushner / Affinity Partners': '#1565C0',
-    'WLFI / Trump crypto':         '#F39C12',
+    'WLFI / Trump crypto':         '#B8860B',
     'Don Jr. & Eric Trump':        '#8B1A8B',
     'Ivanka Trump':                '#C2185B'
   };
 
-  function dateToX(str){
-    var d = new Date(str);
-    var yr = d.getFullYear() + (d.getMonth()/12) + (d.getDate()/365);
-    return PAD + (yr - START_YEAR) * PX_PER_YEAR;
-  }
-
-  function fmtVal(n){
-    if(!n) return '';
-    if(n >= 1e9) return '$'+(n/1e9).toFixed(1)+'B';
-    if(n >= 1e6) return '$'+(n/1e6).toFixed(0)+'M';
-    return '$'+(n/1e3).toFixed(0)+'K';
-  }
-
   // ── Meta stats ────────────────────────────────────────────────────────
   var countries = new Set(entries.map(function(e){ return e.country; }));
   document.getElementById('int-country-count').textContent = countries.size;
-  var totalVal = entries.reduce(function(s,e){ return s + (e.value||0); }, 0);
+  var totalVal = entries.reduce(function(s,e){ return s+(e.value||0); }, 0);
   document.getElementById('int-total-value').textContent =
-    totalVal >= 1e9 ? '$'+(totalVal/1e9).toFixed(1)+'B' : '$'+(totalVal/1e6).toFixed(0)+'M';
+    totalVal>=1e9 ? '$'+(totalVal/1e9).toFixed(1)+'B' : '$'+(totalVal/1e6).toFixed(0)+'M';
 
-  // ── Build timeline canvas ──────────────────────────────────────────────
-  var canvas = document.getElementById('int-timeline-canvas');
-  canvas.style.width = (TOTAL_W + PAD*2) + 'px';
+  // ── SVG layout constants ──────────────────────────────────────────────
+  var VW = 900, VH = 460;
+  var ML = 72, MR = 16, MT = 20, 
+      CHART_H = 270,            // valued-entries area height
+      GAP = 18,                 // gap between chart and undisclosed strip
+      STRIP_H = 50,             // undisclosed strip height
+      XAXIS_Y = MT + CHART_H,  // = 290
+      SEP_Y   = XAXIS_Y + GAP, // = 308
+      STRIP_Y = SEP_Y + 4,     // = 312
+      XLBL_Y  = XAXIS_Y + 14,  // year labels
+      YLBL_Y  = STRIP_Y + STRIP_H + 22; // bottom labels
+  var CW = VW - ML - MR;       // = 812
 
-  // Year labels
-  var yearRow = document.getElementById('int-year-row');
-  for(var y = START_YEAR; y <= END_YEAR; y++){
-    var lbl = document.createElement('span');
-    lbl.textContent = y;
-    lbl.style.cssText = 'position:absolute;left:'+(PAD + (y-START_YEAR)*PX_PER_YEAR)+'px;transform:translateX(-50%);';
-    yearRow.appendChild(lbl);
-    // tick line
-    var tick = document.createElement('div');
-    tick.style.cssText = 'position:absolute;left:'+(PAD + (y-START_YEAR)*PX_PER_YEAR)+'px;top:20px;width:1px;height:220px;background:var(--color-border);opacity:.4;';
-    canvas.appendChild(tick);
+  // Time: 2016.7 → 2027.0
+  var T0 = 2016.7, T1 = 2027.0, TR = T1 - T0;
+
+  // Log scale: 10^7 ($10M) → 10^11.3 ($200B-ish, headroom above EA)
+  var L0 = 7.0, L1 = 11.3, LR = L1 - L0;
+
+  function yearFrac(dateStr){
+    var d = new Date(dateStr);
+    return d.getFullYear() + d.getMonth()/12 + d.getDate()/365;
+  }
+  function xPos(dateStr){
+    return ML + (yearFrac(dateStr) - T0) / TR * CW;
+  }
+  function yPos(value){
+    var lv = Math.max(L0, Math.min(L1, Math.log10(value)));
+    return MT + CHART_H - (lv - L0) / LR * CHART_H;
   }
 
-  // ── Place business markers ─────────────────────────────────────────────
-  var bTrack = document.getElementById('int-track-business');
-  var businessMarkers = [];
+  function fmtVal(n){
+    if(!n) return 'Undisclosed';
+    if(n>=1e9) return '$'+(n/1e9).toFixed(1)+'B';
+    if(n>=1e6) return '$'+(n/1e6).toFixed(0)+'M';
+    return '$'+(n/1e3).toFixed(0)+'K';
+  }
 
-  entries.forEach(function(e, i){
-    var x = dateToX(e.date);
-    var color = FAMILY_COLORS[e.family_member] || '#888';
-    // stagger Y to avoid overlap — alternate between two rows
-    var yOff = (i % 3 === 0) ? 30 : (i % 3 === 1) ? 55 : 44;
+  function svgEl(tag, attrs){
+    var el = document.createElementNS('http://www.w3.org/2000/svg', tag);
+    Object.keys(attrs).forEach(function(k){ el.setAttribute(k, attrs[k]); });
+    return el;
+  }
 
-    var el = document.createElement('div');
-    el.className = 'int-marker';
-    el.setAttribute('data-id', e.id);
-    el.setAttribute('data-type', 'business');
-    el.style.left  = x + 'px';
-    el.style.top   = yOff + 'px';
-    el.style.background = color;
+  var svg = document.getElementById('int-scatter');
 
-    var lbl = document.createElement('span');
-    lbl.className = 'int-marker-label';
-    lbl.textContent = e.country;
-    el.appendChild(lbl);
+  // ── Background ────────────────────────────────────────────────────────
+  svg.appendChild(svgEl('rect',{x:ML,y:MT,width:CW,height:CHART_H,fill:'#fafafa',stroke:'none'}));
 
-    el.addEventListener('click', function(){ showBusinessDetail(e, el); });
-    bTrack.appendChild(el);
-    businessMarkers.push({ el: el, entry: e, x: x, y: BTRACK_TOP + yOff });
+  // ── Y-axis gridlines and labels ───────────────────────────────────────
+  var yTicks = [
+    {v:1e7,   label:'$10M'},
+    {v:1e8,   label:'$100M'},
+    {v:1e9,   label:'$1B'},
+    {v:1e10,  label:'$10B'},
+    {v:5e10,  label:'$50B'}
+  ];
+  yTicks.forEach(function(t){
+    var y = yPos(t.v);
+    svg.appendChild(svgEl('line',{x1:ML,y1:y,x2:ML+CW,y2:y,stroke:'#e8e8e8','stroke-width':1}));
+    var txt = svgEl('text',{x:ML-6,y:y+3.5,'text-anchor':'end',fill:'#bbb','font-size':9,'font-family':'monospace'});
+    txt.textContent = t.label;
+    svg.appendChild(txt);
   });
 
-  // ── Place policy markers ───────────────────────────────────────────────
-  var pTrack = document.getElementById('int-track-policy');
-  var policyMarkers = [];
+  // ── X-axis: year ticks and labels ─────────────────────────────────────
+  for(var yr=2017; yr<=2026; yr++){
+    var x = xPos(yr+'-01-01');
+    svg.appendChild(svgEl('line',{x1:x,y1:MT,x2:x,y2:XAXIS_Y,stroke:'#efefef','stroke-width':1}));
+    svg.appendChild(svgEl('line',{x1:x,y1:XAXIS_Y,x2:x,y2:XAXIS_Y+4,stroke:'#ccc','stroke-width':1}));
+    var yt = svgEl('text',{x:x,y:XLBL_Y,'text-anchor':'middle',fill:'#aaa','font-size':9,'font-family':'monospace'});
+    yt.textContent = yr;
+    svg.appendChild(yt);
+  }
 
-  policy.forEach(function(p, i){
-    var x = dateToX(p.date);
-    var yOff = (i % 2 === 0) ? 28 : 52;
+  // Axes
+  svg.appendChild(svgEl('line',{x1:ML,y1:MT,x2:ML,y2:XAXIS_Y,stroke:'#ccc','stroke-width':1}));
+  svg.appendChild(svgEl('line',{x1:ML,y1:XAXIS_Y,x2:ML+CW,y2:XAXIS_Y,stroke:'#ccc','stroke-width':1}));
 
-    var el = document.createElement('div');
-    el.className = 'int-marker int-marker--policy';
-    el.setAttribute('data-id', p.id);
-    el.setAttribute('data-type', 'policy');
-    el.style.left = x + 'px';
-    el.style.top  = yOff + 'px';
+  // ── Undisclosed strip ─────────────────────────────────────────────────
+  svg.appendChild(svgEl('line',{x1:ML,y1:SEP_Y,x2:ML+CW,y2:SEP_Y,stroke:'#ddd','stroke-width':1,'stroke-dasharray':'4,3'}));
+  svg.appendChild(svgEl('rect',{x:ML,y:STRIP_Y,width:CW,height:STRIP_H,fill:'#f7f7f7',stroke:'none'}));
+  var slbl = svgEl('text',{x:ML-6,y:STRIP_Y+STRIP_H/2+3.5,'text-anchor':'end',fill:'#ccc','font-size':8,'font-family':'monospace'});
+  slbl.textContent = 'UNDISCLOSED';
+  svg.appendChild(slbl);
 
-    var lbl = document.createElement('span');
-    lbl.className = 'int-marker-label';
-    lbl.textContent = p.country;
-    el.appendChild(lbl);
+  // ── Axis labels ───────────────────────────────────────────────────────
+  var ylabelEl = svgEl('text',{x:13,y:MT+CHART_H/2,'text-anchor':'middle',fill:'#bbb','font-size':9,'font-family':'monospace',transform:'rotate(-90,13,'+(MT+CHART_H/2)+')'});
+  ylabelEl.textContent = 'DEAL VALUE (LOG SCALE)';
+  svg.appendChild(ylabelEl);
 
-    el.addEventListener('click', function(){ showPolicyDetail(p, el); });
-    pTrack.appendChild(el);
-    policyMarkers.push({ el: el, event: p, x: x, y: PTRACK_TOP + yOff });
-  });
-
-  // ── Draw connecting lines (same country, business ↔ policy) ───────────
-  var svg = document.getElementById('int-connect-svg');
-  svg.setAttribute('width',  (TOTAL_W + PAD*2));
-  svg.setAttribute('height', '260');
-
-  businessMarkers.forEach(function(bm){
-    policyMarkers.forEach(function(pm){
-      if(bm.entry.country === pm.event.country){
-        var line = document.createElementNS('http://www.w3.org/2000/svg','line');
-        line.setAttribute('x1', bm.x);  line.setAttribute('y1', bm.y);
-        line.setAttribute('x2', pm.x);  line.setAttribute('y2', pm.y);
-        line.setAttribute('stroke', '#ccc');
-        line.setAttribute('stroke-width', '1');
-        line.setAttribute('stroke-dasharray', '3,3');
-        svg.appendChild(line);
-      }
+  // ── Policy event diamonds on x-axis ───────────────────────────────────
+  var polyGroup = svgEl('g',{opacity:0.75});
+  svg.appendChild(polyGroup);
+  policy.forEach(function(p){
+    var px = xPos(p.date);
+    var py = XAXIS_Y + 8;
+    var d  = 5;
+    var diamond = svgEl('polygon',{
+      points: px+','+(py-d)+' '+(px+d)+','+py+' '+px+','+(py+d)+' '+(px-d)+','+py,
+      fill:'#2E7D32', cursor:'pointer'
     });
+    diamond.addEventListener('mouseenter', function(ev){ showTip(p.title, p.country+' · '+p.date, null, ev); });
+    diamond.addEventListener('mouseleave', hideTip);
+    diamond.addEventListener('click', function(){ showPolicyDetail(p); });
+    polyGroup.appendChild(diamond);
   });
 
-  // ── Detail panels ──────────────────────────────────────────────────────
+  // ── Tooltip ───────────────────────────────────────────────────────────
+  var tip    = document.getElementById('int-tooltip');
+  var tipOwner = document.querySelector('.int-chart-wrap');
+
+  function showTip(title, meta, value, ev){
+    tip.innerHTML = '<strong>'+title+'</strong>'+
+      '<span class="tt-meta">'+meta+'</span>'+
+      (value ? '<span class="tt-meta" style="color:#B8860B;margin-top:.2rem">'+fmtVal(value)+'</span>' : '');
+    tip.style.display = 'block';
+    moveTip(ev);
+  }
+  function moveTip(ev){
+    var rect = tipOwner.getBoundingClientRect();
+    var x = ev.clientX - rect.left + 12;
+    var y = ev.clientY - rect.top  - 10;
+    // keep within container
+    if(x + 250 > rect.width) x = ev.clientX - rect.left - 255;
+    tip.style.left = x + 'px';
+    tip.style.top  = y + 'px';
+  }
+  function hideTip(){ tip.style.display = 'none'; }
+  tipOwner.addEventListener('mousemove', function(ev){
+    if(tip.style.display !== 'none') moveTip(ev);
+  });
+
+  // ── Detail panel ──────────────────────────────────────────────────────
   var detailPanel = document.getElementById('int-detail');
   var detailInner = document.getElementById('int-detail-inner');
-
   document.getElementById('int-detail-close').addEventListener('click', function(){
     detailPanel.style.display = 'none';
-    document.querySelectorAll('.int-marker.active').forEach(function(m){ m.classList.remove('active'); });
+    document.querySelectorAll('.int-entry--highlight').forEach(function(el){ el.classList.remove('int-entry--highlight'); });
   });
 
-  function showBusinessDetail(e, el){
-    document.querySelectorAll('.int-marker.active').forEach(function(m){ m.classList.remove('active'); });
-    el.classList.add('active');
+  function showEntryDetail(e){
     var color = FAMILY_COLORS[e.family_member] || '#888';
     detailInner.innerHTML =
-      '<div class="int-detail-meta">' +
-        '<span class="int-term-chip">Term '+e.term+'</span>' +
-        '<span class="int-family-chip" style="color:'+color+';border-color:'+color+'44;background:'+color+'12">'+e.family_member+'</span>' +
-        '<span class="int-country-chip">'+e.country+'</span>' +
-        '<span class="int-type-chip">'+e.deal_type.replace(/_/g,' ')+'</span>' +
-        '<span class="int-status-chip int-status--'+e.status+'">'+e.status.replace(/_/g,' ')+'</span>' +
-        (e.value ? '<strong style="font-family:var(--font-mono);color:var(--color-accent)">'+fmtVal(e.value)+'</strong>' : '') +
-      '</div>' +
-      '<h3>'+e.title+'</h3>' +
-      '<p>'+e.description+'</p>' +
-      '<div class="int-detail-concurrent">' +
-        '<span class="int-detail-concurrent-label">Concurrent US policy action</span>' +
-        '<p>'+e.concurrent_policy+'</p>' +
-      '</div>' +
-      '<p style="margin-top:.75rem"><a href="'+e.source_url+'" target="_blank" rel="noopener" style="font-size:var(--text-xs);color:var(--color-light-grey)">'+e.source+'</a></p>';
+      '<div class="int-detail-meta">'+
+        '<span class="int-term-chip">Term '+e.term+'</span>'+
+        '<span class="int-family-chip" style="color:'+color+';border-color:'+color+'44;background:'+color+'12">'+e.family_member+'</span>'+
+        '<span class="int-country-chip">'+e.country+'</span>'+
+        '<span class="int-type-chip">'+e.deal_type.replace(/_/g,' ')+'</span>'+
+        (e.value?'<strong style="font-family:var(--font-mono);color:var(--color-accent)">'+fmtVal(e.value)+'</strong>':'')+''+
+      '</div>'+
+      '<h3>'+e.title+'</h3>'+
+      '<p>'+e.description+'</p>'+
+      '<div class="int-detail-concurrent">'+
+        '<span class="int-detail-concurrent-label">Concurrent US policy action</span>'+
+        '<p>'+e.concurrent_policy+'</p>'+
+      '</div>'+
+      (e.source_url?'<p style="margin-top:.75rem"><a href="'+e.source_url+'" target="_blank" rel="noopener" style="font-size:var(--text-xs);color:var(--color-light-grey)">'+e.source+'</a></p>':'');
     detailPanel.style.display = 'block';
-    detailPanel.scrollIntoView({ behavior:'smooth', block:'nearest' });
+    // highlight register entry
+    document.querySelectorAll('.int-entry--highlight').forEach(function(el){ el.classList.remove('int-entry--highlight'); });
+    var regEl = document.querySelector('.int-entry[data-id="'+e.id+'"]');
+    if(regEl){ regEl.classList.add('int-entry--highlight'); regEl.scrollIntoView({behavior:'smooth',block:'nearest'}); }
+    detailPanel.scrollIntoView({behavior:'smooth',block:'nearest'});
   }
 
-  function showPolicyDetail(p, el){
-    document.querySelectorAll('.int-marker.active').forEach(function(m){ m.classList.remove('active'); });
-    el.classList.add('active');
+  function showPolicyDetail(p){
     detailInner.innerHTML =
-      '<div class="int-detail-meta">' +
-        '<span style="font-family:var(--font-ui);font-size:.6rem;padding:.15rem .5rem;background:#2E7D32;color:#fff;border-radius:2px;">US POLICY</span>' +
-        '<span class="int-country-chip">'+p.country+'</span>' +
-        '<span class="int-type-chip">'+p.category+'</span>' +
-      '</div>' +
-      '<h3>'+p.title+'</h3>' +
+      '<div class="int-detail-meta">'+
+        '<span style="font-family:var(--font-ui);font-size:.6rem;padding:.15rem .5rem;background:#2E7D32;color:#fff;border-radius:2px;">US POLICY</span>'+
+        '<span class="int-country-chip">'+p.country+'</span>'+
+        '<span class="int-type-chip">'+p.category+'</span>'+
+      '</div>'+
+      '<h3>'+p.title+'</h3>'+
       '<p>'+p.description+'</p>';
     detailPanel.style.display = 'block';
-    detailPanel.scrollIntoView({ behavior:'smooth', block:'nearest' });
+    detailPanel.scrollIntoView({behavior:'smooth',block:'nearest'});
   }
 
-  // ── Register filtering ─────────────────────────────────────────────────
-  var regEntries = Array.from(document.querySelectorAll('.int-entry'));
-  var activeFilters = { family:'all', region:'all', type:'all', status:'all' };
+  // ── Plot circles ──────────────────────────────────────────────────────
+  // Jitter X slightly within same year to reduce overlap
+  var xOffsets = {};
+  function jitteredX(e){
+    var base = xPos(e.date);
+    var key  = Math.round(base/20);
+    xOffsets[key] = (xOffsets[key] || 0) + 1;
+    var n = xOffsets[key];
+    // alternate left/right: 0, +14, -14, +28, -28 ...
+    var offset = Math.ceil(n/2) * 14 * (n%2===0 ? 1 : -1);
+    if(n===1) offset = 0;
+    return base + offset;
+  }
+
+  var circleEls = [];
+  var undisclosed = entries.filter(function(e){ return !e.value; });
+  var valued      = entries.filter(function(e){ return  e.value; });
+
+  // Valued entries in main chart
+  valued.forEach(function(e){
+    var cx = jitteredX(e);
+    var cy = yPos(e.value);
+    var r  = 8;
+    var color = FAMILY_COLORS[e.family_member]||'#888';
+
+    var c = svgEl('circle',{cx:cx,cy:cy,r:r,fill:color,opacity:0.88,
+      stroke:'white','stroke-width':1.5,cursor:'pointer',
+      style:'transition:r .12s,opacity .12s'});
+    c.addEventListener('mouseenter',function(ev){ c.setAttribute('r',12); c.setAttribute('opacity',1); showTip(e.title, e.family_member+' · '+e.country, e.value, ev); });
+    c.addEventListener('mouseleave',function(){   c.setAttribute('r',r);  c.setAttribute('opacity',0.88); hideTip(); });
+    c.addEventListener('click',function(){ showEntryDetail(e); });
+    svg.appendChild(c);
+    circleEls.push({el:c, entry:e, defaultR:r});
+  });
+
+  // Undisclosed strip entries
+  var stripSlots = {};
+  undisclosed.forEach(function(e){
+    var bx   = xPos(e.date);
+    var key  = Math.round(bx/16);
+    stripSlots[key] = (stripSlots[key]||0)+1;
+    var cy   = STRIP_Y + 12 + (stripSlots[key]-1)*16;
+    if(cy > STRIP_Y + STRIP_H - 8) cy = STRIP_Y + STRIP_H/2;
+    var color= FAMILY_COLORS[e.family_member]||'#888';
+    var r = 6;
+
+    var c = svgEl('circle',{cx:bx,cy:cy,r:r,fill:color,opacity:0.7,
+      stroke:'white','stroke-width':1,cursor:'pointer'});
+    c.addEventListener('mouseenter',function(ev){ c.setAttribute('r',9); c.setAttribute('opacity',1); showTip(e.title, e.family_member+' · '+e.country, null, ev); });
+    c.addEventListener('mouseleave',function(){   c.setAttribute('r',r); c.setAttribute('opacity',0.7); hideTip(); });
+    c.addEventListener('click',function(){ showEntryDetail(e); });
+    svg.appendChild(c);
+    circleEls.push({el:c, entry:e, defaultR:r});
+  });
+
+  // ── Register filtering ────────────────────────────────────────────────
+  var regEntries   = Array.from(document.querySelectorAll('.int-entry'));
+  var activeFilters = {family:'all', region:'all', type:'all'};
   var countEl = document.getElementById('int-count');
 
   function applyFilters(){
-    var vis = 0;
+    var vis=0;
+    var visIds = new Set();
     regEntries.forEach(function(el){
-      var fm   = activeFilters.family === 'all' || el.getAttribute('data-family') === activeFilters.family;
-      var reg  = activeFilters.region === 'all' || el.getAttribute('data-region') === activeFilters.region;
-      var typ  = activeFilters.type   === 'all' || el.getAttribute('data-type')   === activeFilters.type;
-      var stat = activeFilters.status === 'all' || el.getAttribute('data-status') === activeFilters.status;
-      var show = fm && reg && typ && stat;
-      el.style.display = show ? '' : 'none';
-      if(show) vis++;
+      var fm  = activeFilters.family==='all'||el.getAttribute('data-family')===activeFilters.family;
+      var reg = activeFilters.region==='all'||el.getAttribute('data-region')===activeFilters.region;
+      var typ = activeFilters.type  ==='all'||el.getAttribute('data-type')  ===activeFilters.type;
+      var show= fm&&reg&&typ;
+      el.style.display = show?'':'none';
+      if(show){ vis++; visIds.add(el.getAttribute('data-id')); }
     });
     countEl.textContent = vis;
+    // dim chart circles not matching filter
+    circleEls.forEach(function(obj){
+      var match = visIds.has(obj.entry.id);
+      obj.el.setAttribute('opacity', match ? (obj.entry.value ? 0.88 : 0.7) : 0.12);
+    });
   }
 
   document.querySelectorAll('.intf').forEach(function(btn){
-    btn.addEventListener('click', function(){
+    btn.addEventListener('click',function(){
       var ft = btn.getAttribute('data-filter');
       activeFilters[ft] = btn.getAttribute('data-value');
       btn.closest('.int-filter-group').querySelectorAll('.intf').forEach(function(b){
-        b.classList.toggle('active', b === btn);
+        b.classList.toggle('active', b===btn);
       });
       applyFilters();
     });
   });
 
-  // ── Drag to scroll timeline ────────────────────────────────────────────
-  var wrap = document.getElementById('int-timeline-wrap');
-  var isDragging = false, startX, scrollLeft;
-  wrap.addEventListener('mousedown', function(e){
-    isDragging = true; wrap.classList.add('is-grabbing');
-    startX = e.pageX - wrap.offsetLeft; scrollLeft = wrap.scrollLeft;
-  });
-  document.addEventListener('mouseup',   function(){ isDragging = false; wrap.classList.remove('is-grabbing'); });
-  document.addEventListener('mousemove', function(e){
-    if(!isDragging) return;
-    e.preventDefault();
-    var x = e.pageX - wrap.offsetLeft;
-    wrap.scrollLeft = scrollLeft - (x - startX);
-  });
 })();
 </script>
