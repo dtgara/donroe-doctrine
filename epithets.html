@@ -1,0 +1,413 @@
+---
+layout: section
+title: "Geographic Epithets"
+section_intro: >
+  A register of every documented instance of the President characterising a country
+  or region using derogatory language. Verified against primary sources: transcripts,
+  pool reports, and contemporaneous news accounts. Register is incomplete; entries
+  are added as rally transcripts are catalogued.
+body_class: page-epithets
+---
+
+{% assign entries = site.data.epithets.entries %}
+{% assign confirmed = entries | where_exp: "e", "e.borderline != true" %}
+{% assign borderline = entries | where_exp: "e", "e.borderline == true" %}
+
+<div class="epithets-meta-bar">
+  <div class="epithets-stat">
+    <span class="epithets-stat-n">{{ confirmed | size }}</span>
+    <span class="epithets-stat-label">Confirmed entries</span>
+  </div>
+  <div class="epithets-stat">
+    <span class="epithets-stat-n">{{ borderline | size }}</span>
+    <span class="epithets-stat-label">Borderline</span>
+  </div>
+  <div class="epithets-stat">
+    <span class="epithets-stat-n" id="country-count">—</span>
+    <span class="epithets-stat-label">Countries named</span>
+  </div>
+  <div class="epithets-stat">
+    <span class="epithets-stat-n">{{ entries | size }}</span>
+    <span class="epithets-stat-label">Total incidents</span>
+  </div>
+</div>
+
+<div class="epithets-filter-bar">
+  <div class="epithets-filter-group">
+    <span class="epithets-filter-label">Term</span>
+    <button class="ef active" data-filter="term" data-value="all">All</button>
+    <button class="ef" data-filter="term" data-value="1">Term 1</button>
+    <button class="ef" data-filter="term" data-value="2">Term 2</button>
+  </div>
+  <div class="epithets-filter-group">
+    <span class="epithets-filter-label">Epithet</span>
+    <button class="ef active" data-filter="epithet" data-value="all">All</button>
+    <button class="ef" data-filter="epithet" data-value="shithole">shithole</button>
+    <button class="ef" data-filter="epithet" data-value="hellhole">hellhole</button>
+    <button class="ef" data-filter="epithet" data-value="garbage">garbage</button>
+    <button class="ef" data-filter="epithet" data-value="filthy">filthy</button>
+    <button class="ef" data-filter="epithet" data-value="disgusting">disgusting</button>
+    <button class="ef" data-filter="epithet" data-value="barely_a_country">barely a country</button>
+    <button class="ef" data-filter="epithet" data-value="crime_ridden">crime-ridden</button>
+    <button class="ef" data-filter="epithet" data-value="going_to_hell">going to hell</button>
+    <button class="ef" data-filter="epithet" data-value="not_their_best">not their best</button>
+    <button class="ef" data-filter="epithet" data-value="rapists">rapists</button>
+  </div>
+  <div class="epithets-filter-group">
+    <span class="epithets-filter-label">Status</span>
+    <button class="ef active" data-filter="status" data-value="all">All</button>
+    <button class="ef" data-filter="status" data-value="confirmed">Confirmed only</button>
+    <button class="ef" data-filter="status" data-value="borderline">Borderline only</button>
+  </div>
+</div>
+
+<p class="epithets-count-line">Showing <span id="ep-count">{{ entries | size }}</span> of {{ entries | size }} incidents</p>
+
+<div class="epithets-list" id="epithets-list">
+{% for entry in entries %}
+<div class="epithet-entry{% if entry.borderline %} borderline{% endif %}"
+     data-id="{{ entry.id }}"
+     data-term="{{ entry.term }}"
+     data-epithets="{{ entry.epithets | join: '|' }}"
+     data-borderline="{{ entry.borderline | default: false }}">
+  <div class="epithet-entry-header">
+    <div class="epithet-entry-meta">
+      <span class="epithet-date mono">{{ entry.date | date: "%b %-d, %Y" }}</span>
+      <span class="epithet-term-chip">Term {{ entry.term }}</span>
+      {% for country in entry.countries %}
+        <span class="epithet-country-chip">{{ country }}</span>
+      {% endfor %}
+      {% if entry.borderline %}
+        <span class="epithet-borderline-chip">Borderline</span>
+      {% endif %}
+    </div>
+    <div class="epithet-epithets">
+      {% for epithet in entry.epithets %}
+        <span class="epithet-chip epithet-chip--{{ epithet }}">{{ epithet | replace: '_', ' ' }}</span>
+      {% endfor %}
+    </div>
+  </div>
+
+  <blockquote class="epithet-quote">
+    &ldquo;{{ entry.quote }}&rdquo;
+  </blockquote>
+
+  <p class="epithet-context">{{ entry.context }}</p>
+
+  <div class="epithet-footer">
+    <span class="epithet-source">
+      {% if entry.source_url %}
+        <a href="{{ entry.source_url }}" target="_blank" rel="noopener">{{ entry.source }}</a>
+      {% else %}
+        {{ entry.source }}
+      {% endif %}
+    </span>
+    <button class="epithet-notes-toggle" data-id="{{ entry.id }}">Doctrine note ▾</button>
+  </div>
+
+  <div class="epithet-notes-panel" id="notes-{{ entry.id }}" style="display:none;">
+    <p>{{ entry.notes }}</p>
+  </div>
+</div>
+{% endfor %}
+</div>
+
+<div class="epithets-register-note">
+  <p><strong>Register status: incomplete.</strong> This register documents confirmed and borderline incidents identified through December 2025 rally transcripts and Term 1 primary sources. Additional instances likely exist in Term 2 rally transcripts not yet fully catalogued. Entries will be added during maintenance updates.</p>
+  <p>Epithet vocabulary is controlled: <code>shithole · hellhole · garbage · filthy · disgusting · barely_a_country · crime_ridden · going_to_hell · not_their_best · rapists · expulsion</code></p>
+</div>
+
+<style>
+/* ── Meta bar ──────────────────────────────────────────────────────── */
+.epithets-meta-bar {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1.5rem 0 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 1.5rem;
+}
+.epithets-stat { display: flex; flex-direction: column; gap: 0.15rem; }
+.epithets-stat-n {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1;
+}
+.epithets-stat-label {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--color-light-grey);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ── Filter bar ────────────────────────────────────────────────────── */
+.epithets-filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+.epithets-filter-group {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.epithets-filter-label {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--color-light-grey);
+  min-width: 55px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+.ef {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-mid-grey);
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.15s;
+}
+.ef:hover { border-color: var(--color-accent); color: var(--color-accent); }
+.ef.active {
+  background: var(--color-near-black);
+  color: var(--color-white);
+  border-color: var(--color-near-black);
+}
+
+/* ── Count line ────────────────────────────────────────────────────── */
+.epithets-count-line {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: var(--color-light-grey);
+  margin-bottom: 1.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+/* ── Epithet entry ─────────────────────────────────────────────────── */
+.epithet-entry {
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  background: var(--color-surface, #fafafa);
+  transition: border-color 0.15s;
+}
+.epithet-entry.borderline {
+  border-left-color: var(--color-mid-grey, #888);
+  opacity: 0.85;
+}
+.epithet-entry:hover { border-color: var(--color-accent); }
+
+.epithet-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.epithet-entry-meta {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.epithet-date {
+  font-size: var(--text-sm);
+  color: var(--color-light-grey);
+}
+.epithet-term-chip {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  padding: 0.15rem 0.5rem;
+  background: var(--color-near-black);
+  color: var(--color-white);
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.epithet-country-chip {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid var(--color-border);
+  color: var(--color-body);
+  border-radius: 2px;
+}
+.epithet-borderline-chip {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid var(--color-mid-grey);
+  color: var(--color-mid-grey);
+  border-radius: 2px;
+  font-style: italic;
+}
+
+/* ── Epithet vocabulary chips ──────────────────────────────────────── */
+.epithet-epithets { display: flex; gap: 0.35rem; flex-wrap: wrap; }
+.epithet-chip {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 2px;
+  border: 1px solid;
+}
+.epithet-chip--shithole       { color: #8B1A1A; background: #8B1A1A18; border-color: #8B1A1A44; }
+.epithet-chip--hellhole       { color: #8B3A1A; background: #8B3A1A18; border-color: #8B3A1A44; }
+.epithet-chip--garbage        { color: #6B4E1A; background: #6B4E1A18; border-color: #6B4E1A44; }
+.epithet-chip--filthy         { color: #5A4A1A; background: #5A4A1A18; border-color: #5A4A1A44; }
+.epithet-chip--disgusting     { color: #4A5A1A; background: #4A5A1A18; border-color: #4A5A1A44; }
+.epithet-chip--barely_a_country { color: #1A4A5A; background: #1A4A5A18; border-color: #1A4A5A44; }
+.epithet-chip--crime_ridden   { color: #6B1A5A; background: #6B1A5A18; border-color: #6B1A5A44; }
+.epithet-chip--going_to_hell  { color: #5A1A6B; background: #5A1A6B18; border-color: #5A1A6B44; }
+.epithet-chip--not_their_best { color: #1A5A6B; background: #1A5A6B18; border-color: #1A5A6B44; }
+.epithet-chip--rapists        { color: #8B1A3A; background: #8B1A3A18; border-color: #8B1A3A44; }
+.epithet-chip--expulsion      { color: #3A1A8B; background: #3A1A8B18; border-color: #3A1A8B44; }
+
+/* ── Quote ─────────────────────────────────────────────────────────── */
+.epithet-quote {
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--color-body);
+  border-left: none;
+  margin: 0 0 0.6rem;
+  padding: 0;
+}
+
+/* ── Context ───────────────────────────────────────────────────────── */
+.epithet-context {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: var(--color-light-grey);
+  margin: 0 0 0.75rem;
+}
+
+/* ── Footer ────────────────────────────────────────────────────────── */
+.epithet-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.epithet-source {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--color-light-grey);
+}
+.epithet-source a {
+  color: var(--color-light-grey);
+  text-decoration: underline;
+  text-decoration-color: var(--color-border);
+}
+.epithet-source a:hover { color: var(--color-accent); }
+.epithet-notes-toggle {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--color-light-grey);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-color: var(--color-border);
+}
+.epithet-notes-toggle:hover { color: var(--color-accent); }
+
+/* ── Notes panel ───────────────────────────────────────────────────── */
+.epithet-notes-panel {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  font-size: var(--text-sm);
+  color: var(--color-mid-grey);
+  line-height: 1.65;
+}
+
+/* ── Register note ─────────────────────────────────────────────────── */
+.epithets-register-note {
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface, #fafafa);
+  font-size: var(--text-sm);
+  color: var(--color-mid-grey);
+  line-height: 1.7;
+}
+.epithets-register-note p { margin: 0 0 0.5rem; }
+.epithets-register-note p:last-child { margin: 0; }
+.epithets-register-note code {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--color-body);
+}
+</style>
+
+<script>
+(function() {
+  // Count distinct countries
+  var allEntries = Array.from(document.querySelectorAll('.epithet-entry'));
+  var countries = new Set();
+  {% for entry in entries %}
+    {% for country in entry.countries %}
+      countries.add("{{ country }}");
+    {% endfor %}
+  {% endfor %}
+  document.getElementById('country-count').textContent = countries.size;
+
+  // Notes toggles
+  document.querySelectorAll('.epithet-notes-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var panel = document.getElementById('notes-' + btn.getAttribute('data-id'));
+      if (!panel) return;
+      var open = panel.style.display !== 'none';
+      panel.style.display = open ? 'none' : 'block';
+      btn.textContent = open ? 'Doctrine note ▾' : 'Doctrine note ▴';
+    });
+  });
+
+  // Filtering
+  var activeFilters = { term: 'all', epithet: 'all', status: 'all' };
+  var countEl = document.getElementById('ep-count');
+
+  function applyFilters() {
+    var visible = 0;
+    allEntries.forEach(function(el) {
+      var termMatch   = activeFilters.term === 'all' || el.getAttribute('data-term') === activeFilters.term;
+      var borderline  = el.getAttribute('data-borderline') === 'true';
+      var statusMatch = activeFilters.status === 'all'
+                     || (activeFilters.status === 'confirmed'  && !borderline)
+                     || (activeFilters.status === 'borderline' && borderline);
+      var epithets    = el.getAttribute('data-epithets').split('|');
+      var epithetMatch = activeFilters.epithet === 'all' || epithets.indexOf(activeFilters.epithet) !== -1;
+      var show = termMatch && statusMatch && epithetMatch;
+      el.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    countEl.textContent = visible;
+  }
+
+  document.querySelectorAll('.ef').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var ft = btn.getAttribute('data-filter');
+      activeFilters[ft] = btn.getAttribute('data-value');
+      btn.closest('.epithets-filter-group').querySelectorAll('.ef').forEach(function(b) {
+        b.classList.toggle('active', b === btn);
+      });
+      applyFilters();
+    });
+  });
+})();
+</script>

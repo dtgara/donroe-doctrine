@@ -1,0 +1,139 @@
+# Geographic Epithets Register
+# Documents every instance of the President using derogatory language to characterise
+# a country, region, or its people. Epithets array uses controlled vocabulary.
+# Status: incomplete — register grows as rally transcripts are catalogued.
+# Last updated: 2026-06-27
+
+entries:
+  - id: e001
+    date: "2015-06-16"
+    term: 1
+    countries: [Mexico]
+    context: Trump Tower presidential announcement speech, New York
+    quote: "When Mexico sends its people, they're not sending their best… They're bringing drugs. They're bringing crime. They're rapists."
+    source: "Washington Post transcript, June 16, 2015"
+    source_url: "https://www.washingtonpost.com/news/the-fix/wp/2015/06/16/donald-trumps-kickoff-speech-annotated/"
+    epithets: [not_their_best, rapists, crime_ridden]
+    notes: >-
+      Applied to Mexico as a nation-state (characterising its government as
+      deliberately exporting its worst citizens). The anchor statement of Term 1
+      immigration rhetoric. Repeated verbatim at multiple subsequent rallies.
+
+  - id: e002
+    date: "2018-01-11"
+    term: 1
+    countries: [Haiti, "El Salvador", Africa]
+    context: "Oval Office bipartisan immigration meeting, Washington D.C."
+    quote: "Why are we having all these people from shithole countries come here?"
+    source: "Washington Post, Jan 12, 2018; confirmed by Senators Durbin and Graham"
+    source_url: "https://www.washingtonpost.com/politics/trump-attacks-protections-for-immigrants-from-shithole-countries-in-oval-office-meeting/2018/01/11/bfc0725c-f711-11e7-91af-31ac729add94_story.html"
+    epithets: [shithole]
+    notes: >-
+      Made during an Oval Office meeting on immigration legislation. Trump denied
+      using the word; Senator Richard Durbin confirmed it under oath. Senator Graham
+      (R-SC) later confirmed the substance. Trump himself retroactively confirmed
+      the statement in December 2025 (see e008).
+
+  - id: e003
+    date: "2018-01-11"
+    term: 1
+    countries: [Haiti]
+    context: "Oval Office bipartisan immigration meeting, Washington D.C."
+    quote: "Why do we need more Haitians? Take them out."
+    source: "New York Times, Jan 12, 2018"
+    source_url: "https://www.nytimes.com/2018/01/11/us/politics/trump-shithole-countries.html"
+    epithets: [expulsion]
+    notes: >-
+      Reported alongside the e002 shithole remark. A separate statement made in the
+      same meeting directing the removal of Haitian nationals from any immigration deal.
+
+  - id: e004
+    date: "2025-09-23"
+    term: 2
+    countries: [Europe, "United Kingdom", France, Germany]
+    context: "Address to the United Nations General Assembly, New York"
+    quote: "Your countries are going to hell."
+    source: "UN General Assembly official transcript, September 23, 2025; Reuters"
+    source_url: "https://press.un.org/en/2025/ga12598.doc.htm"
+    epithets: [going_to_hell]
+    borderline: true
+    notes: >-
+      Delivered from the podium of the United Nations General Assembly — a formal
+      multilateral setting — directed at European allied nations. Classified as
+      borderline: the language targets allied democracies rather than developing
+      nations, and the context is critique of immigration policy rather than
+      characterisation of the country itself. Included on grounds of documentary
+      completeness.
+
+  - id: e005
+    date: "2025-12-02"
+    term: 2
+    countries: [Somalia]
+    context: "Cabinet meeting, White House, Washington D.C."
+    quote: "Somalia — it's barely a country. It's garbage. Garbage. Garbage. Garbage."
+    source: "White House pool report, December 2, 2025; AP"
+    source_url: "https://apnews.com/article/trump-somalia-cabinet-2025"
+    epithets: [barely_a_country, garbage]
+    notes: >-
+      Made in a Cabinet meeting in the context of the 19-country immigration pause
+      executive order. The word "garbage" was repeated four times according to pool
+      reporters present. Somalia was among the countries subject to the ban.
+
+  - id: e006
+    date: "2025-12-05"
+    term: 2
+    countries: [Somalia]
+    context: "Campaign-style rally, Des Moines, Iowa"
+    quote: "Somalia — filthy, dirty, disgusting, ridden with crime. The only thing they're good at is going after ships."
+    source: "Rev.com rally transcript, December 5, 2025; Reuters"
+    source_url: "https://www.rev.com/blog/transcripts/trump-rally-des-moines-december-2025"
+    epithets: [filthy, disgusting, crime_ridden]
+    notes: >-
+      Delivered three days after the Cabinet meeting (e005), escalating the language.
+      The reference to piracy ("going after ships") is factually grounded in Somali
+      piracy incidents, deployed here as a wholesale national characterisation.
+
+  - id: e007
+    date: "2025-12-10"
+    term: 2
+    countries: [Afghanistan, Haiti, Somalia]
+    context: "Campaign-style rally, Reading, Pennsylvania"
+    quote: "These people come from hellholes. Afghanistan is a hellhole. Haiti is a hellhole. Somalia is a hellhole."
+    source: "Rev.com rally transcript, December 10, 2025; The Guardian"
+    source_url: "https://www.theguardian.com/us-news/2025/dec/10/trump-hellhole-countries-rally"
+    epithets: [hellhole]
+    notes: >-
+      Part of a sustained rhetorical pattern across December 2025 rallies timed to
+      coincide with the 19-country immigration pause. Three countries named explicitly.
+      The same rally contained the retroactive shithole confirmation (e008).
+
+  - id: e008
+    date: "2025-12-10"
+    term: 2
+    countries: [Haiti, "El Salvador", Africa]
+    context: "Campaign-style rally, Reading, Pennsylvania"
+    quote: "I said shithole countries and I meant it. I'm not walking that back. Shithole."
+    source: "Rev.com rally transcript, December 10, 2025; Associated Press"
+    source_url: "https://apnews.com/article/trump-shithole-countries-confirmation-2025"
+    epithets: [shithole]
+    notes: >-
+      Explicit retroactive confirmation of the January 2018 remark (e002) that Trump
+      had previously denied. Self-verification of a seven-year-old denial. The
+      countries referenced match those from the original 2018 incident.
+
+  - id: e009
+    date: "2026-04-24"
+    term: 2
+    countries: [India, China]
+    context: "Truth Social repost, Washington D.C."
+    quote: "Some other hellhole on the planet."
+    source: "Truth Social @realDonaldTrump, April 24, 2026; Times of India"
+    source_url: "https://timesofindia.indiatimes.com/world/us/trump-reposts-hellhole-comment-india-protests/articleshow/120234567.cms"
+    epithets: [hellhole]
+    borderline: true
+    notes: >-
+      A Truth Social repost of commentary by Michael Savage characterising countries
+      of origin for H-1B visa holders, implicitly referencing India and China.
+      Classified as borderline: the statement is a repost rather than a direct
+      utterance, though the President's amplification constitutes endorsement. India
+      lodged a formal diplomatic protest. Included on grounds of documentary record.
