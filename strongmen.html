@@ -1,0 +1,433 @@
+---
+layout: section
+title: "The Strongmen Files"
+section_intro: >
+  A verified register of documented praise, admiration, and rehabilitation of
+  authoritarian leaders, dictators, and strongmen across both presidential terms.
+  Cross-referenced against primary sources: transcripts, White House readouts,
+  and contemporaneous reporting. Register is ongoing.
+body_class: page-strongmen
+---
+
+{% assign entries = site.data.strongmen.entries %}
+{% assign term1 = entries | where: "term", 1 %}
+{% assign term2 = entries | where: "term", 2 %}
+
+<div class="sm-meta-bar">
+  <div class="sm-stat">
+    <span class="sm-stat-n">{{ entries | size }}</span>
+    <span class="sm-stat-label">Documented incidents</span>
+  </div>
+  <div class="sm-stat">
+    <span class="sm-stat-n" id="sm-leader-count">—</span>
+    <span class="sm-stat-label">Leaders praised</span>
+  </div>
+  <div class="sm-stat">
+    <span class="sm-stat-n">{{ term1 | size }}</span>
+    <span class="sm-stat-label">Term 1</span>
+  </div>
+  <div class="sm-stat">
+    <span class="sm-stat-n">{{ term2 | size }}</span>
+    <span class="sm-stat-label">Term 2</span>
+  </div>
+  <div class="sm-stat">
+    <span class="sm-stat-n" id="sm-country-count">—</span>
+    <span class="sm-stat-label">Countries</span>
+  </div>
+</div>
+
+<div class="sm-filter-bar">
+  <div class="sm-filter-group">
+    <span class="sm-filter-label">Term</span>
+    <button class="smf active" data-filter="term" data-value="all">All</button>
+    <button class="smf" data-filter="term" data-value="1">Term 1</button>
+    <button class="smf" data-filter="term" data-value="2">Term 2</button>
+  </div>
+  <div class="sm-filter-group">
+    <span class="sm-filter-label">Leader</span>
+    <button class="smf active" data-filter="subject" data-value="all">All</button>
+    <button class="smf" data-filter="subject" data-value="Kim Jong-un">Kim Jong-un</button>
+    <button class="smf" data-filter="subject" data-value="Vladimir Putin">Putin</button>
+    <button class="smf" data-filter="subject" data-value="Xi Jinping">Xi Jinping</button>
+    <button class="smf" data-filter="subject" data-value="Viktor Orbán">Orbán</button>
+    <button class="smf" data-filter="subject" data-value="Mohammed bin Salman">MBS</button>
+    <button class="smf" data-filter="subject" data-value="Abdel Fattah el-Sisi">Sisi</button>
+    <button class="smf" data-filter="subject" data-value="Recep Tayyip Erdoğan">Erdoğan</button>
+    <button class="smf" data-filter="subject" data-value="Rodrigo Duterte">Duterte</button>
+  </div>
+  <div class="sm-filter-group">
+    <span class="sm-filter-label">Praise type</span>
+    <button class="smf active" data-filter="praise" data-value="all">All</button>
+    <button class="smf" data-filter="praise" data-value="intelligence">Intelligence</button>
+    <button class="smf" data-filter="praise" data-value="strength">Strength</button>
+    <button class="smf" data-filter="praise" data-value="control">Control</button>
+    <button class="smf" data-filter="praise" data-value="envy">Envy</button>
+    <button class="smf" data-filter="praise" data-value="decisiveness">Decisiveness</button>
+    <button class="smf" data-filter="praise" data-value="loyalty">Loyalty</button>
+    <button class="smf" data-filter="praise" data-value="rehabilitation">Rehabilitation</button>
+  </div>
+</div>
+
+<p class="sm-count-line">Showing <span id="sm-count">{{ entries | size }}</span> of {{ entries | size }} incidents</p>
+
+<div class="sm-list" id="sm-list">
+{% for entry in entries %}
+<div class="sm-entry"
+     data-id="{{ entry.id }}"
+     data-term="{{ entry.term }}"
+     data-subject="{{ entry.subject }}"
+     data-praise="{{ entry.praise_type | join: '|' }}"
+     data-regime="{{ entry.regime_type }}"
+     data-country="{{ entry.country }}">
+
+  <div class="sm-entry-header">
+    <div class="sm-entry-meta">
+      <span class="sm-date mono">{{ entry.date | date: "%b %-d, %Y" }}</span>
+      <span class="sm-term-chip">Term {{ entry.term }}</span>
+      <span class="sm-subject-chip sm-subject--{{ entry.subject | slugify }}">{{ entry.subject }}</span>
+      <span class="sm-country-chip">{{ entry.country }}</span>
+      <span class="sm-regime-chip sm-regime--{{ entry.regime_type }}">{{ entry.regime_type | replace: '_', ' ' }}</span>
+    </div>
+    <div class="sm-praise-chips">
+      {% for pt in entry.praise_type %}
+        <span class="sm-praise-chip sm-praise--{{ pt }}">{{ pt | replace: '_', ' ' }}</span>
+      {% endfor %}
+    </div>
+  </div>
+
+  <blockquote class="sm-quote">&ldquo;{{ entry.quote }}&rdquo;</blockquote>
+
+  <p class="sm-context">{{ entry.context }}</p>
+
+  <div class="sm-footer">
+    <span class="sm-source">
+      {% if entry.source_url %}
+        <a href="{{ entry.source_url }}" target="_blank" rel="noopener">{{ entry.source }}</a>
+      {% else %}
+        {{ entry.source }}
+      {% endif %}
+    </span>
+    <button class="sm-notes-toggle" data-id="{{ entry.id }}">Doctrine note ▾</button>
+  </div>
+
+  <div class="sm-notes-panel" id="smnotes-{{ entry.id }}" style="display:none;">
+    <p>{{ entry.notes }}</p>
+  </div>
+
+</div>
+{% endfor %}
+</div>
+
+<div class="sm-register-note">
+  <p><strong>Register status: ongoing.</strong> Entries cover documented instances identified through public transcripts, official White House readouts, and verified reporting. Instances of praise embedded in private phone calls or off-record meetings are included only where corroborated by multiple sources or official leaks.</p>
+  <p>Praise vocabulary: <code>intelligence · strength · control · envy · decisiveness · loyalty · charisma · electoral · economic · rehabilitation · deference · leadership</code></p>
+  <p>Regime classification: <code>totalitarian · authoritarian · illiberal_democracy · absolute_monarchy · single_party · military</code></p>
+</div>
+
+<style>
+/* ── Meta bar ──────────────────────────────────────────────────── */
+.sm-meta-bar {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1.5rem 0 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 1.5rem;
+}
+.sm-stat { display: flex; flex-direction: column; gap: 0.15rem; }
+.sm-stat-n {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1;
+}
+.sm-stat-label {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--color-light-grey);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ── Filter bar ────────────────────────────────────────────────── */
+.sm-filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+.sm-filter-group {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.sm-filter-label {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--color-light-grey);
+  min-width: 75px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+.smf {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-mid-grey);
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.15s;
+}
+.smf:hover { border-color: var(--color-accent); color: var(--color-accent); }
+.smf.active {
+  background: var(--color-near-black);
+  color: var(--color-white);
+  border-color: var(--color-near-black);
+}
+
+/* ── Count line ────────────────────────────────────────────────── */
+.sm-count-line {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: var(--color-light-grey);
+  margin-bottom: 1.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+/* ── Entry ─────────────────────────────────────────────────────── */
+.sm-entry {
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  background: var(--color-surface, #fafafa);
+}
+.sm-entry:hover { border-color: var(--color-accent); }
+
+.sm-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.sm-entry-meta {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.sm-date {
+  font-size: var(--text-sm);
+  color: var(--color-light-grey);
+}
+
+/* ── Chips ─────────────────────────────────────────────────────── */
+.sm-term-chip {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  padding: 0.15rem 0.5rem;
+  background: var(--color-near-black);
+  color: var(--color-white);
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.sm-subject-chip {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+  border: 1px solid;
+  font-weight: 600;
+}
+.sm-subject--kim-jong-un    { color: #8B1A1A; background: #8B1A1A12; border-color: #8B1A1A44; }
+.sm-subject--vladimir-putin { color: #1A3A8B; background: #1A3A8B12; border-color: #1A3A8B44; }
+.sm-subject--xi-jinping     { color: #8B1A1A; background: #8B1A1A08; border-color: #8B1A1A33; }
+.sm-subject--viktor-orbán   { color: #4A1A8B; background: #4A1A8B12; border-color: #4A1A8B44; }
+.sm-subject--mohammed-bin-salman { color: #6B5A00; background: #6B5A0012; border-color: #6B5A0044; }
+.sm-subject--abdel-fattah-el-sisi { color: #00506B; background: #00506B12; border-color: #00506B44; }
+.sm-subject--recep-tayyip-erdogan, .sm-subject--recep-tayyip-erdoğan { color: #8B4A00; background: #8B4A0012; border-color: #8B4A0044; }
+.sm-subject--rodrigo-duterte { color: #006B3A; background: #006B3A12; border-color: #006B3A44; }
+
+.sm-country-chip {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid var(--color-border);
+  color: var(--color-body);
+  border-radius: 2px;
+}
+.sm-regime-chip {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid var(--color-border);
+  color: var(--color-mid-grey);
+  border-radius: 2px;
+  font-style: italic;
+}
+
+/* ── Praise type chips ─────────────────────────────────────────── */
+.sm-praise-chips { display: flex; gap: 0.35rem; flex-wrap: wrap; }
+.sm-praise-chip {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  padding: 0.18rem 0.5rem;
+  border-radius: 2px;
+  border: 1px solid;
+}
+.sm-praise--intelligence  { color: #1A5A8B; background: #1A5A8B15; border-color: #1A5A8B44; }
+.sm-praise--strength      { color: #8B1A1A; background: #8B1A1A15; border-color: #8B1A1A44; }
+.sm-praise--control       { color: #5A1A8B; background: #5A1A8B15; border-color: #5A1A8B44; }
+.sm-praise--envy          { color: #8B5A00; background: #8B5A0015; border-color: #8B5A0044; }
+.sm-praise--decisiveness  { color: #006B3A; background: #006B3A15; border-color: #006B3A44; }
+.sm-praise--loyalty       { color: #00506B; background: #00506B15; border-color: #00506B44; }
+.sm-praise--charisma      { color: #6B3A00; background: #6B3A0015; border-color: #6B3A0044; }
+.sm-praise--electoral     { color: #3A6B00; background: #3A6B0015; border-color: #3A6B0044; }
+.sm-praise--economic      { color: #006B5A; background: #006B5A15; border-color: #006B5A44; }
+.sm-praise--rehabilitation{ color: #6B0044; background: #6B004415; border-color: #6B004444; }
+.sm-praise--deference     { color: #444; background: #44444415; border-color: #44444444; }
+.sm-praise--leadership    { color: #004466; background: #00446615; border-color: #00446644; }
+
+/* ── Quote ─────────────────────────────────────────────────────── */
+.sm-quote {
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--color-body);
+  border-left: none;
+  margin: 0 0 0.6rem;
+  padding: 0;
+}
+
+/* ── Context ───────────────────────────────────────────────────── */
+.sm-context {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: var(--color-light-grey);
+  margin: 0 0 0.75rem;
+}
+
+/* ── Footer ────────────────────────────────────────────────────── */
+.sm-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.sm-source {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--color-light-grey);
+}
+.sm-source a {
+  color: var(--color-light-grey);
+  text-decoration: underline;
+  text-decoration-color: var(--color-border);
+}
+.sm-source a:hover { color: var(--color-accent); }
+.sm-notes-toggle {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--color-light-grey);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-color: var(--color-border);
+}
+.sm-notes-toggle:hover { color: var(--color-accent); }
+
+/* ── Notes panel ───────────────────────────────────────────────── */
+.sm-notes-panel {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  font-size: var(--text-sm);
+  color: var(--color-mid-grey);
+  line-height: 1.65;
+}
+
+/* ── Register note ─────────────────────────────────────────────── */
+.sm-register-note {
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface, #fafafa);
+  font-size: var(--text-sm);
+  color: var(--color-mid-grey);
+  line-height: 1.7;
+}
+.sm-register-note p { margin: 0 0 0.5rem; }
+.sm-register-note p:last-child { margin: 0; }
+.sm-register-note code {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--color-body);
+}
+</style>
+
+<script>
+(function() {
+  var entries = Array.from(document.querySelectorAll('.sm-entry'));
+
+  // Count distinct leaders and countries
+  var leaders = new Set(), countries = new Set();
+  entries.forEach(function(el) {
+    leaders.add(el.getAttribute('data-subject'));
+    countries.add(el.getAttribute('data-country'));
+  });
+  document.getElementById('sm-leader-count').textContent = leaders.size;
+  document.getElementById('sm-country-count').textContent = countries.size;
+
+  // Notes toggles
+  document.querySelectorAll('.sm-notes-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var panel = document.getElementById('smnotes-' + btn.getAttribute('data-id'));
+      if (!panel) return;
+      var open = panel.style.display !== 'none';
+      panel.style.display = open ? 'none' : 'block';
+      btn.textContent = open ? 'Doctrine note ▾' : 'Doctrine note ▴';
+    });
+  });
+
+  // Filtering
+  var activeFilters = { term: 'all', subject: 'all', praise: 'all' };
+  var countEl = document.getElementById('sm-count');
+
+  function applyFilters() {
+    var visible = 0;
+    entries.forEach(function(el) {
+      var termMatch    = activeFilters.term === 'all' || el.getAttribute('data-term') === activeFilters.term;
+      var subjectMatch = activeFilters.subject === 'all' || el.getAttribute('data-subject') === activeFilters.subject;
+      var praiseList   = el.getAttribute('data-praise').split('|');
+      var praiseMatch  = activeFilters.praise === 'all' || praiseList.indexOf(activeFilters.praise) !== -1;
+      var show = termMatch && subjectMatch && praiseMatch;
+      el.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    countEl.textContent = visible;
+  }
+
+  document.querySelectorAll('.smf').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var ft = btn.getAttribute('data-filter');
+      activeFilters[ft] = btn.getAttribute('data-value');
+      btn.closest('.sm-filter-group').querySelectorAll('.smf').forEach(function(b) {
+        b.classList.toggle('active', b === btn);
+      });
+      applyFilters();
+    });
+  });
+})();
+</script>
