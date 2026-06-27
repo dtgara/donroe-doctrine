@@ -1,325 +1,1053 @@
-# THE DONROE DOCTRINE — Withdrawal Register
-# Schema: id, agreement, category, summary, term_1_date, biden_rejoined, term_2_date, current_status, notes
-# Status: withdrawn | threatened | withdrawn_twice | rejoined_then_withdrawn | never_rejoined | partial
-# Categories: environment | health | security | trade | multilateral | nuclear | labour
-
-# ── ENVIRONMENT ──────────────────────────────────────────────────────────────
-
 - id: paris-agreement
-  agreement: "Paris Climate Agreement"
+  agreement: Paris Climate Agreement
   category: environment
-  summary: "The 2015 international framework committing nations to limit global
-    warming to 1.5–2°C above pre-industrial levels. 196 parties. Entered into
-    force November 2016."
+  summary: The 2015 international framework committing nations to limit global warming to 1.5–2°C above pre-industrial levels.
+    196 parties. Entered into force November 2016.
   term_1_date: '2017-06-01'
   term_1_effective: '2019-11-04'
   biden_rejoined: '2021-01-20'
   term_2_date: '2025-01-20'
   term_2_effective: '2026-01-27'
   current_status: withdrawn_twice
-  notes: "One of Trump's first acts in both terms. The only country to withdraw
-    twice. Biden re-joined on his first day in office; Trump re-withdrew on his.
-    As of January 2026, the US is no longer legally bound by its carbon commitments.
-    Rubio described the Paris Agreement as contrary to US interests."
-
+  notes: One of Trump's first acts in both terms. The only country to withdraw twice. Biden re-joined on his first day in
+    office; Trump re-withdrew on his. As of January 2026, the US is no longer legally bound by its carbon commitments. Rubio
+    described the Paris Agreement as contrary to US interests.
 - id: unfccc
-  agreement: "UN Framework Convention on Climate Change (UNFCCC)"
+  agreement: UN Framework Convention on Climate Change (UNFCCC)
   category: environment
-  summary: "The foundational 1992 climate treaty on which the Paris Agreement is
-    built. Senate-ratified. Provides the international framework for all climate
-    negotiations."
+  summary: The foundational 1992 climate treaty on which the Paris Agreement is built. Senate-ratified. Provides the international
+    framework for all climate negotiations.
   term_1_date: null
   term_1_effective: null
   biden_rejoined: null
   term_2_date: '2026-01-07'
   term_2_effective: null
   current_status: withdrawn
-  notes: "Included in the January 2026 executive order withdrawing from 66 international
-    organisations. More significant than leaving the Paris Agreement: this withdraws
-    from the entire legal architecture for global climate negotiations. As a
-    Senate-ratified treaty, the withdrawal's legality faces expected challenge."
-
+  notes: 'Included in the January 2026 executive order withdrawing from 66 international organisations. More significant than
+    leaving the Paris Agreement: this withdraws from the entire legal architecture for global climate negotiations. As a Senate-ratified
+    treaty, the withdrawal''s legality faces expected challenge.'
 - id: ipcc
-  agreement: "Intergovernmental Panel on Climate Change (IPCC)"
+  agreement: Intergovernmental Panel on Climate Change (IPCC)
   category: environment
-  summary: "The UN body that synthesises global climate science for policymakers.
-    Founded 1988. Produces the authoritative Assessment Reports that form the
-    scientific basis for international climate policy."
+  summary: The UN body that synthesises global climate science for policymakers. Founded 1988. Produces the authoritative
+    Assessment Reports that form the scientific basis for international climate policy.
   term_1_date: null
   term_1_effective: null
   biden_rejoined: null
   term_2_date: '2026-01-07'
   term_2_effective: null
   current_status: withdrawn
-  notes: "Included in the January 2026 executive order. The US contributed approximately
-    $2 million annually to the IPCC. Rubio described it as wasteful. The IPCC's
-    most recent report cited the US as the largest historical emitter of greenhouse
-    gases."
-
+  notes: Included in the January 2026 executive order. The US contributed approximately $2 million annually to the IPCC. Rubio
+    described it as wasteful. The IPCC's most recent report cited the US as the largest historical emitter of greenhouse gases.
 - id: irena
-  agreement: "International Renewable Energy Agency (IRENA)"
+  agreement: International Renewable Energy Agency (IRENA)
   category: environment
-  summary: "Intergovernmental organisation supporting countries in their transition
-    to renewable energy. 168 members. Founded 2009 partly through US initiative."
+  summary: Intergovernmental organisation supporting countries in their transition to renewable energy. 168 members. Founded
+    2009 partly through US initiative.
   term_1_date: null
   term_1_effective: null
   biden_rejoined: null
   term_2_date: '2026-01-07'
   term_2_effective: null
   current_status: withdrawn
-  notes: "Included in the January 2026 executive order. The US was a founding
-    supporter of IRENA under the George W. Bush administration. Withdrawal came
-    weeks after the administration approved record domestic oil and gas leasing."
-
-# ── HEALTH ───────────────────────────────────────────────────────────────────
-
+  notes: Included in the January 2026 executive order. The US was a founding supporter of IRENA under the George W. Bush administration.
+    Withdrawal came weeks after the administration approved record domestic oil and gas leasing.
 - id: who
-  agreement: "World Health Organization (WHO)"
+  agreement: World Health Organization (WHO)
   category: health
-  summary: "The UN specialised agency for international public health, founded 1948.
-    Coordinates responses to global health emergencies. The US was historically
-    the largest funder, contributing approximately $400–900 million annually."
+  summary: The UN specialised agency for international public health, founded 1948. Coordinates responses to global health
+    emergencies. The US was historically the largest funder, contributing approximately $400–900 million annually.
   term_1_date: '2020-07-06'
   term_1_effective: '2021-07-06'
   biden_rejoined: '2021-01-20'
   term_2_date: '2025-01-20'
   term_2_effective: null
   current_status: withdrawn_twice
-  notes: "Announced withdrawal in July 2020 during COVID-19 pandemic, citing WHO's
-    handling of China's initial outbreak. Biden reversed immediately on day one.
-    Trump re-withdrew on day one of Term 2. The second withdrawal left the US without
-    representation in global health emergency coordination. Budget shortfalls at
-    WHO followed US departure."
-
-# ── NUCLEAR / SECURITY ───────────────────────────────────────────────────────
-
+  notes: Announced withdrawal in July 2020 during COVID-19 pandemic, citing WHO's handling of China's initial outbreak. Biden
+    reversed immediately on day one. Trump re-withdrew on day one of Term 2. The second withdrawal left the US without representation
+    in global health emergency coordination. Budget shortfalls at WHO followed US departure.
 - id: jcpoa
-  agreement: "Joint Comprehensive Plan of Action (JCPOA) — Iran Nuclear Deal"
+  agreement: Joint Comprehensive Plan of Action (JCPOA) — Iran Nuclear Deal
   category: nuclear
-  summary: "2015 multilateral agreement between Iran and the P5+1 (US, UK, France,
-    Germany, Russia, China) limiting Iran's nuclear programme in exchange for
-    sanctions relief. Described by Trump as the worst deal ever made."
+  summary: 2015 multilateral agreement between Iran and the P5+1 (US, UK, France, Germany, Russia, China) limiting Iran's
+    nuclear programme in exchange for sanctions relief. Described by Trump as the worst deal ever made.
   term_1_date: '2018-05-08'
   term_1_effective: '2018-05-08'
   biden_rejoined: null
   term_2_date: null
   term_2_effective: null
   current_status: never_rejoined
-  notes: "Biden attempted to re-enter the JCPOA through 2021–2022 negotiations
-    but failed. Iran's nuclear programme advanced substantially under maximum pressure
-    — enriching uranium to 60% purity. In February 2026, US-Israeli strikes hit
-    Iranian nuclear facilities, and ceasefire-adjacent negotiations for a new
-    deal began — on terms critics note are less favourable than the original JCPOA."
-
+  notes: Biden attempted to re-enter the JCPOA through 2021–2022 negotiations but failed. Iran's nuclear programme advanced
+    substantially under maximum pressure — enriching uranium to 60% purity. In February 2026, US-Israeli strikes hit Iranian
+    nuclear facilities, and ceasefire-adjacent negotiations for a new deal began — on terms critics note are less favourable
+    than the original JCPOA.
 - id: inf-treaty
-  agreement: "Intermediate-Range Nuclear Forces (INF) Treaty"
+  agreement: Intermediate-Range Nuclear Forces (INF) Treaty
   category: nuclear
-  summary: "1987 bilateral arms control treaty between the US and Soviet Union,
-    eliminating an entire class of nuclear-capable missiles. A landmark of Cold
-    War arms reduction. Signed by Reagan and Gorbachev."
+  summary: 1987 bilateral arms control treaty between the US and Soviet Union, eliminating an entire class of nuclear-capable
+    missiles. A landmark of Cold War arms reduction. Signed by Reagan and Gorbachev.
   term_1_date: '2019-02-02'
   term_1_effective: '2019-08-02'
   biden_rejoined: null
   term_2_date: null
   term_2_effective: null
   current_status: never_rejoined
-  notes: "Trump cited Russian violations of the treaty as justification. Withdrawal
-    triggered a new arms development race. Russia also formally suspended the treaty.
-    Neither Biden nor Trump Term 2 sought to restore it. The collapse of the INF
-    Treaty removed a 32-year constraint on medium-range nuclear weapons in Europe."
-
+  notes: Trump cited Russian violations of the treaty as justification. Withdrawal triggered a new arms development race.
+    Russia also formally suspended the treaty. Neither Biden nor Trump Term 2 sought to restore it. The collapse of the INF
+    Treaty removed a 32-year constraint on medium-range nuclear weapons in Europe.
 - id: open-skies
-  agreement: "Treaty on Open Skies"
+  agreement: Treaty on Open Skies
   category: security
-  summary: "34-nation treaty allowing signatories to conduct unarmed aerial surveillance
-    flights over each other's territory, providing military transparency. Signed
-    1992. US-Russia trust-building mechanism."
+  summary: 34-nation treaty allowing signatories to conduct unarmed aerial surveillance flights over each other's territory,
+    providing military transparency. Signed 1992. US-Russia trust-building mechanism.
   term_1_date: '2020-05-22'
   term_1_effective: '2020-11-22'
   biden_rejoined: null
   term_2_date: null
   term_2_effective: null
   current_status: never_rejoined
-  notes: "Biden chose not to re-enter after Russia withdrew in retaliation for
-    the US departure. The treaty effectively collapsed. European allies expressed
-    dismay at the US withdrawal, which they argued removed transparency mechanisms
-    while providing no leverage over Russia."
-
+  notes: Biden chose not to re-enter after Russia withdrew in retaliation for the US departure. The treaty effectively collapsed.
+    European allies expressed dismay at the US withdrawal, which they argued removed transparency mechanisms while providing
+    no leverage over Russia.
 - id: new-start
-  agreement: "New START (Strategic Arms Reduction Treaty)"
+  agreement: New START (Strategic Arms Reduction Treaty)
   category: nuclear
-  summary: "2010 bilateral US-Russia treaty limiting deployed strategic nuclear
-    warheads to 1,550 per side and delivery systems to 700. The last remaining
-    major nuclear arms control treaty between the two largest nuclear powers."
+  summary: 2010 bilateral US-Russia treaty limiting deployed strategic nuclear warheads to 1,550 per side and delivery systems
+    to 700. The last remaining major nuclear arms control treaty between the two largest nuclear powers.
   term_1_date: null
   term_1_effective: null
   biden_rejoined: null
   term_2_date: '2023-02-21'
   term_2_effective: null
   current_status: withdrawn
-  notes: "Russia suspended New START in February 2023, not the US — but the Trump
-    administration made no effort to restore it upon returning to office in 2025,
-    despite New START expiring in February 2026. The lapse leaves no bilateral
-    nuclear arms control agreement in force between the US and Russia for the first
-    time since 1972."
-
-# ── TRADE ────────────────────────────────────────────────────────────────────
-
+  notes: Russia suspended New START in February 2023, not the US — but the Trump administration made no effort to restore
+    it upon returning to office in 2025, despite New START expiring in February 2026. The lapse leaves no bilateral nuclear
+    arms control agreement in force between the US and Russia for the first time since 1972.
 - id: tpp
-  agreement: "Trans-Pacific Partnership (TPP)"
+  agreement: Trans-Pacific Partnership (TPP)
   category: trade
-  summary: "Twelve-nation free trade agreement covering 40% of the global economy,
-    negotiated under Obama. Intended to counter China's economic influence in
-    the Asia-Pacific through US-led trade architecture."
+  summary: Twelve-nation free trade agreement covering 40% of the global economy, negotiated under Obama. Intended to counter
+    China's economic influence in the Asia-Pacific through US-led trade architecture.
   term_1_date: '2017-01-23'
   term_1_effective: '2017-01-23'
   biden_rejoined: null
   term_2_date: null
   term_2_effective: null
   current_status: never_rejoined
-  notes: "Trump withdrew on day three of Term 1. The remaining eleven nations
-    proceeded without the US as the Comprehensive and Progressive Agreement for
-    Trans-Pacific Partnership (CPTPP). China subsequently applied to join CPTPP.
-    Trade experts widely noted the withdrawal ceded US economic influence in the
-    Asia-Pacific to China — the opposite of the stated intent."
-
-# ── MULTILATERAL ─────────────────────────────────────────────────────────────
-
+  notes: Trump withdrew on day three of Term 1. The remaining eleven nations proceeded without the US as the Comprehensive
+    and Progressive Agreement for Trans-Pacific Partnership (CPTPP). China subsequently applied to join CPTPP. Trade experts
+    widely noted the withdrawal ceded US economic influence in the Asia-Pacific to China — the opposite of the stated intent.
 - id: unesco
-  agreement: "UNESCO (UN Educational, Scientific and Cultural Organization)"
+  agreement: UNESCO (UN Educational, Scientific and Cultural Organization)
   category: multilateral
-  summary: "UN agency promoting international cooperation in education, science,
-    culture, and communication. Administers the World Heritage Sites programme.
-    Founded 1945. The US rejoined under Biden in 2023 after a six-year absence."
+  summary: UN agency promoting international cooperation in education, science, culture, and communication. Administers the
+    World Heritage Sites programme. Founded 1945. The US rejoined under Biden in 2023 after a six-year absence.
   term_1_date: '2017-10-12'
   term_1_effective: '2018-12-31'
   biden_rejoined: '2023-07-11'
   term_2_date: '2025-07-22'
   term_2_effective: null
   current_status: withdrawn_twice
-  notes: "First withdrawal cited Palestinian membership and alleged anti-Israel
-    bias. Biden spent political capital and funds to rejoin in 2023. Trump withdrew
-    again in July 2025, again citing anti-Israel bias and 'woke' causes. 26 US
-    World Heritage Sites, including the Statue of Liberty, fall under UNESCO
-    oversight. US arrears from Term 1 and Term 2 departures now exceed $600 million."
-
+  notes: First withdrawal cited Palestinian membership and alleged anti-Israel bias. Biden spent political capital and funds
+    to rejoin in 2023. Trump withdrew again in July 2025, again citing anti-Israel bias and 'woke' causes. 26 US World Heritage
+    Sites, including the Statue of Liberty, fall under UNESCO oversight. US arrears from Term 1 and Term 2 departures now
+    exceed $600 million.
 - id: un-human-rights-council
-  agreement: "UN Human Rights Council (UNHRC)"
+  agreement: UN Human Rights Council (UNHRC)
   category: multilateral
-  summary: "UN body responsible for promoting and protecting human rights globally.
-    45 member states serving rotating three-year terms. Established 2006. The US
-    was historically one of its most active members."
+  summary: UN body responsible for promoting and protecting human rights globally. 45 member states serving rotating three-year
+    terms. Established 2006. The US was historically one of its most active members.
   term_1_date: '2018-06-19'
   term_1_effective: '2018-06-19'
   biden_rejoined: '2021-10-14'
   term_2_date: '2025-01-28'
   term_2_effective: null
   current_status: withdrawn_twice
-  notes: "Both withdrawals cited disproportionate focus on Israel and membership
-    of authoritarian states. Critics noted the withdrawal removed the US from the
-    room where human rights accountability was debated. Biden rejoined to re-engage
-    from within. Trump re-withdrew one week into Term 2."
-
+  notes: Both withdrawals cited disproportionate focus on Israel and membership of authoritarian states. Critics noted the
+    withdrawal removed the US from the room where human rights accountability was debated. Biden rejoined to re-engage from
+    within. Trump re-withdrew one week into Term 2.
 - id: un-global-compact-migration
-  agreement: "UN Global Compact for Safe, Orderly and Regular Migration"
+  agreement: UN Global Compact for Safe, Orderly and Regular Migration
   category: multilateral
-  summary: "Non-binding international framework for international cooperation on
-    migration. Adopted December 2018 by 164 countries. Covers 23 objectives for
-    managing migration. Not a treaty."
+  summary: Non-binding international framework for international cooperation on migration. Adopted December 2018 by 164 countries.
+    Covers 23 objectives for managing migration. Not a treaty.
   term_1_date: '2017-12-02'
   term_1_effective: '2017-12-02'
   biden_rejoined: null
   term_2_date: null
   term_2_effective: null
   current_status: never_rejoined
-  notes: "The US withdrew before the Compact was even finalised. One of the first
-    Trump Term 1 multilateral withdrawals. Biden did not formally rejoin. The
-    US remains outside the framework. The withdrawal was announced by then-UN
-    Ambassador Nikki Haley."
-
+  notes: The US withdrew before the Compact was even finalised. One of the first Trump Term 1 multilateral withdrawals. Biden
+    did not formally rejoin. The US remains outside the framework. The withdrawal was announced by then-UN Ambassador Nikki
+    Haley.
 - id: un-population-fund
-  agreement: "UN Population Fund (UNFPA)"
+  agreement: UN Population Fund (UNFPA)
   category: multilateral
-  summary: "UN agency delivering reproductive health and family planning services
-    in 150 countries. Largest international provider of sexual and reproductive
-    health services. US historically a major donor."
+  summary: UN agency delivering reproductive health and family planning services in 150 countries. Largest international provider
+    of sexual and reproductive health services. US historically a major donor.
   term_1_date: '2017-04-03'
   term_1_effective: '2017-04-03'
   biden_rejoined: '2021-01-20'
   term_2_date: '2025-01-20'
   term_2_effective: null
   current_status: withdrawn_twice
-  notes: "Defunded in both Trump terms under the Kemp-Kasten Amendment, citing
-    alleged support for coercive abortion programmes in China — a claim UNFPA
-    disputes and international auditors have not substantiated. Biden restored
-    funding immediately. Trump defunded again on day one of Term 2. UNFPA serves
-    approximately 146 million women in developing countries."
-
+  notes: Defunded in both Trump terms under the Kemp-Kasten Amendment, citing alleged support for coercive abortion programmes
+    in China — a claim UNFPA disputes and international auditors have not substantiated. Biden restored funding immediately.
+    Trump defunded again on day one of Term 2. UNFPA serves approximately 146 million women in developing countries.
 - id: venice-commission
-  agreement: "Venice Commission (Council of Europe)"
+  agreement: Venice Commission (Council of Europe)
   category: multilateral
-  summary: "Council of Europe advisory body on constitutional law, providing legal
-    opinions to strengthen democratic institutions. 62 member states including
-    non-EU democracies. Founded 1990."
+  summary: Council of Europe advisory body on constitutional law, providing legal opinions to strengthen democratic institutions.
+    62 member states including non-EU democracies. Founded 1990.
   term_1_date: null
   term_1_effective: null
   biden_rejoined: null
   term_2_date: '2026-01-07'
   term_2_effective: null
   current_status: withdrawn
-  notes: "Included in the January 2026 executive order withdrawing from 66 organisations.
-    The Venice Commission advises governments on electoral and constitutional law —
-    including advising on democratic backsliding. Rubio described it as contrary
-    to US interests."
-
+  notes: Included in the January 2026 executive order withdrawing from 66 organisations. The Venice Commission advises governments
+    on electoral and constitutional law — including advising on democratic backsliding. Rubio described it as contrary to
+    US interests.
 - id: freedom-online-coalition
-  agreement: "Freedom Online Coalition"
+  agreement: Freedom Online Coalition
   category: multilateral
-  summary: "Intergovernmental coalition of 36 countries dedicated to advancing
-    internet freedom globally. Co-founded by the United States. Works to counter
-    censorship and surveillance by authoritarian states."
+  summary: Intergovernmental coalition of 36 countries dedicated to advancing internet freedom globally. Co-founded by the
+    United States. Works to counter censorship and surveillance by authoritarian states.
   term_1_date: null
   term_1_effective: null
   biden_rejoined: null
   term_2_date: '2026-01-07'
   term_2_effective: null
   current_status: withdrawn
-  notes: "Included in the January 2026 executive order. The US co-founded this
-    coalition. Withdrawal from a body dedicated to internet freedom was noted as
-    particularly incongruous by international press freedom organisations."
-
+  notes: Included in the January 2026 executive order. The US co-founded this coalition. Withdrawal from a body dedicated
+    to internet freedom was noted as particularly incongruous by international press freedom organisations.
 - id: global-counterterrorism-forum
-  agreement: "Global Counterterrorism Forum (GCTF)"
+  agreement: Global Counterterrorism Forum (GCTF)
   category: security
-  summary: "Multilateral counterterrorism body with 30 member countries and the EU,
-    co-founded by the US. Facilitates information sharing and capacity building
-    on counterterrorism. Founded 2011."
+  summary: Multilateral counterterrorism body with 30 member countries and the EU, co-founded by the US. Facilitates information
+    sharing and capacity building on counterterrorism. Founded 2011.
   term_1_date: null
   term_1_effective: null
   biden_rejoined: null
   term_2_date: '2026-01-07'
   term_2_effective: null
   current_status: withdrawn
-  notes: "Included in the January 2026 executive order. The US co-founded the
-    GCTF. Withdrawal from a counterterrorism coordination body drew particular
-    scrutiny from former national security officials who noted the US was ceding
-    influence in an area it had previously led."
-
-# ── LABOUR ───────────────────────────────────────────────────────────────────
-
+  notes: Included in the January 2026 executive order. The US co-founded the GCTF. Withdrawal from a counterterrorism coordination
+    body drew particular scrutiny from former national security officials who noted the US was ceding influence in an area
+    it had previously led.
 - id: ilo-governance
-  agreement: "International Labour Organization (ILO) — Governance Conventions"
+  agreement: International Labour Organization (ILO) — Governance Conventions
   category: labour
-  summary: "The ILO sets international labour standards. The US has ratified only
-    14 of 190 ILO conventions — the lowest rate among major economies. Trump's
-    Term 2 further disengaged from ILO standard-setting processes."
+  summary: The ILO sets international labour standards. The US has ratified only 14 of 190 ILO conventions — the lowest rate
+    among major economies. Trump's Term 2 further disengaged from ILO standard-setting processes.
   term_1_date: null
   term_1_effective: null
   biden_rejoined: null
   term_2_date: '2025-03-01'
   term_2_effective: null
   current_status: partial
-  notes: "US participation in ILO governance processes was significantly reduced
-    in Term 2. Not a formal withdrawal from the ILO itself, but a material reduction
-    in engagement and funding to specific ILO programmes on labour standards and
-    migration. Included in broader DOGE-driven international organisation funding cuts."
+  notes: US participation in ILO governance processes was significantly reduced in Term 2. Not a formal withdrawal from the
+    ILO itself, but a material reduction in engagement and funding to specific ILO programmes on labour standards and migration.
+    Included in broader DOGE-driven international organisation funding cuts.
+- id: carbon-free-energy-compact
+  agreement: 24/7 Carbon-Free Energy Compact
+  category: environment
+  summary: A voluntary initiative launched at COP26 in 2021 committing signatories — governments, utilities, and corporations
+    — to match electricity consumption with carbon-free generation on an hourly basis by 2030. The US joined under Biden.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. US had joined in 2021 under the Biden administration. No prior Term
+    1 involvement.
+- id: colombo-plan
+  agreement: Colombo Plan Council
+  category: multilateral
+  summary: An intergovernmental organisation established in 1951 to promote cooperative economic and social development in
+    Asia and the Pacific. 27 member states. The US joined in 1951.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. One of the oldest regional development organisations in the Asia-Pacific.
+    US membership dated from the organisation's founding year.
+- id: commission-environmental-cooperation
+  agreement: Commission for Environmental Cooperation (CEC)
+  category: environment
+  summary: A trilateral body established under the North American Agreement on Environmental Cooperation (NAAEC), the environmental
+    side agreement to NAFTA/USMCA, to address transboundary environmental issues among Canada, Mexico, and the United States.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. The CEC was created as part of the NAFTA side agreements in 1994
+    and continued under USMCA. Its withdrawal is formally inconsistent with US obligations under USMCA, which the Trump administration
+    negotiated in its first term.
+- id: education-cannot-wait
+  agreement: Education Cannot Wait (ECW)
+  category: health
+  summary: A UN-hosted fund established in 2016 to deliver education in humanitarian emergencies and protracted crises. Funded
+    primarily by donor governments. Disbursed approximately $1.5 billion between 2016 and 2024.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. The US was a significant donor. Withdrawal consistent with broader
+    defunding of humanitarian multilateral mechanisms initiated in early 2025.
+- id: european-centre-hybrid-threats
+  agreement: European Centre of Excellence for Countering Hybrid Threats (Hybrid CoE)
+  category: security
+  summary: A Helsinki-based NATO- and EU-affiliated research and training centre established in 2017 to improve resilience
+    against hybrid threats including disinformation, cyberattacks, and election interference. 33 participating nations.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. The centre focuses on Russian hybrid warfare tactics. Withdrawal
+    follows a broader pattern of reducing US involvement in European security coordination outside direct NATO structures.
+- id: forum-european-highway-research
+  agreement: Forum of European National Highway Research Laboratories (FEHRL)
+  category: multilateral
+  summary: A Brussels-based organisation coordinating highway and transport infrastructure research across European national
+    laboratories. US participation was via the Federal Highway Administration.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. Primarily a European body; US participation was an observer/associate
+    arrangement. One of the less prominent withdrawals in the January 7 list.
+- id: global-community-engagement-resilience-fund
+  agreement: Global Community Engagement and Resilience Fund (GCERF)
+  category: security
+  summary: A Geneva-based fund established in 2014 to prevent and counter violent extremism at the community level. Provides
+    grants to civil society organisations in at-risk countries. 14 donor nations.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. US was a significant donor. Withdrawal consistent with defunding
+    of counter-extremism programmes that do not operate under direct US government control.
+- id: global-forum-cyber-expertise
+  agreement: Global Forum on Cyber Expertise (GFCE)
+  category: security
+  summary: A global platform established at the 2015 Global Conference on Cyberspace in The Hague to facilitate international
+    cyber capacity building and cooperation. Over 180 member states, organisations, and private sector partners.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. Noted as inconsistent with the administration's preference for bilateral
+    cybersecurity arrangements over multilateral frameworks.
+- id: global-forum-migration-development
+  agreement: Global Forum on Migration and Development (GFMD)
+  category: multilateral
+  summary: A state-led, informal, non-binding consultative forum established in 2007 to address the nexus between migration
+    and development. Operates outside the formal UN system. 190 participating states.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. Withdrawal consistent with the administration's position on international
+    migration governance frameworks, which it views as constraints on sovereign border policy.
+- id: inter-american-institute-global-change
+  agreement: Inter-American Institute for Global Change Research (IAI)
+  category: environment
+  summary: An intergovernmental scientific organisation established in 1992 under the Inter-American Convention to coordinate
+    research on global environmental change in the Americas. 19 member states.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. The US was the host country and primary funder. Headquarters is in
+    São José dos Campos, Brazil. Withdrawal leaves the institute's operational future uncertain.
+- id: intergovernmental-forum-mining
+  agreement: Intergovernmental Forum on Mining, Minerals, Metals, and Sustainable Development (IGF)
+  category: environment
+  summary: A voluntary multilateral forum with over 80 member governments focused on maximising the benefits of mining for
+    sustainable development and minimising environmental and social impacts.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. Inclusion may reflect the "sustainable development" framing rather
+    than objection to the mining sector itself, which the administration has actively promoted through domestic policy.
+- id: ipbes
+  agreement: Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES)
+  category: environment
+  summary: An independent intergovernmental body established in 2012 to assess the state of biodiversity globally, analogous
+    in structure to the IPCC for climate. Provides the scientific evidence base for the Convention on Biological Diversity.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum alongside the IPCC. The US withdrawal removes one of the two largest
+    funders from a body whose assessments underpin international biodiversity policy.
+- id: iccrom
+  agreement: International Centre for the Study of the Preservation and Restoration of Cultural Property (ICCROM)
+  category: multilateral
+  summary: A Rome-based intergovernmental organisation established in 1956 to promote the conservation and restoration of
+    cultural heritage worldwide. 138 member states. The US was a founding member.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. No stated policy rationale specific to ICCROM. One of several cultural
+    and heritage institutions in the January 7 list.
+- id: international-cotton-advisory-committee
+  agreement: International Cotton Advisory Committee (ICAC)
+  category: trade
+  summary: A Washington-based intergovernmental organisation founded in 1939 providing data, analysis, and technical assistance
+    on the world cotton market. 26 member countries.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. The ICAC is headquartered in Washington, DC. US withdrawal from its
+    own-hosted body leaves the organisation's location and funding structure in question.
+- id: international-development-law-organization
+  agreement: International Development Law Organization (IDLO)
+  category: multilateral
+  summary: A Rome-based intergovernmental organisation established in 1983 supporting rule-of-law development in low- and
+    middle-income countries, including legal reform, judicial training, and access to justice programmes.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. IDLO programmes overlap in mandate with USAID rule-of-law initiatives,
+    which were also defunded in 2025.
+- id: international-energy-forum
+  agreement: International Energy Forum (IEF)
+  category: trade
+  summary: A Riyadh-based intergovernmental body facilitating dialogue between energy-producing and consuming nations, including
+    OPEC and IEA members. Provides a neutral platform for producer-consumer discussions on energy security and markets.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. IEF is one of the few multilateral energy bodies with active Gulf
+    state participation. Withdrawal is broadly consistent with the administration's preference for bilateral energy diplomacy.
+- id: ifacca
+  agreement: International Federation of Arts Councils and Culture Agencies (IFACCA)
+  category: multilateral
+  summary: A global network of arts councils and government culture agencies promoting international cooperation in arts and
+    cultural policy. Over 100 member organisations in 75 countries.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. US participation was through the National Endowment for the Arts.
+    One of several cultural bodies included in the January 7 list.
+- id: international-idea
+  agreement: International Institute for Democracy and Electoral Assistance (IDEA)
+  category: multilateral
+  summary: A Stockholm-based intergovernmental organisation established in 1995 supporting sustainable democracy worldwide
+    through research, technical assistance, and analysis of electoral systems. 35 member states.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. IDEA publishes the Global State of Democracy report. US withdrawal
+    removes the largest non-European democracy from the organisation's membership.
+- id: international-institute-justice-rule-of-law
+  agreement: International Institute for Justice and the Rule of Law (IIJ)
+  category: security
+  summary: A Malta-based institution established in 2014 to train criminal justice practitioners from Africa and the Middle
+    East on countering terrorism within a rule-of-law framework. Established with US support as part of the Global Counterterrorism
+    Forum.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum alongside the Global Counterterrorism Forum, to which it is operationally
+    linked. The US was the primary funder of both institutions.
+- id: international-lead-zinc-study-group
+  agreement: International Lead and Zinc Study Group (ILZSG)
+  category: trade
+  summary: A Lisbon-based intergovernmental body providing statistical data and analysis on the global lead and zinc industries.
+    Established in 1959. 25 member countries accounting for approximately 85 percent of global production and consumption.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. A statistical and advisory body with no regulatory authority. One
+    of the least prominent withdrawals in the January 7 list.
+- id: international-solar-alliance
+  agreement: International Solar Alliance (ISA)
+  category: environment
+  summary: An India- and France-initiated intergovernmental treaty organisation established at COP21 in 2015, focused on mobilising
+    investment in solar energy for tropical nations. 124 signatory countries.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. US joined the ISA under Biden in 2021. The ISA is headquartered in
+    Gurugram, India, and its mandate focuses on developing-world energy access rather than US domestic energy policy.
+- id: international-tropical-timber-organization
+  agreement: International Tropical Timber Organization (ITTO)
+  category: environment
+  summary: A Yokohama-based intergovernmental organisation established under the International Tropical Timber Agreement (1983)
+    to promote the conservation and sustainable use of tropical forests and the trade in sustainably managed tropical timber.
+    75 member states.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. US is a major consumer of tropical timber but not a major producing
+    country. Withdrawal removes a significant funding source and policy voice from an organisation overseeing trade in a globally
+    contested resource.
+- id: iucn
+  agreement: International Union for Conservation of Nature (IUCN)
+  category: environment
+  summary: The world's leading conservation organisation, established in 1948, maintaining the IUCN Red List of Threatened
+    Species — the global standard for assessing extinction risk. A union of both government and civil society members, it
+    has an unusual hybrid status in international law.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. US government membership was via the Department of State and various
+    federal agencies. The IUCN Red List is used by US regulatory agencies under the Endangered Species Act to inform listing
+    decisions.
+- id: pan-american-institute-geography-history
+  agreement: Pan American Institute of Geography and History (PAIGH)
+  category: multilateral
+  summary: The oldest inter-American organization, established in 1928 under the OAS system. Coordinates geographic, cartographic,
+    historical, and geophysical research across the Americas. 22 member states.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. Established nearly a century ago; US participation predates the United
+    Nations system. No stated policy rationale specific to PAIGH was offered.
+- id: partnership-atlantic-cooperation
+  agreement: Partnership for Atlantic Cooperation
+  category: security
+  summary: A multilateral framework launched at the UN General Assembly in 2023 to coordinate sustainable development, maritime
+    security, and climate resilience across Atlantic coastal nations — including South America, Africa, North America, and
+    Europe.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. The US was a founding participant under the Biden administration.
+    The framework was launched at the 2023 UNGA. Withdrawal removes the US from Atlantic basin cooperative governance less
+    than three years after joining.
+- id: recaap
+  agreement: Regional Cooperation Agreement on Combating Piracy and Armed Robbery against Ships in Asia (ReCAAP)
+  category: security
+  summary: The first regional government-to-government agreement on piracy in Asia, established in 2006. 21 contracting parties
+    coordinate information sharing, capacity building, and operational responses to maritime crime in Asian waters.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. ReCAAP directly addresses maritime security in waters relevant to
+    US naval operations and commercial shipping. Withdrawal is inconsistent with stated administration priorities on freedom
+    of navigation.
+- id: regional-cooperation-council
+  agreement: Regional Cooperation Council (RCC)
+  category: multilateral
+  summary: A Sarajevo-based intergovernmental body established in 2008 to succeed the Stability Pact for South Eastern Europe,
+    supporting regional cooperation in the Western Balkans on trade, education, security, and EU integration.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. US participation was as an observer. The RCC supports Western Balkans
+    EU accession processes. Withdrawal reduces US presence in a region of ongoing strategic significance.
+- id: ren21
+  agreement: Renewable Energy Policy Network for the 21st Century (REN21)
+  category: environment
+  summary: A Paris-based global multi-stakeholder network established in 2004 providing data and analysis on renewable energy
+    deployment and policy. Publishes the annual Global Status Report, the primary reference on renewables worldwide.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. Consistent with the administration's policy of disengaging from international
+    renewable energy governance bodies.
+- id: science-technology-center-ukraine
+  agreement: Science and Technology Center in Ukraine (STCU)
+  category: security
+  summary: A Kyiv-based intergovernmental body established in 1993 by the US, EU, Canada, and Ukraine to redirect former Soviet
+    weapons scientists toward peaceful civilian research and prevent proliferation of weapons expertise.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. Established as a post-Soviet nonproliferation mechanism. Withdrawal
+    removes the founding sponsor at a time when the centre's Kyiv operations have been disrupted by the ongoing war. Operationally
+    linked to broader US-Ukraine disengagement in early 2026.
+- id: pacific-environment-programme
+  agreement: Secretariat of the Pacific Regional Environment Programme (SPREP)
+  category: environment
+  summary: An Apia-based intergovernmental organisation founded in 1993 serving as the primary environment organisation for
+    the Pacific region, covering 26 Pacific island countries and territories across climate adaptation, biodiversity, and
+    waste management.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawn under the January 7, 2026 memorandum. The Pacific islands region faces the most acute near-term impacts
+    of sea-level rise. Withdrawal reduces US engagement with a region whose governments have been vocal in international climate
+    forums.
+- id: un-desa
+  agreement: UN Department of Economic and Social Affairs (DESA)
+  category: multilateral
+  summary: The central UN body supporting intergovernmental processes in economic and social development, sustainable development
+    goals, and statistical work including the UN System of National Accounts. Provides secretariat support to ECOSOC.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. DESA produces international statistical standards used by
+    US government agencies. The nature and practical scope of "withdrawal" from a secretariat function of the UN system is
+    legally novel.
+- id: ecosoc-africa
+  agreement: ECOSOC — Economic Commission for Africa (ECA)
+  category: multilateral
+  summary: One of five UN regional economic commissions, established in 1958 to promote the economic and social development
+    of its 54 African member states. Provides analysis, policy advice, and technical assistance.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum as part of the cessation of US participation in five ECOSOC
+    regional commissions. The commissions are subsidiary bodies of the UN General Assembly; the legal mechanism of withdrawal
+    from them is not established in prior precedent.
+- id: ecosoc-latin-america
+  agreement: ECOSOC — Economic Commission for Latin America and the Caribbean (ECLAC)
+  category: multilateral
+  summary: One of five UN regional economic commissions, established in 1948, providing research, policy analysis, and technical
+    cooperation for Latin American and Caribbean governments. Headquartered in Santiago, Chile.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. ECLAC produces the primary regional economic data and projections
+    for Latin America used by US and international financial institutions.
+- id: ecosoc-asia-pacific
+  agreement: ECOSOC — Economic and Social Commission for Asia and the Pacific (ESCAP)
+  category: multilateral
+  summary: The largest of the five UN regional commissions by membership (53 member states, 9 associate members), based in
+    Bangkok. Promotes economic and social development across Asia and the Pacific.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. ESCAP membership includes both US strategic partners and
+    rivals across the Indo-Pacific. Withdrawal is among the more strategically consequential of the regional commission exits.
+- id: ecosoc-western-asia
+  agreement: ECOSOC — Economic and Social Commission for Western Asia (ESCWA)
+  category: multilateral
+  summary: A UN regional commission serving 22 Arab states across Western Asia and North Africa, providing socioeconomic research,
+    policy advice, and technical assistance. Headquartered in Beirut.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. ESCWA covers the region encompassing ongoing US military
+    operations and diplomatic engagements. Withdrawal removes formal US participation from the principal multilateral economic
+    body for the Arab world.
+- id: international-law-commission
+  agreement: International Law Commission (ILC)
+  category: multilateral
+  summary: A subsidiary body of the UN General Assembly established in 1947, composed of 34 experts in their personal capacity,
+    responsible for the codification and progressive development of international law. Its outputs include major multilateral
+    treaties.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. The ILC produced foundational texts including the Vienna
+    Convention on the Law of Treaties and the Articles on State Responsibility. US withdrawal is legally unusual as the ILC
+    is a General Assembly body that states observe rather than formally join.
+- id: international-residual-mechanism-tribunals
+  agreement: International Residual Mechanism for Criminal Tribunals (IRMCT)
+  category: security
+  summary: A UN judicial body established in 2010 to perform essential residual functions of the former International Criminal
+    Tribunal for the former Yugoslavia (ICTY) and International Criminal Tribunal for Rwanda (ICTR), including appeals, enforcement
+    of sentences, and witness protection.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. The IRMCT's mandate relates to atrocity crimes in the 1990s
+    Balkans conflicts and Rwandan genocide — cases in which the US was directly involved diplomatically and militarily. Withdrawal
+    from a body managing active caseloads has no clear legal precedent.
+- id: un-international-trade-centre
+  agreement: International Trade Centre (ITC)
+  category: trade
+  summary: A Geneva-based joint agency of the UN and the World Trade Organization providing technical assistance to developing
+    country exporters, focusing on trade promotion and export capacity building. Jointly overseen by the WTO and the UN.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. The ITC is jointly administered with the WTO, of which the
+    US remains a member. The legal interaction between WTO membership and withdrawal from the ITC has not been adjudicated.
+- id: un-special-adviser-africa
+  agreement: Office of the Special Adviser on Africa (OSAA)
+  category: multilateral
+  summary: A UN office providing analytical support and advocacy to increase international attention and resources for African
+    development priorities, including NEPAD implementation and the SDGs.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum as part of a cluster of sub-Saharan Africa-focused UN office
+    withdrawals.
+- id: un-srsg-children-armed-conflict
+  agreement: Office of the Special Representative of the Secretary-General for Children in Armed Conflict (OSRSG-CAAC)
+  category: security
+  summary: A UN advocacy office established in 1996 monitoring and reporting on the six grave violations against children
+    in conflict — including recruitment, killing, sexual violence, and attacks on schools and hospitals. Reports annually
+    to the Security Council.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. The office reports on violations by both state and non-state
+    actors, including in conflicts where the US is a party or arms supplier. Withdrawal removes funding for an office whose
+    reports are formally presented to the UN Security Council.
+- id: un-srsg-sexual-violence-conflict
+  agreement: Office of the Special Representative of the Secretary-General on Sexual Violence in Conflict (OSRSG-SVC)
+  category: security
+  summary: A UN office established by Security Council Resolution 1888 (2009) to address rape and other forms of sexual violence
+    in armed conflict, serving as a convenor and advocate for accountability and survivor support.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. The office was established under a Security Council resolution
+    to which the US is party. Withdrawal from a UNSC-mandated body is legally ambiguous.
+- id: un-srsg-violence-against-children
+  agreement: Office of the Special Representative of the Secretary-General on Violence Against Children (OSRSG-VAC)
+  category: health
+  summary: A UN office established in 2009 following the landmark Pinheiro Study to support implementation of a global agenda
+    to prevent and eliminate all forms of violence against children.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. The office has no regulatory authority; it coordinates and
+    advocates. US was a significant voluntary contributor to its budget.
+- id: un-peacebuilding-commission
+  agreement: UN Peacebuilding Commission (PBC)
+  category: security
+  summary: An intergovernmental advisory body established by the UN General Assembly and Security Council in 2005 to support
+    peace efforts in countries emerging from conflict. The US is a permanent P5 member of the Security Council that co-established
+    it.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. The PBC was established by concurrent UN General Assembly
+    and Security Council resolutions. US withdrawal from a body it co-founded as a permanent Security Council member has no
+    prior precedent.
+- id: un-peacebuilding-fund
+  agreement: UN Peacebuilding Fund (PBF)
+  category: security
+  summary: A multi-donor trust fund established in 2006 as the financial instrument of the UN Peacebuilding Architecture,
+    providing early funding for peace consolidation in countries emerging from conflict. Over $1.5 billion disbursed as of
+    2024.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum alongside the Peacebuilding Commission. The US was the second-largest
+    donor. Withdrawal removes funding from conflict-affected countries in Africa, Asia, and Latin America.
+- id: un-permanent-forum-african-descent
+  agreement: Permanent Forum on People of African Descent
+  category: multilateral
+  summary: A UN subsidiary body established by the General Assembly in 2021 to serve as a platform for improving safety, quality
+    of life, and livelihoods of people of African descent. 16 expert members serving in personal capacity.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. The forum was established in 2021, partially through US
+    advocacy under Biden. Withdrawal reverses a position the administration had actively supported three years earlier.
+- id: un-alliance-civilizations
+  agreement: UN Alliance of Civilizations (UNAOC)
+  category: multilateral
+  summary: A UN initiative established in 2005 at the proposal of Spain and Turkey, with Kofi Annan's backing, to improve
+    cross-cultural understanding and cooperation between Western and Muslim-majority societies.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. US participation in UNAOC has been variable across administrations.
+    The alliance focuses on countering religious and cultural extremism through dialogue.
+- id: un-redd
+  agreement: UN-REDD Programme (Reducing Emissions from Deforestation and Forest Degradation)
+  category: environment
+  summary: A UN multi-agency programme launched in 2008 helping developing countries build their capacity for REDD+ and receive
+    results-based payments for reducing forest carbon emissions. Implemented by UNEP, UNDP, and FAO.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. US withdrawal from REDD+ is complementary to its UNFCCC
+    withdrawal. Tropical deforestation represents approximately 10 percent of global carbon emissions.
+- id: unctad
+  agreement: UN Conference on Trade and Development (UNCTAD)
+  category: trade
+  summary: A permanent UN body established in 1964, headquartered in Geneva, providing analysis and policy guidance on trade,
+    investment, and development for developing countries. Produces the World Investment Report and key international trade
+    statistics.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. UNCTAD produces the primary international statistics on
+    foreign direct investment used by the US Commerce Department and academic researchers. It has historically advocated for
+    developing-country interests in trade negotiations, which periodically conflicted with US trade positions.
+- id: un-democracy-fund
+  agreement: UN Democracy Fund (UNDEF)
+  category: multilateral
+  summary: A voluntary multi-donor UN fund established in 2005 at the initiative of the United States and India to support
+    civil society organisations promoting democratic governance and human rights in developing countries. The US was the founding
+    and largest donor.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. UNDEF was established by the United States as a vehicle
+    for democracy promotion through the UN system. The US was the founding donor and contributed the majority of the fund's
+    resources. Withdrawal from one's own initiative is structurally unusual.
+- id: un-energy
+  agreement: UN Energy
+  category: environment
+  summary: The inter-agency mechanism for UN system-wide coordination on energy issues, established in 2004. Coordinates across
+    approximately 25 UN entities on clean energy access, efficiency, and renewable energy policy.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. UN Energy is an inter-agency coordinating body rather than
+    a standalone organisation; US withdrawal means ceasing participation in its deliberations and funding its coordinating
+    secretariat.
+- id: un-women
+  agreement: UN Entity for Gender Equality and the Empowerment of Women (UN Women)
+  category: multilateral
+  summary: A UN entity established by the General Assembly in 2010 by merging four existing UN bodies, focused on accelerating
+    progress on gender equality and women's empowerment globally. Annual budget approximately $600 million.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. The US was among the largest donors. Withdrawal is consistent
+    with the administration's domestic and international rollback of gender-related programming, including the closure of
+    the White House Gender Policy Council.
+- id: un-habitat
+  agreement: UN Human Settlements Programme (UN-Habitat)
+  category: multilateral
+  summary: A Nairobi-based UN programme established in 1978 promoting sustainable urban development. Leads the implementation
+    of the New Urban Agenda and SDG 11 (Sustainable Cities). The US withdrew from UN-Habitat in 1996 and rejoined in 2003.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. The US withdrew from UN-Habitat in 1996 under the Clinton
+    administration over funding disputes and rejoined in 2003 under Bush. This is the third US withdrawal from the body.
+- id: unitar
+  agreement: UN Institute for Training and Research (UNITAR)
+  category: multilateral
+  summary: A Geneva-based autonomous UN body established in 1965 providing training and capacity building for UN member state
+    officials, diplomats, and other stakeholders on peace, security, development, and environment.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. UNITAR trains diplomats from US ally and partner states.
+    Withdrawal ends US contributions to a body whose programmes often benefit countries in which the US has strategic interests.
+- id: un-oceans
+  agreement: UN Oceans
+  category: environment
+  summary: The inter-agency coordination mechanism for ocean-related activities across the UN system, established in 2003.
+    Coordinates across approximately 28 UN entities on ocean governance, fisheries, marine pollution, and the Law of the Sea.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. The US has not ratified UNCLOS but has long participated
+    in ocean governance mechanisms. Withdrawal from an inter-agency coordination body does not alter US legal obligations
+    under customary international law of the sea.
+- id: un-register-conventional-arms
+  agreement: UN Register of Conventional Arms (UNROCA)
+  category: security
+  summary: A voluntary transparency mechanism established by the UN General Assembly in 1991 in which member states report
+    their imports and exports of major conventional weapons categories. The US has been one of its most consistent reporting
+    members.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. The Register is purely voluntary and involves no binding
+    obligations or inspections — only annual reporting. US withdrawal removes visibility into the world's largest arms exporter
+    from a mechanism the US co-designed after the Gulf War.
+- id: un-chief-executives-board
+  agreement: UN System Chief Executives Board for Coordination (CEB)
+  category: multilateral
+  summary: The highest coordination mechanism of the UN system, chaired by the Secretary-General, bringing together executive
+    heads of UN funds, programmes, and specialised agencies to coordinate system-wide policy and management.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. The CEB is a coordination mechanism for UN entities rather
+    than a body states formally join. The legal meaning of US withdrawal from an inter-agency coordination mechanism is not
+    established in precedent.
+- id: un-staff-college
+  agreement: UN System Staff College
+  category: multilateral
+  summary: A Turin-based UN learning institution established in 2002 providing training and learning programmes for UN staff
+    and partner organisations across leadership, management, peace, and sustainable development.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. US participation was primarily financial. The Staff College
+    has no regulatory or normative functions.
+- id: un-water
+  agreement: UN Water
+  category: environment
+  summary: The inter-agency coordination mechanism for UN activities relating to freshwater and sanitation, established in
+    2003. Coordinates 33 UN members and 40 partners to advance SDG 6 (Clean Water and Sanitation).
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. UN Water coordinates international freshwater governance,
+    an issue directly affecting US-Mexico and US-Canada transboundary water management.
+- id: un-university
+  agreement: UN University (UNU)
+  category: multilateral
+  summary: A Tokyo-based autonomous UN academic institution established in 1973 conducting research, postgraduate teaching,
+    and capacity building on global pressing problems. A network of 14 research and training institutes worldwide.
+  term_1_date: null
+  term_1_effective: null
+  biden_rejoined: null
+  term_2_date: '2026-01-07'
+  term_2_effective: '2026-01-07'
+  current_status: withdrawn
+  notes: Withdrawal ordered under the January 7, 2026 memorandum. UNU has no degree-granting authority for US students and
+    no regulatory functions. US participation was as a contributing state. Withdrawal has primarily financial rather than
+    operational consequences.

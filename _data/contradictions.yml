@@ -9,8 +9,8 @@
   statement_b: I said it was obsolete. It's no longer obsolete.
   date_b: '2017-04-12'
   source_b: White House press conference with NATO Secretary General Stoltenberg
-  doctrine_note: The obsolescence of NATO was resolved by a meeting. The alliance's
-    fundamental structure was unchanged. The doctrine holds that perception is policy.
+  doctrine_note: The obsolescence of NATO was resolved by a meeting. The alliance's fundamental structure was unchanged. The
+    doctrine holds that perception is policy.
 - id: c002
   theme: Trade
   country:
@@ -22,9 +22,8 @@
   statement_b: China is an enemy of the United States.
   date_b: '2019-08-23'
   source_b: Twitter
-  doctrine_note: The reclassification occurred within two months. The G20 meeting
-    had not resolved the trade dispute. The tweets were posted in response to China's
-    retaliatory tariffs.
+  doctrine_note: The reclassification occurred within two months. The G20 meeting had not resolved the trade dispute. The
+    tweets were posted in response to China's retaliatory tariffs.
 - id: c003
   theme: Diplomatic
   country:
@@ -36,9 +35,8 @@
   statement_b: I would get along very well with Putin.
   date_b: '2015-07-30'
   source_b: CNN interview
-  doctrine_note: Both statements appear to be sincerely held. The doctrine holds that
-    toughness and personal warmth are not mutually exclusive. This position is maintained
-    regardless of evidence.
+  doctrine_note: Both statements appear to be sincerely held. The doctrine holds that toughness and personal warmth are not
+    mutually exclusive. This position is maintained regardless of evidence.
 - id: c004
   theme: Territorial
   country:
@@ -50,54 +48,48 @@
   statement_b: I never said Mexico was going to pay for the wall directly.
   date_b: '2019-01-10'
   source_b: Twitter
-  doctrine_note: The original statement was made on approximately 212 documented occasions.
-    The revised position was offered once. The wall was partially funded by redirected
-    US military spending.
+  doctrine_note: The original statement was made on approximately 212 documented occasions. The revised position was offered
+    once. The wall was partially funded by redirected US military spending.
 - id: c005
   theme: Diplomatic
   country:
   - North Korea
   term_a: 1
-  statement_a: North Korea best not make any more threats to the United States. They
-    will be met with fire and fury like the world has never seen.
+  statement_a: North Korea best not make any more threats to the United States. They will be met with fire and fury like the
+    world has never seen.
   date_a: '2017-08-08'
   source_a: Remarks at Bedminster
   statement_b: I fell in love with Kim Jong Un.
   date_b: '2018-09-29'
   source_b: Campaign rally, Wheeling, West Virginia
-  doctrine_note: The transition from fire and fury to falling in love occurred in
-    approximately thirteen months. Three summits followed. No denuclearisation agreement
-    was reached.
+  doctrine_note: The transition from fire and fury to falling in love occurred in approximately thirteen months. Three summits
+    followed. No denuclearisation agreement was reached.
 - id: c006
   theme: Trade
   country:
   - China
   term_a: 2
-  statement_a: We're going to put tariffs on China of 145 percent. They're not going
-    to be doing much business with us.
+  statement_a: We're going to put tariffs on China of 145 percent. They're not going to be doing much business with us.
   date_a: '2025-04-09'
   source_a: White House remarks
   statement_b: We're doing very well with China. We're going to make a great deal.
   date_b: '2025-05-12'
   source_b: Remarks following Geneva trade talks
-  doctrine_note: The tariffs were reduced to 30 percent following the Geneva talks.
-    The 145 percent figure had been in place for 34 days. Both positions were described
-    as successful outcomes.
+  doctrine_note: The tariffs were reduced to 30 percent following the Geneva talks. The 145 percent figure had been in place
+    for 34 days. Both positions were described as successful outcomes.
 - id: c007
   theme: Alliance
   country:
   - NATO
   term_a: 2
-  statement_a: If they don't pay, I would encourage the Russians to do whatever the
-    hell they want.
+  statement_a: If they don't pay, I would encourage the Russians to do whatever the hell they want.
   date_a: '2024-02-10'
   source_a: Campaign rally, Conway, South Carolina
   statement_b: I am totally committed to NATO.
   date_b: '2025-02-14'
   source_b: Press conference with NATO Secretary General Rutte
-  doctrine_note: The commitment was entered into following significant increases in
-    European defense spending. The conditionality of the commitment was not resolved
-    by its reaffirmation.
+  doctrine_note: The commitment was entered into following significant increases in European defense spending. The conditionality
+    of the commitment was not resolved by its reaffirmation.
 - id: c008
   theme: Diplomatic
   country:
@@ -110,9 +102,8 @@
   statement_b: I like Zelensky. He's a brave man.
   date_b: '2025-04-20'
   source_b: Truth Social
-  doctrine_note: The Oval Office meeting in February included a public dressing-down
-    of Zelensky on camera. The April characterisation suggests the assessment had
-    softened. The war remained unresolved.
+  doctrine_note: The Oval Office meeting in February included a public dressing-down of Zelensky on camera. The April characterisation
+    suggests the assessment had softened. The war remained unresolved.
 - id: c009
   theme: Trade
   country: []
@@ -123,8 +114,8 @@
   statement_b: The tariff is the most beautiful word in the dictionary.
   date_b: '2024-10-16'
   source_b: Economic Club of Chicago
-  doctrine_note: The positions are separated by six years. The policy record supports
-    the second statement more completely than the first.
+  doctrine_note: The positions are separated by six years. The policy record supports the second statement more completely
+    than the first.
 - id: c010
   theme: Diplomatic
   country:
@@ -136,9 +127,8 @@
   statement_b: Saudi Arabia has been a very important ally of ours in the Middle East.
   date_b: '2018-10-20'
   source_b: Oval Office remarks
-  doctrine_note: The Khashoggi murder was subsequently attributed by US intelligence
-    to Crown Prince Mohammed bin Salman. The alliance was not adjusted. Arms sales
-    continued.
+  doctrine_note: The Khashoggi murder was subsequently attributed by US intelligence to Crown Prince Mohammed bin Salman.
+    The alliance was not adjusted. Arms sales continued.
 - id: c011
   theme: Territorial
   country:
@@ -150,25 +140,21 @@
   statement_b: I don't think I would use military force to get Canada.
   date_b: '2025-02-04'
   source_b: Fox News interview
-  doctrine_note: The economic pressure being applied at the time of the second statement
-    included 25 percent tariffs. The clarification on military force was considered
-    partial.
+  doctrine_note: The economic pressure being applied at the time of the second statement included 25 percent tariffs. The
+    clarification on military force was considered partial.
 - id: c012
   theme: Diplomatic
   country:
   - Russia
   term_a: 1
-  statement_a: I believe that he believes that — and that's very important for somebody
-    to believe.
+  statement_a: I believe that he believes that — and that's very important for somebody to believe.
   date_a: '2018-07-16'
   source_a: Joint press conference with Putin, Helsinki — on Russian election interference
-  statement_b: I accept our intelligence community's conclusion that Russia's meddling
-    in the 2016 election took place.
+  statement_b: I accept our intelligence community's conclusion that Russia's meddling in the 2016 election took place.
   date_b: '2018-07-17'
   source_b: White House statement, one day later
-  doctrine_note: The revision was made within 24 hours under congressional pressure.
-    The original statement remained on the record. The doctrine holds that both positions
-    are valid.
+  doctrine_note: The revision was made within 24 hours under congressional pressure. The original statement remained on the
+    record. The doctrine holds that both positions are valid.
 - id: c013
   theme: Trade
   country: []
@@ -179,8 +165,8 @@
   statement_b: You have to be flexible.
   date_b: '2025-04-09'
   source_b: White House — announcing 90-day tariff pause for most countries
-  doctrine_note: The emergency lasted seven days before the pause was announced. The
-    tariffs on China were simultaneously increased. Flexibility was applied selectively.
+  doctrine_note: The emergency lasted seven days before the pause was announced. The tariffs on China were simultaneously
+    increased. Flexibility was applied selectively.
 - id: c014
   theme: Alliance
   country:
@@ -192,8 +178,8 @@
   statement_b: They owe us money. All these countries owe us money.
   date_b: '2017-05-25'
   source_b: NATO summit, Brussels — referring to alliance members including the UK
-  doctrine_note: The UK met its NATO spending commitments. It was nonetheless characterized
-    as owing money. The special relationship accommodates both positions simultaneously.
+  doctrine_note: The UK met its NATO spending commitments. It was nonetheless characterized as owing money. The special relationship
+    accommodates both positions simultaneously.
 - id: c015
   theme: Diplomatic
   country:
@@ -205,37 +191,33 @@
   statement_b: We don't need China and, frankly, would be far better off without them.
   date_b: '2019-08-23'
   source_b: Twitter
-  doctrine_note: The statements are separated by 55 days. They were prompted by the
-    resumption and escalation of tariff disputes. Great relationships and dispensability
-    coexist in the doctrine.
+  doctrine_note: The statements are separated by 55 days. They were prompted by the resumption and escalation of tariff disputes.
+    Great relationships and dispensability coexist in the doctrine.
 - id: c016
   theme: Diplomatic
   country:
   - Mexico
   term_a: 2
-  statement_a: Mexico is going to have to do something about this. We're going to
-    put 25 percent tariffs on them.
+  statement_a: Mexico is going to have to do something about this. We're going to put 25 percent tariffs on them.
   date_a: '2025-01-20'
   source_a: Inaugural address
   statement_b: We have a great relationship with Mexico. They've done a lot.
   date_b: '2025-03-06'
   source_b: White House remarks
-  doctrine_note: The tariffs were applied, suspended, and reapplied across the period.
-    The characterisation of the relationship as great coexisted with active tariff
-    threats throughout.
+  doctrine_note: The tariffs were applied, suspended, and reapplied across the period. The characterisation of the relationship
+    as great coexisted with active tariff threats throughout.
 - id: c017
   theme: Trade
   country: []
   term_a: 1
-  statement_a: I'm not going to cut Social Security. I'm not going to cut Medicare.
-    I'm not going to cut Medicaid.
+  statement_a: I'm not going to cut Social Security. I'm not going to cut Medicare. I'm not going to cut Medicaid.
   date_a: '2015-05-21'
   source_a: Campaign interview
   statement_b: We have to do something about entitlements.
   date_b: '2020-01-22'
   source_b: Davos interview
-  doctrine_note: Not strictly a foreign policy contradiction. Included as evidence
-    of doctrinal evolution on domestic economic commitments with international resonance.
+  doctrine_note: Not strictly a foreign policy contradiction. Included as evidence of doctrinal evolution on domestic economic
+    commitments with international resonance.
 - id: c018
   theme: Diplomatic
   country:
@@ -244,12 +226,11 @@
   statement_a: Emmanuel is doing a great job.
   date_a: '2018-11-11'
   source_a: Armistice centenary remarks, Paris
-  statement_b: He's got a very low approval rating in France. Maybe he should focus
-    on that.
+  statement_b: He's got a very low approval rating in France. Maybe he should focus on that.
   date_b: '2018-11-13'
   source_b: Twitter
-  doctrine_note: The reassessment followed Macron's call for a European army. The
-    approval rating critique was offered two days after the joint commemorative event.
+  doctrine_note: The reassessment followed Macron's call for a European army. The approval rating critique was offered two
+    days after the joint commemorative event.
 - id: c019
   theme: Territorial
   country:
@@ -258,13 +239,11 @@
   statement_a: It's not a priority for me at the moment.
   date_a: '2019-08-22'
   source_a: Remarks — after Denmark rejected the Greenland purchase
-  statement_b: We need Greenland for national security purposes. And I think we're
-    going to get it. One way or another.
+  statement_b: We need Greenland for national security purposes. And I think we're going to get it. One way or another.
   date_b: '2025-01-07'
   source_b: Truth Social
-  doctrine_note: The position was deprioritized for five years and four months, then
-    restored with greater urgency. The phrase one way or another was new to the second
-    iteration.
+  doctrine_note: The position was deprioritized for five years and four months, then restored with greater urgency. The phrase
+    one way or another was new to the second iteration.
 - id: c020
   theme: Diplomatic
   country:
@@ -277,31 +256,22 @@
   statement_b: Putin is destroying Russia by not making a deal.
   date_b: '2025-05-08'
   source_b: Truth Social
-  doctrine_note: In February, Putin's desire to deal was the basis for optimism. In
-    May, his failure to deal was destroying his country. The war continued in both
-    instances.
-
-# ── IRAN ──────────────────────────────────────────────────────────────────────
-
+  doctrine_note: In February, Putin's desire to deal was the basis for optimism. In May, his failure to deal was destroying
+    his country. The war continued in both instances.
 - id: c021
   theme: Diplomatic
   country:
   - Iran
   term_a: 1
-  statement_a: This was a horrible one-sided deal that should have never, ever been
-    made. It is defective at its core.
+  statement_a: This was a horrible one-sided deal that should have never, ever been made. It is defective at its core.
   date_a: '2018-05-08'
   source_a: White House remarks announcing JCPOA withdrawal
-  statement_b: The United States is negotiating a new nuclear agreement with Iran
-    on terms structurally similar to the agreement it withdrew from, including enrichment
-    limitations and phased sanctions relief.
+  statement_b: The United States is negotiating a new nuclear agreement with Iran on terms structurally similar to the agreement
+    it withdrew from, including enrichment limitations and phased sanctions relief.
   date_b: '2025-05-01'
-  source_b: State Department briefings; Arms Control and Non-Proliferation Center
-    fact sheet
-  doctrine_note: The JCPOA was described as the worst deal in history. Its successor
-    is being negotiated by the same administration. The structural differences between
-    the two agreements remain to be specified.
-
+  source_b: State Department briefings; Arms Control and Non-Proliferation Center fact sheet
+  doctrine_note: The JCPOA was described as the worst deal in history. Its successor is being negotiated by the same administration.
+    The structural differences between the two agreements remain to be specified.
 - id: c022
   theme: Diplomatic
   country:
@@ -310,15 +280,12 @@
   statement_a: Iran will never have a nuclear weapon.
   date_a: '2020-01-08'
   source_a: White House address following Iranian retaliatory strikes
-  statement_b: Iran is enriching uranium at 60 percent purity — a level with no
-    civilian energy justification. The new framework under negotiation permits Iran
-    to retain some enrichment capability.
+  statement_b: Iran is enriching uranium at 60 percent purity — a level with no civilian energy justification. The new framework
+    under negotiation permits Iran to retain some enrichment capability.
   date_b: '2025-06-01'
   source_b: IAEA reports; 2025-2026 Iran-US negotiations, Wikipedia
-  doctrine_note: The statement that Iran will never have a nuclear weapon was absolute.
-    The negotiating position allows for enrichment. The relationship between these
-    two positions is being worked out through diplomacy.
-
+  doctrine_note: The statement that Iran will never have a nuclear weapon was absolute. The negotiating position allows for
+    enrichment. The relationship between these two positions is being worked out through diplomacy.
 - id: c023
   theme: Diplomatic
   country:
@@ -327,87 +294,67 @@
   statement_a: The world is a much safer place today.
   date_a: '2020-01-03'
   source_a: White House remarks on the killing of General Qasem Soleimani
-  statement_b: I heard that they had headaches. And a couple of other things. But
-    I don't consider them very serious injuries.
+  statement_b: I heard that they had headaches. And a couple of other things. But I don't consider them very serious injuries.
   date_b: '2020-01-09'
-  source_b: White House remarks — on Iranian retaliatory missile strikes that injured
-    110 US service members at al-Asad air base
-  doctrine_note: The world became safer on January 3rd. On January 8th, Iran launched
-    ballistic missiles at US bases in Iraq. On January 9th, 110 injuries were reclassified
-    as headaches. The doctrine's safety assessment was not revised.
-
+  source_b: White House remarks — on Iranian retaliatory missile strikes that injured 110 US service members at al-Asad air
+    base
+  doctrine_note: The world became safer on January 3rd. On January 8th, Iran launched ballistic missiles at US bases in Iraq.
+    On January 9th, 110 injuries were reclassified as headaches. The doctrine's safety assessment was not revised.
 - id: c024
   theme: Diplomatic
   country:
   - Iran
   term_a: 1
-  statement_a: Our maximum pressure campaign on Iran is working better than anyone
-    could have anticipated.
+  statement_a: Our maximum pressure campaign on Iran is working better than anyone could have anticipated.
   date_a: '2019-05-03'
   source_a: White House statement
-  statement_b: Iran's uranium stockpile grew from approximately 300 kilograms at
-    the point of JCPOA withdrawal to over 4,000 kilograms of enriched uranium by
-    2025, including material enriched to 60 percent purity.
+  statement_b: Iran's uranium stockpile grew from approximately 300 kilograms at the point of JCPOA withdrawal to over 4,000
+    kilograms of enriched uranium by 2025, including material enriched to 60 percent purity.
   date_b: '2025-01-01'
   source_b: IAEA quarterly reports; Britannica, JCPOA
-  doctrine_note: Maximum pressure was declared successful in 2019. By 2025 Iran's
-    nuclear programme was materially larger than at any point in its history. The
-    doctrine holds both assessments to be correct.
-
+  doctrine_note: Maximum pressure was declared successful in 2019. By 2025 Iran's nuclear programme was materially larger
+    than at any point in its history. The doctrine holds both assessments to be correct.
 - id: c025
   theme: Diplomatic
   country:
   - Iran
   term_a: 2
-  statement_a: We have one very, very clear red line, and that is enrichment. We
-    cannot allow even 1 percent of an enrichment capability.
+  statement_a: We have one very, very clear red line, and that is enrichment. We cannot allow even 1 percent of an enrichment
+    capability.
   date_a: '2025-05-01'
   source_a: Special Envoy Steve Witkoff, ABC News interview
-  statement_b: The framework under negotiation within days of the statement was
-    reported to allow Iran to retain limited enrichment capability for civilian purposes.
+  statement_b: The framework under negotiation within days of the statement was reported to allow Iran to retain limited enrichment
+    capability for civilian purposes.
   date_b: '2025-05-10'
   source_b: Reuters; 2025-2026 Iran-US negotiations, Wikipedia
-  doctrine_note: The red line was stated clearly and absolutely. It was revised within
-    one week. The word very was used twice.
-
+  doctrine_note: The red line was stated clearly and absolutely. It was revised within one week. The word very was used twice.
 - id: c026
   theme: Diplomatic
   country:
   - Iran
   term_a: 2
-  statement_a: I am torn about it. Hopefully we're not going to have to use it very
-    much.
+  statement_a: I am torn about it. Hopefully we're not going to have to use it very much.
   date_a: '2025-02-05'
-  source_a: White House remarks — on signing NSPM-2 imposing maximum pressure on
-    Iran
-  statement_b: Maximum pressure on Iran represents the total and complete policy
-    of this administration.
+  source_a: White House remarks — on signing NSPM-2 imposing maximum pressure on Iran
+  statement_b: Maximum pressure on Iran represents the total and complete policy of this administration.
   date_b: '2025-02-04'
   source_b: White House fact sheet on NSPM-2
-  doctrine_note: The maximum pressure executive order and the president's ambivalence
-    about it were expressed within 24 hours of each other. The policy was signed.
-    The president's feelings about it remain on the record.
-
-# ── CUBA ──────────────────────────────────────────────────────────────────────
-
+  doctrine_note: The maximum pressure executive order and the president's ambivalence about it were expressed within 24 hours
+    of each other. The policy was signed. The president's feelings about it remain on the record.
 - id: c027
   theme: Diplomatic
   country:
   - Cuba
   term_a: 2
-  statement_a: The policies, practices, and actions of the Government of Cuba constitute
-    an unusual and extraordinary threat to the national security and foreign policy
-    of the United States.
+  statement_a: The policies, practices, and actions of the Government of Cuba constitute an unusual and extraordinary threat
+    to the national security and foreign policy of the United States.
   date_a: '2026-01-29'
   source_a: Executive Order, White House
-  statement_b: We're talking to the highest people in Cuba right now. We're looking
-    to make a deal.
+  statement_b: We're talking to the highest people in Cuba right now. We're looking to make a deal.
   date_b: '2026-02-03'
   source_b: White House remarks, five days after the executive order
-  doctrine_note: The extraordinary threat was declared on January 29th. The deal
-    was being sought on February 3rd. The nature of the threat and the terms of the
-    deal were not reconciled.
-
+  doctrine_note: The extraordinary threat was declared on January 29th. The deal was being sought on February 3rd. The nature
+    of the threat and the terms of the deal were not reconciled.
 - id: c028
   theme: Diplomatic
   country:
@@ -416,32 +363,26 @@
   statement_a: There will be NO MORE OIL OR MONEY GOING TO CUBA.
   date_a: '2026-01-11'
   source_a: Truth Social
-  statement_b: We're in discussions with Cuba. I think we can make something happen
-    there.
+  statement_b: We're in discussions with Cuba. I think we can make something happen there.
   date_b: '2026-02-03'
   source_b: White House remarks
-  doctrine_note: The capitalisation suggested finality. The discussions began three
-    weeks later. The doctrine holds that these positions are part of the same strategy.
-
-# ── VENEZUELA ─────────────────────────────────────────────────────────────────
-
+  doctrine_note: The capitalisation suggested finality. The discussions began three weeks later. The doctrine holds that these
+    positions are part of the same strategy.
 - id: c029
   theme: Diplomatic
   country:
   - Venezuela
   term_a: 2
-  statement_a: This operation is about stopping the flow of drugs and criminals into
-    the United States. It is a law enforcement and counter-narcotics operation.
+  statement_a: This operation is about stopping the flow of drugs and criminals into the United States. It is a law enforcement
+    and counter-narcotics operation.
   date_a: '2026-01-01'
   source_a: White House and State Department framing of Venezuela military operation
-  statement_b: We're going to take out a tremendous amount of wealth out of the ground
-    and sell it to customers all over the world.
+  statement_b: We're going to take out a tremendous amount of wealth out of the ground and sell it to customers all over the
+    world.
   date_b: '2026-01-01'
   source_b: Trump remarks hours after the operation began; Al Jazeera, Global Witness
-  doctrine_note: The operation was described as counter-narcotics. Within hours it
-    was reframed as an oil extraction enterprise. The narcotics rationale was not
-    withdrawn.
-
+  doctrine_note: The operation was described as counter-narcotics. Within hours it was reframed as an oil extraction enterprise.
+    The narcotics rationale was not withdrawn.
 - id: c030
   theme: Diplomatic
   country:
@@ -453,68 +394,53 @@
   statement_b: The United States will have no direct governing role in Venezuela.
   date_b: '2026-01-01'
   source_b: Secretary of State Marco Rubio, same day; Brookings
-  doctrine_note: The president and the secretary of state described opposite governing
-    arrangements for Venezuela on the same day. Both statements remain on the record.
-    The doctrine does not specify which is operative.
-
+  doctrine_note: The president and the secretary of state described opposite governing arrangements for Venezuela on the same
+    day. Both statements remain on the record. The doctrine does not specify which is operative.
 - id: c031
   theme: Diplomatic
   country:
   - Venezuela
   term_a: 2
-  statement_a: Nicolas Maduro is a drug-dealing terrorist and narco-dictator who
-    has been indicted in the United States on multiple criminal charges.
+  statement_a: Nicolas Maduro is a drug-dealing terrorist and narco-dictator who has been indicted in the United States on
+    multiple criminal charges.
   date_a: '2025-03-24'
   source_a: White House fact sheet; Treasury Department
-  statement_b: The United States has structured a deal with Venezuelan officials
-    in which the US markets and sells Venezuelan oil internationally, depositing proceeds
-    into US-controlled accounts.
+  statement_b: The United States has structured a deal with Venezuelan officials in which the US markets and sells Venezuelan
+    oil internationally, depositing proceeds into US-controlled accounts.
   date_b: '2026-01-01'
   source_b: Columbia University Center on Global Energy Policy; Atlantic Council
-  doctrine_note: The maximum pressure policy was premised on regime illegitimacy.
-    The oil revenue arrangement provides that regime's successors with a structured
-    financial lifeline. Both positions are described as advancing US interests.
-
-# ── PAKISTAN ──────────────────────────────────────────────────────────────────
-
+  doctrine_note: The maximum pressure policy was premised on regime illegitimacy. The oil revenue arrangement provides that
+    regime's successors with a structured financial lifeline. Both positions are described as advancing US interests.
 - id: c032
   theme: Diplomatic
   country:
   - Pakistan
   term_a: 1
-  statement_a: The United States has foolishly given Pakistan more than 33 billion
-    dollars in aid over the last 15 years, and they have given us nothing but lies
-    and deceit, thinking of our leaders as fools. They give safe haven to the terrorists
+  statement_a: The United States has foolishly given Pakistan more than 33 billion dollars in aid over the last 15 years,
+    and they have given us nothing but lies and deceit, thinking of our leaders as fools. They give safe haven to the terrorists
     we hunt in Afghanistan.
   date_a: '2018-01-01'
-  source_a: Twitter — Trump suspended up to 1.3 billion dollars in security assistance
-    the same week
-  statement_b: Pakistan has been a great partner. I have endorsed them fully to serve
-    as mediator in the Iran negotiations. They are doing a fantastic job.
+  source_a: Twitter — Trump suspended up to 1.3 billion dollars in security assistance the same week
+  statement_b: Pakistan has been a great partner. I have endorsed them fully to serve as mediator in the Iran negotiations.
+    They are doing a fantastic job.
   date_b: '2026-05-12'
   source_b: White House remarks; Al Jazeera
-  doctrine_note: Pakistan was a safe haven for terrorists in 2018. It was a great
-    partner and fully endorsed mediator in 2026. The intervening period did not include
-    a documented change in Pakistan's behaviour sufficient to explain the reclassification.
-
+  doctrine_note: Pakistan was a safe haven for terrorists in 2018. It was a great partner and fully endorsed mediator in 2026.
+    The intervening period did not include a documented change in Pakistan's behaviour sufficient to explain the reclassification.
 - id: c033
   theme: Diplomatic
   country:
   - Pakistan
   term_a: 2
-  statement_a: Pakistan is fully endorsed by this administration as the mediator
-    in our Iran discussions. They have been terrific.
+  statement_a: Pakistan is fully endorsed by this administration as the mediator in our Iran discussions. They have been terrific.
   date_a: '2026-05-12'
   source_a: White House remarks; The National News
-  statement_b: US intelligence officials revealed that Pakistan covertly allowed
-    Iranian military aircraft to shelter on its airbases during the ceasefire period,
-    potentially protecting them from US strikes.
+  statement_b: US intelligence officials revealed that Pakistan covertly allowed Iranian military aircraft to shelter on its
+    airbases during the ceasefire period, potentially protecting them from US strikes.
   date_b: '2026-05-20'
   source_b: CBS News citing anonymous US officials; Washington Times
-  doctrine_note: Pakistan was endorsed as a neutral mediator on May 12th. US intelligence
-    established that Pakistan had been sheltering Iranian military aircraft eight
-    days later. The endorsement was not revised.
-
+  doctrine_note: Pakistan was endorsed as a neutral mediator on May 12th. US intelligence established that Pakistan had been
+    sheltering Iranian military aircraft eight days later. The endorsement was not revised.
 - id: c034
   theme: Diplomatic
   country:
@@ -525,14 +451,9 @@
   source_a: White House remarks following Lindsey Graham's criticism
   statement_b: I don't trust Pakistan as far as I can throw them.
   date_b: '2026-05-10'
-  source_b: Senator Lindsey Graham — two days before Trump's endorsement; The National
-    News
-  doctrine_note: Senator Graham, among the president's closest Senate allies, stated
-    his position two days before the endorsement. The endorsement was issued without
-    reference to the senator's concerns.
-
-# ── NORTH KOREA ───────────────────────────────────────────────────────────────
-
+  source_b: Senator Lindsey Graham — two days before Trump's endorsement; The National News
+  doctrine_note: Senator Graham, among the president's closest Senate allies, stated his position two days before the endorsement.
+    The endorsement was issued without reference to the senator's concerns.
 - id: c035
   theme: Diplomatic
   country:
@@ -541,33 +462,26 @@
   statement_a: There is no longer a nuclear threat from North Korea.
   date_a: '2018-06-13'
   source_a: Twitter — the day after the Singapore summit
-  statement_b: North Korea has since conducted its largest intercontinental ballistic
-    missile tests on record and expanded its nuclear arsenal to an estimated 40 to
-    50 warheads, according to US and South Korean intelligence assessments.
+  statement_b: North Korea has since conducted its largest intercontinental ballistic missile tests on record and expanded
+    its nuclear arsenal to an estimated 40 to 50 warheads, according to US and South Korean intelligence assessments.
   date_b: '2024-01-01'
-  source_b: US Congressional Research Service; South Korean National Intelligence
-    Service
-  doctrine_note: The nuclear threat was declared resolved on June 13, 2018. North
-    Korea conducted its largest missile test six weeks later. The declaration was
-    not revised.
-
+  source_b: US Congressional Research Service; South Korean National Intelligence Service
+  doctrine_note: The nuclear threat was declared resolved on June 13, 2018. North Korea conducted its largest missile test
+    six weeks later. The declaration was not revised.
 - id: c036
   theme: Diplomatic
   country:
   - North Korea
   term_a: 1
-  statement_a: We achieved more with North Korea in one meeting than any administration
-    has achieved in decades.
+  statement_a: We achieved more with North Korea in one meeting than any administration has achieved in decades.
   date_a: '2018-06-13'
   source_a: Post-Singapore summit remarks
-  statement_b: North Korea received international legitimacy, bilateral meetings
-    with a sitting US president, and a de facto pause in joint US-South Korea military
-    exercises. It made zero verified concessions on denuclearisation.
+  statement_b: North Korea received international legitimacy, bilateral meetings with a sitting US president, and a de facto
+    pause in joint US-South Korea military exercises. It made zero verified concessions on denuclearisation.
   date_b: '2019-12-31'
   source_b: Arms Control Association; Congressional Research Service
-  doctrine_note: The achievement was described in superlative terms. An accounting
-    of what was achieved and by whom is maintained in this archive.
-
+  doctrine_note: The achievement was described in superlative terms. An accounting of what was achieved and by whom is maintained
+    in this archive.
 - id: c037
   theme: Diplomatic
   country:
@@ -576,34 +490,26 @@
   statement_a: I dealt with North Korea better than anyone. I'll get it taken care of.
   date_a: '2024-10-01'
   source_a: Campaign trail remarks
-  statement_b: North Korea has established deepened military ties with Russia, supplied
-    artillery and troops to the Ukraine front, and has had no substantive diplomatic
-    contact with the United States in Trump's second term.
+  statement_b: North Korea has established deepened military ties with Russia, supplied artillery and troops to the Ukraine
+    front, and has had no substantive diplomatic contact with the United States in Trump's second term.
   date_b: '2025-12-31'
   source_b: Reuters; Foreign Policy
-  doctrine_note: The promise to get it taken care of was made during the campaign.
-    North Korea's strategic posture in the second term has been managed through its
-    relationship with Moscow. The doctrine has not addressed this arrangement.
-
-# ── RUSSIA / UKRAINE ──────────────────────────────────────────────────────────
-
+  doctrine_note: The promise to get it taken care of was made during the campaign. North Korea's strategic posture in the
+    second term has been managed through its relationship with Moscow. The doctrine has not addressed this arrangement.
 - id: c038
   theme: Diplomatic
   country:
   - Russia
   - Ukraine
   term_a: 2
-  statement_a: I'm going to get that war settled fast — even before I take office.
-    I'll have it done in 24 hours.
+  statement_a: I'm going to get that war settled fast — even before I take office. I'll have it done in 24 hours.
   date_a: '2024-05-11'
   source_a: Meet the Press interview
-  statement_b: The Russia-Ukraine war is ongoing with no ceasefire agreement in place
-    eighteen months into the second term.
+  statement_b: The Russia-Ukraine war is ongoing with no ceasefire agreement in place eighteen months into the second term.
   date_b: '2026-06-01'
   source_b: NPR; Foreign Policy
-  doctrine_note: The 24-hour commitment was made in May 2024. The war continues.
-    The doctrine now describes the situation as closer than ever to resolution.
-
+  doctrine_note: The 24-hour commitment was made in May 2024. The war continues. The doctrine now describes the situation
+    as closer than ever to resolution.
 - id: c039
   theme: Diplomatic
   country:
@@ -611,16 +517,13 @@
   term_a: 2
   statement_a: Vladimir Putin is smart and savvy. I would say that's pretty savvy.
   date_a: '2022-02-23'
-  source_a: Clay Travis and Buck Sexton Show — one day before the full-scale invasion
-    of Ukraine
-  statement_b: Vladimir Putin, don't do it. Don't do it. You're going to ruin what
-    has been — I know you very well — you're going to ruin what has been a very good
-    relationship.
+  source_a: Clay Travis and Buck Sexton Show — one day before the full-scale invasion of Ukraine
+  statement_b: Vladimir Putin, don't do it. Don't do it. You're going to ruin what has been — I know you very well — you're
+    going to ruin what has been a very good relationship.
   date_b: '2025-05-08'
   source_b: Truth Social — after continued Russian strikes on Ukrainian cities
-  doctrine_note: Savvy was offered as a compliment. The relationship was later described
-    as very good. The invasion of Ukraine occurred between the two assessments.
-
+  doctrine_note: Savvy was offered as a compliment. The relationship was later described as very good. The invasion of Ukraine
+    occurred between the two assessments.
 - id: c040
   theme: Diplomatic
   country:
@@ -629,16 +532,11 @@
   statement_a: Russia should be in the G8. It should be brought back in.
   date_a: '2018-06-07'
   source_a: Remarks ahead of G7 summit, Charlevoix
-  statement_b: Russia is not going to be in the G7. It's not appropriate for them
-    to be there while the war continues.
+  statement_b: Russia is not going to be in the G7. It's not appropriate for them to be there while the war continues.
   date_b: '2025-03-01'
   source_b: White House remarks
-  doctrine_note: Russia's membership was advocated in 2018. It was ruled out in 2025.
-    Russia's actions in the intervening period — including the full-scale invasion
-    of Ukraine — explain the revised position but were not cited.
-
-# ── CHINA ─────────────────────────────────────────────────────────────────────
-
+  doctrine_note: Russia's membership was advocated in 2018. It was ruled out in 2025. Russia's actions in the intervening
+    period — including the full-scale invasion of Ukraine — explain the revised position but were not cited.
 - id: c041
   theme: Trade
   country:
@@ -646,72 +544,56 @@
   term_a: 1
   statement_a: China is a currency manipulator.
   date_a: '2016-11-11'
-  source_a: Trump transition, repeated campaign promise; implemented via Treasury
-    designation January 2020
+  source_a: Trump transition, repeated campaign promise; implemented via Treasury designation January 2020
   statement_b: China is no longer a currency manipulator.
   date_b: '2020-01-13'
-  source_b: US Treasury Department — removed designation ahead of Phase 1 trade deal
-    signing
-  doctrine_note: The currency manipulation had been documented since the campaign.
-    It was resolved by a signing ceremony. The trade deficit was not resolved by the
-    same ceremony.
-
+  source_b: US Treasury Department — removed designation ahead of Phase 1 trade deal signing
+  doctrine_note: The currency manipulation had been documented since the campaign. It was resolved by a signing ceremony.
+    The trade deficit was not resolved by the same ceremony.
 - id: c042
   theme: Diplomatic
   country:
   - China
   term_a: 2
-  statement_a: TikTok is a national security threat to the United States and must
-    be banned.
+  statement_a: TikTok is a national security threat to the United States and must be banned.
   date_a: '2024-04-24'
   source_a: Signing of TikTok divestiture legislation
-  statement_b: I may reduce China tariffs to help close a TikTok deal. Every point
-    in tariffs is worth a lot, but I like TikTok.
+  statement_b: I may reduce China tariffs to help close a TikTok deal. Every point in tariffs is worth a lot, but I like TikTok.
   date_b: '2025-03-26'
   source_b: White House remarks; CNBC
-  doctrine_note: The national security threat was legislated. The president then offered
-    tariff reductions to facilitate a deal with the company representing that threat.
-    Five successive operational reprieves were granted.
-
+  doctrine_note: The national security threat was legislated. The president then offered tariff reductions to facilitate a
+    deal with the company representing that threat. Five successive operational reprieves were granted.
 - id: c043
   theme: Diplomatic
   country:
   - China
   term_a: 1
-  statement_a: The Chinese government and the World Health Organization — which is
-    virtually controlled by China — knew about this and did not want to let us know.
+  statement_a: The Chinese government and the World Health Organization — which is virtually controlled by China — knew about
+    this and did not want to let us know.
   date_a: '2020-05-18'
   source_a: Letter to WHO Director-General
-  statement_b: China has been working very hard to contain the Coronavirus. The
-    United States greatly appreciates their efforts and transparency. It will all
-    work out well.
+  statement_b: China has been working very hard to contain the Coronavirus. The United States greatly appreciates their efforts
+    and transparency. It will all work out well.
   date_b: '2020-01-24'
   source_b: Twitter
-  doctrine_note: China was transparent in January. By May it was engaged in a cover-up.
-    The intervening period included the WHO declaration of a pandemic. The January
-    statement was not revised; it was superseded.
-
+  doctrine_note: China was transparent in January. By May it was engaged in a cover-up. The intervening period included the
+    WHO declaration of a pandemic. The January statement was not revised; it was superseded.
 - id: c044
   theme: Trade
   country:
   - China
   term_a: 1
-  statement_a: The historic Phase One trade deal with China is a tremendous victory
-    for American farmers, manufacturers, and businesses.
+  statement_a: The historic Phase One trade deal with China is a tremendous victory for American farmers, manufacturers, and
+    businesses.
   date_a: '2020-01-15'
   source_a: White House signing ceremony remarks
-  statement_b: China never fulfilled the purchase commitments it made. The US trade
-    deficit with China increased following the agreement.
+  statement_b: China never fulfilled the purchase commitments it made. The US trade deficit with China increased following
+    the agreement.
   date_b: '2021-12-31'
-  source_b: Peterson Institute for International Economics; US Census Bureau trade
-    data
-  doctrine_note: The victory was described as historic. China's compliance with its
-    commitments was approximately 58 percent of the stated target. The deficit grew.
-    The doctrine does not specify what percentage of a historic victory is required
+  source_b: Peterson Institute for International Economics; US Census Bureau trade data
+  doctrine_note: The victory was described as historic. China's compliance with its commitments was approximately 58 percent
+    of the stated target. The deficit grew. The doctrine does not specify what percentage of a historic victory is required
     for the characterisation to hold.
-
-# ── NATO / FRANCE ─────────────────────────────────────────────────────────────
-
 - id: c045
   theme: Alliance
   country:
@@ -720,14 +602,11 @@
   statement_a: We are totally committed to NATO. I believe in NATO. It's very important.
   date_a: '2025-02-14'
   source_a: Press conference with NATO Secretary General Rutte
-  statement_b: I am considering pulling the United States out of NATO. It's a paper
-    tiger.
+  statement_b: I am considering pulling the United States out of NATO. It's a paper tiger.
   date_b: '2026-04-01'
   source_b: Private remarks reported by Euronews; Macron press conference response
-  doctrine_note: Total commitment was stated in February 2025. Paper tiger withdrawal
-    was being considered by April 2026. The alliance's structure was unchanged between
-    the two assessments.
-
+  doctrine_note: Total commitment was stated in February 2025. Paper tiger withdrawal was being considered by April 2026.
+    The alliance's structure was unchanged between the two assessments.
 - id: c046
   theme: Diplomatic
   country:
@@ -736,149 +615,227 @@
   statement_a: Emmanuel is doing a great job. France is a great ally.
   date_a: '2018-11-11'
   source_a: Joint remarks with Macron at Armistice centenary, Paris
-  statement_b: He's got a very low approval rating in France. Maybe he should focus
-    on that before he says things about me.
+  statement_b: He's got a very low approval rating in France. Maybe he should focus on that before he says things about me.
   date_b: '2018-11-13'
   source_b: Twitter — two days after the Armistice event
-  doctrine_note: The reassessment followed Macron's call for a European defence
-    capability independent of NATO. It was delivered via Twitter. The Armistice had
-    been commemorated jointly 48 hours earlier.
-
+  doctrine_note: The reassessment followed Macron's call for a European defence capability independent of NATO. It was delivered
+    via Twitter. The Armistice had been commemorated jointly 48 hours earlier.
 - id: c047
   theme: Diplomatic
   country:
   - France
   term_a: 2
-  statement_a: Emmanuel and I have a very good relationship. France is important
-    to us.
+  statement_a: Emmanuel and I have a very good relationship. France is important to us.
   date_a: '2025-02-01'
   source_a: White House remarks
-  statement_b: At a private luncheon, Trump told guests that Macron's wife Brigitte
-    treats her husband badly. Macron subsequently stated Trump was undermining NATO
-    daily and creating doubt about US commitments.
+  statement_b: At a private luncheon, Trump told guests that Macron's wife Brigitte treats her husband badly. Macron subsequently
+    stated Trump was undermining NATO daily and creating doubt about US commitments.
   date_b: '2026-04-01'
   source_b: Euronews; Washington Monthly
-  doctrine_note: The good relationship was noted in February 2025. By April 2026
-    the French president was publicly accusing the United States of undermining the
-    alliance. The wife remark and the alliance critique are related.
-
-# ── AFRICA ────────────────────────────────────────────────────────────────────
-
+  doctrine_note: The good relationship was noted in February 2025. By April 2026 the French president was publicly accusing
+    the United States of undermining the alliance. The wife remark and the alliance critique are related.
 - id: c048
   theme: Trade
   country:
   - Africa
   term_a: 2
-  statement_a: We want to do trade, not aid. America First means American business
-    first. We are here to invest in Africa.
+  statement_a: We want to do trade, not aid. America First means American business first. We are here to invest in Africa.
   date_a: '2025-06-27'
   source_a: US-Africa Business Summit, Luanda, Angola
-  statement_b: The administration imposed tariffs of between 15 and 30 percent on
-    AGOA-eligible African nations, effectively eliminating the preferential trade
-    access that the doctrine said it was promoting.
+  statement_b: The administration imposed tariffs of between 15 and 30 percent on AGOA-eligible African nations, effectively
+    eliminating the preferential trade access that the doctrine said it was promoting.
   date_b: '2025-04-02'
-  source_b: PBS News; Carnegie Endowment for International Peace — tariffs were imposed
-    two months before the summit
-  doctrine_note: The tariffs preceded the investment summit by two months. The trade
-    preferences being offered at the summit had already been eliminated by the tariffs
-    announced at Liberation Day. The summit secured 2.5 billion dollars in deals.
-
-# ── AFGHANISTAN / TALIBAN ─────────────────────────────────────────────────────
-
+  source_b: PBS News; Carnegie Endowment for International Peace — tariffs were imposed two months before the summit
+  doctrine_note: The tariffs preceded the investment summit by two months. The trade preferences being offered at the summit
+    had already been eliminated by the tariffs announced at Liberation Day. The summit secured 2.5 billion dollars in deals.
 - id: c049
   theme: Diplomatic
   country:
   - Afghanistan
   term_a: 1
-  statement_a: The Doha Agreement with the Taliban sets conditions for a responsible
-    withdrawal. It is a great deal for America.
+  statement_a: The Doha Agreement with the Taliban sets conditions for a responsible withdrawal. It is a great deal for America.
   date_a: '2020-02-29'
   source_a: Statement on the signing of the Doha Agreement
-  statement_b: What Biden did with the Afghanistan withdrawal was the most embarrassing
-    event in the history of our country. It was a disgrace.
+  statement_b: What Biden did with the Afghanistan withdrawal was the most embarrassing event in the history of our country.
+    It was a disgrace.
   date_b: '2021-08-26'
   source_b: Bedminster remarks
-  doctrine_note: The Doha Agreement negotiated by the Trump administration set the
-    withdrawal timeline, reduced US troop levels to 2,500, and bound the incoming
-    administration to its terms. The withdrawal that followed was described as someone
-    else's disgrace.
-
-# ── RUSSIA / G7 / EUROPE ──────────────────────────────────────────────────────
-
+  doctrine_note: The Doha Agreement negotiated by the Trump administration set the withdrawal timeline, reduced US troop levels
+    to 2,500, and bound the incoming administration to its terms. The withdrawal that followed was described as someone else's
+    disgrace.
 - id: c050
   theme: Trade
   country:
   - European Union
   term_a: 2
-  statement_a: The European Union was formed to take advantage of the United States.
-    They're worse than China, just smaller.
+  statement_a: The European Union was formed to take advantage of the United States. They're worse than China, just smaller.
   date_a: '2025-04-02'
   source_a: Liberation Day tariff announcement remarks
-  statement_b: We have a great relationship with the European Union. They want to
-    make a deal very badly. I'm sure we'll get something done.
+  statement_b: We have a great relationship with the European Union. They want to make a deal very badly. I'm sure we'll get
+    something done.
   date_b: '2025-05-06'
   source_b: White House remarks ahead of US-EU trade discussions
-  doctrine_note: The EU was worse than China on April 2nd. A great relationship
-    existed on May 6th. 34 days separated the two characterisations. The tariffs
-    remained in force during the great relationship.
-
-# ── ISRAEL ────────────────────────────────────────────────────────────────────
-
+  doctrine_note: The EU was worse than China on April 2nd. A great relationship existed on May 6th. 34 days separated the
+    two characterisations. The tariffs remained in force during the great relationship.
 - id: c051
   theme: Diplomatic
   country:
   - Israel
   term_a: 1
-  statement_a: I am the most pro-Israel person there is. Nobody loves Israel more
-    than me, believe me.
+  statement_a: I am the most pro-Israel person there is. Nobody loves Israel more than me, believe me.
   date_a: '2015-12-03'
   source_a: Republican Jewish Coalition Presidential Forum, Washington D.C., December 2015
   statement_b: You're fucking crazy.
   date_b: '2026-06-01'
-  source_b: Trump–Netanyahu phone call reported by Axios, June 1, 2026; Trump confirmed
-    the call on June 3, 2026 (NPR), saying he still "likes Bibi a lot"
-  doctrine_note: A decade of positioning as Israel's greatest champion collided with
-    Trump's Iran deal in June 2026, when Netanyahu's Lebanon escalation threatened
-    to unravel negotiations Trump regarded as his own achievement. The friendship
+  source_b: Trump–Netanyahu phone call reported by Axios, June 1, 2026; Trump confirmed the call on June 3, 2026 (NPR), saying
+    he still "likes Bibi a lot"
+  doctrine_note: A decade of positioning as Israel's greatest champion collided with Trump's Iran deal in June 2026, when
+    Netanyahu's Lebanon escalation threatened to unravel negotiations Trump regarded as his own achievement. The friendship
     proved contingent on Netanyahu not impeding Trump's foreign policy wins.
-
 - id: c052
   theme: Diplomatic
   country:
   - Israel
   term_a: 2
-  statement_a: Israel is living up to the ceasefire 100%. I am not concerned at all
-    about the airstrikes.
+  statement_a: Israel is living up to the ceasefire 100%. I am not concerned at all about the airstrikes.
   date_a: '2025-12-15'
-  source_a: White House press remarks following Gaza ceasefire implementation,
-    December 2025
-  statement_b: They're killing so many civilians. Why are they knocking down buildings
-    to take out a single Hezbollah commander? They're doing it in a disproportionate
-    way.
+  source_a: White House press remarks following Gaza ceasefire implementation, December 2025
+  statement_b: They're killing so many civilians. Why are they knocking down buildings to take out a single Hezbollah commander?
+    They're doing it in a disproportionate way.
   date_b: '2026-06-01'
-  source_b: Trump's characterisation of his call with Netanyahu, as reported by ABC
-    News and Axios, June 2026
-  doctrine_note: The same targeting practices Trump declared fully compliant with
-    ceasefire terms in Gaza became evidence of recklessness six months later in
-    Lebanon. The standard shifted with Trump's strategic interests, not with the
-    body count or the tactic.
-
+  source_b: Trump's characterisation of his call with Netanyahu, as reported by ABC News and Axios, June 2026
+  doctrine_note: The same targeting practices Trump declared fully compliant with ceasefire terms in Gaza became evidence
+    of recklessness six months later in Lebanon. The standard shifted with Trump's strategic interests, not with the body
+    count or the tactic.
 - id: c053
   theme: Diplomatic
   country:
   - Israel
   term_a: 2
-  statement_a: If it weren't for Bibi Netanyahu, Israel probably wouldn't still exist.
-    He's been a great wartime leader. I think he should be pardoned, not put on trial.
+  statement_a: If it weren't for Bibi Netanyahu, Israel probably wouldn't still exist. He's been a great wartime leader. I
+    think he should be pardoned, not put on trial.
   date_a: '2025-12-30'
-  source_a: Trump remarks at Mar-a-Lago meeting with Netanyahu, December 30, 2025
-    (NPR)
-  statement_b: He's fucking crazy. He's jeopardising everything and he's not even
-    grateful for what we've done for him.
+  source_a: Trump remarks at Mar-a-Lago meeting with Netanyahu, December 30, 2025 (NPR)
+  statement_b: He's fucking crazy. He's jeopardising everything and he's not even grateful for what we've done for him.
   date_b: '2026-06-01'
-  source_b: Trump's reported remarks to aides following the Netanyahu call, Axios
-    and ABC News, June 2026; confirmed by Trump on June 3, 2026
-  doctrine_note: The transformation from indispensable wartime hero to ungrateful
-    obstacle took six months. Both characterisations served Trump's immediate agenda —
-    the December praise aligned with the alliance; the June rebuke aligned with the
-    Iran deal. Netanyahu's conduct changed less than Trump's needs.
+  source_b: Trump's reported remarks to aides following the Netanyahu call, Axios and ABC News, June 2026; confirmed by Trump
+    on June 3, 2026
+  doctrine_note: The transformation from indispensable wartime hero to ungrateful obstacle took six months. Both characterisations
+    served Trump's immediate agenda — the December praise aligned with the alliance; the June rebuke aligned with the Iran
+    deal. Netanyahu's conduct changed less than Trump's needs.
+- id: c054
+  theme: Diplomatic
+  country:
+  - Iran
+  term_a: 1
+  statement_a: This is the worst deal I've ever seen negotiated in my life. The Iran deal is a disaster.
+  date_a: '2015-09-09'
+  source_a: Campaign rally, Dallas, Texas
+  term_b: 2
+  statement_b: Iran would be permitted low-level nuclear enrichment under the deal.
+  date_b: '2026-06-18'
+  source_b: Interview with The New York Times following signing of US-Iran MOU, June 18, 2026
+  doctrine_note: The chief objection to the JCPOA was that it permitted enrichment; the deal presented as its historic successor
+    also permits enrichment.
+- id: c055
+  theme: Diplomatic
+  country:
+  - Iran
+  term_a: 1
+  statement_a: Iran is the number one terrorist state. They are a murderous regime.
+  date_a: '2017-10-13'
+  source_a: White House remarks on Iran strategy, October 13, 2017
+  term_b: 2
+  statement_b: The deal with the Islamic Republic of Iran is now complete.
+  date_b: '2026-06-17'
+  source_b: Truth Social post, June 17, 2026
+  doctrine_note: The designation of Iran as the world's foremost terrorist state was not rescinded prior to the announcement
+    that a deal with that state was complete.
+- id: c056
+  theme: Diplomatic
+  country:
+  - Iran
+  term_a: 2
+  statement_a: Maximum pressure on Iran. They get nothing until they agree to our terms. Nothing.
+  date_a: '2025-02-04'
+  source_a: White House press remarks reinstating maximum pressure policy, February 4, 2025
+  term_b: 2
+  statement_b: The United States will work with regional partners to create a fund of at least $300 billion for Iran's reconstruction
+    and economic development.
+  date_b: '2026-06-17'
+  source_b: US-Iran Memorandum of Understanding, June 17, 2026
+  doctrine_note: Maximum pressure began with a stated refusal of economic relief; it concluded with a commitment to facilitate
+    the largest reconstruction fund in the history of US-Iran relations.
+- id: c057
+  theme: Diplomatic
+  country:
+  - Iran
+  term_a: 1
+  statement_a: Iran will never have a nuclear weapon. Never ever ever.
+  date_a: '2020-01-08'
+  source_a: White House address following US strike killing General Soleimani, January 8, 2020
+  term_b: 2
+  statement_b: Iran reaffirms that it will not procure or develop nuclear weapons. Both sides agree to negotiate the disposition
+    of Iran's enriched material.
+  date_b: '2026-06-17'
+  source_b: US-Iran Memorandum of Understanding, June 17, 2026 — a reaffirmation rather than a verified dismantlement
+  doctrine_note: The absolute guarantee of permanent non-proliferation was replaced by a reaffirmation and a process, with
+    Iran's enriched stockpile remaining in place pending negotiation.
+- id: c058
+  theme: Diplomatic
+  country:
+  - Ukraine
+  term_a: 1
+  statement_a: He's brave. He didn't run. He stayed. He represents his country.
+  date_a: '2022-03-01'
+  source_a: Fox News interview, March 1, 2022, on Zelensky remaining in Kyiv during the Russian invasion
+  term_b: 2
+  statement_b: Zelensky is a very talented salesman.
+  date_b: '2025-02-28'
+  source_b: Remarks to reporters following the Oval Office confrontation with Zelensky, February 28, 2025
+  doctrine_note: The transition from bravery to salesmanship tracks the shift from Zelensky as a symbol of resistance to Zelensky
+    as an obstacle to a deal.
+- id: c059
+  theme: Diplomatic
+  country:
+  - Ukraine
+  term_a: 1
+  statement_a: The Ukrainian people have shown remarkable bravery and resilience. What they've been through is incredible.
+  date_a: '2022-03-26'
+  source_a: Remarks at rally in Warsaw, Poland, March 26, 2022
+  term_b: 2
+  statement_b: He's a dictator. He hasn't had elections. He's got to be more thankful.
+  date_b: '2025-03-01'
+  source_b: Fox News interview, March 1, 2025, the day after the Oval Office confrontation
+  doctrine_note: The invocation of democratic legitimacy — Zelensky's lack of wartime elections — arrived after three years
+    of praising his leadership of the same democratic state under the same wartime conditions.
+- id: c060
+  theme: Diplomatic
+  country:
+  - Ukraine
+  - Russia
+  term_a: 2
+  statement_a: We fully support Ukraine's sovereignty and territorial integrity.
+  date_a: '2025-01-20'
+  source_a: White House statement on US-Ukraine policy, January 20, 2025
+  term_b: 2
+  statement_b: Zelensky doesn't have the cards. He should make a deal. He can't keep asking for things.
+  date_b: '2025-02-19'
+  source_b: Fox News interview, February 19, 2025, thirty days after taking office
+  doctrine_note: Full support for territorial integrity lasted thirty days before shifting to a negotiating posture in which
+    the territory's status was explicitly on the table.
+- id: c061
+  theme: Diplomatic
+  country:
+  - Ukraine
+  term_a: 2
+  statement_a: I'm going to get this war ended. I'll have it done in 24 hours. Both sides will be very happy.
+  date_a: '2023-05-21'
+  source_a: CNN town hall, May 21, 2023
+  term_b: 2
+  statement_b: Look, it's a very difficult situation. It's been going on for a long time. There are a lot of complexities.
+  date_b: '2025-09-12'
+  source_b: Press gaggle, September 12, 2025, with the war entering its fourth year of the Trump term and no ceasefire in
+    place
+  doctrine_note: The 24-hour guarantee transformed into an acknowledgment of complexity at roughly the eight-month mark, without
+    formal revision of the original timeline.
