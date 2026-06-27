@@ -1,309 +1,418 @@
-# Strongmen Register
-# Documents verified instances of the President praising, defending, or expressing
-# admiration for authoritarian leaders, dictators, and strongmen across both terms.
-# Praise type uses controlled vocabulary (see bottom of file).
-# Last updated: 2026-06-27
-
 entries:
-  - id: sm001
-    date: "2016-01-06"
-    term: 1
-    subject: Kim Jong-un
-    country: North Korea
-    regime_type: totalitarian
-    quote: "You have to give him credit. How many young guys — he was like 26 or 25 when his father died — take over these tough generals, and all of a sudden... He wiped out the uncle, he wiped out this one, that one. This guy doesn't play games."
-    context: "Campaign rally, Reno, Nevada"
-    source: "Washington Post, January 6, 2016"
-    source_url: "https://www.washingtonpost.com/news/post-politics/wp/2016/01/06/trump-praises-kim-jong-un/"
-    praise_type: [decisiveness, strength, control]
-    notes: >-
-      Trump's first documented campaign-trail praise of Kim Jong-un, framing the
-      purging of family members and political opponents as evidence of exceptional
-      leadership. The phrase "this guy doesn't play games" recurred in subsequent
-      references to Kim across both terms.
-
-  - id: sm002
-    date: "2017-05-01"
-    term: 1
-    subject: Kim Jong-un
-    country: North Korea
-    regime_type: totalitarian
-    quote: "He's a pretty smart cookie."
-    context: "Face the Nation interview, CBS News"
-    source: "CBS News, May 1, 2017"
-    source_url: "https://www.cbsnews.com/news/trump-north-korea-kim-jong-un-pretty-smart-cookie/"
-    praise_type: [intelligence]
-    notes: >-
-      Made while Kim was conducting active ballistic missile tests. The same
-      interview included Trump describing Kim's ascent to power at age 26 as
-      "incredible" — the first term pattern of framing political violence
-      as a management credential.
-
-  - id: sm003
-    date: "2017-04-17"
-    term: 1
-    subject: Recep Tayyip Erdoğan
-    country: Turkey
-    regime_type: authoritarian
-    quote: "I just want to congratulate him. Very few people have done what he's done. Very few people."
-    context: "White House readout, phone call following Turkish constitutional referendum"
-    source: "White House Press Office; Reuters, April 17, 2017"
-    source_url: "https://www.reuters.com/article/us-turkey-referendum-trump-idUSKBN17J21E"
-    praise_type: [electoral, strength]
-    notes: >-
-      The referendum granted Erdoğan sweeping executive powers, abolishing the
-      office of Prime Minister and enabling rule by presidential decree. International
-      observers including the OSCE cited significant irregularities. Trump called
-      to congratulate Erdoğan before the votes were fully counted.
-
-  - id: sm004
-    date: "2017-05-01"
-    term: 1
-    subject: Rodrigo Duterte
-    country: Philippines
-    regime_type: authoritarian
-    quote: "I just wanted to congratulate you because I am hearing of the unbelievable job on the drug problem."
-    context: "White House phone call, leaked transcript"
-    source: "Intercept / Philippine government transcript leak, May 24, 2017"
-    source_url: "https://theintercept.com/2017/05/24/trump-told-duterte-hes-doing-an-amazing-job-on-his-murderous-drug-war/"
-    praise_type: [strength, decisiveness]
-    notes: >-
-      Duterte's drug war had killed an estimated 9,000 people by this date,
-      including extrajudicial killings by police. Trump's readout called it
-      an "unbelievable job." The call included an invitation to the White House,
-      which Duterte accepted in principle but never took up.
-
-  - id: sm005
-    date: "2018-01-25"
-    term: 1
-    subject: Xi Jinping
-    country: China
-    regime_type: single_party
-    quote: "He's now president for life — president for life. And look, he was able to do that. I think it's great. Maybe we'll give that a shot someday."
-    context: "Closed-door fundraiser remarks, Mar-a-Lago, Florida"
-    source: "CNN / The Atlantic, March 3, 2018 (audio leaked)"
-    source_url: "https://www.theatlantic.com/politics/archive/2018/03/trump-praises-xi-jinping-for-consolidating-power-maybe-well-give-that-a-shot-someday/554878/"
-    praise_type: [control, envy, decisiveness]
-    notes: >-
-      Remarks made after Xi Jinping's move to eliminate presidential term limits,
-      consolidating power indefinitely. The "maybe we'll give that a shot someday"
-      line was initially treated as a joke; Trump did not retract it. The audio
-      was recorded by attendees and leaked to the Atlantic.
-
-  - id: sm006
-    date: "2018-06-15"
-    term: 1
-    subject: Kim Jong-un
-    country: North Korea
-    regime_type: totalitarian
-    quote: "He speaks and his people sit up at attention. I want my people to do the same."
-    context: "Fox & Friends interview, two days after Singapore summit"
-    source: "CNN / CNBC, June 15, 2018"
-    source_url: "https://www.cnbc.com/2018/06/15/trump-wants-people-to-listen-to-him-like-north-koreans-do-to-kim-jong-un.html"
-    praise_type: [control, envy]
-    notes: >-
-      Delivered forty-eight hours after the Singapore summit, Trump's first meeting
-      with Kim. The statement expressed explicit admiration for a population's forced
-      deference to its leader under threat of execution. Trump subsequently described
-      the remark as a joke; no retraction was issued via official channels.
-
-  - id: sm007
-    date: "2018-07-16"
-    term: 1
-    subject: Vladimir Putin
-    country: Russia
-    regime_type: authoritarian
-    quote: "President Putin says it's not Russia. I don't see any reason why it would be."
-    context: "Joint press conference, Helsinki Summit, Finland"
-    source: "White House transcript; Washington Post, July 16, 2018"
-    source_url: "https://www.washingtonpost.com/politics/trump-and-putin-hold-joint-news-conference-in-helsinki/2018/07/16/"
-    praise_type: [rehabilitation, deference]
-    notes: >-
-      Trump publicly sided with Putin over the unanimous assessment of the US
-      intelligence community regarding Russian interference in the 2016 election.
-      Director of National Intelligence Dan Coats issued a rebuttal the same day.
-      Republican Senate Majority Leader McConnell called it "a missed opportunity."
-      Classified as deference/rehabilitation rather than direct praise; included on
-      grounds that it represents the same underlying pattern.
-
-  - id: sm008
-    date: "2018-10-02"
-    term: 1
-    subject: Kim Jong-un
-    country: North Korea
-    regime_type: totalitarian
-    quote: "He wrote me beautiful letters, and they're great letters. We fell in love."
-    context: "Campaign rally, Wheeling, West Virginia"
-    source: "Reuters / Washington Post, October 2, 2018"
-    source_url: "https://www.reuters.com/article/us-northkorea-trump-idUSKCN1MC0NR"
-    praise_type: [loyalty, charisma]
-    notes: >-
-      Trump described his epistolary relationship with North Korea's leader, who
-      had tested 23 ballistic missiles in 2017 and overseen an estimated 100,000
-      political prisoners in gulags. The "beautiful letters" became a recurring
-      fixture in Trump's campaign rhetoric across both terms. The letters themselves
-      were later described by US officials as largely propagandistic.
-
-  - id: sm009
-    date: "2018-11-20"
-    term: 1
-    subject: Mohammed bin Salman
-    country: Saudi Arabia
-    regime_type: absolute_monarchy
-    quote: "Maybe he did and maybe he didn't. We may never know all of the facts surrounding the murder of Mr. Khashoggi."
-    context: "White House written statement, Washington D.C."
-    source: "White House official statement, November 20, 2018"
-    source_url: "https://www.whitehouse.gov/briefings-statements/statement-president-donald-j-trump-standing-saudi-arabia/"
-    praise_type: [rehabilitation]
-    notes: >-
-      Issued six weeks after the murder of Washington Post journalist Jamal
-      Khashoggi inside the Saudi consulate in Istanbul. The CIA had assessed with
-      high confidence that MBS had personally ordered the killing. Trump's statement
-      explicitly rejected that finding, cited Saudi Arabia's arms purchases, and
-      declared the relationship would continue. Framed by the White House as a
-      foreign policy statement; documented here as rehabilitation of a ruling figure
-      against the findings of the US intelligence community.
-
-  - id: sm010
-    date: "2019-08-26"
-    term: 1
-    subject: Abdel Fattah el-Sisi
-    country: Egypt
-    regime_type: authoritarian
-    quote: "Where's my favorite dictator?"
-    context: "G7 reception, Hotel du Palais, Biarritz, France — reported by staff present"
-    source: "Wall Street Journal, September 13, 2019"
-    source_url: "https://www.wsj.com/articles/in-search-of-sisi-trump-asked-wheres-my-favorite-dictator-11568403640"
-    praise_type: [charisma, strength]
-    notes: >-
-      Called out at a G7 reception while waiting for the Egyptian president to
-      arrive. The phrase was reported by multiple White House staff members present.
-      The White House did not deny the remark but said it was made in good humour.
-      Sisi has presided over the largest wave of political imprisonments in Egypt's
-      modern history, holding an estimated 60,000 political prisoners.
-
-  - id: sm011
-    date: "2022-02-22"
-    term: 1
-    subject: Vladimir Putin
-    country: Russia
-    regime_type: authoritarian
-    quote: "I went in yesterday and there was a television screen and I said: this is genius. Putin declares a big portion of the Ukraine of Ukraine — Putin declares it as independent. Oh, that's wonderful. So Putin is now saying it's independent — how smart is that?"
-    context: "The Clay Travis & Buck Sexton Show, radio interview"
-    source: "NPR / Fortune, February 22, 2022"
-    source_url: "https://fortune.com/2022/02/23/trump-cheers-putin-ukraine-invasion-as-savvy-genius-russia/"
-    praise_type: [intelligence, decisiveness]
-    notes: >-
-      Delivered one day before Russia's full-scale invasion of Ukraine, in response
-      to Putin's declaration that the Donetsk and Luhansk regions were independent
-      states. Trump called the move "genius" and "very savvy" in the same interview.
-      He was still the leading contender for the 2024 Republican nomination at the
-      time of the statement.
-
-  - id: sm012
-    date: "2024-03-08"
-    term: 1
-    subject: Viktor Orbán
-    country: Hungary
-    regime_type: illiberal_democracy
-    quote: "There's nobody that's better, smarter or a better leader than Viktor Orbán. He's fantastic."
-    context: "Mar-a-Lago meeting and dinner, Palm Beach, Florida"
-    source: "CNN, March 8, 2024"
-    source_url: "https://www.cnn.com/2024/03/08/politics/trump-orban-mar-a-lago/index.html"
-    praise_type: [intelligence, leadership, strength]
-    notes: >-
-      Orbán had arrived at Mar-a-Lago directly from a visit to Moscow, where he
-      had met Vladimir Putin — the first visit by an EU leader to Russia since the
-      2022 invasion. Trump's praise followed Orbán's single-handed blocking of EU
-      military aid packages to Ukraine on multiple occasions. Trump framed Orbán's
-      governing style as a model for the United States.
-
-  - id: sm013
-    date: "2024-05-23"
-    term: 1
-    subject: Kim Jong-un
-    country: North Korea
-    regime_type: totalitarian
-    quote: "Kim Jong Un — sharp, he is sharp. He knows where he stands. He knows how to run a country."
-    context: "Campaign rally, Bronx, New York"
-    source: "Washington Post, May 24, 2024"
-    source_url: "https://www.washingtonpost.com/politics/2024/05/24/trump-rally-bronx-putin-kim-jong-un/"
-    praise_type: [intelligence, control, leadership]
-    notes: >-
-      Delivered at a rare campaign rally in New York City. The same rally
-      included praise for Putin and Xi, with Trump describing all three as
-      people at "the top of their game" who "protect their country." The
-      context was a broader argument that American allies were weak by comparison
-      to authoritarian leaders who acted decisively.
-
-  - id: sm014
-    date: "2024-05-23"
-    term: 1
-    subject: Vladimir Putin
-    country: Russia
-    regime_type: authoritarian
-    quote: "Putin — very smart. He's at the top of his game."
-    context: "Campaign rally, Bronx, New York"
-    source: "Washington Post, May 24, 2024"
-    source_url: "https://www.washingtonpost.com/politics/2024/05/24/trump-rally-bronx-putin-kim-jong-un/"
-    praise_type: [intelligence, strength]
-    notes: >-
-      Part of a trilogy of praise at the same Bronx rally that included
-      Xi Jinping and Kim Jong-un. Trump grouped the three leaders together as
-      exemplars of tough, smart leadership in contrast to what he called weak
-      American and European allies.
-
-  - id: sm015
-    date: "2024-05-23"
-    term: 1
-    subject: Xi Jinping
-    country: China
-    regime_type: single_party
-    quote: "People ask me: how smart is Xi? I say top of the line. You never met anybody smarter."
-    context: "Campaign rally, Bronx, New York"
-    source: "Washington Post / Semafor, May 23, 2024"
-    source_url: "https://www.semafor.com/article/08/13/2024/trump-praises-xi-putin-kim"
-    praise_type: [intelligence, strength]
-    notes: >-
-      The Bronx rally represented Trump's most concentrated single-event praise
-      of multiple authoritarian figures. All three — Xi, Putin, Kim — were cited
-      positively within the same speech, framed as evidence that strong leaders
-      outperform democratic governments. The remarks were made while US-China trade
-      tensions were a central campaign issue.
-
-  - id: sm016
-    date: "2025-05-13"
-    term: 2
-    subject: Mohammed bin Salman
-    country: Saudi Arabia
-    regime_type: absolute_monarchy
-    quote: "He knows me well. I do — I like him a lot. I like him too much. What he's done is incredible."
-    context: "US-Saudi Investment Forum, Riyadh, Saudi Arabia"
-    source: "ABC News; CNBC, May 13, 2025"
-    source_url: "https://abcnews.go.com/Politics/trump-heaps-praise-saudi-crown-prince-touts-economic/story?id=121758613"
-    praise_type: [loyalty, charisma, economic]
-    notes: >-
-      Delivered during Trump's first foreign visit of Term 2, four years after the
-      CIA concluded MBS had personally ordered the murder of Jamal Khashoggi.
-      Trump, when asked about the killing at the forum, said "a lot of people didn't
-      like that gentleman" and "he knew nothing about it" — the same rehabilitation
-      framing used in 2018. The visit produced a $600B Saudi investment pledge.
-
-  - id: sm017
-    date: "2025-11-07"
-    term: 2
-    subject: Viktor Orbán
-    country: Hungary
-    regime_type: illiberal_democracy
-    quote: "He's done a fantastic job. He's a very powerful man within his country, but he's also beloved. He's run a really great country and he's got no crime."
-    context: "Bilateral meeting, Cabinet Room, White House, Washington D.C."
-    source: "ABC News; Senate Democratic Leadership transcript, November 7, 2025"
-    source_url: "https://abcnews.go.com/Politics/trump-meet-hungarys-viktor-orban-white-house/story?id=127269587"
-    praise_type: [leadership, control, strength]
-    notes: >-
-      Official White House bilateral meeting. Orbán at this point had been in power
-      for 15 years, had rewritten the Hungarian constitution 13 times, restricted
-      press freedom to the point that Hungary ranks 67th globally on the Press
-      Freedom Index, and remained the only EU leader maintaining active economic
-      and political ties with Putin's Russia. Trump's claim that Hungary has "no
-      crime" is not supported by Eurostat crime statistics.
+- id: sm001
+  date: '2016-01-06'
+  term: 1
+  subject: Kim Jong-un
+  country: North Korea
+  regime_type: totalitarian
+  quote: You have to give him credit. How many young guys — he was like 26 or 25 when his father died — take over these tough
+    generals, and all of a sudden... He wiped out the uncle, he wiped out this one, that one. This guy doesn't play games.
+  context: Campaign rally, Reno, Nevada
+  source: Washington Post, January 6, 2016
+  source_url: https://www.washingtonpost.com/news/post-politics/wp/2016/01/06/trump-praises-kim-jong-un/
+  praise_type:
+  - decisiveness
+  - strength
+  - control
+  notes: Trump's first documented campaign-trail praise of Kim Jong-un, framing the purging of family members and political
+    opponents as evidence of exceptional leadership. The phrase "this guy doesn't play games" recurred in subsequent references
+    to Kim across both terms.
+- id: sm002
+  date: '2017-05-01'
+  term: 1
+  subject: Kim Jong-un
+  country: North Korea
+  regime_type: totalitarian
+  quote: He's a pretty smart cookie.
+  context: Face the Nation interview, CBS News
+  source: CBS News, May 1, 2017
+  source_url: https://www.cbsnews.com/news/trump-north-korea-kim-jong-un-pretty-smart-cookie/
+  praise_type:
+  - intelligence
+  notes: Made while Kim was conducting active ballistic missile tests. The same interview included Trump describing Kim's
+    ascent to power at age 26 as "incredible" — the first term pattern of framing political violence as a management credential.
+- id: sm003
+  date: '2017-04-17'
+  term: 1
+  subject: Recep Tayyip Erdoğan
+  country: Turkey
+  regime_type: authoritarian
+  quote: I just want to congratulate him. Very few people have done what he's done. Very few people.
+  context: White House readout, phone call following Turkish constitutional referendum
+  source: White House Press Office; Reuters, April 17, 2017
+  source_url: https://www.reuters.com/article/us-turkey-referendum-trump-idUSKBN17J21E
+  praise_type:
+  - electoral
+  - strength
+  notes: The referendum granted Erdoğan sweeping executive powers, abolishing the office of Prime Minister and enabling rule
+    by presidential decree. International observers including the OSCE cited significant irregularities. Trump called to congratulate
+    Erdoğan before the votes were fully counted.
+- id: sm004
+  date: '2017-05-01'
+  term: 1
+  subject: Rodrigo Duterte
+  country: Philippines
+  regime_type: authoritarian
+  quote: I just wanted to congratulate you because I am hearing of the unbelievable job on the drug problem.
+  context: White House phone call, leaked transcript
+  source: Intercept / Philippine government transcript leak, May 24, 2017
+  source_url: https://theintercept.com/2017/05/24/trump-told-duterte-hes-doing-an-amazing-job-on-his-murderous-drug-war/
+  praise_type:
+  - strength
+  - decisiveness
+  notes: Duterte's drug war had killed an estimated 9,000 people by this date, including extrajudicial killings by police.
+    Trump's readout called it an "unbelievable job." The call included an invitation to the White House, which Duterte accepted
+    in principle but never took up.
+- id: sm005
+  date: '2018-01-25'
+  term: 1
+  subject: Xi Jinping
+  country: China
+  regime_type: single_party
+  quote: He's now president for life — president for life. And look, he was able to do that. I think it's great. Maybe we'll
+    give that a shot someday.
+  context: Closed-door fundraiser remarks, Mar-a-Lago, Florida
+  source: CNN / The Atlantic, March 3, 2018 (audio leaked)
+  source_url: https://www.theatlantic.com/politics/archive/2018/03/trump-praises-xi-jinping-for-consolidating-power-maybe-well-give-that-a-shot-someday/554878/
+  praise_type:
+  - control
+  - envy
+  - decisiveness
+  notes: Remarks made after Xi Jinping's move to eliminate presidential term limits, consolidating power indefinitely. The
+    "maybe we'll give that a shot someday" line was initially treated as a joke; Trump did not retract it. The audio was recorded
+    by attendees and leaked to the Atlantic.
+- id: sm006
+  date: '2018-06-15'
+  term: 1
+  subject: Kim Jong-un
+  country: North Korea
+  regime_type: totalitarian
+  quote: He speaks and his people sit up at attention. I want my people to do the same.
+  context: Fox & Friends interview, two days after Singapore summit
+  source: CNN / CNBC, June 15, 2018
+  source_url: https://www.cnbc.com/2018/06/15/trump-wants-people-to-listen-to-him-like-north-koreans-do-to-kim-jong-un.html
+  praise_type:
+  - control
+  - envy
+  notes: Delivered forty-eight hours after the Singapore summit, Trump's first meeting with Kim. The statement expressed explicit
+    admiration for a population's forced deference to its leader under threat of execution. Trump subsequently described the
+    remark as a joke; no retraction was issued via official channels.
+- id: sm007
+  date: '2018-07-16'
+  term: 1
+  subject: Vladimir Putin
+  country: Russia
+  regime_type: authoritarian
+  quote: President Putin says it's not Russia. I don't see any reason why it would be.
+  context: Joint press conference, Helsinki Summit, Finland
+  source: White House transcript; Washington Post, July 16, 2018
+  source_url: https://www.washingtonpost.com/politics/trump-and-putin-hold-joint-news-conference-in-helsinki/2018/07/16/
+  praise_type:
+  - rehabilitation
+  - deference
+  notes: Trump publicly sided with Putin over the unanimous assessment of the US intelligence community regarding Russian
+    interference in the 2016 election. Director of National Intelligence Dan Coats issued a rebuttal the same day. Republican
+    Senate Majority Leader McConnell called it "a missed opportunity." Classified as deference/rehabilitation rather than
+    direct praise; included on grounds that it represents the same underlying pattern.
+- id: sm008
+  date: '2018-10-02'
+  term: 1
+  subject: Kim Jong-un
+  country: North Korea
+  regime_type: totalitarian
+  quote: He wrote me beautiful letters, and they're great letters. We fell in love.
+  context: Campaign rally, Wheeling, West Virginia
+  source: Reuters / Washington Post, October 2, 2018
+  source_url: https://www.reuters.com/article/us-northkorea-trump-idUSKCN1MC0NR
+  praise_type:
+  - loyalty
+  - charisma
+  notes: Trump described his epistolary relationship with North Korea's leader, who had tested 23 ballistic missiles in 2017
+    and overseen an estimated 100,000 political prisoners in gulags. The "beautiful letters" became a recurring fixture in
+    Trump's campaign rhetoric across both terms. The letters themselves were later described by US officials as largely propagandistic.
+- id: sm009
+  date: '2018-11-20'
+  term: 1
+  subject: Mohammed bin Salman
+  country: Saudi Arabia
+  regime_type: absolute_monarchy
+  quote: Maybe he did and maybe he didn't. We may never know all of the facts surrounding the murder of Mr. Khashoggi.
+  context: White House written statement, Washington D.C.
+  source: White House official statement, November 20, 2018
+  source_url: https://www.whitehouse.gov/briefings-statements/statement-president-donald-j-trump-standing-saudi-arabia/
+  praise_type:
+  - rehabilitation
+  notes: Issued six weeks after the murder of Washington Post journalist Jamal Khashoggi inside the Saudi consulate in Istanbul.
+    The CIA had assessed with high confidence that MBS had personally ordered the killing. Trump's statement explicitly rejected
+    that finding, cited Saudi Arabia's arms purchases, and declared the relationship would continue. Framed by the White House
+    as a foreign policy statement; documented here as rehabilitation of a ruling figure against the findings of the US intelligence
+    community.
+- id: sm010
+  date: '2019-08-26'
+  term: 1
+  subject: Abdel Fattah el-Sisi
+  country: Egypt
+  regime_type: authoritarian
+  quote: Where's my favorite dictator?
+  context: G7 reception, Hotel du Palais, Biarritz, France — reported by staff present
+  source: Wall Street Journal, September 13, 2019
+  source_url: https://www.wsj.com/articles/in-search-of-sisi-trump-asked-wheres-my-favorite-dictator-11568403640
+  praise_type:
+  - charisma
+  - strength
+  notes: Called out at a G7 reception while waiting for the Egyptian president to arrive. The phrase was reported by multiple
+    White House staff members present. The White House did not deny the remark but said it was made in good humour. Sisi has
+    presided over the largest wave of political imprisonments in Egypt's modern history, holding an estimated 60,000 political
+    prisoners.
+- id: sm011
+  date: '2022-02-22'
+  term: 1
+  subject: Vladimir Putin
+  country: Russia
+  regime_type: authoritarian
+  quote: 'I went in yesterday and there was a television screen and I said: this is genius. Putin declares a big portion of
+    the Ukraine of Ukraine — Putin declares it as independent. Oh, that''s wonderful. So Putin is now saying it''s independent
+    — how smart is that?'
+  context: The Clay Travis & Buck Sexton Show, radio interview
+  source: NPR / Fortune, February 22, 2022
+  source_url: https://fortune.com/2022/02/23/trump-cheers-putin-ukraine-invasion-as-savvy-genius-russia/
+  praise_type:
+  - intelligence
+  - decisiveness
+  notes: Delivered one day before Russia's full-scale invasion of Ukraine, in response to Putin's declaration that the Donetsk
+    and Luhansk regions were independent states. Trump called the move "genius" and "very savvy" in the same interview. He
+    was still the leading contender for the 2024 Republican nomination at the time of the statement.
+- id: sm012
+  date: '2024-03-08'
+  term: 1
+  subject: Viktor Orbán
+  country: Hungary
+  regime_type: illiberal_democracy
+  quote: There's nobody that's better, smarter or a better leader than Viktor Orbán. He's fantastic.
+  context: Mar-a-Lago meeting and dinner, Palm Beach, Florida
+  source: CNN, March 8, 2024
+  source_url: https://www.cnn.com/2024/03/08/politics/trump-orban-mar-a-lago/index.html
+  praise_type:
+  - intelligence
+  - leadership
+  - strength
+  notes: Orbán had arrived at Mar-a-Lago directly from a visit to Moscow, where he had met Vladimir Putin — the first visit
+    by an EU leader to Russia since the 2022 invasion. Trump's praise followed Orbán's single-handed blocking of EU military
+    aid packages to Ukraine on multiple occasions. Trump framed Orbán's governing style as a model for the United States.
+- id: sm013
+  date: '2024-05-23'
+  term: 1
+  subject: Kim Jong-un
+  country: North Korea
+  regime_type: totalitarian
+  quote: Kim Jong Un — sharp, he is sharp. He knows where he stands. He knows how to run a country.
+  context: Campaign rally, Bronx, New York
+  source: Washington Post, May 24, 2024
+  source_url: https://www.washingtonpost.com/politics/2024/05/24/trump-rally-bronx-putin-kim-jong-un/
+  praise_type:
+  - intelligence
+  - control
+  - leadership
+  notes: Delivered at a rare campaign rally in New York City. The same rally included praise for Putin and Xi, with Trump
+    describing all three as people at "the top of their game" who "protect their country." The context was a broader argument
+    that American allies were weak by comparison to authoritarian leaders who acted decisively.
+- id: sm014
+  date: '2024-05-23'
+  term: 1
+  subject: Vladimir Putin
+  country: Russia
+  regime_type: authoritarian
+  quote: Putin — very smart. He's at the top of his game.
+  context: Campaign rally, Bronx, New York
+  source: Washington Post, May 24, 2024
+  source_url: https://www.washingtonpost.com/politics/2024/05/24/trump-rally-bronx-putin-kim-jong-un/
+  praise_type:
+  - intelligence
+  - strength
+  notes: Part of a trilogy of praise at the same Bronx rally that included Xi Jinping and Kim Jong-un. Trump grouped the three
+    leaders together as exemplars of tough, smart leadership in contrast to what he called weak American and European allies.
+- id: sm015
+  date: '2024-05-23'
+  term: 1
+  subject: Xi Jinping
+  country: China
+  regime_type: single_party
+  quote: 'People ask me: how smart is Xi? I say top of the line. You never met anybody smarter.'
+  context: Campaign rally, Bronx, New York
+  source: Washington Post / Semafor, May 23, 2024
+  source_url: https://www.semafor.com/article/08/13/2024/trump-praises-xi-putin-kim
+  praise_type:
+  - intelligence
+  - strength
+  notes: The Bronx rally represented Trump's most concentrated single-event praise of multiple authoritarian figures. All
+    three — Xi, Putin, Kim — were cited positively within the same speech, framed as evidence that strong leaders outperform
+    democratic governments. The remarks were made while US-China trade tensions were a central campaign issue.
+- id: sm016
+  date: '2025-05-13'
+  term: 2
+  subject: Mohammed bin Salman
+  country: Saudi Arabia
+  regime_type: absolute_monarchy
+  quote: He knows me well. I do — I like him a lot. I like him too much. What he's done is incredible.
+  context: US-Saudi Investment Forum, Riyadh, Saudi Arabia
+  source: ABC News; CNBC, May 13, 2025
+  source_url: https://abcnews.go.com/Politics/trump-heaps-praise-saudi-crown-prince-touts-economic/story?id=121758613
+  praise_type:
+  - loyalty
+  - charisma
+  - economic
+  notes: Delivered during Trump's first foreign visit of Term 2, four years after the CIA concluded MBS had personally ordered
+    the murder of Jamal Khashoggi. Trump, when asked about the killing at the forum, said "a lot of people didn't like that
+    gentleman" and "he knew nothing about it" — the same rehabilitation framing used in 2018. The visit produced a $600B Saudi
+    investment pledge.
+- id: sm017
+  date: '2025-11-07'
+  term: 2
+  subject: Viktor Orbán
+  country: Hungary
+  regime_type: illiberal_democracy
+  quote: He's done a fantastic job. He's a very powerful man within his country, but he's also beloved. He's run a really
+    great country and he's got no crime.
+  context: Bilateral meeting, Cabinet Room, White House, Washington D.C.
+  source: ABC News; Senate Democratic Leadership transcript, November 7, 2025
+  source_url: https://abcnews.go.com/Politics/trump-meet-hungarys-viktor-orban-white-house/story?id=127269587
+  praise_type:
+  - leadership
+  - control
+  - strength
+  notes: Official White House bilateral meeting. Orbán at this point had been in power for 15 years, had rewritten the Hungarian
+    constitution 13 times, restricted press freedom to the point that Hungary ranks 67th globally on the Press Freedom Index,
+    and remained the only EU leader maintaining active economic and political ties with Putin's Russia. Trump's claim that
+    Hungary has "no crime" is not supported by Eurostat crime statistics.
+- id: sm018
+  date: '2019-01-01'
+  term: 1
+  subject: Jair Bolsonaro
+  country: Brazil
+  regime_type: authoritarian_populist
+  quote: Brazil has a great new leader. He loves his country. He wants to do what's right for his country.
+  context: Tweet, Washington D.C.
+  source: CNBC / NBC News, January 1, 2019
+  source_url: https://www.cnbc.com/2019/01/01/trump-praises-brazils-new-president-bolsonaro-after-he-vowed-to-strengthen-democracy-.html
+  praise_type:
+  - leadership
+  - charisma
+  notes: Posted the day Bolsonaro was inaugurated as President of Brazil. Bolsonaro had campaigned on admiration for Brazil's
+    military dictatorship era (1964–1985), expressing nostalgia for the "good old days" of the regime. Trump's praise established
+    an affinity that would deepen across both terms and survive Bolsonaro's 2023 conviction for plotting a coup.
+- id: sm019
+  date: '2022-09-05'
+  term: 1
+  subject: Jair Bolsonaro
+  country: Brazil
+  regime_type: authoritarian_populist
+  quote: He's one of the great presidents of any country in the world. I know him well. I know that he loves his people and
+    loves his country.
+  context: Written endorsement statement for Bolsonaro's re-election campaign
+  source: Newsweek / NBC News, September 5, 2022
+  source_url: https://www.newsweek.com/everything-trump-has-said-about-jair-bolsonaro-1772372
+  praise_type:
+  - leadership
+  - electoral
+  notes: Issued one month before Brazil's October 2022 presidential election, which Bolsonaro lost to Luiz Inácio Lula da
+    Silva. Trump's use of "one of the great presidents of any country in the world" represented his most expansive praise
+    of Bolsonaro. Bolsonaro would subsequently be convicted of plotting a coup to overturn the election result.
+- id: sm020
+  date: '2025-07-15'
+  term: 2
+  subject: Jair Bolsonaro
+  country: Brazil
+  regime_type: authoritarian_populist
+  quote: I thought he was a good president of Brazil... It's very much like they tried to do with me, but they couldn't get
+    away with it.
+  context: Press remarks; concurrent with tariff announcement, Washington D.C.
+  source: The New Republic / NBC News, July 2025
+  source_url: https://newrepublic.com/post/200401/donald-trump-jair-bolsonaro-convicted-brazil-coup
+  praise_type:
+  - rehabilitation
+  - loyalty
+  notes: Bolsonaro had been convicted by Brazil's Supreme Court for plotting a coup to overturn his 2022 election defeat,
+    and sentenced to 27 years in prison. Trump declared the verdict "a terrible thing," described it as a "witch hunt," and
+    ordered Brazil to end prosecutions "IMMEDIATELY" or face 50% tariffs. Trump simultaneously sanctioned Brazilian Supreme
+    Court Justice Alexandre de Moraes and revoked visas of other justices. The explicit parallel drawn to Trump's own legal
+    situation made this the most explicit instance of rehabilitation-as-foreign-policy in either term.
+- id: sm021
+  date: '2025-04-14'
+  term: 2
+  subject: Nayib Bukele
+  country: El Salvador
+  regime_type: authoritarian
+  quote: You're doing incredibly for your country. The homegrowns are next. You've got to build about five more places.
+  context: Oval Office meeting, White House, Washington D.C.
+  source: ABC News / NPR, April 14, 2025
+  source_url: https://abcnews.com/Politics/trump-hosts-el-salvadors-bukele-amid-deportation-controversy/story?id=120788481
+  praise_type:
+  - control
+  - decisiveness
+  - envy
+  notes: 'Bukele arrived at the Oval Office having already received planeloads of US deportees — mostly Venezuelans accused
+    of gang membership, many without US criminal convictions — into CECOT, his mega-prison. During the meeting, Bukele reframed
+    mass incarceration as liberation: "I like to say that we actually liberated millions." Trump''s response — "That''s very
+    good. Do you think I can use that?" — and his demand for five more prisons to hold American citizens classified as "homegrowns"
+    represented the most direct expression of envy for another leader''s detention apparatus in either term. Bukele styles
+    himself "the world''s coolest dictator."'
+- id: sm022
+  date: '2025-09-23'
+  term: 2
+  subject: Javier Milei
+  country: Argentina
+  regime_type: populist
+  quote: He's done a fantastic job. A lot of people said it couldn't be done. He's done a fantastic job. I fully endorse him
+    for president.
+  context: Pull-aside meeting remarks, UN General Assembly, New York
+  source: Roll Call / Factbase; American Presidency Project, September 23, 2025
+  source_url: https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-pull-aside-javier-milei-argentina-september-23-2025/
+  praise_type:
+  - leadership
+  - decisiveness
+  - electoral
+  borderline: true
+  notes: 'Milei is classified as borderline: Argentina remains a functioning democracy with independent judiciary and opposition
+    parties, and Milei won office through legitimate elections. However, his governing style — chainsaw-wielding libertarian
+    shock therapy, attacks on state institutions, close personal alignment with Trump — places him in a distinct category
+    from traditional South American populists. Trump''s full endorsement and invocation of "a lot of people said it couldn''t
+    be done" mirrors the language used for Orbán and Bolsonaro. Included on grounds of pattern documentation.'
+- id: sm023
+  date: '2025-11-11'
+  term: 2
+  subject: Narendra Modi
+  country: India
+  regime_type: illiberal_democracy
+  quote: I know the real Modi is a very tough cookie. He's a great leader and has been in power for over twelve years. He
+    stays out of wars, which is smart.
+  context: APEC Summit sideline interview; The Axios Show
+  source: Outlook India / Axios, November 2025
+  source_url: https://www.outlookindia.com/international/modi-tough-cookie-great-leader-who-has-been-in-power-for-over-12-years-trump-2
+  praise_type:
+  - strength
+  - intelligence
+  - leadership
+  borderline: true
+  notes: 'India is a democracy and Modi an elected leader, making this borderline by the register''s criteria. Included on
+    two grounds: first, Trump''s explicit framing of longevity in power ("twelve years") as a virtue mirrors his admiration
+    for Xi and Orbán; second, Modi''s India has been catalogued by Freedom House, V-Dem, and Reporters Without Borders as
+    undergoing significant democratic backsliding — press freedom restrictions, treatment of Muslim minorities, erosion of
+    judicial independence. Trump''s "tough cookie" framing echoes the strongman register''s dominant vocabulary.'
+- id: sm024
+  date: '2018-01-26'
+  term: 1
+  subject: Paul Kagame
+  country: Rwanda
+  regime_type: authoritarian
+  quote: The job they've done is absolutely terrific. It's an incredible job, and we want to help you out.
+  context: Bilateral meeting remarks, World Economic Forum, Davos, Switzerland
+  source: American Presidency Project; White House transcript, January 26, 2018
+  source_url: https://www.presidency.ucsb.edu/documents/remarks-following-meeting-with-president-paul-kagame-rwanda-davos-switzerland
+  praise_type:
+  - leadership
+  - economic
+  notes: Kagame has been Rwanda's de facto and later de jure leader since 1994. He won the 2017 presidential election with
+    98.6% of the vote after a constitutional amendment allowing him a third term, which he achieved by abolishing term limits.
+    Freedom House rates Rwanda "Not Free." The "absolutely terrific" job referenced includes Rwanda's export of troops and
+    support to the M23 rebel movement in the DRC — a conflict that would later produce a US-brokered minerals deal Trump praised
+    in December 2025 (see deals register).
