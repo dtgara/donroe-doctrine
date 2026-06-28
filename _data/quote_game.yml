@@ -313,18 +313,18 @@ rounds:
     reveal_note: "Trump made variations of this claim repeatedly. NATO officials privately described the briefings they provided as 'exhausting.'"
 
   - round_id: 23
-    event: "Campaign rally, Iowa — January 19, 2016"
+    event: "Rose Garden statement on Paris Climate Accord withdrawal — June 1, 2017"
     quotes:
-      - text: "I could stand in the middle of Fifth Avenue and shoot somebody and I wouldn't lose any voters. Okay? It's, like, incredible."
+      - text: "I was elected to represent the citizens of Pittsburgh, not Paris."
         real: true
-      - text: "My people — and they are my people, I love them — they know that I'm fighting for them. Nobody else is. Not the Democrats, not the Republicans. Me. Just me."
+      - text: "The Paris Agreement was signed by Obama without Senate ratification. It was, essentially, never legally binding on the United States. We simply acknowledged that fact."
         real: false
-      - text: "The loyalty I have with my supporters is extraordinary. I've never seen anything like it. People tell me all the time — they've never voted before, they're voting for me. It's a movement."
+      - text: "China doesn't have to do anything under Paris until 2030. We had to start immediately. I said, 'Explain that to me.' Nobody could explain it. So we left."
         real: false
-      - text: "You know what I've figured out? People don't vote on issues. They vote on strength. Who seems strong. Who seems weak. I seem strong because I am strong. That's why I win."
+      - text: "Climate is important to me. Very important. But the Paris Agreement was a transfer of American wealth to other nations. That's what it was. A very expensive, very one-sided transfer."
         real: false
-    source: "https://www.bbc.com/news/av/world-us-canada-35346578"
-    reveal_note: "Said while discussing loyalty at a campaign rally. Though domestic in context, it became one of the most-quoted lines of both presidential campaigns and shapes how foreign counterparts assess his base."
+    source: "https://trumpwhitehouse.archives.gov/briefings-statements/statement-president-trump-paris-climate-accord/"
+    reveal_note: "Pittsburgh's mayor immediately rejected the framing, noting the city had voted overwhelmingly against Trump. Pittsburgh subsequently pledged to honour the Paris Agreement regardless of federal policy."
 
   - round_id: 24
     event: "Interview with Fox News 'The Ingraham Angle,' ahead of Asia trip — November 2, 2017"

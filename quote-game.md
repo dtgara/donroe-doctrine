@@ -175,6 +175,10 @@ body_class: page-quote-game
   var ROUNDS = {{ site.data.quote_game.rounds | jsonify }};
   var LABELS = ['A', 'B', 'C', 'D'];
 
+  // Launch day anchor — epoch day of June 28, 2026 (game launch date)
+  // Keeps round index at 0 on launch day so archive builds up from day 2 onwards
+  var LAUNCH_DAY = 20631;
+
   // Seeded shuffle: same seed = same order, so everyone gets same question each day
   function seededShuffle(arr, seed) {
     var a = arr.slice();
@@ -187,9 +191,13 @@ body_class: page-quote-game
     return a;
   }
 
-  // Epoch days for daily rotation
+  // Game day: days since launch (0 = launch day)
   function epochDay() {
     return Math.floor(Date.now() / 86400000);
+  }
+
+  function gameDay() {
+    return Math.max(0, epochDay() - LAUNCH_DAY);
   }
 
   function todayStr() {
@@ -207,7 +215,7 @@ body_class: page-quote-game
 
   var state = loadState();
   var today = todayStr();
-  var day = epochDay();
+  var day = gameDay();
   var roundIndex = day % ROUNDS.length;
   var round = ROUNDS[roundIndex];
   var shuffled = seededShuffle(round.quotes, day);
@@ -341,8 +349,7 @@ body_class: page-quote-game
     // Show past rounds (any round whose day has passed)
     var pastRounds = ROUNDS.filter(function(r) {
       var rDay = ROUNDS.indexOf(r);
-      // Find first occurrence of this round
-      return rDay <= roundIndex;
+      return rDay < roundIndex; // strictly less than: today's round is not yet "past"
     });
     // Build a lookup from history
     var histMap = {};
