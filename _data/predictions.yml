@@ -164,8 +164,11 @@
   term: 2
   status: pending
   outcome_date: null
-  outcome_note: A US-China truce was reached at the Busan summit in October 2025, easing some pressure points. Structural
-    tariffs remain in place. Deal not finalized as of mid-2026.
+  outcome_note: A US-China truce was reached at the Busan summit in October 2025. Section 232 tariffs on steel and aluminium
+    were reduced from 25% to 15% for countries that signed trade frameworks, including the UK, EU, Switzerland, Taiwan, Japan,
+    and South Korea. A further US-China tariff agreement on June 11, 2026 reduced Chinese import rates from approximately
+    41% to 31%, with higher tariffs paused for 60 days. Tariffs have come down for deal-makers; structural global tariffs
+    remain elevated. Final comprehensive deals remain unsigned as of June 2026.
 - id: nato-allies-will-pay
   statement: 'I told NATO: you have to pay up. And they did.'
   date_made: '2024-02-10'
@@ -344,7 +347,8 @@
   outcome_note: A peace framework was mediated by the US in Washington in June 2025. Within weeks, Rwanda-backed M23 militia
     resumed attacks on Congolese forces and expanded territorial control. M23 killed over 140 civilians in eastern Congo in
     July 2025. Secretary of State Rubio acknowledged this as a clear violation of the ceasefire. Foreign policy experts described
-    Trump's declaration of success as premature.
+    Trump's declaration of success as premature. A subsequent US-mediated peace and minerals agreement was signed between
+    DRC and Rwanda at the White House on June 27, 2026; M23 was not party to the talks. Fighting resumed within hours of signing.
 - id: armenia-azerbaijan-ended
   statement: Armenia and Azerbaijan have made peace. I brought them together. A deal has been signed at the White House.
   date_made: '2025-08-08'

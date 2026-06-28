@@ -724,6 +724,9 @@
   terms_and_conditions: Immediate ceasefire extension (60 days, renewable). Strait of Hormuz reopened. Iran reaffirms no nuclear
     weapons development. US to facilitate regional reconstruction fund (minimum $300 billion). Nuclear enrichment disposition
     to be negotiated. Israel and Hezbollah not party to agreement.
+  notes: On June 26, 2026 — nine days after signing — Iran launched four one-way attack drones at the Strait of Hormuz, one
+    of which struck the upper deck of a cargo vessel. The US characterised this as a violation of the ceasefire extension.
+    Iran disputed this characterisation. The 60-day window continues.
 - id: trump-xi-beijing-summit-2026
   title: The Beijing Summit Trade Package
   strapline: Two hundred aircraft, seventeen billion dollars of grain, and an agreement to address rare earths later.
@@ -739,3 +742,22 @@
     in the US in September 2026. Structural tariffs from the Liberation Day regime remain in place.
   terms_and_conditions: 200 Boeing aircraft purchase approved. $17 billion per year in US agricultural goods (2026–2028).
     Rare earth export controls to be addressed. Structural tariffs not modified. September 2026 follow-up summit scheduled.
+- id: drc-rwanda-minerals-peace-2026
+  title: The DRC-Rwanda Peace and Minerals Arrangement
+  strapline: Territorial integrity guaranteed. M23 not invited. US companies incoming.
+  date: '2026-06-27'
+  term: 2
+  type: Miscellaneous
+  status: UNRESOLVED
+  summary: >-
+    On June 27, 2026, President Trump hosted DRC President Tshisekedi and Rwandan President Kagame at the White House for
+    the signing of a bilateral peace agreement linking regional stability with US access to critical minerals. The DRC and
+    Rwanda committed to mutual respect for territorial integrity and a cessation of hostilities. The United States simultaneously
+    signed bilateral investment agreements with both nations, securing access to the DRC's deposits of coltan, cobalt, lithium,
+    and copper — minerals of strategic interest in competition with China. The M23 militia, the Rwanda-backed rebel group
+    that captured Goma and Bukavu earlier in the year, was not party to the negotiations and did not participate in the
+    ceasefire. Fighting broke out in eastern Congo within hours of the signing ceremony.
+  terms_and_conditions: >-
+    Mutual respect for territorial integrity. Cessation of hostilities. US bilateral investment agreements with DRC and Rwanda.
+    Preferred access to Rubaya coltan mine, Western Forelands copper, Manono lithium, and Mutoshi copper-cobalt deposits.
+    M23 disarmament not addressed. No timeline for withdrawal of Rwanda-backed forces from occupied Congolese territory.
