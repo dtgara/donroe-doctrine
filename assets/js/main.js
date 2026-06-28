@@ -1,13 +1,13 @@
 /* =============================================================================
    THE DONROE DOCTRINE — Main JavaScript
-   Handles: mobile nav, nav dropdowns, filter bars, quote sharing
+   Handles: mobile nav, grouped dropdown nav, filter bars, quote sharing
    ========================================================================== */
 
 (function () {
   'use strict';
 
   /* ---------------------------------------------------------------------------
-     Mobile Navigation
+     Mobile Navigation Toggle
      ------------------------------------------------------------------------- */
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks  = document.querySelector('.nav-links');
@@ -18,15 +18,14 @@
       navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
 
-    // Close nav on outside click
     document.addEventListener('click', function (e) {
       if (!e.target.closest('.site-nav')) {
         navLinks.classList.remove('open');
         navToggle.setAttribute('aria-expanded', 'false');
+        closeAllDropdowns();
       }
     });
 
-    // Close nav after link click (mobile)
     navLinks.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
         navLinks.classList.remove('open');
@@ -36,43 +35,41 @@
   }
 
   /* ---------------------------------------------------------------------------
-     Nav Dropdowns
+     Grouped Dropdown Nav
+     — Desktop: hover handled by CSS
+     — Mobile: click toggles .open on the parent .nav-dropdown
+     — Click outside closes all
      ------------------------------------------------------------------------- */
-  document.querySelectorAll('.nav-dropdown-toggle').forEach(function (toggle) {
-    toggle.addEventListener('click', function (e) {
-      e.stopPropagation();
-      const item = toggle.closest('.nav-dropdown');
-      const isOpen = item.classList.contains('open');
-      // Close all other dropdowns first
-      document.querySelectorAll('.nav-dropdown.open').forEach(function (el) {
-        el.classList.remove('open');
-        el.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
-      });
-      if (!isOpen) {
-        item.classList.add('open');
-        toggle.setAttribute('aria-expanded', 'true');
+  function closeAllDropdowns(except) {
+    document.querySelectorAll('.nav-dropdown').forEach(function (dd) {
+      if (dd !== except) {
+        dd.classList.remove('open');
+        const btn = dd.querySelector('.nav-dropdown-trigger');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
       }
+    });
+  }
+
+  document.querySelectorAll('.nav-dropdown-trigger').forEach(function (trigger) {
+    trigger.addEventListener('click', function (e) {
+      e.stopPropagation();
+      const parent = trigger.closest('.nav-dropdown');
+      const isOpen = parent.classList.toggle('open');
+      trigger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      if (isOpen) closeAllDropdowns(parent);
     });
   });
 
-  // Close dropdowns on outside click
+  /* Close dropdowns on outside click (desktop) */
   document.addEventListener('click', function (e) {
     if (!e.target.closest('.nav-dropdown')) {
-      document.querySelectorAll('.nav-dropdown.open').forEach(function (el) {
-        el.classList.remove('open');
-        el.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
-      });
+      closeAllDropdowns();
     }
   });
 
-  // Close dropdown after selecting a link
-  document.querySelectorAll('.nav-dropdown-menu a').forEach(function (link) {
-    link.addEventListener('click', function () {
-      document.querySelectorAll('.nav-dropdown.open').forEach(function (el) {
-        el.classList.remove('open');
-        el.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
-      });
-    });
+  /* Keyboard: Escape closes open dropdown */
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeAllDropdowns();
   });
 
   /* ---------------------------------------------------------------------------
