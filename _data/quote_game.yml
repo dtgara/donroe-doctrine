@@ -1,0 +1,425 @@
+# Quote Game rounds
+# Schema: round_id, event, quotes (array of 4: text + real bool), source, reveal_note
+# One round per day, cycling through. real: true marks the genuine quote.
+
+rounds:
+
+  - round_id: 1
+    event: "Campaign announcement speech, Trump Tower, New York — June 16, 2015"
+    quotes:
+      - text: "Mexico is not sending its best people. They're sending people that have lots of problems, and they're bringing those problems with us. They're bringing drugs. They're bringing crime. They're rapists. And some, I assume, are good people."
+        real: true
+      - text: "Mexico has been taking advantage of the United States for so long, frankly it's embarrassing. Their leaders are much smarter than ours. That I can tell you. Much, much smarter."
+        real: false
+      - text: "I know the Mexican people. Beautiful people. But their government? Their government is ripping us apart. Every single day. It's a disaster, what's happening. A total disaster."
+        real: false
+      - text: "We build a wall, we stop the drugs, we stop the crime. It's very simple. People say it can't be done. It can absolutely be done. Nobody builds better than Trump, believe me."
+        real: false
+    source: "https://www.washingtonpost.com/news/post-politics/wp/2015/06/16/full-text-donald-trump-announces-a-presidential-bid/"
+    reveal_note: "The opening salvo. Delivered on June 16, 2015, it set the template for everything that followed."
+
+  - round_id: 2
+    event: "Interview with Axios, July 2018"
+    quotes:
+      - text: "The European Union was formed in order to take advantage of the United States. That's what they did, and we can't let it happen."
+        real: true
+      - text: "Europe has been very unfair to us. Very unfair. They sell us their cars, their wine, their cheese — and what do we get? Tariffs. Big, beautiful tariffs. On us. It's a one-way street and the street goes in their direction."
+        real: false
+      - text: "The EU is a tremendous trading bloc and they've used that — I have to say it — they've used it against us in a very cunning way. Very cunning. Smart, actually. But not anymore."
+        real: false
+      - text: "Look, I like Europe. I love Europe. Some of my best properties are in Europe. But the EU? The EU is a disaster for the United States of America. A total disaster."
+        real: false
+    source: "https://www.axios.com/2018/07/26/trump-eu-foe-tariffs-nato"
+    reveal_note: "Trump told Axios the EU was a 'foe' on trade, ranking it alongside Russia and China. European leaders responded with considerable dismay."
+
+  - round_id: 3
+    event: "Tweet, March 2, 2018"
+    quotes:
+      - text: "When a country (USA) is losing many billions of dollars on trade with virtually every country it does business with, trade wars are good, and easy to win."
+        real: true
+      - text: "Trade deficits are a form of surrender. We have been surrendering for thirty years. No more surrendering. We fight back with tariffs, and we win. Very simple."
+        real: false
+      - text: "The trade war has already been won — we just haven't been told yet. When you have the leverage we have, you don't lose trade wars. You win them. Bigly."
+        real: false
+      - text: "Other countries are afraid of our tariffs. Very afraid. They should be. We have more products to tariff than they do. It's called leverage, and we have it all."
+        real: false
+    source: "https://twitter.com/realDonaldTrump/status/969525362580484098"
+    reveal_note: "Posted the morning after announcing steel and aluminium tariffs. Markets fell sharply. The war proved neither good nor easy."
+
+  - round_id: 4
+    event: "UN General Assembly, New York — September 19, 2017"
+    quotes:
+      - text: "The United States has great strength and patience, but if it is forced to defend itself or its allies, we will have no choice but to totally destroy North Korea. Rocket Man is on a suicide mission for himself and for his regime."
+        real: true
+      - text: "North Korea's leader — and I won't use his name because he doesn't deserve it — has made very serious threats against the United States. Very serious threats. He should be very, very careful."
+        real: false
+      - text: "Kim Jong Un is playing with fire. Literally. The rockets, the fire. It's very dangerous, what he's doing, and it will not be tolerated. Not by me. Not by this country."
+        real: false
+      - text: "We have options with North Korea that nobody else has. Military options. Economic options. Options they haven't even thought of yet. And believe me, they won't like them."
+        real: false
+    source: "https://trumpwhitehouse.archives.gov/briefings-statements/remarks-president-trump-72nd-session-united-nations-general-assembly/"
+    reveal_note: "The 'Rocket Man' speech shocked the UN chamber. Kim responded by calling Trump a 'mentally deranged dotard.' Within months they were exchanging 'beautiful letters.'"
+
+  - round_id: 5
+    event: "Rally, Wheeling, West Virginia — September 29, 2018"
+    quotes:
+      - text: "I was being really tough — and so was he. And we would go back and forth. And then we fell in love, okay? No, really — he wrote me beautiful letters, and they're great letters. We fell in love."
+        real: true
+      - text: "Kim Jong Un called me, and he said, 'Sir, I would very much like to talk.' And I said, 'You know what? I'll talk. Why not? What do we have to lose?' And we talked, and it went very well."
+        real: false
+      - text: "He's a tough guy. I respect that. You have to respect toughness. Nobody else could deal with him. They tried. Obama tried. Bush tried. I dealt with him. We have a great relationship, actually."
+        real: false
+      - text: "The letters were incredible. Very personal, very warm. He called me his friend. Nobody's ever said that before — no American president. It means something. It means a lot, actually."
+        real: false
+    source: "https://www.washingtonpost.com/politics/2018/09/30/trump-says-he-fell-love-kim-jong-un/"
+    reveal_note: "Delivered at a campaign rally. 'We fell in love' became one of the most-quoted lines of the first term. The diplomatic progress it described did not survive."
+
+  - round_id: 6
+    event: "Press conference, Brussels NATO summit — July 11, 2018"
+    quotes:
+      - text: "Germany is totally controlled by Russia. You tell me, is that appropriate? I think it's a very bad thing for NATO, and I don't think it should have happened. And I think we have to talk to Germany about it."
+        real: true
+      - text: "Germany is paying Russia billions and billions of dollars for energy, and then they tell us they're our allies. Some ally. You pay your enemy and you expect us to defend you. It doesn't work that way."
+        real: false
+      - text: "Look, I like Germany. Angela — she's a tough negotiator, I'll give her that. But the gas pipeline? It's a disaster. You don't fund the country you want NATO to protect you against."
+        real: false
+      - text: "NATO was set up to protect against Russia. Now Germany is sending Russia hundreds of millions of dollars. Does that make sense to anyone? It doesn't make sense to me. It's very unfair."
+        real: false
+    source: "https://www.nytimes.com/2018/07/11/world/europe/trump-germany-russia-nato.html"
+    reveal_note: "Said at breakfast with NATO Secretary General Stoltenberg, on camera. German Foreign Minister Heiko Maas responded: 'We are not controlled by Russia.'"
+
+  - round_id: 7
+    event: "Speech, Greer, South Carolina — February 17, 2024"
+    quotes:
+      - text: "One of the presidents of a big country stood up and said, 'Well, sir, if we don't pay and we're attacked by Russia, will you protect us?' I said, 'You didn't pay? You're delinquent?' He said, 'Yes, let's say that happened.' No, I would not protect you. In fact, I would encourage them to do whatever the hell they want."
+        real: true
+      - text: "If a NATO country doesn't pay, and Russia comes in, that's not our problem. We made a deal. The deal says you pay two percent. They didn't pay. So the deal is void. Very simple contract law."
+        real: false
+      - text: "I told NATO: pay up or we leave. And they started paying. Amazing what happens when you're serious. Nobody was serious before me. Now they're serious. Because I was serious."
+        real: false
+      - text: "Article Five means nothing if only one country is paying. I said this for years. Finally people are listening. You can't have a defence alliance where one country pays for everyone else's defence. That's not an alliance. That's charity."
+        real: false
+    source: "https://www.theguardian.com/us-news/2024/feb/11/trump-says-he-would-encourage-russia-to-attack-nato-countries-that-dont-pay"
+    reveal_note: "This single speech caused a diplomatic emergency across NATO capitals. European defence spending accelerated. The White House declined to clarify."
+
+  - round_id: 8
+    event: "Voter roundtable, Auburn Hills, Michigan — October 2024"
+    quotes:
+      - text: "You have other words that are damn nice, like 'love,' but I tell you, I think it's more beautiful than 'love.' Tariff is my favorite word."
+        real: true
+      - text: "Tariffs are the answer. They've always been the answer. Lincoln used tariffs. McKinley used tariffs. Great presidents use tariffs. Weak presidents don't, and look what happened to their countries."
+        real: false
+      - text: "The economists say tariffs cause inflation. These are the same economists who said the economy under Biden was great. These are not smart people. I don't listen to them."
+        real: false
+      - text: "When you're running a two trillion dollar trade deficit, tariffs aren't just good policy — they're survival. We are being eaten alive by countries that don't even try to hide it anymore."
+        real: false
+    source: "https://www.bloomberg.com/news/newsletters/2024-10-15/in-trump-s-economic-plan-tariff-is-the-most-beautiful-word"
+    reveal_note: "Trump said variations of this at dozens of rallies across both campaigns. He called tariff 'the most beautiful word in the dictionary' so consistently it became a signature line."
+
+  - round_id: 9
+    event: "Press conference, White House — January 7, 2025"
+    quotes:
+      - text: "Greenland is an absolute necessity. We need it for national security purposes. I don't mean it's nice to have it. We need it. The world needs it. And the United States needs it for the security of the free world."
+        real: true
+      - text: "Denmark has had Greenland for a long time and they've done nothing with it. Nothing. We would develop it, protect it, make it truly great. The Greenlandic people want us there. Believe me."
+        real: false
+      - text: "Greenland is the most valuable piece of real estate on the planet. People don't know this. I know it because I know real estate. And the United States needs to own it."
+        real: false
+      - text: "Denmark is a wonderful country, small but wonderful. But they can't protect Greenland. They don't have the resources. We do. It's very simple. It's a matter of who can do the job."
+        real: false
+    source: "https://www.bbc.com/news/articles/ce91negj0x8o"
+    reveal_note: "Said at Mar-a-Lago alongside his son Don Jr., who had just returned from Greenland. Trump declined to rule out military force to acquire the territory."
+
+  - round_id: 10
+    event: "Press briefing, Washington D.C. — April 6, 2017"
+    quotes:
+      - text: "I looked at it and I said, 'What's going on?' And Assad used chemical weapons — sarin gas — on his own innocent people. Beautiful babies were cruelly murdered in this very barbaric attack. No child of God should ever suffer such horror."
+        real: true
+      - text: "What Assad did is unspeakable. You look at those pictures — I've seen the pictures, they showed them to me — and you can't believe a human being would do this. He's an animal. He's done this before and he did it again."
+        real: false
+      - text: "Assad crossed a line. A very red line. Other presidents drew red lines. I actually enforce them. That's the difference. When I draw a line, something happens. When I say something, I mean it."
+        real: false
+      - text: "Syria is a disaster. It was a disaster before, it's a disaster now. But what Assad has done with the chemical weapons — that changes everything. Everything. You don't do that. You don't do that."
+        real: false
+    source: "https://trumpwhitehouse.archives.gov/briefings-statements/remarks-president-trump-syria/"
+    reveal_note: "Delivered the night the US launched 59 Tomahawk missiles at a Syrian airbase. 'Beautiful babies' became the phrase that defined the moment."
+
+  - round_id: 11
+    event: "Meeting with reporters, Oval Office — August 21, 2019"
+    quotes:
+      - text: "Essentially, I am the chosen one. Somebody had to do it. So I'm taking on China. I'm taking on China on trade. And you know what? We're winning."
+        real: true
+      - text: "China has been ripping us off for thirty years. Thirty years of presidents who did nothing. Smiled, shook hands, got on the plane and flew home. I don't do that. I fight. I always fight."
+        real: false
+      - text: "Xi is a very smart man. Very, very smart. But I'm smarter when it comes to trade. I know the numbers. I know the deficits. He knows that I know. That's why he wants to make a deal."
+        real: false
+      - text: "They said it couldn't be done. Taking on China. Everyone told me — your advisers, the economists, the media — don't do it. You'll start a trade war. Well, we started one. And we're winning."
+        real: false
+    source: "https://www.reuters.com/article/us-usa-trade-china-trump/trump-looks-to-sky-says-i-am-the-chosen-one-to-take-on-china-idUSKCN1VB1UD"
+    reveal_note: "Said while looking up at the sky. Clip circulated widely. Trump later tweeted it was said 'sarcastically.'"
+
+  - round_id: 12
+    event: "Cabinet meeting, White House — July 18, 2018"
+    quotes:
+      - text: "I have President Putin — he just said it's not Russia. I will say this: I don't see any reason why it would be. I have great confidence in my intelligence people, but I will tell you that President Putin was extremely strong and powerful in his denial today."
+        real: true
+      - text: "Russia did not interfere in our election. Putin told me directly. He looked me in the eye and said it. I believe him. Why would I not believe him? He was very convincing."
+        real: false
+      - text: "Putin and I had a two-hour meeting, very productive. Very, very productive. He brought up the election. I brought it up. We agreed it didn't happen. Case closed, as far as I'm concerned."
+        real: false
+      - text: "Our intelligence agencies are very talented people, but they make mistakes. Remember Iraq? Weapons of mass destruction? Big mistake. Huge. I'm not saying Putin is perfect, but the evidence is not there."
+        real: false
+    source: "https://www.bbc.com/news/world-us-canada-44852812"
+    reveal_note: "Said at the Helsinki summit joint press conference. Triggered bipartisan uproar. Trump partially walked it back the following day, claiming he meant 'wouldn't' not 'would.'"
+
+  - round_id: 13
+    event: "Bilateral meeting, G7, Charlevoix, Canada — June 9, 2018"
+    quotes:
+      - text: "Justin Trudeau of Canada acted so meek and mild during our @G7 meetings only to give a news conference after I left saying that 'US Tariffs were kind of insulting' and he 'will not be pushed around.' Very dishonest & weak."
+        real: true
+      - text: "Justin Trudeau is a nice man. Very nice. But weak. Canada has been taking advantage of us on trade for years, and when I finally say something about it, suddenly I'm the problem. Typical."
+        real: false
+      - text: "Trudeau — Governor Trudeau — called me after the G7 and I didn't take the call. I was very busy. Very busy making America great. He can call again. Maybe I'll take it next time."
+        real: false
+      - text: "We have a trade deficit with Canada. A massive trade deficit. Canada says we don't — they lie about it, frankly — but we do. And Trudeau knows it. He's known it for years."
+        real: false
+    source: "https://twitter.com/realDonaldTrump/status/1005586562959093760"
+    reveal_note: "Tweeted from Air Force One after departing the G7 early. Trade adviser Peter Navarro said Trudeau had committed 'a special place in hell.' Canada responded with dollar-for-dollar retaliatory tariffs."
+
+  - round_id: 14
+    event: "Press conference, White House — February 28, 2025"
+    quotes:
+      - text: "You are gambling with the lives of millions of people. You don't have the cards. With us, you start negotiating. Without us, you don't have the cards. You've been fighting for three years. You need to make a deal."
+        real: true
+      - text: "Zelensky needs to understand something. The war is going badly. Very badly. He knows it. I know it. Everyone knows it. The question is whether he accepts reality or keeps fighting and losing more people."
+        real: false
+      - text: "I like Zelensky. He's a brave man, I'll say that. But brave doesn't win wars. Deals win wars. And the deal we can get him right now is much better than the deal he'll get in six months."
+        real: false
+      - text: "Ukraine has been very well funded by the United States. Very well. More than any country in history has funded another country. And what do we get? Lectures. I won't accept lectures."
+        real: false
+    source: "https://www.bbc.com/news/articles/c5y35q7gy0lo"
+    reveal_note: "Said directly to Zelensky in the Oval Office in front of press. The confrontation — with Vice President Vance also interjecting — was widely described as unprecedented."
+
+  - round_id: 15
+    event: "Interview with Time magazine — December 2024"
+    quotes:
+      - text: "I don't think Putin wants me to say this, but I think he was very surprised when the war was still going on and he couldn't make the deal. I'm going to be able to make the deal very quickly."
+        real: true
+      - text: "Putin and I understand each other. That's the key. Obama didn't understand him. Biden definitely didn't understand him. When two people understand each other, deals get made very fast."
+        real: false
+      - text: "The war ends when I want it to end. I could end it in 24 hours. Maybe less. The parties know what they have to give up. They just need someone strong enough to tell them."
+        real: false
+      - text: "Putin wants a deal. He's told people close to me that he wants a deal. But the deal has to be fair — fair for Russia too. You can't make a deal if the other side feels humiliated."
+        real: false
+    source: "https://time.com/7201532/donald-trump-person-of-the-year-2024-interview/"
+    reveal_note: "Said in the Person of the Year interview. Trump had claimed throughout his campaign he would end the war within 24 hours of taking office."
+
+  - round_id: 16
+    event: "Campaign rally, Pennsylvania — October 2016"
+    quotes:
+      - text: "Hillary wants to confront Putin, confront China — she's going to end up in World War Three. She's going to get us in World War Three. She's not a strong person. She's going to get us in a war."
+        real: true
+      - text: "Hillary Clinton's foreign policy record is the worst of any secretary of state in history. Benghazi, Iraq, Libya, Syria — she touched it, it blew up. Everything she touched blew up."
+        real: false
+      - text: "I don't start wars. I make deals. Hillary makes wars. Look at Libya. Look at Syria. She created ISIS, essentially. Everyone knows it. She won't say it but everyone knows."
+        real: false
+      - text: "With me, Russia respects us. China respects us. Nobody respected Obama and nobody respected Hillary. They laughed at us. Behind our backs, they laughed at us."
+        real: false
+    source: "https://www.politifact.com/factchecks/2016/oct/25/donald-trump/trump-says-clinton-will-get-us-world-war-iii/"
+    reveal_note: "A consistent Trump line through the 2016 campaign. He used variations of it dozens of times across different rallies."
+
+  - round_id: 17
+    event: "Press conference, Singapore — June 12, 2018"
+    quotes:
+      - text: "He's the head of a country — and I mean he's the strong head. Don't let anyone think anything different. He speaks and his people sit up at attention. I want my people to do the same."
+        real: true
+      - text: "Kim Jong Un is smart. Very smart. People don't give him credit for being smart. A young guy, he inherited a very difficult situation and he's been ruthless — but smart. You have to give him that."
+        real: false
+      - text: "We got along very, very well. Great chemistry. Not everybody has great chemistry. It's either there or it isn't. With me and Kim, it was there from the very first meeting. Very strong."
+        real: false
+      - text: "His people — and they're very loyal, incredibly loyal — they love him. You see them on television, they're crying, they're applauding. That's a relationship. That's a leader."
+        real: false
+    source: "https://www.bbc.com/news/world-us-canada-44467254"
+    reveal_note: "Said at the post-summit press conference in Singapore. The 'sit up at attention' line drew immediate criticism from both parties."
+
+  - round_id: 18
+    event: "Statement to press, White House — July 8, 2019"
+    quotes:
+      - text: "El-Sisi is a fantastic man who really has done a fantastic job. Not easy. He came in and he came in strong. And look what he's done. He's kept it together."
+        real: true
+      - text: "I like Sisi. He's a strong leader — very strong. Egypt is a complicated country with complicated people, and he handles it beautifully. He handles it with a firm hand."
+        real: false
+      - text: "Sisi told me he admires what I've done with the United States. I said, 'You've done something pretty amazing yourself.' Egypt is a very important country. Very strategic."
+        real: false
+      - text: "General Sisi — President Sisi — is a great man and a great friend to the United States. Under Obama we lost Egypt. I brought Egypt back. Just like that."
+        real: false
+    source: "https://www.politico.com/story/2019/07/08/trump-praises-sisi-1401466"
+    reveal_note: "One of several lavish Trump endorsements of el-Sisi. A White House aide had previously been recorded calling el-Sisi Trump's 'favorite dictator' at the G7."
+
+  - round_id: 19
+    event: "Cabinet meeting, White House — October 7, 2019"
+    quotes:
+      - text: "The Kurds are much safer right now, but the Kurds know how to fight. And as I said, they're not angels. They're not angels. Take a look. You have to look at both sides."
+        real: true
+      - text: "We were supposed to be there for thirty days. That was twenty years ago. We've spent eight trillion dollars in the Middle East. Eight trillion. And what do we have? Nothing. Less than nothing."
+        real: false
+      - text: "Our soldiers are not border patrol agents for other countries. That's not what they signed up for. They signed up to defend America. And that's what they'll do — defend America."
+        real: false
+      - text: "I got the Kurds out of a very tough spot once before. I can do it again. They know I'm on their side. They also know I can't keep American soldiers there forever. Nobody should."
+        real: false
+    source: "https://www.nytimes.com/2019/10/09/us/politics/trump-kurds-turkey.html"
+    reveal_note: "Said five days after announcing the US troop withdrawal from northern Syria, clearing the way for Turkish military operations against Kurdish forces."
+
+  - round_id: 20
+    event: "Interview with Fox News, July 15, 2018"
+    quotes:
+      - text: "Well, I think we have a lot of foes. I think the European Union is a foe, what they do to us in trade. Now, you wouldn't think of the European Union, but they're a foe."
+        real: true
+      - text: "The EU was designed by Germany, essentially. Designed to make Germany rich. And it's worked. Germany is very rich. The rest of Europe? Not so much. And America? We're paying for all of it."
+        real: false
+      - text: "Europe needs to pay us. Not ten percent more. Not twenty percent more. They need to actually pay us for what we do for them. We protect them. We trade with them. What do we get?"
+        real: false
+      - text: "I get along great with European leaders individually. Macron, great relationship. Merkel — not so much. But the EU as an institution? It was created to hurt the United States. Simple as that."
+        real: false
+    source: "https://www.cbsnews.com/news/trump-interview-eu-foe-russia-2018-07-15/"
+    reveal_note: "Said before departing for the Helsinki summit with Putin. Asked whether Russia was a foe, Trump said 'competitor.' The EU received the stronger designation."
+
+  - round_id: 21
+    event: "Phone call readout, reported by associates — May 2017"
+    quotes:
+      - text: "You have a very beautiful part of the world. Do not underestimate yourself. You are doing a great job."
+        real: true
+      - text: "The Philippines is a very important strategic ally. Very important. And I want Rodrigo to know that we are with him. One hundred percent. Whatever he needs."
+        real: false
+      - text: "Duterte is doing things his way. People criticise him for it. But you know what? Crime is down. Drugs are down. His people respect him. I understand that kind of leadership."
+        real: false
+      - text: "We have a great relationship with the Philippines. Great. And Rodrigo is a very strong man — very tough on crime, very tough on drugs. I have a lot of respect for that."
+        real: false
+    source: "https://www.theguardian.com/us-news/2017/may/23/trump-duterte-phone-call-the-philippines-drug-war"
+    reveal_note: "Said to Rodrigo Duterte of the Philippines during a congratulatory call, despite Duterte's extrajudicial drug war killing thousands of Filipinos."
+
+  - round_id: 22
+    event: "Interview with The Wall Street Journal — January 14, 2019"
+    quotes:
+      - text: "I know more about NATO than the people that have been running NATO. I've been studying NATO for a long time. I know more about it than probably anyone."
+        real: true
+      - text: "NATO is an outdated concept. It was built for a different threat. Russia is not the Soviet Union. China is a bigger threat and NATO does nothing about China. Nothing."
+        real: false
+      - text: "I saved NATO. I went there, I demanded they pay, they paid. Now NATO is strong. Before me, NATO was dying. It was losing members — figuratively speaking. I brought them back."
+        real: false
+      - text: "The countries in NATO — some of them are wonderful allies, actually. Poland, great. The UK, pretty good. France? France is complicated. But they all have to pay. That's the deal."
+        real: false
+    source: "https://www.wsj.com/articles/trump-says-he-knows-more-about-nato-than-anyone-11547484000"
+    reveal_note: "Trump made variations of this claim repeatedly. NATO officials privately described the briefings they provided as 'exhausting.'"
+
+  - round_id: 23
+    event: "Campaign rally, Iowa — January 19, 2016"
+    quotes:
+      - text: "I could stand in the middle of Fifth Avenue and shoot somebody and I wouldn't lose any voters. Okay? It's, like, incredible."
+        real: true
+      - text: "My people — and they are my people, I love them — they know that I'm fighting for them. Nobody else is. Not the Democrats, not the Republicans. Me. Just me."
+        real: false
+      - text: "The loyalty I have with my supporters is extraordinary. I've never seen anything like it. People tell me all the time — they've never voted before, they're voting for me. It's a movement."
+        real: false
+      - text: "You know what I've figured out? People don't vote on issues. They vote on strength. Who seems strong. Who seems weak. I seem strong because I am strong. That's why I win."
+        real: false
+    source: "https://www.bbc.com/news/av/world-us-canada-35346578"
+    reveal_note: "Said while discussing loyalty at a campaign rally. Though domestic in context, it became one of the most-quoted lines of both presidential campaigns and shapes how foreign counterparts assess his base."
+
+  - round_id: 24
+    event: "Interview with Fox News 'The Ingraham Angle,' ahead of Asia trip — November 2, 2017"
+    quotes:
+      - text: "Japan is a warrior nation, and I tell China and I tell everyone else that listens — you're gonna have yourself a big problem with Japan pretty soon if you allow this to continue with North Korea."
+        real: true
+      - text: "Japan has been a tremendous partner. Tremendous. They buy our planes, they buy our beef, they host our bases. I have a lot of respect for the Japanese people. A lot."
+        real: false
+      - text: "I told Prime Minister Abe — who was a great man, great man, very sad what happened — I told him: Japan needs to pay more. They're paying a fraction of what they should be paying."
+        real: false
+      - text: "Japan and South Korea — they're very close to North Korea. Very close. They're scared. They should be scared. That's why they need us. And that's why they need to pay us."
+        real: false
+    source: "https://www.cnn.com/2017/11/02/politics/donald-trump-japan-warrior-nation/index.html"
+    reveal_note: "Said the day before departing on his first Asia trip. The 'warrior nation' framing alarmed allies who saw it as encouraging Japanese remilitarisation. Japanese officials responded cautiously."
+
+  - round_id: 25
+    event: "Truth Social post — January 8, 2025"
+    quotes:
+      - text: "The people of Canada strongly support the concept of becoming the 51st State. They would save massively on taxes and military protection. I think it's a great idea and the right time!"
+        real: true
+      - text: "Canada has been ripping us off for years. Years and years. The only logical conclusion is that they either pay their fair share or they become part of us. Either works for me."
+        real: false
+      - text: "Canada: beautiful country, great people, bad government. Governor Trudeau — and that's what I call him, Governor — has done a terrible job. A terrible, terrible job."
+        real: false
+      - text: "I've always liked Canadians. Very polite. But politeness isn't a trade policy. We have a massive deficit with Canada. Massive. And it's going to stop. One way or another."
+        real: false
+    source: "https://www.bbc.com/news/articles/cx2xe0j7e5eo"
+    reveal_note: "The '51st state' framing became a constant throughout the transition and into the second term. Trudeau flew to Mar-a-Lago shortly after. It did not resolve the situation."
+
+  - round_id: 26
+    event: "Dinner remarks to NATO ambassadors, Washington — April 2019"
+    quotes:
+      - text: "They have to pay. Look, they're not paying and it's not fair. Germany, I have to say this — and I say it in front of everyone — they're paying one percent. One percent. We're paying four percent for a much larger economy."
+        real: true
+      - text: "I like NATO. I do. But I like it more when everyone pays. It's a very simple concept. We pay, they pay, everyone pays. That's an alliance. Otherwise it's a charity."
+        real: false
+      - text: "Montenegro is a tiny country. Tiny. Very brave people. They came in under my watch. I said, 'Are you willing to fight?' They said yes. I said, 'Good. Then pay your share.'"
+        real: false
+      - text: "The two percent target — I didn't invent it, but I enforce it. Nobody enforced it before. They would say, 'Oh, we're working toward it.' Working toward it. In ten years, fifteen years. No. Pay now."
+        real: false
+    source: "https://www.politico.com/story/2019/04/02/trump-nato-ambassadors-1250271"
+    reveal_note: "Trump's complaints about NATO burden-sharing became so repetitive that allies began tracking which variations they had and hadn't heard. Germany was the most frequent target."
+
+  - round_id: 27
+    event: "Interview with Fox Business, May 14, 2025"
+    quotes:
+      - text: "They had a hundred and forty-five percent tariff. We had one hundred forty-five. We're now going to ten. And they're going to ten. I think that's a great deal. Very elegant deal, actually. We both come down."
+        real: true
+      - text: "China blinked. That's what happened. They blinked. I didn't blink. I never blink. They came to me and said they wanted to talk. I said, 'Of course you do.' And we made a deal."
+        real: false
+      - text: "The tariffs worked. People said they wouldn't — the economists, the pundits, all of them wrong, as usual — but they worked. China is at the table. That tells you everything."
+        real: false
+      - text: "Xi called me. That's what you need to know. He called me. Not the other way around. When the other side calls you first, you've already won the negotiation. Basic negotiating."
+        real: false
+    source: "https://www.reuters.com/world/china/us-china-agree-90-day-tariff-truce-talks-continue-2025-05-12/"
+    reveal_note: "Said following the US-China agreement to reduce tariffs to 10% for 90 days. Trump described the temporary pause as a victory. The pause was later extended."
+
+  - round_id: 28
+    event: "United Nations General Assembly, New York — September 25, 2018"
+    quotes:
+      - text: "America will always choose independence and cooperation over global governance, control, and domination. I honour the right of every nation in this room to pursue its own customs, beliefs, and traditions."
+        real: true
+      - text: "Multilateralism sounds very nice. It's a very nice word. But what does it mean in practice? It means the United States pays for everything and gets outvoted. That's what multilateralism is."
+        real: false
+      - text: "OPEC — I love the concept, actually, it's a very effective cartel — but they've been ripping off the United States for years. They set the price of oil and we just pay it. No more."
+        real: false
+      - text: "The United Nations has done some good things. I'll admit it. But mostly it's a place where countries that hate us come to lecture us. And we fund the whole thing. Think about that."
+        real: false
+    source: "https://www.un.org/en/ga/73/meetings/generaldebate/pdf/US_en.pdf"
+    reveal_note: "The 2018 UNGA speech also opened with Trump's claim about how much his administration had achieved — which drew audible laughter from the assembled world leaders."
+
+  - round_id: 29
+    event: "White House press conference — April 5, 2019"
+    quotes:
+      - text: "India is the tariff king. They charge us — and we have a great relationship with India, I like India, I like Modi very much — but they charge us tremendous tariffs."
+        real: true
+      - text: "Modi is a very capable leader. Very, very capable. He runs 1.4 billion people. You know how hard that is? Try running 1.4 billion people. Very hard. I have a lot of respect for that."
+        real: false
+      - text: "India and Pakistan — two nuclear powers that don't get along, right next to each other. I said I can solve that. I could solve that. Give me an afternoon, I could solve that."
+        real: false
+      - text: "India has been very tough on our companies. Very tough. But I like Modi personally, so we work around it. That's what a good relationship does. You work around the problems."
+        real: false
+    source: "https://www.politifact.com/factchecks/2019/apr/09/donald-trump/trump-calls-india-tariff-king/"
+    reveal_note: "India maintained some of the highest tariff rates in the G20. Trump made this complaint repeatedly across both terms while simultaneously praising Modi personally."
+
+  - round_id: 30
+    event: "Tweet, December 4, 2018"
+    quotes:
+      - text: "I am a Tariff Man. When people or countries come in to raid the great wealth of our Nation, I want them to pay for the privilege of doing so. It will always be the best way to max out our economic power."
+        real: true
+      - text: "NATO was a paper tiger before I came along. A paper tiger. They didn't believe in it. The allies didn't believe in it. If you don't believe in something, it doesn't work. I made them believe in it."
+        real: false
+      - text: "What I said was: pay. It's a simple word. Pay. And they did. Now, did they thank me? No. Of course not. They never thank you in politics. But they paid, and NATO is stronger."
+        real: false
+      - text: "Frankly, if you look at the world since World War Two, NATO is the single most important thing that has kept the peace in Europe. I'd hate to see what would have happened without it."
+        real: false
+    source: "https://x.com/realDonaldTrump/status/1069970500535902208"
+    reveal_note: "Posted amid US-China trade negotiations in December 2018. Markets fell sharply on the 'Tariff Man' tweet. It was later used extensively in analyses of Trump's trade ideology."

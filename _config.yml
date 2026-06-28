@@ -1,18 +1,14 @@
 title: "The Donroe Doctrine"
 description: >
-  A comprehensive reference archive documenting the foreign policy of Donald J. Trump
-  across his first and second presidential terms, January 2017 to present.
-  Published in the public interest.
-url: "https://donroe-doctrine.com"
+  Documenting Trump's foreign policy doctrine, 2017–present. Contradiction tracker,
+  deal log, cables, leaderboard, quote archive, tariff calculator, and two daily games.
+url: "https://donroedoctrine.com"
 baseurl: ""
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
-
-# Theme
-theme: null
 
 # Collections
 collections:
@@ -43,7 +39,6 @@ defaults:
 
 # Plugins
 plugins:
-  - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
 
@@ -55,20 +50,3 @@ exclude:
   - node_modules
   - push_to_github.py
   - vendor/
-
-# SEO & Social
-author:
-  name: "The Donroe Doctrine"
-
-twitter:
-  username: donroedoctrine
-  card: summary_large_image
-
-logo: /assets/images/og-image.png
-
-social:
-  name: "The Donroe Doctrine"
-  links:
-    - https://donroe-doctrine.com
-
-google_analytics: ""

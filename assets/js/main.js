@@ -1,13 +1,13 @@
 /* =============================================================================
    THE DONROE DOCTRINE — Main JavaScript
-   Handles: mobile nav, grouped dropdown nav, filter bars, quote sharing
+   Handles: mobile nav, nav dropdowns, filter bars, quote sharing
    ========================================================================== */
 
 (function () {
   'use strict';
 
   /* ---------------------------------------------------------------------------
-     Mobile Navigation Toggle
+     Mobile Navigation
      ------------------------------------------------------------------------- */
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks  = document.querySelector('.nav-links');
@@ -18,14 +18,15 @@
       navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
 
+    // Close nav on outside click
     document.addEventListener('click', function (e) {
       if (!e.target.closest('.site-nav')) {
         navLinks.classList.remove('open');
         navToggle.setAttribute('aria-expanded', 'false');
-        closeAllDropdowns();
       }
     });
 
+    // Close nav after link click (mobile)
     navLinks.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
         navLinks.classList.remove('open');
@@ -35,45 +36,49 @@
   }
 
   /* ---------------------------------------------------------------------------
-     Grouped Dropdown Nav
-     — Desktop: hover handled by CSS
-     — Mobile: click toggles .open on the parent .nav-dropdown
-     — Click outside closes all
+     Nav Dropdowns
      ------------------------------------------------------------------------- */
-  function closeAllDropdowns(except) {
-    document.querySelectorAll('.nav-dropdown').forEach(function (dd) {
-      if (dd !== except) {
-        dd.classList.remove('open');
-        const btn = dd.querySelector('.nav-dropdown-trigger');
-        if (btn) btn.setAttribute('aria-expanded', 'false');
-      }
-    });
-  }
-
-  document.querySelectorAll('.nav-dropdown-trigger').forEach(function (trigger) {
-    trigger.addEventListener('click', function (e) {
+  document.querySelectorAll('.nav-dropdown-toggle').forEach(function (toggle) {
+    toggle.addEventListener('click', function (e) {
       e.stopPropagation();
-      const parent = trigger.closest('.nav-dropdown');
-      const isOpen = parent.classList.toggle('open');
-      trigger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      if (isOpen) closeAllDropdowns(parent);
+      const item = toggle.closest('.nav-dropdown');
+      const isOpen = item.classList.contains('open');
+      // Close all other dropdowns first
+      document.querySelectorAll('.nav-dropdown.open').forEach(function (el) {
+        el.classList.remove('open');
+        el.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        toggle.setAttribute('aria-expanded', 'true');
+      }
     });
   });
 
-  /* Close dropdowns on outside click (desktop) */
+  // Close dropdowns on outside click
   document.addEventListener('click', function (e) {
     if (!e.target.closest('.nav-dropdown')) {
-      closeAllDropdowns();
+      document.querySelectorAll('.nav-dropdown.open').forEach(function (el) {
+        el.classList.remove('open');
+        el.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
+      });
     }
   });
 
-  /* Keyboard: Escape closes open dropdown */
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') closeAllDropdowns();
+  // Close dropdown after selecting a link
+  document.querySelectorAll('.nav-dropdown-menu a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      document.querySelectorAll('.nav-dropdown.open').forEach(function (el) {
+        el.classList.remove('open');
+        el.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
+      });
+    });
   });
 
   /* ---------------------------------------------------------------------------
      Generic Filter Bar
+     Looks for [data-filter-target] on select/input elements and filters
+     [data-filter-item] elements by their [data-*] attributes.
      ------------------------------------------------------------------------- */
   function initFilterBar(barEl) {
     if (!barEl) return;
@@ -88,7 +93,9 @@
       inputs.forEach(function (inp) {
         const key = inp.dataset.filterKey;
         const val = (inp.tagName === 'SELECT' ? inp.value : inp.value.trim()).toLowerCase();
-        if (val && val !== 'all') filters[key] = val;
+        if (val && val !== 'all') {
+          filters[key] = val;
+        }
       });
 
       let visibleCount = 0;
@@ -102,6 +109,7 @@
         if (show) visibleCount++;
       });
 
+      // Update count display if present
       const countEl = document.querySelector('[data-filter-count]');
       if (countEl) countEl.textContent = visibleCount;
     }
@@ -118,6 +126,7 @@
 
   /* ---------------------------------------------------------------------------
      Quote Share Links
+     Generates a shareable URL for each quote entry.
      ------------------------------------------------------------------------- */
   document.querySelectorAll('.quote-share-link').forEach(function (link) {
     link.addEventListener('click', function (e) {
@@ -134,7 +143,7 @@
   });
 
   /* ---------------------------------------------------------------------------
-     Smooth anchor scrolling
+     Smooth anchor scrolling (for doctrine clauses etc.)
      ------------------------------------------------------------------------- */
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
