@@ -492,3 +492,40 @@ entries:
     in Trump's own words rather than reported by witnesses. Haberman and Swan noted "the evident pleasure he took in the company
     of Mao, Hitler, and Stalin — the untroubled ease with which he accepted a place among men who had reshaped the world through
     conquest and fear."
+- id: sm028
+  date: '2026-06-17'
+  term: 2
+  subject: Vladimir Putin
+  country: Russia
+  regime_type: authoritarian
+  historical: false
+  source_type: public
+  quote: 'I want to thank Vladimir Putin; he was very neutral. They could have made it much more difficult for us.'
+  context: Press conference at the G7 summit in Evian, France, closing out the summit and touting the newly signed US-Iran
+    Memorandum of Understanding
+  source: Roll Call Factba.se, "Donald Trump Holds a Press Conference at the G7 Summit in France," June 17, 2026
+  source_url: https://rollcall.com/factbase/trump/transcript/donald-trump-press-conference-g7-summit-evian-france-june-17-2026/
+  praise_type:
+  - cooperation
+  - deference
+  confidence: documented
+  notes: Trump thanked Russia for withholding military support from Iran during a war the US had just fought, days after
+    signing a memorandum of understanding with Iran and while Russia remained under US and allied sanctions over Ukraine.
+- id: sm029
+  date: '2026-06-17'
+  term: 2
+  subject: Xi Jinping
+  country: China
+  regime_type: authoritarian
+  historical: false
+  source_type: public
+  quote: I want to thank China, President Xi. I was with him and he stayed neutral, totally neutral, and I appreciate it.
+  context: Press conference at the G7 summit in Evian, France, closing out the summit and touting the newly signed US-Iran
+    Memorandum of Understanding
+  source: Roll Call Factba.se, "Donald Trump Holds a Press Conference at the G7 Summit in France," June 17, 2026
+  source_url: https://rollcall.com/factbase/trump/transcript/donald-trump-press-conference-g7-summit-evian-france-june-17-2026/
+  praise_type:
+  - cooperation
+  confidence: documented
+  notes: Delivered at a G7 summit nominally convened to coordinate allied pressure on adversaries, in the middle of an active
+    US tariff and trade dispute with China.

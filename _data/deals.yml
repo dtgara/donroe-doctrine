@@ -726,7 +726,11 @@
     to be negotiated. Israel and Hezbollah not party to agreement.
   notes: On June 26, 2026 — nine days after signing — Iran launched four one-way attack drones at the Strait of Hormuz, one
     of which struck the upper deck of a cargo vessel. The US characterised this as a violation of the ceasefire extension.
-    Iran disputed this characterisation. The 60-day window continues.
+    Iran disputed this characterisation. The 60-day window continues. On June 28, 2026, following new US airstrikes, Iran's
+    IRGC launched ballistic missiles and drones at the US airbase at Ali Al Salem in Kuwait and the Fifth Fleet's Port Salman
+    facility in Bahrain. Trump warned that "the Islamic Republic of Iran will no longer exist" if strikes continued; Iran
+    threatened a "complete halt" to talks. Both sides stated negotiations would continue despite the exchange. The MOU's
+    60-day window remains formally in effect but its terms are being actively violated by both signatories.
 - id: trump-xi-beijing-summit-2026
   title: The Beijing Summit Trade Package
   strapline: Two hundred aircraft, seventeen billion dollars of grain, and an agreement to address rare earths later.
@@ -761,3 +765,22 @@
     Mutual respect for territorial integrity. Cessation of hostilities. US bilateral investment agreements with DRC and Rwanda.
     Preferred access to Rubaya coltan mine, Western Forelands copper, Manono lithium, and Mutoshi copper-cobalt deposits.
     M23 disarmament not addressed. No timeline for withdrawal of Rwanda-backed forces from occupied Congolese territory.
+- id: usmca-non-renewal-2026
+  title: The USMCA Non-Renewal
+  strapline: A sixteen-year trade pact reaches its review date. Automatic renewal declined. The treaty survives; the confidence in it does not.
+  date: '2026-07-01'
+  term: 2
+  type: Trade
+  status: UNRESOLVED
+  summary: >-
+    July 1, 2026 marked the mandatory six-year joint review deadline under the US-Mexico-Canada Agreement, at which all
+    three parties were required to confirm whether to extend the pact automatically for a further sixteen years. The Trump
+    administration declined to confirm renewal. US Trade Representative Jamieson Greer said "the United States did not
+    agree to renew the USMCA in its current form," citing the agreement's "shortcomings" and persistent US trade deficits
+    with Mexico and Canada. USMCA remains in force under its original sunset clause through July 2036, but the non-renewal
+    triggers a mandatory annual review process rather than the automatic extension both Mexico and Canada had sought. A
+    third round of talks with Mexico was scheduled for July 20, 2026, in Mexico City.
+  terms_and_conditions: >-
+    USMCA remains in force through July 2036 under its original sunset clause. Automatic sixteen-year renewal declined by
+    the United States. Annual joint reviews triggered in its place. Bilateral talks with Mexico and Canada to continue on
+    trade deficits and unspecified "shortcomings." No new tariffs imposed as a direct consequence of this decision.

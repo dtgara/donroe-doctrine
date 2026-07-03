@@ -330,6 +330,23 @@ entries:
     source: "PBS NewsHour, March-June 2026"
     source_url: "https://www.pbs.org/newshour/politics/company-backed-by-trump-sons-looks-to-sell-drone-interceptors-to-gulf-states-being-attacked-by-iran"
 
+  - id: i020
+    date: "2025-07-11"
+    term: 2
+    family_member: "Trump Organization"
+    country: Romania
+    region: europe
+    deal_type: real_estate
+    title: "Bucharest — Trump Tower, luxury residential project with SDC Imobiliare"
+    description: "The Trump Organization and Romanian developer SDC Imobiliare announced Trump Tower Bucharest, the Trump brand's first project in Romania — a luxury residential tower in the capital's center. The 2026 OGE financial disclosure reported $5 million in licensing fees from the project, filed roughly two months after DHS rescinded Romania's Visa Waiver Program designation."
+    value: 5000000
+    value_note: "Licensing fees reported in 2026 annual financial disclosure; total project value undisclosed"
+    status: active
+    partner: "SDC Imobiliare (Ştefan Berciu)"
+    concurrent_policy: "DHS rescinded Romania's Visa Waiver Program designation on May 2, 2025, citing security concerns tied to the annulled 2024 presidential election. Ten weeks later, the Trump Organization announced its first Romanian development."
+    source: "CNBC; US News; Trump Organization; Bloomberg, July 1, 2026 (2026 financial disclosure)"
+    source_url: "https://www.cnbc.com/2025/07/12/trump-organization-luxury-apartments-bucharest.html"
+
 # Parallel axis: concurrent US government policy actions, plotted against business entries above.
 # Cross-referenced to entries by country.
 
@@ -438,3 +455,11 @@ policy_events:
     title: "US-Iran MOU signed — 60-day ceasefire, enrichment reaffirmation"
     description: "The Versailles MOU was signed between the US and Iran. The 60-day ceasefire directly affected the market for the Trump sons' drone interceptor products, which they had been selling to Gulf states under Iranian attack."
     category: deal_signed
+
+  - id: pe014
+    date: "2025-05-02"
+    country: Romania
+    region: europe
+    title: "DHS rescinds Romania's Visa Waiver Program designation"
+    description: "DHS finalized the removal of Romania from the Visa Waiver Program, a reversal of a January 2025 Biden-era designation, citing organized crime and visa refusal rates. The decision followed criticism by Vice President Vance and administration allies of Romania's annulled 2024 presidential election. Ten weeks later, the Trump Organization announced its first Romanian real estate project."
+    category: policy_action
