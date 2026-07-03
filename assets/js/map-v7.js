@@ -1,10 +1,14 @@
 /* =============================================================================
-   THE DONROE DOCTRINE — Interactive World Map v6
-   v6: add noWrap:true to the tile layer — without it, Leaflet draws
-   duplicate/repeating world tiles at low zoom despite maxBounds/
-   worldCopyJump/maxBoundsViscosity already being set, which reads as an
-   infinite horizontally-scrolling map. Same fix applied to the Vacancies
-   map (assets/js/vacancies-map.js) for consistency.
+   THE DONROE DOCTRINE — Interactive World Map v7
+   v7: drop the {r} (retina) token from the CartoDB tile URL. Leaflet was
+   requesting @2x tile variants on high-DPI (Retina) screens and CARTO's
+   free basemap service was returning 400 for them, leaving large portions
+   of the map showing only the gray placeholder background instead of
+   basemap tiles. The overlay (country GeoJSON) rendered fine regardless —
+   only the underlying tile imagery was affected. Removing {r} means every
+   browser requests the same standard-resolution tile, which is a safe
+   trade-off for a muted background basemap. Same fix applied to the
+   Vacancies map (assets/js/vacancies-map-v2.js) for consistency.
    ========================================================================== */
 
 (function () {
@@ -66,11 +70,12 @@
     maxBoundsViscosity: 1.0
   });
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
     subdomains: 'abcd',
     maxZoom: 20,
-    noWrap: true
+    noWrap: true,
+    detectRetina: false
   }).addTo(map);
 
   /* ---------------------------------------------------------------------------

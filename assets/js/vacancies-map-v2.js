@@ -1,5 +1,13 @@
 /* =============================================================================
-   THE DONROE DOCTRINE — Vacancies Map v1
+   THE DONROE DOCTRINE — Vacancies Map v2
+   v2: drop the {r} (retina) token from the CartoDB tile URL, matching the
+   fix applied to the main Doctrine Map (assets/js/map-v7.js). Leaflet was
+   requesting @2x tile variants on high-DPI (Retina) screens and CARTO's
+   free basemap service was returning 400 for them, leaving large portions
+   of the map showing only the gray placeholder background instead of
+   basemap tiles. The overlay (country GeoJSON) rendered fine regardless —
+   only the underlying tile imagery was affected.
+
    Adapted from map-v5.js (the main Doctrine Map). Reuses the same DOM
    element IDs and CSS classes as the main map (#doctrine-map,
    .map-container, .map-legend*, #country-panel, .country-panel-*) so this
@@ -17,10 +25,9 @@
        dataset, confirmed against the main map's fix history.
      - No Leaflet Subresource Integrity (SRI) hashes on the CSS/JS includes —
        a hash mismatch blocked the main map in Safari previously.
-     - This file has its own name (not map-v5.js) so editing it doesn't
-       collide with the main map's cache-busting history. If this file's
-       logic changes materially later, rename it (e.g. vacancies-map-v2.js)
-       to force a cache bust, the same way the main map went v3 -> v4 -> v5.
+     - This file has its own version suffix so editing it doesn't collide
+       with the main map's cache-busting history. If this file's logic
+       changes materially later, bump the suffix again (v3, v4, ...).
    ========================================================================== */
 
 (function () {
@@ -80,11 +87,12 @@
     maxBoundsViscosity: 1.0
   });
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
     subdomains: 'abcd',
     maxZoom: 20,
-    noWrap: true
+    noWrap: true,
+    detectRetina: false
   }).addTo(map);
 
   /* ---------------------------------------------------------------------------
