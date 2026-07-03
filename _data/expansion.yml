@@ -1,0 +1,346 @@
+# The Expansion — Territorial & Regime-Change Register
+# Documents countries and territories the administration has publicly
+# threatened to annex, absorb, or subject to regime change, and tracks each
+# through an escalation ladder: rhetorical claim -> economic pressure ->
+# military threat -> military action -> regime change achieved.
+# Press independently coined "Don-roe Doctrine" for this exact pattern
+# (New York Post, later CBS News) after the Venezuela operation -- a
+# near-identical pun to this site's own name.
+# Last updated: 2026-07-03
+
+snapshot_note: >-
+  Escalation level reflects the highest rung reached to date, not
+  necessarily the current state -- some targets have cooled (Canada),
+  some are frozen mid-threat (Greenland), and some have reached the top
+  of the ladder (Venezuela). Level definitions: 1 rhetorical claim, 2
+  economic pressure (tariffs/sanctions/financial leverage), 3 military
+  threat, 4 military action, 5 regime change achieved.
+
+targets:
+
+  - id: greenland
+    name: Greenland
+    code: GL
+    region: Arctic
+    claim_type: [territorial_annexation]
+    escalation_level: 3
+    escalation_label: "Military threat"
+    rationale_claimed: "National security — Arctic shipping lanes and Russian/Chinese activity nearby"
+    current_status: "Unresolved. Special envoy appointed; White House confirms 'range of options including military force' under discussion as of Jan 2026. Denmark and Greenland both refuse."
+    target_response: "Greenland's PM called annexation talk 'fantasies.' Denmark and European allies issued a joint statement defending 'sovereignty, territorial integrity and inviolability of borders.'"
+    first_asserted_date: "2019-08-15"
+    last_updated_date: "2026-01-07"
+
+  - id: canada
+    name: Canada
+    code: CA
+    region: North America
+    claim_type: [territorial_annexation, economic_coercion]
+    escalation_level: 2
+    escalation_label: "Economic pressure"
+    rationale_claimed: "Trade imbalance; repeated framing of Canada as a natural '51st state'"
+    current_status: "Rhetoric has cooled since late 2025; tariffs (up to 35%) remain the active pressure point. No military threat made."
+    target_response: "PM Mark Carney has been unambiguous that Canada has no interest in joining the US. Ontario pulled an anti-tariff ad after Trump threatened to end trade talks over it."
+    first_asserted_date: "2024-11-15"
+    last_updated_date: "2025-10-01"
+
+  - id: panama
+    name: Panama (Canal)
+    code: PA
+    region: Central America
+    claim_type: [territorial_annexation, economic_coercion]
+    escalation_level: 2
+    escalation_label: "Economic pressure"
+    rationale_claimed: "Historic US construction and defense of the canal; claims of Chinese influence over canal operations"
+    current_status: "Claims the canal was 'reclaimed' via a BlackRock-led consortium's purchase of a controlling stake in the company operating nearby ports. Panama's government disputes this is equivalent to control of the canal itself."
+    target_response: "Panama's president publicly accused Trump of 'lying' about reclaiming the canal."
+    first_asserted_date: "2024-12-21"
+    last_updated_date: "2026-03-15"
+
+  - id: gaza
+    name: Gaza
+    code: PS
+    region: Middle East
+    claim_type: [territorial_annexation]
+    escalation_level: 1
+    escalation_label: "Rhetorical claim"
+    rationale_claimed: "Redevelopment — described as turning a 'territory of death and destruction' into a US-run 'freedom zone'"
+    current_status: "Proposal reiterated multiple times, no concrete US territorial action taken. Distinct from the broader Israel-Hamas ceasefire/hostage process, which is tracked separately."
+    target_response: "Widely rejected by Arab states and Palestinian officials as a displacement plan."
+    first_asserted_date: "2025-02-04"
+    last_updated_date: "2025-05-15"
+
+  - id: venezuela
+    name: Venezuela
+    code: VE
+    region: South America
+    claim_type: [regime_change, military_intervention]
+    escalation_level: 5
+    escalation_label: "Regime change achieved"
+    rationale_claimed: "Counter-narcotics — Maduro government designated a drug-trafficking enterprise"
+    current_status: "January 2026: US military operation captured Maduro in Caracas; he now faces drug trafficking charges in the US. Interim government installed. This is the case that prompted the press to coin 'Don-roe Doctrine.'"
+    target_response: "Cuban government reported 32 Cuban nationals (Maduro's bodyguard/intelligence detail) killed in the operation. Colombia's Petro warned against similar action in his own country."
+    first_asserted_date: "2025-08-01"
+    last_updated_date: "2026-01-11"
+
+  - id: cuba
+    name: Cuba
+    code: CU
+    region: Caribbean
+    claim_type: [economic_coercion, regime_change]
+    escalation_level: 2
+    escalation_label: "Economic pressure"
+    rationale_claimed: "Regime collapse framed as a byproduct of cutting off Cuba's Venezuelan oil lifeline, not direct US action"
+    current_status: "No direct military threat made. Trump has publicly predicted the government will 'fall' on its own once Venezuelan oil support ends. Rubio: Cuban leaders 'in a lot of trouble.'"
+    target_response: "No formal government response documented; Cuba's oil imports from Venezuela and Mexico both fell sharply through 2025."
+    first_asserted_date: "2026-01-11"
+    last_updated_date: "2026-01-11"
+
+  - id: colombia
+    name: Colombia
+    code: CO
+    region: South America
+    claim_type: [economic_coercion, military_intervention]
+    escalation_level: 3
+    escalation_label: "Military threat"
+    rationale_claimed: "Counter-narcotics — accused President Petro of allowing cocaine production to flourish"
+    current_status: "Sanctions imposed on Petro (Oct 2025); over 115 people killed in US strikes on alleged drug boats. When asked directly if military action against Colombia was being threatened, Trump said 'it sounds good to me.'"
+    target_response: "Petro accused the US of violating international law with the boat strikes and said he 'would take up arms' for his country if necessary, despite having sworn off violence."
+    first_asserted_date: "2025-10-01"
+    last_updated_date: "2026-01-11"
+
+  - id: iran
+    name: Iran
+    code: IR
+    region: Middle East
+    claim_type: [military_intervention, regime_change]
+    escalation_level: 4
+    escalation_label: "Military action"
+    rationale_claimed: "Nuclear non-proliferation — prevention of an Iranian nuclear weapon"
+    current_status: "US airstrikes hit Fordo, Natanz, and Isfahan nuclear facilities (June 2025) during a broader Israel-Iran war. A 2026 wave of Iranian protests drew a further Trump threat to 'come to the rescue' if the government cracked down violently — regime-change-adjacent rhetoric, though no second strike has followed."
+    target_response: "Iran denied it was close to a weapon; DNI Gabbard's own intelligence assessment publicly contradicted Trump's stated justification for the strikes (see Contradiction Tracker)."
+    first_asserted_date: "2025-02-28"
+    last_updated_date: "2026-01-04"
+
+incidents:
+
+  - id: exp001
+    date: "2019-08-15"
+    target_id: [greenland]
+    type: annexation_threat
+    escalation_level: 1
+    headline: "First floats purchasing Greenland from Denmark"
+    detail: "During his first term, Trump confirmed he was considering buying Greenland from Denmark, citing strategic interest. Danish PM Mette Frederiksen called the idea 'absurd,' prompting Trump to cancel a state visit to Denmark in response."
+    quote: "Denmark essentially owns it. We're a very good ally... and we'll start thinking about Denmark."
+    quoted_by: "Donald Trump"
+    source: "Multiple outlets, Aug 2019"
+    source_url: "https://en.wikipedia.org/wiki/American_expansionism_under_Donald_Trump"
+    doctrine_note: "The idea predates the doctrine's official start date but is included as the origin point of the Greenland claim, which resumed with much greater intensity in the second term."
+
+  - id: exp002
+    date: "2025-01-07"
+    target_id: [greenland, panama]
+    type: military_force_threat
+    escalation_level: 3
+    headline: "Won't rule out military or economic force to acquire Greenland or the Panama Canal"
+    detail: "At a press conference before taking office, Trump declined to rule out using military or economic coercion to acquire both Greenland and the Panama Canal, calling both 'vital to United States national security.'"
+    quote: "I'm not going to commit to that. It might be that you'll have to do something."
+    quoted_by: "Donald Trump"
+    source: "AP, Jan 7 2025"
+    source_url: "https://en.wikipedia.org/wiki/American_expansionism_under_Donald_Trump"
+    doctrine_note: "The clearest single moment establishing the doctrine's premise: both targets floated in the same breath, before inauguration."
+
+  - id: exp003
+    date: "2025-02-04"
+    target_id: [gaza]
+    type: annexation_threat
+    escalation_level: 1
+    headline: "Proposes US 'takeover' of Gaza, redevelopment as the 'Riviera of the Middle East'"
+    detail: "Standing beside Netanyahu, Trump proposed the US take long-term ownership of Gaza, permanently resettle its Palestinian population elsewhere, and redevelop the territory."
+    quote: "The US will take over the Gaza Strip... we'll own it."
+    quoted_by: "Donald Trump"
+    source: "Multiple outlets, Feb 2025"
+    source_url: "https://www.npr.org/2025/05/15/nx-s1-5395920/trump-revives-his-gaza-proposal-on-his-middle-east-trip"
+    doctrine_note: "Widely rejected by Arab governments within days; never repeated with the same specificity, but not withdrawn either."
+
+  - id: exp004
+    date: "2025-02-28"
+    target_id: [iran]
+    type: military_action
+    escalation_level: 4
+    headline: "Launches new war against Iran"
+    detail: "The US and Israel began a new military campaign against Iran, justified in part by claims Iran was close to a nuclear weapon -- a claim later contradicted by Trump's own Director of National Intelligence."
+    quote: null
+    quoted_by: null
+    source: "PBS News"
+    source_url: "https://www.pbs.org/newshour/politics/americas-spies-say-iran-wasnt-building-a-nuclear-weapon-trump-dismisses-that-assessment"
+    doctrine_note: "See the Contradiction Tracker and Predictions Tracker for the DNI Gabbard intelligence dispute and the eventual MOU that ended the war."
+
+  - id: exp005
+    date: "2025-03-01"
+    target_id: [greenland]
+    type: envoy_appointment
+    escalation_level: 3
+    headline: "VP Vance visits Greenland, floats path to US annexation via 'independence'"
+    detail: "Vance visited Greenland and suggested Greenlanders would eventually 'choose through self-determination to become independent of Denmark,' after which the US would negotiate with Greenland directly -- effectively proposing to route around Danish sovereignty."
+    quote: "What we think is going to happen is that the Greenlanders are going to choose through self-determination to become independent of Denmark, and then we're going to have conversations with the people of Greenland from there."
+    quoted_by: "JD Vance"
+    source: "CBS News"
+    source_url: "https://www.cbsnews.com/news/jd-usha-vance-visit-greenland-most-greenlanders-dont-want-to-join-america/"
+    doctrine_note: "Most Greenlanders do not support joining the US, per the same reporting."
+
+  - id: exp006
+    date: "2025-06-22"
+    target_id: [iran]
+    type: military_action
+    escalation_level: 4
+    headline: "US strikes Iran's Fordo, Natanz, and Isfahan nuclear facilities"
+    detail: "The US carried out direct airstrikes on Iran's three major nuclear enrichment sites, escalating the war that began in February."
+    quote: null
+    quoted_by: null
+    source: "CBS News"
+    source_url: "https://www.cbsnews.com/news/u-s-launches-strikes-iranian-nuclear-facilities-trump-says/"
+    doctrine_note: null
+
+  - id: exp007
+    date: "2025-08-01"
+    target_id: [venezuela]
+    type: military_force_threat
+    escalation_level: 3
+    headline: "Escalating pressure campaign against the Maduro government begins"
+    detail: "The administration designated Maduro's government a drug-trafficking enterprise and began a campaign of strikes on alleged drug-smuggling vessels off Venezuela's coast, the first rung toward the eventual capture operation."
+    quote: null
+    quoted_by: null
+    source: "CBS News"
+    source_url: "https://www.cbsnews.com/news/donroe-doctrine-greenland-cuba-colombia-canada-panama-canal-iran/"
+    doctrine_note: "Boat strikes across the Venezuela/Colombia campaign killed at least 115 people combined by January 2026, per Colombia's government."
+
+  - id: exp008
+    date: "2025-10-01"
+    target_id: [colombia]
+    type: economic_coercion
+    escalation_level: 2
+    headline: "Sanctions imposed on President Petro"
+    detail: "Treasury Secretary Scott Bessent announced sanctions on Colombian President Gustavo Petro, accusing him of allowing drug cartels to flourish."
+    quote: "Allowed drug cartels to flourish and refused to stop this activity."
+    quoted_by: "Scott Bessent"
+    source: "CBS News"
+    source_url: "https://www.cbsnews.com/news/us-trump-sanctions-colombia-president-gustavo-petro/"
+    doctrine_note: null
+
+  - id: exp009
+    date: "2025-10-01"
+    target_id: [canada]
+    type: economic_coercion
+    escalation_level: 2
+    headline: "Ends trade talks with Canada over anti-tariff ad"
+    detail: "Trump threatened to end trade negotiations with Canada after Ontario ran an ad using Ronald Reagan's voice to criticize tariffs. Ontario pulled the ad."
+    quote: null
+    quoted_by: null
+    source: "CBS News"
+    source_url: "https://www.cbsnews.com/news/donroe-doctrine-greenland-cuba-colombia-canada-panama-canal-iran/"
+    doctrine_note: null
+
+  - id: exp010
+    date: "2026-01-11"
+    target_id: [venezuela]
+    type: military_action
+    escalation_level: 5
+    headline: "US special forces capture Maduro in Caracas"
+    detail: "A US military operation removed Nicolás Maduro from Venezuela to face drug trafficking charges in the United States, days after Trump declared 'American dominance in the Western Hemisphere will never be questioned again.' Press coined the term 'Don-roe Doctrine' for the pattern this and the surrounding threats represent."
+    quote: "American dominance in the Western Hemisphere will never be questioned again."
+    quoted_by: "Donald Trump"
+    source: "CBS News"
+    source_url: "https://www.cbsnews.com/news/donroe-doctrine-greenland-cuba-colombia-canada-panama-canal-iran/"
+    doctrine_note: "The escalation ceiling of the entire register to date: from a boat-strike campaign in August to a head-of-state capture five months later."
+
+  - id: exp011
+    date: "2026-01-11"
+    target_id: [cuba]
+    type: self_congratulatory_claim
+    escalation_level: 2
+    headline: "Predicts Cuba is 'ready to fall'"
+    detail: "Days after the Venezuela operation, Trump told reporters Cuba's government was on the verge of collapse now that its Venezuelan oil supply had been cut off, though he stopped short of threatening direct action."
+    quote: "Cuba looks like it's ready to fall... Cuba literally is ready to fall."
+    quoted_by: "Donald Trump"
+    source: "CBS News"
+    source_url: "https://www.cbsnews.com/news/donroe-doctrine-greenland-cuba-colombia-canada-panama-canal-iran/"
+    doctrine_note: null
+
+  - id: exp012
+    date: "2026-01-11"
+    target_id: [colombia]
+    type: military_force_threat
+    escalation_level: 3
+    headline: "'It sounds good to me' — asked directly about military action in Colombia"
+    detail: "Asked by reporters whether he was threatening a military operation in Colombia similar to the Venezuela raid, Trump did not deny it."
+    quote: "It sounds good to me. You know what... they kill a lot of people."
+    quoted_by: "Donald Trump"
+    source: "CBS News"
+    source_url: "https://www.cbsnews.com/news/donroe-doctrine-greenland-cuba-colombia-canada-panama-canal-iran/"
+    doctrine_note: null
+
+  - id: exp013
+    date: "2026-01-06"
+    target_id: [greenland]
+    type: military_force_threat
+    escalation_level: 3
+    headline: "White House confirms 'range of options including military force' for Greenland"
+    detail: "Press Secretary Karoline Leavitt confirmed the administration was weighing a range of options, including military takeover, to acquire Greenland."
+    quote: null
+    quoted_by: "Karoline Leavitt"
+    source: "CBS News"
+    source_url: "https://www.cbsnews.com/news/greenland-white-house-discussing-range-of-options-including-u-s-military-takeover-force/"
+    doctrine_note: null
+
+  - id: exp014
+    date: "2026-01-04"
+    target_id: [greenland, canada]
+    type: self_congratulatory_claim
+    escalation_level: 3
+    headline: "Katie Miller posts Greenland draped in a US flag, captioned 'Soon'"
+    detail: "The wife of top White House aide Stephen Miller posted an image of Greenland covered in an American flag with the caption 'Soon,' prompting speculation about imminent action. Stephen Miller separately said no one should expect a military operation over Greenland."
+    quote: "Soon"
+    quoted_by: "Katie Miller"
+    source: "CBS News"
+    source_url: "https://www.cbsnews.com/news/donroe-doctrine-greenland-cuba-colombia-canada-panama-canal-iran/"
+    doctrine_note: "Included as an example of how the doctrine circulates through the administration's social media orbit, not just official statements."
+
+  - id: exp015
+    date: "2026-01-18"
+    target_id: [greenland]
+    type: military_force_threat
+    escalation_level: 3
+    headline: "Ties Greenland demand to Nobel Peace Prize snub and NATO tariffs"
+    detail: "In a text message to Norway's PM after losing the 2025 Nobel Peace Prize, Trump tied the snub directly to renewed pressure on Greenland, sent the same weekend he imposed new tariffs on eight European countries over their Greenland opposition."
+    quote: "Considering your Country decided not to give me the Nobel Peace Prize for having stopped 8 Wars PLUS, I no longer feel an obligation to think purely of Peace... The World is not secure unless we have Complete and Total Control of Greenland."
+    quoted_by: "Donald Trump"
+    source: "PolitiFact"
+    source_url: "https://www.politifact.com/article/2026/jan/20/Trump-Greenland-Nobel-Peace-Prize-Norway-NATO/"
+    doctrine_note: "Cross-reference with the Nobel Peace Prize campaign — see the Predictions/Contradiction registers for related material."
+
+  - id: exp016
+    date: "2026-01-20"
+    target_id: [iran]
+    type: military_force_threat
+    escalation_level: 4
+    headline: "Threatens to 'come to the rescue' amid Iranian protests"
+    detail: "As economic protests spread in Iran, Trump posted that the US would 'come to the rescue' if the government violently cracked down, and separately said protesters would be 'hit very hard' in response."
+    quote: "If they start killing people like they have in the past, I think they're going to get hit very hard by the United States."
+    quoted_by: "Donald Trump"
+    source: "CBS News"
+    source_url: "https://www.cbsnews.com/news/donroe-doctrine-greenland-cuba-colombia-canada-panama-canal-iran/"
+    doctrine_note: "Regime-change-adjacent framing rather than a renewed nuclear-facility strike threat; no second military action has followed as of this snapshot."
+
+  - id: exp017
+    date: "2026-03-15"
+    target_id: [panama]
+    type: self_congratulatory_claim
+    escalation_level: 2
+    headline: "Claims the Panama Canal was 'reclaimed'"
+    detail: "Trump claimed the US had effectively reclaimed the Panama Canal via a BlackRock-led consortium's purchase of a controlling stake in the company operating ports near the canal -- a corporate transaction, not a change in the canal's sovereign control."
+    quote: "We have taken back the Panama Canal"
+    quoted_by: "Donald Trump"
+    source: "CBS News"
+    source_url: "https://www.cbsnews.com/news/blackrock-panama-canal-deal-ck-hutchison-trump/"
+    doctrine_note: "Panama's president publicly called this claim a lie."

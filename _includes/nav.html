@@ -30,7 +30,7 @@
       </li>
 
       {% assign in_record = false %}
-      {% if page.url contains '/withdrawals' or page.url contains '/predictions' or page.url contains '/toll' or page.url contains '/deals' or page.url contains '/vacancies' %}{% assign in_record = true %}{% endif %}
+      {% if page.url contains '/withdrawals' or page.url contains '/predictions' or page.url contains '/toll' or page.url contains '/deals' or page.url contains '/vacancies' or page.url contains '/expansion' %}{% assign in_record = true %}{% endif %}
       <li class="nav-dropdown">
         <button class="nav-dropdown-trigger{% if in_record %} active{% endif %}" aria-expanded="false" aria-haspopup="true">
           Record <span class="nav-dropdown-arrow">▾</span>
@@ -41,6 +41,7 @@
           <li><a href="{{ '/toll/' | relative_url }}"{% if page.url contains '/toll' %} class="active"{% endif %} role="menuitem">The Toll</a></li>
           <li><a href="{{ '/deals/' | relative_url }}"{% if page.url contains '/deals' %} class="active"{% endif %} role="menuitem">Deals</a></li>
           <li><a href="{{ '/vacancies/' | relative_url }}"{% if page.url contains '/vacancies' %} class="active"{% endif %} role="menuitem">The Vacancies</a></li>
+          <li><a href="{{ '/expansion/' | relative_url }}"{% if page.url contains '/expansion' %} class="active"{% endif %} role="menuitem">The Expansion</a></li>
         </ul>
       </li>
 

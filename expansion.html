@@ -1,0 +1,459 @@
+---
+layout: section
+title: "The Expansion"
+section_intro: >
+  Countries and territories the administration has publicly threatened to annex, absorb,
+  or subject to regime change — tracked target by target along a five-rung escalation
+  ladder, from rhetorical claim through to regime change achieved.
+body_class: page-expansion
+---
+
+{% assign targets   = site.data.expansion.targets %}
+{% assign incidents = site.data.expansion.incidents %}
+
+{% assign level5count = 0 %}
+{% assign level4pluscount = 0 %}
+{% for t in targets %}
+  {% if t.escalation_level == 5 %}{% assign level5count = level5count | plus: 1 %}{% endif %}
+  {% if t.escalation_level >= 4 %}{% assign level4pluscount = level4pluscount | plus: 1 %}{% endif %}
+{% endfor %}
+
+<!-- Meta bar -->
+<div class="exp-meta-bar">
+  <div class="exp-stat">
+    <span class="exp-stat-n">{{ targets | size }}</span>
+    <span class="exp-stat-label">Targets identified</span>
+  </div>
+  <div class="exp-stat">
+    <span class="exp-stat-n">{{ incidents | size }}</span>
+    <span class="exp-stat-label">Incidents logged</span>
+  </div>
+  <div class="exp-stat">
+    <span class="exp-stat-n">{{ level4pluscount }}</span>
+    <span class="exp-stat-label">Reached military action</span>
+  </div>
+  <div class="exp-stat">
+    <span class="exp-stat-n">{{ level5count }}</span>
+    <span class="exp-stat-label">Regime change achieved</span>
+  </div>
+</div>
+
+<!-- Roster grid -->
+<div class="exp-roster-grid">
+{% for t in targets %}
+  <div class="exp-roster-card" data-target-id="{{ t.id }}">
+    <div class="exp-roster-head">
+      <span class="exp-roster-name">{{ t.name }}</span>
+      <span class="exp-roster-code mono">{{ t.code }}</span>
+    </div>
+    <span class="exp-esc-pill exp-esc--{{ t.escalation_level }}">{{ t.escalation_label }}</span>
+    <p class="exp-roster-rationale"><strong>Claimed rationale:</strong> {{ t.rationale_claimed }}</p>
+    <p class="exp-roster-status">{{ t.current_status }}</p>
+  </div>
+{% endfor %}
+</div>
+
+<!-- Filter bar -->
+<div class="exp-filter-bar">
+  <div class="exp-filter-group">
+    <span class="exp-filter-label">Target</span>
+    <button class="expf active" data-filter="target" data-value="all">All</button>
+    {% for t in targets %}<button class="expf" data-filter="target" data-value="{{ t.id }}">{{ t.name }}</button>{% endfor %}
+  </div>
+  <div class="exp-filter-group">
+    <span class="exp-filter-label">Action type</span>
+    <button class="expf active" data-filter="type" data-value="all">All</button>
+    <button class="expf" data-filter="type" data-value="annexation_threat">Annexation threat</button>
+    <button class="expf" data-filter="type" data-value="economic_coercion">Economic coercion</button>
+    <button class="expf" data-filter="type" data-value="military_force_threat">Military threat</button>
+    <button class="expf" data-filter="type" data-value="military_action">Military action</button>
+    <button class="expf" data-filter="type" data-value="envoy_appointment">Envoy / diplomatic</button>
+    <button class="expf" data-filter="type" data-value="self_congratulatory_claim">Claimed victory</button>
+  </div>
+  <div class="exp-filter-group">
+    <span class="exp-filter-label">Escalation</span>
+    <button class="expf active" data-filter="level" data-value="all">All</button>
+    <button class="expf" data-filter="level" data-value="1">1 · Rhetorical</button>
+    <button class="expf" data-filter="level" data-value="2">2 · Economic</button>
+    <button class="expf" data-filter="level" data-value="3">3 · Mil. threat</button>
+    <button class="expf" data-filter="level" data-value="4">4 · Mil. action</button>
+    <button class="expf" data-filter="level" data-value="5">5 · Regime change</button>
+  </div>
+</div>
+
+<!-- Scatter chart -->
+<div class="exp-chart-wrap">
+  <div class="exp-chart-legend" id="exp-legend"></div>
+  <svg id="exp-scatter" viewBox="0 0 900 400" preserveAspectRatio="xMidYMid meet"
+       xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;"></svg>
+  <div class="exp-tooltip" id="exp-tooltip" style="display:none"></div>
+</div>
+
+<!-- Detail panel -->
+<div class="exp-detail-panel" id="exp-detail" style="display:none">
+  <button class="exp-detail-close" id="exp-detail-close">&times; Close</button>
+  <div id="exp-detail-inner"></div>
+</div>
+
+<p class="exp-count-line">Showing <span id="exp-count">{{ incidents | size }}</span> of {{ incidents | size }} incidents</p>
+
+<!-- Register -->
+<div id="exp-register">
+{% for inc in incidents %}
+<div class="exp-entry"
+     data-id="{{ inc.id }}"
+     data-target="{{ inc.target_id | join: ' ' }}"
+     data-type="{{ inc.type }}"
+     data-level="{{ inc.escalation_level }}"
+     data-date="{{ inc.date }}">
+  <div class="exp-entry-header">
+    <div class="exp-entry-meta">
+      <span class="exp-date mono">{{ inc.date | date: "%b %-d, %Y" }}</span>
+      {% for tid in inc.target_id %}{% assign tgt = targets | where: "id", tid | first %}<span class="exp-target-chip" data-tid="{{ tgt.id }}">{{ tgt.name }}</span>{% endfor %}
+      <span class="exp-type-chip">{{ inc.type | replace: '_', ' ' }}</span>
+      <span class="exp-esc-chip exp-esc--{{ inc.escalation_level }}">Level {{ inc.escalation_level }}</span>
+    </div>
+  </div>
+  <h3 class="exp-entry-title">{{ inc.headline }}</h3>
+  <p class="exp-entry-desc">{{ inc.detail }}</p>
+  {% if inc.quote %}
+  <div class="exp-quote">
+    <p>&ldquo;{{ inc.quote }}&rdquo;</p>
+    <span class="exp-quote-attr">— {{ inc.quoted_by }}</span>
+  </div>
+  {% endif %}
+  {% if inc.doctrine_note %}
+  <div class="exp-note">
+    <span class="exp-note-label">Editorial note</span>
+    <p>{{ inc.doctrine_note }}</p>
+  </div>
+  {% endif %}
+  <div class="exp-entry-footer">
+    {% if inc.source_url %}<a href="{{ inc.source_url }}" target="_blank" rel="noopener">{{ inc.source }}</a>
+    {% else %}{{ inc.source }}{% endif %}
+  </div>
+</div>
+{% endfor %}
+</div>
+
+<div class="exp-register-note">
+  <p><strong>Register status: ongoing.</strong> {{ site.data.expansion.snapshot_note }}</p>
+  <p><strong>Escalation ladder:</strong> 1 rhetorical claim &middot; 2 economic pressure &middot; 3 military threat &middot; 4 military action &middot; 5 regime change achieved. A target's roster-card level reflects the highest rung reached to date, not necessarily its current state.</p>
+</div>
+
+<script type="application/json" id="exp-targets-data">{{ site.data.expansion.targets | jsonify }}</script>
+<script type="application/json" id="exp-incidents-data">{{ site.data.expansion.incidents | jsonify }}</script>
+
+<style>
+.exp-meta-bar { display:flex;gap:2rem;flex-wrap:wrap;padding:1.5rem 0 1.25rem;border-bottom:1px solid var(--color-border);margin-bottom:1.5rem; }
+.exp-stat { display:flex;flex-direction:column;gap:.15rem; }
+.exp-stat-n { font-family:var(--font-mono);font-size:2rem;font-weight:700;color:var(--color-accent);line-height:1; }
+.exp-stat-label { font-family:var(--font-ui);font-size:var(--text-xs);color:var(--color-light-grey);text-transform:uppercase;letter-spacing:.08em; }
+
+.exp-roster-grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1rem;margin-bottom:1.75rem; }
+.exp-roster-card { border:1px solid var(--color-border);border-left:3px solid var(--color-accent);padding:1rem 1.1rem;background:var(--color-surface,#fafafa); }
+.exp-roster-head { display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.5rem; }
+.exp-roster-name { font-size:.95rem;font-weight:700; }
+.exp-roster-code { font-size:.7rem;color:var(--color-light-grey); }
+.exp-roster-rationale { font-size:var(--text-xs);color:var(--color-mid-grey);margin:.5rem 0 0;line-height:1.55; }
+.exp-roster-status { font-size:var(--text-xs);color:var(--color-light-grey);margin:.4rem 0 0;line-height:1.55; }
+
+.exp-esc-pill, .exp-esc-chip { font-family:var(--font-ui);font-size:.62rem;padding:.2rem .55rem;border-radius:2px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;display:inline-block; }
+.exp-esc--1 { color:#616161;background:#61616114;border:1px solid #61616144; }
+.exp-esc--2 { color:#B8860B;background:#B8860B14;border:1px solid #B8860B44; }
+.exp-esc--3 { color:#E65100;background:#E6510014;border:1px solid #E6510044; }
+.exp-esc--4 { color:#C0392B;background:#C0392B14;border:1px solid #C0392B44; }
+.exp-esc--5 { color:#6A0000;background:#6A000014;border:1px solid #6A000044; }
+
+.exp-filter-bar { display:flex;flex-direction:column;gap:.6rem;margin-bottom:1.25rem; }
+.exp-filter-group { display:flex;gap:.4rem;flex-wrap:wrap;align-items:center; }
+.exp-filter-label { font-family:var(--font-ui);font-size:var(--text-xs);color:var(--color-light-grey);min-width:80px;text-transform:uppercase;letter-spacing:.07em; }
+.expf { font-family:var(--font-ui);font-size:.65rem;padding:.3rem .75rem;border:1px solid var(--color-border);background:transparent;color:var(--color-mid-grey);cursor:pointer;border-radius:2px;transition:all .15s; }
+.expf:hover { border-color:var(--color-accent);color:var(--color-accent); }
+.expf.active { background:var(--color-near-black);color:var(--color-white);border-color:var(--color-near-black); }
+
+.exp-chart-wrap { position:relative;border:1px solid var(--color-border);background:var(--color-surface,#fafafa);margin-bottom:1rem; }
+.exp-chart-legend { display:flex;gap:1rem;flex-wrap:wrap;padding:.65rem 1rem;border-bottom:1px solid var(--color-border);font-family:var(--font-ui);font-size:var(--text-xs);color:var(--color-mid-grey); }
+.exp-legend-item { display:flex;align-items:center;gap:.35rem; }
+.exp-dot { width:10px;height:10px;border-radius:50%;display:inline-block;flex-shrink:0; }
+
+.exp-tooltip {
+  position:absolute;pointer-events:none;
+  background:var(--color-near-black);color:var(--color-white);
+  font-family:var(--font-ui);font-size:.7rem;line-height:1.5;
+  padding:.5rem .75rem;border-radius:3px;max-width:260px;z-index:50;
+}
+.exp-tooltip strong { display:block;margin-bottom:.2rem;font-size:.75rem; }
+.exp-tooltip .tt-meta { color:#aaa;font-size:.65rem; }
+
+.exp-detail-panel { padding:1.25rem 1.5rem;border:1px solid var(--color-border);margin-bottom:1rem;background:var(--color-surface,#fafafa); }
+.exp-detail-close { font-family:var(--font-ui);font-size:var(--text-xs);background:none;border:1px solid var(--color-border);color:var(--color-mid-grey);cursor:pointer;padding:.25rem .75rem;border-radius:2px;margin-bottom:1rem; }
+.exp-detail-close:hover { border-color:var(--color-accent);color:var(--color-accent); }
+#exp-detail-inner h3 { margin:.4rem 0;font-size:1rem; }
+#exp-detail-inner p { font-size:var(--text-sm);color:var(--color-mid-grey);margin:.4rem 0;line-height:1.65; }
+.exp-detail-meta { display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem; }
+.exp-detail-quote { margin-top:.75rem;padding:.75rem 1rem;border-left:3px solid var(--color-accent);background:var(--color-bg);font-size:var(--text-sm);color:var(--color-mid-grey);line-height:1.65;font-style:italic; }
+.exp-detail-quote-attr { display:block;margin-top:.35rem;font-style:normal;font-size:var(--text-xs);color:var(--color-light-grey); }
+
+.exp-count-line { font-family:var(--font-ui);font-size:var(--text-sm);color:var(--color-light-grey);margin-bottom:1.5rem;padding-top:.5rem;border-top:1px solid var(--color-border); }
+
+.exp-entry { border:1px solid var(--color-border);border-left:3px solid var(--color-accent);padding:1.25rem 1.5rem;margin-bottom:1rem;background:var(--color-surface,#fafafa); }
+.exp-entry:hover { border-color:var(--color-accent); }
+.exp-entry-header { display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:.5rem;margin-bottom:.6rem; }
+.exp-entry-meta { display:flex;gap:.4rem;flex-wrap:wrap;align-items:center; }
+.exp-date { font-size:var(--text-sm);color:var(--color-light-grey); }
+.exp-target-chip { font-family:var(--font-ui);font-size:.65rem;padding:.2rem .55rem;border-radius:2px;border:1px solid;font-weight:600; }
+.exp-type-chip { font-family:var(--font-mono);font-size:.6rem;padding:.15rem .5rem;border:1px solid var(--color-border);color:var(--color-mid-grey);border-radius:2px; }
+
+.exp-entry-title { font-size:.95rem;margin:.4rem 0; }
+.exp-entry-desc { font-size:var(--text-sm);color:var(--color-mid-grey);margin:0 0 .75rem;line-height:1.65; }
+.exp-quote { padding:.65rem .9rem;margin-bottom:.75rem;border-left:3px solid var(--color-accent);background:var(--color-bg);font-style:italic; }
+.exp-quote p { margin:0;font-size:var(--text-sm);color:var(--color-near-black); }
+.exp-quote-attr { display:block;margin-top:.3rem;font-style:normal;font-size:var(--text-xs);color:var(--color-light-grey); }
+.exp-note { padding:.6rem .9rem;margin-bottom:.75rem;border:1px dashed var(--color-border); }
+.exp-note-label { font-family:var(--font-ui);font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--color-light-grey);display:block;margin-bottom:.3rem; }
+.exp-note p { font-size:var(--text-sm);color:var(--color-mid-grey);margin:0;line-height:1.6; }
+.exp-entry-footer { font-family:var(--font-ui);font-size:var(--text-xs);color:var(--color-light-grey); }
+.exp-entry-footer a { color:var(--color-light-grey);text-decoration:underline;text-decoration-color:var(--color-border); }
+.exp-entry-footer a:hover { color:var(--color-accent); }
+
+.exp-register-note { margin-top:2rem;padding:1rem 1.25rem;border:1px solid var(--color-border);font-size:var(--text-sm);color:var(--color-mid-grey);line-height:1.7; }
+.exp-register-note p { margin:0 0 .5rem; }
+.exp-register-note p:last-child { margin:0; }
+
+.exp-entry.exp-entry--highlight { border-left-color:#F39C12;background:var(--color-bg); }
+</style>
+
+<script>
+(function(){
+  var targets   = JSON.parse(document.getElementById('exp-targets-data').textContent);
+  var incidents = JSON.parse(document.getElementById('exp-incidents-data').textContent);
+
+  var TARGET_COLORS = {
+    'greenland': '#1565C0',
+    'canada':    '#8B1A8B',
+    'panama':    '#B8860B',
+    'gaza':      '#2E7D32',
+    'venezuela': '#C0392B',
+    'cuba':      '#E65100',
+    'colombia':  '#00838F',
+    'iran':      '#5D4037'
+  };
+  var targetIndex = {};
+  targets.forEach(function(t){ targetIndex[t.id] = t; });
+
+  // ── Legend ──────────────────────────────────────────────────────────────
+  var legendEl = document.getElementById('exp-legend');
+  targets.forEach(function(t){
+    var span = document.createElement('span');
+    span.className = 'exp-legend-item';
+    span.innerHTML = '<span class="exp-dot" style="background:'+(TARGET_COLORS[t.id]||'#888')+'"></span>'+t.name;
+    legendEl.appendChild(span);
+  });
+
+  // Colorize register target chips from the target id Liquid stamped
+  // into data-tid, keyed against the same TARGET_COLORS map used on the chart.
+  document.querySelectorAll('.exp-target-chip').forEach(function(el){
+    var id = el.getAttribute('data-tid');
+    var hex = TARGET_COLORS[id] || '#888';
+    el.style.color = hex;
+    el.style.borderColor = hex + '44';
+    el.style.background = hex + '12';
+  });
+
+  // ── SVG layout constants ──────────────────────────────────────────────
+  var VW = 900, VH = 400;
+  var ML = 132, MR = 16, MT = 20, CHART_H = 300;
+  var XAXIS_Y = MT + CHART_H;
+  var XLBL_Y  = XAXIS_Y + 16;
+  var CW = VW - ML - MR;
+
+  var T0 = 2019.3, T1 = 2026.7, TR = T1 - T0;
+  var LEVELS = [1,2,3,4,5];
+  var LEVEL_LABELS = {
+    1: 'Rhetorical claim',
+    2: 'Economic pressure',
+    3: 'Military threat',
+    4: 'Military action',
+    5: 'Regime change achieved'
+  };
+
+  function yearFrac(dateStr){
+    var d = new Date(dateStr);
+    return d.getFullYear() + d.getMonth()/12 + d.getDate()/365;
+  }
+  function xPos(dateStr){
+    return ML + (yearFrac(dateStr) - T0) / TR * CW;
+  }
+  function yPos(level){
+    var l = Math.max(1, Math.min(5, level));
+    return MT + CHART_H - (l - 1) / 4 * CHART_H;
+  }
+
+  function svgEl(tag, attrs){
+    var el = document.createElementNS('http://www.w3.org/2000/svg', tag);
+    Object.keys(attrs).forEach(function(k){ el.setAttribute(k, attrs[k]); });
+    return el;
+  }
+
+  var svg = document.getElementById('exp-scatter');
+
+  // ── Background ────────────────────────────────────────────────────────
+  svg.appendChild(svgEl('rect',{x:ML,y:MT,width:CW,height:CHART_H,fill:'#fafafa',stroke:'none'}));
+
+  // ── Y-axis gridlines and labels (discrete escalation ladder) ──────────
+  LEVELS.forEach(function(lv){
+    var y = yPos(lv);
+    svg.appendChild(svgEl('line',{x1:ML,y1:y,x2:ML+CW,y2:y,stroke:'#e8e8e8','stroke-width':1}));
+    var txt = svgEl('text',{x:ML-8,y:y+3.5,'text-anchor':'end',fill:'#999','font-size':9,'font-family':'monospace'});
+    txt.textContent = lv+' · '+LEVEL_LABELS[lv];
+    svg.appendChild(txt);
+  });
+
+  // ── X-axis: year ticks and labels ─────────────────────────────────────
+  for(var yr=2020; yr<=2026; yr++){
+    var x = xPos(yr+'-01-01');
+    svg.appendChild(svgEl('line',{x1:x,y1:MT,x2:x,y2:XAXIS_Y,stroke:'#efefef','stroke-width':1}));
+    svg.appendChild(svgEl('line',{x1:x,y1:XAXIS_Y,x2:x,y2:XAXIS_Y+4,stroke:'#ccc','stroke-width':1}));
+    var yt = svgEl('text',{x:x,y:XLBL_Y,'text-anchor':'middle',fill:'#aaa','font-size':9,'font-family':'monospace'});
+    yt.textContent = yr;
+    svg.appendChild(yt);
+  }
+
+  // Axes
+  svg.appendChild(svgEl('line',{x1:ML,y1:MT,x2:ML,y2:XAXIS_Y,stroke:'#ccc','stroke-width':1}));
+  svg.appendChild(svgEl('line',{x1:ML,y1:XAXIS_Y,x2:ML+CW,y2:XAXIS_Y,stroke:'#ccc','stroke-width':1}));
+
+  // ── Trajectory lines (per target, chronological) ──────────────────────
+  var byTarget = {};
+  incidents.forEach(function(inc){
+    var primary = inc.target_id[0];
+    (byTarget[primary] = byTarget[primary] || []).push(inc);
+  });
+  Object.keys(byTarget).forEach(function(tid){
+    var list = byTarget[tid].slice().sort(function(a,b){ return new Date(a.date) - new Date(b.date); });
+    if(list.length < 2) return;
+    var pts = list.map(function(inc){ return xPos(inc.date)+','+yPos(inc.escalation_level); }).join(' ');
+    svg.appendChild(svgEl('polyline',{
+      points: pts, fill:'none', stroke: TARGET_COLORS[tid]||'#888',
+      'stroke-width':1.75, opacity:0.45, 'stroke-dasharray':'4,3'
+    }));
+  });
+
+  // ── Tooltip ───────────────────────────────────────────────────────────
+  var tip = document.getElementById('exp-tooltip');
+  var tipOwner = document.querySelector('.exp-chart-wrap');
+
+  function showTip(title, meta, ev){
+    tip.innerHTML = '<strong>'+title+'</strong><span class="tt-meta">'+meta+'</span>';
+    tip.style.display = 'block';
+    moveTip(ev);
+  }
+  function moveTip(ev){
+    var rect = tipOwner.getBoundingClientRect();
+    var x = ev.clientX - rect.left + 12;
+    var y = ev.clientY - rect.top  - 10;
+    if(x + 260 > rect.width) x = ev.clientX - rect.left - 270;
+    tip.style.left = x + 'px';
+    tip.style.top  = y + 'px';
+  }
+  function hideTip(){ tip.style.display = 'none'; }
+  tipOwner.addEventListener('mousemove', function(ev){
+    if(tip.style.display !== 'none') moveTip(ev);
+  });
+
+  // ── Detail panel ──────────────────────────────────────────────────────
+  var detailPanel = document.getElementById('exp-detail');
+  var detailInner = document.getElementById('exp-detail-inner');
+  document.getElementById('exp-detail-close').addEventListener('click', function(){
+    detailPanel.style.display = 'none';
+    document.querySelectorAll('.exp-entry--highlight').forEach(function(el){ el.classList.remove('exp-entry--highlight'); });
+  });
+
+  function showIncidentDetail(inc){
+    var names = inc.target_id.map(function(id){ return (targetIndex[id]||{}).name || id; }).join(', ');
+    detailInner.innerHTML =
+      '<div class="exp-detail-meta">'+
+        '<span class="exp-esc-chip exp-esc--'+inc.escalation_level+'">Level '+inc.escalation_level+' · '+LEVEL_LABELS[inc.escalation_level]+'</span>'+
+        '<span class="exp-type-chip">'+inc.type.replace(/_/g,' ')+'</span>'+
+      '</div>'+
+      '<h3>'+inc.headline+'</h3>'+
+      '<p><strong>'+names+'</strong> · '+inc.date+'</p>'+
+      '<p>'+inc.detail+'</p>'+
+      (inc.quote ? '<div class="exp-detail-quote"><p>&ldquo;'+inc.quote+'&rdquo;</p><span class="exp-detail-quote-attr">— '+inc.quoted_by+'</span></div>' : '')+
+      (inc.doctrine_note ? '<p style="margin-top:.75rem;font-size:var(--text-xs);color:var(--color-light-grey);"><strong>Editorial note:</strong> '+inc.doctrine_note+'</p>' : '')+
+      (inc.source_url ? '<p style="margin-top:.75rem"><a href="'+inc.source_url+'" target="_blank" rel="noopener" style="font-size:var(--text-xs);color:var(--color-light-grey)">'+inc.source+'</a></p>' : '');
+    detailPanel.style.display = 'block';
+    document.querySelectorAll('.exp-entry--highlight').forEach(function(el){ el.classList.remove('exp-entry--highlight'); });
+    var regEl = document.querySelector('.exp-entry[data-id="'+inc.id+'"]');
+    if(regEl){ regEl.classList.add('exp-entry--highlight'); regEl.scrollIntoView({behavior:'smooth',block:'nearest'}); }
+    detailPanel.scrollIntoView({behavior:'smooth',block:'nearest'});
+  }
+
+  // ── Plot circles ──────────────────────────────────────────────────────
+  var xOffsets = {};
+  function jitteredX(inc){
+    var base = xPos(inc.date);
+    var key  = Math.round(base/20)+'_'+yPos(inc.escalation_level);
+    xOffsets[key] = (xOffsets[key] || 0) + 1;
+    var n = xOffsets[key];
+    var offset = Math.ceil(n/2) * 10 * (n%2===0 ? 1 : -1);
+    if(n===1) offset = 0;
+    return base + offset;
+  }
+
+  var circleEls = [];
+  incidents.forEach(function(inc){
+    var cx = jitteredX(inc);
+    var cy = yPos(inc.escalation_level);
+    var r  = 8;
+    var color = TARGET_COLORS[inc.target_id[0]]||'#888';
+
+    var c = svgEl('circle',{cx:cx,cy:cy,r:r,fill:color,opacity:0.88,
+      stroke:'white','stroke-width':1.5,cursor:'pointer',
+      style:'transition:r .12s,opacity .12s'});
+    var names = inc.target_id.map(function(id){ return (targetIndex[id]||{}).name || id; }).join(', ');
+    c.addEventListener('mouseenter',function(ev){ c.setAttribute('r',12); c.setAttribute('opacity',1); showTip(inc.headline, names+' · '+inc.date, ev); });
+    c.addEventListener('mouseleave',function(){   c.setAttribute('r',r);  c.setAttribute('opacity',0.88); hideTip(); });
+    c.addEventListener('click',function(){ showIncidentDetail(inc); });
+    svg.appendChild(c);
+    circleEls.push({el:c, inc:inc, defaultR:r});
+  });
+
+  // ── Register filtering ────────────────────────────────────────────────
+  var regEntries = Array.from(document.querySelectorAll('.exp-entry'));
+  var activeFilters = {target:'all', type:'all', level:'all'};
+  var countEl = document.getElementById('exp-count');
+
+  function applyFilters(){
+    var vis = 0;
+    var visIds = new Set();
+    regEntries.forEach(function(el){
+      var tgtList = (el.getAttribute('data-target')||'').split(' ');
+      var tgt = activeFilters.target==='all' || tgtList.indexOf(activeFilters.target) !== -1;
+      var typ = activeFilters.type  ==='all' || el.getAttribute('data-type')  === activeFilters.type;
+      var lvl = activeFilters.level ==='all' || el.getAttribute('data-level') === activeFilters.level;
+      var show = tgt && typ && lvl;
+      el.style.display = show ? '' : 'none';
+      if(show){ vis++; visIds.add(el.getAttribute('data-id')); }
+    });
+    countEl.textContent = vis;
+    circleEls.forEach(function(obj){
+      var match = visIds.has(obj.inc.id);
+      obj.el.setAttribute('opacity', match ? 0.88 : 0.1);
+    });
+  }
+
+  document.querySelectorAll('.expf').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var ft = btn.getAttribute('data-filter');
+      activeFilters[ft] = btn.getAttribute('data-value');
+      btn.closest('.exp-filter-group').querySelectorAll('.expf').forEach(function(b){
+        b.classList.toggle('active', b===btn);
+      });
+      applyFilters();
+    });
+  });
+
+})();
+</script>
