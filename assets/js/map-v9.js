@@ -1,19 +1,17 @@
 /* =============================================================================
-   THE DONROE DOCTRINE — Interactive World Map v8
-   v8: fix the map not filling the full width of its container. Root cause
-   was a fixed integer zoom (2), at which Leaflet's tiles only cover
-   256 * 2^2 = 1024px of true width — Leaflet renders tiles true-to-scale,
-   it does not stretch them to fill an arbitrarily wide container. On any
-   screen wider than ~1024px (nearly all desktops), that left gray
-   placeholder background on both sides of the actual map, which read as
-   "not full width" / "about half the screen."
+   THE DONROE DOCTRINE — Interactive World Map v9
+   v9: fitBounds() fits BOTH width and height at once, using whichever
+   dimension is more constraining. Our map container is short relative to
+   its width (height is 100vh minus the nav bar and some margin), so on
+   most screens height ends up as the binding constraint — the map zooms
+   to fit vertically and leaves the excess width as gray padding on the
+   sides. That's why v8 reduced the padding but didn't remove it.
 
-   Fix: allow fractional zoom (zoomSnap: 0) and call fitBounds() on the
-   world extent after the map initialises, so Leaflet computes whatever
-   zoom level makes the world exactly fill the container's actual pixel
-   width. Re-fit on window resize (via invalidateSize, which recalculates
-   Leaflet's cached container size and refreshes the world-copy bounds)
-   so it keeps filling the container if the window is resized after load.
+   Fix: stop fitting height at all. Compute zoom directly from the
+   container's pixel WIDTH so 360 degrees of longitude always exactly
+   fills it, and let the poles (irrelevant to this dataset — nothing near
+   the Arctic/Antarctic) crop off the top and bottom on short containers.
+   This is how most full-bleed web maps handle a wide, short viewport.
    ========================================================================== */
 
 (function () {
@@ -63,10 +61,10 @@
   var mapEl = document.getElementById('doctrine-map');
   if (!mapEl) return;
 
-  var WORLD_BOUNDS = [[-60, -170], [75, 170]];
+  var MAP_CENTER = [20, 10];
 
   var map = L.map('doctrine-map', {
-    center: [20, 10],
+    center: MAP_CENTER,
     zoom: 2,
     minZoom: 1,
     maxZoom: 6,
@@ -87,16 +85,25 @@
     detectRetina: false
   }).addTo(map);
 
-  /* Size the initial view to the container's real pixel width instead of a
-     fixed integer zoom, so the map fills the container edge-to-edge on any
-     screen size. */
-  map.fitBounds(WORLD_BOUNDS, { animate: false });
+  /* Zoom so 360deg of longitude exactly fills the container's current
+     pixel width -- ignores height entirely, so a short/wide container
+     crops the poles instead of leaving gray padding on the sides. */
+  function fitZoomToWidth() {
+    var size = map.getSize();
+    if (!size || size.x <= 0) return;
+    var rawZoom = Math.log(size.x / 256) / Math.LN2;
+    var zoom = Math.max(map.options.minZoom, Math.min(map.options.maxZoom, rawZoom));
+    map.setView(MAP_CENTER, zoom, { animate: false });
+  }
+
+  fitZoomToWidth();
 
   var resizeTimer;
   window.addEventListener('resize', function () {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(function () {
       map.invalidateSize();
+      fitZoomToWidth();
     }, 150);
   });
 
