@@ -109,12 +109,15 @@
   - Iran
   category: nuclear
   term: 2
-  status: correct
+  status: wrong
   outcome_date: '2026-06-17'
   outcome_note: A memorandum of understanding was signed by the US and Iran on June 17, 2026, establishing a 60-day ceasefire,
     reopening the Strait of Hormuz, and creating a framework for nuclear negotiations. Iran agreed not to develop nuclear
     weapons; enrichment disposition to be negotiated. The deal was signed at the Palace of Versailles during the G7 summit.
-    Structural sanctions relief and nuclear dismantlement terms remain unresolved.
+    But the prediction's mechanism did not hold. Iran did not "call" because it had "no money" — the MOU followed US and
+    Israeli military strikes on Iranian nuclear facilities in February 2026, and represents an off-ramp from a war that was
+    not going according to plan, not economic capitulation. Structural sanctions relief and nuclear dismantlement terms remain
+    unresolved.
 - id: trade-wars-easy
   statement: Trade wars are good, and easy to win.
   date_made: '2018-03-02'
@@ -236,9 +239,7 @@
   outcome_date: null
   outcome_note: Denmark and Greenland firmly rejected any transfer. Greenland's Prime Minister stated the island "is not for
     sale." The US dispatched the Vice President to Nuuk in February 2025. No formal acquisition process initiated. Trump reiterated
-    the claim multiple times through 2025. At the January 2026 Davos conference, Trump pledged not to use force or tariffs
-    to annex the island, a rhetorical de-escalation from earlier threats. Public attention receded through mid-2026, though
-    NPR reported in June 2026 that acquisition efforts continued through non-public channels. No annexation has occurred.
+    the claim multiple times through 2025.
 - id: canada-51st-state
   statement: Canada should be the 51st state. It will happen one way or another.
   date_made: '2024-12-19'
@@ -292,9 +293,7 @@
   outcome_date: null
   outcome_note: The Iran war and Israel-Lebanon conflict complicated Saudi-Israel normalization through 2025-2026. Saudi Arabia
     continued to condition normalization on a Palestinian state pathway that Israel rejected. No normalization deal signed
-    as of mid-2026. Former Saudi intelligence chief Prince Turki bin Faisal said in mid-2026 that Riyadh would only consider
-    normalization once Israel "acts normally," while Crown Prince Mohammed bin Salman said the kingdom wants to join the
-    Abraham Accords but requires a clear pathway to Palestinian statehood, a condition Israel has not met.
+    as of mid-2026.
 - id: seven-wars-claim
   statement: I've ended seven wars. Seven un-endable wars. Nobody thought it could be done. I did it.
   date_made: '2025-09-22'
@@ -330,13 +329,15 @@
   - Iran
   category: war_peace
   term: 2
-  status: correct
-  outcome_date: '2026-06-17'
-  outcome_note: A ceasefire was announced June 12, 2026, and a memorandum of understanding signed June 17, 2026, ending active
-    US-Iran-Israel hostilities and reopening the Strait of Hormuz. The statement was made at UNGA on September 22, 2025 —
-    eight months before the MOU was signed. In the intervening period, US and Israeli forces conducted strikes on Iranian
-    nuclear facilities in February 2026. The MOU does not include Israel or Hezbollah as signatories. Lebanon ceasefire implementation
-    mechanism remains unclear.
+  status: wrong
+  outcome_date: '2026-02-01'
+  outcome_note: The war was not over when this claim was made. The statement was delivered at UNGA on September 22, 2025;
+    US and Israeli forces then conducted strikes on Iranian nuclear facilities in February 2026 — an escalation, not a peace,
+    five months after the "It's over" declaration. A ceasefire was not announced until June 12, 2026, and a memorandum of
+    understanding not signed until June 17, 2026 — nine months after the claim was made. The MOU does not include Israel
+    or Hezbollah as signatories, so a peace between Israel and Iran specifically was never actually concluded. Lebanon ceasefire
+    implementation mechanism remains unclear. Same premature-declaration pattern as the Congo-Rwanda and Thailand-Cambodia
+    claims made the same day, both graded wrong.
 - id: congo-rwanda-ended
   statement: I've made peace between Rwanda and the Congo. A peace deal has been signed. This conflict is over.
   date_made: '2025-09-22'

@@ -25,6 +25,6 @@ Nuclear talks scheduled for Switzerland within days of the signing were postpone
 
 The President stated that "The Deal with the Islamic Republic of Iran is now complete." The MOU describes itself as preliminary. The deal it is preliminary to has not been negotiated.
 
-The archive notes that the prediction logged on February 4, 2025 — that Iran would make a deal — has been updated to correct. The deal that was made is the deal described above.
+The archive notes that the prediction logged on February 4, 2025 — that Iran would make a deal because it "had no money" and would be "calling us" — has been reassessed as wrong. A deal was made, but not for the reason claimed: it followed US and Israeli strikes on Iranian nuclear facilities in February 2026, not economic capitulation. The deal that was made is the deal described above.
 
 — *The Editors*

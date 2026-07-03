@@ -1,0 +1,537 @@
+---
+layout: section
+permalink: /central-casting/
+title: "Central Casting"
+section_intro: >
+  A register of presidential commentary on the physical appearance of foreign
+  heads of state, heads of government, and senior officials — military, royal,
+  and diplomatic — who are not themselves the nominal head of state. Tracks
+  compliments, insults, and the ambiguous space between them, plus the target's
+  response where documented. Register is ongoing.
+body_class: page-central-casting
+---
+
+{% assign entries = site.data.central_casting.entries %}
+{% assign term1 = entries | where: "term", 1 %}
+{% assign term2 = entries | where: "term", 2 %}
+{% assign complimentary = entries | where: "valence", "complimentary" %}
+{% assign derogatory = entries | where: "valence", "derogatory" %}
+{% assign ambiguous = entries | where: "valence", "ambiguous" %}
+
+<div class="cc-meta-bar">
+  <div class="cc-stat">
+    <span class="cc-stat-n">{{ entries | size }}</span>
+    <span class="cc-stat-label">Documented remarks</span>
+  </div>
+  <div class="cc-stat">
+    <span class="cc-stat-n" id="cc-leader-count">—</span>
+    <span class="cc-stat-label">Leaders / officials</span>
+  </div>
+  <div class="cc-stat">
+    <span class="cc-stat-n" id="cc-country-count">—</span>
+    <span class="cc-stat-label">Countries</span>
+  </div>
+  <div class="cc-stat">
+    <span class="cc-stat-n">{{ term1 | size }}</span>
+    <span class="cc-stat-label">Term 1</span>
+  </div>
+  <div class="cc-stat">
+    <span class="cc-stat-n">{{ term2 | size }}</span>
+    <span class="cc-stat-label">Term 2</span>
+  </div>
+</div>
+
+<div class="cc-valence-bar" id="cc-valence-bar" aria-hidden="true">
+  <div class="cc-valence-seg cc-valence-seg--complimentary" id="cc-vseg-complimentary"></div>
+  <div class="cc-valence-seg cc-valence-seg--ambiguous" id="cc-vseg-ambiguous"></div>
+  <div class="cc-valence-seg cc-valence-seg--derogatory" id="cc-vseg-derogatory"></div>
+  <div class="cc-valence-seg cc-valence-seg--unrated" id="cc-vseg-unrated"></div>
+</div>
+<p class="cc-valence-legend">
+  <span><i class="cc-dot cc-dot--complimentary"></i>Complimentary ({{ complimentary | size }})</span>
+  <span><i class="cc-dot cc-dot--ambiguous"></i>Ambiguous ({{ ambiguous | size }})</span>
+  <span><i class="cc-dot cc-dot--derogatory"></i>Derogatory ({{ derogatory | size }})</span>
+  <span><i class="cc-dot cc-dot--unrated"></i>Unrated / contrast ({{ entries | size | minus: complimentary.size | minus: derogatory.size | minus: ambiguous.size }})</span>
+</p>
+
+<div class="cc-filter-bar">
+  <div class="cc-filter-group">
+    <span class="cc-filter-label">Term</span>
+    <button class="ccf active" data-filter="term" data-value="all">All</button>
+    <button class="ccf" data-filter="term" data-value="1">Term 1</button>
+    <button class="ccf" data-filter="term" data-value="2">Term 2</button>
+  </div>
+  <div class="cc-filter-group">
+    <span class="cc-filter-label">Valence</span>
+    <button class="ccf active" data-filter="valence" data-value="all">All</button>
+    <button class="ccf" data-filter="valence" data-value="complimentary">Complimentary</button>
+    <button class="ccf" data-filter="valence" data-value="ambiguous">Ambiguous</button>
+    <button class="ccf" data-filter="valence" data-value="derogatory">Derogatory</button>
+  </div>
+  <div class="cc-filter-group">
+    <span class="cc-filter-label">Role</span>
+    <button class="ccf active" data-filter="role" data-value="all">All</button>
+    <button class="ccf" data-filter="role" data-value="head_of_state">Head of State</button>
+    <button class="ccf" data-filter="role" data-value="head_of_government">Head of Government</button>
+    <button class="ccf" data-filter="role" data-value="military">Military</button>
+    <button class="ccf" data-filter="role" data-value="royal_non_head">Royal (non-head)</button>
+  </div>
+  <div class="cc-filter-group">
+    <span class="cc-filter-label">Focus</span>
+    <button class="ccf active" data-filter="focus" data-value="all">All</button>
+    <button class="ccf" data-filter="focus" data-value="face_general">Face / general</button>
+    <button class="ccf" data-filter="focus" data-value="body_specific">Body / height</button>
+    <button class="ccf" data-filter="focus" data-value="attire_adjacent">Attire-adjacent</button>
+    <button class="ccf" data-filter="focus" data-value="comparison_to_self">Comparison to self</button>
+  </div>
+  <div class="cc-filter-group">
+    <span class="cc-filter-label">Leader</span>
+    <button class="ccf active" data-filter="subject" data-value="all">All</button>
+    {% assign subject_list = entries | map: "subject" | uniq %}
+    {% for s in subject_list %}
+      <button class="ccf" data-filter="subject" data-value="{{ s }}">{{ s }}</button>
+    {% endfor %}
+  </div>
+</div>
+
+<p class="cc-count-line">Showing <span id="cc-count">{{ entries | size }}</span> of {{ entries | size }} remarks</p>
+
+<div class="cc-list" id="cc-list">
+{% for entry in entries %}
+<div class="cc-entry{% if entry.borderline %} cc-entry--borderline{% endif %}{% if entry.source_type == 'reported' %} cc-entry--reported{% endif %}"
+     data-id="{{ entry.id }}"
+     data-term="{{ entry.term }}"
+     data-valence="{{ entry.valence | default: 'unrated' }}"
+     data-role="{{ entry.role }}"
+     data-focus="{{ entry.focus | default: 'none' }}"
+     data-subject="{{ entry.subject }}"
+     data-country="{{ entry.country }}">
+
+  <div class="cc-entry-header">
+    <div class="cc-entry-meta">
+      <span class="cc-date mono">{{ entry.date | date: "%b %-d, %Y" }}</span>
+      <span class="cc-term-chip">Term {{ entry.term }}</span>
+      <span class="cc-subject-chip cc-subject--{{ entry.subject | slugify }}">{{ entry.subject }}</span>
+      <span class="cc-country-chip">{{ entry.country }}</span>
+      <span class="cc-role-chip cc-role--{{ entry.role }}">{{ entry.role | replace: '_', ' ' }}</span>
+      {% if entry.source_type == 'reported' %}<span class="cc-reported-chip">Reported</span>{% endif %}
+      {% if entry.borderline %}<span class="cc-borderline-chip">Borderline</span>{% endif %}
+    </div>
+    <div class="cc-valence-chips">
+      {% if entry.valence %}
+        <span class="cc-valence-chip cc-valence--{{ entry.valence }}">{{ entry.valence }}</span>
+      {% else %}
+        <span class="cc-valence-chip cc-valence--unrated">unrated</span>
+      {% endif %}
+      {% if entry.focus %}<span class="cc-focus-chip">{{ entry.focus | replace: '_', ' ' }}</span>{% endif %}
+    </div>
+  </div>
+
+  <blockquote class="cc-quote">&ldquo;{{ entry.quote }}&rdquo;</blockquote>
+
+  <p class="cc-context">{{ entry.context }}</p>
+
+  {% if entry.reaction %}
+  <p class="cc-reaction">&#8618; {{ entry.reaction }}</p>
+  {% endif %}
+
+  {% if entry.motif and entry.motif.size > 0 %}
+  <div class="cc-motif-chips">
+    {% for m in entry.motif %}
+      <span class="cc-motif-chip">{{ m | replace: '_', ' ' }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <div class="cc-footer">
+    <span class="cc-source">
+      {% if entry.source_url %}
+        <a href="{{ entry.source_url }}" target="_blank" rel="noopener">{{ entry.source }}</a>
+      {% else %}
+        {{ entry.source }}
+      {% endif %}
+    </span>
+    <button class="cc-notes-toggle" data-id="{{ entry.id }}">Doctrine note &#9662;</button>
+  </div>
+
+  <div class="cc-notes-panel" id="ccnotes-{{ entry.id }}" style="display:none;">
+    <p>{{ entry.notes }}</p>
+  </div>
+
+</div>
+{% endfor %}
+</div>
+
+<div class="cc-register-note">
+  <p><strong>Register status: ongoing.</strong> Entries cover documented remarks identified through transcripts, White House pool reports, and verified press coverage. Commentary on domestic US officials (press secretaries, cabinet nominees) is deliberately excluded even where the same rhetorical habit applies, to keep this register scoped to foreign heads of state, heads of government, and senior foreign officials.</p>
+  <p>Role classification: <code>head_of_state · head_of_government · military · royal_non_head · diplomatic · other_senior</code> — captures officials who are senior but not the nominal head of their country, a distinction this register treats as significant rather than incidental.</p>
+  <p>Valence: <code>complimentary · ambiguous · derogatory</code> — left blank where a remark is extensive praise but never touches on appearance (see Asim Munir), logged as a deliberate contrast rather than force-fit onto the compliment/insult axis.</p>
+</div>
+
+<style>
+/* ── Meta bar ──────────────────────────────────────────────────── */
+.cc-meta-bar {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1.5rem 0 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 1.25rem;
+}
+.cc-stat { display: flex; flex-direction: column; gap: 0.15rem; }
+.cc-stat-n {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1;
+}
+.cc-stat-label {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--color-light-grey);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ── Valence split bar ─────────────────────────────────────────── */
+.cc-valence-bar {
+  display: flex;
+  width: 100%;
+  height: 10px;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--color-border);
+}
+.cc-valence-seg { height: 100%; }
+.cc-valence-seg--complimentary { background: #2e7d32; }
+.cc-valence-seg--ambiguous     { background: #b8860b; }
+.cc-valence-seg--derogatory    { background: #8b1a1a; }
+.cc-valence-seg--unrated       { background: #999; }
+.cc-valence-legend {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--color-light-grey);
+  margin: 0 0 1.5rem;
+}
+.cc-valence-legend span { display: inline-flex; align-items: center; gap: 0.35rem; }
+.cc-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.cc-dot--complimentary { background: #2e7d32; }
+.cc-dot--ambiguous      { background: #b8860b; }
+.cc-dot--derogatory     { background: #8b1a1a; }
+.cc-dot--unrated        { background: #999; }
+
+/* ── Filter bar ────────────────────────────────────────────────── */
+.cc-filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+.cc-filter-group {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.cc-filter-label {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--color-light-grey);
+  min-width: 75px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+.ccf {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-mid-grey);
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.15s;
+}
+.ccf:hover { border-color: var(--color-accent); color: var(--color-accent); }
+.ccf.active {
+  background: var(--color-near-black);
+  color: var(--color-white);
+  border-color: var(--color-near-black);
+}
+
+/* ── Count line ────────────────────────────────────────────────── */
+.cc-count-line {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: var(--color-light-grey);
+  margin-bottom: 1.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+/* ── Entry ─────────────────────────────────────────────────────── */
+.cc-entry {
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  background: var(--color-surface, #fafafa);
+}
+.cc-entry:hover { border-color: var(--color-accent); }
+.cc-entry--borderline { border-left-color: #b8860b; }
+.cc-entry--reported { opacity: 0.9; }
+
+.cc-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.cc-entry-meta { display: flex; gap: 0.4rem; flex-wrap: wrap; align-items: center; }
+.cc-date { font-size: var(--text-sm); color: var(--color-light-grey); }
+
+/* ── Chips ─────────────────────────────────────────────────────── */
+.cc-term-chip {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  padding: 0.15rem 0.5rem;
+  background: var(--color-near-black);
+  color: var(--color-white);
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.cc-subject-chip {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+  border: 1px solid;
+  font-weight: 600;
+  color: var(--color-body);
+  background: rgba(0, 0, 0, 0.035);
+  border-color: var(--color-border);
+}
+.cc-country-chip {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid var(--color-border);
+  color: var(--color-body);
+  border-radius: 2px;
+}
+.cc-role-chip {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid var(--color-border);
+  color: var(--color-mid-grey);
+  border-radius: 2px;
+  font-style: italic;
+}
+
+.cc-valence-chips { display: flex; gap: 0.35rem; flex-wrap: wrap; }
+.cc-valence-chip {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  padding: 0.18rem 0.5rem;
+  border-radius: 2px;
+  border: 1px solid;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.cc-valence--complimentary { color: #2e7d32; background: #2e7d3215; border-color: #2e7d3244; }
+.cc-valence--ambiguous     { color: #b8860b; background: #b8860b15; border-color: #b8860b44; }
+.cc-valence--derogatory    { color: #8b1a1a; background: #8b1a1a15; border-color: #8b1a1a44; }
+.cc-valence--unrated       { color: #666; background: #66666615; border-color: #66666644; }
+.cc-focus-chip {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  padding: 0.18rem 0.5rem;
+  border-radius: 2px;
+  border: 1px solid var(--color-border);
+  color: var(--color-mid-grey);
+}
+
+/* ── Quote ─────────────────────────────────────────────────────── */
+.cc-quote {
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--color-body);
+  border-left: none;
+  margin: 0 0 0.6rem;
+  padding: 0;
+}
+
+/* ── Context / reaction ───────────────────────────────────────── */
+.cc-context {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: var(--color-light-grey);
+  margin: 0 0 0.5rem;
+}
+.cc-reaction {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: var(--color-accent);
+  margin: 0 0 0.75rem;
+}
+
+/* ── Motif chips ──────────────────────────────────────────────── */
+.cc-motif-chips { display: flex; gap: 0.3rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
+.cc-motif-chip {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  padding: 0.12rem 0.45rem;
+  border-radius: 2px;
+  border: 1px dashed var(--color-border);
+  color: var(--color-mid-grey);
+}
+
+/* ── Footer ────────────────────────────────────────────────────── */
+.cc-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.cc-source { font-family: var(--font-ui); font-size: var(--text-xs); color: var(--color-light-grey); }
+.cc-source a { color: var(--color-light-grey); text-decoration: underline; text-decoration-color: var(--color-border); }
+.cc-source a:hover { color: var(--color-accent); }
+.cc-notes-toggle {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--color-light-grey);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-color: var(--color-border);
+}
+.cc-notes-toggle:hover { color: var(--color-accent); }
+
+/* ── Notes panel ───────────────────────────────────────────────── */
+.cc-notes-panel {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  font-size: var(--text-sm);
+  color: var(--color-mid-grey);
+  line-height: 1.65;
+}
+
+/* ── Reported / borderline chips ──────────────────────────────── */
+.cc-reported-chip {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid #888;
+  color: #888;
+  border-radius: 2px;
+  font-style: italic;
+}
+.cc-borderline-chip {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid #b8860b;
+  color: #b8860b;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ── Register note ─────────────────────────────────────────────── */
+.cc-register-note {
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface, #fafafa);
+  font-size: var(--text-sm);
+  color: var(--color-mid-grey);
+  line-height: 1.7;
+}
+.cc-register-note p { margin: 0 0 0.5rem; }
+.cc-register-note p:last-child { margin: 0; }
+.cc-register-note code { font-family: var(--font-mono); font-size: 0.7rem; color: var(--color-body); }
+</style>
+
+<script>
+(function() {
+  var entries = Array.from(document.querySelectorAll('.cc-entry'));
+
+  // Count distinct leaders/officials and countries
+  var leaders = new Set(), countries = new Set();
+  entries.forEach(function(el) {
+    leaders.add(el.getAttribute('data-subject'));
+    countries.add(el.getAttribute('data-country'));
+  });
+  document.getElementById('cc-leader-count').textContent = leaders.size;
+  document.getElementById('cc-country-count').textContent = countries.size;
+
+  // Valence split bar
+  var counts = { complimentary: 0, ambiguous: 0, derogatory: 0, unrated: 0 };
+  entries.forEach(function(el) {
+    var v = el.getAttribute('data-valence') || 'unrated';
+    if (counts[v] === undefined) v = 'unrated';
+    counts[v]++;
+  });
+  var total = entries.length || 1;
+  ['complimentary', 'ambiguous', 'derogatory', 'unrated'].forEach(function(v) {
+    var seg = document.getElementById('cc-vseg-' + v);
+    if (seg) seg.style.width = (counts[v] / total * 100) + '%';
+  });
+
+  // Notes toggles
+  document.querySelectorAll('.cc-notes-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var panel = document.getElementById('ccnotes-' + btn.getAttribute('data-id'));
+      if (!panel) return;
+      var open = panel.style.display !== 'none';
+      panel.style.display = open ? 'none' : 'block';
+      btn.innerHTML = open ? 'Doctrine note &#9662;' : 'Doctrine note &#9652;';
+    });
+  });
+
+  // Filtering
+  var activeFilters = { term: 'all', valence: 'all', role: 'all', focus: 'all', subject: 'all' };
+  var countEl = document.getElementById('cc-count');
+
+  function applyFilters() {
+    var visible = 0;
+    entries.forEach(function(el) {
+      var termMatch    = activeFilters.term === 'all' || el.getAttribute('data-term') === activeFilters.term;
+      var valenceMatch = activeFilters.valence === 'all' || el.getAttribute('data-valence') === activeFilters.valence;
+      var roleMatch    = activeFilters.role === 'all' || el.getAttribute('data-role') === activeFilters.role;
+      var focusMatch   = activeFilters.focus === 'all' || el.getAttribute('data-focus') === activeFilters.focus;
+      var subjectMatch = activeFilters.subject === 'all' || el.getAttribute('data-subject') === activeFilters.subject;
+      var show = termMatch && valenceMatch && roleMatch && focusMatch && subjectMatch;
+      el.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    countEl.textContent = visible;
+  }
+
+  document.querySelectorAll('.ccf').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var ft = btn.getAttribute('data-filter');
+      activeFilters[ft] = btn.getAttribute('data-value');
+      btn.closest('.cc-filter-group').querySelectorAll('.ccf').forEach(function(b) {
+        b.classList.toggle('active', b === btn);
+      });
+      applyFilters();
+    });
+  });
+})();
+</script>

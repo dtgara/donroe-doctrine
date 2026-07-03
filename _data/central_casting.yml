@@ -1,0 +1,330 @@
+# Central Casting Register
+# Documents presidential commentary on the physical appearance of foreign heads
+# of state, heads of government, and other senior foreign officials (military,
+# royal, diplomatic) who are not themselves the nominal head of state.
+# Unlike the Strongmen Files (governance-style praise) or Epithets (country
+# characterisation), this register tracks commentary on individual appearance
+# specifically — compliments, insults, and the ambiguous space between them.
+# Status: incomplete — register grows as transcripts and pool reports are catalogued.
+# Last updated: 2026-07-03
+
+entries:
+  - id: cc001
+    date: "2017-11-11"
+    term: 1
+    subject: Kim Jong-un
+    country: North Korea
+    role: head_of_state
+    gender: m
+    valence: derogatory
+    focus: body_specific
+    quote: >-
+      Why would Kim Jong Un insult me by calling me "old," when I would NEVER
+      call him "short and fat?"
+    context: Twitter/X, responding to Kim Jong-un calling Trump "old" in a state media statement
+    source: "Twitter/X, November 11, 2017 (widely reported contemporaneously)"
+    source_url:
+    source_type: public
+    motif: [insult_by_denial]
+    reaction:
+    notes: >-
+      Denies making an insult while making it in the same sentence — the
+      insult-by-denial move recurs in later material and is worth tracking
+      as its own motif rather than a one-off.
+
+  - id: cc002
+    date: "2018-06-12"
+    term: 1
+    subject: Kim Jong-un
+    country: North Korea
+    role: head_of_state
+    gender: m
+    valence: complimentary
+    focus: comparison_to_self
+    quote: "Getting a good picture, everybody? So we look nice and handsome and thin and perfect?"
+    context: Singapore summit, joint photo session with press pool
+    source: "The Hill, June 12, 2018"
+    source_url: "https://thehill.com/homenews/administration/391760-trump-asks-photographers-at-summit-to-make-sure-pictures-show-them/"
+    source_type: public
+    motif: [photo_op_vanity]
+    reaction: "Kim reportedly remained expressionless on hearing the translation; described by those present as 'not amused.'"
+    notes: >-
+      Framed as a joint compliment but centred on how Trump himself would
+      appear in the photo — filed under comparison_to_self rather than a
+      pure compliment to Kim.
+
+  - id: cc003
+    date: "2024-12-07"
+    term: 2
+    subject: Prince William
+    country: United Kingdom
+    role: royal_non_head
+    gender: m
+    valence: complimentary
+    focus: face_general
+    quote: "Good-looking guy."
+    context: Remarks to press following a Paris meeting around the Notre-Dame Cathedral reopening
+    source: "Yahoo News, December 2024"
+    source_url: "https://www.yahoo.com/news/trump-gushes-over-really-very-222501774.html"
+    source_type: public
+    motif: []
+    reaction:
+    notes: >-
+      William is Prince of Wales, not head of state (King Charles III holds
+      that role) — an early example of the pattern extending past heads of
+      state to senior, non-nominal royals.
+
+  - id: cc004
+    date: "2025-05-13"
+    term: 2
+    subject: Mohammed bin Salman
+    country: Saudi Arabia
+    role: head_of_government
+    gender: m
+    valence: complimentary
+    focus: face_general
+    quote: "Tall, handsome guys that happen to be very smart."
+    context: Remarks at a US-Saudi investment conference, Riyadh, describing MBS and the Emir of Qatar together
+    source: "Al-Monitor, May 2025"
+    source_url: "https://www.al-monitor.com/originals/2025/05/magnificent-handsome-trumps-fascination-gulf-leaders"
+    source_type: public
+    motif: []
+    reaction:
+    notes: >-
+      MBS is Crown Prince and Prime Minister, not head of state — King
+      Salman holds that title. Paired in the same sentence with cc005.
+
+  - id: cc005
+    date: "2025-05-13"
+    term: 2
+    subject: Tamim bin Hamad Al Thani
+    country: Qatar
+    role: head_of_state
+    gender: m
+    valence: complimentary
+    focus: face_general
+    quote: "Tall, handsome guys that happen to be very smart."
+    context: Remarks at a US-Saudi investment conference, Riyadh, describing MBS and the Emir of Qatar together
+    source: "Al-Monitor, May 2025"
+    source_url: "https://www.al-monitor.com/originals/2025/05/magnificent-handsome-trumps-fascination-gulf-leaders"
+    source_type: public
+    motif: []
+    reaction:
+    notes: Same remark as cc004; logged as a separate entry since it names a distinct subject.
+
+  - id: cc006
+    date: "2025-05-14"
+    term: 2
+    subject: Ahmed al-Sharaa
+    country: Syria
+    role: head_of_state
+    gender: m
+    valence: complimentary
+    focus: face_general
+    quote: "He looked really, very handsome last night. Some people look better in person. He looked great. He looked really nice, and I told him that."
+    context: Remarks following a meeting with Syria's president on the sidelines of the Gulf trip
+    source: "Washington Post, October 17, 2025 (compiling remarks from May 2025)"
+    source_url: "https://www.washingtonpost.com/politics/2025/10/17/trump-looks-appearances-beautiful-ugly/"
+    source_type: public
+    motif: []
+    reaction:
+    notes: Al-Sharaa's US terrorist designation was lifted around the same period as this Gulf trip.
+
+  - id: cc007
+    date: "2025-06-18"
+    term: 2
+    subject: Asim Munir
+    country: Pakistan
+    role: military
+    gender: m
+    valence:
+    focus:
+    quote: "An exceptional man, a great fighter, my favorite field marshal."
+    context: Remarks following a White House lunch with Pakistan's army chief, after the India-Pakistan ceasefire
+    source: "Al Jazeera, December 31, 2025 (compiling remarks from mid-2025)"
+    source_url: "https://www.aljazeera.com/news/2025/12/31/how-pakistans-asim-munir-became-trumps-favourite-field-marshal"
+    source_type: public
+    motif: [praised_but_not_on_looks]
+    reaction:
+    notes: >-
+      Deliberate contrast row. Munir — Pakistan's military chief, not its
+      head of state or head of government — has received some of the most
+      extravagant praise of the term, consistently framed around competence
+      and toughness, never appearance. Included with valence/focus left
+      blank to make that absence visible rather than force-fitting it into
+      the compliment axis.
+
+  - id: cc008
+    date: "2025-08-01"
+    term: 2
+    subject: Giorgia Meloni
+    country: Italy
+    role: head_of_government
+    gender: f
+    valence: complimentary
+    focus: face_general
+    quote: "You look fantastic."
+    context: Overheard on a hot mic at a White House gathering
+    source: "The Daily Beast, 2025"
+    source_url: "https://www.thedailybeast.com/trump-79-awkwardly-tells-world-leader-giorgia-meloni-shes-beautiful/"
+    source_type: reported
+    motif: []
+    reaction:
+    notes: >-
+      Date approximate (reported as "August" without a specific day in
+      available sourcing). Meloni is head of government; Italy's head of
+      state is President Sergio Mattarella.
+
+  - id: cc009
+    date: "2025-09-17"
+    term: 2
+    subject: Catherine, Princess of Wales
+    country: United Kingdom
+    role: royal_non_head
+    gender: f
+    valence: complimentary
+    focus: face_general
+    quote: "You're beautiful, so beautiful."
+    context: Arrival remarks during the UK state visit, Windsor Castle
+    source: "Widely reported, September 2025 UK state visit pool coverage"
+    source_url:
+    source_type: reported
+    motif: []
+    reaction:
+    notes: Date reflects the state visit window; exact day of the specific remark not independently confirmed.
+
+  - id: cc010
+    date: "2025-10-13"
+    term: 2
+    subject: Giorgia Meloni
+    country: Italy
+    role: head_of_government
+    gender: f
+    valence: complimentary
+    focus: face_general
+    quote: >-
+      We have a woman — a young woman who is... I'm not allowed to say it
+      because usually it's the end of your political career if you say it.
+      She's a beautiful young woman.
+    context: Remarks at the Gaza peace summit, Sharm el-Sheikh, Egypt
+    source: "The Daily Beast, October 2025"
+    source_url: "https://www.thedailybeast.com/trump-79-awkwardly-tells-world-leader-giorgia-meloni-shes-beautiful/"
+    source_type: public
+    motif: [disclaimer_bit]
+    reaction: "Meloni separately disputed a related Trump claim that she had 'begged' for a photo with him."
+    notes: >-
+      The self-aware disclaimer ("I'm not allowed to say it") recurs in
+      close-to-verbatim form across multiple women leaders and is tracked
+      here as its own motif rather than treated as incidental framing.
+
+  - id: cc011
+    date: "2025-10-13"
+    term: 2
+    subject: Eyal Zamir
+    country: Israel
+    role: military
+    gender: m
+    valence: complimentary
+    focus: face_general
+    quote: "You know, the guy's central casting. Let's put him in a movie."
+    context: Address to the Israeli Knesset, gesturing at IDF Chief of Staff Eyal Zamir
+    source: "Widely reported, Knesset address, October 2025"
+    source_url:
+    source_type: public
+    motif: [central_casting_literal]
+    reaction:
+    notes: >-
+      Zamir is IDF Chief of Staff, not a head of state or government —
+      another example of the pattern reaching senior military officials
+      specifically.
+
+  - id: cc012
+    date: "2026-01-21"
+    term: 2
+    subject: Emmanuel Macron
+    country: France
+    role: head_of_state
+    gender: m
+    valence: ambiguous
+    focus: attire_adjacent
+    quote: "I watched Emmanuel Macron yesterday with those beautiful sunglasses."
+    context: Davos address, referencing the aviator sunglasses Macron wore during his own remarks
+    source: "Euronews, January 21, 2026"
+    source_url: "https://www.euronews.com/2026/01/21/trump-mocks-macrons-aviators-in-davos-address-amid-growing-war-of-words"
+    source_type: public
+    motif: []
+    reaction:
+    notes: >-
+      The Élysée Palace said the glasses were worn to protect an eye injured
+      by a burst blood vessel; the remark reads as sarcastic rather than a
+      genuine compliment, hence ambiguous rather than complimentary.
+
+  - id: cc013
+    date: "2026-04-02"
+    term: 2
+    subject: Emmanuel Macron
+    country: France
+    role: head_of_state
+    gender: m
+    valence: derogatory
+    focus:
+    borderline: true
+    quote: "I call up France, Macron — whose wife treats him extremely badly. Still recovering from the right to the jaw."
+    context: Public remarks referencing a viral video clip appearing to show Brigitte Macron shoving the French president
+    source: "France 24, April 2, 2026"
+    source_url: "https://www.france24.com/en/france/20260402-trump-dig-macron-wife-brigitte-treats-badly-sparks-anger-france"
+    source_type: public
+    motif: [borderline_non_appearance]
+    reaction: "Macron called the comments 'neither elegant nor up to standard.'"
+    notes: >-
+      Marked borderline: the jab targets Macron's marriage and masculinity
+      rather than his appearance directly. Included on grounds of
+      documentary completeness, consistent with how epithets.yml handles
+      adjacent-but-not-quite-on-topic material.
+
+  - id: cc014
+    date: "2026-05-15"
+    term: 2
+    subject: Xi Jinping
+    country: China
+    role: head_of_state
+    gender: m
+    valence: complimentary
+    focus: body_specific
+    quote: >-
+      If you went to Hollywood and looked for a leader of China to play a
+      role in a movie... he's Central Casting. He's tall, very tall.
+      Especially for this country, cause they tend to be a little bit shorter.
+    context: Interview with Sean Hannity, Beijing, following a US-China summit
+    source: "HuffPost, May 15, 2026"
+    source_url: "https://www.huffpost.com/entry/donald-trump-xi-jinping-sean-hannity-interview-central-casting_n_6a0684e1e4b0a33000e10244"
+    source_type: public
+    motif: [central_casting_literal, national_stereotype]
+    reaction:
+    notes: >-
+      The literal "Central Casting" phrase that gives this register its
+      name. The second half of the quote generalises about height across
+      an entire nationality and is flagged separately via the
+      national_stereotype motif tag.
+
+  - id: cc015
+    date: "2026-06-17"
+    term: 2
+    subject: Narendra Modi
+    country: India
+    role: head_of_government
+    gender: m
+    valence: complimentary
+    focus: face_general
+    quote: "The most beautiful-looking man... he looks so nice, like an angel. But he's as tough as he is a killer."
+    context: Remarks following a G7 summit meeting
+    source: "India TV News, June 17, 2026"
+    source_url: "https://www.indiatvnews.com/news/world/trump-calls-pm-modi-most-beautiful-looking-man-says-he-appears-like-an-angel-but-he-is-as-tough-as-he-is-a-killer-2026-06-17-1045225"
+    source_type: public
+    motif: [angel_killer_pairing]
+    reaction:
+    notes: >-
+      Modi is head of government; India's head of state is President
+      Droupadi Murmu. The compliment-then-violent-qualifier structure
+      ("angel... but a killer") recurs closely enough across entries to
+      warrant its own motif tag.

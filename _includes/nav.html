@@ -15,7 +15,7 @@
       <li><a href="{{ '/interests/' | relative_url }}"{% if page.url contains '/interests' %} class="active" aria-current="page"{% endif %}>The Interests</a></li>
 
       {% assign in_conduct = false %}
-      {% if page.url contains '/strongmen' or page.url contains '/epithets' or page.url contains '/contradictions' or page.url contains '/leaderboard' %}{% assign in_conduct = true %}{% endif %}
+      {% if page.url contains '/strongmen' or page.url contains '/epithets' or page.url contains '/central-casting' or page.url contains '/contradictions' or page.url contains '/leaderboard' %}{% assign in_conduct = true %}{% endif %}
       <li class="nav-dropdown">
         <button class="nav-dropdown-trigger{% if in_conduct %} active{% endif %}" aria-expanded="false" aria-haspopup="true">
           Conduct <span class="nav-dropdown-arrow">▾</span>
@@ -23,6 +23,7 @@
         <ul class="nav-dropdown-menu" role="menu">
           <li><a href="{{ '/strongmen/' | relative_url }}"{% if page.url contains '/strongmen' %} class="active"{% endif %} role="menuitem">Strongmen</a></li>
           <li><a href="{{ '/epithets/' | relative_url }}"{% if page.url contains '/epithets' %} class="active"{% endif %} role="menuitem">Epithets</a></li>
+          <li><a href="{{ '/central-casting/' | relative_url }}"{% if page.url contains '/central-casting' %} class="active"{% endif %} role="menuitem">Central Casting</a></li>
           <li><a href="{{ '/contradictions/' | relative_url }}"{% if page.url contains '/contradictions' %} class="active"{% endif %} role="menuitem">Contradictions</a></li>
           <li><a href="{{ '/leaderboard/' | relative_url }}"{% if page.url contains '/leaderboard' %} class="active"{% endif %} role="menuitem">Leaderboard</a></li>
         </ul>
