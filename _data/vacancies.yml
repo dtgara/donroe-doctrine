@@ -23,8 +23,15 @@ snapshot_note: >-
   117 countries lacked a Senate-confirmed US ambassador as of the snapshot
   date. A separate rolling count put total worldwide vacancies at "at least
   110" once ~80 pre-existing vacancies were added to a wave of early-2026
-  recalls. Only 76 of the 117 are itemized below (Africa, Americas, Oceania);
-  the remainder span Europe, Asia, and the Middle East and await sourcing.
+  recalls. 76 of the 117 vacant posts are itemized below from the Africa,
+  Americas, and Oceania reporting; the remainder span Europe, Asia, and the
+  Middle East and were largely unsourced until a targeted follow-up pass
+  against individual embassy leadership pages (e.g. [country].usembassy.gov)
+  added Germany and Saudi Arabia as confirmed vacant/acting posts, plus five
+  filled posts (UK, Israel, Japan, Mexico, South Korea) for status contrast.
+  That per-post lookup method works and scales — see incident vac005 for an
+  example of what it turns up — but has only been run against a small,
+  strategically-selected sample so far, not the full remaining list.
 
 posts:
   # ── Africa ──────────────────────────────────────────────────────────────
@@ -187,7 +194,65 @@ posts:
   - { name: Tuvalu, code: TV, region: Oceania, status: vacant }
   - { name: Vanuatu, code: VU, region: Oceania, status: vacant }
 
-  # ── Filled posts (illustrative, not exhaustive — see notes) ───────────────
+  # ── Europe ──────────────────────────────────────────────────────────────
+  - name: United Kingdom
+    code: GB
+    region: Europe
+    status: political_appointee
+    appointee: Warren A. Stephens
+    appointee_type: political
+    notes: "Confirmed and sworn in April 30, 2025; presented credentials to King Charles III on May 21, 2025."
+    source_url: "https://uk.usembassy.gov/ambassador/"
+  - name: Germany
+    code: DE
+    region: Europe
+    status: acting_charge_daffaires
+    appointee: Alan Meltzer
+    appointee_type: career
+    strategic_flag: true
+    notes: "Chargé d'affaires ad interim in Berlin. No Senate-confirmed ambassador in post as of this entry's sourcing."
+    source_url:
+
+  # ── Middle East ─────────────────────────────────────────────────────────
+  - name: Saudi Arabia
+    code: SA
+    region: Middle East
+    status: acting_charge_daffaires
+    appointee: Alison Dilworth
+    appointee_type: career
+    strategic_flag: true
+    notes: "Chargée d'Affaires ad interim in Riyadh; joined the Foreign Service in 1997, prior postings in Asuncion, Jerusalem, Cairo, Warsaw, and Abu Dhabi. No Senate-confirmed ambassador in post."
+    source_url: "https://sa.usembassy.gov/dcm-2/"
+  - name: Israel
+    code: IL
+    region: Middle East
+    status: political_appointee
+    appointee: Mike Huckabee
+    appointee_type: political
+    strategic_flag: true
+    notes: "Former Governor of Arkansas; nominated November 2024."
+    source_url:
+
+  # ── Asia ────────────────────────────────────────────────────────────────
+  - name: Japan
+    code: JP
+    region: Asia
+    status: political_appointee
+    appointee: George E. Glass
+    appointee_type: political
+    notes: "Confirmed April 8, 2025; previously US Ambassador to Portugal during Term 1."
+    source_url:
+  - name: South Korea
+    code: KR
+    region: Asia
+    status: political_appointee
+    appointee: Michelle Park Steel
+    appointee_type: political
+    strategic_flag: true
+    notes: "Post vacant since Ambassador Goldberg's departure in January 2025, cycling through multiple acting chargés (Kevin Kim, then James Heller) before Steel's Senate confirmation in April 2026 — over a year vacant. Former US Congresswoman (California). See incident vac005."
+    source_url:
+
+  # ── Filled posts, Americas (illustrative, not exhaustive — see notes) ─────
   - name: Bahamas
     code: BS
     region: Americas
@@ -195,6 +260,15 @@ posts:
     appointee: Herschel Walker
     appointee_type: political
     notes: "Former NFL/USFL running back; no prior diplomatic background. See incident vac003."
+  - name: Mexico
+    code: MX
+    region: Americas
+    status: political_appointee
+    appointee: Ronald D. Johnson
+    appointee_type: political
+    strategic_flag: true
+    notes: "Confirmed April 9, 2025; previously US Ambassador to El Salvador."
+    source_url:
 
 incidents:
   - id: vac001
@@ -284,3 +358,24 @@ incidents:
     source: "Washington Times"
     source_url: "https://www.washingtontimes.com/news/2025/oct/7/senate-confirms-107-trump-nominees-clearing-bulk-backlog/"
     notes: "Reduces individual scrutiny per nominee in exchange for clearing the backlog — a process story in its own right, not just a numbers story."
+
+  - id: vac005
+    date: "2026-04-14"
+    term: 2
+    type: notable_appointment
+    countries: [South Korea]
+    headline: "South Korea ambassadorship filled after 15-month vacancy and a rotating cast of acting chargés"
+    detail: >-
+      The Seoul post went vacant when Ambassador Philip Goldberg departed in
+      January 2025. Kevin Kim served as acting chargé d'affaires before
+      leaving the post himself; James "Jim" Heller then took over as acting
+      chargé d'affaires ad interim. Former US Congresswoman Michelle Park
+      Steel was nominated and Senate-confirmed in April 2026 — roughly
+      fifteen months after the vacancy began — becoming the second Korean
+      American and second woman to hold the post.
+    appointee: Michelle Park Steel
+    donor_amount_usd:
+    career_background: "Former US Congresswoman representing California; no prior diplomatic background."
+    source: "Stars and Stripes; Korea Herald; Korea Times"
+    source_url: "https://www.stripes.com/theaters/asia_pacific/2026-04-14/michelle-park-steel-south-korea-ambassador-21370409.html"
+    notes: "Logged as a distinct incident rather than folded into the posts roster row because the rotating-acting-official pattern, not just the eventual fill, is the point — a major treaty ally went over a year without a confirmed US ambassador."
