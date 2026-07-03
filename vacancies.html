@@ -1,0 +1,386 @@
+---
+layout: default
+title: "The Vacancies"
+permalink: /vacancies/
+body_class: page-vacancies
+---
+
+{% assign posts = site.data.vacancies.posts %}
+{% assign incidents = site.data.vacancies.incidents %}
+{% assign vacant_posts = posts | where: "status", "vacant" %}
+{% assign africa_posts = posts | where: "region", "Africa" %}
+{% assign americas_posts = posts | where: "region", "Americas" %}
+{% assign oceania_posts = posts | where: "region", "Oceania" %}
+{% assign strategic_posts = posts | where: "strategic_flag", true %}
+
+<header class="section-header">
+  <div class="section-header-inner">
+    <h1 class="section-title">The Vacancies</h1>
+    <p class="section-intro">
+      Every US ambassadorial post documented as vacant, click any country for
+      what's known. {{ site.data.vacancies.snapshot_total_vacant }} countries
+      lacked a Senate-confirmed US ambassador as of the {{ site.data.vacancies.snapshot_date | date: "%B %-d, %Y" }}
+      snapshot; {{ vacant_posts | size }} are itemized below.
+    </p>
+  </div>
+</header>
+
+<div class="vc-meta-bar">
+  <div class="vc-stat">
+    <span class="vc-stat-n">{{ site.data.vacancies.snapshot_total_vacant }}</span>
+    <span class="vc-stat-label">Vacant posts (total, per State Dept)</span>
+  </div>
+  <div class="vc-stat">
+    <span class="vc-stat-n">{{ vacant_posts | size }}</span>
+    <span class="vc-stat-label">Itemized in this register</span>
+  </div>
+  <div class="vc-stat">
+    <span class="vc-stat-n">31</span>
+    <span class="vc-stat-label">Ambassadors recalled (AFSA, Feb 2026)</span>
+  </div>
+  <div class="vc-stat">
+    <span class="vc-stat-n">91%</span>
+    <span class="vc-stat-label">Term-2 appointments that are political, not career</span>
+  </div>
+  <div class="vc-stat">
+    <span class="vc-stat-n">$60M</span>
+    <span class="vc-stat-label">Nominee pre-nomination donations</span>
+  </div>
+</div>
+
+<div class="map-container">
+  <div id="doctrine-map"></div>
+
+  <div class="map-legend">
+    <p class="map-legend-title">Post Status</p>
+    <div class="map-legend-item">
+      <div class="map-legend-swatch" style="background:#C0392B;"></div>
+      <span>Vacant</span>
+    </div>
+    <div class="map-legend-item">
+      <div class="map-legend-swatch" style="background:#B8860B;"></div>
+      <span>Political Appointee</span>
+    </div>
+    <div class="map-legend-item">
+      <div class="map-legend-swatch" style="background:#2E7D32;"></div>
+      <span>Career Foreign Service</span>
+    </div>
+    <div class="map-legend-item">
+      <div class="map-legend-swatch" style="background:#1565C0;"></div>
+      <span>Acting Chargé d'Affaires</span>
+    </div>
+    <div class="map-legend-item">
+      <div class="map-legend-swatch" style="background:#9E9E9E;"></div>
+      <span>Not Yet Catalogued</span>
+    </div>
+  </div>
+
+  <div class="country-panel" id="country-panel" role="dialog" aria-label="Post details" aria-hidden="true">
+    <button class="country-panel-close" id="panel-close" aria-label="Close">&times;</button>
+    <div id="panel-content"></div>
+  </div>
+</div>
+
+{% comment %}Post data embedded by Jekyll — read by vacancies-map.js via getElementById{% endcomment %}
+<script type="application/json" id="vacancy-post-data">{{ posts | jsonify }}</script>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/assets/js/vacancies-map.js"></script>
+
+<div class="container" style="padding-top:2.5rem;padding-bottom:1rem;">
+  <h2 class="vc-incidents-title">Notable Incidents</h2>
+  <p class="vc-incidents-intro">The map above is a bulk-synced roster, not individually sourced per row. The entries below are — specific, dated, primary-sourced events that explain how the vacancies arose and who's filling the posts that aren't vacant.</p>
+
+  <div class="vc-filter-bar">
+    <span class="vc-filter-label">Type</span>
+    <button class="vcf active" data-filter="type" data-value="all">All</button>
+    <button class="vcf" data-filter="type" data-value="mass_recall">Mass Recall</button>
+    <button class="vcf" data-filter="type" data-value="donor_disclosure">Donor Disclosure</button>
+    <button class="vcf" data-filter="type" data-value="notable_appointment">Notable Appointment</button>
+    <button class="vcf" data-filter="type" data-value="procedural_change">Procedural Change</button>
+    <button class="vcf" data-filter="type" data-value="vacancy_consequence">Vacancy Consequence</button>
+  </div>
+
+  <p class="vc-count-line">Showing <span id="vc-count">{{ incidents | size }}</span> of {{ incidents | size }} incidents</p>
+
+  <div class="vc-list" id="vc-list">
+  {% for entry in incidents %}
+  <div class="vc-entry"
+       data-id="{{ entry.id }}"
+       data-type="{{ entry.type }}">
+
+    <div class="vc-entry-header">
+      <div class="vc-entry-meta">
+        <span class="vc-date mono">{{ entry.date | date: "%b %-d, %Y" }}</span>
+        <span class="vc-term-chip">Term {{ entry.term }}</span>
+        <span class="vc-type-chip vc-type--{{ entry.type }}">{{ entry.type | replace: '_', ' ' }}</span>
+        {% for c in entry.countries %}<span class="vc-country-chip">{{ c }}</span>{% endfor %}
+      </div>
+    </div>
+
+    <h3 class="vc-headline">{{ entry.headline }}</h3>
+    <p class="vc-detail">{{ entry.detail }}</p>
+
+    {% if entry.appointee %}<p class="vc-appointee"><strong>Appointee:</strong> {{ entry.appointee }}{% if entry.career_background %} — {{ entry.career_background }}{% endif %}</p>{% endif %}
+    {% if entry.donor_amount_usd %}<p class="vc-donor"><strong>Documented pre-nomination donations:</strong> ${{ entry.donor_amount_usd | divided_by: 1000000 }}M</p>{% endif %}
+
+    <div class="vc-footer">
+      <span class="vc-source">
+        {% if entry.source_url %}
+          <a href="{{ entry.source_url }}" target="_blank" rel="noopener">{{ entry.source }}</a>
+        {% else %}
+          {{ entry.source }}
+        {% endif %}
+      </span>
+      <button class="vc-notes-toggle" data-id="{{ entry.id }}">Doctrine note &#9662;</button>
+    </div>
+
+    <div class="vc-notes-panel" id="vcnotes-{{ entry.id }}" style="display:none;">
+      <p>{{ entry.notes }}</p>
+    </div>
+
+  </div>
+  {% endfor %}
+  </div>
+
+  <div class="vc-register-note">
+    <p><strong>Register status: incomplete by design.</strong> The <code>posts</code> roster covers {{ africa_posts | size }} Africa, {{ americas_posts | size }} Americas, and {{ oceania_posts | size }} Oceania vacancies itemized in available reporting on the State Department's "Ambassadorial Assignments Overseas" document (snapshot date {{ site.data.vacancies.snapshot_date }}). Europe, Asia, and Middle East vacancies are known to exist — {{ site.data.vacancies.snapshot_total_vacant }} countries lacked a confirmed ambassador in total — but were not itemized in the source reporting used to seed this register.</p>
+    <p>Unlike the Strongmen, Epithets, and Central Casting registers, the <code>posts</code> roster is bulk-synced against AFSA's tracker on a rolling basis rather than individually primary-sourced per row. The <code>incidents</code> list above holds the individually sourced, narrative material.</p>
+    <p>{{ strategic_posts | size }} posts are flagged as strategically significant in the map above — a judgment call about why a given vacancy matters, not a claim that unflagged posts don't.</p>
+  </div>
+</div>
+
+<style>
+/* ── Meta bar ──────────────────────────────────────────────────── */
+.vc-meta-bar {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1.5rem 5%;
+  border-bottom: 1px solid var(--color-border);
+}
+.vc-stat { display: flex; flex-direction: column; gap: 0.15rem; max-width: 180px; }
+.vc-stat-n {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1;
+}
+.vc-stat-label {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--color-light-grey);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+}
+
+/* ── Incidents header ─────────────────────────────────────────── */
+.vc-incidents-title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  margin-bottom: 0.5rem;
+}
+.vc-incidents-intro {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: var(--color-mid-grey);
+  max-width: 720px;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* ── Filter bar ────────────────────────────────────────────────── */
+.vc-filter-bar {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.vc-filter-label {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--color-light-grey);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-right: 0.25rem;
+}
+.vcf {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-mid-grey);
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.15s;
+}
+.vcf:hover { border-color: var(--color-accent); color: var(--color-accent); }
+.vcf.active {
+  background: var(--color-near-black);
+  color: var(--color-white);
+  border-color: var(--color-near-black);
+}
+
+.vc-count-line {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: var(--color-light-grey);
+  margin-bottom: 1.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+/* ── Entry ─────────────────────────────────────────────────────── */
+.vc-entry {
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  background: var(--color-surface, #fafafa);
+}
+.vc-entry:hover { border-color: var(--color-accent); }
+
+.vc-entry-header { margin-bottom: 0.5rem; }
+.vc-entry-meta { display: flex; gap: 0.4rem; flex-wrap: wrap; align-items: center; }
+.vc-date { font-size: var(--text-sm); color: var(--color-light-grey); }
+
+.vc-term-chip {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  padding: 0.15rem 0.5rem;
+  background: var(--color-near-black);
+  color: var(--color-white);
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.vc-type-chip {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  padding: 0.18rem 0.5rem;
+  border-radius: 2px;
+  border: 1px solid var(--color-border);
+  color: var(--color-mid-grey);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.vc-country-chip {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid var(--color-border);
+  color: var(--color-body);
+  border-radius: 2px;
+}
+
+.vc-headline {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  margin: 0.5rem 0 0.5rem;
+}
+.vc-detail {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  line-height: 1.65;
+  color: var(--color-body);
+  margin: 0 0 0.6rem;
+}
+.vc-appointee, .vc-donor {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: var(--color-mid-grey);
+  margin: 0 0 0.4rem;
+}
+
+.vc-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+.vc-source { font-family: var(--font-ui); font-size: var(--text-xs); color: var(--color-light-grey); }
+.vc-source a { color: var(--color-light-grey); text-decoration: underline; text-decoration-color: var(--color-border); }
+.vc-source a:hover { color: var(--color-accent); }
+.vc-notes-toggle {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--color-light-grey);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-color: var(--color-border);
+}
+.vc-notes-toggle:hover { color: var(--color-accent); }
+
+.vc-notes-panel {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  font-size: var(--text-sm);
+  color: var(--color-mid-grey);
+  line-height: 1.65;
+}
+
+/* ── Register note ─────────────────────────────────────────────── */
+.vc-register-note {
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface, #fafafa);
+  font-size: var(--text-sm);
+  color: var(--color-mid-grey);
+  line-height: 1.7;
+}
+.vc-register-note p { margin: 0 0 0.5rem; }
+.vc-register-note p:last-child { margin: 0; }
+.vc-register-note code { font-family: var(--font-mono); font-size: 0.7rem; color: var(--color-body); }
+</style>
+
+<script>
+(function() {
+  var entries = Array.from(document.querySelectorAll('.vc-entry'));
+
+  document.querySelectorAll('.vc-notes-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var panel = document.getElementById('vcnotes-' + btn.getAttribute('data-id'));
+      if (!panel) return;
+      var open = panel.style.display !== 'none';
+      panel.style.display = open ? 'none' : 'block';
+      btn.innerHTML = open ? 'Doctrine note &#9662;' : 'Doctrine note &#9652;';
+    });
+  });
+
+  var activeType = 'all';
+  var countEl = document.getElementById('vc-count');
+
+  function applyFilter() {
+    var visible = 0;
+    entries.forEach(function(el) {
+      var show = activeType === 'all' || el.getAttribute('data-type') === activeType;
+      el.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    countEl.textContent = visible;
+  }
+
+  document.querySelectorAll('.vcf').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      activeType = btn.getAttribute('data-value');
+      document.querySelectorAll('.vcf').forEach(function(b) {
+        b.classList.toggle('active', b === btn);
+      });
+      applyFilter();
+    });
+  });
+})();
+</script>

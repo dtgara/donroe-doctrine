@@ -1,0 +1,286 @@
+# The Vacancies — US Ambassador Vacancy Register
+# Two top-level keys: `posts` (per-country roster, bulk-synced against AFSA's
+# tracker on a rolling basis — NOT individually primary-sourced the way
+# strongmen.yml/epithets.yml/central_casting.yml entries are) and `incidents`
+# (narrative register of specific documented events — recalls, notable
+# appointments, procedural changes — which ARE individually primary-sourced).
+#
+# Status: incomplete by design. The `posts` roster below covers the Africa,
+# Americas, and Oceania vacancies itemized in available reporting on the
+# State Department's "Ambassadorial Assignments Overseas" document. Europe,
+# Asia, and Middle East vacancies are known to exist (117 countries total
+# per the same document) but were not itemized in the source article used
+# to seed this register — a gap for a future sprint to close against the
+# primary document directly.
+#
+# Last updated: 2026-07-03
+
+snapshot_date: "2026-04-08"
+snapshot_source: "US Dept. of State, 'Ambassadorial Assignments Overseas'; reported via Punch/PRIMA News; cross-referenced against AFSA Ambassador Tracker"
+snapshot_source_url: "https://afsa.org/list-ambassadorial-appointments"
+snapshot_total_vacant: 117
+snapshot_note: >-
+  117 countries lacked a Senate-confirmed US ambassador as of the snapshot
+  date. A separate rolling count put total worldwide vacancies at "at least
+  110" once ~80 pre-existing vacancies were added to a wave of early-2026
+  recalls. Only 76 of the 117 are itemized below (Africa, Americas, Oceania);
+  the remainder span Europe, Asia, and the Middle East and await sourcing.
+
+posts:
+  # ── Africa ──────────────────────────────────────────────────────────────
+  - { name: Algeria, code: DZ, region: Africa, status: vacant }
+  - { name: Angola, code: AO, region: Africa, status: vacant }
+  - { name: Benin, code: BJ, region: Africa, status: vacant }
+  - { name: Burundi, code: BI, region: Africa, status: vacant }
+  - { name: Cabo Verde, code: CV, region: Africa, status: vacant }
+  - { name: Cameroon, code: CM, region: Africa, status: vacant }
+  - { name: Central African Republic, code: CF, region: Africa, status: vacant }
+  - { name: Chad, code: TD, region: Africa, status: vacant }
+  - { name: Comoros, code: KM, region: Africa, status: vacant }
+  - name: Democratic Republic of the Congo
+    code: CD
+    region: Africa
+    status: vacant
+    strategic_flag: true
+    notes: "Active conflict zone (M23); site of the June 2026 DRC-Rwanda minerals deal (see Deals) signed without a confirmed US ambassador in either capital."
+  - { name: "Côte d'Ivoire", code: CI, region: Africa, status: vacant }
+  - name: Egypt
+    code: EG
+    region: Africa
+    status: vacant
+    strategic_flag: true
+    notes: "Major non-NATO ally; hosted the October 2025 Gaza peace summit without a confirmed US ambassador in-country."
+  - { name: Eritrea, code: ER, region: Africa, status: vacant }
+  - { name: Eswatini, code: SZ, region: Africa, status: vacant }
+  - { name: Gabon, code: GA, region: Africa, status: vacant }
+  - { name: The Gambia, code: GM, region: Africa, status: vacant }
+  - { name: Ghana, code: GH, region: Africa, status: vacant }
+  - { name: Guinea, code: GN, region: Africa, status: vacant }
+  - { name: Guinea-Bissau, code: GW, region: Africa, status: vacant }
+  - name: Kenya
+    code: KE
+    region: Africa
+    status: vacant
+    strategic_flag: true
+    notes: "Largest US diplomatic and security presence in East Africa; a major non-NATO ally left without a confirmed ambassador."
+  - { name: Lesotho, code: LS, region: Africa, status: vacant }
+  - { name: Liberia, code: LR, region: Africa, status: vacant }
+  - { name: Libya, code: LY, region: Africa, status: vacant }
+  - { name: Madagascar, code: MG, region: Africa, status: vacant }
+  - { name: Malawi, code: MW, region: Africa, status: vacant }
+  - { name: Mauritania, code: MR, region: Africa, status: vacant }
+  - { name: Mauritius, code: MU, region: Africa, status: vacant }
+  - { name: Mozambique, code: MZ, region: Africa, status: vacant }
+  - name: Niger
+    code: NE
+    region: Africa
+    status: vacant
+    vacant_since: "2026-02-10"
+    vacancy_reason: recalled
+    strategic_flag: true
+    notes: "Ambassador recalled in the February 2026 mass recall — the same year a US missionary pilot was kidnapped in-country. See incident vac001."
+  - name: Nigeria
+    code: NG
+    region: Africa
+    status: vacant
+    strategic_flag: true
+    notes: "Africa's most populous country and largest economy; named specifically in reporting on the 117-country State Department list."
+  - { name: Republic of the Congo, code: CG, region: Africa, status: vacant }
+  - name: Rwanda
+    code: RW
+    region: Africa
+    status: vacant
+    vacant_since: "2026-02-10"
+    vacancy_reason: recalled
+    strategic_flag: true
+    notes: "Ambassador recalled in the February 2026 mass recall, weeks after the White House-brokered DRC-Rwanda minerals agreement. See incident vac001."
+  - { name: Sao Tome and Principe, code: ST, region: Africa, status: vacant }
+  - { name: Senegal, code: SN, region: Africa, status: vacant }
+  - { name: Seychelles, code: SC, region: Africa, status: vacant }
+  - { name: Sierra Leone, code: SL, region: Africa, status: vacant }
+  - name: Somalia
+    code: SO
+    region: Africa
+    status: vacant
+    strategic_flag: true
+    notes: "Active US counter-terrorism operations against al-Shabaab conducted without a confirmed ambassador in-country."
+  - name: Sudan
+    code: SD
+    region: Africa
+    status: vacant
+    strategic_flag: true
+    notes: "Ongoing civil war; among the largest humanitarian crises globally, left without a confirmed US ambassador."
+  - { name: Tanzania, code: TZ, region: Africa, status: vacant }
+  - { name: Togo, code: TG, region: Africa, status: vacant }
+
+  # ── Americas ────────────────────────────────────────────────────────────
+  - { name: Antigua and Barbuda, code: AG, region: Americas, status: vacant }
+  - { name: Barbados, code: BB, region: Americas, status: vacant }
+  - { name: Belize, code: BZ, region: Americas, status: vacant }
+  - { name: Bolivia, code: BO, region: Americas, status: vacant }
+  - name: Brazil
+    code: BR
+    region: Americas
+    status: vacant
+    strategic_flag: true
+    notes: "Largest economy in Latin America and a G20 partner, left without a confirmed US ambassador amid tariff and political tension with the Lula government."
+  - name: Colombia
+    code: CO
+    region: Americas
+    status: vacant
+    strategic_flag: true
+    notes: "Major regional security partner, vacant amid repeated public disputes between Trump and President Petro."
+  - name: Cuba
+    code: CU
+    region: Americas
+    status: vacant
+    strategic_flag: true
+  - { name: Dominica, code: DM, region: Americas, status: vacant }
+  - { name: Ecuador, code: EC, region: Americas, status: vacant }
+  - { name: El Salvador, code: SV, region: Americas, status: vacant }
+  - { name: Grenada, code: GD, region: Americas, status: vacant }
+  - { name: Guatemala, code: GT, region: Americas, status: vacant }
+  - name: Haiti
+    code: HT
+    region: Americas
+    status: vacant
+    strategic_flag: true
+    notes: "Ongoing gang-control crisis and multinational security mission conducted without a confirmed US ambassador in-country."
+  - { name: Honduras, code: HN, region: Americas, status: vacant }
+  - { name: Jamaica, code: JM, region: Americas, status: vacant }
+  - { name: Nicaragua, code: NI, region: Americas, status: vacant }
+  - { name: Paraguay, code: PY, region: Americas, status: vacant }
+  - { name: Saint Kitts and Nevis, code: KN, region: Americas, status: vacant }
+  - { name: Saint Lucia, code: LC, region: Americas, status: vacant }
+  - { name: Saint Vincent and the Grenadines, code: VC, region: Americas, status: vacant }
+  - { name: Suriname, code: SR, region: Americas, status: vacant }
+  - { name: Trinidad and Tobago, code: TT, region: Americas, status: vacant }
+  - name: Venezuela
+    code: VE
+    region: Americas
+    status: vacant
+    strategic_flag: true
+    notes: "No US ambassador amid the Maduro standoff and 2025-2026 US military operations in the region."
+
+  # ── Oceania ─────────────────────────────────────────────────────────────
+  - name: Australia
+    code: AU
+    region: Oceania
+    status: vacant
+    strategic_flag: true
+    notes: "AUKUS treaty partner; vacant through the Pentagon's mid-2025 review of the submarine pact and Trump's October 2025 reaffirmation of it."
+  - { name: Cook Islands, code: CK, region: Oceania, status: vacant }
+  - { name: Fiji, code: FJ, region: Oceania, status: vacant }
+  - { name: Kiribati, code: KI, region: Oceania, status: vacant }
+  - { name: Marshall Islands, code: MH, region: Oceania, status: vacant }
+  - { name: Nauru, code: NR, region: Oceania, status: vacant }
+  - name: New Zealand
+    code: NZ
+    region: Oceania
+    status: vacant
+    strategic_flag: true
+  - { name: Niue, code: NU, region: Oceania, status: vacant }
+  - { name: Papua New Guinea, code: PG, region: Oceania, status: vacant }
+  - { name: Samoa, code: WS, region: Oceania, status: vacant }
+  - { name: Solomon Islands, code: SB, region: Oceania, status: vacant }
+  - { name: Tonga, code: TO, region: Oceania, status: vacant }
+  - { name: Tuvalu, code: TV, region: Oceania, status: vacant }
+  - { name: Vanuatu, code: VU, region: Oceania, status: vacant }
+
+  # ── Filled posts (illustrative, not exhaustive — see notes) ───────────────
+  - name: Bahamas
+    code: BS
+    region: Americas
+    status: political_appointee
+    appointee: Herschel Walker
+    appointee_type: political
+    notes: "Former NFL/USFL running back; no prior diplomatic background. See incident vac003."
+
+incidents:
+  - id: vac001
+    date: "2026-02-10"
+    term: 2
+    type: mass_recall
+    countries: [Rwanda, Nigeria, Niger]
+    headline: "Mass recall leaves over half of sub-Saharan Africa without a US ambassador"
+    detail: >-
+      AFSA confirmed the recall of 31 ambassadors by February 10, 2026; AP
+      reporting put the figure at 13 chiefs of mission recalled specifically,
+      bringing total Africa vacancies to roughly 30 posts — more than half
+      the countries in sub-Saharan Africa. Rwanda, Nigeria, and Niger were
+      named among the posts affected. Niger's recall came the same year a US
+      missionary pilot was kidnapped in-country. The administration cited a
+      pivot from aid-based to "business-focused" diplomacy — trade deals and
+      rare-earth agreements in place of career diplomatic presence. The Africa
+      Bureau's senior career official, Jonathan Pratt, retired around the
+      same period.
+    appointee:
+    donor_amount_usd:
+    career_background:
+    source: "AP, via The Business Standard; AFSA"
+    source_url: "https://www.tbsnews.net/worldbiz/usa/trumps-recall-ambassadors-compounds-staffing-problems-posts-africa-1317896"
+    notes: "Anchor incident for the register — a single dated event, not an accumulation of unrelated vacancies."
+
+  - id: vac002
+    date: "2026-03-11"
+    term: 2
+    type: donor_disclosure
+    countries: []
+    headline: "Ambassador nominees' pre-nomination donations total roughly $60 million"
+    detail: >-
+      Trump's second-term ambassador nominees collectively donated
+      approximately $60 million to Trump and Republican committees in the
+      two years preceding their nomination — roughly three times what
+      Biden's non-career ambassador nominees and their spouses gave over a
+      full decade. Of 101 second-term ambassador appointments recorded by
+      AFSA, only 9 (8.9%) went to career Foreign Service officers against
+      92 (91.1%) political appointees — a sharp break from both Trump's own
+      first term (43.5% political) and the roughly two-thirds-career norm
+      both parties have kept since the 1950s. In 2025, only six Foreign
+      Service officers were nominated to ambassadorial posts at all
+      (Bahrain, Bangladesh, Jordan, Kazakhstan, Sri Lanka, Thailand),
+      against 64 political nominees over the same period.
+    appointee:
+    donor_amount_usd: 60000000
+    career_background:
+    source: "AFSA, 'The Marginalization of Career Diplomats'"
+    source_url: "https://afsa.org/marginalization-career-diplomats"
+    notes: "Aggregate, not attributable to a single post — logged as a standalone incident rather than forced onto one country's row in the posts roster."
+
+  - id: vac003
+    date: "2025-01-20"
+    term: 2
+    type: notable_appointment
+    countries: [Bahamas]
+    headline: "Herschel Walker confirmed as ambassador to the Bahamas"
+    detail: >-
+      Former NFL and USFL running back Herschel Walker, a 2022 US Senate
+      candidate in Georgia with no prior diplomatic background, was
+      confirmed as US ambassador to the Bahamas.
+    appointee: Herschel Walker
+    donor_amount_usd:
+    career_background: "Professional football player and 2022 Senate candidate; no prior diplomatic or foreign policy background."
+    source: "Multiple outlets; Senate confirmation record"
+    source_url:
+    notes: "Illustrative case for the political-appointee pattern documented in vac002. Date reflects confirmation-cycle timing, not independently verified to the day."
+
+  - id: vac004
+    date: "2025-10-07"
+    term: 2
+    type: procedural_change
+    countries: []
+    headline: "Senate confirms 107 nominees in bulk after rules change to simple-majority group votes"
+    detail: >-
+      The Senate confirmed 107 Trump nominees — including more than two
+      dozen ambassadors, agency heads, and US attorneys — in a single push
+      after changing its procedural rules to allow lower-level nominees to
+      be considered in groups by simple majority, rather than individually.
+      Ambassadors to India, Poland, and Denmark were among those confirmed
+      in the batch. The change cleared the bulk of a confirmation backlog
+      that had left 26 committee-approved nominees awaiting floor votes.
+    appointee:
+    donor_amount_usd:
+    career_background:
+    source: "Washington Times"
+    source_url: "https://www.washingtontimes.com/news/2025/oct/7/senate-confirms-107-trump-nominees-clearing-bulk-backlog/"
+    notes: "Reduces individual scrutiny per nominee in exchange for clearing the backlog — a process story in its own right, not just a numbers story."
