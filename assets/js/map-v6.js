@@ -1,5 +1,10 @@
 /* =============================================================================
-   THE DONROE DOCTRINE — Interactive World Map v5
+   THE DONROE DOCTRINE — Interactive World Map v6
+   v6: add noWrap:true to the tile layer — without it, Leaflet draws
+   duplicate/repeating world tiles at low zoom despite maxBounds/
+   worldCopyJump/maxBoundsViscosity already being set, which reads as an
+   infinite horizontally-scrolling map. Same fix applied to the Vacancies
+   map (assets/js/vacancies-map.js) for consistency.
    ========================================================================== */
 
 (function () {
@@ -64,7 +69,8 @@
   L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
     subdomains: 'abcd',
-    maxZoom: 20
+    maxZoom: 20,
+    noWrap: true
   }).addTo(map);
 
   /* ---------------------------------------------------------------------------
