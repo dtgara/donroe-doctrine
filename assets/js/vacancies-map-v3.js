@@ -1,12 +1,18 @@
 /* =============================================================================
-   THE DONROE DOCTRINE — Vacancies Map v2
-   v2: drop the {r} (retina) token from the CartoDB tile URL, matching the
-   fix applied to the main Doctrine Map (assets/js/map-v7.js). Leaflet was
-   requesting @2x tile variants on high-DPI (Retina) screens and CARTO's
-   free basemap service was returning 400 for them, leaving large portions
-   of the map showing only the gray placeholder background instead of
-   basemap tiles. The overlay (country GeoJSON) rendered fine regardless —
-   only the underlying tile imagery was affected.
+   THE DONROE DOCTRINE — Vacancies Map v3
+   v3: fix the map not filling the full width of its container, matching
+   the fix applied to the main Doctrine Map (assets/js/map-v8.js). Root
+   cause was a fixed integer zoom (2), at which Leaflet's tiles only cover
+   256 * 2^2 = 1024px of true width — Leaflet renders tiles true-to-scale,
+   it does not stretch them to fill an arbitrarily wide container. On any
+   screen wider than ~1024px (nearly all desktops), that left gray
+   placeholder background on both sides of the actual map.
+
+   Fix: allow fractional zoom (zoomSnap: 0.1) and call fitBounds() on the
+   world extent after the map initialises, so Leaflet computes whatever
+   zoom level makes the world exactly fill the container's actual pixel
+   width. Re-fit on window resize (via invalidateSize) so it keeps filling
+   the container if the window is resized after load.
 
    Adapted from map-v5.js (the main Doctrine Map). Reuses the same DOM
    element IDs and CSS classes as the main map (#doctrine-map,
@@ -27,7 +33,7 @@
        a hash mismatch blocked the main map in Safari previously.
      - This file has its own version suffix so editing it doesn't collide
        with the main map's cache-busting history. If this file's logic
-       changes materially later, bump the suffix again (v3, v4, ...).
+       changes materially later, bump the suffix again (v4, v5, ...).
    ========================================================================== */
 
 (function () {
@@ -75,11 +81,15 @@
   var mapEl = document.getElementById('doctrine-map');
   if (!mapEl) return;
 
+  var WORLD_BOUNDS = [[-60, -170], [75, 170]];
+
   var map = L.map('doctrine-map', {
     center: [20, 10],
     zoom: 2,
-    minZoom: 2,
+    minZoom: 1,
     maxZoom: 6,
+    zoomSnap: 0.1,
+    zoomDelta: 0.5,
     zoomControl: true,
     attributionControl: true,
     worldCopyJump: false,
@@ -94,6 +104,19 @@
     noWrap: true,
     detectRetina: false
   }).addTo(map);
+
+  /* Size the initial view to the container's real pixel width instead of a
+     fixed integer zoom, so the map fills the container edge-to-edge on any
+     screen size. */
+  map.fitBounds(WORLD_BOUNDS, { animate: false });
+
+  var resizeTimer;
+  window.addEventListener('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () {
+      map.invalidateSize();
+    }, 150);
+  });
 
   /* ---------------------------------------------------------------------------
      Country panel — reuses #country-panel / .country-panel-* from style-v2.css
