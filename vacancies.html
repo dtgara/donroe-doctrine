@@ -48,6 +48,23 @@ body_class: page-vacancies
   </div>
 </div>
 
+<style>
+/* Full-bleed override: force the map to span the true viewport width no
+   matter what the parent's own width resolves to. Belt-and-braces on top
+   of .map-container's width:100% in style-v2.css. Matches the same fix
+   applied to map.html for consistency. */
+.map-container {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+body { overflow-x: hidden; }
+</style>
+
 <div class="map-container">
   <div id="doctrine-map"></div>
 
