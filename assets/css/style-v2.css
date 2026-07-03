@@ -1248,12 +1248,12 @@ body { padding-top: var(--nav-height); }
   max-width: var(--max-width);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 2.6fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "brand groups"
-    "legal groups";
+    "brand legal"
+    "groups groups";
   column-gap: 3rem;
-  row-gap: 1.25rem;
+  row-gap: 1.75rem;
 }
 
 .footer-brand { grid-area: brand; }
@@ -1273,41 +1273,40 @@ body { padding-top: var(--nav-height); }
 }
 
 /* Footer nav — grouped to mirror the header's Conduct/Record/Archive/Games
-   dropdowns, so the list of sections doesn't collapse into one long single
-   column. Each group is capped at ~5 items by design; add new sections to
-   whichever group they belong in rather than growing a flat list. */
+   dropdowns, so the section list doesn't collapse into one long column.
+   Each group renders as a single wrapping line (label + inline links)
+   rather than a stacked list, so five groups cost five short lines
+   instead of five tall columns. Add new sections to whichever group
+   they belong in rather than growing a flat list. */
 .footer-nav-groups {
   grid-area: groups;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding-top: 1.5rem;
 }
-.footer-nav-group-title {
-  font-family: var(--font-ui);
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.55);
-  margin: 0 0 0.6rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 1px solid rgba(255,255,255,0.15);
-}
-.footer-nav-group ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.footer-nav-group li a {
+.footer-nav-group {
   font-family: var(--font-ui);
   font-size: var(--text-xs);
+  line-height: 1.7;
+}
+.footer-nav-group-title {
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: rgba(255,255,255,0.55);
+  margin-right: 0.5rem;
+}
+.footer-nav-group a {
   color: rgba(255,255,255,0.45);
   text-decoration: none;
-  display: block;
-  padding: 0.2rem 0;
   transition: color var(--transition-fast);
 }
-.footer-nav-group li a:hover { color: var(--color-white); }
+.footer-nav-group a:hover { color: var(--color-white); }
+.footer-nav-group .sep {
+  color: rgba(255,255,255,0.25);
+  margin: 0 0.5rem;
+}
 
 .footer-legal {
   font-family: var(--font-ui);
@@ -1463,13 +1462,10 @@ body { padding-top: var(--nav-height); }
     grid-template-columns: 1fr;
     grid-template-areas:
       "brand"
-      "groups"
-      "legal";
+      "legal"
+      "groups";
   }
   .footer-legal { align-self: auto; }
-  .footer-nav-groups {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 @media (max-width: 768px) {
@@ -1526,9 +1522,6 @@ body { padding-top: var(--nav-height); }
 
   .footer-inner {
     gap: 2rem;
-  }
-  .footer-nav-groups {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .tariff-result-meta {
