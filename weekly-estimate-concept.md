@@ -135,6 +135,22 @@ New readers may take the first paragraph at face value. By the Sector Impact sec
 
 Real scenario-planning structure, real NATO mechanics, and the only joke is the footnote back to the site's own Article III. No punchline required.
 
+## Archive Page: Card Layout and Filters
+
+The `/estimates/` archive page (`estimates.html`) lists every issue as a card. Card order, top to bottom: confidence label, headline, date, excerpt — the date sits directly beneath the headline rather than at the bottom of the card, so it's visible without reading past the title.
+
+Filtering is handled by three dropdowns above the grid — Sector, Month, Confidence — built on the generic filter system already present in `assets/js/main.js` (`data-filter-container` / `data-filter-key` / `data-filter-item`), which was previously unused elsewhere on the site. No new JavaScript was needed. Schema per card:
+
+- `data-sector`: every sector group covered in that issue's `sector_impact`, slugified and space-joined (e.g. `"energy mining technology logistics agriculture-commodities finance"`). The generic filter does a substring match, so a card is included whenever the selected sector appears anywhere in that list — this is what makes six-sectors-per-card work with a single-select dropdown.
+- `data-month`: `YYYY-MM` derived from the issue's `date`. The Month dropdown's options are generated dynamically via `group_by_exp`, so it never needs manual updating as new issues are added.
+- `data-confidence`: the issue's `confidence` field, lowercased.
+
+There is no separate cross-issue Sector Impact tracker (no scatter chart or dedicated database page, the way The Interests has one) — each issue's Sector Impact grid still lives only on that issue's own page. The archive filters are the lean version of "browse by sector"; a dedicated tracker page would be a larger follow-on build if the archive filters turn out not to be enough.
+
+This is a template-level change (`estimates.html`, `_includes/footer.html`) — the scheduled task never touches layouts or other existing files, so nothing about the automated drafting needed to change. Every future issue the task creates picks up the new card order and becomes filterable automatically, since the filtering logic derives entirely from fields (`sector_impact`, `date`, `confidence`) the task was already writing.
+
+The footer's first link group now includes The Weekly Estimate alongside The Doctrine, The Map, The Ledger, and The Interests, matching its position in the top nav.
+
 ## Open Questions
 
 All open questions from the initial draft are resolved: collection structure, byline, and Sector Impact roster are settled above. Remaining decision is purely editorial — which two rotating categories to run in the first issue, based on whatever the doctrine is actually doing that week.

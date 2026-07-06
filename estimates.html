@@ -9,17 +9,60 @@ body_class: page-estimates
 ---
 
 {% assign estimates = site.estimates | sort: "date" | reverse %}
+{% assign month_groups = site.estimates | group_by_exp: "e", "e.date | date: '%Y-%m'" | sort: "name" | reverse %}
 
 {% if estimates and estimates.size > 0 %}
-<div class="card-grid">
+<div class="est-filter-bar" data-filter-container="#estimates-grid">
+  <div class="est-filter-group">
+    <span class="est-filter-label">Sector</span>
+    <select data-filter-key="sector">
+      <option value="all">All sectors</option>
+      <option value="energy">Energy</option>
+      <option value="mining">Mining</option>
+      <option value="technology">Technology</option>
+      <option value="logistics">Logistics</option>
+      <option value="finance">Finance</option>
+      <option value="sovereign-wealth-gulf-capital">Sovereign Wealth &amp; Gulf Capital</option>
+      <option value="agriculture-commodities">Agriculture &amp; Commodities</option>
+      <option value="defense-aerospace">Defense &amp; Aerospace</option>
+    </select>
+  </div>
+  <div class="est-filter-group">
+    <span class="est-filter-label">Month</span>
+    <select data-filter-key="month">
+      <option value="all">All months</option>
+      {% for g in month_groups %}
+        <option value="{{ g.name }}">{{ g.items.first.date | date: "%B %Y" }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div class="est-filter-group">
+    <span class="est-filter-label">Confidence</span>
+    <select data-filter-key="confidence">
+      <option value="all">All confidence levels</option>
+      <option value="high">High</option>
+      <option value="moderate">Moderate</option>
+      <option value="low">Low</option>
+    </select>
+  </div>
+  <span class="est-filter-count">
+    Showing <span data-filter-count>{{ estimates.size }}</span> of {{ estimates.size }} issues
+  </span>
+</div>
+
+<div class="card-grid" id="estimates-grid">
   {% for e in estimates %}
-  <article class="card">
+  {% capture sector_data %}{% for s in e.sector_impact %}{{ s.group | slugify }} {% endfor %}{% endcapture %}
+  <article class="card" data-filter-item
+            data-sector="{{ sector_data | strip }}"
+            data-month="{{ e.date | date: '%Y-%m' }}"
+            data-confidence="{{ e.confidence | downcase }}">
     <p class="card-label">{% if e.confidence %}Confidence: {{ e.confidence }}{% endif %}</p>
     <h2 class="card-title"><a href="{{ e.url | relative_url }}">{{ e.title }}</a></h2>
-    {% if e.excerpt %}<p class="card-excerpt">{{ e.excerpt }}</p>{% endif %}
     <div class="card-meta">
       <time>{{ e.date | date: "%B %-d, %Y" }}</time>
     </div>
+    {% if e.excerpt %}<p class="card-excerpt">{{ e.excerpt }}</p>{% endif %}
   </article>
   {% endfor %}
 </div>
@@ -28,3 +71,47 @@ body_class: page-estimates
   <p>The first Weekly Estimate is in preparation. Analysis, like diplomacy, takes longer than expected.</p>
 </div>
 {% endif %}
+
+<style>
+.est-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.est-filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.est-filter-label {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--color-light-grey, var(--color-mid-grey));
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+.est-filter-group select {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--color-mid-grey);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+}
+.est-filter-group select:hover,
+.est-filter-group select:focus {
+  border-color: var(--color-accent, var(--color-red));
+  color: var(--color-near-black);
+  outline: none;
+}
+.est-filter-count {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--color-mid-grey);
+  margin-left: auto;
+}
+</style>
