@@ -18,6 +18,9 @@ collections:
   deals:
     output: true
     permalink: /deals/:name/
+  estimates:
+    output: true
+    permalink: /estimates/:name/
 
 # Defaults
 defaults:
@@ -36,6 +39,11 @@ defaults:
       type: "deals"
     values:
       layout: "post"
+  - scope:
+      path: ""
+      type: "estimates"
+    values:
+      layout: "estimate"
 
 # Plugins
 plugins:

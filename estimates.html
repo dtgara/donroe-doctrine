@@ -1,0 +1,30 @@
+---
+layout: section
+title: "The Weekly Estimate"
+section_intro: >
+  A weekly geopolitical risk briefing on the doctrine in action — sector-by-sector
+  impact assessments, confidence-rated analysis, and a watch list for the week
+  ahead. Published most Fridays. Written by Mireille Therese Ibrahim.
+body_class: page-estimates
+---
+
+{% assign estimates = site.estimates | sort: "date" | reverse %}
+
+{% if estimates and estimates.size > 0 %}
+<div class="card-grid">
+  {% for e in estimates %}
+  <article class="card">
+    <p class="card-label">{% if e.confidence %}Confidence: {{ e.confidence }}{% endif %}</p>
+    <h2 class="card-title"><a href="{{ e.url | relative_url }}">{{ e.title }}</a></h2>
+    {% if e.excerpt %}<p class="card-excerpt">{{ e.excerpt }}</p>{% endif %}
+    <div class="card-meta">
+      <time>{{ e.date | date: "%B %-d, %Y" }}</time>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+{% else %}
+<div class="empty-state">
+  <p>The first Weekly Estimate is in preparation. Analysis, like diplomacy, takes longer than expected.</p>
+</div>
+{% endif %}

@@ -13,6 +13,7 @@
       <li><a href="{{ '/map/' | relative_url }}"{% if page.url contains '/map' %} class="active" aria-current="page"{% endif %}>The Map</a></li>
       <li><a href="{{ '/bribes/' | relative_url }}"{% if page.url contains '/bribes' %} class="active" aria-current="page"{% endif %}>The Ledger</a></li>
       <li><a href="{{ '/interests/' | relative_url }}"{% if page.url contains '/interests' %} class="active" aria-current="page"{% endif %}>The Interests</a></li>
+      <li><a href="{{ '/estimates/' | relative_url }}"{% if page.url contains '/estimates' %} class="active" aria-current="page"{% endif %}>The Weekly Estimate</a></li>
 
       {% assign in_conduct = false %}
       {% if page.url contains '/strongmen' or page.url contains '/epithets' or page.url contains '/central-casting' or page.url contains '/contradictions' or page.url contains '/leaderboard' %}{% assign in_conduct = true %}{% endif %}

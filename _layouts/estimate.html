@@ -1,0 +1,69 @@
+---
+layout: default
+---
+<article class="post-page estimate-page">
+  <header class="post-header">
+    <div class="post-header-inner">
+      <p class="post-type-label">The Weekly Estimate{% if page.issue %} — Issue {{ page.issue }}{% endif %}{% if page.classification %} &mdash; {{ page.classification }}{% endif %}</p>
+      <h1 class="post-title">{{ page.title }}</h1>
+      <div class="post-meta">
+        {% if page.date %}
+          <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">
+            {{ page.date | date: "%B %-d, %Y" }}
+          </time>
+        {% endif %}
+        {% if page.confidence %}<span class="post-term">Confidence: {{ page.confidence }}</span>{% endif %}
+      </div>
+    </div>
+  </header>
+
+  <div class="post-body">
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    {% if page.sector_impact %}
+      <section style="margin-top:2.5rem;">
+        <h2 style="font-family:var(--font-display);font-size:var(--text-xl);margin-bottom:1rem;">Sector Impact</h2>
+        <div class="card-grid">
+          {% for s in page.sector_impact %}
+            <article class="card">
+              <p class="card-label">{{ s.group }}</p>
+              <h3 class="card-title" style="font-size:var(--text-lg);">{{ s.bottom_line }}</h3>
+              <p class="card-excerpt">{{ s.rationale }}</p>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if page.watch_list %}
+      <section style="margin-top:2.5rem;max-width:720px;">
+        <h2 style="font-family:var(--font-display);font-size:var(--text-xl);margin-bottom:1rem;">Watch List</h2>
+        <ol style="padding-left:1.2rem;">
+          {% for w in page.watch_list %}<li style="margin-bottom:0.6rem;">{{ w }}</li>{% endfor %}
+        </ol>
+      </section>
+    {% endif %}
+
+    <aside class="classified-extract" style="margin-top:2.5rem;">
+      <div class="classified-extract-eyebrow">The Numbers</div>
+      <p class="classified-extract-quote" style="font-size:var(--text-base);">
+        {{ site.data.contradictions | size }} contradictions logged &middot;
+        ${{ site.data.bribes | sum: 'amount' | divided_by: 1000000 }}M documented in The Ledger &middot;
+        {{ site.data.tariffs | size }} countries tracked in the Tariff Calculator
+      </p>
+      <p class="classified-extract-attr">
+        <a href="{{ '/contradictions/' | relative_url }}">Contradictions</a> &middot;
+        <a href="{{ '/bribes/' | relative_url }}">The Ledger</a> &middot;
+        <a href="{{ '/tariffs/' | relative_url }}">Tariff Calculator</a>
+      </p>
+    </aside>
+
+    {% if page.byline %}
+      <footer style="margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--color-border);max-width:720px;">
+        <p style="font-size:var(--text-sm);color:var(--color-mid-grey);font-style:italic;">{{ page.byline }}</p>
+      </footer>
+    {% endif %}
+  </div>
+</article>
