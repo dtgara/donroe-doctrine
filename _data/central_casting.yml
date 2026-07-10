@@ -328,3 +328,28 @@ entries:
       Droupadi Murmu. The compliment-then-violent-qualifier structure
       ("angel... but a killer") recurs closely enough across entries to
       warrant its own motif tag.
+
+  - id: cc016
+    date: "2026-06-20"
+    term: 2
+    subject: Xi Jinping
+    country: China
+    role: head_of_state
+    gender: m
+    valence: complimentary
+    focus: body_specific
+    quote: >-
+      As an example, the look of Xi, he's got a great look. Looks don't
+      matter, right? We don't like to, they say don't talk about looks,
+      but he's tall. He's 6 foot 2. He's got a great stature. He's got
+      great confidence, and he is smart.
+    context: Interview on "The Axios Show" with Marc Caputo, taped at the White House
+    source: "Axios, June 20, 2026"
+    source_url: "https://www.axios.com/2026/06/20/trump-xi-world-leader-praise"
+    source_type: public
+    motif: [disclaimer_bit]
+    reaction:
+    notes: >-
+      A second, separate appearance remark on Xi's height and stature,
+      distinct from the May 2026 "Central Casting" line (cc014), preceded
+      by the same self-aware disclaimer tracked elsewhere in this register.

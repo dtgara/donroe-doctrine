@@ -6,7 +6,7 @@
 # Press independently coined "Don-roe Doctrine" for this exact pattern
 # (New York Post, later CBS News) after the Venezuela operation -- a
 # near-identical pun to this site's own name.
-# Last updated: 2026-07-03
+# Last updated: 2026-07-10
 
 snapshot_note: >-
   Escalation level reflects the highest rung reached to date, not
@@ -26,10 +26,10 @@ targets:
     escalation_level: 3
     escalation_label: "Military threat"
     rationale_claimed: "National security — Arctic shipping lanes and Russian/Chinese activity nearby"
-    current_status: "Unresolved. Special envoy appointed; White House confirms 'range of options including military force' under discussion as of Jan 2026. Denmark and Greenland both refuse."
+    current_status: "Unresolved. Special envoy appointed; White House confirms 'range of options including military force' under discussion as of Jan 2026. Rhetoric revived at the July 2026 NATO summit with no new concrete step. Denmark and Greenland both refuse."
     target_response: "Greenland's PM called annexation talk 'fantasies.' Denmark and European allies issued a joint statement defending 'sovereignty, territorial integrity and inviolability of borders.'"
     first_asserted_date: "2019-08-15"
-    last_updated_date: "2026-01-07"
+    last_updated_date: "2026-07-08"
 
   - id: canada
     name: Canada
@@ -52,10 +52,10 @@ targets:
     escalation_level: 2
     escalation_label: "Economic pressure"
     rationale_claimed: "Historic US construction and defense of the canal; claims of Chinese influence over canal operations"
-    current_status: "Claims the canal was 'reclaimed' via a BlackRock-led consortium's purchase of a controlling stake in the company operating nearby ports. Panama's government disputes this is equivalent to control of the canal itself."
+    current_status: "Claims the canal was 'reclaimed' via a BlackRock-led consortium's purchase of a controlling stake in the company operating nearby ports. Panama's government disputes this is equivalent to control of the canal itself. Grievance revived rhetorically at the July 2026 Roosevelt library dedication with no new concrete action."
     target_response: "Panama's president publicly accused Trump of 'lying' about reclaiming the canal."
     first_asserted_date: "2024-12-21"
-    last_updated_date: "2026-03-15"
+    last_updated_date: "2026-07-01"
 
   - id: gaza
     name: Gaza
@@ -91,10 +91,10 @@ targets:
     escalation_level: 2
     escalation_label: "Economic pressure"
     rationale_claimed: "Regime collapse framed as a byproduct of cutting off Cuba's Venezuelan oil lifeline, not direct US action"
-    current_status: "No direct military threat made. Trump has publicly predicted the government will 'fall' on its own once Venezuelan oil support ends. Rubio: Cuban leaders 'in a lot of trouble.'"
-    target_response: "No formal government response documented; Cuba's oil imports from Venezuela and Mexico both fell sharply through 2025."
+    current_status: "No direct military threat made. Trump has publicly predicted the government will 'fall' on its own once Venezuelan oil support ends, repeating in July 2026 that Cuba is 'coming our way.' Rubio: Cuban leaders 'in a lot of trouble.'"
+    target_response: "President Diaz-Canel said Cuba would resist any US military intervention 'to the very last drop of blood.' Cuba's foreign minister brought a formal complaint over the US pressure campaign before the UN General Assembly on July 7, 2026."
     first_asserted_date: "2026-01-11"
-    last_updated_date: "2026-01-11"
+    last_updated_date: "2026-07-01"
 
   - id: colombia
     name: Colombia
@@ -104,10 +104,10 @@ targets:
     escalation_level: 3
     escalation_label: "Military threat"
     rationale_claimed: "Counter-narcotics — accused President Petro of allowing cocaine production to flourish"
-    current_status: "Sanctions imposed on Petro (Oct 2025); over 115 people killed in US strikes on alleged drug boats. When asked directly if military action against Colombia was being threatened, Trump said 'it sounds good to me.'"
+    current_status: "Sanctions imposed on Petro (Oct 2025); over 115 people killed in US strikes on alleged drug boats. When asked directly if military action against Colombia was being threatened, Trump said 'it sounds good to me.' In a July 2026 call focused on coca eradication, Petro personally asked Trump to lift his own sanctions listing; Trump said he would 'do his best.'"
     target_response: "Petro accused the US of violating international law with the boat strikes and said he 'would take up arms' for his country if necessary, despite having sworn off violence."
     first_asserted_date: "2025-10-01"
-    last_updated_date: "2026-01-11"
+    last_updated_date: "2026-07-03"
 
   - id: iran
     name: Iran
@@ -117,10 +117,10 @@ targets:
     escalation_level: 4
     escalation_label: "Military action"
     rationale_claimed: "Nuclear non-proliferation — prevention of an Iranian nuclear weapon"
-    current_status: "US airstrikes hit Fordo, Natanz, and Isfahan nuclear facilities (June 2025) during a broader Israel-Iran war. A 2026 wave of Iranian protests drew a further Trump threat to 'come to the rescue' if the government cracked down violently — regime-change-adjacent rhetoric, though no second strike has followed."
-    target_response: "Iran denied it was close to a weapon; DNI Gabbard's own intelligence assessment publicly contradicted Trump's stated justification for the strikes (see Contradiction Tracker)."
+    current_status: "US airstrikes hit Fordo, Natanz, and Isfahan nuclear facilities (June 2025) during a broader Israel-Iran war. A 2026 wave of Iranian protests drew a further Trump threat to 'come to the rescue.' A June 2026 ceasefire broke down in early July after tanker attacks in the Strait of Hormuz; Trump declared the truce 'over' and US forces struck roughly 90 Iranian targets over two days, though talks continued."
+    target_response: "Iran denied it was close to a weapon; DNI Gabbard's own intelligence assessment publicly contradicted Trump's stated justification for the strikes (see Contradiction Tracker). Iran maintains it holds sovereignty over Strait of Hormuz shipping routes."
     first_asserted_date: "2025-02-28"
-    last_updated_date: "2026-01-04"
+    last_updated_date: "2026-07-08"
 
 incidents:
 
@@ -344,3 +344,68 @@ incidents:
     source: "CBS News"
     source_url: "https://www.cbsnews.com/news/blackrock-panama-canal-deal-ck-hutchison-trump/"
     doctrine_note: "Panama's president publicly called this claim a lie."
+
+  - id: exp018
+    date: "2026-07-01"
+    target_id: [panama]
+    type: annexation_threat
+    escalation_level: 1
+    headline: "Revives Panama Canal grievance at Roosevelt library dedication"
+    detail: "At the dedication of the Theodore Roosevelt Presidential Library in Medora, North Dakota, Trump revived his claim that the 1977 handover of the Panama Canal was a mistake, blamed Jimmy Carter for the transfer, and repeated the unsubstantiated claim that China is expanding influence over canal operations."
+    quote: "We have been treated very badly from this foolish gift that should have never been made, and Panama's promise to us has been broken."
+    quoted_by: "Donald Trump"
+    source: "US News & World Report"
+    source_url: "https://www.usnews.com/news/top-news/articles/2026-07-01/trump-says-the-us-will-not-let-china-take-over-panama-canal"
+    doctrine_note: "Rhetoric restates the March 2026 BlackRock 'reclamation' claim (exp017) without a new concrete action attached."
+
+  - id: exp019
+    date: "2026-07-01"
+    target_id: [cuba]
+    type: self_congratulatory_claim
+    escalation_level: 1
+    headline: "Claims Cuba is 'coming our way' after decades of estrangement"
+    detail: "In the same Roosevelt library address, Trump claimed Cuba was moving toward the United States without elaborating on what prompted the assessment. Cuban President Miguel Diaz-Canel responded days later that Cuba would resist any US military intervention 'to the very last drop of blood,' and Cuba's foreign minister brought a formal complaint over the US pressure campaign to the UN General Assembly on July 7."
+    quote: "Speaking of Cuba, after many, many decades, it's coming our way."
+    quoted_by: "Donald Trump"
+    source: "AOL News / Reuters"
+    source_url: "https://www.aol.com/news/trump-claims-cuba-coming-way-084608818.html"
+    doctrine_note: "Echoes the January 2026 'ready to fall' prediction (exp incident on 2026-01-11) with no intervening concrete pressure escalation."
+
+  - id: exp020
+    date: "2026-07-08"
+    target_id: [greenland]
+    type: annexation_threat
+    escalation_level: 1
+    headline: "Revives Greenland claim at NATO summit, laments 1951 handback"
+    detail: "Seated beside NATO Secretary General Mark Rutte in Ankara, Trump renewed his case for US control of Greenland, framing the island's return to Denmark after US wartime administration as a historic mistake and tying his frustration to unrelated complaints about NATO allies' posture on Iran."
+    quote: "We took Greenland and then, stupidly, we gave it back. We shouldn't have given it back to them, because we're the ones that need it. We need it for protection of the world, not just the United States."
+    quoted_by: "Donald Trump"
+    source: "Bloomberg"
+    source_url: "https://www.bloomberg.com/news/articles/2026-07-08/trump-s-greenland-obsession-returns-stupidly-we-gave-it-back"
+    doctrine_note: "Danish PM Mette Frederiksen reiterated that Greenland 'is, of course, not for sale' in response, consistent with Denmark's standing position."
+
+  - id: exp021
+    date: "2026-07-08"
+    target_id: [iran]
+    type: military_action
+    escalation_level: 4
+    headline: "Declares June ceasefire 'over' after tanker attacks and renews strikes"
+    detail: "After Iranian forces attacked three commercial oil tankers near the Strait of Hormuz, US and Iranian forces exchanged strikes for a second straight day, with American forces hitting roughly 90 Iranian targets. Trump declared the ceasefire reached the prior month at an end while saying talks could continue. Oil prices rose more than 6% on the news."
+    quote: null
+    quoted_by: null
+    source: "Washington Post / NBC News"
+    source_url: "https://www.washingtonpost.com/world/2026/07/08/trump-declares-ceasefire-with-iran-has-ended/"
+    doctrine_note: "Matches the existing roster ceiling set by the February 2025 Fordo/Natanz/Isfahan strikes; the underlying dispute is control of the Strait of Hormuz."
+
+  - id: exp022
+    date: "2026-07-03"
+    target_id: [colombia]
+    type: economic_coercion
+    escalation_level: 2
+    headline: "Petro asks Trump to lift his own OFAC sanctions listing"
+    detail: "In a phone call focused on coca eradication targets, outgoing Colombian President Gustavo Petro asked Trump to remove him and his family from the US sanctions list imposed in October 2025. Trump said he would 'do his best.' Colombia reported eradicating roughly 30,000 hectares of coca under a voluntary program, with a year-end target of 41,000."
+    quote: "I'll do my best."
+    quoted_by: "Donald Trump"
+    source: "Reuters"
+    source_url: "https://www.usnews.com/news/top-news/articles/2026-07-03/colombias-petro-discusses-anti-drug-efforts-sanctions-list-with-trump"
+    doctrine_note: "The sanctioned leader personally petitioning for relief marks a inversion of the October 2025 escalation (exp incident) rather than a new pressure rung."

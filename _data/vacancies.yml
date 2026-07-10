@@ -7,13 +7,14 @@
 #
 # Status: incomplete by design. The `posts` roster below covers the Africa,
 # Americas, and Oceania vacancies itemized in available reporting on the
-# State Department's "Ambassadorial Assignments Overseas" document. Europe,
-# Asia, and Middle East vacancies are known to exist (117 countries total
-# per the same document) but were not itemized in the source article used
-# to seed this register — a gap for a future sprint to close against the
-# primary document directly.
+# State Department's "Ambassadorial Assignments Overseas" document, plus a
+# growing set of confirmed-ambassador entries for Europe, Asia, and Middle
+# East posts added via targeted per-post lookups (cross-referenced against
+# the Senate confirmation record). Europe, Asia, and Middle East are still
+# the least itemized regions relative to the 117-country total in the
+# source document — further itemization remains a standing task.
 #
-# Last updated: 2026-07-03
+# Last updated: 2026-07-10
 
 snapshot_date: "2026-04-08"
 snapshot_source: "US Dept. of State, 'Ambassadorial Assignments Overseas'; reported via Punch/PRIMA News; cross-referenced against AFSA Ambassador Tracker"
@@ -212,6 +213,70 @@ posts:
     strategic_flag: true
     notes: "Chargé d'affaires ad interim in Berlin. No Senate-confirmed ambassador in post as of this entry's sourcing."
     source_url:
+  - name: France
+    code: FR
+    region: Europe
+    status: political_appointee
+    appointee: Charles Kushner
+    appointee_type: political
+    notes: "Confirmed May 19, 2025 (51-45); also accredited as Ambassador to Monaco. Father of Jared Kushner."
+    source_url: "https://fr.usembassy.gov/our-relationship/our-ambassador/"
+  - name: Italy
+    code: IT
+    region: Europe
+    status: political_appointee
+    appointee: Tilman Fertitta
+    appointee_type: political
+    notes: "Confirmed April 29, 2025 (83-14); also accredited as Ambassador to San Marino. Houston restaurant and casino magnate."
+    source_url:
+  - name: Poland
+    code: PL
+    region: Europe
+    status: political_appointee
+    appointee: Thomas Rose
+    appointee_type: political
+    notes: "Assumed office November 6, 2025 (en bloc confirmation of 107 nominees, October 7, 2025, 51-47)."
+    source_url:
+  - name: Netherlands
+    code: NL
+    region: Europe
+    status: political_appointee
+    appointee: Joe Popolo
+    appointee_type: political
+    notes: "Assumed office October 29, 2025 (en bloc confirmation of 107 nominees, October 7, 2025, 51-47)."
+    source_url:
+  - name: Sweden
+    code: SE
+    region: Europe
+    status: political_appointee
+    appointee: Christine Toretti
+    appointee_type: political
+    notes: "Assumed office October 21, 2025 (en bloc confirmation, September 18, 2025, 51-47)."
+    source_url:
+  - name: Switzerland
+    code: CH
+    region: Europe
+    status: political_appointee
+    appointee: Callista Gingrich
+    appointee_type: political
+    notes: "Assumed office October 23, 2025 (en bloc confirmation, September 18, 2025, 51-47); also accredited as Ambassador to Liechtenstein. Previously US Ambassador to the Holy See during Term 1."
+    source_url:
+  - name: Ireland
+    code: IE
+    region: Europe
+    status: political_appointee
+    appointee: Edward Walsh
+    appointee_type: political
+    notes: "Confirmed June 4, 2025 (57-38)."
+    source_url:
+  - name: Greece
+    code: GR
+    region: Europe
+    status: political_appointee
+    appointee: Kimberly Guilfoyle
+    appointee_type: political
+    notes: "Assumed office November 4, 2025 (en bloc confirmation, September 18, 2025, 51-47). Former fiancee of Donald Trump Jr."
+    source_url:
 
   # ── Middle East ─────────────────────────────────────────────────────────
   - name: Saudi Arabia
@@ -232,6 +297,39 @@ posts:
     strategic_flag: true
     notes: "Former Governor of Arkansas; nominated November 2024."
     source_url:
+  - name: Turkey
+    code: TR
+    region: Middle East
+    status: political_appointee
+    appointee: Tom Barrack
+    appointee_type: political
+    strategic_flag: true
+    notes: "Confirmed April 29, 2025 (60-36). Hosted the July 2026 NATO summit in Ankara (see The Expansion, Greenland/Iran incidents)."
+    source_url:
+  - name: Bahrain
+    code: BH
+    region: Middle East
+    status: political_appointee
+    appointee: Stephanie Hallett
+    appointee_type: political
+    notes: "Assumed office January 21, 2026 (en bloc confirmation, October 7, 2025, 51-47). Bahrain is a named target of the administration's renewed Abraham Accords expansion push."
+    source_url:
+  - name: Jordan
+    code: JO
+    region: Middle East
+    status: political_appointee
+    appointee: James Holtsnider
+    appointee_type: political
+    notes: "Assumed office December 7, 2025 (en bloc confirmation, October 7, 2025, 51-47)."
+    source_url:
+  - name: Lebanon
+    code: LB
+    region: Middle East
+    status: political_appointee
+    appointee: Michel Issa
+    appointee_type: political
+    notes: "Assumed office November 19, 2025 (en bloc confirmation, October 7, 2025, 51-47)."
+    source_url:
 
   # ── Asia ────────────────────────────────────────────────────────────────
   - name: Japan
@@ -249,7 +347,48 @@ posts:
     appointee: Michelle Park Steel
     appointee_type: political
     strategic_flag: true
-    notes: "Post vacant since Ambassador Goldberg's departure in January 2025, cycling through multiple acting chargés (Kevin Kim, then James Heller) before Steel's Senate confirmation in April 2026 — over a year vacant. Former US Congresswoman (California). See incident vac005."
+    notes: "Post vacant since Ambassador Goldberg's departure in January 2025, cycling through multiple acting chargés (Kevin Kim, then James Heller) before Steel's nomination in April 2026 and Senate confirmation on June 17, 2026 — over a year and a half vacant. Former US Congresswoman (California). See incident vac005."
+    source_url:
+  - name: India
+    code: IN
+    region: Asia
+    status: political_appointee
+    appointee: Sergio Gor
+    appointee_type: political
+    strategic_flag: true
+    notes: "Assumed office January 14, 2026 (en bloc confirmation, October 7, 2025, 51-47)."
+    source_url:
+  - name: Vietnam
+    code: VN
+    region: Asia
+    status: political_appointee
+    appointee: Jennifer Wicks McNamara
+    appointee_type: political
+    notes: "Confirmed May 18, 2026 (en bloc confirmation of 49 nominees, 46-43); assumption-of-office date not yet reported. Vietnam is also a named site of Trump Organization licensing income (see The Interests, i011)."
+    source_url:
+  - name: Singapore
+    code: SG
+    region: Asia
+    status: political_appointee
+    appointee: Anjani Sinha
+    appointee_type: political
+    notes: "Assumed office November 17, 2025 (en bloc confirmation, October 7, 2025, 51-47)."
+    source_url:
+  - name: Bangladesh
+    code: BD
+    region: Asia
+    status: political_appointee
+    appointee: Brent T. Christensen
+    appointee_type: political
+    notes: "Assumed office January 15, 2026 (en bloc confirmation, December 18, 2025, 53-43)."
+    source_url:
+  - name: Thailand
+    code: TH
+    region: Asia
+    status: political_appointee
+    appointee: Sean O'Neill
+    appointee_type: political
+    notes: "Assumed office February 11, 2026 (en bloc confirmation, October 7, 2025, 51-47)."
     source_url:
 
   # ── Filled posts, Americas (illustrative, not exhaustive — see notes) ─────
@@ -360,22 +499,22 @@ incidents:
     notes: "Reduces individual scrutiny per nominee in exchange for clearing the backlog — a process story in its own right, not just a numbers story."
 
   - id: vac005
-    date: "2026-04-14"
+    date: "2026-06-17"
     term: 2
     type: notable_appointment
     countries: [South Korea]
-    headline: "South Korea ambassadorship filled after 15-month vacancy and a rotating cast of acting chargés"
+    headline: "South Korea ambassadorship filled after 17-month vacancy and a rotating cast of acting chargés"
     detail: >-
       The Seoul post went vacant when Ambassador Philip Goldberg departed in
       January 2025. Kevin Kim served as acting chargé d'affaires before
       leaving the post himself; James "Jim" Heller then took over as acting
       chargé d'affaires ad interim. Former US Congresswoman Michelle Park
-      Steel was nominated and Senate-confirmed in April 2026 — roughly
-      fifteen months after the vacancy began — becoming the second Korean
-      American and second woman to hold the post.
+      Steel was nominated in April 2026 and Senate-confirmed on June 17,
+      2026 by a party-line 55-39 vote — roughly seventeen months after the
+      vacancy began — becoming the second Korean American to hold the post.
     appointee: Michelle Park Steel
     donor_amount_usd:
     career_background: "Former US Congresswoman representing California; no prior diplomatic background."
-    source: "Stars and Stripes; Korea Herald; Korea Times"
-    source_url: "https://www.stripes.com/theaters/asia_pacific/2026-04-14/michelle-park-steel-south-korea-ambassador-21370409.html"
-    notes: "Logged as a distinct incident rather than folded into the posts roster row because the rotating-acting-official pattern, not just the eventual fill, is the point — a major treaty ally went over a year without a confirmed US ambassador."
+    source: "Korea Herald; NK News; Stars and Stripes"
+    source_url: "https://www.koreaherald.com/article/10774361"
+    notes: "Date corrected to the June 17, 2026 confirmation vote; the April 2026 date in an earlier version of this entry reflected the nomination, not the confirmation. Logged as a distinct incident rather than folded into the posts roster row because the rotating-acting-official pattern, not just the eventual fill, is the point — a major treaty ally went over a year and a half without a confirmed US ambassador."

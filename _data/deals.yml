@@ -657,9 +657,13 @@
 
     '
   doctrine_rating: 7
-  status: ACTIVE
-  outcome: Talks ongoing. 90-day pause in effect. EU retaliatory list suspended but not withdrawn. Both sides describe willingness
-    to do a deal. A deal has not been done. The 90-day clock is running.
+  status: COMPLETED
+  outcome: >-
+    A framework agreement was struck in mid-2025 setting a 15 percent all-inclusive US tariff ceiling on most EU goods
+    (autos down from 27.5 percent), with the EU eliminating duties on US industrial goods and opening preferential access
+    for select agricultural products. The Council of the EU adopted the two implementing regulations on June 25, 2026,
+    and the agreement took effect July 1, 2026. Steel and aluminium remain outside the deal at a 50 percent Section 232
+    rate. The bridgeable gap closed at 15 percent -- short of the EU's original zero-tariff ask.
 - id: imf-world-bank-review
   title: The Multilateral Institution Review
   strapline: The IMF and World Bank described as instruments of globalisation not serving American interests. A review ordered.

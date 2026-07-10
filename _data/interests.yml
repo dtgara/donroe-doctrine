@@ -350,6 +350,27 @@ entries:
 # Parallel axis: concurrent US government policy actions, plotted against business entries above.
 # Cross-referenced to entries by country.
 
+  - id: i021
+    date: "2026-07-01"
+    term: 2
+    family_member: "Trump Organization"
+    country: United Arab Emirates
+    region: middle_east
+    deal_type: real_estate
+    title: "Abu Dhabi — Al Raha Beach estate project with Damac Properties"
+    description: >-
+      The 2026 OGE financial disclosure revealed roughly $12.5 million in combined management and licensing fees from
+      Damac Properties (Hussain Sajwani) covering both the existing Trump International Golf Club Dubai and a previously
+      unannounced estate project at Abu Dhabi's Al Raha Beach. The Al Raha Beach project had not been publicly disclosed
+      prior to the financial filing.
+    value: 12500000
+    value_note: "Combined Dubai golf club and Al Raha Beach fees per 2026 annual financial disclosure; project-level breakdown undisclosed"
+    status: active
+    partner: "Damac Properties (Hussain Sajwani)"
+    concurrent_policy: "Disclosed as part of the same filing showing $23 million total UAE income and family members holding 20 percent of new licensing deals; see pe001/pe002 for the UAE's concurrent policy access."
+    source: "Bloomberg; The National; Forbes, July 1-8, 2026 (2026 financial disclosure)"
+    source_url: "https://www.bloomberg.com/news/articles/2026-07-01/trump-reports-earning-26-million-from-foreign-real-estate-deals"
+
 policy_events:
 
   - id: pe001

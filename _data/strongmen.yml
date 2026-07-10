@@ -529,3 +529,26 @@ entries:
   confidence: documented
   notes: Delivered at a G7 summit nominally convened to coordinate allied pressure on adversaries, in the middle of an active
     US tariff and trade dispute with China.
+- id: sm030
+  date: '2026-06-20'
+  term: 2
+  subject: Xi Jinping
+  country: China
+  regime_type: authoritarian
+  historical: false
+  source_type: public
+  quote: >-
+    He's a strong man. He's no games. He won't sit down and say, "oh, what a beautiful day... Look how beautiful. Look at
+    the sunshine." There's none of that stuff. It's like all business, which I like. I think it's great.
+  context: >-
+    Interview on "The Axios Show" with Marc Caputo, taped at the White House. Trump named Xi when asked which world leaders
+    he respects, skipping over traditional American allies.
+  source: >-
+    Axios, "Exclusive: Trump admires China's Xi as 'very smart' with 'great stature,'" June 20, 2026
+  source_url: https://www.axios.com/2026/06/20/trump-xi-world-leader-praise
+  praise_type:
+  - compliment
+  confidence: documented
+  notes: >-
+    Delivered while the administration was simultaneously imposing large tariffs on China and restricting chip and AI
+    exports -- the personal admiration is described as running on a separate track from the policy dispute.
