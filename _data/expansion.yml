@@ -117,10 +117,10 @@ targets:
     escalation_level: 4
     escalation_label: "Military action"
     rationale_claimed: "Nuclear non-proliferation — prevention of an Iranian nuclear weapon"
-    current_status: "US airstrikes hit Fordo, Natanz, and Isfahan nuclear facilities (June 2025) during a broader Israel-Iran war. A 2026 wave of Iranian protests drew a further Trump threat to 'come to the rescue.' A June 2026 ceasefire broke down in early July after tanker attacks in the Strait of Hormuz; Trump declared the truce 'over' and US forces struck roughly 90 Iranian targets over two days, though talks continued."
-    target_response: "Iran denied it was close to a weapon; DNI Gabbard's own intelligence assessment publicly contradicted Trump's stated justification for the strikes (see Contradiction Tracker). Iran maintains it holds sovereignty over Strait of Hormuz shipping routes."
+    current_status: "US airstrikes hit Fordo, Natanz, and Isfahan nuclear facilities (June 2025) during a broader Israel-Iran war. A 2026 wave of Iranian protests drew a further Trump threat to 'come to the rescue.' A June 2026 ceasefire broke down in early July after tanker attacks in the Strait of Hormuz; Trump declared the truce 'over' and US forces struck roughly 90 Iranian targets over two days, though talks continued. On July 13 Trump reinstated the naval blockade of Iran and announced a 20% Hormuz transit toll billed as a 'guardian' fee; he dropped the toll a day later citing pending Gulf state investment pledges, while the blockade remained in effect. The administration formally notified Congress that a new 60-day war-powers window had begun, a position congressional Democrats dispute (see deals.yml us-iran-mou-2026)."
+    target_response: "Iran denied it was close to a weapon; DNI Gabbard's own intelligence assessment publicly contradicted Trump's stated justification for the strikes (see Contradiction Tracker). Iran maintains it holds sovereignty over Strait of Hormuz shipping routes and rejected any US role administering it; Iranian FM Araghchi sarcastically endorsed the toll principle while calling 20% 'too much.'"
     first_asserted_date: "2025-02-28"
-    last_updated_date: "2026-07-08"
+    last_updated_date: "2026-07-14"
 
 incidents:
 
@@ -409,3 +409,28 @@ incidents:
     source: "Reuters"
     source_url: "https://www.usnews.com/news/top-news/articles/2026-07-03/colombias-petro-discusses-anti-drug-efforts-sanctions-list-with-trump"
     doctrine_note: "The sanctioned leader personally petitioning for relief marks a inversion of the October 2025 escalation (exp incident) rather than a new pressure rung."
+  - id: exp023
+    date: "2026-07-13"
+    target_id: [iran]
+    type: military_action
+    escalation_level: 4
+    headline: "Reinstates naval blockade of Iran, declares US 'guardian' of Hormuz with 20% toll"
+    detail: "After a week of renewed US-Iran strikes that unraveled the June ceasefire MOU, Trump announced on Truth Social and in a Fox News interview that the US would reinstate what he called 'THE IRANIAN BLOCKADE' of the Strait of Hormuz beginning at 20:00 GMT the following day — reversing the MOU provision that had reopened the strait. He simultaneously declared the US would become 'GUARDIAN OF THE HORMUZ STRAIT' and charge a 20% reimbursement toll on all cargo shipped through it. Secretary of State Rubio and Vice President Vance had rejected the legality of such tolls the prior month; the UN's International Maritime Organization said the plan had no legal basis. Iran's joint military command warned any US interference in strait management would be treated as an act of war."
+    quote: "We are reinstating THE IRANIAN BLOCKADE, so named because it is only stopping Iran's ships or customers from entering or leaving... The U.S.A. will be, from this point forward, known as 'THE GUARDIAN OF THE HORMUZ STRAIT,' but as such, and as a matter of FAIRNESS, will be reimbursed, at the rate of 20% on all cargo shipped, for any and all costs necessary to do the job of providing safety and security to this very volatile section of the World."
+    quoted_by: "Donald Trump"
+    source: "Al Jazeera"
+    source_url: "https://www.aljazeera.com/news/2026/7/13/trump-says-us-will-become-guardian-of-strait-of-hormuz-and-collect-tolls"
+    doctrine_note: "Matches the existing roster ceiling set by the June 2025 Fordo/Natanz/Isfahan strikes; folds an economic-coercion instrument (the toll) into an already-active military posture rather than opening a new rung."
+
+  - id: exp024
+    date: "2026-07-14"
+    target_id: [iran]
+    type: economic_coercion
+    escalation_level: 2
+    headline: "Drops 20% Hormuz toll a day after announcing it, cites Gulf investment pledges"
+    detail: "Trump reversed the prior day's toll announcement, posting that he had replaced the '20% United States Reimbursement Fee' with trade and investment deals from Gulf states, and telling reporters the money would come 'primarily' from the UAE, Saudi Arabia, Qatar, Kuwait, and Bahrain. The naval blockade reinstatement announced alongside the toll (exp023) was not withdrawn. Iranian Foreign Minister Araghchi had mockingly endorsed the underlying principle on X, and Brazilian President Lula da Silva had called the toll plan 'piracy' hours earlier."
+    quote: "Based on highly productive conversations with Middle East leadership, I have decided to replace the 20% United States Reimbursement Fee with Trade and Investment Deals that the various Gulf States will be making into the United States."
+    quoted_by: "Donald Trump"
+    source: "The National / PBS NewsHour"
+    source_url: "https://www.thenationalnews.com/business/energy/2026/07/14/trump-abandons-20-hormuz-toll-in-favour-of-deal-with-gulf-states/"
+    doctrine_note: "The reversal was itself reversed rhetorically at the same press conference, where Trump argued no country -- including the US -- should charge strait tolls, directly contradicting his own statement one day earlier."

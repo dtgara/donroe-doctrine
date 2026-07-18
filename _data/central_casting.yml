@@ -353,3 +353,73 @@ entries:
       A second, separate appearance remark on Xi's height and stature,
       distinct from the May 2026 "Central Casting" line (cc014), preceded
       by the same self-aware disclaimer tracked elsewhere in this register.
+  - id: cc017
+    date: "2026-03-07"
+    term: 2
+    subject: Nayib Bukele
+    country: El Salvador
+    role: head_of_state
+    gender: m
+    valence: complimentary
+    focus: face_general
+    quote: >-
+      I saw him as a young man my first time. You were young and handsome.
+      Now you're older and handsome. You're older and handsome. But he
+      runs a good operation. That's all I care about, right?
+    context: Remarks at the Shield of the Americas Summit, Doral, Florida
+    source: "Senate Democratic Leadership transcript / Roll Call Factba.se, March 7, 2026"
+    source_url: "https://www.democrats.senate.gov/newsroom/trump-transcripts/transcript-president-trump-addresses-the-shield-of-the-americas-summit-in-doral-florida-3726"
+    source_type: public
+    motif: []
+    reaction:
+    notes: >-
+      The appearance compliment is immediately followed by an explicit pivot
+      to competence ("that's all I care about"), distinct from the
+      disclaimer_bit pattern tracked elsewhere in this register, in which
+      the qualifier precedes rather than follows the compliment.
+
+  - id: cc018
+    date: "2026-03-07"
+    term: 2
+    subject: Claudia Sheinbaum
+    country: Mexico
+    role: head_of_state
+    gender: f
+    valence: complimentary
+    focus: face_general
+    quote: >-
+      She's a very good person. She's got a beautiful voice, a beautiful
+      woman, but beautiful voice.
+    context: Remarks at the Shield of the Americas Summit, Doral, Florida, made while pressing Sheinbaum to accept US action against Mexican cartels
+    source: "Senate Democratic Leadership transcript / Roll Call Factba.se, March 7, 2026"
+    source_url: "https://www.democrats.senate.gov/newsroom/trump-transcripts/transcript-president-trump-addresses-the-shield-of-the-americas-summit-in-doral-florida-3726"
+    source_type: public
+    motif: []
+    reaction:
+    notes: >-
+      Delivered in the same speech as the Bukele remark (cc017), immediately
+      before a renewed push for unilateral US military action against
+      cartels operating in Mexico.
+
+  - id: cc019
+    date: "2026-07-14"
+    term: 2
+    subject: Ali al-Zaidi
+    country: Iraq
+    role: head_of_government
+    gender: m
+    valence: complimentary
+    focus: face_general
+    quote: >-
+      He's a young man. He's young and he's handsome, which I don't like.
+      I'm not happy about that.
+    context: Opening remarks at an Oval Office bilateral meeting with Iraqi Prime Minister Ali al-Zaidi, accompanied by a playful tap on al-Zaidi's leg
+    source: "Roll Call Factba.se transcript of White House remarks, July 14, 2026"
+    source_url: "https://singjupost.com/transcript-president-trumps-bilateral-meeting-w-iraq-prime-minister-ali-al-zaidi/"
+    source_type: public
+    motif: [disclaimer_bit]
+    reaction:
+    notes: >-
+      Al-Zaidi is Iraq's head of government; Iraq's head of state is
+      President Abdul Latif Rashid. The compliment-with-disclaimer structure
+      matches the pattern tracked at cc016.

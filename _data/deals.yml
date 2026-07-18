@@ -718,7 +718,7 @@
   date: '2026-06-17'
   term: 2
   type: Alliance
-  status: UNRESOLVED
+  status: SUPERSEDED
   summary: On June 17, 2026, President Trump and Iranian representatives signed a memorandum of understanding at the Palace
     of Versailles during the G7 summit, extending an existing ceasefire for 60 days and establishing a framework for negotiations
     on Iran's nuclear programme and broader normalisation. Key immediate provisions include the reopening of the Strait of
@@ -733,8 +733,13 @@
     Iran disputed this characterisation. The 60-day window continues. On June 28, 2026, following new US airstrikes, Iran's
     IRGC launched ballistic missiles and drones at the US airbase at Ali Al Salem in Kuwait and the Fifth Fleet's Port Salman
     facility in Bahrain. Trump warned that "the Islamic Republic of Iran will no longer exist" if strikes continued; Iran
-    threatened a "complete halt" to talks. Both sides stated negotiations would continue despite the exchange. The MOU's
-    60-day window remains formally in effect but its terms are being actively violated by both signatories.
+    threatened a "complete halt" to talks. Both sides stated negotiations would continue despite the exchange. On July
+    8, 2026, following renewed tanker attacks near the Strait of Hormuz, Trump declared the ceasefire "over" and US forces
+    struck roughly 90 Iranian targets over two days. On July 13, Trump announced the reinstatement of the naval blockade
+    of Iran and a unilateral 20% Hormuz transit toll, directly reversing the MOU's provision reopening the strait; he
+    dropped the toll proposal a day later citing pending Gulf state investment pledges, while the blockade remained in
+    place. The administration formally notified Congress that a new 60-day war-powers window had begun, a position
+    congressional Democrats dispute. The MOU's central provisions -- ceasefire and open strait -- are no longer in effect.
 - id: trump-xi-beijing-summit-2026
   title: The Beijing Summit Trade Package
   strapline: Two hundred aircraft, seventeen billion dollars of grain, and an agreement to address rare earths later.

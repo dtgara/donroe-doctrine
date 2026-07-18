@@ -552,3 +552,29 @@ entries:
   notes: >-
     Delivered while the administration was simultaneously imposing large tariffs on China and restricting chip and AI
     exports -- the personal admiration is described as running on a separate track from the policy dispute.
+- id: sm031
+  date: '2026-07-08'
+  term: 2
+  subject: Recep Tayyip Erdoğan
+  country: Turkey
+  regime_type: authoritarian
+  historical: false
+  source_type: public
+  quote: >-
+    I want to thank President Erdoğan, who's really a great man. He's a great leader. He's a friend of mine, been a friend
+    of mine for a long time. He's a strong person, a very strong personality, and that's why he runs such a successful
+    and good country.
+  context: >-
+    News conference closing the NATO summit in Ankara, at which Trump also said the US would consider resuming F-35
+    fighter jet sales to Turkey.
+  source: >-
+    Anadolu Agency via aNews, July 8, 2026
+  source_url: https://www.anews.com.tr/americas/2026/07/08/trump-praises-turkish-president-erdogan-calls-nato-summit-in-ankara-success
+  praise_type:
+  - compliment
+  - cooperation
+  confidence: documented
+  notes: >-
+    Erdoğan has governed under an executive presidency since the 2017 constitutional referendum Trump congratulated him
+    on before the vote was fully counted (sm003). The F-35 sale under consideration was suspended in 2019 after Turkey's
+    purchase of a Russian S-400 air defense system.

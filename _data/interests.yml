@@ -371,6 +371,74 @@ entries:
     source: "Bloomberg; The National; Forbes, July 1-8, 2026 (2026 financial disclosure)"
     source_url: "https://www.bloomberg.com/news/articles/2026-07-01/trump-reports-earning-26-million-from-foreign-real-estate-deals"
 
+  - id: i022
+    date: "2025-09-01"
+    term: 2
+    family_member: "Donald Trump Jr. & Eric Trump"
+    country: Kazakhstan
+    region: central_asia
+    deal_type: mining
+    title: "Kaz Resources — 20% stake in US-backed Kazakh tungsten mining venture"
+    description: >-
+      Trump, working with Commerce Secretary Howard Lutnick, negotiated an agreement with the Kazakh government granting
+      Kaz Resources access to one of the world's largest untapped tungsten reserves. Ahead of the deal's completion, the
+      administration approved preliminary applications for up to $1.6 billion in federal financing for Kaz Resources.
+      Within weeks of the negotiations, investors at Dominari Securities — housed at Trump Tower and partly owned by
+      Donald Trump Jr. and Eric Trump — joined other partners to acquire a 20% stake in a corporate entity tied to the
+      Kazakhstan project. Commerce Secretary Lutnick's sons, Brandon and Kyle, separately helped a lead investor on the
+      deal raise $210 million through their firm Cantor Fitzgerald.
+    value: 1600000000
+    value_note: "Up to $1.6B in preliminary federal financing approved for Kaz Resources; Trump sons' equity stake value undisclosed"
+    status: active
+    partner: "Kaz Resources; Dominari Securities; Cantor Fitzgerald (Lutnick family)"
+    concurrent_policy: "Negotiated alongside a broader US-Kazakhstan critical minerals access agreement led personally by Trump and Lutnick; see pe015."
+    source: "The New York Times, reported via Asia Times/Common Dreams, June 28-July 1, 2026"
+    source_url: "https://asiatimes.com/2026/07/trump-sons-set-to-profit-from-tax-funded-kazakh-tungsten-mine-deal/"
+
+  - id: i023
+    date: "2026-06-30"
+    term: 2
+    family_member: "Trump Organization"
+    country: South Korea
+    region: east_asia
+    deal_type: real_estate
+    title: "Base Group — $2M 'development fee' amid unresolved Commerce Dept. aluminum case"
+    description: >-
+      Trump's 2026 financial disclosure revealed a $2 million payment from Base Group, the exclusive South Korean seller
+      of Trump-branded wine, described as a "nonrefundable development fee" tied to a letter of intent for an unannounced
+      golf course project. Base Group holds a major stake in Korea Aluminum, which the Commerce Department found in 2023
+      had circumvented duties on Chinese-made aluminum; the company has since sharply cut its US exports. Eric Trump
+      visited Base Group's Seoul headquarters in February 2026 to discuss expanding US-Korea trade. The New York Times
+      found no evidence the president or his family advocated for Base Group or Korea Aluminum with government officials.
+    value: 2000000
+    value_note: "Disclosed as a single 'nonrefundable development fee' payment in the 2026 OGE financial disclosure"
+    status: active
+    partner: "Base Group"
+    concurrent_policy: "Payment disclosed against the backdrop of an unresolved 2023 Commerce Department anti-circumvention finding against Korea Aluminum, a Base Group-linked firm; no new term-2 US government action toward Base Group or Korea Aluminum specifically has been identified."
+    source: "The New York Times, reported via The New Republic, July 14, 2026"
+    source_url: "https://newrepublic.com/post/213058/foreign-company-trade-dispute-paid-trump-millions"
+
+  - id: i024
+    date: "2026-06-30"
+    term: 2
+    family_member: "Trump Organization"
+    country: Romania
+    region: europe
+    deal_type: real_estate
+    title: "Cluj-Napoca — Trump-branded luxury district, licensing and hotel management deal"
+    description: >-
+      Trump's 2026 financial disclosure listed a new licensing and hotel management agreement between the Trump
+      Organization and Romanian developer SDC Imobiliare for a Trump-branded luxury residential and hotel district in
+      Cluj-Napoca, a city with a large ethnic Hungarian population. It is the third Trump-branded project disclosed in
+      Romania, alongside the existing Bucharest tower (i020) and a themed park planned for the capital.
+    value: null
+    value_note: "Fee structure not broken out separately from Romania's other SDC Imobiliare agreements in the disclosure"
+    status: active
+    partner: "SDC Imobiliare"
+    concurrent_policy: "Follows the same developer relationship as the Bucharest project (i020); no new Romania-specific US policy action identified this cycle."
+    source: "Daily News Hungary; Bloomberg, July 2026 (2026 financial disclosure)"
+    source_url: "https://dailynewshungary.com/luxury-empire-cluj-trump-declaration/"
+
 policy_events:
 
   - id: pe001
@@ -483,4 +551,11 @@ policy_events:
     region: europe
     title: "DHS rescinds Romania's Visa Waiver Program designation"
     description: "DHS finalized the removal of Romania from the Visa Waiver Program, a reversal of a January 2025 Biden-era designation, citing organized crime and visa refusal rates. The decision followed criticism by Vice President Vance and administration allies of Romania's annulled 2024 presidential election. Ten weeks later, the Trump Organization announced its first Romanian real estate project."
+    category: policy_action
+  - id: pe015
+    date: "2025-09-01"
+    country: Kazakhstan
+    region: central_asia
+    title: "Trump-Lutnick negotiate Kazakhstan critical minerals access, $1.6B federal financing"
+    description: "Trump and Commerce Secretary Howard Lutnick won an agreement from Kazakhstan's president granting Kaz Resources access to major tungsten reserves, with the administration approving preliminary applications for as much as $1.6 billion in federal financing for the project days before investors including the president's sons acquired an equity stake in a related entity."
     category: policy_action

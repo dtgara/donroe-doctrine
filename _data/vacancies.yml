@@ -409,6 +409,24 @@ posts:
     notes: "Confirmed April 9, 2025; previously US Ambassador to El Salvador."
     source_url:
 
+  # ── Itemization pass additions, July 2026 ──────────────────────────────
+  - name: Cambodia
+    code: KH
+    region: Asia
+    status: vacant
+    appointee_type: career
+    notes: "Vacant since Ambassador Patrick Murphy's mid-2024 departure; Chargée d'Affaires ad interim Aleks Zittle in post. Nominee Christopher Anderson (Trump nomination sent to Senate June 1, 2026) awaiting Foreign Relations Committee action as of a July 16, 2026 hearing."
+    source_url: "https://kh.usembassy.gov/cda/"
+  - name: Iraq
+    code: IQ
+    region: Middle East
+    status: acting_charge_daffaires
+    appointee: Joshua Harris
+    appointee_type: career
+    strategic_flag: true
+    notes: "Chargé d'Affaires ad interim in Baghdad since September 2, 2025; previously Deputy Assistant Secretary of State for Near Eastern Affairs. No Senate-confirmed ambassador in post; Trump hosted new Iraqi PM Ali al-Zaidi at the White House July 14, 2026."
+    source_url: "https://iq.usembassy.gov/joshua-josh-harris-charge-daffaires-u-s-mission-to-iraq/"
+
 incidents:
   - id: vac001
     date: "2026-02-10"
