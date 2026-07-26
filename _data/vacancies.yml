@@ -427,6 +427,33 @@ posts:
     notes: "Chargé d'Affaires ad interim in Baghdad since September 2, 2025; previously Deputy Assistant Secretary of State for Near Eastern Affairs. No Senate-confirmed ambassador in post; Trump hosted new Iraqi PM Ali al-Zaidi at the White House July 14, 2026."
     source_url: "https://iq.usembassy.gov/joshua-josh-harris-charge-daffaires-u-s-mission-to-iraq/"
 
+  - name: Spain
+    code: ES
+    region: Europe
+    status: political_appointee
+    appointee: Benjamin Leon Jr.
+    appointee_type: political
+    notes: "Sworn in by Secretary Rubio February 10, 2026; presented credentials to King Felipe VI February 18, 2026. Post had been vacant since July 2024."
+    source_url: "https://es.usembassy.gov/ambassador-benjamin-leon/"
+
+  - name: Austria
+    code: AT
+    region: Europe
+    status: political_appointee
+    appointee: Arthur Graham Fisher
+    appointee_type: political
+    notes: "Confirmed and sworn in October 2025; in post since November 19, 2025."
+    source_url: "https://at.usembassy.gov/"
+
+  - name: Egypt
+    code: EG
+    region: Middle East
+    status: acting_charge_daffaires
+    appointee: Robert Silverman
+    appointee_type: career
+    notes: "Serving as Chargé d'Affaires since March 9, 2026 after being recalled to diplomatic service; no Senate-confirmed ambassador in post since Herro Mustafa's term ended January 17, 2026."
+    source_url: "https://eg.usembassy.gov/u-s-embassy-cairo/charge-d-affaires-robert-silverman/"
+
 incidents:
   - id: vac001
     date: "2026-02-10"

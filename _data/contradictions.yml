@@ -894,3 +894,20 @@
   doctrine_note: The principle abandoned within 24 hours was the same one Secretary Rubio and Vice President Vance had
     invoked weeks earlier to reject Iran's right to toll the strait -- extended to the United States itself for exactly
     one day before being walked back in favor of Gulf state investment pledges.
+- id: c065
+  theme: Diplomatic
+  country:
+  - Saudi Arabia
+  term_a: 2
+  statement_a: The nuclear cooperation agreement, signed by Energy Secretary Chris Wright and Saudi Minister of Energy Abdulaziz
+    bin Salman, gives Saudi Arabia a pathway to enriching its own reactor fuel following a joint US-Saudi study, according
+    to US officials briefed on the deal.
+  date_a: '2026-07-22'
+  source_a: Washington Post, CNN, CBC reporting on the signed 123 Agreement, July 22, 2026
+  term_b: 2
+  statement_b: There will be no enrichment of material! The United States is not opposed to Civil (Non-Enriched) Nuclear
+    Facilities.
+  date_b: '2026-07-23'
+  source_b: Truth Social post, July 23, 2026, reported by ABC News and Axios
+  doctrine_note: The agreement his own Energy Department signed one day earlier was reported to leave a path to enrichment
+    open; the President then redefined its terms on social media, a description his own officials disputed.

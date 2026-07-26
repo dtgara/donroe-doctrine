@@ -39,10 +39,10 @@ targets:
     escalation_level: 2
     escalation_label: "Economic pressure"
     rationale_claimed: "Trade imbalance; repeated framing of Canada as a natural '51st state'"
-    current_status: "Rhetoric has cooled since late 2025; tariffs (up to 35%) remain the active pressure point. No military threat made."
-    target_response: "PM Mark Carney has been unambiguous that Canada has no interest in joining the US. Ontario pulled an anti-tariff ad after Trump threatened to end trade talks over it."
+    current_status: "Rhetoric on absorption has cooled since late 2025, but economic pressure escalated sharply on July 20, 2026 with new 50% tariffs on roughly $20 billion of Canadian autos, alcohol, dairy, and other goods (see deals.yml us-canada-tariffs-2026), effective in 30 days. No military threat made."
+    target_response: "PM Mark Carney has been unambiguous that Canada has no interest in joining the US. Ontario pulled an anti-tariff ad after Trump threatened to end trade talks over it. On the July 2026 tariffs, Carney said Canada believes in 'the benefits of free and fair trade' and remains open to negotiation."
     first_asserted_date: "2024-11-15"
-    last_updated_date: "2025-10-01"
+    last_updated_date: "2026-07-20"
 
   - id: panama
     name: Panama (Canal)
@@ -117,10 +117,10 @@ targets:
     escalation_level: 4
     escalation_label: "Military action"
     rationale_claimed: "Nuclear non-proliferation — prevention of an Iranian nuclear weapon"
-    current_status: "US airstrikes hit Fordo, Natanz, and Isfahan nuclear facilities (June 2025) during a broader Israel-Iran war. A 2026 wave of Iranian protests drew a further Trump threat to 'come to the rescue.' A June 2026 ceasefire broke down in early July after tanker attacks in the Strait of Hormuz; Trump declared the truce 'over' and US forces struck roughly 90 Iranian targets over two days, though talks continued. On July 13 Trump reinstated the naval blockade of Iran and announced a 20% Hormuz transit toll billed as a 'guardian' fee; he dropped the toll a day later citing pending Gulf state investment pledges, while the blockade remained in effect. The administration formally notified Congress that a new 60-day war-powers window had begun, a position congressional Democrats dispute (see deals.yml us-iran-mou-2026)."
-    target_response: "Iran denied it was close to a weapon; DNI Gabbard's own intelligence assessment publicly contradicted Trump's stated justification for the strikes (see Contradiction Tracker). Iran maintains it holds sovereignty over Strait of Hormuz shipping routes and rejected any US role administering it; Iranian FM Araghchi sarcastically endorsed the toll principle while calling 20% 'too much.'"
+    current_status: "US airstrikes hit Fordo, Natanz, and Isfahan nuclear facilities (June 2025) during a broader Israel-Iran war. A 2026 wave of Iranian protests drew a further Trump threat to 'come to the rescue.' A June 2026 ceasefire broke down in early July after tanker attacks in the Strait of Hormuz; Trump declared the truce 'over' and US forces struck roughly 90 Iranian targets over two days, though talks continued. On July 13 Trump reinstated the naval blockade of Iran and announced a 20% Hormuz transit toll billed as a 'guardian' fee; he dropped the toll a day later citing pending Gulf state investment pledges, while the blockade remained in effect. Iranian ballistic missile and drone attacks killed three US service members in Jordan and one in Iraq on July 17-19; Trump vowed retaliation and, on July 22, threatened to destroy an Iranian bridge or power plant for every future attack on Hormuz shipping. The administration formally notified Congress that a new 60-day war-powers window had begun, a position congressional Democrats dispute (see deals.yml us-iran-mou-2026)."
+    target_response: "Iran denied it was close to a weapon; DNI Gabbard's own intelligence assessment publicly contradicted Trump's stated justification for the strikes (see Contradiction Tracker). Iran maintains it holds sovereignty over Strait of Hormuz shipping routes and rejected any US role administering it; Iranian FM Araghchi sarcastically endorsed the toll principle while calling 20% 'too much.' Iran's supreme leader called Trump's signature on the June MOU 'worthless' after the ceasefire collapsed. Araghchi said Iran's defense doctrine is 'eye for an eye' and that any strike on its infrastructure 'will compel a powerful and decisive response.'"
     first_asserted_date: "2025-02-28"
-    last_updated_date: "2026-07-14"
+    last_updated_date: "2026-07-22"
 
 incidents:
 
@@ -434,3 +434,42 @@ incidents:
     source: "The National / PBS NewsHour"
     source_url: "https://www.thenationalnews.com/business/energy/2026/07/14/trump-abandons-20-hormuz-toll-in-favour-of-deal-with-gulf-states/"
     doctrine_note: "The reversal was itself reversed rhetorically at the same press conference, where Trump argued no country -- including the US -- should charge strait tolls, directly contradicting his own statement one day earlier."
+
+  - id: exp025
+    date: "2026-07-20"
+    target_id: [iran]
+    type: military_action
+    escalation_level: 4
+    headline: "Three US troops killed in Iranian attack on Jordan base; Trump vows Iran will 'pay many times over'"
+    detail: "Iranian ballistic missile and drone attacks on Muwaffaq Salti Air Base in Jordan killed 1st Lt. Tyler James Feehan, Pvt. Isabella Gonzales, and Sgt. Angel S. Rampersad on July 17-18; a fourth service member, Michael Emmanuel Swinton, was killed in Erbil, Iraq on July 19 during a controlled detonation of a downed Iranian drone. Nearly 100 additional service members were injured. The US and Iran traded further strikes in the aftermath."
+    quote: "Every time Iran kills an American Soldier they will pay for that killing many times over!"
+    quoted_by: "Donald Trump (Truth Social)"
+    source: "Al Jazeera / NPR / Military Times"
+    source_url: "https://www.aljazeera.com/news/2026/7/20/trump-vows-iran-will-pay-for-killing-us-soldiers"
+    doctrine_note: "The first US combat fatalities from Iranian fire since the March ceasefire violations, occurring five weeks after Trump called the June MOU an 'unconditional surrender' by 'the smartest group' Iran had ever fielded (see Contradiction Tracker c063)."
+
+  - id: exp026
+    date: "2026-07-22"
+    target_id: [iran]
+    type: military_force_threat
+    escalation_level: 3
+    headline: "Threatens to bomb an Iranian bridge or power plant for every future Hormuz attack"
+    detail: "Following Iranian attacks on more than 30 commercial vessels over the preceding three months, Trump announced a standing retaliation policy targeting Iranian infrastructure, including sites 'next to or inside' Tehran, for any further attack on Hormuz shipping. UN Secretary-General Guterres called such attacks on infrastructure 'unacceptable' under international law absent a military use justification."
+    quote: "From this point forward, anytime the Islamic Republic of Iran fires on a ship in the Strait of Hormuz, whether with a missile, rocket, drone, or any other weapon, the United States will bomb and destroy a bridge or power plant."
+    quoted_by: "Donald Trump (Truth Social)"
+    source: "Axios / PBS NewsHour / Al Jazeera"
+    source_url: "https://www.axios.com/2026/07/22/trump-iran-bridges-power-plants-hormuz"
+    doctrine_note: "A blanket, pre-announced infrastructure-targeting policy rather than a response to a specific attack -- the threat itself, not any single incident, is the escalation."
+
+  - id: exp027
+    date: "2026-07-20"
+    target_id: [canada]
+    type: economic_coercion
+    escalation_level: 2
+    headline: "Announces 50% tariffs on most Canadian goods, effective in 30 days"
+    detail: "Trump imposed 50% tariffs on roughly $20 billion of Canadian goods -- autos, alcohol, dairy, cement, and hockey sticks among them -- effective in 30 days, invoking Section 338 of the Tariff Act of 1930 and citing Canadian trade practices he characterized as discriminatory against American autos, alcohol, and dairy producers. Oil, gas, critical minerals, potash, and goods already covered by sector-specific tariffs were exempted."
+    quote: null
+    quoted_by: null
+    source: "Washington Post / NPR / Al Jazeera"
+    source_url: "https://www.washingtonpost.com/business/2026/07/20/trump-says-he-will-impose-50-percent-tariffs-canada/"
+    doctrine_note: "The steepest single tariff action against Canada in the register to date, arriving nine months after the last documented escalation (exp009) and reversing the 'rhetoric has cooled' assessment of that entry."
