@@ -911,3 +911,18 @@
   source_b: Truth Social post, July 23, 2026, reported by ABC News and Axios
   doctrine_note: The agreement his own Energy Department signed one day earlier was reported to leave a path to enrichment
     open; the President then redefined its terms on social media, a description his own officials disputed.
+- id: c066
+  theme: Diplomatic
+  country:
+  - Venezuela
+  term_a: 2
+  statement_a: If she doesn't do what's right, she is going to pay a very big price, probably bigger than Maduro.
+  date_a: '2026-01-04'
+  source_a: Telephone interview with The Atlantic, January 4, 2026
+  term_b: 2
+  statement_b: >-
+    We just had a great conversation today, and she's a terrific person... The Oil is beginning to flow, and the
+    professionalism and dedication between both Countries is a very nice thing to see.
+  date_b: '2026-01-14'
+  source_b: Oval Office remarks and Truth Social post following a call with interim President Delcy Rodríguez, reported by The Hill and France 24, January 14-15, 2026
+  doctrine_note: The threat and the praise were directed at the same person occupying the same office ten days apart; cooperation on oil access, not a change in her government's character, appears to be what moved her from target to "terrific person."

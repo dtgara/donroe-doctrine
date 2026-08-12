@@ -200,8 +200,12 @@
     '
   doctrine_rating: 8
   status: ACTIVE
-  outcome: Phase One implemented. Some hostages released. Phase Two negotiations commenced and proved difficult. Fighting
-    resumed in phases. The situation in Gaza remains active and unresolved.
+  outcome: >-
+    Phase One implemented. Some hostages released. Phase Two negotiations commenced and proved difficult. Fighting
+    resumed in phases. On July 30, 2026 Trump announced a separate disarmament framework via his "Board of Peace" (see
+    deal board-of-peace-gaza-disarmament-2026); Israel rejected its terms days later, demanding full Hamas disarmament
+    before any troop withdrawal. Israeli operations in Gaza intensified through early August 2026. The situation
+    remains active and unresolved eighteen months after the original ceasefire was announced.
 - id: ukraine-minerals-deal
   title: The Ukraine Minerals Agreement
   strapline: Ukraine agrees to share revenues from its natural resource sector with the United States. Described as reimbursement
@@ -817,7 +821,9 @@
     Thirty-year term. Saudi Arabia commits to US firms for reactor supply. Joint US-Saudi study on domestic enrichment
     capability. Bilateral safeguards agreement short of the "gold standard" barring enrichment. Congressional review
     period pending. Trump's July 23 social media post adds an unwritten condition tying the deal to Saudi normalization
-    with Israel.
+    with Israel. Press Secretary Karoline Leavitt confirmed days later that the condition was firm rather than a slip:
+    "he has said if they don't join the Abraham Accords, the deal is off." Saudi Arabia has not moved off its own
+    precondition of a path to Palestinian statehood.
 - id: us-canada-tariffs-2026
   title: The Second Canada Tariff Round
   strapline: Fifty percent on autos, alcohol, and cheese. Thirty days to comply. Oil, gas, and potash spared.
@@ -830,8 +836,34 @@
     dairy, cement, and hockey sticks -- effective in 30 days, invoking Section 338 of the Tariff Act of 1930 and citing
     Canadian "discrimination" against US autos, alcohol, and dairy products. Oil, gas, critical minerals, potash, and
     goods already covered by sector-specific tariffs are exempted. Canadian Prime Minister Mark Carney said Canada
-    believes in "the benefits of free and fair trade" and remains prepared to negotiate.
+    believes in "the benefits of free and fair trade" and remains prepared to negotiate. As the August 19, 2026
+    effective date approached, Canadian negotiators intensified efforts to reach a deal before the tariffs took hold,
+    with officials warning of an "ugly new phase" of the trade dispute if they were not.
   terms_and_conditions: >-
     50% tariffs on approximately $20 billion of Canadian goods, effective 30 days from announcement (roughly August 19,
     2026). Oil, gas, critical minerals, potash, and sector-tariffed goods excluded. Tariffs lift if Canada drops
     "discriminatory" trade barriers on US autos, alcohol, and dairy. No timeline specified for a negotiated resolution.
+- id: board-of-peace-gaza-disarmament-2026
+  title: The Board of Peace Disarmament Framework
+  strapline: Hamas agrees to disarm, conditionally. Israel says no withdrawal until it already has. Both terms cannot be first.
+  date: '2026-07-30'
+  term: 2
+  type: Miscellaneous
+  status: UNRESOLVED
+  summary: >-
+    On July 30, 2026, Trump announced that his "Board of Peace" body had reached an agreement with Hamas on the
+    disarmament of Hamas and other armed groups in Gaza, building on the October 2025 ceasefire. Senior Hamas official
+    Ghazi Hamad confirmed Hamas's agreement to disarm, but conditioned it on Israel halting fire, ending targeted
+    killings, withdrawing to the "Yellow Line," and allowing a surge of humanitarian aid. Israel's government rejected
+    the sequencing on August 9, 2026, demanding full Hamas disarmament before any Israeli withdrawal, citing "serious
+    security concerns." Israeli operations in Gaza intensified in the following days.
+  terms_and_conditions: >-
+    Phased disarmament of Hamas and other Gaza armed groups under Board of Peace oversight. Hamas conditions
+    compliance on an Israeli ceasefire, halt to targeted killings, withdrawal to the "Yellow Line," and expanded
+    humanitarian aid access. Israel conditions any withdrawal on disarmament happening first. No enforcement
+    mechanism has been made public for resolving the sequencing dispute.
+  doctrine_rating: 4
+  outcome: >-
+    Announced as a "breakthrough" with the caveat, immediately visible, that the two parties want the same
+    precondition satisfied by the other side first. As of early August 2026 neither disarmament nor withdrawal had
+    begun.

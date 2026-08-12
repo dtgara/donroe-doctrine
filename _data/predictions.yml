@@ -167,11 +167,14 @@
   term: 2
   status: pending
   outcome_date: null
-  outcome_note: A US-China truce was reached at the Busan summit in October 2025. Section 232 tariffs on steel and aluminium
+  outcome_note: >-
+    A US-China truce was reached at the Busan summit in October 2025. Section 232 tariffs on steel and aluminium
     were reduced from 25% to 15% for countries that signed trade frameworks, including the UK, EU, Switzerland, Taiwan, Japan,
     and South Korea. A further US-China tariff agreement on June 11, 2026 reduced Chinese import rates from approximately
-    41% to 31%, with higher tariffs paused for 60 days. Tariffs have come down for deal-makers; structural global tariffs
-    remain elevated. Final comprehensive deals remain unsigned as of June 2026.
+    41% to 31%, with higher tariffs paused for 60 days. On August 11, 2026, Trump paused a threatened increase to a 125%
+    reciprocal rate on China for another 90 days rather than let it take effect — the third such extension since April 2025.
+    Tariffs have come down for deal-makers on a rolling, deadline-extension basis; structural global tariffs remain elevated
+    and no final comprehensive US-China deal has been signed.
 - id: nato-allies-will-pay
   statement: 'I told NATO: you have to pay up. And they did.'
   date_made: '2024-02-10'
@@ -237,10 +240,13 @@
   term: 2
   status: pending
   outcome_date: null
-  outcome_note: Denmark and Greenland firmly rejected any transfer. Greenland's Prime Minister stated the island "is not for
+  outcome_note: >-
+    Denmark and Greenland firmly rejected any transfer. Greenland's Prime Minister stated the island "is not for
     sale." The US dispatched the Vice President to Nuuk in February 2025. No formal acquisition process initiated. Trump reiterated
     the claim multiple times through 2025 and again at the July 2026 NATO summit in Ankara, calling the 1951 handback to Denmark
-    a mistake. Denmark's Prime Minister repeated that Greenland is not for sale. No formal acquisition process has followed.
+    a mistake. On July 31, 2026, Trump told Real America's Voice host Steve Gruber he would "make that bet" that Greenland
+    comes under US control before his term ends in 2029, without specifying a mechanism. Denmark's Prime Minister repeated
+    that Greenland is not for sale. No formal acquisition process has followed.
 - id: canada-51st-state
   statement: Canada should be the 51st state. It will happen one way or another.
   date_made: '2024-12-19'
@@ -292,14 +298,17 @@
   term: 2
   status: pending
   outcome_date: null
-  outcome_note: The Iran war and Israel-Lebanon conflict complicated Saudi-Israel normalization through 2025-2026. Saudi Arabia
+  outcome_note: >-
+    The Iran war and Israel-Lebanon conflict complicated Saudi-Israel normalization through 2025-2026. Saudi Arabia
     continued to condition normalization on a Palestinian state pathway that Israel rejected. No normalization deal signed
     as of mid-2026. Senator Lindsey Graham had been preparing a renewed Trump-backed normalization push targeting a deal
     by November 2026 before dying suddenly on July 12, 2026, removing one of the effort's chief congressional advocates.
     On July 22, 2026 the US and Saudi Arabia signed a civil nuclear cooperation agreement giving Saudi Arabia a pathway
     to enrich its own reactor fuel; the following day Trump said on Truth Social the deal was "totally subject" to Saudi
-    Arabia joining the Abraham Accords, adding normalization would happen "at some point." Saudi Arabia has said it will
-    not normalize without an "irreversible and time-bound path" to Palestinian statehood, a condition Israel has rejected.
+    Arabia joining the Abraham Accords, adding normalization would happen "at some point." Days later, Press Secretary
+    Karoline Leavitt confirmed the condition to reporters as firm, not new: "he has said if they don't join the Abraham
+    Accords, the deal is off." Saudi Arabia has said it will not normalize without an "irreversible and time-bound path"
+    to Palestinian statehood, a condition Israel has rejected.
 - id: seven-wars-claim
   statement: I've ended seven wars. Seven un-endable wars. Nobody thought it could be done. I did it.
   date_made: '2025-09-22'

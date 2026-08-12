@@ -413,9 +413,10 @@ posts:
   - name: Cambodia
     code: KH
     region: Asia
-    status: vacant
-    appointee_type: career
-    notes: "Vacant since Ambassador Patrick Murphy's mid-2024 departure; Chargée d'Affaires ad interim Aleks Zittle in post. Nominee Christopher Anderson (Trump nomination sent to Senate June 1, 2026) awaiting Foreign Relations Committee action as of a July 16, 2026 hearing."
+    status: political_appointee
+    appointee: Christopher Anderson
+    appointee_type: political
+    notes: "Confirmed by the Senate August 7, 2026, ending a vacancy dating to Ambassador Patrick Murphy's mid-2024 departure. Anderson, a longtime national security adviser to Senator Steve Daines, succeeds Chargé d'Affaires ad interim Aleks Zittle."
     source_url: "https://kh.usembassy.gov/cda/"
   - name: Iraq
     code: IQ
@@ -563,3 +564,23 @@ incidents:
     source: "Korea Herald; NK News; Stars and Stripes"
     source_url: "https://www.koreaherald.com/article/10774361"
     notes: "Date corrected to the June 17, 2026 confirmation vote; the April 2026 date in an earlier version of this entry reflected the nomination, not the confirmation. Logged as a distinct incident rather than folded into the posts roster row because the rotating-acting-official pattern, not just the eventual fill, is the point — a major treaty ally went over a year and a half without a confirmed US ambassador."
+
+  - id: vac006
+    date: "2026-08-07"
+    term: 2
+    type: notable_appointment
+    countries: [Cambodia]
+    headline: "Cambodia ambassadorship filled after roughly two-year vacancy"
+    detail: >-
+      The Phnom Penh post went vacant when Ambassador Patrick Murphy departed
+      in mid-2024. Aleks Zittle, a career Foreign Service officer, served as
+      chargé d'affaires ad interim in the interim. Christopher Anderson, a
+      longtime national security adviser to Senator Steve Daines, was
+      nominated June 1, 2026 and Senate-confirmed August 7, 2026, ending a
+      vacancy of roughly two years.
+    appointee: Christopher Anderson
+    donor_amount_usd:
+    career_background: "National security adviser to Sen. Steve Daines; no prior diplomatic postings."
+    source: "Daines Senate office; Kiripost; Cambodia Investment Review"
+    source_url: "https://www.daines.senate.gov/2026/08/07/daines-congratulates-chris-anderson-longtime-staffer-on-confirmation-to-be-u-s-ambassador-to-cambodia/"
+    notes: "Continues the itemization pass of the Europe/Asia/Middle East portion of the vacancy count (method established by vac005)."

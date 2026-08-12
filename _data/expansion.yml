@@ -26,10 +26,10 @@ targets:
     escalation_level: 3
     escalation_label: "Military threat"
     rationale_claimed: "National security — Arctic shipping lanes and Russian/Chinese activity nearby"
-    current_status: "Unresolved. Special envoy appointed; White House confirms 'range of options including military force' under discussion as of Jan 2026. Rhetoric revived at the July 2026 NATO summit with no new concrete step. Denmark and Greenland both refuse."
-    target_response: "Greenland's PM called annexation talk 'fantasies.' Denmark and European allies issued a joint statement defending 'sovereignty, territorial integrity and inviolability of borders.'"
+    current_status: "Unresolved. Special envoy appointed; White House confirms 'range of options including military force' under discussion as of Jan 2026. Rhetoric revived at the July 2026 NATO summit with no new concrete step. On July 31, 2026 Trump told Real America's Voice he would 'make that bet' that Greenland is under US control before his term ends in 2029, again with no mechanism specified. Denmark and Greenland both refuse."
+    target_response: "Greenland's PM called annexation talk 'fantasies.' Denmark and European allies issued a joint statement defending 'sovereignty, territorial integrity and inviolability of borders.' Denmark has since expanded military conscription, citing a worsening Arctic security environment."
     first_asserted_date: "2019-08-15"
-    last_updated_date: "2026-07-08"
+    last_updated_date: "2026-07-31"
 
   - id: canada
     name: Canada
@@ -39,10 +39,10 @@ targets:
     escalation_level: 2
     escalation_label: "Economic pressure"
     rationale_claimed: "Trade imbalance; repeated framing of Canada as a natural '51st state'"
-    current_status: "Rhetoric on absorption has cooled since late 2025, but economic pressure escalated sharply on July 20, 2026 with new 50% tariffs on roughly $20 billion of Canadian autos, alcohol, dairy, and other goods (see deals.yml us-canada-tariffs-2026), effective in 30 days. No military threat made."
-    target_response: "PM Mark Carney has been unambiguous that Canada has no interest in joining the US. Ontario pulled an anti-tariff ad after Trump threatened to end trade talks over it. On the July 2026 tariffs, Carney said Canada believes in 'the benefits of free and fair trade' and remains open to negotiation."
+    current_status: "Rhetoric on absorption has cooled since late 2025, but economic pressure escalated sharply on July 20, 2026 with new 50% tariffs on roughly $20 billion of Canadian autos, alcohol, dairy, and other goods (see deals.yml us-canada-tariffs-2026), taking effect August 19, 2026. No military threat made. Canadian negotiators pushed for a deal ahead of the deadline through early August."
+    target_response: "PM Mark Carney has been unambiguous that Canada has no interest in joining the US. Ontario pulled an anti-tariff ad after Trump threatened to end trade talks over it. On the July 2026 tariffs, Carney said Canada believes in 'the benefits of free and fair trade' and remains open to negotiation, warning of an 'ugly new phase' if the August 19 tariffs take hold."
     first_asserted_date: "2024-11-15"
-    last_updated_date: "2026-07-20"
+    last_updated_date: "2026-08-07"
 
   - id: panama
     name: Panama (Canal)
@@ -104,10 +104,10 @@ targets:
     escalation_level: 3
     escalation_label: "Military threat"
     rationale_claimed: "Counter-narcotics — accused President Petro of allowing cocaine production to flourish"
-    current_status: "Sanctions imposed on Petro (Oct 2025); over 115 people killed in US strikes on alleged drug boats. When asked directly if military action against Colombia was being threatened, Trump said 'it sounds good to me.' In a July 2026 call focused on coca eradication, Petro personally asked Trump to lift his own sanctions listing; Trump said he would 'do his best.'"
-    target_response: "Petro accused the US of violating international law with the boat strikes and said he 'would take up arms' for his country if necessary, despite having sworn off violence."
+    current_status: "Sanctions imposed on Petro (Oct 2025); over 115 people killed in US strikes on alleged drug boats. When asked directly if military action against Colombia was being threatened, Trump said 'it sounds good to me.' In a July 2026 call focused on coca eradication, Petro personally asked Trump to lift his own sanctions listing; Trump said he would 'do his best.' Petro's term ended amid a disputed June 2026 election; Trump-backed winner Abelardo de la Espriella suspended the transition and accused Petro of attempting a coup, taking office August 7, 2026 with Trump's public backing."
+    target_response: "Petro accused the US of violating international law with the boat strikes and said he 'would take up arms' for his country if necessary, despite having sworn off violence. Petro disputed the June 2026 election result without providing evidence and did not fully recognize de la Espriella's legitimacy."
     first_asserted_date: "2025-10-01"
-    last_updated_date: "2026-07-03"
+    last_updated_date: "2026-08-07"
 
   - id: iran
     name: Iran
@@ -117,10 +117,10 @@ targets:
     escalation_level: 4
     escalation_label: "Military action"
     rationale_claimed: "Nuclear non-proliferation — prevention of an Iranian nuclear weapon"
-    current_status: "US airstrikes hit Fordo, Natanz, and Isfahan nuclear facilities (June 2025) during a broader Israel-Iran war. A 2026 wave of Iranian protests drew a further Trump threat to 'come to the rescue.' A June 2026 ceasefire broke down in early July after tanker attacks in the Strait of Hormuz; Trump declared the truce 'over' and US forces struck roughly 90 Iranian targets over two days, though talks continued. On July 13 Trump reinstated the naval blockade of Iran and announced a 20% Hormuz transit toll billed as a 'guardian' fee; he dropped the toll a day later citing pending Gulf state investment pledges, while the blockade remained in effect. Iranian ballistic missile and drone attacks killed three US service members in Jordan and one in Iraq on July 17-19; Trump vowed retaliation and, on July 22, threatened to destroy an Iranian bridge or power plant for every future attack on Hormuz shipping. The administration formally notified Congress that a new 60-day war-powers window had begun, a position congressional Democrats dispute (see deals.yml us-iran-mou-2026)."
+    current_status: "US airstrikes hit Fordo, Natanz, and Isfahan nuclear facilities (June 2025) during a broader Israel-Iran war. A 2026 wave of Iranian protests drew a further Trump threat to 'come to the rescue.' A June 2026 ceasefire broke down in early July after tanker attacks in the Strait of Hormuz; Trump declared the truce 'over' and US forces struck roughly 90 Iranian targets over two days, though talks continued. On July 13 Trump reinstated the naval blockade of Iran and announced a 20% Hormuz transit toll billed as a 'guardian' fee; he dropped the toll a day later citing pending Gulf state investment pledges, while the blockade remained in effect. Iranian ballistic missile and drone attacks killed three US service members in Jordan and one in Iraq on July 17-19; Trump vowed retaliation and, on July 22, threatened to destroy an Iranian bridge or power plant for every future attack on Hormuz shipping. The administration formally notified Congress that a new 60-day war-powers window had begun, a position congressional Democrats dispute (see deals.yml us-iran-mou-2026). Treasury imposed an eighth 2026 sanctions round on Iran's alleged shadow-banking network in early August. On August 10-11, Trump claimed the US Navy had swept the Strait of Hormuz for mines and held '100%' control of it, called renewed talks Iran's 'last chance' before 'decapitation,' and added a new demand that Iran pay compensation for past actions as a condition of any deal."
     target_response: "Iran denied it was close to a weapon; DNI Gabbard's own intelligence assessment publicly contradicted Trump's stated justification for the strikes (see Contradiction Tracker). Iran maintains it holds sovereignty over Strait of Hormuz shipping routes and rejected any US role administering it; Iranian FM Araghchi sarcastically endorsed the toll principle while calling 20% 'too much.' Iran's supreme leader called Trump's signature on the June MOU 'worthless' after the ceasefire collapsed. Araghchi said Iran's defense doctrine is 'eye for an eye' and that any strike on its infrastructure 'will compel a powerful and decisive response.'"
     first_asserted_date: "2025-02-28"
-    last_updated_date: "2026-07-22"
+    last_updated_date: "2026-08-10"
 
 incidents:
 
@@ -473,3 +473,42 @@ incidents:
     source: "Washington Post / NPR / Al Jazeera"
     source_url: "https://www.washingtonpost.com/business/2026/07/20/trump-says-he-will-impose-50-percent-tariffs-canada/"
     doctrine_note: "The steepest single tariff action against Canada in the register to date, arriving nine months after the last documented escalation (exp009) and reversing the 'rhetoric has cooled' assessment of that entry."
+
+  - id: exp028
+    date: "2026-07-31"
+    target_id: [greenland]
+    type: annexation_threat
+    escalation_level: 1
+    headline: "Predicts Greenland will be under US control by 2029, offers to 'make that bet'"
+    detail: "In a phone interview with Real America's Voice host Steve Gruber, who recalled Gruber's own earlier prediction that Greenland would come under 'operational control' of the US before Trump left office, Trump said the outcome was assured. No acquisition mechanism, timeline, or new concrete step was specified beyond the restated prediction."
+    quote: "Make that bet."
+    quoted_by: "Donald Trump, Real America's Voice interview"
+    source: "Newsweek / AOL"
+    source_url: "https://www.newsweek.com/trump-greenland-control-2029-make-that-bet-12275042"
+    doctrine_note: "A repetition of the standing claim rather than a new escalation; restated at the same rung (rhetorical) it has held since 2019, seven years running."
+
+  - id: exp029
+    date: "2026-08-10"
+    target_id: [iran]
+    type: military_force_threat
+    escalation_level: 3
+    headline: "Claims '100% control' of Hormuz, demands Iran pay compensation, calls talks 'last chance'"
+    detail: "Trump told reporters the US Navy had swept the Strait of Hormuz for mines and held full control of the waterway, while simultaneously adding a new condition to renewed talks: that Iran pay compensation for past attacks. He called the talks Iran's 'last chance' to reach a deal, warning of 'decapitation' if they failed. Shipping traffic through the strait remained subdued despite the control claim."
+    quote: "The only one that has control of the Strait of Hormuz right now is the United States Navy."
+    quoted_by: "Donald Trump, Oval Office remarks"
+    source: "CNN / CNBC / CBC"
+    source_url: "https://www.cnn.com/2026/08/10/world/live-news/iran-war-trump"
+    doctrine_note: "A declared operational victory (full control, mines cleared) issued alongside a fresh precondition for the underlying deal -- the toll dispute's pattern of announcing completion while still bargaining over the same asset repeats here on compensation."
+
+  - id: exp030
+    date: "2026-08-07"
+    target_id: [colombia]
+    type: self_congratulatory_claim
+    escalation_level: 1
+    headline: "Claims credit for Colombian transition as Trump-backed winner takes office amid coup accusations"
+    detail: "Trump-backed candidate Abelardo de la Espriella was inaugurated August 7, 2026 after suspending the transition process in July and accusing outgoing President Gustavo Petro of attempting a coup; de la Espriella had publicly appealed to the armed forces not to obey any contrary orders from Petro. Petro disputed the June 2026 election result without providing evidence. Trump publicly claimed credit for the outcome."
+    quote: "Congratulations to 'El Tigre' Abelardo de la Espriella, the new president of Colombia! It was a tremendous honor to have supported him, and I look forward to working together to forge a strong relationship between Colombia and the United States that will elevate both nations to new heights."
+    quoted_by: "Donald Trump (Truth Social)"
+    source: "Newsmax / The Hill / NBC News"
+    source_url: "https://thehill.com/policy/international/5957615-de-la-espirella-petro-coup-allegations/"
+    doctrine_note: "Follows over a year of sanctions and boat-strike pressure on the outgoing government (exp-series entries at escalation level 3); the change of leadership arrives through a disputed domestic election rather than direct US action, with Trump claiming the credit regardless."

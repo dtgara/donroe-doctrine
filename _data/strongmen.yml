@@ -578,3 +578,30 @@ entries:
     Erdoğan has governed under an executive presidency since the 2017 constitutional referendum Trump congratulated him
     on before the vote was fully counted (sm003). The F-35 sale under consideration was suspended in 2019 after Turkey's
     purchase of a Russian S-400 air defense system.
+- id: sm032
+  date: '2026-01-14'
+  term: 2
+  subject: Delcy Rodríguez
+  country: Venezuela
+  regime_type: authoritarian
+  historical: false
+  source_type: public
+  quote: >-
+    We just had a great conversation today, and she's a terrific person... The Oil is beginning to flow, and the
+    professionalism and dedication between both Countries is a very nice thing to see.
+  context: >-
+    Oval Office remarks and a Truth Social post following a phone call with interim Venezuelan President Delcy
+    Rodríguez, the first documented contact between the two since Maduro's capture. Ten days earlier, Trump had
+    told The Atlantic that Rodríguez would "pay a very big price, probably bigger than Maduro" if she failed to
+    "do what's right" (see Contradiction Tracker c066).
+  source: >-
+    The Hill and France 24, January 14-15, 2026
+  source_url: https://thehill.com/homenews/administration/5770142-trump-praises-venezuelan-president/
+  praise_type:
+  - rehabilitation
+  - cooperation
+  confidence: documented
+  notes: >-
+    Rodríguez served as Maduro's vice president before the January 2026 US operation installed her as interim
+    president; the reversal in tone from threat to "terrific person" tracked the resumption of Venezuelan oil flow
+    to US-controlled buyers rather than any change in the government's character.
