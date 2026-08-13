@@ -439,6 +439,30 @@ entries:
     source: "Daily News Hungary; Bloomberg, July 2026 (2026 financial disclosure)"
     source_url: "https://dailynewshungary.com/luxury-empire-cluj-trump-declaration/"
 
+  - id: i025
+    date: "2026-01-11"
+    term: 2
+    family_member: "Trump Organization"
+    country: Saudi Arabia
+    region: middle_east
+    deal_type: real_estate
+    title: "Wadi Safar, Diriyah — Trump International golf course, hotel, and residences"
+    description: >-
+      Dar Al Arkan, in collaboration with Dar Global and the Trump Organization, launched Trump International, a
+      2.6-million-square-metre gated development in Wadi Safar within the Diriyah project area outside Riyadh,
+      featuring a Trump-branded championship golf course, a luxury Trump hotel, and premium residences. Announced
+      alongside a second Dar Global project (Amaya, Jeddah), for a combined disclosed value of $10 billion. Forbes
+      reported in July 2026 that the Trump Organization advanced this Saudi business track in parallel with the
+      administration's year-long US-Saudi civil nuclear negotiations, which concluded in the July 22, 2026 123
+      Agreement (see pe016).
+    value: 10000000000
+    value_note: "$10 billion combined value across the two Dar Global-partnered projects announced the same day"
+    status: announced
+    partner: "Dar Al Arkan / Dar Global"
+    concurrent_policy: "Announced during the same period the administration was negotiating the US-Saudi civil nuclear cooperation agreement, which Forbes reported ran on a parallel track to the Trump Organization's expanding Saudi real estate footprint."
+    source: "The National; Bloomberg; Middle East Eye, January 2026; Forbes (Dana Alexander), July 23, 2026"
+    source_url: "https://www.forbes.com/sites/danalexander/2026/07/23/trump-bolstered-saudi-business-connections-amid-nuclear-discussions/"
+
 policy_events:
 
   - id: pe001
@@ -559,3 +583,10 @@ policy_events:
     title: "Trump-Lutnick negotiate Kazakhstan critical minerals access, $1.6B federal financing"
     description: "Trump and Commerce Secretary Howard Lutnick won an agreement from Kazakhstan's president granting Kaz Resources access to major tungsten reserves, with the administration approving preliminary applications for as much as $1.6 billion in federal financing for the project days before investors including the president's sons acquired an equity stake in a related entity."
     category: policy_action
+  - id: pe016
+    date: "2026-07-22"
+    country: Saudi Arabia
+    region: middle_east
+    title: "US-Saudi civil nuclear cooperation agreement (123 Agreement) signed"
+    description: "Energy Secretary Chris Wright and Saudi Minister of Energy Abdulaziz bin Salman signed a 30-year civil nuclear cooperation pact leaving open a pathway for Saudi Arabia to enrich its own reactor fuel. Signed during the same period the Trump Organization was advancing the Wadi Safar/Diriyah development with Saudi partners (see i025)."
+    category: deal_signed

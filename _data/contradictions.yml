@@ -926,3 +926,22 @@
   date_b: '2026-01-14'
   source_b: Oval Office remarks and Truth Social post following a call with interim President Delcy Rodríguez, reported by The Hill and France 24, January 14-15, 2026
   doctrine_note: The threat and the praise were directed at the same person occupying the same office ten days apart; cooperation on oil access, not a change in her government's character, appears to be what moved her from target to "terrific person."
+- id: c067
+  theme: Diplomatic
+  country:
+  - Iran
+  term_a: 2
+  statement_a: >-
+    The Strait's going to be open very soon, or they're going to get hit very hard, and then the Strait's going
+    to be open.
+  date_a: '2026-08-05'
+  source_a: Fox News interview, reported by U.S. News and the Jerusalem Post, August 5, 2026
+  term_b: 2
+  statement_b: >-
+    We have total control. We own it, and at some point, maybe they'll do something, and then they get blown
+    away.
+  date_b: '2026-08-11'
+  source_b: Remarks to reporters at Joint Base Andrews, reported by Bloomberg, Fox News, and Al Jazeera, August 11-12, 2026
+  doctrine_note: Six days after describing "very good discussions" and an imminent reopening, the administration was
+    back to open threats and a fresh compensation demand while Iran publicly denied the strait was under US control
+    at all -- the talks oscillate between imminent and over rather than moving toward either.

@@ -454,6 +454,24 @@ posts:
     appointee_type: career
     notes: "Serving as Chargé d'Affaires since March 9, 2026 after being recalled to diplomatic service; no Senate-confirmed ambassador in post since Herro Mustafa's term ended January 17, 2026."
     source_url: "https://eg.usembassy.gov/u-s-embassy-cairo/charge-d-affaires-robert-silverman/"
+  - name: Pakistan
+    code: PK
+    region: Asia
+    status: acting_charge_daffaires
+    appointee: Natalie A. Baker
+    appointee_type: career
+    strategic_flag: true
+    notes: "Chargée d'Affaires ad interim in Islamabad since January 2025; arrived as Deputy Chief of Mission in August 2024. No Senate-confirmed ambassador in post through the administration's 2025 India-Pakistan Board of Peace mediation."
+    source_url: "https://pk.usembassy.gov/charge-daffaires-natalie-a-baker/"
+  - name: United Arab Emirates
+    code: AE
+    region: Middle East
+    status: acting_charge_daffaires
+    appointee: Eric Gaudiosi
+    appointee_type: career
+    strategic_flag: true
+    notes: "Chargé d'Affaires ad interim in Abu Dhabi since August 11, 2025, succeeding Ambassador Martina Strong. No Senate-confirmed ambassador in post; UAE is the Gulf partner behind the Sheikh Tahnoon-linked World Liberty Financial equity stake (see The Ledger)."
+    source_url: "https://ae.usembassy.gov/"
 
 incidents:
   - id: vac001

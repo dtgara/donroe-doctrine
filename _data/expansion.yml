@@ -39,10 +39,10 @@ targets:
     escalation_level: 2
     escalation_label: "Economic pressure"
     rationale_claimed: "Trade imbalance; repeated framing of Canada as a natural '51st state'"
-    current_status: "Rhetoric on absorption has cooled since late 2025, but economic pressure escalated sharply on July 20, 2026 with new 50% tariffs on roughly $20 billion of Canadian autos, alcohol, dairy, and other goods (see deals.yml us-canada-tariffs-2026), taking effect August 19, 2026. No military threat made. Canadian negotiators pushed for a deal ahead of the deadline through early August."
+    current_status: "Rhetoric on absorption has cooled since late 2025, but economic pressure escalated sharply on July 20, 2026 with new 50% tariffs on roughly $20 billion of Canadian autos, alcohol, dairy, and other goods (see deals.yml us-canada-tariffs-2026), taking effect August 19, 2026. No military threat made. Canadian negotiators pushed for a deal ahead of the deadline through early August; Trade Minister LeBlanc made a third trip to Washington in as many weeks on August 11, with reports of a draft deal on the table covering autos, alcohol, dairy, critical minerals, and security, though CBC reported Canada was unsatisfied with the latest US offer as of August 12."
     target_response: "PM Mark Carney has been unambiguous that Canada has no interest in joining the US. Ontario pulled an anti-tariff ad after Trump threatened to end trade talks over it. On the July 2026 tariffs, Carney said Canada believes in 'the benefits of free and fair trade' and remains open to negotiation, warning of an 'ugly new phase' if the August 19 tariffs take hold."
     first_asserted_date: "2024-11-15"
-    last_updated_date: "2026-08-07"
+    last_updated_date: "2026-08-12"
 
   - id: panama
     name: Panama (Canal)
@@ -78,10 +78,10 @@ targets:
     escalation_level: 5
     escalation_label: "Regime change achieved"
     rationale_claimed: "Counter-narcotics — Maduro government designated a drug-trafficking enterprise"
-    current_status: "January 2026: US military operation captured Maduro in Caracas; he now faces drug trafficking charges in the US. Interim government installed. This is the case that prompted the press to coin 'Don-roe Doctrine.'"
-    target_response: "Cuban government reported 32 Cuban nationals (Maduro's bodyguard/intelligence detail) killed in the operation. Colombia's Petro warned against similar action in his own country."
+    current_status: "January 2026: US military operation captured Maduro in Caracas; he now faces drug trafficking charges in the US. Interim government installed under Delcy Rodriguez, recognized by the US (see strongmen/contradictions c066). This is the case that prompted the press to coin 'Don-roe Doctrine.' Seven months on, Trump has touted oil-revenue gains from the US-run custodial arrangement -- on August 4 claiming 'hundreds of billions of dollars,' a figure PolitiFact found overstated roughly tenfold against the highest credible public accounting ($13 billion)."
+    target_response: "Cuban government reported 32 Cuban nationals (Maduro's bodyguard/intelligence detail) killed in the operation. Colombia's Petro warned against similar action in his own country. Congressional Democrats introduced the Venezuela Oil Proceeds Transparency Act over the custodial oil-fund accounting."
     first_asserted_date: "2025-08-01"
-    last_updated_date: "2026-01-11"
+    last_updated_date: "2026-08-06"
 
   - id: cuba
     name: Cuba
@@ -91,10 +91,10 @@ targets:
     escalation_level: 2
     escalation_label: "Economic pressure"
     rationale_claimed: "Regime collapse framed as a byproduct of cutting off Cuba's Venezuelan oil lifeline, not direct US action"
-    current_status: "No direct military threat made. Trump has publicly predicted the government will 'fall' on its own once Venezuelan oil support ends, repeating in July 2026 that Cuba is 'coming our way.' Rubio: Cuban leaders 'in a lot of trouble.'"
-    target_response: "President Diaz-Canel said Cuba would resist any US military intervention 'to the very last drop of blood.' Cuba's foreign minister brought a formal complaint over the US pressure campaign before the UN General Assembly on July 7, 2026."
+    current_status: "No direct military threat made. Trump has publicly predicted the government will 'fall' on its own once Venezuelan oil support ends, repeating in July 2026 that Cuba is 'coming our way.' Rubio: Cuban leaders 'in a lot of trouble.' On August 6, Treasury added new sanctions on Cuba's military and the CIA disclosed a dedicated task force targeting divisions within the ruling elite -- pressure escalating in kind, not in rung."
+    target_response: "President Diaz-Canel said Cuba would resist any US military intervention 'to the very last drop of blood.' Cuba's foreign minister brought a formal complaint over the US pressure campaign before the UN General Assembly on July 7, 2026. An assembly of leftist organizations from 25 countries convened in Havana on August 6 in solidarity with the government."
     first_asserted_date: "2026-01-11"
-    last_updated_date: "2026-07-01"
+    last_updated_date: "2026-08-06"
 
   - id: colombia
     name: Colombia
@@ -117,10 +117,10 @@ targets:
     escalation_level: 4
     escalation_label: "Military action"
     rationale_claimed: "Nuclear non-proliferation — prevention of an Iranian nuclear weapon"
-    current_status: "US airstrikes hit Fordo, Natanz, and Isfahan nuclear facilities (June 2025) during a broader Israel-Iran war. A 2026 wave of Iranian protests drew a further Trump threat to 'come to the rescue.' A June 2026 ceasefire broke down in early July after tanker attacks in the Strait of Hormuz; Trump declared the truce 'over' and US forces struck roughly 90 Iranian targets over two days, though talks continued. On July 13 Trump reinstated the naval blockade of Iran and announced a 20% Hormuz transit toll billed as a 'guardian' fee; he dropped the toll a day later citing pending Gulf state investment pledges, while the blockade remained in effect. Iranian ballistic missile and drone attacks killed three US service members in Jordan and one in Iraq on July 17-19; Trump vowed retaliation and, on July 22, threatened to destroy an Iranian bridge or power plant for every future attack on Hormuz shipping. The administration formally notified Congress that a new 60-day war-powers window had begun, a position congressional Democrats dispute (see deals.yml us-iran-mou-2026). Treasury imposed an eighth 2026 sanctions round on Iran's alleged shadow-banking network in early August. On August 10-11, Trump claimed the US Navy had swept the Strait of Hormuz for mines and held '100%' control of it, called renewed talks Iran's 'last chance' before 'decapitation,' and added a new demand that Iran pay compensation for past actions as a condition of any deal."
-    target_response: "Iran denied it was close to a weapon; DNI Gabbard's own intelligence assessment publicly contradicted Trump's stated justification for the strikes (see Contradiction Tracker). Iran maintains it holds sovereignty over Strait of Hormuz shipping routes and rejected any US role administering it; Iranian FM Araghchi sarcastically endorsed the toll principle while calling 20% 'too much.' Iran's supreme leader called Trump's signature on the June MOU 'worthless' after the ceasefire collapsed. Araghchi said Iran's defense doctrine is 'eye for an eye' and that any strike on its infrastructure 'will compel a powerful and decisive response.'"
+    current_status: "US airstrikes hit Fordo, Natanz, and Isfahan nuclear facilities (June 2025) during a broader Israel-Iran war. A 2026 wave of Iranian protests drew a further Trump threat to 'come to the rescue.' A June 2026 ceasefire broke down in early July after tanker attacks in the Strait of Hormuz; Trump declared the truce 'over' and US forces struck roughly 90 Iranian targets over two days, though talks continued. On July 13 Trump reinstated the naval blockade of Iran and announced a 20% Hormuz transit toll billed as a 'guardian' fee; he dropped the toll a day later citing pending Gulf state investment pledges, while the blockade remained in effect. Iranian ballistic missile and drone attacks killed three US service members in Jordan and one in Iraq on July 17-19; Trump vowed retaliation and, on July 22, threatened to destroy an Iranian bridge or power plant for every future attack on Hormuz shipping. The administration formally notified Congress that a new 60-day war-powers window had begun, a position congressional Democrats dispute (see deals.yml us-iran-mou-2026). Treasury imposed an eighth 2026 sanctions round on Iran's alleged shadow-banking network in early August. On August 10-11, Trump claimed the US Navy had swept the Strait of Hormuz for mines and held '100%' control of it, called renewed talks Iran's 'last chance' before 'decapitation,' and added a new demand that Iran pay compensation for past actions as a condition of any deal. He repeated the control claim on August 11-12 ('they get blown away'), even as tracked vessel transits fell to a one-week low."
+    target_response: "Iran denied it was close to a weapon; DNI Gabbard's own intelligence assessment publicly contradicted Trump's stated justification for the strikes (see Contradiction Tracker). Iran maintains it holds sovereignty over Strait of Hormuz shipping routes and rejected any US role administering it; Iranian FM Araghchi sarcastically endorsed the toll principle while calling 20% 'too much.' Iran's supreme leader called Trump's signature on the June MOU 'worthless' after the ceasefire collapsed. Araghchi said Iran's defense doctrine is 'eye for an eye' and that any strike on its infrastructure 'will compel a powerful and decisive response.' On August 12, Iran publicly rejected the 'total control' claim outright and said the strait stays closed until the blockade, sanctions, and asset freezes end; an Iranian military adviser said the war could be 'prolonged' past Trump's term."
     first_asserted_date: "2025-02-28"
-    last_updated_date: "2026-08-10"
+    last_updated_date: "2026-08-12"
 
 incidents:
 
@@ -512,3 +512,41 @@ incidents:
     source: "Newsmax / The Hill / NBC News"
     source_url: "https://thehill.com/policy/international/5957615-de-la-espirella-petro-coup-allegations/"
     doctrine_note: "Follows over a year of sanctions and boat-strike pressure on the outgoing government (exp-series entries at escalation level 3); the change of leadership arrives through a disputed domestic election rather than direct US action, with Trump claiming the credit regardless."
+  - id: exp031
+    date: "2026-08-11"
+    target_id: [iran]
+    type: military_force_threat
+    escalation_level: 3
+    headline: "'They get blown away' -- doubles down on 'total control' of Hormuz as Iran declares it still blocked"
+    detail: "Trump told reporters at Joint Base Andrews the US had 'total control' of the Strait of Hormuz and that Iran would be destroyed if it tried to act against US shipping. Tracked vessel transits through the strait fell to a one-week low the same day. Iran publicly rejected the control claim and said the strait would not reopen until the US naval blockade was lifted, sanctions dropped, and its assets unfrozen; an Iranian military adviser said Tehran could 'prolong' the war until Trump leaves office. Pakistan's defense minister, mediating, said the two sides were nonetheless 'close to some sort of arrangement.'"
+    quote: "We have total control. We own it, and at some point, maybe they'll do something, and then they get blown away."
+    quoted_by: "Donald Trump"
+    source: "Bloomberg / Fox News / Al Jazeera"
+    source_url: "https://www.bloomberg.com/news/articles/2026-08-12/trump-claims-hormuz-control-as-us-iran-harden-their-positions"
+    doctrine_note: "The 'total control' declared here is contradicted by both falling transit volumes and Iran's own public denial the same day -- see Contradiction Tracker c067 for the reversal from 'very good discussions' six days earlier."
+
+  - id: exp032
+    date: "2026-08-06"
+    target_id: [cuba]
+    type: economic_coercion
+    escalation_level: 2
+    headline: "Sanctions Cuban military, CIA stands up new spy task force"
+    detail: "Treasury sanctioned five more organizations and eight more individuals tied to importing, producing, and repairing Cuban military equipment. Separately, the CIA revealed a new task force of analysts and covert-influence specialists tasked with identifying and exploiting divisions within Cuba's ruling elite."
+    quote: null
+    quoted_by: null
+    source: "Local 10 News (WPLG Miami)"
+    source_url: "https://www.local10.com/news/world/2026/08/06/trump-administration-ratchets-up-cuba-sanctions-sends-spies-to-island/"
+    doctrine_note: null
+
+  - id: exp033
+    date: "2026-08-06"
+    target_id: [venezuela]
+    type: self_congratulatory_claim
+    escalation_level: 1
+    headline: "Claims 'hundreds of billions' in Venezuela oil revenue; independent tally finds $13 billion"
+    detail: "Trump told Fox News the US and Venezuela were 'making hundreds of billions of dollars' in oil revenue since the January 2026 takeover of Venezuela's oil industry. PolitiFact found the highest credible public figure for combined revenue since then was $13 billion -- roughly a tenth of the claim."
+    quote: "We're making hundreds of billions of dollars, and so are they."
+    quoted_by: "Donald Trump"
+    source: "PolitiFact"
+    source_url: "https://politifact.com/factchecks/2026/aug/06/donald-trump/venezuela-oil-industry-us-gains/"
+    doctrine_note: "Congressional Democrats have introduced the Venezuela Oil Proceeds Transparency Act citing the gap between the administration's public figures and the funds' custodial accounting."
