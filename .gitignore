@@ -1,0 +1,21 @@
+# Local-only files: not part of the site
+.sync/
+push_to_github.py
+*.patch
+donroe-weekly-master-prompt.txt
+map-fix-upload/
+Donroe_Doctrine_*.docx
+monetization-and-merchandise-strategy.md
+
+# Superseded map scripts and data
+_data/map.yml
+assets/js/map-v5.js
+assets/js/map-v6.js
+assets/js/map-v7.js
+assets/js/map-v8.js
+assets/js/vacancies-map.js
+assets/js/vacancies-map-v2.js
+assets/js/vacancies-map-v3.js
+
+# Weekly data task reports
+weekly-report-*.md
