@@ -945,3 +945,110 @@
   doctrine_note: Six days after describing "very good discussions" and an imminent reopening, the administration was
     back to open threats and a fresh compensation demand while Iran publicly denied the strait was under US control
     at all -- the talks oscillate between imminent and over rather than moving toward either.
+- id: c068
+  theme: Military
+  country:
+  - Iran
+  term_a: 1
+  statement_a: >-
+    We're not looking for regime change. I just want to make that clear. We're looking for no nuclear weapons.
+  date_a: '2019-05-27'
+  source_a: Joint press conference with Prime Minister Shinzo Abe, Akasaka Palace, Tokyo, reported by Al Jazeera, May 27, 2019
+  term_b: 2
+  statement_b: >-
+    Yes, that would be a defeat… Absolutely. [Asked whether the Iranian regime remaining in power at the end of his
+    term would be a defeat.]
+  date_b: '2026-11-12'
+  source_b: Interview with Hugh Hewitt, Salem News Channel, reported by the Times of Israel, November 13, 2026
+  doctrine_note: The stated objective has migrated from the weapon to the government holding it, so that the survival of
+    the regime -- explicitly disclaimed as a goal in 2019 -- is now the published measure of failure.
+- id: c069
+  theme: Military
+  country:
+  - Iran
+  term_a: 2
+  statement_a: >-
+    We have the blockade. No ships get through unless we want them to.
+  date_a: '2026-08-14'
+  source_a: Rally remarks, Garden City, New York, reported by Gulf News
+  term_b: 2
+  statement_b: >-
+    The Hormuz Strait is open and operating.
+  date_b: '2026-08-18'
+  source_b: Truth Social post, reported by Al Jazeera, August 18, 2026
+  doctrine_note: The strait was simultaneously described as sealed at the President's discretion and as open for business -- the claim of control is the constant, and the state of the waterway is whichever suits the remark.
+- id: c070
+  theme: Military
+  country:
+  - Iran
+  term_a: 2
+  statement_a: >-
+    We will not be attacking Iran at any time prior to the Midterm Elections to be held in the US on November 3rd.
+  date_a: '2026-10-08'
+  source_a: Truth Social post, reported by Al Jazeera, October 20, 2026
+  term_b: 2
+  statement_b: >-
+    Wait till you see what we do to Iran. We're going to do a number.
+  date_b: '2026-10-13'
+  source_b: Campaign event, Wasilla, Alaska, reported by The National, October 14, 2026
+  doctrine_note: A pledge of restraint tied to the electoral calendar was followed within five days by a public preview of action, which locates the restraint in the election rather than in the policy.
+- id: c071
+  theme: Diplomatic
+  country:
+  - Iran
+  term_a: 2
+  statement_a: >-
+    I believe we'll make a deal right after the [midterm] election because it doesn't make sense for them not to.
+  date_a: '2026-09-22'
+  source_a: Address to the UN General Assembly, reported by Jewish Insider and Al-Monitor
+  term_b: 2
+  statement_b: >-
+    We don't need a deal with Iran. Those days have long since passed.
+  date_b: '2026-11-12'
+  source_b: Truth Social post, reported by ABC News
+  doctrine_note: The deal was scheduled for the day after the election and declared unnecessary nine days after it, so the election functioned as the deadline for the negotiation rather than for Iran.
+- id: c072
+  theme: Trade
+  country:
+  - Canada
+  term_a: 2
+  statement_a: >-
+    We have no tariffs going into Canada.
+  date_a: '2026-08-19'
+  source_a: White House remarks, reported by Al Jazeera, August 19, 2026
+  term_b: 2
+  statement_b: >-
+    The additional 50 percent duty on listed Canadian goods took effect after the three-day suspension lapsed.
+  date_b: '2026-08-22'
+  source_b: Auto Wire and Yahoo Finance, citing the White House proclamations
+  doctrine_note: A trade agreement was announced as accomplished three days before the tariffs it supposedly ended took effect, so the announcement serves as a negotiating position rather than a record of the outcome.
+- id: c073
+  theme: Economic
+  country:
+  - Russia
+  term_a: 2
+  statement_a: >-
+    Signed the Lindsey O. Graham Sanctioning Russia and Iran Act of 2026, providing for duties of up to 100 percent on the top buyers of Russian oil and gas within 30 days.
+  date_a: '2026-09-18'
+  source_a: Kyiv Independent, September 18, 2026
+  term_b: 2
+  statement_b: >-
+    My decision on Russia is a very simple one. I am in the process of negotiating peace in the war between Russia and Ukraine. [Following an October 16 order waiving most Russia sanctions and tariffs.]
+  date_b: '2026-10-18'
+  source_b: Truth Social post, reported by Hellenic Shipping News and CBS affiliate KOKH, October 2026
+  doctrine_note: A statute enacted to constrain the executive on Russia was neutralised by waiver within a month, a sequence in which the signature and the waiver both count as policy.
+- id: c074
+  theme: Diplomatic
+  country:
+  - Cuba
+  term_a: 2
+  statement_a: >-
+    many things are going to happen in Cuba in the next perhaps two months.
+  date_a: '2026-07-15'
+  source_a: Fox News interview with Trey Yingst, as cited by CiberCuba
+  term_b: 2
+  statement_b: >-
+    And that will definitely be resolved within these two and a half years.
+  date_b: '2026-10-30'
+  source_b: Interview with Benny Johnson, reported by CiberCuba
+  doctrine_note: The forecast window for Cuba moved from two months to the remainder of the term, which converts a prediction into an open-ended commitment.

@@ -26,10 +26,10 @@ targets:
     escalation_level: 3
     escalation_label: "Military threat"
     rationale_claimed: "National security — Arctic shipping lanes and Russian/Chinese activity nearby"
-    current_status: "Unresolved. Special envoy appointed; White House confirms 'range of options including military force' under discussion as of Jan 2026. Rhetoric revived at the July 2026 NATO summit with no new concrete step. On July 31, 2026 Trump told Real America's Voice he would 'make that bet' that Greenland is under US control before his term ends in 2029, again with no mechanism specified. Denmark and Greenland both refuse."
+    current_status: "Unresolved. Special envoy appointed; White House confirms 'range of options including military force' under discussion as of Jan 2026. Rhetoric revived at the July 2026 NATO summit with no new concrete step. On July 31, 2026 Trump told Real America's Voice he would 'make that bet' that Greenland is under US control before his term ends in 2029, again with no mechanism specified. Denmark and Greenland both refuse. On September 22, 2026 the US, Denmark and Greenland signed a defence agreement at the UN General Assembly (see deals.yml us-denmark-greenland-defence-2026); Denmark states it recognises Danish sovereignty, while Trump described it as giving the US 'permanent' control for security needs. On October 14 Trump referred to 'our new and beautiful Greenland' in a post on oil and mineral exploration. No transfer of sovereignty has occurred."
     target_response: "Greenland's PM called annexation talk 'fantasies.' Denmark and European allies issued a joint statement defending 'sovereignty, territorial integrity and inviolability of borders.' Denmark has since expanded military conscription, citing a worsening Arctic security environment."
     first_asserted_date: "2019-08-15"
-    last_updated_date: "2026-07-31"
+    last_updated_date: "2026-10-14"
 
   - id: canada
     name: Canada
@@ -39,10 +39,10 @@ targets:
     escalation_level: 2
     escalation_label: "Economic pressure"
     rationale_claimed: "Trade imbalance; repeated framing of Canada as a natural '51st state'"
-    current_status: "Rhetoric on absorption has cooled since late 2025, but economic pressure escalated sharply on July 20, 2026 with new 50% tariffs on roughly $20 billion of Canadian autos, alcohol, dairy, and other goods (see deals.yml us-canada-tariffs-2026), taking effect August 19, 2026. No military threat made. Canadian negotiators pushed for a deal ahead of the deadline through early August; Trade Minister LeBlanc made a third trip to Washington in as many weeks on August 11, with reports of a draft deal on the table covering autos, alcohol, dairy, critical minerals, and security, though CBC reported Canada was unsatisfied with the latest US offer as of August 12."
+    current_status: "Rhetoric on absorption has cooled since late 2025, but economic pressure escalated sharply on July 20, 2026 with new 50% tariffs on roughly $20 billion of Canadian autos, alcohol, dairy, and other goods (see deals.yml us-canada-tariffs-2026), taking effect August 19, 2026. No military threat made. Canadian negotiators pushed for a deal ahead of the deadline through early August; Trade Minister LeBlanc made a third trip to Washington in as many weeks on August 11, with reports of a draft deal on the table covering autos, alcohol, dairy, critical minerals, and security, though CBC reported Canada was unsatisfied with the latest US offer as of August 12. Talks broke down; after a three-day suspension the 50% duties took effect on August 22, and Canada imposed dollar-for-dollar counter-tariffs on September 8. Talks resumed after an October 31 Trump-Carney call; by November 8 Trump said the two leaders had 'the concept' of a deal, with nothing signed and the 50% duty still in force."
     target_response: "PM Mark Carney has been unambiguous that Canada has no interest in joining the US. Ontario pulled an anti-tariff ad after Trump threatened to end trade talks over it. On the July 2026 tariffs, Carney said Canada believes in 'the benefits of free and fair trade' and remains open to negotiation, warning of an 'ugly new phase' if the August 19 tariffs take hold."
     first_asserted_date: "2024-11-15"
-    last_updated_date: "2026-08-12"
+    last_updated_date: "2026-11-08"
 
   - id: panama
     name: Panama (Canal)
@@ -78,23 +78,23 @@ targets:
     escalation_level: 5
     escalation_label: "Regime change achieved"
     rationale_claimed: "Counter-narcotics — Maduro government designated a drug-trafficking enterprise"
-    current_status: "January 2026: US military operation captured Maduro in Caracas; he now faces drug trafficking charges in the US. Interim government installed under Delcy Rodriguez, recognized by the US (see strongmen/contradictions c066). This is the case that prompted the press to coin 'Don-roe Doctrine.' Seven months on, Trump has touted oil-revenue gains from the US-run custodial arrangement -- on August 4 claiming 'hundreds of billions of dollars,' a figure PolitiFact found overstated roughly tenfold against the highest credible public accounting ($13 billion)."
+    current_status: "January 2026: US military operation captured Maduro in Caracas; he now faces drug trafficking charges in the US. Interim government installed under Delcy Rodriguez, recognized by the US (see strongmen/contradictions c066). This is the case that prompted the press to coin 'Don-roe Doctrine.' Seven months on, Trump has touted oil-revenue gains from the US-run custodial arrangement -- on August 4 claiming 'hundreds of billions of dollars,' a figure PolitiFact found overstated roughly tenfold against the highest credible public accounting ($13 billion). The administration announced a long-term oil concession on August 28 (see deals.yml venezuela-oil-concession-2026), with Trump claiming majority US control of 65 billion barrels of reserves; he said on September 2 that Venezuela was 'not ready' for elections, met Rodriguez at the UN on September 22, and said on September 26 that he had spoken to her about elections. Opposition leader Machado returned to Caracas on October 25. No election date has been set."
     target_response: "Cuban government reported 32 Cuban nationals (Maduro's bodyguard/intelligence detail) killed in the operation. Colombia's Petro warned against similar action in his own country. Congressional Democrats introduced the Venezuela Oil Proceeds Transparency Act over the custodial oil-fund accounting."
     first_asserted_date: "2025-08-01"
-    last_updated_date: "2026-08-06"
+    last_updated_date: "2026-11-09"
 
   - id: cuba
     name: Cuba
     code: CU
     region: Caribbean
-    claim_type: [economic_coercion, regime_change]
-    escalation_level: 2
-    escalation_label: "Economic pressure"
+    claim_type: [economic_coercion, military_intervention, regime_change]
+    escalation_level: 3
+    escalation_label: "Military threat"
     rationale_claimed: "Regime collapse framed as a byproduct of cutting off Cuba's Venezuelan oil lifeline, not direct US action"
-    current_status: "No direct military threat made. Trump has publicly predicted the government will 'fall' on its own once Venezuelan oil support ends, repeating in July 2026 that Cuba is 'coming our way.' Rubio: Cuban leaders 'in a lot of trouble.' On August 6, Treasury added new sanctions on Cuba's military and the CIA disclosed a dedicated task force targeting divisions within the ruling elite -- pressure escalating in kind, not in rung."
+    current_status: "No direct military threat made. Trump has publicly predicted the government will 'fall' on its own once Venezuelan oil support ends, repeating in July 2026 that Cuba is 'coming our way.' Rubio: Cuban leaders 'in a lot of trouble.' On August 6, Treasury added new sanctions on Cuba's military and the CIA disclosed a dedicated task force targeting divisions within the ruling elite -- pressure escalating in kind, not in rung. On November 12, 2026, asked by Hugh Hewitt on Salem News Channel whether he would consider a military option for Cuba, Trump said he would, adding that he wanted to 'get Cuba done' before leaving office -- the first explicit military-option statement on Cuba, moving the register from economic pressure to military threat. At the UN General Assembly on September 22 Trump called Cuba 'an absolutely failed state' that 'will fall'; on October 23 he told a rally the US would deal with Cuba after returning from Iran, and on October 30 said the matter would be resolved within the remaining two and a half years of his term, against a July 15 forecast of 'perhaps two months.'"
     target_response: "President Diaz-Canel said Cuba would resist any US military intervention 'to the very last drop of blood.' Cuba's foreign minister brought a formal complaint over the US pressure campaign before the UN General Assembly on July 7, 2026. An assembly of leftist organizations from 25 countries convened in Havana on August 6 in solidarity with the government."
     first_asserted_date: "2026-01-11"
-    last_updated_date: "2026-08-06"
+    last_updated_date: "2026-11-12"
 
   - id: colombia
     name: Colombia
@@ -104,10 +104,10 @@ targets:
     escalation_level: 3
     escalation_label: "Military threat"
     rationale_claimed: "Counter-narcotics — accused President Petro of allowing cocaine production to flourish"
-    current_status: "Sanctions imposed on Petro (Oct 2025); over 115 people killed in US strikes on alleged drug boats. When asked directly if military action against Colombia was being threatened, Trump said 'it sounds good to me.' In a July 2026 call focused on coca eradication, Petro personally asked Trump to lift his own sanctions listing; Trump said he would 'do his best.' Petro's term ended amid a disputed June 2026 election; Trump-backed winner Abelardo de la Espriella suspended the transition and accused Petro of attempting a coup, taking office August 7, 2026 with Trump's public backing."
+    current_status: "Sanctions imposed on Petro (Oct 2025); over 115 people killed in US strikes on alleged drug boats. When asked directly if military action against Colombia was being threatened, Trump said 'it sounds good to me.' In a July 2026 call focused on coca eradication, Petro personally asked Trump to lift his own sanctions listing; Trump said he would 'do his best.' Petro's term ended amid a disputed June 2026 election; Trump-backed winner Abelardo de la Espriella suspended the transition and accused Petro of attempting a coup, taking office August 7, 2026 with Trump's public backing. Petro left office on August 7, succeeded by Trump-backed Abelardo de la Espriella. On August 13 Defense Secretary Hegseth said Colombia had authorized joint US-Colombian military operations against traffickers, and the State Department said it intends to announce $1 billion in assistance; the threat posture shifted from coercion of Petro to cooperation with his successor."
     target_response: "Petro accused the US of violating international law with the boat strikes and said he 'would take up arms' for his country if necessary, despite having sworn off violence. Petro disputed the June 2026 election result without providing evidence and did not fully recognize de la Espriella's legitimacy."
     first_asserted_date: "2025-10-01"
-    last_updated_date: "2026-08-07"
+    last_updated_date: "2026-08-13"
 
   - id: iran
     name: Iran
@@ -117,10 +117,10 @@ targets:
     escalation_level: 4
     escalation_label: "Military action"
     rationale_claimed: "Nuclear non-proliferation — prevention of an Iranian nuclear weapon"
-    current_status: "US airstrikes hit Fordo, Natanz, and Isfahan nuclear facilities (June 2025) during a broader Israel-Iran war. A 2026 wave of Iranian protests drew a further Trump threat to 'come to the rescue.' A June 2026 ceasefire broke down in early July after tanker attacks in the Strait of Hormuz; Trump declared the truce 'over' and US forces struck roughly 90 Iranian targets over two days, though talks continued. On July 13 Trump reinstated the naval blockade of Iran and announced a 20% Hormuz transit toll billed as a 'guardian' fee; he dropped the toll a day later citing pending Gulf state investment pledges, while the blockade remained in effect. Iranian ballistic missile and drone attacks killed three US service members in Jordan and one in Iraq on July 17-19; Trump vowed retaliation and, on July 22, threatened to destroy an Iranian bridge or power plant for every future attack on Hormuz shipping. The administration formally notified Congress that a new 60-day war-powers window had begun, a position congressional Democrats dispute (see deals.yml us-iran-mou-2026). Treasury imposed an eighth 2026 sanctions round on Iran's alleged shadow-banking network in early August. On August 10-11, Trump claimed the US Navy had swept the Strait of Hormuz for mines and held '100%' control of it, called renewed talks Iran's 'last chance' before 'decapitation,' and added a new demand that Iran pay compensation for past actions as a condition of any deal. He repeated the control claim on August 11-12 ('they get blown away'), even as tracked vessel transits fell to a one-week low."
+    current_status: "US airstrikes hit Fordo, Natanz, and Isfahan nuclear facilities (June 2025) during a broader Israel-Iran war. A 2026 wave of Iranian protests drew a further Trump threat to 'come to the rescue.' A June 2026 ceasefire broke down in early July after tanker attacks in the Strait of Hormuz; Trump declared the truce 'over' and US forces struck roughly 90 Iranian targets over two days, though talks continued. On July 13 Trump reinstated the naval blockade of Iran and announced a 20% Hormuz transit toll billed as a 'guardian' fee; he dropped the toll a day later citing pending Gulf state investment pledges, while the blockade remained in effect. Iranian ballistic missile and drone attacks killed three US service members in Jordan and one in Iraq on July 17-19; Trump vowed retaliation and, on July 22, threatened to destroy an Iranian bridge or power plant for every future attack on Hormuz shipping. The administration formally notified Congress that a new 60-day war-powers window had begun, a position congressional Democrats dispute (see deals.yml us-iran-mou-2026). Treasury imposed an eighth 2026 sanctions round on Iran's alleged shadow-banking network in early August. On August 10-11, Trump claimed the US Navy had swept the Strait of Hormuz for mines and held '100%' control of it, called renewed talks Iran's 'last chance' before 'decapitation,' and added a new demand that Iran pay compensation for past actions as a condition of any deal. He repeated the control claim on August 11-12 ('they get blown away'), even as tracked vessel transits fell to a one-week low. In early November the war continued at lower intensity under the blockade: on November 3 Trump confirmed a strike on a newly completed Iranian anti-aircraft facility, calling it a 'minor attack' that 'wasn't war'; on November 7 the US military stood up Task Force Iron Gate to interdict Iranian land and Caspian Sea transport routes; on November 8-9 Trump called renewed large-scale attacks 'highly unlikely' while talks progressed via Qatar. On November 12 he posted 'We don't need a deal with Iran,' reassigned Vice President Vance away from the negotiations, and told Hugh Hewitt that the regime remaining in power at the end of his term would be 'a defeat' and that he would use force again with 'no hesitation.' Between mid-August and early November the pattern was rhetoric and economic escalation punctuated by strikes. On August 14 Trump said he would soon declare the Strait of Hormuz a territory of the United States; on August 17 the 60-day MOU window lapsed without a deal; on August 19 he announced an 'economic warfare' campaign of secondary sanctions; and on September 2 the US struck new Iranian equipment along the strait after the heaviest exchange of fire since July. At the UN General Assembly on September 22 he posed the choice between a deal and annihilation of the Islamic Republic, and on October 8 pledged no attack before the November 3 midterms; on October 13 he said 'we're going to do a number' on Iran."
     target_response: "Iran denied it was close to a weapon; DNI Gabbard's own intelligence assessment publicly contradicted Trump's stated justification for the strikes (see Contradiction Tracker). Iran maintains it holds sovereignty over Strait of Hormuz shipping routes and rejected any US role administering it; Iranian FM Araghchi sarcastically endorsed the toll principle while calling 20% 'too much.' Iran's supreme leader called Trump's signature on the June MOU 'worthless' after the ceasefire collapsed. Araghchi said Iran's defense doctrine is 'eye for an eye' and that any strike on its infrastructure 'will compel a powerful and decisive response.' On August 12, Iran publicly rejected the 'total control' claim outright and said the strait stays closed until the blockade, sanctions, and asset freezes end; an Iranian military adviser said the war could be 'prolonged' past Trump's term."
     first_asserted_date: "2025-02-28"
-    last_updated_date: "2026-08-12"
+    last_updated_date: "2026-11-12"
 
 incidents:
 
@@ -550,3 +550,177 @@ incidents:
     source: "PolitiFact"
     source_url: "https://politifact.com/factchecks/2026/aug/06/donald-trump/venezuela-oil-industry-us-gains/"
     doctrine_note: "Congressional Democrats have introduced the Venezuela Oil Proceeds Transparency Act citing the gap between the administration's public figures and the funds' custodial accounting."
+
+  - id: exp034
+    date: "2026-11-03"
+    target_id: [iran]
+    type: military_action
+    escalation_level: 4
+    headline: "Strikes newly completed Iranian anti-aircraft site; calls it a 'minor attack' that 'wasn't war'"
+    detail: "Trump confirmed a US strike on an Iranian air-defence installation in the Qeshm Island area near the Strait of Hormuz, saying US forces had watched it being built for two months and hit it on completion. US officials described the strike as defensive, following Iranian fire on an American aircraft. Indirect talks via Qatar continued the same week."
+    quote: "They built an anti-aircraft facility. It took them about two months. We watched it get built. As soon as it was completed, we hit it last night."
+    quoted_by: "Donald Trump"
+    source: "Al Jazeera, citing Trump's remarks to Fox News"
+    source_url: "https://www.aljazeera.com/news/2026/11/4/iran-says-us-reply-to-hormuz-plan-unconvincing-trump-confirms-strikes"
+  - id: exp035
+    date: "2026-11-12"
+    target_id: [iran]
+    type: military_force_threat
+    escalation_level: 3
+    headline: "Declares 'We don't need a deal'; says regime surviving his term would be 'a defeat'"
+    detail: "Trump posted on Truth Social that a deal with Iran was no longer needed and reassigned Vice President Vance, a lead negotiator, to domestic matters. In a Salem News Channel interview the same day, asked whether the Iranian government remaining in power at the end of his term would be a defeat, he said it would, and said he would use force again without hesitation. A White House official declined to say whether talks had ended."
+    quote: "Yes, that would be a defeat… Absolutely."
+    quoted_by: "Donald Trump"
+    source: "Times of Israel, quoting Trump's interview with Hugh Hewitt; ABC News (Truth Social post)"
+    source_url: "https://www.timesofisrael.com/liveblog-november-13-2026/"
+    doctrine_note: "See Contradiction Tracker c068 -- the term-one position on Iranian regime change."
+  - id: exp036
+    date: "2026-11-12"
+    target_id: [cuba]
+    type: military_force_threat
+    escalation_level: 3
+    headline: "Says he would consider a military option for Cuba; wants to 'get Cuba done' before leaving office"
+    detail: "Asked by Hugh Hewitt on Salem News Channel whether he would consider military intervention in Cuba, Trump said he would, and named Secretary of State Rubio as the official handling Cuba. The State Department's official account posted the remark the same day. Earlier references had framed Cuba's collapse as a by-product of cutting off Venezuelan oil rather than of direct US action."
+    quote: "I want to get Cuba done before I leave, yeah. We have a very good, talented guy for Cuba named Marco."
+    quoted_by: "Donald Trump"
+    source: "US Department of State (X), November 12, 2026; Semana"
+    source_url: "https://x.com/StateDept/status/2120985972716478685"
+  - id: exp037
+    date: "2026-11-09"
+    target_id: [venezuela]
+    type: self_congratulatory_claim
+    escalation_level: 1
+    headline: "Says the US is 'totally in charge' of Venezuela; elections 'at some point'"
+    detail: "Speaking to reporters at the White House, Trump said the US was in charge of Venezuela and getting along well with the interim government. Asked whether elections would be held before the end of his term, he said they would at some point, without a date. Secretary Rubio had said on November 5 that elections could 'ideally' be held in 2027."
+    quote: "We're much in charge. We're totally in charge and getting along well."
+    quoted_by: "Donald Trump"
+    source: "The Rio Times; El Venezolano (EFE)"
+    source_url: "https://www.riotimesonline.com/trump-says-us-in-charge-of-venezuela/"
+
+  - id: exp038
+    date: "2026-08-14"
+    target_id: [iran]
+    type: annexation_threat
+    escalation_level: 1
+    headline: "Says he will soon declare the Strait of Hormuz 'a territory of the United States'"
+    detail: "At a rally in Garden City, New York, Trump said he would soon declare the Strait of Hormuz a US territory after 'defeating Iran' and described the US blockade as determining which ships pass. On August 18 he posted a map captioned 'New US Territory.' Iran said the strait would remain Iranian."
+    quote: "pretty soon I'll be declaring the Hormuz Strait a territory of the United States"
+    quoted_by: "Donald Trump"
+    source: "Gulf News"
+    source_url: "https://gulfnews.com/amp/story/world%2Fmena%2Ftrump-vows-hormuz-will-become-us-territory-pretty-soon-iran-says-it-will-remain-iranian-1.500641782"
+    doctrine_note: "See Contradiction Tracker c069 -- the same week the strait was also described as 'open and operating.'"
+  - id: exp039
+    date: "2026-08-19"
+    target_id: [iran]
+    type: economic_coercion
+    escalation_level: 2
+    headline: "Announces 'Economic Warfare' on Iran after the 60-day MOU window lapses"
+    detail: "Two days after the 60-day window in the June memorandum expired without a deal, Trump announced an economic campaign against Iran and warned third countries doing business with it. Treasury followed with secondary-sanctions measures in the following week; China's foreign ministry said they would fuel tensions."
+    quote: "the MOST CRUSHING ECONOMIC OPERATION EVER TAKEN AGAINST ANY COUNTRY"
+    quoted_by: "Donald Trump"
+    source: "Arms Control Association (Arms Control Today), September 2026"
+    source_url: "https://www.armscontrol.org/act/2026-09/news/trump-threatens-economic-warfare-iran"
+  - id: exp040
+    date: "2026-09-02"
+    target_id: [iran]
+    type: military_action
+    escalation_level: 4
+    headline: "US resumes strikes on Iranian equipment along the Strait of Hormuz"
+    detail: "Speaking in the Oval Office after the heaviest exchange of fire since July, Trump said US forces had destroyed new Iranian equipment along the strait and were prepared to strike again at will."
+    quote: "We took out all of the new equipment that they tried to build along the Strait of Hormuz"
+    quoted_by: "Donald Trump"
+    source: "Al-Monitor"
+    source_url: "https://al-monitor.com/originals/2026/09/trump-says-renewed-us-campaign-against-iran-wont-last-long"
+  - id: exp041
+    date: "2026-09-22"
+    target_id: [iran]
+    type: military_force_threat
+    escalation_level: 3
+    headline: "At the UN, frames Iran policy as a choice between a deal and annihilation"
+    detail: "In his UN General Assembly address Trump said he had 'a big decision to make' on Iran. He added that he believed a deal would be made right after the midterm elections. Outlets differ on his exact wording of the alternative."
+    quote: "Or do I annihilate the Islamic Republic and do it quickly"
+    quoted_by: "Donald Trump"
+    source: "Jewish Insider; Al-Monitor"
+    source_url: "https://jewishinsider.com/2026/09/trump-iran-un-general-assembly-diplomatic-agreement-military-action/"
+    doctrine_note: "See Contradiction Tracker c071."
+  - id: exp042
+    date: "2026-10-13"
+    target_id: [iran]
+    type: military_force_threat
+    escalation_level: 3
+    headline: "Five days after pledging no strikes before the midterms, says Iran will get 'a number'"
+    detail: "At a campaign event in Wasilla, Alaska, Trump said Iran would not have a nuclear weapon and previewed unspecified action. The Truth Social pledge of October 8 had ruled out attacks before November 3."
+    quote: "Wait till you see what we do to Iran. We're going to do a number."
+    quoted_by: "Donald Trump"
+    source: "The National"
+    source_url: "https://www.thenationalnews.com/news/gulf/2026/10/14/trump-threatens-renewed-military-action-against-iran/"
+    doctrine_note: "See Contradiction Tracker c070."
+  - id: exp043
+    date: "2026-09-18"
+    target_id: [greenland]
+    type: self_congratulatory_claim
+    escalation_level: 1
+    headline: "Claims a Denmark agreement gives the US permanent control over Greenland security"
+    detail: "Trump announced a framework with Denmark and Greenland, saying the US would have permanent ability to do what is necessary there. Danish Prime Minister Frederiksen said the agreement recognises the sovereignty and territorial integrity of the Kingdom and the right of Greenlanders to self-determination."
+    quote: "the US will FOREVER have the complete ability to do what is necessary in Greenland"
+    quoted_by: "Donald Trump"
+    source: "Al Jazeera"
+    source_url: "https://aljazeera.com/news/2026/9/18/trump-claims-deal-with-denmark-gives-us-permanent-control-over-greenland"
+    doctrine_note: "See deals.yml us-denmark-greenland-defence-2026, signed four days later."
+  - id: exp044
+    date: "2026-10-14"
+    target_id: [greenland]
+    type: annexation_threat
+    escalation_level: 1
+    headline: "Refers to 'our new and beautiful Greenland' as oil and mineral exploration is 'getting ready to begin'"
+    detail: "Trump posted that Greenland is second to none for the security of the US and Europe and that large-scale oil, gas and mineral exploration was about to begin, three weeks after signing an agreement that Denmark says preserves its sovereignty."
+    quote: "Massive Oil, Gas, and Mineral Exploration is getting ready to begin in our new and beautiful Greenland!"
+    quoted_by: "Donald Trump"
+    source: "Euronews"
+    source_url: "https://euronews.com/2026/10/14/trump-hails-greenland-as-second-to-none-for-security-of-us-and-europe"
+  - id: exp045
+    date: "2026-08-28"
+    target_id: [venezuela]
+    type: self_congratulatory_claim
+    escalation_level: 1
+    headline: "Announces 'majority U.S. control' of 65 billion barrels of Venezuelan reserves"
+    detail: "Trump announced a Venezuelan oil concession; the White House fact sheet followed on August 31. Interim President Rodriguez said Venezuela retained ownership and sovereignty and described a 25-year arrangement. The platform of the announcement was not verified."
+    quote: "majority U.S. control of more than 65 BILLION BARRELS"
+    quoted_by: "Donald Trump"
+    source: "FDD Long War Journal"
+    source_url: "https://www.longwarjournal.org/archives/2026/09/white-house-caracas-release-details-on-historic-us-venezuela-oil-deal.php"
+    doctrine_note: "See deals.yml venezuela-oil-concession-2026."
+  - id: exp046
+    date: "2026-09-22"
+    target_id: [cuba]
+    type: self_congratulatory_claim
+    escalation_level: 1
+    headline: "At the UN, calls Cuba 'an absolutely failed state' that 'will fall'"
+    detail: "In his UN General Assembly address Trump said of Cuba that it was failing as never before. Al Jazeera reported that he also said his administration sought a fundamental change in Cuba; the Cuban delegation walked out."
+    quote: "It's failing like never before, and it will fall."
+    quoted_by: "Donald Trump"
+    source: "Roll Call Factba.se transcript, 81st UN General Assembly; Al Jazeera"
+    source_url: "https://rollcall.com/factbase/trump/transcript/donald-trump-speech-81st-united-nations-general-assembly-september-22-2026/"
+  - id: exp047
+    date: "2026-10-23"
+    target_id: [cuba]
+    type: military_force_threat
+    escalation_level: 3
+    headline: "Rally: US ships will 'pass by Cuba' on their return from Iran"
+    detail: "At a rally in Fort Myers, Florida, Trump linked the timing of action on Cuba to the end of the Iran campaign. The wording is as reported by CiberCuba; the primary transcript was not located."
+    quote: "We are going to return from Iran, those beautiful ships will pass by Cuba."
+    quoted_by: "Donald Trump"
+    source: "CiberCuba (English edition)"
+    source_url: "https://en.cibercuba.com/noticias/2026-10-23-u1-e208574-s27061-nid343637-trump-negociaciones-cuba-enviaremos-marco-rubio"
+  - id: exp048
+    date: "2026-10-30"
+    target_id: [cuba]
+    type: self_congratulatory_claim
+    escalation_level: 1
+    headline: "Extends the Cuba timeline from 'perhaps two months' to 'two and a half years'"
+    detail: "In an interview with Benny Johnson, Trump said the Cuba question would be resolved within the remainder of his term. On July 15 he had told Fox News that many things would happen in Cuba in the next perhaps two months."
+    quote: "And that will definitely be resolved within these two and a half years."
+    quoted_by: "Donald Trump"
+    source: "CiberCuba (Benny Johnson interview, October 30)"
+    source_url: "https://en.cibercuba.com/noticias/2026-10-31-u1-e207888-s27061-nid344431-dos-meses-dos-anos-medio-donald-trump-vuelve-poner"
+    doctrine_note: "See Contradiction Tracker c074."

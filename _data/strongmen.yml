@@ -605,3 +605,51 @@ entries:
     Rodríguez served as Maduro's vice president before the January 2026 US operation installed her as interim
     president; the reversal in tone from threat to "terrific person" tracked the resumption of Venezuelan oil flow
     to US-controlled buyers rather than any change in the government's character.
+- id: sm033
+  date: '2026-09-26'
+  term: 2
+  subject: Delcy Rodríguez
+  country: Venezuela
+  regime_type: authoritarian
+  historical: false
+  source_type: public
+  quote: >-
+    by the way, she was very nice, very terrific. ... The oil companies are all going into Venezuela now.
+  context: >-
+    Press gaggle on the South Lawn before departing on Marine One, four days after a brief meeting with interim
+    President Rodríguez at the UN General Assembly. The transcript does not name her; the identification follows the
+    reporter's question and wire reports. Trump said he had spoken to her about elections, for which no date has been
+    set.
+  source: >-
+    Roll Call Factba.se, press gaggle before Marine One departure, September 26, 2026
+  source_url: https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-before-marine-one-departure-september-26-2026/
+  praise_type:
+  - compliment
+  - cooperation
+  confidence: documented
+  notes: >-
+    The praise followed the August 28 oil concession and was paired in the same remarks with the arrival of US oil
+    companies, continuing the pattern recorded in sm032.
+- id: sm034
+  date: '2026-10-03'
+  term: 2
+  subject: Kim Jong-un
+  country: North Korea
+  regime_type: totalitarian
+  historical: false
+  source_type: public
+  quote: >-
+    I get along great with Kim Jong Un. ... When people have 112 nuclear missiles, it's nice to get along.
+  context: >-
+    Midterm campaign rally at Butler High School, Vandalia, Ohio, introduced by the line "Isn't it nice to get along
+    with the leaders of massive nations? Massive nuclear nations." The same remarks reached Xi Jinping only through a
+    quoted exchange and are not logged as praise.
+  source: >-
+    Roll Call Factba.se, midterm rally speech, Vandalia, Ohio, October 3, 2026
+  source_url: https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-political-rally-vandalia-ohio-october-3-2026/
+  praise_type:
+  - compliment
+  confidence: documented
+  notes: >-
+    The relationship is described in terms of the size of the arsenal, a framing that links the rapport to the weapons
+    count rather than to the leader's conduct.

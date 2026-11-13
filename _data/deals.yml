@@ -729,6 +729,9 @@
     Hormuz and an Iranian reaffirmation of non-pursuit of nuclear weapons. A regional reconstruction fund of "at least $300
     billion" was referenced in the MOU text. Subsequent nuclear talks in Switzerland were postponed within days of signing.
     Neither Israel nor Hezbollah are signatories. Lebanon ceasefire implementation mechanism is unspecified.
+    The 60-day window lapsed on about August 17, 2026 without an extension or a deal. Mediation continued through Qatar
+    and Pakistan, whose officials refer to the text as the Islamabad MoU; on November 12 Trump said the US does not
+    need a deal with Iran.
   terms_and_conditions: Immediate ceasefire extension (60 days, renewable). Strait of Hormuz reopened. Iran reaffirms no nuclear
     weapons development. US to facilitate regional reconstruction fund (minimum $300 billion). Nuclear enrichment disposition
     to be negotiated. Israel and Hezbollah not party to agreement.
@@ -757,6 +760,11 @@
     soybean commitments made at an October 2025 summit in Busan. The US and China agreed to address supply chain shortages
     in rare earths and critical minerals including yttrium, scandium, neodymium, and indium. Both leaders agreed to meet again
     in the US in September 2026. Structural tariffs from the Liberation Day regime remain in place.
+    On September 23, 2026 Treasury Secretary Bessent announced a two-month extension of the Busan truce, and a September
+    24 White House fact sheet following Xi's Washington visit added a US-China AI dialogue channel, a Board of Trade
+    consensus on preferential tariffs on 30 billion dollars of non-sensitive goods each way, a coal purchase commitment, and
+    rare earth shipments to return to appropriate levels. On November 9-10 China extended its pause on the extra tariff
+    and on rare earth curbs through January 10, 2027.
   terms_and_conditions: 200 Boeing aircraft purchase approved. $17 billion per year in US agricultural goods (2026–2028).
     Rare earth export controls to be addressed. Structural tariffs not modified. September 2026 follow-up summit scheduled.
 - id: drc-rwanda-minerals-peace-2026
@@ -817,6 +825,10 @@
     Social that the deal permits no enrichment at all and is "totally subject" to Saudi Arabia joining the Abraham
     Accords, a condition absent from the deal as announced (see Contradiction Tracker c065). The agreement next goes
     to Congress for a mandatory review period.
+    The administration submitted the agreement to Congress on about August 24-25 for a 90-day review ending around
+    late November; the safeguards document states that cooperation "could include" enrichment, and Saudi Arabia has not
+    answered the Abraham Accords condition. On October 16 Trump said normalization was back on the table "perhaps now
+    more than ever."
   terms_and_conditions: >-
     Thirty-year term. Saudi Arabia commits to US firms for reactor supply. Joint US-Saudi study on domestic enrichment
     capability. Bilateral safeguards agreement short of the "gold standard" barring enrichment. Congressional review
@@ -842,7 +854,11 @@
     LeBlanc made a third trip to Washington in as many weeks on August 11 to meet USTR Greer; reported terms under
     discussion include dropping Canada's retaliatory auto tariffs, provincial alcohol restrictions, and dairy quota
     changes in exchange for tariff relief, but CBC reported Canada remained unsatisfied with the latest US offer as
-    of August 12, with a week left before the deadline.
+    of August 12, with a week left before the deadline. A three-day suspension moved the start date to August 22, when
+    the duties took effect after talks broke down; Canada imposed dollar-for-dollar counter-tariffs of 15-50% on US
+    goods on September 8. Negotiations resumed after an October 31 Trump-Carney call. On November 3 Carney said "We've
+    made progress but we haven't finished"; Trump said a deal would come "very soon," and by November 8 said the two
+    leaders had "the concept" of one. As of that date nothing had been signed and the 50% duty remained in force.
   terms_and_conditions: >-
     50% tariffs on approximately $20 billion of Canadian goods, effective 30 days from announcement (roughly August 19,
     2026). Oil, gas, critical minerals, potash, and sector-tariffed goods excluded. Tariffs lift if Canada drops
@@ -861,6 +877,10 @@
     killings, withdrawing to the "Yellow Line," and allowing a surge of humanitarian aid. Israel's government rejected
     the sequencing on August 9, 2026, demanding full Hamas disarmament before any Israeli withdrawal, citing "serious
     security concerns." Israeli operations in Gaza intensified in the following days.
+    On September 23, 2026 the Board of Peace unveiled a 2.45 billion dollar, six-month, 66-project Gaza recovery plan
+    starting in Rafah, contingent on Hamas disarmament and phased Israeli withdrawal; the sequencing dispute between
+    disarmament and withdrawal remained unresolved, and Israel reported 18 ceasefire-related operations between
+    September 15 and 29.
   terms_and_conditions: >-
     Phased disarmament of Hamas and other Gaza armed groups under Board of Peace oversight. Hamas conditions
     compliance on an Israeli ceasefire, halt to targeted killings, withdrawal to the "Yellow Line," and expanded
@@ -871,3 +891,77 @@
     Announced as a "breakthrough" with the caveat, immediately visible, that the two parties want the same
     precondition satisfied by the other side first. As of early August 2026 neither disarmament nor withdrawal had
     begun.
+- id: venezuela-oil-concession-2026
+  title: The Venezuela Oil Concession
+  strapline: Sixty-five billion barrels, announced Friday. Term of twenty-five years, or one hundred, depending on the signatory.
+  date: '2026-08-28'
+  term: 2
+  type: Trade
+  status: ACTIVE
+  summary: >-
+    On August 28, 2026, Trump announced an arrangement giving the United States "majority U.S. control of more than 65
+    BILLION BARRELS" of Venezuelan reserves; the White House fact sheet followed on August 31. Reported terms include
+    concessions on 17 fields to North American Blue Energy Partners, a Pentagon Office of Strategic Capital right to a
+    35 percent stake in its corporate parent, a US veto over board appointments with a majority of directors required to
+    be US citizens, and a State Department option to buy 20 percent of output at production cost. Interim President
+    Delcy Rodriguez said Venezuela retains ownership and sovereignty and described the arrangement as lasting 25 years;
+    other reporting describes 100-year concessions.
+  terms_and_conditions: >-
+    Concessions on 17 fields. 35 percent US government stake in the operating company's parent. US board veto and
+    citizenship requirement for a majority of directors. 20 percent of output purchasable at cost by the State
+    Department, with first refusal on the remainder. Duration disputed (25 years in the fact sheet and the Venezuelan
+    account; 100 years in other reporting). Chevron stated on September 2 that it plans to invest more than $7 billion
+    over five years.
+- id: exxon-venezuela-mou-2026
+  title: The Exxon Venezuela Memorandum
+  strapline: Return of ExxonMobil to Venezuela, nineteen years after expropriation, achieved by memorandum. Investment to follow in due course.
+  date: '2026-11-09'
+  term: 2
+  type: Trade
+  status: UNRESOLVED
+  summary: >-
+    On or about November 9, 2026, ExxonMobil signed a non-binding preliminary agreement with Venezuela's state oil
+    company PDVSA in Caracas to evaluate oil production, with Interim President Rodriguez present. Exxon left Venezuela
+    in 2007. The company stated that any future investment would require stable policies, clear regulations, strong
+    investment protections, and competitive returns. Trump had said on August 31 that Exxon and Chevron were "going
+    in." The signing date is inferred from reporting dated November 10.
+  terms_and_conditions: >-
+    Non-binding memorandum. No investment amount committed. Any investment conditioned by Exxon on policy stability
+    and investment protections.
+- id: us-denmark-greenland-defence-2026
+  title: The Greenland Defence Agreement
+  strapline: Two bases, no sale. Sovereignty recognised by one party, permanent control claimed by the other.
+  date: '2026-09-22'
+  term: 2
+  type: Territorial
+  status: ACTIVE
+  summary: >-
+    On September 22, 2026, Trump, Danish Prime Minister Mette Frederiksen and Greenlandic Prime Minister Jens-Frederik
+    Nielsen signed a US-Denmark-Greenland defence agreement at the UN General Assembly. The US expands its Pituffik
+    presence and receives further "defense areas" at Narsarsuaq and Mestersvig, with broad military mobility and
+    barred basing by non-NATO states. Frederiksen said the agreement recognises the sovereignty and territorial
+    integrity of the Kingdom and Greenland's right to self-determination; Trump had announced on September 18 that the
+    US would "FOREVER have the complete ability to do what is necessary in Greenland" and on October 14 referred to
+    "our new and beautiful Greenland." Reported as requiring approval by both the Danish and Greenlandic parliaments.
+  terms_and_conditions: >-
+    Expanded US presence at Pituffik. Defense areas at Narsarsuaq and Mestersvig, with more to come. Non-NATO states
+    barred from bases. No end date; remains binding if Greenland becomes independent. Contracts to Greenlandic firms
+    where possible. Parliamentary approval in Copenhagen and Nuuk reported as pending. No transfer of sovereignty.
+- id: us-russia-diesel-2026
+  title: The Russian Diesel Arrangement
+  strapline: Sanctions retained. Diesel imported. Peace deferred.
+  date: '2026-10-09'
+  term: 2
+  type: Trade
+  status: UNRESOLVED
+  summary: >-
+    On October 9, 2026, following a call with Vladimir Putin in which Putin said an immediate resumption of peace talks
+    was unlikely, Trump announced that Russian diesel would be supplied to US and global markets, saying prices would
+    come down "IN RECORD NUMBERS, AND FAST!" The Treasury issued a temporary licence running to April 7, 2027; other
+    Russian oil sanctions remain. Zelensky called it an investment in a war that must be ended, not prolonged. On
+    October 16 a separate executive order waived most Russia-related sanctions and tariffs under the Graham act (see
+    Contradiction Tracker c073).
+  terms_and_conditions: >-
+    Over 300,000 tonnes initially, 500,000 in November, 1 million thereafter, and possibly about 3 million more
+    depending on refinery condition, as described by Trump. Treasury licence to April 7, 2027. Volumes described only
+    by the US side; no Kremlin confirmation located.

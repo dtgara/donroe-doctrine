@@ -137,3 +137,44 @@ entries:
       Classified as borderline: the statement is a repost rather than a direct
       utterance, though the President's amplification constitutes endorsement. India
       lodged a formal diplomatic protest. Included on grounds of documentary record.
+
+  - id: e010
+    date: "2026-10-24"
+    term: 2
+    countries: [Libya, Yemen, Haiti, Somalia]
+    context: "Midterm campaign rally, Perry, Georgia"
+    quote: "Why do we always have to take people from shithouse countries?"
+    source: "Roll Call Factba.se, midterm rally speech, Perry, Georgia, October 24, 2026"
+    source_url: "https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-political-rally-perry-georgia-october-24-2026/"
+    epithets: [shithouse, terror_infested]
+    borderline: false
+    notes: >-
+      Delivered after describing Libya, Yemen, Haiti and Somalia as "terror-infested countries" and followed by a
+      contrast list of Norway, Sweden and Denmark. The register's vocabulary records the 2018 term as "shithole"; this
+      is the variant "shithouse," which Trump introduced as a reference to what he "called them" before.
+  - id: e011
+    date: "2026-10-24"
+    term: 2
+    countries: [France]
+    context: "Midterm campaign rally, Perry, Georgia"
+    quote: "So, France is right now burning down because it opens its borders to people who hate it."
+    source: "Roll Call Factba.se, midterm rally speech, Perry, Georgia, October 24, 2026"
+    source_url: "https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-political-rally-perry-georgia-october-24-2026/"
+    epithets: [burning_down]
+    borderline: true
+    notes: >-
+      A characterisation of a NATO ally's condition tied to its immigration policy. Classified as borderline because
+      the remark is directed at a national policy outcome rather than at the country as such.
+  - id: e012
+    date: "2026-09-22"
+    term: 2
+    countries: [Cuba]
+    context: "Address to the 81st session of the UN General Assembly, New York"
+    quote: "It's an absolutely failed state."
+    source: "Roll Call Factba.se, speech to the 81st UN General Assembly, September 22, 2026"
+    source_url: "https://rollcall.com/factbase/trump/transcript/donald-trump-speech-81st-united-nations-general-assembly-september-22-2026/"
+    epithets: [failed_state]
+    borderline: false
+    notes: >-
+      Delivered from the General Assembly podium; the Cuban delegation walked out. The same passage predicted the
+      country would "fall" (see Expansion exp046).

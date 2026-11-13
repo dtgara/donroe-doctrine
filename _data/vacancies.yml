@@ -68,9 +68,11 @@ posts:
   - name: Kenya
     code: KE
     region: Africa
-    status: vacant
-    strategic_flag: true
-    notes: "Largest US diplomatic and security presence in East Africa; a major non-NATO ally left without a confirmed ambassador."
+    status: career_appointee
+    appointee: Henry Wooster
+    appointee_type: career
+    notes: "Henry Wooster, a career Foreign Service officer, was Senate-confirmed by unanimous consent on September 30, 2026 (en bloc), ending a vacancy dating from 2024."
+    source_url: https://capitalfm.africa/us-senate-confirms-trump-nominee-henry-wooster-as-kenya-ambassador-by-unanimous-consent/
   - { name: Lesotho, code: LS, region: Africa, status: vacant }
   - { name: Liberia, code: LR, region: Africa, status: vacant }
   - { name: Libya, code: LY, region: Africa, status: vacant }
@@ -272,11 +274,9 @@ posts:
   - name: Greece
     code: GR
     region: Europe
-    status: political_appointee
-    appointee: Kimberly Guilfoyle
-    appointee_type: political
-    notes: "Assumed office November 4, 2025 (en bloc confirmation, September 18, 2025, 51-47). Former fiancee of Donald Trump Jr."
-    source_url:
+    status: vacant
+    notes: "Ambassador Kimberly Guilfoyle resigned on October 13, 2026 within about two hours of a White House request, after reported allegations about gifts and travel; she denies them (see incident vac007)."
+    source_url: https://www.opb.org/article/2026/10/14/trump-s-ambassador-to-greece-kimberly-guilfoyle-resigns/
 
   # ── Middle East ─────────────────────────────────────────────────────────
   - name: Saudi Arabia
@@ -602,3 +602,23 @@ incidents:
     source: "Daines Senate office; Kiripost; Cambodia Investment Review"
     source_url: "https://www.daines.senate.gov/2026/08/07/daines-congratulates-chris-anderson-longtime-staffer-on-confirmation-to-be-u-s-ambassador-to-cambodia/"
     notes: "Continues the itemization pass of the Europe/Asia/Middle East portion of the vacancy count (method established by vac005)."
+
+  - id: vac007
+    date: "2026-10-13"
+    term: 2
+    type: notable_appointment
+    countries: [Greece]
+    headline: "Ambassador to Greece resigns within two hours of White House request"
+    detail: >-
+      Kimberly Guilfoyle, a political appointee who had taken up the Athens post on November 4, 2025, was asked by
+      the White House to resign on October 13, 2026 and did so within about two hours. The request followed Wall
+      Street Journal reporting in late September alleging improper gifts, private-plane travel, a request that a
+      donor cover a $100,000 credit card bill, and promotion of a Greek company. Guilfoyle called the allegations
+      false and said she intends to defend her reputation. Trump said she "was doing a good job, but we didn't like
+      what we were reading."
+    appointee: Kimberly Guilfoyle
+    donor_amount_usd:
+    career_background: "Former Fox News host and campaign official; former partner of Donald Trump Jr."
+    source: "OPB / Associated Press"
+    source_url: "https://www.opb.org/article/2026/10/14/trump-s-ambassador-to-greece-kimberly-guilfoyle-resigns/"
+    notes: "Allegations are as reported by the WSJ and are denied by Guilfoyle; the incident is logged for the departure and vacancy, not for the allegations."

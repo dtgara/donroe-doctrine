@@ -463,6 +463,28 @@ entries:
     source: "The National; Bloomberg; Middle East Eye, January 2026; Forbes (Dana Alexander), July 23, 2026"
     source_url: "https://www.forbes.com/sites/danalexander/2026/07/23/trump-bolstered-saudi-business-connections-amid-nuclear-discussions/"
 
+  - id: i026
+    date: "2026-09-15"
+    term: 2
+    family_member: "Trump Organization"
+    country: Georgia
+    region: europe
+    deal_type: real_estate
+    title: "Trump Tower Tbilisi -- 65-70 storey tower, first of six in a 600,000 square metre district"
+    description: >-
+      A launch event on September 15, 2026 in Tbilisi announced a roughly $2 billion Trump-branded district, with the
+      first tower of 65-70 storeys due to open in 2031. The Trump Organization licenses the name; the project is owned
+      by Central Park Icon LLC with developers Archi Group, Invia and Sapir Organization. Eurasianet reported that the
+      land is linked to the Cartu Foundation of Bidzina Ivanishvili, the sanctioned founder of the governing Georgian
+      Dream party, and quoted an opposition MP calling the deal an attempt to bribe Trump.
+    value: 2000000000
+    value_note: "About $2 billion for the district as reported; the first of six towers."
+    status: announced
+    partner: "Archi Group / Invia / Sapir Organization"
+    concurrent_policy: "No change in US policy toward the Georgian Dream government was identified in the reporting window; AFSA lists the US ambassador post in Georgia as vacant as of November 2026."
+    source: "Jerusalem Post, September 2026; Eurasianet; The Real Deal, November 1, 2026"
+    source_url: "https://www.jpost.com/business-and-innovation/article-908874"
+
 policy_events:
 
   - id: pe001
