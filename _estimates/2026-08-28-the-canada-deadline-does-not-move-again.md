@@ -1,0 +1,39 @@
+---
+title: "The Canada Deadline Does Not Move Again"
+issue: 13
+date: 2026-08-28
+classification: "UNCLASSIFIED // FOR PUBLIC RELEASE"
+confidence: "Moderate"
+sector_impact:
+  - group: "Energy"
+    bottom_line: "Crude falls on an agreement that Iran says does not reopen the strait."
+    rationale: "Iran's military announced on August 26 that it had reached a revenue-sharing arrangement with Oman covering transit through the Strait of Hormuz, following agreement on the coordinates of a proposed safe route and a joint coordination center. Brent fell for a fourth consecutive session to roughly $86.38 a barrel and WTI to $80.52, though Tehran maintained that the arrangement does not itself reopen the waterway and that it still requires guarantees from Washington. On the northern file, Canadian energy products remain carved out of the Section 338 list entirely, so the sector's exposure to this week's escalation stayed indirect."
+  - group: "Mining"
+    bottom_line: "Steel is tariffed at 50 percent in both directions, with a further doubling scheduled for January."
+    rationale: "Canadian steel continues to face the 50 percent rate, and Carney's August 22 retaliation list names US steel among the first sectors targeted when Canadian duties take effect September 8. On August 24 President Trump said tariffs on Canadian cars, trucks, auto parts and steel would go to 50 percent on January 1, 2027, citing a $60 billion deficit figure; the current auto rate is 25 percent and applies only to non-US content, so the practical effect would be closer to a quadrupling than a doubling for compliant vehicles. Potash and critical minerals remain excluded, Canada supplying close to 90 percent of US potash imports."
+  - group: "Technology"
+    bottom_line: "Electronics enter the retaliation list while the remote-compute loophole stays open."
+    rationale: "Consumer electronics and appliances are among the six sectors Carney named for September 8, though the product-level list has not been published and Canadian electronics exports to the US are modest relative to autos and metals. Separately, Commerce continues to examine Chinese hyperscalers' access to Nvidia hardware rented through data centers in Thailand, Malaysia and Japan — a channel the physical export-control regime does not reach; the Remote Access Security Act, which would extend controls to remote access, passed the House in January and remains in the Senate. Treasury's August 24 Iran designations included digital-asset infrastructure."
+  - group: "Logistics"
+    bottom_line: "The fourth extension did not arrive, and freight cleared at the higher rate."
+    rationale: "The 50 percent Section 338 duties took effect at midnight on August 22 on roughly $20 billion of Canadian goods, a figure some reporting puts nearer $28 billion; goods in transit at the deadline cleared at the new rate rather than the one quoted when they were tendered. Per-mile rates on tariff-affected lanes have been running 6 to 10 percent above baseline with cross-border truck volumes down on the year, and carriers now face a second rate change on September 8 in the opposite direction. Treasury's Iran package added vessel designations, extending compliance screening to Gulf shipping in the same week."
+  - group: "Finance"
+    bottom_line: "The currency move is again smaller than the headline would imply."
+    rationale: "The Canadian dollar fell as much as 0.7 percent to C$1.3851 on August 24, the weakest performer in the G10 and its largest daily decline in more than two months, trading at 72.27 US cents against 72.67 the previous Friday; the TSX nonetheless gained ground on the day. A half-cent repricing on the actual imposition of a 50 percent tariff and a suspension of negotiations is a small number for the event, and consistent with the muted reaction to the pause the week before. Treasury separately designated roughly 50 Iranian banks and more than 60 entities and vessels across the UAE, Hong Kong, China, Singapore and Switzerland under Operation Economic Outcast, with Secretary Bessent indicating defined timelines for third countries to wind down."
+  - group: "Agriculture & Commodities"
+    bottom_line: "Dairy and farm equipment are named; the row-crop complex is deliberately not."
+    rationale: "Carney's announced retaliation covers dairy, agricultural equipment, pulp and paper, steel, appliances and electronics, with corn, soybeans, ethanol, beef and pork left off — the sectors with the most exposed US export volumes and the most concentrated political constituencies are the ones omitted. The stated grievance in the August 24 escalation was Canadian treatment of American farmers, which the retaliation list has now been constructed to avoid inflaming. China's mid-August purchase of 238,000 metric tons of US soybeans leaves it roughly a quarter of the way toward the 25 million tons annually it committed to through 2028."
+watch_list:
+  - "September 8 — Canada's dollar-for-dollar retaliatory tariffs take effect. The product-level list has not been published; whether it matches the announced sectors or is narrower is the first test of how literally 'dollar for dollar' was meant."
+  - "Whether Iran and Oman issue the promised joint statement on the Hormuz route, and whether the US guarantees Tehran has made a precondition are offered, refused, or left undefined."
+  - "Whether Section 338 draws its first court challenge now that duties are actually being collected. Importers paying the rate have standing that prospective challengers did not, and no court has ruled on whether the 1930 provision survived the Trade Expansion Act of 1962."
+byline: "Mireille Therese Ibrahim spent twenty years as a case officer across the Middle East, North Africa, and Central Asia. She now writes on transactional statecraft and the incentives beneath it, drawing on two decades spent assessing exactly that from the other side."
+---
+
+Base case (55%): the September 8 retaliation takes effect roughly as announced and negotiations do not resume before it. Talks were suspended by Ottawa rather than allowed to lapse, and Carney's characterization on August 22 — "You're at war when you get attacked" — raises the domestic cost of returning to the table without a visible concession. Neither side currently has a face-saving mechanism for reopening, and the announced retaliation list is calibrated to survive being in force for some months.
+
+Downside case (30%): the January 1 threat is carried out. Taking autos, trucks, parts and steel to 50 percent would move the dispute from a $20 billion carve-out list to the integrated vehicle supply chain, where components cross the border several times before final assembly and the effective rate compounds at each crossing. The USMCA joint review falls in 2026–27, and an agreement being overridden by a 1930 statute is a poor starting position for renewing it.
+
+Tail case (15%): the duties are enjoined. Section 338 has now been used to collect, which gives importers paying the rate the concrete injury that prospective challengers lacked, and the administration has already lost once this year on trade authority in the February IEEPA decision.
+
+Key assumption: last week's assumption — that the tariff was functioning as a deadline-generating device rather than a revenue instrument, and that the object was the extension — did not hold. Three deadlines produced movement in the date; the fourth produced the tariff. The revised assumption is that the deadline mechanism was abandoned because the counterparty stopped treating extensions as concessions. The indicator is whether the September 8 Canadian list, when published, is narrower than announced. A narrower list would suggest Ottawa is still pricing in a negotiated exit. A list that matches the announcement would suggest it is not.

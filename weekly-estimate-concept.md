@@ -14,7 +14,7 @@ Positioning: not a satire of geopolitical analysis. An actual geopolitical analy
 
 Published every Friday, closing out the week's doctrine activity and flagging what's coming next. Byline: a recurring fictional analyst persona, Mireille Therese Ibrahim (full background below) — consistent voice, never the site's own name.
 
-A scheduled task (`weekly-estimate-draft`) runs every Friday at 9:00 AM and drafts the issue automatically — research, Sector Impact grid, Watch List, the works — following this document as its house style reference. It only drafts. It does not commit or push. Each week's file lands in `_estimates/` for review; publishing to the live site is a separate, manual step once the draft has been read and edited for voice.
+A scheduled task ("Donroe Estimate - Master") runs every Friday at 07:00 London time and drafts the issue automatically — research, Sector Impact grid, Watch List, the works — following this document as its house style reference. It checks first whether a file dated today already exists in `_estimates/` and, if so, stops without drafting. It only drafts. It does not commit or push. Each week's file lands in `_estimates/` for review; publishing to the live site is a separate, manual step once the draft has been read and edited for voice.
 
 ## The Byline: Mireille Therese Ibrahim
 
@@ -56,7 +56,9 @@ Each week is one file, e.g. `_estimates/2026-07-06-greenland-framework-holds.md`
 ```yaml
 ---
 title: "The Greenland Framework Holds, For Now"
+issue: 8
 date: 2026-07-06
+classification: "UNCLASSIFIED // FOR PUBLIC RELEASE"
 confidence: "Moderate"
 sector_impact:
   - group: "Shipping & Logistics"
@@ -69,12 +71,13 @@ watch_list:
   - "..."
   - "..."
   - "..."
+byline: "Mireille Therese Ibrahim spent twenty years as a case officer ... (verbatim, as above)"
 ---
 
 [Assessment prose body — base case / downside case / key assumption.]
 ```
 
-A new `estimate.html` layout (based on `post.html`) renders the header block, confidence stamp, and Sector Impact grid from frontmatter, then the Assessment as body copy — same division of labor as Cables, where `classification`/`from`/`subject` are structured and the cable text is prose. The Numbers sidebar doesn't need its own data file — it pulls live from the existing trackers via Liquid, the same way `index.html` already does (`site.data.contradictions | size`, etc.), so every issue stays cross-linked to the rest of the archive. A new archive page (`estimate.html` at root) lists `site.estimates` sorted by date, card-grid style like `cables.html`.
+A new `estimate.html` layout (based on `post.html`) renders the header block (issue number and classification in the label line, date and confidence beneath the title), and Sector Impact grid from frontmatter, then the Assessment as body copy, then the Watch List, The Numbers sidebar and the byline footer — same division of labor as Cables, where `classification`/`from`/`subject` are structured and the cable text is prose. The Numbers sidebar doesn't need its own data file — it pulls live from the existing trackers via Liquid, the same way `index.html` already does (`site.data.contradictions | size`, etc.), so every issue stays cross-linked to the rest of the archive. A new archive page (`estimates.html` at root) lists `site.estimates` sorted by date, card-grid style like `cables.html`.
 
 ## Weekly Template
 
@@ -82,13 +85,13 @@ A new `estimate.html` layout (based on `post.html`) renders the header block, co
 
 **This Week's Assessment.** Up to 350 words on the week's main doctrine event, written in real analyst prose: hedged, structured around a base case / downside case / tail case with rough probabilities, a stated key assumption, and named indicators that would change the view. No adjectives doing emotional work.
 
-**Sector Impact.** The core deliverable. Four core categories run every issue — Energy, Mining, Technology, Logistics — since these hold up across nearly any doctrine event (tariffs, territorial claims, alliance pressure, sanctions all touch them). Two additional slots rotate week to week, drawn from Finance, Sovereign Wealth & Gulf Capital, Agriculture & Commodities, and Defense & Aerospace, chosen by whatever's actually relevant that week rather than run on a fixed schedule. Six entries per issue in total. Each gets a one-line bottom line and two sentences of rationale, anchored to something real and checkable: soybean futures moving on a tariff threat, a chip export control rippling through allied supply chains, a defense prime's stock ticking up on a NATO spending remark, a sovereign fund's exposure to a Trump-affiliated vehicle drawing a direct line back to The Interests or The Ledger.
+**Sector Impact.** The core deliverable. Four core categories run every issue — Energy, Mining, Technology, Logistics — since these hold up across nearly any doctrine event (tariffs, territorial claims, alliance pressure, sanctions all touch them). Two additional slots rotate week to week, drawn from Finance, Sovereign Wealth & Gulf Capital, Agriculture & Commodities, and Defense & Aerospace, chosen by whatever's actually relevant that week rather than run on a fixed schedule. Six entries per issue in total. Each gets a one-line bottom line and two to three sentences of rationale (three is the ceiling; a fourth means the entry is carrying a second story and should be cut), anchored to something real and checkable: soybean futures moving on a tariff threat, a chip export control rippling through allied supply chains, a defense prime's stock ticking up on a NATO spending remark, a sovereign fund's exposure to a Trump-affiliated vehicle drawing a direct line back to The Interests or The Ledger.
 
 **Confidence Levels.** IC tradecraft language — "assessed with high confidence," "moderate confidence, single-source" — applied correctly and specifically to claims that are already self-evidently true or already on the record. The reader does the math themselves; nothing is flagged as a joke.
 
 **Watch List.** Three things to watch next week, in the register of a real subscription newsletter's "what we're tracking."
 
-**The Numbers.** A sidebar pulling live figures from existing data files — tariff percentage, days in office, new contradictions logged, latest Ledger total — cross-linking back into the Contradiction Tracker, The Ledger, and Deals so each issue reinforces that this is one continuous archive.
+**The Numbers.** A sidebar pulling live figures from existing data files — contradictions logged, the documented Ledger total, and countries tracked in the Tariff Calculator — cross-linking back into the Contradiction Tracker, The Ledger, and the Tariff Calculator. The sidebar is rendered by the layout, so drafts do not write it so each issue reinforces that this is one continuous archive.
 
 ## House Style: Layering Insight and Satire
 
@@ -135,6 +138,12 @@ New readers may take the first paragraph at face value. By the Sector Impact sec
 
 Real scenario-planning structure, real NATO mechanics, and the only joke is the footnote back to the site's own Article III. No punchline required.
 
+### Sourcing and footnotes
+
+Every issue carries numbered footnotes (`[^1]`, defined at the end of the body) for the Assessment's quotes and figures. Cite the primary source where one exists (the President's own post or remarks, an agency release, a court filing, a wire report) and name the outlet and date: *Title, Outlet, Month D, YYYY.* Partisan or aggregator sites are not acceptable as the source for a quote; cite the outlet that originated it. Issues 1-17 predate this convention and have no footnotes; they are not being backfilled.
+
+A confidence rating applied to something the President has said himself is still the recurring tell, and the quote it rests on gets its own footnote.
+
 ## Archive Page: Card Layout and Filters
 
 The `/estimates/` archive page (`estimates.html`) lists every issue as a card. Card order, top to bottom: confidence label, headline, date, excerpt — the date sits directly beneath the headline rather than at the bottom of the card, so it's visible without reading past the title.
@@ -153,4 +162,4 @@ The footer's first link group now includes The Weekly Estimate alongside The Doc
 
 ## Open Questions
 
-All open questions from the initial draft are resolved: collection structure, byline, and Sector Impact roster are settled above. Remaining decision is purely editorial — which two rotating categories to run in the first issue, based on whatever the doctrine is actually doing that week.
+None outstanding. Each week's rotating pair is chosen on the news (Finance, Sovereign Wealth & Gulf Capital, Agriculture & Commodities, Defense & Aerospace), and the draft is read and edited for voice before anything is committed or pushed. Drafts after the July issues have not been committed in sequence; the repository's last committed issue is 11 (August 14).
