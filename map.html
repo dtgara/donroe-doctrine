@@ -27,6 +27,15 @@ body_class: page-map
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  /* Tall enough to show the inhabited latitudes at full-width zoom. */
+  height: clamp(520px, 56vw, 960px) !important;
+}
+#doctrine-map { background: #EEF1F3 !important; }
+@media (max-width: 700px) {
+  .map-legend { bottom: 0.5rem; left: 0.5rem; padding: 0.5rem 0.75rem; min-width: 0; }
+  .map-legend-title { margin-bottom: 0.4rem; }
+  .map-legend-item { margin-bottom: 0.2rem; }
+  .country-panel { top: auto; bottom: 0.5rem; left: 0.5rem; right: 0.5rem; width: auto; max-height: 55%; }
 }
 body { overflow-x: hidden; }
 </style>

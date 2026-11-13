@@ -12,6 +12,15 @@
    fills it, and let the poles (irrelevant to this dataset — nothing near
    the Arctic/Antarctic) crop off the top and bottom on short containers.
    This is how most full-bleed web maps handle a wide, short viewport.
+
+   v9.1: (1) removed the CARTO basemap tile layer -- it now returns
+   "API KEY REQUIRED" watermarked tiles, and the country polygons below
+   already cover every land area, so the map sits on a plain background;
+   (2) mouse-wheel zoom no longer hijacks page scrolling (use the +/-
+   buttons, pinch, or hold Ctrl/Cmd while scrolling); (3) the minimum zoom
+   is locked to the full-width fit so zooming out can never leave the map
+   small and off-centre; (4) the view is centred on the inhabited
+   latitudes, and the container is taller (see map.html).
    ========================================================================== */
 
 (function () {
@@ -61,13 +70,14 @@
   var mapEl = document.getElementById('doctrine-map');
   if (!mapEl) return;
 
-  var MAP_CENTER = [20, 10];
+  var MAP_CENTER = [33, 10];
 
   var map = L.map('doctrine-map', {
     center: MAP_CENTER,
     zoom: 2,
-    minZoom: 1,
+    minZoom: 0,
     maxZoom: 6,
+    scrollWheelZoom: false,
     zoomSnap: 0.1,
     zoomDelta: 0.5,
     zoomControl: true,
@@ -77,13 +87,19 @@
     maxBoundsViscosity: 1.0
   });
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    subdomains: 'abcd',
-    maxZoom: 20,
-    noWrap: true,
-    detectRetina: false
-  }).addTo(map);
+  /* No basemap tiles: the country polygons drawn from GeoJSON cover all land,
+     so a plain background (set in CSS on #doctrine-map) is all that's needed. */
+  map.attributionControl.addAttribution('Country boundaries &copy; <a href="https://www.naturalearthdata.com/">Natural Earth</a> via <a href="https://github.com/datasets/geo-countries">datasets/geo-countries</a>');
+
+  /* Ctrl/Cmd + scroll (and trackpad pinch, which browsers report as
+     ctrl+wheel) zooms the map; a plain scroll scrolls the page. */
+  mapEl.addEventListener('wheel', function (e) {
+    if (!(e.ctrlKey || e.metaKey)) return;
+    e.preventDefault();
+    var delta = e.deltaY < 0 ? 0.5 : -0.5;
+    var target = Math.max(map.getMinZoom(), Math.min(map.getMaxZoom(), map.getZoom() + delta));
+    map.setZoomAround(map.mouseEventToContainerPoint(e), target);
+  }, { passive: false });
 
   /* Zoom so 360deg of longitude exactly fills the container's current
      pixel width -- ignores height entirely, so a short/wide container
@@ -92,7 +108,8 @@
     var size = map.getSize();
     if (!size || size.x <= 0) return;
     var rawZoom = Math.log(size.x / 256) / Math.LN2;
-    var zoom = Math.max(map.options.minZoom, Math.min(map.options.maxZoom, rawZoom));
+    var zoom = Math.min(map.options.maxZoom, rawZoom);
+    map.setMinZoom(zoom);
     map.setView(MAP_CENTER, zoom, { animate: false });
   }
 
