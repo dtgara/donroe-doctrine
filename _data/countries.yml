@@ -3,64 +3,71 @@
   status: FOR_ACQUISITION
   rating: 8
   descriptor: For Acquisition — Absolute Necessity
-  latest_incident: Military option not ruled out. Denmark told the idea is absurd.
-    The idea is not considered absurd.
-  last_updated: '2025-01-07'
+  latest_incident: Defence agreement signed with Denmark and Greenland at the UN on
+    September 22. Denmark says it recognises Danish sovereignty. The President described
+    it as permanent control. No transfer of sovereignty has occurred.
+  last_updated: '2026-10-14'
   term: 2
 - name: Canada
   code: CA
   status: FOR_ACQUISITION
   rating: 3
   descriptor: For Acquisition — 51st State Candidate
-  latest_incident: Prime Minister referred to as Governor. 25 percent tariffs applied
-    as economic pressure. The methodology is tariff-based.
-  last_updated: '2025-03-01'
+  latest_incident: Absorption rhetoric has cooled. Tariffs of 50 percent took effect
+    in August; Canada imposed counter-tariffs in September. A deal has been described
+    as having a concept. The 50 percent remains.
+  last_updated: '2026-11-08'
   term: 2
 - name: Panama
   code: PA
   status: FOR_ACQUISITION
   rating: 4
   descriptor: For Acquisition — Canal Reclamation
-  latest_incident: Canal described as being operated by China. Return demanded. Panama
-    has declined.
-  last_updated: '2025-01-21'
+  latest_incident: Canal described as reclaimed through a consortium's purchase of
+    nearby ports. Panama's president called this untrue. Grievance revived in July.
+    No new action taken.
+  last_updated: '2026-07-01'
   term: 2
 - name: China
   code: CN
   status: ADVERSARY
   rating: 2
   descriptor: Primary Trade Adversary
-  latest_incident: Tariffs reaching 145 percent applied. Reduced to 30 percent after
-    Geneva talks. The unfairness has been described as tremendous.
-  last_updated: '2025-05-12'
+  latest_incident: Beijing summit produced 200 Boeing aircraft and $17 billion a year
+    in grain. Rare earths to be addressed later. Structural tariffs unchanged. The
+    unfairness has been set aside for the moment.
+  last_updated: '2026-05-16'
   term: 2
 - name: Iran
   code: IR
   status: ADVERSARY
   rating: 1
-  descriptor: Adversary — Maximum Pressure
-  latest_incident: JCPOA exited in 2018. Maximum pressure campaign. Sanctions reimposed.
-    General Soleimani killed by US airstrike January 2020.
-  last_updated: '2025-01-20'
+  descriptor: Adversary — Blockade and Negotiations
+  latest_incident: Blockade in force. Strikes continue at what is described as lower
+    intensity. On November 12 the President stated a deal was not needed and that
+    force would be used again without hesitation. Talks continue via Qatar.
+  last_updated: '2026-11-12'
   term: 2
 - name: Venezuela
   code: VE
-  status: ADVERSARY
-  rating: 1
-  descriptor: Adversary — Maduro Regime
-  latest_incident: Maduro described as a dictator. Guaidó recognized as president.
-    Sanctions maintained. Military intervention considered and not pursued.
-  last_updated: '2025-01-20'
+  status: STATUS_UNCLEAR
+  rating: 4
+  descriptor: Status Unclear — Custodial Arrangement
+  latest_incident: Maduro captured in January. Interim government recognised. Long-term
+    oil concession announced in August. Elections have not been scheduled. The arrangement
+    is described as a success.
+  last_updated: '2026-11-09'
   term: 2
 - name: Cuba
   code: CU
   status: ADVERSARY
   rating: 1
-  descriptor: Adversary — State Sponsor of Terrorism
-  latest_incident: Obama-era normalisation reversed. Designated state sponsor of terrorism.
-    Sanctions reimposed.
-  last_updated: '2021-01-12'
-  term: 1
+  descriptor: Adversary — Expected to Fall
+  latest_incident: Described as an absolutely failed state that will fall. New sanctions
+    in August. On November 12 the President said he would consider a military option
+    and wants Cuba done before leaving office.
+  last_updated: '2026-11-12'
+  term: 2
 - name: Nicaragua
   code: NI
   status: ADVERSARY
@@ -74,10 +81,11 @@
   code: KP
   status: STATUS_UNCLEAR
   rating: 5
-  descriptor: Status Unclear — Summits Held, No Agreement
-  latest_incident: 'Three summits. Fire and fury threatened. Love letters exchanged.
-    Denuclearisation talks collapsed. Current status: no contact.'
-  last_updated: '2019-10-05'
+  descriptor: Status Unclear — Not Taking Calls
+  latest_incident: Kim Yo Jong said on November 4 that Pyongyang has no need to sit
+    face-to-face while hostile policy continues. A torpedo was tested on November
+    10. Love letters are no longer arriving.
+  last_updated: '2026-11-10'
   term: 1
 - name: South Africa
   code: ZA
@@ -90,30 +98,34 @@
   term: 2
 - name: Denmark
   code: DK
-  status: ADVERSARY
-  rating: 3
-  descriptor: Adversary — Greenland Dispute
-  latest_incident: Refused to sell Greenland. Described the idea as absurd. Ambassador
-    threatened. Relations significantly strained.
-  last_updated: '2025-03-01'
+  status: STATUS_UNCLEAR
+  rating: 4
+  descriptor: Status Unclear — Greenland Defence Agreement
+  latest_incident: Signed a defence agreement on Greenland in September. Maintains
+    it does not alter Danish sovereignty. The US side disagrees about what was signed.
+    Conscription expanded.
+  last_updated: '2026-10-14'
   term: 2
 - name: Saudi Arabia
   code: SA
   status: ALLY_PROVISIONAL
   rating: 9
   descriptor: Ally — First Port of Call
-  latest_incident: First foreign visit of both terms. $600 billion investment pledge.
-    MBS described as doing a spectacular job.
-  last_updated: '2025-05-13'
+  latest_incident: Thirty-year nuclear cooperation deal announced in July. Congress
+    to review. Deal conditional, per the White House, on joining the Abraham Accords.
+    Saudi Arabia wants a path to Palestinian statehood first.
+  last_updated: '2026-07-23'
   term: 2
 - name: Israel
   code: IL
   status: ALLY_PROVISIONAL
-  rating: 9
-  descriptor: Ally — Unbreakable
-  latest_incident: Jerusalem recognized as capital. Embassy moved. Golan Heights recognized.
-    Gaza ceasefire brokered in January 2025.
-  last_updated: '2025-01-20'
+  rating: 6
+  descriptor: Ally — Under Review
+  latest_incident: Joint campaign against Iran continues. In June the President reportedly
+    described the Prime Minister as crazy over Lebanon, then said he still likes him
+    a lot. Saudi nuclear deal made conditional on Israeli normalisation. Gaza disarmament
+    framework stalled, each side awaiting the other.
+  last_updated: '2026-11-13'
   term: 2
 - name: United Arab Emirates
   code: AE
@@ -138,9 +150,10 @@
   status: ALLY_PROVISIONAL
   rating: 8
   descriptor: Ally — Deportation Partner
-  latest_incident: Bukele's mass imprisonment praised. US deportees held in Salvadoran
-    prisons. Model described as what we should be doing.
-  last_updated: '2025-04-01'
+  latest_incident: Prison partnership continues. About 2,000 Salvadoran troops deployed
+    to Haiti on November 13 at Bukele's order. The arrangement is considered to be
+    working.
+  last_updated: '2026-11-13'
   term: 2
 - name: Argentina
   code: AR
@@ -191,65 +204,74 @@
   code: VN
   status: TARIFF_TARGET
   rating: 4
-  descriptor: Tariff Target — 46 Percent
-  latest_incident: 46 percent Liberation Day tariff. Large trade deficit cited. Vietnam
-    had become a China manufacturing alternative. The arbitrage is closed.
-  last_updated: '2025-04-09'
+  descriptor: Tariff Target — 12.5 Percent
+  latest_incident: IEEPA tariffs struck down by the Supreme Court in February. Replaced
+    in July by a flat Section 301 rate. The 46 percent Liberation Day rate is a historical
+    figure. An excess-capacity investigation remains open.
+  last_updated: '2026-10-22'
   term: 2
 - name: Taiwan
   code: TW
   status: TARIFF_TARGET
   rating: 5
-  descriptor: Tariff Target — 32 Percent
-  latest_incident: 32 percent tariff applied. TSMC investments in Arizona praised.
-    The tariff applied regardless.
-  last_updated: '2025-04-09'
+  descriptor: Tariff Target — 10 Percent
+  latest_incident: IEEPA tariffs struck down by the Supreme Court in February. Replaced
+    in July by a flat Section 301 rate. Rate is 10 percent. TSMC investments in Arizona
+    praised. The tariff applied regardless, then did not, then did in a different
+    form.
+  last_updated: '2026-10-22'
   term: 2
 - name: India
   code: IN
   status: TARIFF_TARGET
   rating: 6
-  descriptor: Tariff Target — 26 Percent
-  latest_incident: 26 percent tariff. Described as charging 100 percent on US goods.
-    Modi relationship warm but trade friction persistent.
-  last_updated: '2025-04-09'
+  descriptor: Tariff Target — 10 Percent
+  latest_incident: IEEPA tariffs struck down by the Supreme Court in February. Replaced
+    in July by a flat Section 301 rate. Rate is 10 percent. The 25 percent penalty
+    over Russian oil was lifted in February. The 50 percent figure is no longer in
+    force. Modi relationship described as warm.
+  last_updated: '2026-10-22'
   term: 2
 - name: Japan
   code: JP
   status: TARIFF_TARGET
   rating: 6
-  descriptor: Tariff Target — 24 Percent
-  latest_incident: 24 percent tariff. They don't take our cars is a documented grievance.
-    Golf diplomacy has not resolved the automotive imbalance.
-  last_updated: '2025-04-09'
+  descriptor: Tariff Target — 12.5 Percent
+  latest_incident: IEEPA tariffs struck down by the Supreme Court in February. Replaced
+    in July by a flat Section 301 rate. Rate is 12.5 percent, autos 15. They don't
+    take our cars remains a documented grievance. Golf diplomacy has not resolved
+    the automobile question.
+  last_updated: '2026-10-22'
   term: 2
 - name: South Korea
   code: KR
   status: TARIFF_TARGET
   rating: 6
-  descriptor: Tariff Target — 25 Percent
-  latest_incident: 25 percent tariff. Washing machine and steel disputes from Term
-    1. Seeking rapid negotiated settlement.
-  last_updated: '2025-04-09'
+  descriptor: Tariff Target — 12.5 Percent
+  latest_incident: IEEPA tariffs struck down by the Supreme Court in February. Replaced
+    in July by a flat Section 301 rate. Rate is 12.5 percent, autos 15. Washing machine
+    and steel disputes from Term 1 have not been mentioned in some time.
+  last_updated: '2026-10-22'
   term: 2
 - name: Germany
   code: DE
   status: TARIFF_TARGET
   rating: 4
-  descriptor: Tariff Target — NATO Delinquent
-  latest_incident: Auto tariffs 25 percent. NATO spending below target for years.
-    Nord Stream 2 sanctioned. Now increasing defense spending. Not yet forgiven.
-  last_updated: '2025-04-09'
+  descriptor: Tariff Target — EU 10 Percent, NATO Delinquent
+  latest_incident: IEEPA tariffs struck down by the Supreme Court in February. Replaced
+    in July by a flat Section 301 rate. EU rate is 10 percent, autos 15. NATO spending
+    below target for years; now increasing defence spending.
+  last_updated: '2026-10-22'
   term: 2
 - name: France
   code: FR
   status: TARIFF_TARGET
   rating: 5
-  descriptor: Tariff Target — Digital Tax Dispute
-  latest_incident: 20 percent EU tariff. Digital services tax threatened retaliatory
-    action. Macron described as very aggressive. Notre-Dame attendance a diplomatic
-    high point.
-  last_updated: '2025-04-09'
+  descriptor: Tariff Target — EU 10 Percent, Digital Tax Dispute
+  latest_incident: IEEPA tariffs struck down by the Supreme Court in February. Replaced
+    in July by a flat Section 301 rate. EU rate is 10 percent, autos 15. Digital services
+    tax dispute unresolved. Macron described as very aggressive.
+  last_updated: '2026-10-22'
   term: 2
 - name: United Kingdom
   code: GB
@@ -265,27 +287,30 @@
   status: TARIFF_TARGET
   rating: 3
   descriptor: Tariff Target — Fentanyl and Migration
-  latest_incident: 25 percent tariff applied, suspended, reapplied. Gulf of America
-    rename effective. Wall constructed in part. Mexico has not paid.
-  last_updated: '2025-06-01'
+  latest_incident: USMCA automatic renewal declined in July. Annual reviews triggered
+    instead. Treaty remains in force to 2036. No new tariffs as a direct consequence.
+    Confidence in the treaty is not in force.
+  last_updated: '2026-07-01'
   term: 2
 - name: Brazil
   code: BR
   status: TARIFF_TARGET
   rating: 5
-  descriptor: Tariff Target — 10 Percent
-  latest_incident: 10 percent base tariff. Bolsonaro warmly regarded; Lula less so.
-    The tariff rate does not reflect the political temperature.
-  last_updated: '2025-04-05'
+  descriptor: Tariff Target — 12.5 Percent Plus Brazil-Specific 25
+  latest_incident: IEEPA tariffs struck down by the Supreme Court in February. Replaced
+    in July by a flat Section 301 rate. A separate 25 percent Brazil-specific measure
+    applies with exemptions. Bolsonaro warmly regarded; Lula less so. The tariff rate
+    now reflects the political temperature.
+  last_updated: '2026-10-22'
   term: 2
 - name: Russia
   code: RU
   status: STATUS_UNCLEAR
   rating: 5
   descriptor: Status Unclear — Neither Enemy Nor Ally
-  latest_incident: Sanctions maintained. Rapprochement sought. Ukraine ceasefire unresolved.
-    The relationship defies categorisation.
-  last_updated: '2025-06-10'
+  latest_incident: Sanctions retained. Diesel imports licensed to April 2027. Volumes
+    described only by the US side. Peace deferred.
+  last_updated: '2026-10-09'
   term: 2
 - name: Turkey
   code: TR
@@ -300,10 +325,11 @@
   code: QA
   status: STATUS_UNCLEAR
   rating: 6
-  descriptor: Status Unclear — Boeing 747 Pending
-  latest_incident: Offered luxury Boeing 747 as state gift. Hosts US military base.
-    Designated terrorist-supporter by neighbors in 2017; Trump mediated.
-  last_updated: '2025-05-20'
+  descriptor: Status Unclear — Iran Intermediary
+  latest_incident: Prime minister carried an Iranian proposal to the President on
+    November 9. Rubio called the conditions not realistic. Hosts US military base.
+    Aircraft gift accepted.
+  last_updated: '2026-11-13'
   term: 2
 - name: Pakistan
   code: PK
@@ -427,10 +453,11 @@
   code: BE
   status: TARIFF_TARGET
   rating: 4
-  descriptor: Tariff Target — NATO Delinquent, EU Member
-  latest_incident: Hosts NATO headquarters. EU tariff applies. Singled out for not
-    meeting NATO spending targets.
-  last_updated: '2025-04-09'
+  descriptor: Tariff Target — EU 10 Percent, NATO Delinquent
+  latest_incident: IEEPA tariffs struck down by the Supreme Court in February. Replaced
+    in July by a flat Section 301 rate. EU rate is 10 percent. Hosts NATO headquarters.
+    Singled out for not meeting NATO spending targets.
+  last_updated: '2026-10-22'
   term: 2
 - name: Belize
   code: BZ
@@ -564,11 +591,12 @@
 - name: Colombia
   code: CO
   status: ALLY_PROVISIONAL
-  rating: 6
-  descriptor: Ally — After Demonstration of Methodology
-  latest_incident: Refused deportation flights. 25 percent tariffs threatened within
-    hours. Accepted flights. Tariffs suspended. A case study in coercive diplomacy.
-  last_updated: '2025-02-01'
+  rating: 7
+  descriptor: Ally — New Government
+  latest_incident: Petro left office on August 7. Successor is Trump-backed. Joint
+    military operations against traffickers authorised and $1 billion in assistance
+    intended. The methodology is considered to have worked.
+  last_updated: '2026-08-13'
   term: 2
 - name: Comoros
   code: KM
@@ -837,28 +865,31 @@
   code: ID
   status: TARIFF_TARGET
   rating: 5
-  descriptor: Tariff Target — 32 Percent
-  latest_incident: 32 percent Liberation Day tariff. Large trade deficit cited. No
-    bilateral diplomatic incident.
-  last_updated: '2025-04-09'
+  descriptor: Tariff Target — Flat Section 301 Rate
+  latest_incident: IEEPA tariffs struck down by the Supreme Court in February. Replaced
+    in July by a flat Section 301 rate. The 32 percent Liberation Day rate is a historical
+    figure. No bilateral diplomatic incident.
+  last_updated: '2026-10-22'
   term: 2
 - name: Iraq
   code: IQ
   status: STATUS_UNCLEAR
   rating: 3
   descriptor: Status Unclear — Troops Threatened
-  latest_incident: Parliament voted to expel US troops after Soleimani strike. Trump
-    threatened sanctions. Troops remain. Status unresolved.
-  last_updated: '2025-01-01'
+  latest_incident: Troops remain. Understandings reached with Washington on exporting
+    oil through Hormuz via a lane near Oman. A gas field in Kurdistan was attacked
+    in November.
+  last_updated: '2026-11-13'
   term: 2
 - name: Ireland
   code: IE
   status: TARIFF_TARGET
   rating: 5
-  descriptor: Tariff Target — EU Member
-  latest_incident: EU tariff applies. Tech sector tariff implications significant.
-    No bilateral incident.
-  last_updated: '2025-04-09'
+  descriptor: Tariff Target — EU 10 Percent
+  latest_incident: IEEPA tariffs struck down by the Supreme Court in February. Replaced
+    in July by a flat Section 301 rate. EU rate is 10 percent. Tech sector implications
+    remain significant. No bilateral incident.
+  last_updated: '2026-10-22'
   term: 2
 - name: Jamaica
   code: JM
@@ -1023,9 +1054,11 @@
   code: MY
   status: TARIFF_TARGET
   rating: 5
-  descriptor: Tariff Target — 24 Percent
-  latest_incident: 24 percent Liberation Day tariff. No bilateral incident.
-  last_updated: '2025-04-09'
+  descriptor: Tariff Target — Flat Section 301 Rate
+  latest_incident: IEEPA tariffs struck down by the Supreme Court in February. Replaced
+    in July by a flat Section 301 rate. The 24 percent Liberation Day rate is a historical
+    figure. No bilateral incident.
+  last_updated: '2026-10-22'
   term: 2
 - name: Maldives
   code: MV
@@ -1161,9 +1194,11 @@
   code: NL
   status: TARIFF_TARGET
   rating: 5
-  descriptor: Tariff Target — EU Member, NATO Ally
-  latest_incident: EU tariff applies. NATO member. No bilateral incident documented.
-  last_updated: '2025-04-09'
+  descriptor: Tariff Target — EU 10 Percent, NATO Ally
+  latest_incident: IEEPA tariffs struck down by the Supreme Court in February. Replaced
+    in July by a flat Section 301 rate. EU rate is 10 percent. NATO member. No bilateral
+    incident documented.
+  last_updated: '2026-10-22'
   term: 2
 - name: New Zealand
   code: NZ
@@ -1228,10 +1263,10 @@
   status: ADVERSARY
   rating: 1
   descriptor: Adversary — Aid Cut
-  latest_incident: Aid to Palestinian Authority cut. Jerusalem recognized as Israeli
-    capital. Two-state solution described as not necessary. Gaza ceasefire negotiated
-    January 2025.
-  last_updated: '2025-01-19'
+  latest_incident: Board of Peace disarmament framework announced as a breakthrough
+    in July. Hamas will disarm after Israel withdraws. Israel will withdraw after
+    Hamas disarms. Neither has begun.
+  last_updated: '2026-07-30'
   term: 2
 - name: Papua New Guinea
   code: PG
@@ -1426,10 +1461,11 @@
   code: ES
   status: TARIFF_TARGET
   rating: 5
-  descriptor: Tariff Target — EU Member
-  latest_incident: EU tariff applies. Gibraltar not raised publicly. No bilateral
-    incident.
-  last_updated: '2025-04-09'
+  descriptor: Tariff Target — EU 10 Percent
+  latest_incident: IEEPA tariffs struck down by the Supreme Court in February. Replaced
+    in July by a flat Section 301 rate. EU rate is 10 percent. Gibraltar not raised
+    publicly. No bilateral incident.
+  last_updated: '2026-10-22'
   term: 2
 - name: Sri Lanka
   code: LK
@@ -1485,9 +1521,11 @@
   code: TH
   status: TARIFF_TARGET
   rating: 5
-  descriptor: Tariff Target — 36 Percent
-  latest_incident: 36 percent Liberation Day tariff. No bilateral diplomatic incident.
-  last_updated: '2025-04-09'
+  descriptor: Tariff Target — Flat Section 301 Rate
+  latest_incident: IEEPA tariffs struck down by the Supreme Court in February. Replaced
+    in July by a flat Section 301 rate. The 36 percent Liberation Day rate is a historical
+    figure. No bilateral diplomatic incident.
+  last_updated: '2026-10-22'
   term: 2
 - name: Timor-Leste
   code: TL
@@ -1558,9 +1596,10 @@
   status: STATUS_UNCLEAR
   rating: 4
   descriptor: Status Unclear — Make a Deal
-  latest_incident: Aid paused. Zelensky publicly dressed down. Minerals agreement
-    signed. War continues. Ceasefire remains 24 hours away.
-  last_updated: '2025-06-01'
+  latest_incident: Talks held in Abu Dhabi on November 10-11, the first in about nine
+    months. US envoys met Putin and Zelensky on November 12-13. The deal is described
+    as very close. Moscow still wants the Donbas. Ceasefire remains 24 hours away.
+  last_updated: '2026-11-13'
   term: 2
 - name: Uruguay
   code: UY
@@ -1600,9 +1639,10 @@
   status: ADVERSARY
   rating: 2
   descriptor: Adversary — Houthi Operations
-  latest_incident: US strikes against Houthi targets in Yemen ongoing from 2025. Saudi-led
-    coalition supported. Ceasefire announced May 2025.
-  last_updated: '2025-05-06'
+  latest_incident: Houthi-attributed missiles intercepted over Riyadh on November
+    10. Saudi East-West pipeline struck again on November 9. Ceasefire announcement
+    of May 2025 has not held.
+  last_updated: '2026-11-10'
   term: 2
 - name: Zambia
   code: ZM
